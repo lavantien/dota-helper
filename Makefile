@@ -1,4 +1,4 @@
-.PHONY: dota picker engine-build engine-test engine-cover test-picker test-picker-cover test probe-stratz probe-opendota \
+.PHONY: dota picker engine-build engine-test engine-cover engine-cover-summary test-picker test-picker-cover test probe-stratz probe-opendota \
         probe-builds probe-matches probe-scope probe-window fetch-stratz fetch-stratz-refresh fetch-opendota fetch-builds \
         fetch-builds-refresh fetch-matches fetch-matches-refresh fetch-positions ingest db-query mine sync-builds order-pool emit emit-data \
         emit-guide emit-picker emit-goldens eval eval-fit eval-fit-alphas eval-fit-completion \
@@ -53,6 +53,18 @@ engine-test-%:
 engine-cover:
 	$(GO_RUN) go -C $(ENGINE_DIR) test -count=1 -timeout 90m -covermode=atomic -coverprofile=coverage.out -coverpkg=./internal/... ./internal/...
 	$(GO_RUN) go -C $(ENGINE_DIR) tool cover -func=coverage.out
+
+# statement-weighted rollup of the last engine-cover profile: per-package
+# and per-function table sorted worst-first, the gap-closure work queue
+engine-cover-summary:
+	python scripts/cover-summary.py $(ENGINE_DIR)/coverage.out
+
+# scoped loop for one internal package during coverage gap closure, same
+# shape as engine-test-%: measures the package's binary against the whole
+# internal surface, so the number is a lower bound on the merged profile
+engine-cover-%:
+	$(GO_RUN) go -C $(ENGINE_DIR) test -count=1 -timeout 30m -covermode=atomic -coverprofile=coverage-$*.out -coverpkg=./internal/... ./internal/$*/...
+	python scripts/cover-summary.py $(ENGINE_DIR)/coverage-$*.out
 
 test-picker:
 	node --test picker/picker-score.test.mjs
