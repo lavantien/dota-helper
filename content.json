@@ -34,24 +34,26 @@
       "why": "dedicated pos 3, the split swarms the standing teamfights with brewling bodies and the storm kit picks the commit apart, favored into lancer and naga style illusion floods, vetoed by the instant silence and hex crew",
       "how": "clap the clump, brew the runner and ignite it, brawl the stance trade, split the commit, cyclone the fed core, hold the storm dispel for the summon flood, walk the storm body out of the lost fight",
       "when": "lane trades off clap and brew poke, the earth brewling sieges every mid game objective, split windows decide the standing fights, dies to the instant silence that lands before the split",
-      "build": "",
-      "timings": [],
+      "build": "midas, vessel, rad, bkb, assault, octarine, refresher",
+      "timings": [["midas", 12], ["vessel", 13]],
       "tech": [
         "silencer, skywrath, and disruptor are the vetoes, the instant silence cuts the brew and the clap out of the combo",
         "phantom lancer, naga siren, and terrorblade style floods are the free wins, the storm dispel wipes every illusion and summon body"
-      ]
+      ],
+      "mechanics": [["tip", "cinder brew soaks the enemies and slows them, magic or pure damage lights the soak and the burn runs longer"], ["tip", "the fire stance crit is rolled the moment the swing starts, swapping into fire mid swing never crits that hit"], ["tip", "auras ride whichever brewling currently leads, the order runs earth, then storm, then fire as each falls, and brewmaster walks back out wherever that body stands"], ["tip", "the earth brewling's demolish passive shreds buildings, it is the siege body, push every objective behind it"], ["tip", "the storm cyclone outlasts the split itself, and it holds creeps and summons in the air far longer than heroes"], ["tip", "storm dispel magic shreds summons, illusions eat the full damage, clones and ward type bodies are the exceptions"], ["counter", "kill the fire brewling first, it swings the hardest and burns everything near it, deleting it strips most of the split's damage"], ["counter", "primal split has a long cast time, instant silences and hexes land first and cut the combo down to the split alone"]]
     },
     "clinkz": {
-      "identity": "skeleton tempo carry, searing arrows burn every click, burning barrage blankets the cone, strafe stacks the attack steroid, skeleton walk fades him across the map, death pact eats a body to bulk up",
-      "why": "dedicated pos 1, the walk tempo and the barrage clear outfarm the lane and the strafe window deletes the backline before it responds, favored into sniper and drow style immobile backs, vetoed by the blink lockdown crew",
-      "how": "searing arrow every last hit and deny, barrage the wave and the camp, walk the flank through fog, strafe the commit, barrage their clump, pact a creep between trades, walk out when the steroid ends",
-      "when": "lane pest off arrow harass, barrage opens the farm on every lane once it ranks, mid game pick machine off the walk cooldowns, dies the moment the blink lockdown lands on him",
-      "build": "",
-      "timings": [],
+      "identity": "skeleton tempo carry, searing arrows burn every click, strafe stacks the attack steroid, skeleton walk fades him across the map and plants the archer turrets, death pact eats a body to bulk up",
+      "why": "dedicated pos 1, the walk tempo and the arrow spam outfarm the lane and the strafe window deletes the backline before it responds, favored into sniper and drow style immobile backs, vetoed by the blink lockdown crew",
+      "how": "searing arrow every last hit and deny, walk the flank through fog, plant the archers on the high ground, strafe the commit onto the backline, pact a creep between trades, walk out when the steroid ends",
+      "when": "lane pest off arrow harass, the archer turrets add standing damage to every push, mid game pick machine off the walk cooldowns, dies the moment the blink lockdown lands on him",
+      "build": "falcon blade, desolator, pike, daedalus, bkb, monkey king bar, sheepstick",
+      "timings": [["falcon blade", 5], ["desolator", 15]],
       "tech": [
         "axe, earthshaker, and sand king are the vetoes, the blink lockdown crew deletes him before strafe pays",
         "sniper, drow ranger, and crystal maiden style backs are the free wins, the walk flank reaches everything that cannot leap"
-      ]
+      ],
+      "mechanics": [["tip", "death pact can eat an enemy creep or your own skeleton archer, it heals him and pads his max health"], ["tip", "skeleton archers copy his attack range exactly and swing for a share of his attack damage, both track his stats live"], ["tip", "the archers spawn the instant skeleton walk drops and they never move, aim the walk exit to perch them on cliffs for scouting vision"], ["tip", "cast skeleton walk mid channel without breaking it, strafe and death pact cast during the walk keep the invis, attacks and item use pop it"], ["tip", "the shard barrage arrows fly with true strike, carry every attack modifier, and still fire while clinkz is disarmed"], ["counter", "dispelling strafe off clinkz is wasted effort, the skeleton archers keep their share of the buff"], ["counter", "damage block never blunts skeleton archer shots, their hits ignore it entirely"]]
     },
     "dawnbreaker": {
       "identity": "tanky offlane initiator with global starbreaker ult presence",
@@ -109,24 +111,26 @@
       "why": "dedicated pos 2, edict and nova outtempo every tower race and the nova zone wins the clumped fights, favored into lifestealer and lancer style melee floods, vetoed by the gap close dive",
       "how": "split earth where they will stand not where they stand, storm the bounce off the wave, edict the tower behind the push, nova on and walk the fight, split earth the escape line",
       "when": "lane bully off storm and earth poke, edict sieges every mid game objective, nova carries the standing fights, dies to the gap close that lands first",
-      "build": "",
-      "timings": [],
+      "build": "kaya and sange, yasha and kaya, bkb, bloodstone, shiva, sheepstick, shard",
+      "timings": [["kaya and sange", 23], ["yasha and kaya", 24]],
       "tech": [
         "storm spirit, spirit breaker, and slark are the vetoes, the dive deletes the frame before nova pays",
         "lifestealer, phantom lancer, and broodmother style floods are the free wins, the nova grinds every body that commits close"
-      ]
+      ],
+      "mechanics": [["tip", "split earth carries one of the longest windups around, bait the dodge in lane by canceling the cast, or drop it at your own feet to stun chasers without turning around"], ["tip", "edict explosions follow leshrac and land on anything near him including towers, fewer targets means more hits each, hug the edge so the tower eats every blast and skip the right clicks to keep it on the creeps"], ["tip", "edict keeps exploding around his corpse after he dies, dying mid siege still cracks the tower"], ["tip", "edict and pulse nova both hit invisible and fogged units, chase the invis runner on a predictable path and the explosions draw him for you"], ["tip", "lightning storm's heavy slow holds them in place, bolt first and split earth lands clean"], ["counter", "split earth is among the easiest stuns to sidestep, the windup telegraphs it, a small sidestep or a step back dodges the rocks"], ["counter", "dispel leshrac while the scepter nihilism runs and the whole ethereal aura collapses on the spot"]]
     },
     "lich": {
       "identity": "frost control hard support, frost blast chills and nukes the clump, frost shield armors the siege and burns the melee dive, sinister gaze drags the runner, chain frost bounces the fight apart",
       "why": "hard support lane anchor, blast spam wins the harass war and shield taxes every dive, chain frost deletes the clumped fights, favored into lancer and terrorblade style illusion floods, vetoed by long range spam and the storm dive",
       "how": "blast the clump and the ranged creep, shield the sieged core or the tower, gaze the runner into the team after their stuns land, chain frost the clump, never gaze into their interrupt",
       "when": "lane poke from the first blast ranks, shield holds every tower siege, chain frost windows decide the mid fights, late the shield still blanks the right click dives",
-      "build": "",
-      "timings": [],
+      "build": "glimmer, solar crest, blink, shard, force, aether lens, aeon disk",
+      "timings": [["glimmer", 21], ["solar crest", 23]],
       "tech": [
         "zeus, sniper, and storm spirit are the vetoes, the long range spam and the dive outtrade the waddle",
         "phantom lancer, terrorblade, and lifestealer style melee floods are the free wins, chain frost and the shield eat everything that commits close"
-      ]
+      ],
+      "mechanics": [["tip", "the sacrifice innate eats an allied creep, its health becomes his mana and he pockets the experience bounty"], ["tip", "frost shield blunts right clicks and instant attacks of every kind, spell damage and tower shots pass right through"], ["tip", "frost shield lands on creeps, couriers, ward type bodies, and every tower and building, shield the objective under siege"], ["tip", "the sinister gaze drag ignores pathing, victims walk straight over cliffs and terrain, pull them off the high ground or onto your side of it"], ["tip", "sinister gaze is a hard disable in practice, the victim cannot act, self casting any save is off the table while it runs"], ["tip", "spell block only swallows the first chain frost hit, the orb keeps bouncing and keeps growing after"], ["counter", "the gaze drag reels you a long stretch toward lich, getting caught means walking straight into his team, keep your distance before it starts"], ["counter", "frost shield and the gaze drag both wipe off with a basic dispel, carry one against him"]]
     },
     "lifestealer": {
       "identity": "melee carry with rage spell immunity, feast percent lifesteal, and infest dives through allies",
@@ -159,7 +163,7 @@
       "why": "soft support playmaker, favored into jakiro and void spirit lines, vetoed by arc warden clones and bounty tracks, arrows decide picks before fights start",
       "how": "arrow the fog lines beside their stun, starstorm the trade, leap the cliff, quiver poke without creep aggro, veil the team for the engage",
       "when": "lane arrow threat from the start, mid roams land the long stun, late moonlight ghost starts the engage",
-      "build": "essence distiller, vessel, mekansm, force, blink, lotus, shard",
+      "build": "essence distiller, vessel, mekansm, blink, lotus, shard, sheepstick",
       "timings": [["essence distiller", 14], ["vessel", 18]],
       "tech": [
         "arc warden, io, and bounty hunter are the vetoes, clones and track reveal gut the invis value",
@@ -198,8 +202,8 @@
       "why": "soft support stalker, favored into techies and shadow fiend lines, vetoed by luna and zeus long range spam, the carapace flips every spell trade",
       "how": "vendetta the pick from fog, impale the stacked lineup, carapace their retaliation, drain the caster with the strike, vanish off the map again",
       "when": "absent from lane once vendetta lands, mid game pick machine, late the invis sets up stuns instead of burst",
-      "build": "phylactery, blink, cyclone, force, shard, agh, dagon 5",
-      "timings": [["phylactery", 22], ["blink", 27]],
+      "build": "essence distiller, blink, force, shard, aether lens, dagon 5, agh",
+      "timings": [["essence distiller", 16], ["blink", 26]],
       "tech": [
         "luna, zeus, and invoker are the vetoes, long range spell spam outranges the stalk combo",
         "techies, shadow fiend, and skywrath style lines are the free wins, paper backs fold to the stalk burst"
@@ -289,8 +293,8 @@
       "why": "hard support playmaker, favored into shadow fiend and tiny lines, vetoed by arc warden clones and lancer swarms, the curse flips every crowd control war",
       "how": "burn fat hp from arctic flight, splinter out of fog, embrace the focused core, curse the clumped engage, let their carry do the killing",
       "when": "lane bully with burn harass, mid curse setups decide fights, late embrace keeps the core alive through physical burst",
-      "build": "blink, glimmer, witch blade, aether lens, cyclone, pike, aeon disk",
-      "timings": [["blink", 21], ["glimmer", 27]],
+      "build": "blink, glimmer, aether lens, shard, mekansm, lotus, aeon disk",
+      "timings": [["blink", 22], ["glimmer", 27]],
       "tech": [
         "arc warden, phantom lancer, and necrophos are the vetoes, clones and sustained heals blunt the curse",
         "shadow fiend, tiny, and kez style lines are the free wins, clumped squishy folds to curse plus splinter"

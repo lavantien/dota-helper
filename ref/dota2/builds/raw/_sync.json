@@ -1,67 +1,25 @@
 {
   "series": "7.41",
   "heroes": {
-    "abaddon": {
-      "roles": [
-        "5"
-      ],
-      "dropped": null
-    },
-    "alchemist": {
-      "roles": [
-        "1"
-      ],
-      "dropped": null
-    },
-    "anti-mage": {
-      "roles": [
-        "1"
-      ],
-      "dropped": null
-    },
-    "arc-warden": {
-      "roles": [
-        "2"
-      ],
-      "dropped": null
-    },
-    "bloodseeker": {
-      "roles": [
-        "2"
-      ],
-      "dropped": null
-    },
     "bounty-hunter": {
       "roles": [
         "4"
       ],
       "dropped": null
     },
-    "centaur": {
+    "brewmaster": {
       "roles": [
         "3"
       ],
       "dropped": null
     },
-    "crystal-maiden": {
+    "clinkz": {
       "roles": [
-        "5"
-      ],
-      "dropped": null
-    },
-    "dark-seer": {
-      "roles": [
-        "3"
+        "1"
       ],
       "dropped": null
     },
     "dawnbreaker": {
-      "roles": [
-        "3"
-      ],
-      "dropped": null
-    },
-    "doom": {
       "roles": [
         "3"
       ],
@@ -73,51 +31,9 @@
       ],
       "dropped": null
     },
-    "drow-ranger": {
-      "roles": [
-        "1"
-      ],
-      "dropped": null
-    },
-    "earth-spirit": {
-      "roles": [
-        "2"
-      ],
-      "dropped": null
-    },
-    "earthshaker": {
-      "roles": [
-        "2"
-      ],
-      "dropped": null
-    },
-    "elder-titan": {
-      "roles": [
-        "4"
-      ],
-      "dropped": null
-    },
-    "ember-spirit": {
-      "roles": [
-        "2"
-      ],
-      "dropped": null
-    },
     "enigma": {
       "roles": [
         "3"
-      ],
-      "dropped": null
-    },
-    "faceless-void": {
-      "roles": [
-        "1"
-      ],
-      "dropped": null
-    },
-    "hoodwink": {
-      "roles": [
-        "4"
       ],
       "dropped": null
     },
@@ -127,15 +43,15 @@
       ],
       "dropped": null
     },
-    "kunkka": {
+    "leshrac": {
       "roles": [
-        "3"
+        "2"
       ],
       "dropped": null
     },
-    "legion-commander": {
+    "lich": {
       "roles": [
-        "3"
+        "5"
       ],
       "dropped": null
     },
@@ -145,25 +61,7 @@
       ],
       "dropped": null
     },
-    "lina": {
-      "roles": [
-        "2"
-      ],
-      "dropped": null
-    },
     "lone-druid": {
-      "roles": [
-        "1"
-      ],
-      "dropped": null
-    },
-    "magnataur": {
-      "roles": [
-        "2"
-      ],
-      "dropped": null
-    },
-    "medusa": {
       "roles": [
         "1"
       ],
@@ -171,7 +69,7 @@
     },
     "mirana": {
       "roles": [
-        "5"
+        "4"
       ],
       "dropped": null
     },
@@ -187,27 +85,9 @@
       ],
       "dropped": null
     },
-    "night-stalker": {
-      "roles": [
-        "3"
-      ],
-      "dropped": null
-    },
     "nyx-assassin": {
       "roles": [
-        "5"
-      ],
-      "dropped": null
-    },
-    "ogre-magi": {
-      "roles": [
         "4"
-      ],
-      "dropped": null
-    },
-    "phantom-assassin": {
-      "roles": [
-        "1"
       ],
       "dropped": null
     },
@@ -217,61 +97,13 @@
       ],
       "dropped": null
     },
-    "phoenix": {
-      "roles": [
-        "4"
-      ],
-      "dropped": null
-    },
-    "pudge": {
-      "roles": [
-        "4"
-      ],
-      "dropped": null
-    },
-    "razor": {
-      "roles": [
-        "3"
-      ],
-      "dropped": null
-    },
-    "ringmaster": {
-      "roles": [
-        "5"
-      ],
-      "dropped": null
-    },
-    "rubick": {
-      "roles": [
-        "4"
-      ],
-      "dropped": null
-    },
-    "sand-king": {
-      "roles": [
-        "3"
-      ],
-      "dropped": null
-    },
     "shadow-shaman": {
       "roles": [
         "5"
       ],
       "dropped": null
     },
-    "slardar": {
-      "roles": [
-        "2"
-      ],
-      "dropped": null
-    },
     "slark": {
-      "roles": [
-        "2"
-      ],
-      "dropped": null
-    },
-    "sniper": {
       "roles": [
         "2"
       ],
@@ -283,25 +115,7 @@
       ],
       "dropped": null
     },
-    "spirit-breaker": {
-      "roles": [
-        "4"
-      ],
-      "dropped": null
-    },
     "sven": {
-      "roles": [
-        "1"
-      ],
-      "dropped": null
-    },
-    "templar-assassin": {
-      "roles": [
-        "1"
-      ],
-      "dropped": null
-    },
-    "terrorblade": {
       "roles": [
         "1"
       ],
@@ -313,63 +127,9 @@
       ],
       "dropped": null
     },
-    "troll-warlord": {
-      "roles": [
-        "1"
-      ],
-      "dropped": null
-    },
-    "tusk": {
-      "roles": [
-        "4"
-      ],
-      "dropped": null
-    },
-    "undying": {
-      "roles": [
-        "5"
-      ],
-      "dropped": null
-    },
-    "ursa": {
-      "roles": [
-        "1"
-      ],
-      "dropped": null
-    },
-    "visage": {
-      "roles": [
-        "3"
-      ],
-      "dropped": null
-    },
-    "windranger": {
-      "roles": [
-        "1"
-      ],
-      "dropped": null
-    },
     "winter-wyvern": {
       "roles": [
-        "4"
-      ],
-      "dropped": null
-    },
-    "witch-doctor": {
-      "roles": [
         "5"
-      ],
-      "dropped": null
-    },
-    "wraith-king": {
-      "roles": [
-        "3"
-      ],
-      "dropped": null
-    },
-    "zeus": {
-      "roles": [
-        "2"
       ],
       "dropped": null
     }
