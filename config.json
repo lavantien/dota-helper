@@ -37,20 +37,8 @@
       "tier": "dedicated"
     },
     {
-      "slug": "troll-warlord",
-      "name": "Troll Warlord",
-      "role": "1",
-      "tier": "dedicated"
-    },
-    {
-      "slug": "spectre",
-      "name": "Spectre",
-      "role": "1",
-      "tier": "dedicated"
-    },
-    {
-      "slug": "lifestealer",
-      "name": "Lifestealer",
+      "slug": "clinkz",
+      "name": "Clinkz",
       "role": "1",
       "tier": "dedicated"
     },
@@ -61,44 +49,14 @@
       "tier": "dedicated"
     },
     {
-      "slug": "anti-mage",
-      "name": "Anti-Mage",
+      "slug": "lifestealer",
+      "name": "Lifestealer",
       "role": "1",
       "tier": "dedicated"
     },
     {
-      "slug": "windranger",
-      "name": "Windranger",
-      "role": "1",
-      "tier": "dedicated"
-    },
-    {
-      "slug": "phantom-assassin",
-      "name": "Phantom Assassin",
-      "role": "1",
-      "tier": "dedicated"
-    },
-    {
-      "slug": "ursa",
-      "name": "Ursa",
-      "role": "1",
-      "tier": "dedicated"
-    },
-    {
-      "slug": "faceless-void",
-      "name": "Faceless Void",
-      "role": "1",
-      "tier": "dedicated"
-    },
-    {
-      "slug": "terrorblade",
-      "name": "Terrorblade",
-      "role": "1",
-      "tier": "dedicated"
-    },
-    {
-      "slug": "medusa",
-      "name": "Medusa",
+      "slug": "spectre",
+      "name": "Spectre",
       "role": "1",
       "tier": "dedicated"
     },
@@ -109,20 +67,8 @@
       "tier": "dedicated"
     },
     {
-      "slug": "templar-assassin",
-      "name": "Templar Assassin",
-      "role": "1",
-      "tier": "dedicated"
-    },
-    {
-      "slug": "drow-ranger",
-      "name": "Drow Ranger",
-      "role": "1",
-      "tier": "dedicated"
-    },
-    {
-      "slug": "alchemist",
-      "name": "Alchemist",
+      "slug": "natures-prophet",
+      "name": "Nature's Prophet",
       "role": "1",
       "tier": "dedicated"
     },
@@ -133,38 +79,14 @@
       "tier": "dedicated"
     },
     {
-      "slug": "natures-prophet",
-      "name": "Nature's Prophet",
-      "role": "1",
-      "tier": "dedicated"
-    },
-    {
-      "slug": "arc-warden",
-      "name": "Arc Warden",
-      "role": "2",
-      "tier": "dedicated"
-    },
-    {
-      "slug": "bloodseeker",
-      "name": "Bloodseeker",
-      "role": "2",
-      "tier": "dedicated"
-    },
-    {
       "slug": "dragon-knight",
       "name": "Dragon Knight",
       "role": "2",
       "tier": "dedicated"
     },
     {
-      "slug": "earth-spirit",
-      "name": "Earth Spirit",
-      "role": "2",
-      "tier": "dedicated"
-    },
-    {
-      "slug": "earthshaker",
-      "name": "Earthshaker",
+      "slug": "leshrac",
+      "name": "Leshrac",
       "role": "2",
       "tier": "dedicated"
     },
@@ -175,68 +97,8 @@
       "tier": "dedicated"
     },
     {
-      "slug": "slardar",
-      "name": "Slardar",
-      "role": "2",
-      "tier": "dedicated"
-    },
-    {
-      "slug": "magnataur",
-      "name": "Magnus",
-      "role": "2",
-      "tier": "dedicated"
-    },
-    {
-      "slug": "ember-spirit",
-      "name": "Ember Spirit",
-      "role": "2",
-      "tier": "dedicated"
-    },
-    {
-      "slug": "lina",
-      "name": "Lina",
-      "role": "2",
-      "tier": "dedicated"
-    },
-    {
-      "slug": "sniper",
-      "name": "Sniper",
-      "role": "2",
-      "tier": "dedicated"
-    },
-    {
-      "slug": "zeus",
-      "name": "Zeus",
-      "role": "2",
-      "tier": "dedicated"
-    },
-    {
-      "slug": "visage",
-      "name": "Visage",
-      "role": "3",
-      "tier": "dedicated"
-    },
-    {
       "slug": "enigma",
       "name": "Enigma",
-      "role": "3",
-      "tier": "dedicated"
-    },
-    {
-      "slug": "wraith-king",
-      "name": "Wraith King",
-      "role": "3",
-      "tier": "dedicated"
-    },
-    {
-      "slug": "night-stalker",
-      "name": "Night Stalker",
-      "role": "3",
-      "tier": "dedicated"
-    },
-    {
-      "slug": "legion-commander",
-      "name": "Legion Commander",
       "role": "3",
       "tier": "dedicated"
     },
@@ -247,26 +109,8 @@
       "tier": "dedicated"
     },
     {
-      "slug": "dark-seer",
-      "name": "Dark Seer",
-      "role": "3",
-      "tier": "dedicated"
-    },
-    {
-      "slug": "kunkka",
-      "name": "Kunkka",
-      "role": "3",
-      "tier": "dedicated"
-    },
-    {
-      "slug": "razor",
-      "name": "Razor",
-      "role": "3",
-      "tier": "dedicated"
-    },
-    {
-      "slug": "centaur",
-      "name": "Centaur Warrunner",
+      "slug": "brewmaster",
+      "name": "Brewmaster",
       "role": "3",
       "tier": "dedicated"
     },
@@ -277,122 +121,38 @@
       "tier": "dedicated"
     },
     {
-      "slug": "doom",
-      "name": "Doom",
-      "role": "3",
-      "tier": "dedicated"
-    },
-    {
-      "slug": "sand-king",
-      "name": "Sand King",
-      "role": "3",
-      "tier": "dedicated"
-    },
-    {
       "slug": "bounty-hunter",
       "name": "Bounty Hunter",
       "role": "4",
       "tier": "dedicated"
     },
     {
-      "slug": "elder-titan",
-      "name": "Elder Titan",
+      "slug": "nyx-assassin",
+      "name": "Nyx Assassin",
       "role": "4",
       "tier": "dedicated"
     },
     {
-      "slug": "spirit-breaker",
-      "name": "Spirit Breaker",
-      "role": "4",
-      "tier": "dedicated"
-    },
-    {
-      "slug": "phoenix",
-      "name": "Phoenix",
+      "slug": "mirana",
+      "name": "Mirana",
       "role": "4",
       "tier": "dedicated"
     },
     {
       "slug": "winter-wyvern",
       "name": "Winter Wyvern",
-      "role": "4",
+      "role": "5",
       "tier": "dedicated"
     },
     {
-      "slug": "rubick",
-      "name": "Rubick",
-      "role": "4",
-      "tier": "dedicated"
-    },
-    {
-      "slug": "pudge",
-      "name": "Pudge",
-      "role": "4",
-      "tier": "dedicated"
-    },
-    {
-      "slug": "tusk",
-      "name": "Tusk",
-      "role": "4",
-      "tier": "dedicated"
-    },
-    {
-      "slug": "ogre-magi",
-      "name": "Ogre Magi",
-      "role": "4",
-      "tier": "dedicated"
-    },
-    {
-      "slug": "hoodwink",
-      "name": "Hoodwink",
-      "role": "4",
+      "slug": "lich",
+      "name": "Lich",
+      "role": "5",
       "tier": "dedicated"
     },
     {
       "slug": "shadow-shaman",
       "name": "Shadow Shaman",
-      "role": "5",
-      "tier": "dedicated"
-    },
-    {
-      "slug": "nyx-assassin",
-      "name": "Nyx Assassin",
-      "role": "5",
-      "tier": "dedicated"
-    },
-    {
-      "slug": "abaddon",
-      "name": "Abaddon",
-      "role": "5",
-      "tier": "dedicated"
-    },
-    {
-      "slug": "mirana",
-      "name": "Mirana",
-      "role": "5",
-      "tier": "dedicated"
-    },
-    {
-      "slug": "witch-doctor",
-      "name": "Witch Doctor",
-      "role": "5",
-      "tier": "dedicated"
-    },
-    {
-      "slug": "ringmaster",
-      "name": "Ringmaster",
-      "role": "5",
-      "tier": "dedicated"
-    },
-    {
-      "slug": "crystal-maiden",
-      "name": "Crystal Maiden",
-      "role": "5",
-      "tier": "dedicated"
-    },
-    {
-      "slug": "undying",
-      "name": "Undying",
       "role": "5",
       "tier": "dedicated"
     }
