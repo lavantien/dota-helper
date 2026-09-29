@@ -64,14 +64,18 @@ type stratzClient struct {
 	cfg   *config.Config
 	token string
 	rl    *rateLimiter
+	// endpoint defaults to stratzEndpoint; the field exists so tests point
+	// the client at an httptest server instead of the live api
+	endpoint string
 }
 
 func newStratzClient(cfg *config.Config, token string) *stratzClient {
 	return &stratzClient{
-		http:  &http.Client{Timeout: httpTimeout},
-		cfg:   cfg,
-		token: token,
-		rl:    newRateLimiter(cfg.Stratz.RequestIntervalMs, cfg.Stratz.BurstCapPerSec, realClock{}),
+		http:     &http.Client{Timeout: httpTimeout},
+		cfg:      cfg,
+		token:    token,
+		rl:       newRateLimiter(cfg.Stratz.RequestIntervalMs, cfg.Stratz.BurstCapPerSec, realClock{}),
+		endpoint: stratzEndpoint,
 	}
 }
 
@@ -86,7 +90,7 @@ func (s *stratzClient) query(q string) ([]byte, error) {
 	var lastErr error
 	for attempt := 0; attempt <= maxRetries; attempt++ {
 		s.rl.Wait()
-		req, err := http.NewRequest(http.MethodPost, stratzEndpoint, bytes.NewReader(payload))
+		req, err := http.NewRequest(http.MethodPost, s.endpoint, bytes.NewReader(payload))
 		if err != nil {
 			return nil, err
 		}
