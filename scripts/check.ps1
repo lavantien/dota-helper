@@ -482,7 +482,7 @@ foreach ($t in $slocTargets) {
     $seen[$full] = $true
     $n = (Get-Content $full | Measure-Object -Line).Lines
     $rel = if ($full.StartsWith($root)) { $full.Substring($root.Length + 1) } else { $full }
-    $cap = $slocCapFor[$rel]
+    $cap = $slocCapFor[$rel -replace '/', '\']
     if ($null -eq $cap) { $cap = 500 } else { $raised++ }
     if ($n -gt $cap) { $fail += "$(Split-Path $full -Leaf): $n lines exceeds $cap SLOC cap" }
 }
@@ -490,7 +490,7 @@ if ($fail.Count -eq 0) { Write-Host "ok: $($seen.Count) files within their SLOC 
 
 # scan surface for attribution and token leaks (this script defines the patterns, skip itself)
 $scanFiles = Get-ChildItem $root -Recurse -File -Include *.md, *.ps1, *.js, *.html, *.mjs, *.go, *.json, 'Makefile' |
-    Where-Object { $_.FullName -notmatch '\\(\.git|\.claude|var|node_modules)\\' -and $_.Name -ne 'check.ps1' }
+    Where-Object { $_.FullName -notmatch '[/\\](\.git|\.claude|var|node_modules)[/\\]' -and $_.Name -ne 'check.ps1' }
 $attribution = 'Co-Authored-By', 'Generated with Claude'
 foreach ($f in $scanFiles) {
     $hit = Select-String -Path $f.FullName -Pattern ($attribution -join '|')
