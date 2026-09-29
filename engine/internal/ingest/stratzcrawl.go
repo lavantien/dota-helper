@@ -159,28 +159,44 @@ func fetchDate(at string) string {
 	return at
 }
 
-// fetchRosterCache pulls the roster once and commits it as the crawl anchor.
-func fetchRosterCache(c *stratzClient, cfg *config.Config) (*rosterFile, error) {
-	heroes, err := c.FetchRoster()
-	if err != nil {
-		return nil, err
-	}
+// buildRosterFile maps the remote roster to crawl entries, failing loudly on
+// any shortName outside the slug charset: roster slugs become cache file names
+// and data columns downstream, so a hostile entry aborts the crawl instead of
+// escaping the cache dir or injecting markup into emitted data.
+func buildRosterFile(cfg *config.Config, heroes []rosterHero) (*rosterFile, error) {
 	rf := &rosterFile{
 		FetchedAt: time.Now().UTC().Format(time.RFC3339),
 		Bracket:   cfg.Scope.Bracket,
 		Source:    "stratz",
 	}
 	for _, h := range heroes {
+		slug := cfg.SlugFromNPC(h.ShortName)
+		if !config.ValidSlug(slug) {
+			return nil, fmt.Errorf("stratz roster hero %d shortName %q yields invalid slug %q", h.ID, h.ShortName, slug)
+		}
 		name := h.DisplayName
 		if name == "" {
 			name = h.ShortName
 		}
 		rf.Heroes = append(rf.Heroes, rosterEntry{
 			ID:   h.ID,
-			Slug: cfg.SlugFromNPC(h.ShortName),
+			Slug: slug,
 			Name: name,
 			Npc:  npcOf(h.ShortName),
 		})
+	}
+	return rf, nil
+}
+
+// fetchRosterCache pulls the roster once and commits it as the crawl anchor.
+func fetchRosterCache(c *stratzClient, cfg *config.Config) (*rosterFile, error) {
+	heroes, err := c.FetchRoster()
+	if err != nil {
+		return nil, err
+	}
+	rf, err := buildRosterFile(cfg, heroes)
+	if err != nil {
+		return nil, err
 	}
 	if err := writeJson(rosterPath(cfg), rf); err != nil {
 		return nil, err

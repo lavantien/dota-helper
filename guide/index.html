@@ -253,8 +253,12 @@ function renderHeatmap() {
         .on('mousemove', ev => {
           const tip = d3.select('#tip').style('display', 'block')
             .style('left', (ev.clientX + 14) + 'px').style('top', (ev.clientY + 14) + 'px');
-          tip.html('<b>' + h.name + ' vs ' + e.replace(/-/g, ' ') + '</b><br>'
-            + 'matchup z ' + fmt(v) + ', pool hero ' + (v > 0 ? 'loses' : 'gains')
+          // hero names are roster-sourced strings, so the tooltip is built from
+          // text nodes, never html()
+          tip.html('');
+          tip.append('b').text(h.name + ' vs ' + e.replace(/-/g, ' '));
+          tip.append('br');
+          tip.append('span').text('matchup z ' + fmt(v) + ', pool hero ' + (v > 0 ? 'loses' : 'gains')
             + ' ' + a.toFixed(1) + ' sd vs matchup average');
         }).on('mouseleave', () => d3.select('#tip').style('display', 'none'))
         .on('click', () => showHero(h.slug));

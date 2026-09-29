@@ -551,3 +551,12 @@ func (c *Config) SlugFromNPC(npc string) string {
 	}
 	return s
 }
+
+var slugRx = regexp.MustCompile(`^[a-z0-9-]+$`)
+
+// ValidSlug reports whether s is a safe roster slug: lowercase letters, digits,
+// hyphens, nothing else. Roster slugs become cache file names and data columns
+// downstream, so anything else must fail loudly at the roster boundary.
+func ValidSlug(s string) bool {
+	return slugRx.MatchString(s)
+}

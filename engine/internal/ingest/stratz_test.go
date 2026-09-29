@@ -148,6 +148,32 @@ func TestParseRosterSortsByID(t *testing.T) {
 	}
 }
 
+func TestBuildRosterFileRejectsHostileShortNames(t *testing.T) {
+	cfg := &config.Config{Aliases: map[string]string{"antimage": "anti-mage"}}
+	heroes := []rosterHero{
+		{ID: 1, Name: "npc_dota_hero_antimage", DisplayName: "Anti-Mage", ShortName: "antimage"},
+		{ID: 2, Name: "npc_dota_hero_axe", DisplayName: "Axe", ShortName: "axe"},
+	}
+	for _, hostile := range []string{"../../picker/gates", "<img src=x onerror=alert(1)>", "a b", ""} {
+		heroes[1].ShortName = hostile
+		_, err := buildRosterFile(cfg, heroes)
+		if err == nil || !strings.Contains(err.Error(), "invalid slug") {
+			t.Errorf("shortName %q must fail loudly, got %v", hostile, err)
+		}
+	}
+	heroes[1].ShortName = "axe"
+	rf, err := buildRosterFile(cfg, heroes)
+	if err != nil {
+		t.Fatal(err)
+	}
+	if len(rf.Heroes) != 2 || rf.Heroes[0].Slug != "anti-mage" || rf.Heroes[1].Slug != "axe" {
+		t.Fatalf("roster entries = %+v", rf.Heroes)
+	}
+	if rf.Heroes[1].Name != "Axe" || rf.Heroes[1].Npc != "npc_dota_hero_axe" {
+		t.Fatalf("roster entry fields = %+v", rf.Heroes[1])
+	}
+}
+
 func TestAcceptanceGates(t *testing.T) {
 	cfg := &config.Config{Stratz: config.StratzCfg{MinWithRows: 120, MinVsRows: 120, MaxAbsSynergy: 20}}
 	tests := []struct {

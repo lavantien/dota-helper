@@ -20,6 +20,7 @@ $dumpSlugs = @('arc-warden', 'bloodseeker', 'dark-seer', 'doom', 'dragon-knight'
 $expected = @(
     'Makefile',
     '.gitignore',
+    'scripts/serve.py',
     'config.json',
     'content.json',
     'picker/gates.json',
@@ -447,7 +448,7 @@ if ($fail.Count -eq 0) { Write-Host "ok: $($dumpSlugs.Count) previous-pool fallb
 # SLOC cap on every source and doc file we ship
 $slocTargets = @(
     'Makefile', 'scripts/fetch-matchups.ps1', 'scripts/build-guide-data.ps1', 'scripts/check.ps1',
-    'scripts/fetch-howdoiplay.ps1',
+    'scripts/fetch-howdoiplay.ps1', 'scripts/serve.py',
     'ui/ui.css', 'guide/guide.css', 'picker/picker.css',
     'guide/index.html', 'guide/data.js', 'guide/guide-data-generated.js',
     'readme.md', 'ref/dota2/README.md',
@@ -489,7 +490,7 @@ foreach ($t in $slocTargets) {
 if ($fail.Count -eq 0) { Write-Host "ok: $($seen.Count) files within their SLOC caps, $raised on raised caps" }
 
 # scan surface for attribution and token leaks (this script defines the patterns, skip itself)
-$scanFiles = Get-ChildItem $root -Recurse -File -Include *.md, *.ps1, *.js, *.html, *.mjs, *.go, *.json, 'Makefile' |
+$scanFiles = Get-ChildItem $root -Recurse -File -Include *.md, *.ps1, *.js, *.html, *.mjs, *.go, *.json, *.py, 'Makefile' |
     Where-Object { $_.FullName -notmatch '[/\\](\.git|\.claude|var|node_modules)[/\\]' -and $_.Name -ne 'check.ps1' }
 $attribution = 'Co-Authored-By', 'Generated with Claude'
 foreach ($f in $scanFiles) {

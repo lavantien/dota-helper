@@ -299,3 +299,16 @@ func TestShortNPC(t *testing.T) {
 		}
 	}
 }
+
+func TestValidSlug(t *testing.T) {
+	for _, s := range []string{"anti-mage", "dark-seer", "pudge", "hoodwink", "obsidian-destroyer-9", "axe"} {
+		if !ValidSlug(s) {
+			t.Errorf("ValidSlug(%q) = false, want true", s)
+		}
+	}
+	for _, s := range []string{"", "../..", "a/b", `a\b`, "<img>", "x y", "Pudge", "a.b", "never more"} {
+		if ValidSlug(s) {
+			t.Errorf("ValidSlug(%q) = true, want false", s)
+		}
+	}
+}

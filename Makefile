@@ -20,9 +20,10 @@ dota:
 picker:
 	pwsh -NoProfile -Command "Start-Process (Join-Path (Get-Location) 'picker/picker.html')"
 
-# static server for visual checks over http (file:// is blocked in browser tooling)
+# static server for visual checks over http (file:// is blocked in browser
+# tooling); loopback only, page trees only, so var/ and .git stay unserved
 serve:
-	python -m http.server $(PORT)
+	python scripts/serve.py $(PORT)
 
 engine-build:
 	$(GO_RUN) go -C $(ENGINE_DIR) build -o ../$(BIN) ./cmd/engine
