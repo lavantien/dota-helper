@@ -1,7 +1,7 @@
 # dota helper
 
 [![ci](https://github.com/lavantien/dota-helper/actions/workflows/ci.yml/badge.svg)](https://github.com/lavantien/dota-helper/actions/workflows/ci.yml)
-[![codecov](https://codecov.io/gh/lavantien/dota-helper/badge.svg)](https://codecov.io/gh/lavantien/dota-helper)
+[![coverage](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/lavantien/dota-helper/main/coverage.json)](https://github.com/lavantien/dota-helper/actions/workflows/ci.yml)
 
 offline dota 2 pick simulator and hero-pool guide for patch 7.41f. static pages with zero runtime deps, an offline go engine over duckdb, and one authored config hub. the picker is the main tool, the guide supplements it.
 
@@ -47,7 +47,7 @@ the go engine runs only inside the golang:1.27 linux image (the duckdb cgo drive
 - fetch: `fetch-stratz`, `fetch-builds`, `fetch-matches`, `fetch-positions`, `fetch-howdoiplay`, `fetch-matchups`, plus `-refresh` variants
 - build data: `ingest`, `mine`, `emit` (or `emit-data`, `emit-guide`, `emit-picker`), `emit-goldens`, `build-guide-data`, `sync-builds`, `order-pool`
 - evaluate: `eval`, `eval-fit`, `eval-fit-alphas`, `eval-fit-completion`, `eval-promote SECTION=weights|alphas|completion`
-- test: `test-picker`, `test-picker-cover`, `engine-test`, `engine-test-<pkg>`, `engine-cover`, `engine-cover-summary`, `engine-cover-<pkg>`, `check`, `check-linux`
+- test: `test-picker`, `test-picker-cover`, `engine-test`, `engine-test-<pkg>`, `engine-cover`, `engine-cover-summary`, `engine-cover-<pkg>`, `coverage-badge`, `check`, `check-linux`
 - inspect: `db-query Q=...`, `probe-*`
 
 ## conventions
@@ -59,7 +59,7 @@ the go engine runs only inside the golang:1.27 linux image (the duckdb cgo drive
 
 ## ci
 
-two jobs on push to main: `check` (test-picker plus the static guard) and `coverage` (the dockerized engine suite with `make engine-cover` plus the node coverage run, uploaded to codecov, project gate above 90). the full suite takes 30-60m locally via `make engine-test`, `make check-linux` replays the static guard under linux pwsh the way ci runs it.
+two jobs on push to main: `check` (test-picker plus the static guard) and `coverage` (the dockerized engine suite with `make engine-cover` plus the node coverage run). the coverage job fails below the project floor of 90 and commits `coverage.json`, the shields endpoint the readme badge renders. the full suite takes 30-60m locally via `make engine-test`, `make check-linux` replays the static guard under linux pwsh the way ci runs it.
 
 ## license
 

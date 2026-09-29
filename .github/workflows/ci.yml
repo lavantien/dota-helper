@@ -27,10 +27,14 @@ jobs:
   # the go suite runs dockerized (same GO_RUN pattern as local, tests are
   # offline so the STRATZ_TOKEN pass-through is a no-op when unset). cold
   # runs pay the golang:1.27 pull plus the duckdb cgo build on top of the
-  # instrumented suite, hence the wide timeout
+  # instrumented suite, hence the wide timeout. the job fails below the
+  # coverage floor and commits the badge json the readme renders (default
+  # token commits never retrigger workflows)
   coverage:
     runs-on: ubuntu-latest
     timeout-minutes: 150
+    permissions:
+      contents: write
     steps:
       - uses: actions/checkout@v6
       - uses: actions/setup-node@v6
@@ -38,7 +42,13 @@ jobs:
           node-version: 24
       - run: make engine-cover
       - run: make test-picker-cover
-      - uses: codecov/codecov-action@v5
-        with:
-          files: engine/coverage.out,picker-lcov.info
-          fail_ci_if_error: false
+      - run: make coverage-badge
+      - name: commit the badge
+        run: |
+          git config user.name "ci"
+          git config user.email "ci@users.noreply.github.com"
+          if ! git diff --quiet coverage.json; then
+            git add coverage.json
+            git commit -m "chore: refresh the coverage badge [skip ci]"
+            git push
+          fi

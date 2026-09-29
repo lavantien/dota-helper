@@ -3,7 +3,7 @@
         fetch-builds-refresh fetch-matches fetch-matches-refresh fetch-positions ingest db-query mine sync-builds order-pool emit emit-data \
         emit-guide emit-picker emit-goldens eval eval-fit eval-fit-alphas eval-fit-completion \
         eval-promote refresh fixtures verify fetch-matchups \
-        build-guide-data fetch-howdoiplay merge-mechanics check check-linux
+        build-guide-data fetch-howdoiplay merge-mechanics check check-linux coverage-badge
 
 # duckdb cgo has no supported native windows toolchain (crt-mixing, verified),
 # so every go build and test runs in the linux golang image, same pattern as the
@@ -58,6 +58,11 @@ engine-cover:
 # and per-function table sorted worst-first, the gap-closure work queue
 engine-cover-summary:
 	python scripts/cover-summary.py $(ENGINE_DIR)/coverage.out
+
+# fails below the project floor and writes the shields endpoint json the
+# readme badge renders (ci commits the file after a coverage run)
+coverage-badge:
+	python scripts/coverage-badge.py
 
 # scoped loop for one internal package during coverage gap closure, same
 # shape as engine-test-%: measures the package's binary against the whole
