@@ -1,6 +1,9 @@
 package ingest
 
 import (
+	"encoding/json"
+	"io"
+	"os"
 	"strings"
 	"testing"
 )
@@ -87,5 +90,84 @@ func TestMeasureDraftCoverage(t *testing.T) {
 	cov := measureDraftCoverage([]probeMatch{good(), nine, unbalanced, dup, bans, {ID: 2}})
 	if cov.Rows != 6 || cov.Complete != 2 || cov.AnyDraft != 5 {
 		t.Errorf("coverage = %+v, want 6 rows / 2 complete / 5 with any draft", cov)
+	}
+}
+
+// probe body excerpts are raw hostile bytes: shortBody must neutralize them
+// and keep its 600-byte cap
+func TestShortBodyNeutralizesAndCaps(t *testing.T) {
+	got := shortBody([]byte("\x1b[2Khead"))
+	if want := `\x1b[2Khead`; got != want {
+		t.Fatalf("shortBody = %q, want %q", got, want)
+	}
+	long := shortBody([]byte(strings.Repeat("y", 650)))
+	if !strings.HasPrefix(long, strings.Repeat("y", 600)) || !strings.HasSuffix(long, "...") {
+		t.Fatalf("cap missing: %d bytes, tail %q", len(long), long[len(long)-3:])
+	}
+	for _, r := range long {
+		if isControlRune(r) {
+			t.Fatalf("control rune %q survived: %q", r, long)
+		}
+	}
+}
+
+// the introspection snapshot prints every schema name with %v/%s: names are
+// remote text, so decoding a hostile 200 snapshot must leave no control rune
+// in any of them (json \uXXXX escapes decode into real C0/C1 bytes)
+func TestIntrospectionNamesNeutralizedAtDecode(t *testing.T) {
+	body := []byte(`{"sch":{"queryType":{"name":"Q\u0000t","fields":[{"name":"matches\u001b[2K",` +
+		`"args":[{"name":"take\n","type":{"kind":"LIST","name":null,"ofType":{"kind":"SCALAR","name":"Int\u009b"}}}],` +
+		`"type":{"kind":"OBJECT","name":"Match\u0007Type"}}]},"types":[{"name":"T\u0007","fields":[],"inputFields":[],` +
+		`"enumValues":[{"name":"A\u001b"}]}]}}`)
+	var env introEnvelope
+	if err := json.Unmarshal(body, &env); err != nil {
+		t.Fatal(err)
+	}
+	qt := env.Sch.QueryType
+	names := map[string]string{
+		"queryType name":  qt.Name,
+		"field name":      qt.Fields[0].Name,
+		"arg name":        qt.Fields[0].Args[0].Name,
+		"ofType name":     qt.Fields[0].Args[0].Type.OfType.Name,
+		"ofType kind":     qt.Fields[0].Args[0].Type.OfType.Kind,
+		"field type name": qt.Fields[0].Type.Name,
+		"type name":       env.Sch.Types[0].Name,
+		"enum value":      env.Sch.Types[0].EnumValues[0].Name,
+		"displayName()":   qt.Fields[0].Args[0].Type.OfType.displayName(),
+	}
+	for where, s := range names {
+		for _, r := range s {
+			if isControlRune(r) {
+				t.Fatalf("%s kept control rune %q: %q", where, r, s)
+			}
+		}
+	}
+}
+
+// a json.RawMessage field can carry a C1 control as valid UTF-8 (0xc2 0x9b),
+// which survives MarshalIndent: the sample-match print must neutralize it
+// while keeping MarshalIndent's own structural newlines
+func TestPrintSampleMatchNeutralizesControls(t *testing.T) {
+	m := probeMatch{ID: 7, GameMode: json.RawMessage(`"GAME_MODE_` + "\u009b" + `"`)}
+	old := os.Stdout
+	r, w, err := os.Pipe()
+	if err != nil {
+		t.Fatal(err)
+	}
+	os.Stdout = w
+	printSampleMatch(m)
+	w.Close()
+	os.Stdout = old
+	out, err := io.ReadAll(r)
+	if err != nil {
+		t.Fatal(err)
+	}
+	if !strings.Contains(string(out), `GAME_MODE_\u009b`) {
+		t.Fatalf("C1 control was not escaped in the sample print: %q", string(out))
+	}
+	for _, c := range string(out) {
+		if c != '\n' && isControlRune(c) {
+			t.Fatalf("control rune %q survived the sample print: %q", c, string(out))
+		}
 	}
 }

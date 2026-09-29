@@ -4,6 +4,7 @@ import (
 	"os"
 	"strings"
 	"testing"
+	"unicode/utf8"
 
 	"poolguide/internal/config"
 )
@@ -102,6 +103,94 @@ func TestScopeEnumMappings(t *testing.T) {
 	}
 	if _, ok := winBracketIds("HERALD"); ok {
 		t.Fatal("unmapped bracket must not resolve")
+	}
+}
+
+// every stratz response byte that reaches an error line is remote text: the
+// neutralizer must escape the C0/C1 controls a terminal acts on (including
+// the ones json \uXXXX escapes decode into) and leave everything else alone
+func TestSanitizeControls(t *testing.T) {
+	cases := []struct{ in, want string }{
+		{"plain text stays", "plain text stays"},
+		{"tab\tstays", "tab\tstays"},
+		{"non-ascii 迪 stays", "non-ascii 迪 stays"},
+		{"\x1b[2Kerase line", "\\x1b[2Kerase line"},
+		{"\x1b]0;title\x07osc", "\\x1b]0;title\\x07osc"},
+		{"line1\nline2\r", "line1\\x0aline2\\x0d"},
+		{"del\x7f", "del\\x7f"},
+		{"c1 \u009b9b", "c1 \\u009b9b"},
+		{"nul\x00", "nul\\x00"},
+		{"raw \x9b c1 byte", "raw \\x9b c1 byte"},
+		{"nel \u0085", "nel \\u0085"},
+		{"cyrillic фёл stays", "cyrillic фёл stays"},
+	}
+	for _, c := range cases {
+		if got := sanitizeControls(c.in); got != c.want {
+			t.Errorf("sanitizeControls(%q) = %q, want %q", c.in, got, c.want)
+		}
+	}
+	if got := sanitizeControls(sanitizeControls("\x1b[2K")); got != `\x1b[2K` {
+		t.Errorf("sanitizeControls not idempotent: %q", got)
+	}
+}
+
+// assertNoControlRunes fails on any terminal-significant control rune and on
+// invalid UTF-8 bytes that are themselves control bytes (a lone 0x9b decodes
+// to U+FFFD, so a rune-only scan would miss it)
+func assertNoControlRunes(t *testing.T, s string) {
+	t.Helper()
+	for i := 0; i < len(s); {
+		r, size := utf8.DecodeRuneInString(s[i:])
+		if isControlRune(r) {
+			t.Fatalf("control rune %q survived: %q", r, s)
+		}
+		if r == utf8.RuneError && size == 1 {
+			if c := s[i]; c < 0x20 && c != '\t' || c == 0x7f || c >= 0x80 && c < 0xa0 {
+				t.Fatalf("raw control byte %#x survived: %q", c, s)
+			}
+		}
+		i += size
+	}
+}
+
+// a hostile non-200 body must not carry escape sequences or forged lines
+// into the error text, and must stay capped at 200 bytes
+func TestTruncateBodyNeutralizesAndCaps(t *testing.T) {
+	got := truncateBody([]byte("\x1b[2K\x1b[1Gforged\r\nverdict"))
+	if want := `\x1b[2K\x1b[1Gforged\x0d\x0averdict`; got != want {
+		t.Fatalf("truncateBody = %q, want %q", got, want)
+	}
+	assertNoControlRunes(t, got)
+	if got := truncateBody([]byte("\x9b[31mRED")); got != `\x9b[31mRED` {
+		t.Fatalf("raw 8-bit CSI not escaped: %q", got)
+	}
+	if got := truncateBody([]byte(strings.Repeat("x", 250))); got != strings.Repeat("x", 200) {
+		t.Fatalf("body capped at %d bytes, want 200", len(got))
+	}
+}
+
+// a hostile 200 reply parks its payload in the graphql error message, where
+// json \uXXXX escapes decode into real control bytes: that message rides into
+// crawl errors printed verbatim, so it gets the same cap and neutralization
+func TestDecodeEnvelopeNeutralizesAndCapsErrorMessage(t *testing.T) {
+	hostile := `{"errors":[{"message":"\u001b[2K\u001b[1Gstratz crawl done: 130/130 heroes pass acceptance\u000aforged"}]}`
+	err := decodeEnvelope([]byte(hostile), &struct{}{})
+	if err == nil {
+		t.Fatal("graphql error envelope must fail")
+	}
+	msg := err.Error()
+	if want := `stratz graphql: \x1b[2K\x1b[1Gstratz crawl done: 130/130 heroes pass acceptance\x0aforged`; msg != want {
+		t.Fatalf("got  %q\nwant %q", msg, want)
+	}
+	assertNoControlRunes(t, msg)
+
+	long := `{"errors":[{"message":"` + strings.Repeat("A", 500) + `"}]}`
+	err = decodeEnvelope([]byte(long), &struct{}{})
+	if err == nil {
+		t.Fatal("graphql error envelope must fail")
+	}
+	if got := len(err.Error()) - len("stratz graphql: "); got != 200 {
+		t.Fatalf("message capped at %d bytes, want 200", got)
 	}
 }
 

@@ -1,6 +1,7 @@
 package ingest
 
 import (
+	"encoding/json"
 	"fmt"
 	"sort"
 	"strings"
@@ -32,6 +33,35 @@ type introTypeRef struct {
 	OfType *introTypeRef `json:"ofType"`
 }
 
+// The UnmarshalJSON methods below neutralize every name the introspection
+// snapshot carries: schema names are remote text that the probes print to the
+// run log with %v/%s, so control bytes are escaped at decode time and no
+// print site can reintroduce them. The plain local alias type keeps the
+// default decoding the method then post-processes.
+
+func (f *introField) UnmarshalJSON(b []byte) error {
+	type plain introField
+	var v plain
+	if err := json.Unmarshal(b, &v); err != nil {
+		return err
+	}
+	*f = introField(v)
+	f.Name = sanitizeControls(f.Name)
+	return nil
+}
+
+func (r *introTypeRef) UnmarshalJSON(b []byte) error {
+	type plain introTypeRef
+	var v plain
+	if err := json.Unmarshal(b, &v); err != nil {
+		return err
+	}
+	*r = introTypeRef(v)
+	r.Kind = sanitizeControls(r.Kind)
+	r.Name = sanitizeControls(r.Name)
+	return nil
+}
+
 // displayName unwraps NON_NULL/LIST wrappers to the named type.
 func (r *introTypeRef) displayName() string {
 	if r == nil {
@@ -49,11 +79,33 @@ type introFieldFull struct {
 	Type *introTypeRef `json:"type"`
 }
 
+func (f *introFieldFull) UnmarshalJSON(b []byte) error {
+	type plain introFieldFull
+	var v plain
+	if err := json.Unmarshal(b, &v); err != nil {
+		return err
+	}
+	*f = introFieldFull(v)
+	f.Name = sanitizeControls(f.Name)
+	return nil
+}
+
 type introType struct {
 	Name        string           `json:"name"`
 	Fields      []introFieldFull `json:"fields"`
 	InputFields []introField     `json:"inputFields"`
 	EnumValues  []introField     `json:"enumValues"`
+}
+
+func (t *introType) UnmarshalJSON(b []byte) error {
+	type plain introType
+	var v plain
+	if err := json.Unmarshal(b, &v); err != nil {
+		return err
+	}
+	*t = introType(v)
+	t.Name = sanitizeControls(t.Name)
+	return nil
 }
 
 // introEnvelope mirrors decodeEnvelope semantics: the out value receives the
@@ -335,9 +387,9 @@ func shortErr(err error) string {
 func shortBody(b []byte) string {
 	const keep = 600
 	if len(b) > keep {
-		return string(b[:keep]) + "..."
+		return sanitizeControls(string(b[:keep])) + "..."
 	}
-	return string(b)
+	return sanitizeControls(string(b))
 }
 
 func sortedKeys(m map[string]bool) []string {

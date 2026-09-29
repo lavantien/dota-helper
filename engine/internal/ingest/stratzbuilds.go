@@ -391,7 +391,7 @@ func ProbeBuilds(cfg *config.Config) error {
 	for _, t := range topPurchases(rows, 3) {
 		nm := fmt.Sprintf("item %d", t.ItemID)
 		if it, ok := byID[t.ItemID]; ok {
-			nm = it.ShortName
+			nm = sanitizeControls(it.ShortName)
 		}
 		parts = append(parts, fmt.Sprintf("%s n=%d", nm, t.Count))
 	}

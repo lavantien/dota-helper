@@ -11,6 +11,7 @@ import (
 	"strconv"
 	"strings"
 	"time"
+	"unicode/utf8"
 
 	"poolguide/internal/config"
 )
@@ -130,11 +131,59 @@ func (s *stratzClient) query(q string) ([]byte, error) {
 	return nil, fmt.Errorf("stratz query failed after %d attempts: %w", maxRetries+1, lastErr)
 }
 
+// truncateBody bounds the remote body excerpt and neutralizes it: every
+// remote-controlled byte that reaches an error line passes through here.
 func truncateBody(b []byte) string {
 	if len(b) > 200 {
-		return string(b[:200])
+		b = b[:200]
 	}
-	return string(b)
+	return sanitizeControls(string(b))
+}
+
+// sanitizeControls escapes terminal-significant control runes (C0 except
+// tab, DEL, and the C1 range carrying the 8-bit CSI/OSC forms) as \xNN or
+// \u00XX, so a hostile response can never rewrite the run log with escape
+// sequences or inject forged log lines. Invalid UTF-8 bytes are escaped too:
+// a lone 0x9b steers an 8-bit terminal exactly like an ESC-prefixed CSI.
+func sanitizeControls(s string) string {
+	return escapeControls(s, isControlRune)
+}
+
+// escapeControls rewrites s with every rune the hostile predicate flags
+// escaped as \xNN or \u00XX; clean text passes through untouched.
+func escapeControls(s string, hostile func(rune) bool) string {
+	escaped := false
+	for i := 0; i < len(s); {
+		r, size := utf8.DecodeRuneInString(s[i:])
+		if hostile(r) || (r == utf8.RuneError && size == 1) {
+			escaped = true
+			break
+		}
+		i += size
+	}
+	if !escaped {
+		return s
+	}
+	var b strings.Builder
+	for i := 0; i < len(s); {
+		r, size := utf8.DecodeRuneInString(s[i:])
+		switch {
+		case r == utf8.RuneError && size == 1:
+			fmt.Fprintf(&b, "\\x%02x", s[i])
+		case !hostile(r):
+			b.WriteString(s[i : i+size])
+		case r < 0x80:
+			fmt.Fprintf(&b, "\\x%02x", byte(r))
+		default:
+			fmt.Fprintf(&b, "\\u%04x", r)
+		}
+		i += size
+	}
+	return b.String()
+}
+
+func isControlRune(r rune) bool {
+	return r != '\t' && (r < 0x20 || (r >= 0x7f && r < 0xa0))
 }
 
 type gqlEnvelope struct {
@@ -150,7 +199,10 @@ func decodeEnvelope(body []byte, out any) error {
 		return err
 	}
 	if len(env.Errors) > 0 {
-		return fmt.Errorf("stratz graphql: %s", env.Errors[0].Message)
+		// the graphql message is remote text riding into the run log via
+		// error prints, so it gets the same cap and neutralization as a
+		// non-200 body
+		return fmt.Errorf("stratz graphql: %s", truncateBody([]byte(env.Errors[0].Message)))
 	}
 	return json.Unmarshal(env.Data, out)
 }

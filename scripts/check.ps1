@@ -489,9 +489,19 @@ foreach ($t in $slocTargets) {
 }
 if ($fail.Count -eq 0) { Write-Host "ok: $($seen.Count) files within their SLOC caps, $raised on raised caps" }
 
-# scan surface for attribution and token leaks (this script defines the patterns, skip itself)
-$scanFiles = Get-ChildItem $root -Recurse -File -Include *.md, *.ps1, *.js, *.html, *.mjs, *.go, *.json, *.py, 'Makefile' |
-    Where-Object { $_.FullName -notmatch '[/\\](\.git|\.claude|var|node_modules)[/\\]' -and $_.Name -ne 'check.ps1' }
+# scan surface for attribution and token leaks (this script defines the
+# patterns, skip itself). enumerate the git-tracked set plus fresh untracked
+# files, never an extension allowlist, so a token pasted into any file class a
+# commit can ship trips the gate by construction (var/ is gitignored, the dir
+# regex is the backstop). fail closed: an empty surface means the enumeration
+# broke, not that the tree is clean
+$scanList = git -C $root ls-files --cached --others --exclude-standard
+if ($LASTEXITCODE -ne 0 -or @($scanList).Count -eq 0) {
+    $fail += 'leak scan: git ls-files returned no scan surface'
+}
+$scanFiles = @($scanList |
+    Where-Object { $_ -notmatch '(^|[/\\])(\.git|\.claude|var|node_modules)([/\\]|$)' -and (Split-Path $_ -Leaf) -ne 'check.ps1' } |
+    ForEach-Object { Get-Item -LiteralPath (Join-Path $root $_) })
 $attribution = 'Co-Authored-By', 'Generated with Claude'
 foreach ($f in $scanFiles) {
     $hit = Select-String -Path $f.FullName -Pattern ($attribution -join '|')

@@ -232,7 +232,7 @@ func probeLeagueMatches(c *stratzClient, since, until int64) {
 		}
 		var modes, lobbies string
 		if len(lg.Matches) > 0 {
-			modes, lobbies = string(lg.Matches[0].GameMode), string(lg.Matches[0].LobbyType)
+			modes, lobbies = sanitizeControls(string(lg.Matches[0].GameMode)), sanitizeControls(string(lg.Matches[0].LobbyType))
 		}
 		fmt.Printf("probe matches leagues: league %d %q served %d in-window matches, %d complete drafts, sample gameMode=%s lobbyType=%s\n",
 			lg.ID, label, cov.Rows, cov.Complete, modes, lobbies)
@@ -314,7 +314,10 @@ func pickProbeSeed(c *stratzClient, divisionIDs map[string][]int64) int64 {
 
 func printSampleMatch(m probeMatch) {
 	if b, err := json.MarshalIndent(m, "", "  "); err == nil {
-		fmt.Println(string(b))
+		// the blob's newlines are structural (MarshalIndent's own), so they
+		// stay; everything terminal-significant inside the remote values
+		// (DEL and C1 ride as valid UTF-8 in json strings) is escaped
+		fmt.Println(escapeControls(string(b), func(r rune) bool { return r != '\n' && isControlRune(r) }))
 	}
 }
 
@@ -399,7 +402,7 @@ func ProbeMatches(cfg *config.Config) error {
 		cov.Rows, cov.AnyDraft, cov.Complete)
 	for _, m := range byId {
 		fmt.Printf("probe matches by-ids: match %d gameMode=%s lobbyType=%s bracket=%d averageRank=%d startDateTime=%d pickBans=%d\n",
-			m.ID, m.GameMode, m.LobbyType, m.Bracket, m.AverageRank, m.StartDateTime, len(m.PickBans))
+			m.ID, sanitizeControls(string(m.GameMode)), sanitizeControls(string(m.LobbyType)), m.Bracket, m.AverageRank, m.StartDateTime, len(m.PickBans))
 	}
 	if len(byId) > 0 {
 		fmt.Println("probe matches: sample by-ids match:")
