@@ -499,9 +499,11 @@ $scanList = git -C $root ls-files --cached --others --exclude-standard
 if ($LASTEXITCODE -ne 0 -or @($scanList).Count -eq 0) {
     $fail += 'leak scan: git ls-files returned no scan surface'
 }
+# -Force: on unix pwsh every dot-prefixed path is Hidden and Get-Item skips
+# hidden items by default, so without it the leak gate never opens dotfiles
 $scanFiles = @($scanList |
     Where-Object { $_ -notmatch '(^|[/\\])(\.git|\.claude|var|node_modules)([/\\]|$)' -and (Split-Path $_ -Leaf) -ne 'check.ps1' } |
-    ForEach-Object { Get-Item -LiteralPath (Join-Path $root $_) })
+    ForEach-Object { Get-Item -LiteralPath (Join-Path $root $_) -Force })
 $attribution = 'Co-Authored-By', 'Generated with Claude'
 foreach ($f in $scanFiles) {
     $hit = Select-String -Path $f.FullName -Pattern ($attribution -join '|')

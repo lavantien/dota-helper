@@ -3,7 +3,7 @@
         fetch-builds-refresh fetch-matches fetch-matches-refresh fetch-positions ingest db-query mine sync-builds order-pool emit emit-data \
         emit-guide emit-picker emit-goldens eval eval-fit eval-fit-alphas eval-fit-completion \
         eval-promote refresh fixtures verify fetch-matchups \
-        build-guide-data fetch-howdoiplay merge-mechanics check
+        build-guide-data fetch-howdoiplay merge-mechanics check check-linux
 
 # duckdb cgo has no supported native windows toolchain (crt-mixing, verified),
 # so every go build and test runs in the linux golang image, same pattern as the
@@ -244,3 +244,9 @@ merge-mechanics:
 
 check:
 	pwsh -NoProfile -File scripts/check.ps1
+
+# ci parity: the check job runs scripts/check.ps1 under linux pwsh, where
+# path handling diverges from the windows host
+check-linux:
+	docker run --rm -v $(CURDIR):/src -w /src --entrypoint bash mcr.microsoft.com/powershell:latest \
+	  -c "apt-get update -qq >/dev/null && apt-get install -y -qq git >/dev/null 2>&1 && pwsh -NoProfile -File scripts/check.ps1"
