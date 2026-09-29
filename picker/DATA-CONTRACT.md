@@ -14,7 +14,7 @@ window.PICKER_GEN = {
   aliases: { 'furion': 'natures-prophet', ... },  // config.aliases, alias slug -> canonical roster
                                // slug, search/display only, never scores; emitter drops pairs whose
                                // value is not a roster slug or whose key shadows one
-  poolIdx: [...],              // roster indices of pool heroes, in pool order
+  poolIdx: [...],              // roster indices of pool heroes, in slug-ascending pool order
   entries: [                   // parallel to poolIdx
     { roles: ['2','3'], tier: { '2': 'dedicated', '3': 'flex' } }
   ],

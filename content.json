@@ -40,7 +40,7 @@
         "silencer, skywrath, and disruptor are the vetoes, the instant silence cuts the brew and the clap out of the combo",
         "phantom lancer, naga siren, and terrorblade style floods are the free wins, the storm dispel wipes every illusion and summon body"
       ],
-      "mechanics": [["tip", "cinder brew soaks the enemies and slows them, magic or pure damage lights the soak and the burn runs longer"], ["tip", "the fire stance crit is rolled the moment the swing starts, swapping into fire mid swing never crits that hit"], ["tip", "auras ride whichever brewling currently leads, the order runs earth, then storm, then fire as each falls, and brewmaster walks back out wherever that body stands"], ["tip", "the earth brewling's demolish passive shreds buildings, it is the siege body, push every objective behind it"], ["tip", "the storm cyclone outlasts the split itself, and it holds creeps and summons in the air far longer than heroes"], ["tip", "storm dispel magic shreds summons, illusions eat the full damage, clones and ward type bodies are the exceptions"], ["counter", "kill the fire brewling first, it swings the hardest and burns everything near it, deleting it strips most of the split's damage"], ["counter", "primal split has a long cast time, instant silences and hexes land first and cut the combo down to the split alone"]]
+      "mechanics": [["tip", "cinder brew soaks the enemies and slows them, magic or pure damage lights the soak and the burn runs longer"], ["tip", "the fire stance crit is rolled the moment the swing starts, swapping into fire mid swing never crits that hit"], ["tip", "auras ride whichever brewling currently leads, the order runs earth, then storm, then fire as each falls, and brewmaster walks back out wherever that body stands"], ["tip", "the earth brewling's demolish passive shreds buildings, it is the siege body, push every objective behind it"], ["tip", "the storm cyclone outlasts the split itself, and it holds creeps and summons in the air far longer than heroes"], ["tip", "storm dispel magic shreds summons, illusions eat the full damage, clones, tombstone zombies, and ward type bodies are the exceptions"], ["counter", "kill the fire brewling first, it swings the hardest and burns everything near it, deleting it strips most of the split's damage"], ["counter", "primal split has a long cast time, instant silences and hexes land first and cut the combo down to the split alone"]]
     },
     "clinkz": {
       "identity": "skeleton tempo carry, searing arrows burn every click, strafe stacks the attack steroid, skeleton walk fades him across the map and plants the archer turrets, death pact eats a body to bulk up",
@@ -56,7 +56,7 @@
       "mechanics": [["tip", "death pact can eat an enemy creep or your own skeleton archer, it heals him and pads his max health"], ["tip", "skeleton archers copy his attack range exactly and swing for a share of his attack damage, both track his stats live"], ["tip", "the archers spawn the instant skeleton walk drops and they never move, aim the walk exit to perch them on cliffs for scouting vision"], ["tip", "cast skeleton walk mid channel without breaking it, strafe and death pact cast during the walk keep the invis, attacks and item use pop it"], ["tip", "the shard barrage arrows fly with true strike, carry every attack modifier, and still fire while clinkz is disarmed"], ["counter", "dispelling strafe off clinkz is wasted effort, the skeleton archers keep their share of the buff"], ["counter", "damage block never blunts skeleton archer shots, their hits ignore it entirely"]]
     },
     "dawnbreaker": {
-      "identity": "tanky offlane initiator with global starbreaker ult presence",
+      "identity": "tanky offlane initiator with global solar guardian ult presence",
       "why": "dedicated offlane brick, the global ult turns every fight into a 6v5, favored into SF style immobile mids",
       "how": "starbreaker lane trades, hammer into fights from anywhere, front line for your carry",
       "when": "lane brick early, ult windows all game, mid game monster once blade mail and harpoon land",
@@ -130,7 +130,7 @@
         "zeus, sniper, and storm spirit are the vetoes, the long range spam and the dive outtrade the waddle",
         "phantom lancer, terrorblade, and lifestealer style melee floods are the free wins, chain frost and the shield eat everything that commits close"
       ],
-      "mechanics": [["tip", "the sacrifice innate eats an allied creep, its health becomes his mana and he pockets the experience bounty"], ["tip", "frost shield blunts right clicks and instant attacks of every kind, spell damage and tower shots pass right through"], ["tip", "frost shield lands on creeps, couriers, ward type bodies, and every tower and building, shield the objective under siege"], ["tip", "the sinister gaze drag ignores pathing, victims walk straight over cliffs and terrain, pull them off the high ground or onto your side of it"], ["tip", "sinister gaze is a hard disable in practice, the victim cannot act, self casting any save is off the table while it runs"], ["tip", "spell block only swallows the first chain frost hit, the orb keeps bouncing and keeps growing after"], ["counter", "the gaze drag reels you a long stretch toward lich, getting caught means walking straight into his team, keep your distance before it starts"], ["counter", "frost shield and the gaze drag both wipe off with a basic dispel, carry one against him"]]
+      "mechanics": [["tip", "the sacrifice innate eats an allied creep, its health becomes his mana and he pockets the experience bounty"], ["tip", "frost shield blunts right clicks and instant attacks of every kind, spell damage and tower shots pass right through"], ["tip", "frost shield lands on creeps, ward type bodies, and every tower and building, shield the objective under siege"], ["tip", "the sinister gaze drag ignores pathing, victims walk straight over cliffs and terrain, pull them off the high ground or onto your side of it"], ["tip", "sinister gaze is a hard disable in practice, the victim cannot act, self casting any save is off the table while it runs"], ["tip", "spell block only swallows the first chain frost hit, the orb keeps bouncing and keeps growing after"], ["counter", "the gaze drag reels you a long stretch toward lich, getting caught means walking straight into his team, keep your distance before it starts"], ["counter", "frost shield and the gaze drag both wipe off with a basic dispel, carry one against him"]]
     },
     "lifestealer": {
       "identity": "melee carry with rage spell immunity, feast percent lifesteal, and infest dives through allies",
@@ -213,7 +213,7 @@
     "phantom-lancer": {
       "identity": "illusion flood carry that overwhelms single target drafts",
       "why": "dedicated pos 1, illusion flood blanks single target drafts, favored into drow and SF style single target lines",
-      "how": "lane with lance spam, farm to manta, fight with illusions tanking, split with dopple when they group",
+      "how": "lane with lance spam, farm to manta, fight with illusions tanking, split with doppel when they group",
       "when": "spikes once manta lands, scales into a late game monster with heart and stacked illusions",
       "build": "manta, skadi, shard, bloodthorn, heart, butterfly, blessing",
       "timings": [["manta", 17], ["skadi", 31]],
@@ -321,7 +321,7 @@
     },
     {
       "name": "mechanics first, numbers confirm",
-      "body": "TP scroll blanks rupture, ghost scepter blanks right click divers, break blanks feast and dragon blood. these stay true below any stat threshold, the 1.5 filter only trims noise, never mechanics."
+      "body": "TP scroll blanks rupture, ghost scepter blanks right click divers, break blanks feast and dragon blood. these stay true below any stat threshold, the dis cut only trims noise, never mechanics."
     },
     {
       "name": "economy is the only win condition you control",
@@ -347,11 +347,11 @@
       "glance your last session death notes before queueing"
     ],
     "drills": [
-      ["phantom-lancer", "doppleganger dodge timing into telegraphed stuns"],
+      ["phantom-lancer", "doppelganger dodge timing into telegraphed stuns"],
       ["spectre", "haunt target swapping and dagger pathing"],
       ["dragon-knight", "fireball stun chain into tower dive"],
       ["necrophos", "reaper scythe threshold math on tanky cores"],
-      ["dawnbreaker", "celestial hammer into starbreaker chain across the map"],
+      ["dawnbreaker", "celestial hammer into starbreaker chain, solar guardian across the map"],
       ["enigma", "eidolon camp clears and blink hole onto the clump"],
       ["bounty-hunter", "track uptime and shuriken bounce range"],
       ["sven", "blink hammer into god strength target lock"],
