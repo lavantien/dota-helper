@@ -23,3 +23,22 @@ jobs:
           node-version: 24
       - run: make test-picker
       - run: make check
+
+  # the go suite runs dockerized (same GO_RUN pattern as local, tests are
+  # offline so the STRATZ_TOKEN pass-through is a no-op when unset). cold
+  # runs pay the golang:1.27 pull plus the duckdb cgo build on top of the
+  # instrumented suite, hence the wide timeout
+  coverage:
+    runs-on: ubuntu-latest
+    timeout-minutes: 150
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-node@v6
+        with:
+          node-version: 24
+      - run: make engine-cover
+      - run: make test-picker-cover
+      - uses: codecov/codecov-action@v5
+        with:
+          files: engine/coverage.out,picker-lcov.info
+          fail_ci_if_error: false

@@ -1,4 +1,4 @@
-.PHONY: dota picker engine-build engine-test test-picker test probe-stratz probe-opendota \
+.PHONY: dota picker engine-build engine-test engine-cover test-picker test-picker-cover test probe-stratz probe-opendota \
         probe-builds probe-matches probe-scope probe-window fetch-stratz fetch-stratz-refresh fetch-opendota fetch-builds \
         fetch-builds-refresh fetch-matches fetch-matches-refresh fetch-positions ingest db-query mine sync-builds order-pool emit emit-data \
         emit-guide emit-picker emit-goldens eval eval-fit eval-fit-alphas eval-fit-completion \
@@ -43,8 +43,29 @@ engine-test:
 engine-test-%:
 	$(GO_RUN) go -C $(ENGINE_DIR) test -count=1 -timeout 30m ./internal/$*/...
 
+# coverage twin of engine-test. -coverpkg scopes measurement to internal and
+# makes cross-package exercise count (emit tests driving mine, eval driving
+# emit): cmd/engine is process-level wiring over live crawls and carries no
+# test binary. -covermode=atomic because ./... runs package binaries
+# concurrently; -timeout sits above engine-test's since instrumentation adds
+# overhead on top of the two ~20m binaries. the profile lands in engine/ on
+# the host through the -v $(CURDIR):/src mount.
+engine-cover:
+	$(GO_RUN) go -C $(ENGINE_DIR) test -count=1 -timeout 90m -covermode=atomic -coverprofile=coverage.out -coverpkg=./internal/... ./internal/...
+	$(GO_RUN) go -C $(ENGINE_DIR) tool cover -func=coverage.out
+
 test-picker:
 	node --test picker/picker-score.test.mjs
+
+# lcov twin of test-picker feeding codecov alongside the engine profile; the
+# spec reporter keeps the local loop readable, only picker-score.js loads so
+# the report covers exactly the scored core, and the test file is excluded
+test-picker-cover:
+	node --test --experimental-test-coverage \
+	     --test-coverage-exclude=**/*.test.mjs \
+	     --test-reporter=spec --test-reporter-destination=stdout \
+	     --test-reporter=lcov --test-reporter-destination=picker-lcov.info \
+	     picker/picker-score.test.mjs
 
 test: engine-test test-picker
 
