@@ -140,6 +140,7 @@ func TestFormatGuideMinKeptFails(t *testing.T) {
 
 func TestFormatGuidePoolWinRatesCovered(t *testing.T) {
 	cfg := fixtureCfg(t)
+	hero := cfg.PoolSlugs()[0]
 	in := GuideInput{
 		Date:    fixtureDay,
 		Roster:  []RosterHero{{ID: 1, Slug: "axe", Name: "Axe", NPC: "axe"}},
@@ -157,18 +158,19 @@ func TestFormatGuidePoolWinRatesCovered(t *testing.T) {
 	if err != nil {
 		t.Fatalf("format guide: %v", err)
 	}
-	// enigma has no backup rows, its win rate must still ship in overallWr
-	if n := strings.Count(string(out), "'enigma'"); n != 1 {
+	// the pool hero carries no rows, its win rate must still ship in overallWr
+	if n := strings.Count(string(out), "'"+hero+"'"); n != 1 {
 		t.Fatalf("pool hero without rows must appear exactly once (overallWr), got %d", n)
 	}
 }
 
 func TestFormatGuidePoolWinRateMissingFails(t *testing.T) {
 	cfg := fixtureCfg(t)
+	hero := cfg.PoolSlugs()[0]
 	in := GuideInput{
 		Date:    fixtureDay,
 		Roster:  []RosterHero{{ID: 1, Slug: "axe", Name: "Axe", NPC: "axe"}},
-		PriorWR: poolPriorWR(cfg, "enigma"),
+		PriorWR: poolPriorWR(cfg, hero),
 		Rows: map[string][]GuideRow{
 			"marci": {
 				{Enemy: "axe", Dis: 9},
@@ -178,25 +180,26 @@ func TestFormatGuidePoolWinRateMissingFails(t *testing.T) {
 		},
 		Scraped: map[string]string{"marci": fixtureDay},
 	}
-	if _, err := FormatGuide(in, cfg); err == nil || !strings.Contains(err.Error(), "enigma") || !strings.Contains(err.Error(), "overall win rate") {
+	if _, err := FormatGuide(in, cfg); err == nil || !strings.Contains(err.Error(), hero) || !strings.Contains(err.Error(), "overall win rate") {
 		t.Fatalf("pool hero without a mined win rate must fail naming the hero, got %v", err)
 	}
 }
 
 func TestFormatGuideMissingWinRateFails(t *testing.T) {
 	cfg := fixtureCfg(t)
+	hero := cfg.PoolSlugs()[0]
 	in := GuideInput{
 		Date:    fixtureDay,
 		Roster:  []RosterHero{{ID: 1, Slug: "axe", Name: "Axe", NPC: "axe"}},
-		PriorWR: poolPriorWR(cfg, "abaddon"),
+		PriorWR: poolPriorWR(cfg, hero),
 		Rows: map[string][]GuideRow{
-			"abaddon": {
+			hero: {
 				{Enemy: "axe", Dis: 9},
 				{Enemy: "centaur", Dis: 4},
 				{Enemy: "invoker", Dis: 2},
 			},
 		},
-		Scraped: map[string]string{"abaddon": fixtureDay},
+		Scraped: map[string]string{hero: fixtureDay},
 	}
 	if _, err := FormatGuide(in, cfg); err == nil || !strings.Contains(err.Error(), "overall win rate") {
 		t.Fatalf("guide hero without a mined win rate must fail, got %v", err)
