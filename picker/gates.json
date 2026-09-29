@@ -1,0 +1,300 @@
+{
+  "roleNotes": {
+    "1": "dedicated spectre, phantom lancer, and sven into the squishy ranged backlines, lifestealer into tanks, juggernaut for the spin immunity and the ward sieges, terrorblade for the sunder swings and the illusion sieges, anti-mage into the mana-hungry lineups, windranger for the shackle pickoffs and the piercing damage, ursa for the objective duels and the roshan control, faceless void for the chrono sphere, phantom assassin into the squishy lines the crit deletes, templar assassin for the refract trades and the meld picks, troll warlord for the melee bash duels, tiny for the toss catches and the tower pressure, nature's prophet for the global farm and the split sieges, medusa for the aura frontline and the late inevitability, drow ranger for the aura push and the kite lanes, lone druid for the relentless bear sieges, alchemist for the greed farm and the early spikes",
+    "2": "dedicated arc warden for the double farm lanes and the late clones, dragon knight into magic mids, slark for the pickoffs and the late snowball, earth spirit for the rolling control and the smear initiations, earthshaker for the echo slam initiations, lina for the wave clear and the burst thresholds, bloodseeker into the squishy farmers, ember spirit for the remnant escapes and the split fights, slardar for the bash chases and the armor shred, sniper as the counter mid when the range wins the lane, zeus for the global burst and the vision reveals, magnus for the polarity stacks and the skewer pickups",
+    "3": "dedicated enigma for the fight ults, visage for the bird dives and the lane pressure, legion commander for the duel picks, wraith king for the skeleton pushes and the second life, night stalker for the night hunts and the vision control, dawnbreaker or doom, dark seer for the wall flips and the illusion lanes, kunkka for the ship commits and the return sets, razor for the static link that strips their carry damage, necrophos as the sustain offlane that outlasts the lane, centaur for the stomp follows and the tanky front, sand king for the burrow echoes and the storm zones",
+    "4": "dedicated bounty hunter for the track economy, elder titan for the stomp setup and the armor shred, spirit breaker into brood and the solo farmers, phoenix for the egg saves and the diving stars, winter wyvern for the curse turns and the cold embraces, rubick for the spell steals and the counter initiations, pudge for the hook picks and the rot trades, tusk for the snowball saves and the punch commits, ogre magi for the multicast lockdown and the lane bullying, hoodwink for the bushwhack locks and the acorn tethers",
+    "5": "dedicated nyx assassin into the caster lines, shadow shaman for the lock chains and the tower pushes, abaddon when they dive without the counters, witch doctor for the heal and the fight ult, mirana for the arrow picks and the leap saves, crystal maiden for the aura economy and the frostbite lockdown, undying when the lane bully wins it from the support slot, ringmaster for the wheel saves and the arena control"
+  },
+  "fallbackOrder": {
+    "1": [
+      "phantom-lancer",
+      "juggernaut",
+      "troll-warlord",
+      "spectre",
+      "lifestealer",
+      "sven",
+      "anti-mage",
+      "windranger",
+      "phantom-assassin",
+      "ursa",
+      "faceless-void",
+      "terrorblade",
+      "medusa",
+      "lone-druid",
+      "templar-assassin",
+      "drow-ranger",
+      "alchemist",
+      "tiny",
+      "natures-prophet"
+    ],
+    "2": [
+      "arc-warden",
+      "bloodseeker",
+      "dragon-knight",
+      "earth-spirit",
+      "earthshaker",
+      "slark",
+      "slardar",
+      "magnataur",
+      "ember-spirit",
+      "lina",
+      "sniper",
+      "zeus"
+    ],
+    "3": [
+      "visage",
+      "enigma",
+      "wraith-king",
+      "night-stalker",
+      "legion-commander",
+      "dawnbreaker",
+      "dark-seer",
+      "kunkka",
+      "razor",
+      "centaur",
+      "necrophos",
+      "doom",
+      "sand-king"
+    ],
+    "4": [
+      "bounty-hunter",
+      "elder-titan",
+      "spirit-breaker",
+      "phoenix",
+      "winter-wyvern",
+      "rubick",
+      "pudge",
+      "tusk",
+      "ogre-magi",
+      "hoodwink"
+    ],
+    "5": [
+      "shadow-shaman",
+      "nyx-assassin",
+      "abaddon",
+      "mirana",
+      "witch-doctor",
+      "ringmaster",
+      "crystal-maiden",
+      "undying"
+    ]
+  },
+  "rules": [
+    {
+      "id": "spectre-tank-veto",
+      "target": "spectre",
+      "roles": [
+        "1"
+      ],
+      "when": [
+        {
+          "kind": "enemyVisibleAny",
+          "heroes": [
+            "undying",
+            "necrophos",
+            "invoker",
+            "chen",
+            "io",
+            "meepo"
+          ]
+        }
+      ],
+      "action": "hard_gate",
+      "note": "the tank plan dies before it exists, undying alone is brutal",
+      "origin": "authored"
+    },
+    {
+      "id": "spectre-ranged-boost",
+      "target": "spectre",
+      "roles": [
+        "1"
+      ],
+      "when": [
+        {
+          "kind": "enemyVisibleAny",
+          "heroes": [
+            "sniper",
+            "drow-ranger"
+          ]
+        }
+      ],
+      "action": "bonus",
+      "note": "haunt deletes the squishy backline",
+      "origin": "authored"
+    },
+    {
+      "id": "dk-healcut-veto",
+      "target": "dragon-knight",
+      "roles": [
+        "2"
+      ],
+      "when": [
+        {
+          "kind": "enemyVisibleAnyCountMin",
+          "heroes": [
+            "viper",
+            "huskar",
+            "necrophos",
+            "spectre",
+            "timbersaw"
+          ],
+          "count": 2
+        }
+      ],
+      "action": "hard_gate",
+      "note": "heal cut and break turn dragon blood off",
+      "origin": "authored"
+    },
+    {
+      "id": "dk-magic-mid-boost",
+      "target": "dragon-knight",
+      "roles": [
+        "2"
+      ],
+      "when": [
+        {
+          "kind": "enemyVisibleAny",
+          "heroes": [
+            "templar-assassin",
+            "puck"
+          ]
+        }
+      ],
+      "action": "bonus",
+      "note": "puck and TA are free lanes",
+      "origin": "authored"
+    },
+    {
+      "id": "sb-brood-answer",
+      "target": "spirit-breaker",
+      "roles": [
+        "4"
+      ],
+      "when": [
+        {
+          "kind": "enemyVisibleAny",
+          "heroes": [
+            "broodmother"
+          ]
+        }
+      ],
+      "action": "bonus",
+      "note": "SB beats brood handily",
+      "origin": "authored"
+    },
+    {
+      "id": "sb-underlord-veto",
+      "target": "spirit-breaker",
+      "roles": [
+        "4"
+      ],
+      "when": [
+        {
+          "kind": "enemyVisibleAny",
+          "heroes": [
+            "underlord"
+          ]
+        }
+      ],
+      "action": "hard_gate",
+      "note": "underlord is a hard veto, never charge him",
+      "origin": "authored"
+    },
+    {
+      "id": "wd-squishy-boost",
+      "target": "witch-doctor",
+      "roles": [
+        "5"
+      ],
+      "when": [
+        {
+          "kind": "enemyVisibleAny",
+          "heroes": [
+            "shadow-fiend",
+            "drow-ranger"
+          ]
+        }
+      ],
+      "action": "bonus",
+      "note": "cask and maledict delete the squishy backline",
+      "origin": "authored"
+    },
+    {
+      "id": "abaddon-drain-veto",
+      "target": "abaddon",
+      "roles": ["5"],
+      "when": [
+        {
+          "kind": "enemyVisibleAnyCountMin",
+          "heroes": [
+            "tinker",
+            "slark",
+            "anti-mage",
+            "keeper-of-the-light"
+          ],
+          "count": 2
+        }
+      ],
+      "action": "hard_gate",
+      "note": "mana burn and stat steal blank the shield economy",
+      "origin": "authored"
+    },
+    {
+      "id": "abaddon-poke-boost",
+      "target": "abaddon",
+      "roles": ["5"],
+      "when": [
+        {
+          "kind": "enemyVisibleAny",
+          "heroes": [
+            "shadow-fiend",
+            "weaver",
+            "templar-assassin"
+          ]
+        }
+      ],
+      "action": "bonus",
+      "note": "shield purges their poke and the coil trades win",
+      "origin": "authored"
+    },
+    {
+      "id": "ls-kite-veto",
+      "target": "lifestealer",
+      "roles": ["1"],
+      "when": [
+        {
+          "kind": "enemyVisibleAny",
+          "heroes": [
+            "enigma",
+            "visage",
+            "leshrac",
+            "riki"
+          ]
+        }
+      ],
+      "action": "hard_gate",
+      "note": "the flood and the invis kite blank the feast plan",
+      "origin": "authored"
+    },
+    {
+      "id": "ls-tank-boost",
+      "target": "lifestealer",
+      "roles": ["1"],
+      "when": [
+        {
+          "kind": "enemyVisibleAny",
+          "heroes": [
+            "shadow-fiend",
+            "gyrocopter",
+            "underlord"
+          ]
+        }
+      ],
+      "action": "bonus",
+      "note": "rage blanks the disables and feast eats the tank",
+      "origin": "authored"
+    }
+  ],
+  "autogenerated": []
+}

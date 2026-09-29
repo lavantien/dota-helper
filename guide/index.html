@@ -1,0 +1,319 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="dark">
+<title>dota 2 pool guide, 7.41f</title>
+<script src="https://cdn.jsdelivr.net/npm/d3@7.9.0/dist/d3.min.js"></script>
+<script src="guide-data-generated.js"></script>
+<script src="data.js"></script>
+<link rel="stylesheet" href="../ui/ui.css">
+<link rel="stylesheet" href="guide.css">
+</head>
+<body>
+<header>
+  <div class="masthead">
+    <h1>dota 2 pool guide</h1>
+    <span class="stamp" id="stamp">7.41f</span>
+  </div>
+  <div class="sub" id="headline"></div>
+  <div class="poolstrip" id="poolstrip"></div>
+</header>
+<nav id="nav"></nav>
+<main>
+  <section id="sec-patch" class="hidden"><div class="card facts" id="facts"></div>
+    <div class="card"><h2>corrections vs the old sheet</h2><div id="fixes"></div></div></section>
+  <section id="sec-role" class="hidden">
+    <div class="card"><h2 id="treeTitle"></h2><div class="sub" id="treeIntro"></div></div>
+    <div class="card"><h2>pool heroes for this role</h2><div id="rolePool"></div></div>
+  </section>
+  <section id="sec-heatmap" class="hidden">
+    <div class="card"><h2>pool vs common enemies</h2>
+    <div class="sub" id="hmSub"></div>
+    <div class="key">
+      <span><span class="sw sw-bad"></span>enemy favored, strong</span>
+      <span><span class="sw sw-good"></span>pool hero favored, strong</span>
+      <span><span class="sw sw-bad-mild"></span><span class="sw sw-good-mild"></span>mild edge</span>
+      <span><span class="sw sw-off"></span>below the sd cut</span>
+    </div>
+    <div class="hmwrap"><table class="hm" id="hm"></table></div></div>
+  </section>
+  <section id="sec-trends" class="hidden"><div class="card" id="trendsMovers"></div></section>
+  <section id="sec-principles" class="hidden"><div class="card" id="principles"></div></section>
+  <section id="sec-practice" class="hidden">
+    <div class="card" id="practiceWarm"></div>
+    <div class="card"><h2>demo drills, one mechanical loop per hero</h2><div class="drill" id="drills"></div></div>
+    <div class="card" id="practiceRest"></div>
+  </section>
+  <section id="sec-using" class="hidden"><div class="card" id="usingPicker"></div></section>
+  <section id="sec-hero" class="hidden"><div class="card" id="heroPanel"></div></section>
+</main>
+<div id="tip"></div>
+<script>
+const G = window.GUIDE, N = window.GUIDE_GEN;
+const mu = {}; // slug -> [{enemy, dis}] parsed from packed strings
+for (const [slug, packed] of Object.entries(N.matchups)) {
+  mu[slug] = packed.split('|').filter(Boolean).map(p => {
+    const [enemy, dis] = p.split(':'); return { enemy, dis: +dis };
+  });
+}
+const poolBySlug = Object.fromEntries(G.pool.map(h => [h.slug, h]));
+const CDN = 'https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/';
+const icon = slug => CDN + (N.iconBySlug[slug] || slug) + '.png';
+const fmt = v => (v > 0 ? '+' : '') + v.toFixed(1);
+// ramp endpoints live in ui.css as tokens, resolved once; this script sits at
+// end of body so the head stylesheet is guaranteed applied
+const cssv = getComputedStyle(document.documentElement);
+const tok = n => cssv.getPropertyValue(n).trim();
+const RAMP = {
+  bad: [tok('--bad-mild'), tok('--bad-strong')],
+  good: [tok('--good-mild'), tok('--good-strong')],
+};
+const INK_LIGHT = tok('--cell-ink-light'), INK_DARK = tok('--cell-ink-dark');
+
+function heroChip(slug) {
+  const h = poolBySlug[slug];
+  const btn = document.createElement('button');
+  btn.type = 'button';
+  btn.className = 'herochip';
+  const img = new Image();
+  img.onerror = () => img.replaceWith(initBadge(slug));
+  img.src = icon(slug);
+  img.alt = '';
+  img.className = 'hicon';
+  btn.append(img, document.createTextNode(h ? h.name : slug.replace(/-/g, ' ')));
+  btn.onclick = () => showHero(slug);
+  return btn;
+}
+function initBadge(slug) {
+  const b = document.createElement('span');
+  b.className = 'hinit';
+  b.textContent = slug.split('-').map(w => w[0]).join('').slice(0, 3).toUpperCase();
+  return b;
+}
+function bigIcon(el, slug) {
+  const img = new Image();
+  img.className = 'big';
+  img.onerror = () => img.replaceWith(initBadge(slug));
+  img.src = icon(slug);
+  el.append(img);
+}
+
+// nav
+const views = [['patch', 'patch state'], ...G.roles.map(r => ['role' + r.id, r.label]),
+  ['heatmap', 'pool vs enemies'], ['trends', 'trends'], ['principles', 'principles'], ['practice', 'practice plan'],
+  ['using', 'using the picker'], ['picker', 'open the pick simulator']];
+let current = 'role2';
+const nav = d3.select('#nav').selectAll('button').data(views).join('button')
+  .attr('class', 'segbtn').attr('type', 'button')
+  .text(d => d[1]).on('click', (e, d) => {
+    if (d[0] === 'picker') { window.location.href = '../picker/picker.html'; return; }
+    current = d[0]; render();
+  });
+
+function render() {
+  nav.attr('aria-current', d => d[0] === current ? 'page' : null);
+  const active = current.startsWith('role') ? 'role' : current;
+  for (const id of ['patch', 'role', 'heatmap', 'trends', 'principles', 'practice', 'using', 'hero'])
+    document.getElementById('sec-' + id).classList.toggle('hidden', active !== id);
+  if (current.startsWith('role')) renderRole(current.slice(4));
+  if (current === 'patch') renderPatch();
+  if (current === 'heatmap') renderHeatmap();
+  if (current === 'trends') renderTrends();
+  if (current === 'principles') renderPrinciples();
+  if (current === 'practice') renderPractice();
+  if (current === 'using') renderUsing();
+  if (current === 'hero') {} // hero panel rendered on demand
+}
+function showHero(slug) {
+  current = 'hero'; render(); renderHeroPanel(slug);
+  window.scrollTo(0, 0);
+  // the origin section is hidden, land focus on the panel heading
+  const name = document.querySelector('.herohead .name');
+  if (name) name.focus();
+}
+
+function renderPatch() {
+  const f = d3.select('#facts').html('<h2>patch state</h2>').append('ul').attr('class', 'plain');
+  f.selectAll('li').data(G.patch.facts).join('li').text(d => d);
+  d3.select('#fixes').html('').selectAll('p').data(G.patch.corrections).join('p')
+    .attr('class', 'fix').html(d => d.charAt(0).toUpperCase() + d.slice(1).replace(/^([^:]+):/, '<b>$1:</b>'));
+}
+
+function renderRole(roleId) {
+  const r = G.roles.find(x => x.id === roleId);
+  d3.select('#treeTitle').text(r.label);
+  d3.select('#treeIntro').html('listed in pool declaration order, sorted by win rate at the position (divine-immortal ' +
+    'ranked all pick); the same order lives in the <a href="../picker/picker.html">pick simulator</a> legend. ' +
+    'the picker is the main tool, this guide is the supplement.');
+  d3.select('#rolePool').html('').selectAll('button').data(
+    G.pool.filter(h => h.roles.includes(roleId)))
+    .join(enter => enter.append(d => heroChip(d.slug)));
+}
+
+function renderPoolStrip() {
+  const strip = d3.select('#poolstrip').html('');
+  G.pool.forEach(h => {
+    const b = strip.append('button').attr('type', 'button')
+      .attr('title', h.name).attr('aria-label', h.name + ', open hero panel')
+      .on('click', () => showHero(h.slug));
+    const img = new Image();
+    img.onerror = () => img.replaceWith(initBadge(h.slug));
+    img.src = icon(h.slug); img.alt = '';
+    b.append(() => img);
+  });
+}
+
+function renderHeroPanel(slug) {
+  const h = poolBySlug[slug], rows = mu[slug] || [];
+  const loses = rows.filter(r => r.dis >= N.threshold).sort((a, b) => b.dis - a.dis);
+  const beats = rows.filter(r => r.dis <= -N.threshold).sort((a, b) => a.dis - b.dis);
+  const panel = d3.select('#heroPanel').html('');
+  const head = panel.append('div').attr('class', 'herohead');
+  const iconBox = head.append('div'); bigIcon(iconBox.node(), slug);
+  const ht = head.append('div');
+  ht.append('div').attr('class', 'name').attr('tabindex', '-1').text(h.name);
+  const labels = h.roles.map(id => G.roles.find(r => r.id === id).label).join(' + ');
+  const wr = N.overallWr[slug];
+  ht.append('div').attr('class', 'sub')
+    .text(labels + ', ' + h.tier + ', overall ' + (wr === undefined ? 'wr missing from emit' : wr.toFixed(1) + '% (stratz window)'));
+  const kv = panel.append('dl').attr('class', 'kv');
+  [['identity', h.identity], ['why', h.why], ['how', h.how], ['when', h.when],
+   ['build', h.build],
+   ['timings', h.timings.map(t => t[0] + ' by ' + t[1]).join(', ')],
+   ['tech', h.tech.join('. ')],
+   ['mechanics', (h.mechanics || []).filter(m => m[0] === 'tip').map(m => m[1]).join('. ')],
+   ['counters', (h.mechanics || []).filter(m => m[0] === 'counter').map(m => m[1]).join('. ')]].forEach(([k, v]) => {
+    if (!v) return;
+    kv.append('dt').text(k); kv.append('dd').text(v);
+  });
+  panel.append('h2').text('countered by / counters, matchup z in sd vs pool hero average, ' + N.threshold + ' sd cut');
+  const bands = panel.append('div').attr('class', 'mugrid');
+  if (!rows.length) bands.append('div').attr('class', 'sub').text('no matchup data emitted yet for this hero, the stratz crawl covers it on the next emit');
+  else if (!loses.length && !beats.length) bands.append('div').attr('class', 'sub').text('no pair clears the ' + N.threshold + ' sd cut, the matchup spread is noise for this hero');
+  else [['countered by', loses, 'bad'], ['counters', beats, 'good']].forEach(([title, list, tone]) => {
+    const side = bands.append('div');
+    side.append('div').attr('class', 'sub cap').text(title);
+    const chips = side.append('div').attr('class', 'muchips');
+    if (!list.length) { chips.append('div').attr('class', 'sub').text('none clear the ' + N.threshold + ' sd cut'); return; }
+    list.forEach(d => {
+      const clickable = !!poolBySlug[d.enemy];
+      const name = d.enemy.replace(/-/g, ' ');
+      const label = name + ', matchup z ' + fmt(d.dis) + ', '
+        + (tone === 'bad' ? 'enemy' : 'pool hero') + ' favored';
+      const chip = chips.append(clickable ? 'button' : 'div').attr('class', 'muitem' + (clickable ? ' pool' : ''));
+      if (clickable) chip.attr('type', 'button').attr('aria-label', label).attr('title', label)
+        .on('click', () => showHero(d.enemy));
+      else chip.attr('title', label);
+      const img = new Image(); img.onerror = () => img.replaceWith(initBadge(d.enemy));
+      img.src = icon(d.enemy); img.className = 'hicon';
+      // non-interactive chips carry no text name, the icon alt is their only identity
+      img.alt = clickable ? '' : name;
+      chip.append(() => img);
+      chip.append('span').attr('class', 'z ' + tone).text(fmt(d.dis));
+    });
+  });
+}
+
+function renderHeatmap() {
+  d3.select('#hmSub').text('cells show the matchup z in sd from the pool hero\'s row average, red = enemy favored, '
+    + 'blue = pool hero favored, cells marked - sit below the sd cut (noise). '
+    + 'columns are the top ' + G.heatmapEnemies.length + ' most-picked heroes in the current stratz window.');
+  const table = d3.select('#hm').html('');
+  const headRow = table.append('tr');
+  headRow.append('th').text('');
+  G.heatmapEnemies.forEach(e => {
+    const th = headRow.append('th').attr('class', 'colh').attr('scope', 'col')
+      .attr('title', e.replace(/-/g, ' '));
+    const img = new Image(); img.onerror = () => img.replaceWith(initBadge(e));
+    img.src = icon(e); img.alt = e.replace(/-/g, ' ');
+    th.append(() => img);
+  });
+  const byEnemy = slug => Object.fromEntries((mu[slug] || []).map(r => [r.enemy, r.dis]));
+  G.pool.forEach(h => {
+    const vals = byEnemy(h.slug);
+    const tr = table.append('tr');
+    tr.append('th').attr('class', 'rowh').attr('scope', 'row').append('button')
+      .attr('class', 'rowlink').attr('type', 'button').text(h.name)
+      .on('click', () => showHero(h.slug));
+    G.heatmapEnemies.forEach(e => {
+      const v = vals[e];
+      const td = tr.append('td');
+      if (v === undefined) { td.attr('class', 'off').text('-'); return; }
+      const a = Math.abs(v);
+      const t = Math.min(1, (a - N.threshold) / 0.75);
+      const c = d3.interpolate(...RAMP[v > 0 ? 'bad' : 'good'])(t);
+      const rgb = d3.color(c), lum = 0.299 * rgb.r + 0.587 * rgb.g + 0.114 * rgb.b;
+      td.append('button').attr('class', 'hmcell').attr('type', 'button')
+        .attr('aria-label', h.name + ' vs ' + e.replace(/-/g, ' ') + ', z ' + fmt(v)
+          + ', ' + (v > 0 ? 'enemy' : 'pool hero') + ' favored by ' + a.toFixed(1) + ' sd')
+        .style('background', c).style('color', lum < 140 ? INK_LIGHT : INK_DARK)
+        .text(v.toFixed(0))
+        .on('mousemove', ev => {
+          const tip = d3.select('#tip').style('display', 'block')
+            .style('left', (ev.clientX + 14) + 'px').style('top', (ev.clientY + 14) + 'px');
+          tip.html('<b>' + h.name + ' vs ' + e.replace(/-/g, ' ') + '</b><br>'
+            + 'matchup z ' + fmt(v) + ', pool hero ' + (v > 0 ? 'loses' : 'gains')
+            + ' ' + a.toFixed(1) + ' sd vs matchup average');
+        }).on('mouseleave', () => d3.select('#tip').style('display', 'none'))
+        .on('click', () => showHero(h.slug));
+    });
+  });
+}
+
+function renderTrends() {
+  const card = d3.select('#trendsMovers').html('<h2>meta movement, pool heroes</h2>');
+  const entries = Object.entries(N.trend || {});
+  if (!entries.length) {
+    card.append('div').attr('class', 'sub')
+      .text('trend history starts at the 2026-09-27 scope cut (divine-immortal ranked all pick): the first snapshot is in the ledger, deltas appear from the second refresh on.');
+    return;
+  }
+  card.append('div').attr('class', 'sub')
+    .text('overall wr and pick share change in pp, ' + (N.trendWindow || 'latest snapshot pair') + ', winDay scoped to divine-immortal ranked all pick.');
+  const sorted = entries.sort((a, b) => b[1][0] - a[1][0]);
+  const ul = card.append('ul').attr('class', 'plain');
+  ul.selectAll('li').data(sorted).join('li').each(function (d) {
+    const li = d3.select(this);
+    const h = poolBySlug[d[0]];
+    li.append('b').attr('class', 'cap').text(h ? h.name : d[0]);
+    li.append('span').text(' wr ' + fmt(d[1][0]) + ' pp, pick share ' + fmt(d[1][1]) + ' pp');
+    const btn = li.append('button').attr('class', 'rowlink').attr('type', 'button').text('open panel');
+    btn.on('click', () => showHero(d[0]));
+  });
+}
+
+function renderPrinciples() {
+  const p = d3.select('#principles').html('<h2>generalized principles</h2>');
+  p.selectAll('div').data(G.principles).join('div').attr('class', 'card')
+    .html(d => '<b class="cap">' + d.name + '.</b> ' + d.body);
+}
+function renderUsing() {
+  const u = d3.select('#usingPicker').html('<h2>using the pick simulator</h2>');
+  u.append('div').attr('class', 'sub').html(G.picker.intro);
+  u.selectAll('div.pcard').data(G.picker.cards).join('div')
+    .attr('class', 'card pcard')
+    .html(d => '<b class="cap">' + d.name + '.</b> ' + d.body);
+}
+function renderPractice() {
+  d3.select('#practiceWarm').html('<h2>warmup before ranked</h2>')
+    .append('ul').attr('class', 'plain').selectAll('li').data(G.practice.warmup).join('li').text(d => d);
+  const d = d3.select('#drills').selectAll('div').data(G.practice.drills).join('div');
+  d.html(([slug, drill]) => '<b>' + (poolBySlug[slug] ? poolBySlug[slug].name : slug) + ':</b> ' + drill);
+  const rest = d3.select('#practiceRest').html('');
+  [['replay protocol', G.practice.replay], ['calibration rules', G.practice.calibration],
+   ['bo5 session protocol', G.practice.bo5]].forEach(([t, items]) => {
+    const c = rest.append('div').attr('class', 'card');
+    c.append('h2').text(t);
+    c.append('ul').attr('class', 'plain').selectAll('li').data(items).join('li').text(x => x);
+  });
+}
+d3.select('#headline').text(G.patch.headline + '. data: stratz crawl window, ' + N.date + '.');
+const stamp = G.patch.headline.match(/\d+\.\d+[a-z]/);
+if (stamp) d3.select('#stamp').text(stamp[0]);
+renderPoolStrip();
+render();
+</script>
+</body>
+</html>

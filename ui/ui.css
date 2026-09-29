@@ -1,0 +1,165 @@
+/* shared design tokens, base rules, and cross-page primitives.
+   single source for every color, type, spacing, and radius value;
+   guide.css and picker.css consume these and add page layout only. */
+
+:root {
+  color-scheme: dark;
+
+  /* draft night hud: cool slate panels, gold for structure, red/blue for data */
+  --surface-2: #10141a; /* page ground */
+  --surface-1: #161c24; /* cards */
+  --surface-3: #1d2530; /* raised: chips, nav, slots */
+  --ink-1: #e9edf1;
+  --ink-2: #adb8c2;
+  --muted: #83919d;
+  --grid: #2a3440;
+  --ring: rgba(233, 237, 241, .12);
+  --accent: #c99a45; /* gold: active nav, phase, our side, patch stamp */
+  --accent-soft: rgba(201, 154, 69, .16);
+  --steel-soft: rgba(127, 147, 166, .16);
+  --steel: #7f93a6; /* enemy side marking */
+  --bad: #d05545; /* enemy favored */
+  --good-text: #6cb3e3; --bad-text: #e0836f; /* data hues lifted to text contrast */
+  --good-soft: rgba(79, 155, 216, .16); --bad-soft: rgba(208, 85, 69, .16);
+  --accent-line: rgba(201, 154, 69, .5); --steel-line: rgba(127, 147, 166, .5);
+  --hover: rgba(233, 237, 241, .05);
+  --bad-mild: #4a3335; --bad-strong: #b34a3a; /* matchup ramp, red, light ink passes 4.5:1 at the strong end */
+  --good-mild: #2c3a46; --good-strong: #3570a6; /* matchup ramp, blue, same */
+  --off-cell: #232b34;
+  --cell-ink-light: #f2f4f6;
+  --cell-ink-dark: #10141a;
+  --warn: #e0a33a;
+  --warn-bg: rgba(224, 163, 58, .14);
+
+  /* bahnschrift reads like broadcast hud numerals; body prose stays on segoe */
+  --font-display: Bahnschrift, "Bahnschrift SemiCondensed", "Arial Narrow", ui-sans-serif, sans-serif;
+  --font-body: "Segoe UI", system-ui, -apple-system, sans-serif;
+
+  /* 1rem = 17px, percent-based so browser font preferences still scale */
+  --fs-micro: 0.765rem; /* floor, micro labels only */
+  --fs-small: 0.88rem;
+  --fs-body: 1rem;
+  --fs-h2: 1.18rem;
+  --fs-h1: 1.5rem;
+  --fs-display: 2.2rem; /* patch stamp */
+  --fw-medium: 600;
+  --fw-strong: 650;
+  --fw-bold: 700;
+
+  --sp-1: 0.25rem; --sp-2: 0.5rem; --sp-3: 0.75rem; --sp-4: 1rem; --sp-5: 1.5rem;
+  --r-1: 0.25rem; --r-2: 0.5rem; --r-3: 0.75rem;
+  --shadow-1: 0 3px 14px rgba(0, 0, 0, .35);
+  --control-h: 2.25rem; /* shared chip, seg button, list row height */
+  --control-lg: 2.5rem; /* draft slots and the search input */
+  --prose-w: 70ch; /* paragraph measure, prose only, never a section cap */
+
+  /* hero portraits are 16:9 rects, sized in rem so text scaling carries them */
+  --hicon-w: 2rem; --hicon-h: 1.125rem;
+  --hicon-col-w: 1.8rem; --hicon-col-h: 1rem;
+  --hicon-strip-w: 3rem; --hicon-strip-h: 1.7rem;
+  --hicon-big-w: 6rem; --hicon-big-h: 3.375rem;
+}
+
+html { font-size: 106.25%; }
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--surface-2);
+  color: var(--ink-1);
+  font: var(--fs-body)/1.5 var(--font-body);
+}
+
+/* span-to-button conversions depend on this reset landing before any of them */
+button {
+  font: inherit;
+  color: inherit;
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { transition: none !important; animation: none !important; }
+}
+
+h1, h2 {
+  font-family: var(--font-display);
+  line-height: 1.2;
+  margin: 0;
+  font-weight: var(--fw-strong);
+}
+h1 { font-size: var(--fs-h1); }
+h2 { font-size: var(--fs-h2); }
+
+.card {
+  background: var(--surface-1);
+  border: 1px solid var(--ring);
+  border-radius: var(--r-2);
+  padding: var(--sp-4);
+  margin-bottom: var(--sp-3);
+}
+
+.card > h2:first-child { margin-top: 0; }
+
+.sub { color: var(--ink-2); max-width: var(--prose-w); }
+
+.hidden { display: none; }
+
+/* segmented control button: guide nav tabs and picker seg groups */
+.segbtn {
+  border: 1px solid var(--grid); background: var(--surface-3); color: var(--ink-2);
+  border-radius: var(--r-2); padding: var(--sp-1) var(--sp-3); min-height: var(--control-h);
+  font-size: var(--fs-small);
+  transition: border-color .12s ease, color .12s ease;
+}
+.segbtn:hover { border-color: var(--ink-2); color: var(--ink-1); }
+.segbtn.on, .segbtn[aria-current='page'] {
+  border-color: var(--accent); color: var(--accent);
+  background: var(--accent-soft); font-weight: var(--fw-strong);
+}
+
+/* hero portrait chip, the atomic unit of both pages */
+.herochip {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--sp-2);
+  border: 1px solid var(--grid);
+  border-radius: var(--r-2);
+  padding: var(--sp-1) var(--sp-3) var(--sp-1) var(--sp-1);
+  min-height: var(--control-h);
+  background: var(--surface-3);
+  font-size: var(--fs-small);
+  transition: border-color .12s ease;
+}
+.herochip:hover { border-color: var(--ink-2); }
+.herochip.out { text-decoration: line-through; color: var(--muted); }
+
+.hicon {
+  width: var(--hicon-w);
+  height: var(--hicon-h);
+  border-radius: 3px;
+  object-fit: cover;
+  display: inline-block;
+  vertical-align: middle;
+  background: var(--surface-3);
+}
+
+.hinit {
+  width: var(--hicon-w);
+  height: var(--hicon-h);
+  border-radius: 3px;
+  background: var(--grid);
+  color: var(--ink-2);
+  font-size: var(--fs-micro);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}

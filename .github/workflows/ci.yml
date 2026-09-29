@@ -3,49 +3,23 @@ name: ci
 on:
   push:
     branches: [main]
-  release:
-    types: [published]
   workflow_dispatch:
 
 permissions:
-  contents: write
+  contents: read
 
 concurrency:
   group: ci-${{ github.ref }}
   cancel-in-progress: false
 
 jobs:
-  test:
+  check:
     runs-on: ubuntu-latest
-    timeout-minutes: 20
+    timeout-minutes: 15
     steps:
-      - uses: actions/checkout@v7
-      - uses: actions/setup-go@v7
+      - uses: actions/checkout@v6
+      - uses: actions/setup-node@v6
         with:
-          go-version-file: go.mod
-          cache: true
-      - run: make badge
-      - name: publish coverage badge
-        # always(): publish the truthful coverage color even when the gate
-        # or the suite fails. A missing json means the suite died before a
-        # profile existed, published as a red error badge instead of going
-        # stale. Main and release tags only, so a branch dispatch cannot
-        # clobber the badge. Default-token pushes trigger no further runs.
-        if: always() && (github.ref == 'refs/heads/main' || startsWith(github.ref, 'refs/tags/'))
-        env:
-          GH_TOKEN: ${{ github.token }}
-        run: |
-          dir="$(mktemp -d)"
-          if [ -f coverage.json ]; then
-            cp coverage.json "$dir"
-          else
-            printf '%s' '{"schemaVersion":1,"label":"coverage","message":"error","color":"red","isError":true}' > "$dir/coverage.json"
-          fi
-          cd "$dir"
-          git init -q -b badges
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git remote add origin "https://x-access-token:${GH_TOKEN}@github.com/${GITHUB_REPOSITORY}.git"
-          git add coverage.json
-          git commit -qm "coverage badge"
-          git push -qf origin badges
+          node-version: 24
+      - run: make test-picker
+      - run: make check

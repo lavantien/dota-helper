@@ -1,0 +1,1525 @@
+{
+  "slug": "razor",
+  "heroId": 15,
+  "name": "Razor",
+  "npc": "npc_dota_hero_razor",
+  "fetchedAt": "2026-09-29T08:55:28Z",
+  "bracket": "DIVINE_IMMORTAL",
+  "week": 1789948800,
+  "vs": [
+    {
+      "heroId2": 103,
+      "matchCount": 92,
+      "winCount": 50,
+      "synergy": 7.675
+    },
+    {
+      "heroId2": 8,
+      "matchCount": 1343,
+      "winCount": 735,
+      "synergy": 7.578
+    },
+    {
+      "heroId2": 95,
+      "matchCount": 154,
+      "winCount": 84,
+      "synergy": 5.723
+    },
+    {
+      "heroId2": 102,
+      "matchCount": 216,
+      "winCount": 118,
+      "synergy": 5.167
+    },
+    {
+      "heroId2": 92,
+      "matchCount": 164,
+      "winCount": 79,
+      "synergy": 4.643
+    },
+    {
+      "heroId2": 68,
+      "matchCount": 364,
+      "winCount": 205,
+      "synergy": 4.597
+    },
+    {
+      "heroId2": 75,
+      "matchCount": 746,
+      "winCount": 416,
+      "synergy": 4.48
+    },
+    {
+      "heroId2": 19,
+      "matchCount": 402,
+      "winCount": 240,
+      "synergy": 4.462
+    },
+    {
+      "heroId2": 128,
+      "matchCount": 1134,
+      "winCount": 630,
+      "synergy": 4.255
+    },
+    {
+      "heroId2": 120,
+      "matchCount": 403,
+      "winCount": 230,
+      "synergy": 4.219
+    },
+    {
+      "heroId2": 63,
+      "matchCount": 359,
+      "winCount": 205,
+      "synergy": 4.075
+    },
+    {
+      "heroId2": 54,
+      "matchCount": 1881,
+      "winCount": 983,
+      "synergy": 4.036
+    },
+    {
+      "heroId2": 25,
+      "matchCount": 1530,
+      "winCount": 872,
+      "synergy": 3.928
+    },
+    {
+      "heroId2": 121,
+      "matchCount": 654,
+      "winCount": 344,
+      "synergy": 3.843
+    },
+    {
+      "heroId2": 6,
+      "matchCount": 706,
+      "winCount": 414,
+      "synergy": 3.668
+    },
+    {
+      "heroId2": 69,
+      "matchCount": 679,
+      "winCount": 373,
+      "synergy": 3.609
+    },
+    {
+      "heroId2": 91,
+      "matchCount": 280,
+      "winCount": 150,
+      "synergy": 3.388
+    },
+    {
+      "heroId2": 29,
+      "matchCount": 619,
+      "winCount": 338,
+      "synergy": 3.336
+    },
+    {
+      "heroId2": 50,
+      "matchCount": 270,
+      "winCount": 140,
+      "synergy": 3.23
+    },
+    {
+      "heroId2": 37,
+      "matchCount": 351,
+      "winCount": 197,
+      "synergy": 3.144
+    },
+    {
+      "heroId2": 21,
+      "matchCount": 1582,
+      "winCount": 855,
+      "synergy": 2.972
+    },
+    {
+      "heroId2": 79,
+      "matchCount": 166,
+      "winCount": 95,
+      "synergy": 2.898
+    },
+    {
+      "heroId2": 74,
+      "matchCount": 1569,
+      "winCount": 800,
+      "synergy": 2.892
+    },
+    {
+      "heroId2": 56,
+      "matchCount": 328,
+      "winCount": 165,
+      "synergy": 2.892
+    },
+    {
+      "heroId2": 57,
+      "matchCount": 171,
+      "winCount": 87,
+      "synergy": 2.858
+    },
+    {
+      "heroId2": 70,
+      "matchCount": 488,
+      "winCount": 256,
+      "synergy": 2.499
+    },
+    {
+      "heroId2": 83,
+      "matchCount": 224,
+      "winCount": 130,
+      "synergy": 2.458
+    },
+    {
+      "heroId2": 145,
+      "matchCount": 367,
+      "winCount": 213,
+      "synergy": 2.358
+    },
+    {
+      "heroId2": 104,
+      "matchCount": 970,
+      "winCount": 482,
+      "synergy": 2.331
+    },
+    {
+      "heroId2": 93,
+      "matchCount": 984,
+      "winCount": 515,
+      "synergy": 2.271
+    },
+    {
+      "heroId2": 43,
+      "matchCount": 362,
+      "winCount": 193,
+      "synergy": 2.176
+    },
+    {
+      "heroId2": 26,
+      "matchCount": 1831,
+      "winCount": 980,
+      "synergy": 1.955
+    },
+    {
+      "heroId2": 60,
+      "matchCount": 964,
+      "winCount": 470,
+      "synergy": 1.857
+    },
+    {
+      "heroId2": 31,
+      "matchCount": 1025,
+      "winCount": 511,
+      "synergy": 1.82
+    },
+    {
+      "heroId2": 65,
+      "matchCount": 66,
+      "winCount": 36,
+      "synergy": 1.735
+    },
+    {
+      "heroId2": 138,
+      "matchCount": 181,
+      "winCount": 97,
+      "synergy": 1.687
+    },
+    {
+      "heroId2": 86,
+      "matchCount": 2232,
+      "winCount": 1161,
+      "synergy": 1.664
+    },
+    {
+      "heroId2": 101,
+      "matchCount": 902,
+      "winCount": 469,
+      "synergy": 1.521
+    },
+    {
+      "heroId2": 87,
+      "matchCount": 864,
+      "winCount": 438,
+      "synergy": 1.508
+    },
+    {
+      "heroId2": 44,
+      "matchCount": 475,
+      "winCount": 243,
+      "synergy": 1.506
+    },
+    {
+      "heroId2": 88,
+      "matchCount": 607,
+      "winCount": 296,
+      "synergy": 1.349
+    },
+    {
+      "heroId2": 64,
+      "matchCount": 462,
+      "winCount": 253,
+      "synergy": 1.26
+    },
+    {
+      "heroId2": 7,
+      "matchCount": 1138,
+      "winCount": 574,
+      "synergy": 1.216
+    },
+    {
+      "heroId2": 55,
+      "matchCount": 663,
+      "winCount": 339,
+      "synergy": 1.213
+    },
+    {
+      "heroId2": 66,
+      "matchCount": 39,
+      "winCount": 20,
+      "synergy": 1.147
+    },
+    {
+      "heroId2": 97,
+      "matchCount": 999,
+      "winCount": 519,
+      "synergy": 1.132
+    },
+    {
+      "heroId2": 94,
+      "matchCount": 106,
+      "winCount": 56,
+      "synergy": 1.026
+    },
+    {
+      "heroId2": 111,
+      "matchCount": 371,
+      "winCount": 186,
+      "synergy": 0.994
+    },
+    {
+      "heroId2": 80,
+      "matchCount": 287,
+      "winCount": 152,
+      "synergy": 0.991
+    },
+    {
+      "heroId2": 22,
+      "matchCount": 901,
+      "winCount": 474,
+      "synergy": 0.981
+    },
+    {
+      "heroId2": 14,
+      "matchCount": 2160,
+      "winCount": 1111,
+      "synergy": 0.973
+    },
+    {
+      "heroId2": 114,
+      "matchCount": 318,
+      "winCount": 174,
+      "synergy": 0.958
+    },
+    {
+      "heroId2": 135,
+      "matchCount": 1055,
+      "winCount": 516,
+      "synergy": 0.956
+    },
+    {
+      "heroId2": 49,
+      "matchCount": 769,
+      "winCount": 373,
+      "synergy": 0.95
+    },
+    {
+      "heroId2": 119,
+      "matchCount": 678,
+      "winCount": 348,
+      "synergy": 0.917
+    },
+    {
+      "heroId2": 90,
+      "matchCount": 389,
+      "winCount": 191,
+      "synergy": 0.776
+    },
+    {
+      "heroId2": 28,
+      "matchCount": 575,
+      "winCount": 305,
+      "synergy": 0.665
+    },
+    {
+      "heroId2": 36,
+      "matchCount": 1089,
+      "winCount": 561,
+      "synergy": 0.573
+    },
+    {
+      "heroId2": 47,
+      "matchCount": 456,
+      "winCount": 235,
+      "synergy": 0.557
+    },
+    {
+      "heroId2": 20,
+      "matchCount": 700,
+      "winCount": 342,
+      "synergy": 0.552
+    },
+    {
+      "heroId2": 129,
+      "matchCount": 476,
+      "winCount": 257,
+      "synergy": 0.519
+    },
+    {
+      "heroId2": 84,
+      "matchCount": 912,
+      "winCount": 471,
+      "synergy": 0.499
+    },
+    {
+      "heroId2": 131,
+      "matchCount": 531,
+      "winCount": 271,
+      "synergy": 0.467
+    },
+    {
+      "heroId2": 18,
+      "matchCount": 816,
+      "winCount": 400,
+      "synergy": 0.465
+    },
+    {
+      "heroId2": 27,
+      "matchCount": 902,
+      "winCount": 441,
+      "synergy": 0.174
+    },
+    {
+      "heroId2": 34,
+      "matchCount": 309,
+      "winCount": 158,
+      "synergy": 0.043
+    },
+    {
+      "heroId2": 42,
+      "matchCount": 766,
+      "winCount": 360,
+      "synergy": -0.024
+    },
+    {
+      "heroId2": 71,
+      "matchCount": 1245,
+      "winCount": 602,
+      "synergy": -0.033
+    },
+    {
+      "heroId2": 76,
+      "matchCount": 1204,
+      "winCount": 557,
+      "synergy": -0.077
+    },
+    {
+      "heroId2": 41,
+      "matchCount": 684,
+      "winCount": 346,
+      "synergy": -0.104
+    },
+    {
+      "heroId2": 108,
+      "matchCount": 812,
+      "winCount": 446,
+      "synergy": -0.109
+    },
+    {
+      "heroId2": 126,
+      "matchCount": 467,
+      "winCount": 238,
+      "synergy": -0.191
+    },
+    {
+      "heroId2": 155,
+      "matchCount": 174,
+      "winCount": 90,
+      "synergy": -0.233
+    },
+    {
+      "heroId2": 48,
+      "matchCount": 1003,
+      "winCount": 492,
+      "synergy": -0.27
+    },
+    {
+      "heroId2": 9,
+      "matchCount": 1326,
+      "winCount": 659,
+      "synergy": -0.41
+    },
+    {
+      "heroId2": 62,
+      "matchCount": 889,
+      "winCount": 398,
+      "synergy": -0.694
+    },
+    {
+      "heroId2": 58,
+      "matchCount": 266,
+      "winCount": 135,
+      "synergy": -0.708
+    },
+    {
+      "heroId2": 38,
+      "matchCount": 148,
+      "winCount": 76,
+      "synergy": -0.712
+    },
+    {
+      "heroId2": 16,
+      "matchCount": 225,
+      "winCount": 118,
+      "synergy": -0.744
+    },
+    {
+      "heroId2": 96,
+      "matchCount": 564,
+      "winCount": 288,
+      "synergy": -0.744
+    },
+    {
+      "heroId2": 35,
+      "matchCount": 958,
+      "winCount": 495,
+      "synergy": -0.755
+    },
+    {
+      "heroId2": 106,
+      "matchCount": 932,
+      "winCount": 460,
+      "synergy": -0.776
+    },
+    {
+      "heroId2": 100,
+      "matchCount": 614,
+      "winCount": 308,
+      "synergy": -0.842
+    },
+    {
+      "heroId2": 2,
+      "matchCount": 1533,
+      "winCount": 781,
+      "synergy": -0.899
+    },
+    {
+      "heroId2": 46,
+      "matchCount": 318,
+      "winCount": 169,
+      "synergy": -0.976
+    },
+    {
+      "heroId2": 137,
+      "matchCount": 257,
+      "winCount": 124,
+      "synergy": -1.261
+    },
+    {
+      "heroId2": 105,
+      "matchCount": 737,
+      "winCount": 357,
+      "synergy": -1.282
+    },
+    {
+      "heroId2": 123,
+      "matchCount": 1157,
+      "winCount": 601,
+      "synergy": -1.57
+    },
+    {
+      "heroId2": 32,
+      "matchCount": 290,
+      "winCount": 135,
+      "synergy": -1.611
+    },
+    {
+      "heroId2": 110,
+      "matchCount": 523,
+      "winCount": 245,
+      "synergy": -1.781
+    },
+    {
+      "heroId2": 73,
+      "matchCount": 142,
+      "winCount": 74,
+      "synergy": -1.808
+    },
+    {
+      "heroId2": 85,
+      "matchCount": 1103,
+      "winCount": 553,
+      "synergy": -1.975
+    },
+    {
+      "heroId2": 72,
+      "matchCount": 224,
+      "winCount": 118,
+      "synergy": -1.993
+    },
+    {
+      "heroId2": 40,
+      "matchCount": 404,
+      "winCount": 209,
+      "synergy": -2.129
+    },
+    {
+      "heroId2": 30,
+      "matchCount": 833,
+      "winCount": 400,
+      "synergy": -2.197
+    },
+    {
+      "heroId2": 98,
+      "matchCount": 406,
+      "winCount": 212,
+      "synergy": -2.231
+    },
+    {
+      "heroId2": 11,
+      "matchCount": 1050,
+      "winCount": 604,
+      "synergy": -2.309
+    },
+    {
+      "heroId2": 112,
+      "matchCount": 646,
+      "winCount": 299,
+      "synergy": -2.463
+    },
+    {
+      "heroId2": 89,
+      "matchCount": 55,
+      "winCount": 26,
+      "synergy": -2.604
+    },
+    {
+      "heroId2": 23,
+      "matchCount": 307,
+      "winCount": 147,
+      "synergy": -2.694
+    },
+    {
+      "heroId2": 107,
+      "matchCount": 611,
+      "winCount": 283,
+      "synergy": -2.733
+    },
+    {
+      "heroId2": 67,
+      "matchCount": 684,
+      "winCount": 311,
+      "synergy": -2.885
+    },
+    {
+      "heroId2": 17,
+      "matchCount": 667,
+      "winCount": 332,
+      "synergy": -3.264
+    },
+    {
+      "heroId2": 136,
+      "matchCount": 311,
+      "winCount": 142,
+      "synergy": -3.29
+    },
+    {
+      "heroId2": 109,
+      "matchCount": 411,
+      "winCount": 196,
+      "synergy": -3.422
+    },
+    {
+      "heroId2": 5,
+      "matchCount": 947,
+      "winCount": 446,
+      "synergy": -3.574
+    },
+    {
+      "heroId2": 39,
+      "matchCount": 977,
+      "winCount": 482,
+      "synergy": -3.608
+    },
+    {
+      "heroId2": 53,
+      "matchCount": 591,
+      "winCount": 308,
+      "synergy": -3.778
+    },
+    {
+      "heroId2": 12,
+      "matchCount": 854,
+      "winCount": 368,
+      "synergy": -3.914
+    },
+    {
+      "heroId2": 59,
+      "matchCount": 209,
+      "winCount": 104,
+      "synergy": -4.004
+    },
+    {
+      "heroId2": 3,
+      "matchCount": 279,
+      "winCount": 126,
+      "synergy": -4.119
+    },
+    {
+      "heroId2": 81,
+      "matchCount": 194,
+      "winCount": 86,
+      "synergy": -4.419
+    },
+    {
+      "heroId2": 51,
+      "matchCount": 378,
+      "winCount": 181,
+      "synergy": -4.562
+    },
+    {
+      "heroId2": 13,
+      "matchCount": 363,
+      "winCount": 171,
+      "synergy": -4.633
+    },
+    {
+      "heroId2": 33,
+      "matchCount": 311,
+      "winCount": 128,
+      "synergy": -4.682
+    },
+    {
+      "heroId2": 10,
+      "matchCount": 471,
+      "winCount": 216,
+      "synergy": -4.942
+    },
+    {
+      "heroId2": 78,
+      "matchCount": 197,
+      "winCount": 84,
+      "synergy": -4.961
+    },
+    {
+      "heroId2": 1,
+      "matchCount": 758,
+      "winCount": 336,
+      "synergy": -5.931
+    },
+    {
+      "heroId2": 4,
+      "matchCount": 143,
+      "winCount": 61,
+      "synergy": -6.282
+    },
+    {
+      "heroId2": 82,
+      "matchCount": 99,
+      "winCount": 38,
+      "synergy": -6.406
+    },
+    {
+      "heroId2": 45,
+      "matchCount": 261,
+      "winCount": 108,
+      "synergy": -6.75
+    },
+    {
+      "heroId2": 52,
+      "matchCount": 186,
+      "winCount": 74,
+      "synergy": -6.981
+    },
+    {
+      "heroId2": 113,
+      "matchCount": 273,
+      "winCount": 105,
+      "synergy": -6.987
+    },
+    {
+      "heroId2": 99,
+      "matchCount": 218,
+      "winCount": 103,
+      "synergy": -7.328
+    },
+    {
+      "heroId2": 77,
+      "matchCount": 93,
+      "winCount": 31,
+      "synergy": -15.158
+    },
+    {
+      "heroId2": 61,
+      "matchCount": 86,
+      "winCount": 26,
+      "synergy": -19.326
+    }
+  ],
+  "with": [
+    {
+      "heroId2": 155,
+      "matchCount": 151,
+      "winCount": 89,
+      "synergy": 9.124
+    },
+    {
+      "heroId2": 23,
+      "matchCount": 217,
+      "winCount": 128,
+      "synergy": 7.912
+    },
+    {
+      "heroId2": 82,
+      "matchCount": 95,
+      "winCount": 60,
+      "synergy": 6.44
+    },
+    {
+      "heroId2": 4,
+      "matchCount": 100,
+      "winCount": 58,
+      "synergy": 5.333
+    },
+    {
+      "heroId2": 33,
+      "matchCount": 136,
+      "winCount": 82,
+      "synergy": 4.595
+    },
+    {
+      "heroId2": 95,
+      "matchCount": 108,
+      "winCount": 62,
+      "synergy": 4.532
+    },
+    {
+      "heroId2": 6,
+      "matchCount": 398,
+      "winCount": 202,
+      "synergy": 3.964
+    },
+    {
+      "heroId2": 129,
+      "matchCount": 241,
+      "winCount": 125,
+      "synergy": 3.641
+    },
+    {
+      "heroId2": 80,
+      "matchCount": 235,
+      "winCount": 125,
+      "synergy": 3.499
+    },
+    {
+      "heroId2": 1,
+      "matchCount": 530,
+      "winCount": 290,
+      "synergy": 3.256
+    },
+    {
+      "heroId2": 37,
+      "matchCount": 296,
+      "winCount": 154,
+      "synergy": 3.227
+    },
+    {
+      "heroId2": 97,
+      "matchCount": 710,
+      "winCount": 383,
+      "synergy": 3.081
+    },
+    {
+      "heroId2": 39,
+      "matchCount": 615,
+      "winCount": 319,
+      "synergy": 3.08
+    },
+    {
+      "heroId2": 13,
+      "matchCount": 270,
+      "winCount": 143,
+      "synergy": 3.029
+    },
+    {
+      "heroId2": 137,
+      "matchCount": 143,
+      "winCount": 79,
+      "synergy": 3.002
+    },
+    {
+      "heroId2": 76,
+      "matchCount": 971,
+      "winCount": 564,
+      "synergy": 2.879
+    },
+    {
+      "heroId2": 79,
+      "matchCount": 175,
+      "winCount": 88,
+      "synergy": 2.846
+    },
+    {
+      "heroId2": 107,
+      "matchCount": 653,
+      "winCount": 362,
+      "synergy": 2.783
+    },
+    {
+      "heroId2": 61,
+      "matchCount": 62,
+      "winCount": 34,
+      "synergy": 2.666
+    },
+    {
+      "heroId2": 87,
+      "matchCount": 931,
+      "winCount": 508,
+      "synergy": 2.138
+    },
+    {
+      "heroId2": 40,
+      "matchCount": 385,
+      "winCount": 192,
+      "synergy": 1.982
+    },
+    {
+      "heroId2": 18,
+      "matchCount": 804,
+      "winCount": 442,
+      "synergy": 1.895
+    },
+    {
+      "heroId2": 20,
+      "matchCount": 637,
+      "winCount": 351,
+      "synergy": 1.811
+    },
+    {
+      "heroId2": 53,
+      "matchCount": 459,
+      "winCount": 219,
+      "synergy": 1.79
+    },
+    {
+      "heroId2": 66,
+      "matchCount": 30,
+      "winCount": 16,
+      "synergy": 1.78
+    },
+    {
+      "heroId2": 81,
+      "matchCount": 150,
+      "winCount": 82,
+      "synergy": 1.775
+    },
+    {
+      "heroId2": 128,
+      "matchCount": 918,
+      "winCount": 476,
+      "synergy": 1.548
+    },
+    {
+      "heroId2": 67,
+      "matchCount": 621,
+      "winCount": 340,
+      "synergy": 1.547
+    },
+    {
+      "heroId2": 91,
+      "matchCount": 339,
+      "winCount": 179,
+      "synergy": 1.338
+    },
+    {
+      "heroId2": 41,
+      "matchCount": 488,
+      "winCount": 255,
+      "synergy": 1.32
+    },
+    {
+      "heroId2": 29,
+      "matchCount": 232,
+      "winCount": 120,
+      "synergy": 1.268
+    },
+    {
+      "heroId2": 49,
+      "matchCount": 608,
+      "winCount": 336,
+      "synergy": 1.229
+    },
+    {
+      "heroId2": 12,
+      "matchCount": 620,
+      "winCount": 346,
+      "synergy": 1.204
+    },
+    {
+      "heroId2": 35,
+      "matchCount": 667,
+      "winCount": 336,
+      "synergy": 1.136
+    },
+    {
+      "heroId2": 60,
+      "matchCount": 400,
+      "winCount": 223,
+      "synergy": 1.134
+    },
+    {
+      "heroId2": 28,
+      "matchCount": 291,
+      "winCount": 147,
+      "synergy": 1.118
+    },
+    {
+      "heroId2": 119,
+      "matchCount": 693,
+      "winCount": 363,
+      "synergy": 1.105
+    },
+    {
+      "heroId2": 7,
+      "matchCount": 1161,
+      "winCount": 621,
+      "synergy": 1.031
+    },
+    {
+      "heroId2": 30,
+      "matchCount": 851,
+      "winCount": 447,
+      "synergy": 1.023
+    },
+    {
+      "heroId2": 68,
+      "matchCount": 363,
+      "winCount": 185,
+      "synergy": 0.999
+    },
+    {
+      "heroId2": 58,
+      "matchCount": 176,
+      "winCount": 90,
+      "synergy": 0.908
+    },
+    {
+      "heroId2": 56,
+      "matchCount": 236,
+      "winCount": 130,
+      "synergy": 0.89
+    },
+    {
+      "heroId2": 136,
+      "matchCount": 284,
+      "winCount": 152,
+      "synergy": 0.84
+    },
+    {
+      "heroId2": 51,
+      "matchCount": 481,
+      "winCount": 240,
+      "synergy": 0.643
+    },
+    {
+      "heroId2": 121,
+      "matchCount": 559,
+      "winCount": 299,
+      "synergy": 0.612
+    },
+    {
+      "heroId2": 145,
+      "matchCount": 323,
+      "winCount": 151,
+      "synergy": 0.559
+    },
+    {
+      "heroId2": 62,
+      "matchCount": 916,
+      "winCount": 518,
+      "synergy": 0.514
+    },
+    {
+      "heroId2": 83,
+      "matchCount": 191,
+      "winCount": 89,
+      "synergy": 0.361
+    },
+    {
+      "heroId2": 11,
+      "matchCount": 721,
+      "winCount": 306,
+      "synergy": 0.342
+    },
+    {
+      "heroId2": 17,
+      "matchCount": 510,
+      "winCount": 250,
+      "synergy": 0.333
+    },
+    {
+      "heroId2": 85,
+      "matchCount": 957,
+      "winCount": 478,
+      "synergy": 0.263
+    },
+    {
+      "heroId2": 50,
+      "matchCount": 237,
+      "winCount": 126,
+      "synergy": 0.227
+    },
+    {
+      "heroId2": 74,
+      "matchCount": 1315,
+      "winCount": 706,
+      "synergy": 0.176
+    },
+    {
+      "heroId2": 14,
+      "matchCount": 2150,
+      "winCount": 1105,
+      "synergy": 0.148
+    },
+    {
+      "heroId2": 86,
+      "matchCount": 1869,
+      "winCount": 960,
+      "synergy": 0.06
+    },
+    {
+      "heroId2": 3,
+      "matchCount": 297,
+      "winCount": 155,
+      "synergy": -0.137
+    },
+    {
+      "heroId2": 114,
+      "matchCount": 297,
+      "winCount": 142,
+      "synergy": -0.202
+    },
+    {
+      "heroId2": 105,
+      "matchCount": 733,
+      "winCount": 378,
+      "synergy": -0.382
+    },
+    {
+      "heroId2": 64,
+      "matchCount": 412,
+      "winCount": 197,
+      "synergy": -0.401
+    },
+    {
+      "heroId2": 31,
+      "matchCount": 964,
+      "winCount": 512,
+      "synergy": -0.452
+    },
+    {
+      "heroId2": 26,
+      "matchCount": 1677,
+      "winCount": 833,
+      "synergy": -0.455
+    },
+    {
+      "heroId2": 16,
+      "matchCount": 156,
+      "winCount": 75,
+      "synergy": -0.489
+    },
+    {
+      "heroId2": 44,
+      "matchCount": 453,
+      "winCount": 233,
+      "synergy": -0.57
+    },
+    {
+      "heroId2": 27,
+      "matchCount": 897,
+      "winCount": 468,
+      "synergy": -0.719
+    },
+    {
+      "heroId2": 42,
+      "matchCount": 546,
+      "winCount": 293,
+      "synergy": -0.886
+    },
+    {
+      "heroId2": 84,
+      "matchCount": 889,
+      "winCount": 442,
+      "synergy": -0.891
+    },
+    {
+      "heroId2": 25,
+      "matchCount": 1146,
+      "winCount": 546,
+      "synergy": -1.059
+    },
+    {
+      "heroId2": 110,
+      "matchCount": 433,
+      "winCount": 225,
+      "synergy": -1.061
+    },
+    {
+      "heroId2": 21,
+      "matchCount": 1255,
+      "winCount": 623,
+      "synergy": -1.062
+    },
+    {
+      "heroId2": 22,
+      "matchCount": 775,
+      "winCount": 380,
+      "synergy": -1.083
+    },
+    {
+      "heroId2": 113,
+      "matchCount": 231,
+      "winCount": 127,
+      "synergy": -1.093
+    },
+    {
+      "heroId2": 48,
+      "matchCount": 792,
+      "winCount": 405,
+      "synergy": -1.187
+    },
+    {
+      "heroId2": 47,
+      "matchCount": 277,
+      "winCount": 137,
+      "synergy": -1.245
+    },
+    {
+      "heroId2": 78,
+      "matchCount": 125,
+      "winCount": 66,
+      "synergy": -1.26
+    },
+    {
+      "heroId2": 9,
+      "matchCount": 1215,
+      "winCount": 611,
+      "synergy": -1.262
+    },
+    {
+      "heroId2": 43,
+      "matchCount": 205,
+      "winCount": 101,
+      "synergy": -1.269
+    },
+    {
+      "heroId2": 72,
+      "matchCount": 177,
+      "winCount": 81,
+      "synergy": -1.271
+    },
+    {
+      "heroId2": 123,
+      "matchCount": 978,
+      "winCount": 459,
+      "synergy": -1.369
+    },
+    {
+      "heroId2": 112,
+      "matchCount": 546,
+      "winCount": 281,
+      "synergy": -1.382
+    },
+    {
+      "heroId2": 19,
+      "matchCount": 350,
+      "winCount": 158,
+      "synergy": -1.437
+    },
+    {
+      "heroId2": 88,
+      "matchCount": 674,
+      "winCount": 355,
+      "synergy": -1.468
+    },
+    {
+      "heroId2": 101,
+      "matchCount": 730,
+      "winCount": 363,
+      "synergy": -1.5
+    },
+    {
+      "heroId2": 70,
+      "matchCount": 364,
+      "winCount": 182,
+      "synergy": -1.669
+    },
+    {
+      "heroId2": 5,
+      "matchCount": 1003,
+      "winCount": 494,
+      "synergy": -1.709
+    },
+    {
+      "heroId2": 52,
+      "matchCount": 147,
+      "winCount": 78,
+      "synergy": -1.725
+    },
+    {
+      "heroId2": 69,
+      "matchCount": 356,
+      "winCount": 173,
+      "synergy": -1.805
+    },
+    {
+      "heroId2": 10,
+      "matchCount": 300,
+      "winCount": 147,
+      "synergy": -1.845
+    },
+    {
+      "heroId2": 8,
+      "matchCount": 1287,
+      "winCount": 677,
+      "synergy": -1.89
+    },
+    {
+      "heroId2": 100,
+      "matchCount": 805,
+      "winCount": 392,
+      "synergy": -1.949
+    },
+    {
+      "heroId2": 45,
+      "matchCount": 233,
+      "winCount": 120,
+      "synergy": -1.983
+    },
+    {
+      "heroId2": 135,
+      "matchCount": 451,
+      "winCount": 233,
+      "synergy": -1.984
+    },
+    {
+      "heroId2": 57,
+      "matchCount": 105,
+      "winCount": 54,
+      "synergy": -2.189
+    },
+    {
+      "heroId2": 111,
+      "matchCount": 285,
+      "winCount": 143,
+      "synergy": -2.346
+    },
+    {
+      "heroId2": 54,
+      "matchCount": 1177,
+      "winCount": 599,
+      "synergy": -2.471
+    },
+    {
+      "heroId2": 2,
+      "matchCount": 644,
+      "winCount": 305,
+      "synergy": -2.507
+    },
+    {
+      "heroId2": 71,
+      "matchCount": 1299,
+      "winCount": 657,
+      "synergy": -2.606
+    },
+    {
+      "heroId2": 89,
+      "matchCount": 53,
+      "winCount": 26,
+      "synergy": -2.664
+    },
+    {
+      "heroId2": 90,
+      "matchCount": 329,
+      "winCount": 166,
+      "synergy": -2.813
+    },
+    {
+      "heroId2": 98,
+      "matchCount": 220,
+      "winCount": 98,
+      "synergy": -2.827
+    },
+    {
+      "heroId2": 104,
+      "matchCount": 374,
+      "winCount": 192,
+      "synergy": -2.948
+    },
+    {
+      "heroId2": 106,
+      "matchCount": 816,
+      "winCount": 396,
+      "synergy": -2.997
+    },
+    {
+      "heroId2": 109,
+      "matchCount": 282,
+      "winCount": 134,
+      "synergy": -3.07
+    },
+    {
+      "heroId2": 93,
+      "matchCount": 831,
+      "winCount": 401,
+      "synergy": -3.342
+    },
+    {
+      "heroId2": 63,
+      "matchCount": 258,
+      "winCount": 117,
+      "synergy": -3.406
+    },
+    {
+      "heroId2": 32,
+      "matchCount": 268,
+      "winCount": 134,
+      "synergy": -3.423
+    },
+    {
+      "heroId2": 36,
+      "matchCount": 774,
+      "winCount": 366,
+      "synergy": -3.461
+    },
+    {
+      "heroId2": 126,
+      "matchCount": 359,
+      "winCount": 168,
+      "synergy": -3.703
+    },
+    {
+      "heroId2": 92,
+      "matchCount": 96,
+      "winCount": 52,
+      "synergy": -3.784
+    },
+    {
+      "heroId2": 59,
+      "matchCount": 164,
+      "winCount": 72,
+      "synergy": -4.042
+    },
+    {
+      "heroId2": 131,
+      "matchCount": 445,
+      "winCount": 209,
+      "synergy": -4.147
+    },
+    {
+      "heroId2": 75,
+      "matchCount": 583,
+      "winCount": 269,
+      "synergy": -4.276
+    },
+    {
+      "heroId2": 108,
+      "matchCount": 408,
+      "winCount": 171,
+      "synergy": -4.861
+    },
+    {
+      "heroId2": 46,
+      "matchCount": 243,
+      "winCount": 104,
+      "synergy": -4.875
+    },
+    {
+      "heroId2": 102,
+      "matchCount": 182,
+      "winCount": 86,
+      "synergy": -4.926
+    },
+    {
+      "heroId2": 73,
+      "matchCount": 133,
+      "winCount": 57,
+      "synergy": -4.94
+    },
+    {
+      "heroId2": 34,
+      "matchCount": 283,
+      "winCount": 127,
+      "synergy": -5.734
+    },
+    {
+      "heroId2": 120,
+      "matchCount": 318,
+      "winCount": 137,
+      "synergy": -5.747
+    },
+    {
+      "heroId2": 138,
+      "matchCount": 140,
+      "winCount": 61,
+      "synergy": -6.195
+    },
+    {
+      "heroId2": 96,
+      "matchCount": 236,
+      "winCount": 103,
+      "synergy": -6.262
+    },
+    {
+      "heroId2": 55,
+      "matchCount": 310,
+      "winCount": 140,
+      "synergy": -6.58
+    },
+    {
+      "heroId2": 94,
+      "matchCount": 83,
+      "winCount": 35,
+      "synergy": -7.732
+    },
+    {
+      "heroId2": 103,
+      "matchCount": 76,
+      "winCount": 34,
+      "synergy": -10.278
+    },
+    {
+      "heroId2": 38,
+      "matchCount": 80,
+      "winCount": 31,
+      "synergy": -10.8
+    },
+    {
+      "heroId2": 65,
+      "matchCount": 50,
+      "winCount": 19,
+      "synergy": -10.96
+    },
+    {
+      "heroId2": 77,
+      "matchCount": 44,
+      "winCount": 18,
+      "synergy": -12.281
+    },
+    {
+      "heroId2": 99,
+      "matchCount": 109,
+      "winCount": 38,
+      "synergy": -12.333
+    }
+  ]
+}

@@ -1,0 +1,141 @@
+/* picker layout: gold phase banner over the draft stage, single-line ranked results.
+   tokens and shared primitives live in ../ui/ui.css */
+
+.wrap { padding: var(--sp-4); }
+
+.back { display: inline-flex; align-items: center; min-height: var(--control-h); color: var(--muted); text-decoration: none; font-size: var(--fs-small); }
+.back:hover { color: var(--accent); }
+h1 { margin-bottom: var(--sp-2); }
+.chips { display: flex; flex-wrap: wrap; gap: var(--sp-2); }
+
+.phasebanner {
+  display: flex; flex-wrap: wrap; gap: var(--sp-1) var(--sp-4); align-items: baseline;
+  background: var(--accent-soft);
+  border-left: 3px solid var(--accent);
+  border-radius: var(--r-2);
+  padding: var(--sp-2) var(--sp-3);
+  margin-bottom: var(--sp-3);
+  font-family: var(--font-display);
+}
+.phasebanner .turn { font-weight: var(--fw-bold); font-size: var(--fs-h2); color: var(--accent); }
+.phasebanner .dim { color: var(--ink-2); font-size: var(--fs-small); }
+
+.board { display: grid; grid-template-columns: 1fr 1fr; gap: var(--sp-4); }
+@media (max-width: 720px) { .board { grid-template-columns: 1fr; } }
+.teamhead { font-family: var(--font-display); font-size: var(--fs-small); font-weight: var(--fw-strong); margin-bottom: var(--sp-2); }
+.board > div:first-child .teamhead { color: var(--accent); }
+.board > div:last-child .teamhead { color: var(--steel); }
+
+.slots { display: flex; flex-wrap: wrap; gap: var(--sp-2); }
+.slot {
+  display: inline-flex; align-items: center; gap: var(--sp-2);
+  border: 1px dashed var(--grid); border-radius: var(--r-2);
+  padding: var(--sp-1) var(--sp-3); min-width: 9.5rem; min-height: var(--control-lg);
+  cursor: pointer;
+}
+.slot.filled { border-style: solid; background: var(--surface-3); }
+.board > div:first-child .slot.filled { border-color: var(--accent-line); }
+.board > div:last-child .slot.filled { border-color: var(--steel-line); }
+.slotname { font-size: var(--fs-small); }
+.plus { color: var(--muted); font-size: var(--fs-h2); line-height: 1; }
+.dim { color: var(--muted); }
+
+/* the slot the next placement fills, wherever the aim currently points */
+.slot.next, .banslot.next { border-color: var(--accent); box-shadow: 0 0 0 1px var(--accent-line); }
+
+.searchline { display: flex; gap: var(--sp-3); align-items: flex-start; margin: var(--sp-4) 0 var(--sp-2); flex-wrap: wrap; }
+.seg { display: flex; flex-wrap: wrap; gap: var(--sp-1); }
+
+/* aim chip: names the exact slot the search box places into next */
+.aimchip {
+  display: inline-flex; align-items: center; min-height: var(--control-lg);
+  padding: 0 var(--sp-3); border-radius: var(--r-2);
+  font-family: var(--font-display); font-size: var(--fs-small); border: 1px solid var(--grid);
+  color: var(--ink-2); background: var(--surface-3); white-space: nowrap;
+}
+.aimchip.allies { color: var(--accent); border-color: var(--accent-line); background: var(--accent-soft); }
+.aimchip.enemies { color: var(--steel); border-color: var(--steel-line); background: var(--steel-soft); }
+.aimchip.bans { color: var(--bad-text); border-color: var(--bad); background: var(--bad-soft); }
+.aimchip.full { color: var(--muted); }
+
+.acwrap { position: relative; flex: 1; min-width: 240px; max-width: 460px; }
+#search {
+  width: 100%; border: 1px solid var(--grid); border-radius: var(--r-2);
+  padding: var(--sp-2) var(--sp-3); min-height: var(--control-lg);
+  background: var(--surface-1); color: var(--ink-1); font: inherit;
+}
+#search::placeholder { color: var(--muted); }
+
+.aclist {
+  position: absolute; z-index: 5; left: 0; right: 0; top: 100%;
+  max-height: 280px; overflow: auto; background: var(--surface-1);
+  border: 1px solid var(--grid); border-radius: var(--r-2); box-shadow: var(--shadow-1);
+}
+.acrow { display: flex; align-items: center; gap: var(--sp-2); padding: var(--sp-2) var(--sp-3); cursor: pointer; min-height: var(--control-h); }
+.acrow.hl { background: var(--accent-soft); }
+.acrow.out { text-decoration: line-through; color: var(--muted); cursor: default; }
+.hlmark { color: var(--accent); font-weight: var(--fw-strong); }
+.poolmark { width: 0.5rem; height: 0.5rem; border-radius: 50%; background: var(--accent); display: inline-block; margin-left: auto; }
+
+/* dedicated ban strip: 16 fixed slots, filled in place, cleared in place */
+.bans { display: flex; flex-wrap: wrap; gap: var(--sp-2); align-items: center; margin-top: var(--sp-3); font-size: var(--fs-small); color: var(--ink-2); }
+.banslot {
+  display: inline-flex; align-items: center; gap: var(--sp-1);
+  border: 1px dashed var(--grid); border-radius: var(--r-2);
+  padding: 0 var(--sp-2) 0 var(--sp-1); min-height: var(--control-h);
+  cursor: pointer; font-size: var(--fs-micro); color: var(--ink-2);
+}
+.banslot.filled { border-style: solid; background: var(--surface-3); color: var(--ink-1); }
+.banslot .hicon { width: var(--hicon-col-w); height: var(--hicon-col-h); }
+.banslot .plus { font-size: var(--fs-body); }
+
+/* role-grouped repertoire: authored order retained within each role */
+.poollist { display: block; margin-top: var(--sp-3); padding-top: var(--sp-3); border-top: 1px solid var(--grid); }
+.legendhead { font-family: var(--font-display); font-size: var(--fs-micro); color: var(--muted); margin: var(--sp-2) 0 var(--sp-1); }
+.legendgrp { display: flex; flex-wrap: wrap; gap: var(--sp-2); }
+.banner { margin-top: var(--sp-3); display: flex; flex-direction: column; gap: var(--sp-1); }
+.banner div { font-size: var(--fs-small); color: var(--ink-2); background: var(--off-cell); border: 1px solid var(--grid); border-radius: var(--r-2); padding: var(--sp-1) var(--sp-3); }
+
+.roleline { display: flex; gap: var(--sp-3); align-items: center; margin-bottom: var(--sp-3); font-size: var(--fs-small); color: var(--ink-2); flex-wrap: wrap; }
+.results.grey { opacity: .6; }
+
+/* single-line ledger: one row per hero, numbers colored by sign, one shared
+   header row so values sit under their labels. both consume --rrow-cols,
+   which picker-app.js derives from the term count */
+.rscroll { overflow-x: auto; }
+.rscroll .results { min-width: 60rem; }
+.rhead, .rrow {
+  display: grid; grid-template-columns: var(--rrow-cols); gap: var(--sp-2);
+  align-items: center; width: 100%; text-align: left;
+}
+.rhead { padding: var(--sp-1) 0; border-bottom: 1px solid var(--grid); }
+.rrow { padding: var(--sp-1) 0; border-bottom: 1px solid var(--grid); cursor: pointer; }
+.rrow:hover { background: var(--hover); }
+.rank { font-family: var(--font-display); font-size: var(--fs-small); color: var(--muted); }
+.rmid { min-width: 0; }
+.rmid .chipline { flex-wrap: nowrap; overflow: hidden; }
+.rname { font-weight: var(--fw-strong); font-size: var(--fs-body); white-space: nowrap; }
+.tv { font-family: var(--font-display); font-size: var(--fs-small); font-variant-numeric: tabular-nums; text-align: right; }
+.rscore { font-family: var(--font-display); font-size: var(--fs-body); text-align: right; font-variant-numeric: tabular-nums; }
+.tv.pos, .rscore.pos { color: var(--good-text); }
+.tv.neg, .rscore.neg { color: var(--bad-text); }
+.tv.zero, .rscore.zero { color: var(--muted); }
+
+.tag { display: inline-block; border-radius: var(--r-1); padding: 0.1rem var(--sp-2); font-size: var(--fs-micro); font-weight: var(--fw-strong); }
+.tag.flex { background: var(--good-soft); color: var(--good-text); }
+.tag.veto { background: var(--bad-soft); color: var(--bad-text); }
+.tag.mismatch, .tag.prov { background: var(--grid); color: var(--ink-2); }
+.tag.warn { background: var(--warn-bg); color: var(--warn); }
+.tag.tup { background: var(--good-soft); color: var(--good-text); }
+.tag.tdn { background: var(--bad-soft); color: var(--bad-text); }
+
+.fw { border-bottom: 1px solid var(--grid); padding: var(--sp-2) 0 var(--sp-3) 5rem; display: flex; flex-direction: column; gap: var(--sp-1); width: 100%; text-align: left; }
+.fwline { font-size: var(--fs-small); color: var(--ink-2); max-width: var(--prose-w); }
+.fwk { display: inline-block; min-width: 4.5rem; font-weight: var(--fw-strong); color: var(--muted); }
+
+.tl { font-size: var(--fs-micro); color: var(--muted); }
+.th, .scoreh { text-align: right; }
+
+.notes { display: flex; flex-wrap: wrap; gap: var(--sp-2); }
+.note { font-size: var(--fs-small); color: var(--ink-2); display: inline-flex; gap: var(--sp-1); align-items: center; }
+.dot { width: 0.5rem; height: 0.5rem; border-radius: 50%; background: var(--warn); display: inline-block; }

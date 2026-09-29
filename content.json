@@ -1,0 +1,970 @@
+{
+  "patch": {
+    "headline": "7.41f, sept 15 2026, after the MMR rescale to 1 to 9500",
+    "facts": [
+      "facets are gone, innates scale with hero level or flat values, fewer draft variables",
+      "Tiny ate stacked nerfs in 7.41d and is fine, not freelo",
+      "Roshan and Tormentor swapped sides, Tormentor sits bottom low ground, spawns ~20 min, 3000 barrier shield, 30% damage reflect",
+      "neutral items are crafted, tier 1 exists at 0:00, full-clear camps to bank Madstone",
+      "rescale puts immortal draft at 8500, your first 10 to 15 calibration games outweigh the next 100",
+      "meta: Spectre and Lifestealer are S tier pos 1, Ogre and Axe top tier, PA, Storm, Jakiro, WK, TB, Slark, SF strong"
+    ],
+    "corrections": [
+      "tormentor: old advice said contest it at 20 for the shard. corrected: buy the shard with gold at 15+ when your spike needs it, treat the Tormentor as a 3-man post-fight objective, never solo it, never ping-beg for it",
+      "gold graph: old advice said check the gold graph. corrected: the gold graph is spectator and replay only, you cannot see it while playing. estimate enemy net worth from visible items (~items + 1k) and tower count, or subscribe to Dota Plus for the live net worth HUD",
+      "mid order: old sheet said WR first. corrected: BS > WR > DK everywhere"
+    ]
+  },
+  "heroes": {
+    "abaddon": {
+      "identity": "shield dispel hard support, aphotic shield purges stuns off allies, mist coil sustains the lane, borrowed time ignores focus fire",
+      "why": "hard support anchor, the shield dispel wins lanes and borrowed time soaks the dive",
+      "how": "shield the focus target to eat their stun, mist coil the last hit and the save, curse the engage, ult into their burst",
+      "when": "lane winner from level 1, frontliner all game, unkillable window every borrowed time cooldown",
+      "build": "holy locket, solar crest, mekansm, glimmer, aether lens, blink, agh",
+      "timings": [["holy locket", 23], ["solar crest", 26]],
+      "tech": [
+        "tinker, slark, and kotl veto, mana burn and stat steal blank the shield economy",
+        "weaver and SF style squishy lines are the free wins, lanes well beside bounty or tusk lockdown"
+      ],
+      "mechanics": [["tip", "aphotic shield is a strong dispel, slap it on an ally to wipe stuns and most disables"], ["tip", "borrowed time can be manually cast while stunned, dispel yourself then shield the ally still stuck in the stun"], ["tip", "barriers eat damage before on-damage effects, blink and salve stay live under shield or borrowed time"], ["counter", "a hit larger than his current health skips the auto trigger, chip him low before dumping the nuke"], ["counter", "ice blast and culling blade kill through borrowed time below the kill check hp"], ["counter", "break him so it can't auto trigger, then silence so he can't manual cast, that is the full ult counter"]]
+    },
+    "alchemist": {
+      "identity": "gold engine bruiser, greevil greed stacks bonus gold on every kill, acid spray melts armor and waves, unstable concoction stuns on a cook, chemical rage turns him into a machine",
+      "why": "dedicated carry, greed outfarms every core and rage regen wins the manfight, favored into lifestealer and rubick, vetoed by lion and luna",
+      "how": "spray the wave and the camp, cook the stun behind fog, rage to dispel and disjoint, farm everything on the map",
+      "when": "outscales from the lane, hits the power spikes before the enemy cores, falls off late as answers land",
+      "build": "rad, manta, agh, bkb, assault, bloodthorn, abyssal blade",
+      "timings": [["rad", 15], ["manta", 24]],
+      "tech": [
+        "lion, luna, and phantom lancer are the vetoes, hex chains delete the frame and illusions swarm",
+        "lifestealer, rubick, and juggernaut lines are the free wins, the greed tempo buries their timings"
+      ],
+      "mechanics": [["tip", "greed stacks bonus gold on chained kills, keep last hitting anything that moves to hold the cap"], ["tip", "the scepter synth melts one into an ally, they gain every upgrade while you keep bonus damage"], ["counter", "acid spray strips armor from everyone inside, standing in it invites the physical burst"], ["counter", "the concoction detonates in an area, never hug the target about to eat the stun"], ["counter", "the concoction throw cannot be disjointed, no blink or banish dodges it once airborne"], ["counter", "rage regen counts as health restoration, heal reduction cuts the manfight engine"]]
+    },
+    "anti-mage": {
+      "identity": "melee carry who blinks across the map farming it, mana break burns every target he touches, counterspell reflects the spell fired into it, and mana void detonates the emptiest pool on the field",
+      "why": "dedicated pos 1, the blink is the fastest farm engine in the pool once the cleave comes online and the early game is the tax it charges, favored into underlord, undying, and SF lines, vetoed by dawnbreaker, earthshaker, and OD",
+      "how": "farm the triangle, count the enemy mana pools, blink in after the disables burn, void the emptiest caster standing beside their friends",
+      "when": "needs the free farm window, comes online as the map opens, dies to the early push that ends the game before the farm pays",
+      "build": "bfury, manta, butterfly, skadi, abyssal blade, bkb, monkey king bar",
+      "timings": [["bfury", 14], ["manta", 21]],
+      "tech": [
+        "dawnbreaker, earthshaker, and OD are the vetoes, the global punishment and the burst catch the farm plan",
+        "underlord, undying, and SF lines are the free wins, the empty pools are free voids"
+      ],
+      "mechanics": [["tip", "blink disjoints incoming spell and attack projectiles"], ["tip", "hold mana void for the out of mana caster, the area damage scales with the missing pool"], ["tip", "mana void ministuns only the main target, casting it on a manaless unit still applies the stun"], ["counter", "roots and leashes stop the blink cast entirely"], ["counter", "break shuts off the mana break and the spell resist passive"]]
+    },
+    "arc-warden": {
+      "identity": "split push farmer clone, flux slows and burns a lone target, magnetic field dodges attacks, spark wraiths zone ground, tempest double duplicates everything",
+      "why": "dedicated mid, the double farms both maps at once and wraiths hold ground free, favored into ember and necrophos, vetoed by legion",
+      "how": "plant wraiths on every approach, flux the isolated target, field the tower siege, send the double down the empty lane, never fight in person",
+      "when": "slow start until the farming engine spins, mid game double pressure everywhere, late game wins the race no core matches",
+      "build": "midas, mjollnir, pike, manta, bloodthorn, skadi, sheepstick",
+      "timings": [["midas", 8], ["mjollnir", 20]],
+      "tech": [
+        "phantom lancer, legion, and magnus are the vetoes, illusions mute the flux and charges break the wall",
+        "ember, necrophos, and lina lines are the free wins, the field and wraiths outzone every immobile nuker"
+      ],
+      "mechanics": [["tip", "magnetic field pulls in every nearby rune and pops it on arrival, field the bounty spawn"], ["tip", "the double runs its own item and ability cooldowns, both of you cycle the same items twice"], ["counter", "flux deals nothing while any allied unit stands near the target, hug a creep or a teammate to mute it"], ["counter", "the field evasion only stops attacks from outside it, fight him from inside the bubble"], ["counter", "most spells treat the double like a hero, on-hit and steal effects all proc on it"], ["counter", "killing the double pays real gold and experience that scales with his level, hunt it when it overextends"]]
+    },
+    "bloodseeker": {
+      "identity": "melee agility core with a global thirst that hunts wounded heroes, blood rite silence zones, and a rupture ult that taxes every step",
+      "why": "dedicated mid, thirst tracks every low hp hero on the map and rupture blanks their kiting, favored into SF, QoP, and drow style squishy farmers",
+      "how": "blood rage the duel, blood rite the silence zone on their escape, thirst track the wounded, rupture the mover and run them down",
+      "when": "lane sustain from the rage healing, hunt windows once thirst comes online, strongest through the mid game before the ghost scepters and the kiting items land",
+      "build": "blade mail, rad, mjollnir, bkb, sange and yasha, agh, abyssal blade",
+      "timings": [["blade mail", 15], ["rad", 19]],
+      "tech": [
+        "PA, spectre, and bounty are the vetoes, the evasion and the disengage blank the hunt",
+        "SF, QoP, and drow style farmers are the free wins, lanes well beside a lockdown support that feeds the rupture chase"
+      ],
+      "mechanics": [["tip", "blood rage amplifies every source of outgoing spell damage, item actives ride the amp too"], ["tip", "thirst exposes anyone under the health threshold with vision and true sight, the whole map sees the wounded"], ["tip", "learning thirst removes the movement speed cap outright, the hunt has no speed ceiling"], ["tip", "recasting rupture redeals the instant chunk and refreshes the debuff, it never stacks"], ["counter", "tp out of his gank, nothing in the kit stuns, roots, or leashes the channel"], ["counter", "instant repositioning skips the rupture tick, a max range blink or the tp scroll covers the distance in one burst"], ["counter", "break kills the thirst detection and the speed bonus, the cap removal and the kill healing survive it"], ["counter", "blade mail turns the rupture chase around, every step he forces pays him back"]]
+    },
+    "bounty-hunter": {
+      "identity": "track gold soft support that hunts roamers and wins the vision war",
+      "why": "dedicated pos 4, track gold funds the team and wins the vision war, favored into sand king and timber style roamers",
+      "how": "track every kill, hunt their roamer and wards, shuriken the tracked target",
+      "when": "track pressure from level 1, strongest through the early game, rotate with the gold lead",
+      "build": "essence distiller, vessel, ancient janggo, force, pipe, lotus, sheepstick",
+      "timings": [["essence distiller", 16], ["vessel", 18]],
+      "tech": [
+        "ck and abaddon are the worst lanes, big game hunter stacks the track income",
+        "invis reveals flip the matchup, buy dust for the mirror and their sentry sweeps"
+      ],
+      "mechanics": [["tip", "shuriken bounces to tracked targets, open on a creep so it reaches the distant hero"], ["tip", "dust reveal and slow linger after leaving the radius, euls or lotus dispels it"], ["counter", "euls, manta, lotus, greaves, disperser all dispel track, so do allied dispels like aphotic shield"], ["counter", "track gold makes even trades pay, a 1 for 1 is really 1.5 gold for 1, don't coinflip fights into bounty"], ["counter", "essence distiller gives true sight on the debuffed target, it sees shadow walk"]]
+    },
+    "centaur": {
+      "identity": "hoof stampede tank, retaliate returns damage on every hit taken, double edge costs no mana, stampede tramples the map, hitch a ride shelters an ally",
+      "why": "dedicated offlane brick, favored into lina and mirana lines, vetoed by juggernaut and dragon knight",
+      "how": "edge the wave for free, body the lane with retaliate, stampede to save or to chase, hitch your carry out of a chronosphere",
+      "when": "lane wall early, stampede answers fights across the map all game, aura frontliner late",
+      "build": "helm of the dominator, blade mail, heart, pipe, lotus, shiva, bkb",
+      "timings": [["helm of the dominator", 9], ["blade mail", 20]],
+      "tech": [
+        "juggernaut, dragon knight, and outworld destroyer are the vetoes, spin and magic immunity shrug the trample",
+        "lina, mirana, and pudge style lines are the free wins, attack traders eat retaliate damage"
+      ],
+      "mechanics": [["tip", "double edge self damage is never lethal and costs no mana, spam it to shove waves"], ["tip", "retaliate still damages towers at half effect, draw the tower onto you while pushing"], ["tip", "stampede hurries every ally to max speed and the trample slows each enemy crossed once"], ["tip", "the hitched ally casts and attacks from the cart but cannot be targeted, non targeted effects still land"], ["counter", "retaliate only pays the attacker back when the attack lands, missed attacks never feed the return"]]
+    },
+    "crystal-maiden": {
+      "identity": "freeze control mana font hard support, crystal nova slows and scouts, frostbite roots the runner dead, arcane aura refills the whole team, freezing field storms the pit",
+      "why": "hard support tempo anchor, favored into shadow fiend and ember lines, vetoed by arc warden clones and dawnbreaker saves, the field wins fights nobody expected",
+      "how": "nova the engage for vision, frostbite the mobility hero, feed the lane mana, clone the channel, field the fight once their stuns are spent",
+      "when": "lane mana wins the harass war, mid field tempo swings roams, late the field punishes clumped pushes",
+      "build": "shard, blink, glimmer, force, ancient janggo, ghost, bkb",
+      "timings": [["shard", 21], ["blink", 24]],
+      "tech": [
+        "arc warden, dawnbreaker, and sniper are the vetoes, clones and long range poke outrange the waddle",
+        "shadow fiend, ember, and mirana style lines are the free wins, squishy lines fold to frostbite plus field"
+      ],
+      "mechanics": [["tip", "crystal nova grants six seconds of flying vision around the cast point, scout rosh and deward with it"], ["tip", "frostbite is far more effective on creeps, root the big neutral to clear or steal camps"], ["tip", "crystal clone does not interrupt your channels, cast it mid freezing field or mid tp"], ["tip", "with the scepter the field stops channeling, she walks and casts freely despite the self slow"], ["tip", "hold the field until their disables burn and they forget you, one good channel flips the fight"], ["counter", "frostbite applies a root and disarm, it holds blinkers and mobility heroes in place"]]
+    },
+    "dark-seer": {
+      "identity": "wall of replica illusion flood offlaner, ion shell grinds the lane, vacuum stacks the fight, surge breaks the chase loose, wall copies their carry back at them",
+      "why": "dedicated offlane grinder, favored into kez and shadow fiend lines, vetoed by faceless void and disruptor",
+      "how": "shell the wave and grind, surge the engager in, vacuum the stack onto the wall, micro the replicas onto their backline",
+      "when": "lane grinder from the start, vacuum wall wins the mid fight, replica flood scales late",
+      "build": "mekansm, shiva, pipe, lotus, shard, bkb, sheepstick",
+      "timings": [["mekansm", 19], ["shiva", 23]],
+      "tech": [
+        "faceless void, queen of pain, and disruptor are the vetoes, chronosphere and escapes waste the wall",
+        "kez, shadow fiend, and tusk style lines are the free wins, illusion copies punish their melee cores"
+      ],
+      "mechanics": [["tip", "ion shell is castable on enemy units too, shell their melee core during a tower defense"], ["tip", "surge charges an allied unit with max speed and slow immunity, spend it on the engager"], ["tip", "wall replicas serve at your will until destroyed, order them onto the priority target"], ["counter", "the ion shell buff is dispellable by any dispel, supports with a dispel starve his lane pressure"], ["counter", "the surge buff is dispellable, any dispel strips the haste off the target"]]
+    },
+    "dawnbreaker": {
+      "identity": "tanky offlane initiator with global starbreaker ult presence",
+      "why": "dedicated offlane brick, the global ult turns every fight into a 6v5, favored into SF style immobile mids",
+      "how": "starbreaker lane trades, hammer into fights from anywhere, front line for your carry",
+      "when": "lane brick early, ult windows all game, mid game monster once blade mail and harpoon land",
+      "build": "blade mail, shard, harpoon, desolator, bkb, assault, abyssal blade",
+      "timings": [["blade mail", 18], ["shard", 22]],
+      "tech": [
+        "visage and chen veto, nyx burns the ult economy",
+        "channel the global from fog, never in range of their stun"
+      ],
+      "mechanics": [["tip", "blink forward after the opening swipes to land the final starbreaker stun on top of a target"], ["tip", "solar guardian stun pierces bkb, debuff immune enemies still eat the landing"], ["tip", "once airborne she is invulnerable and hidden, nothing interrupts the landing, damage lands just before the stun"], ["counter", "silence cannot cancel a started starbreaker, stuns, sleeps, and fears all can"], ["counter", "nyx walks into solar guardian with carapace up and reflects the whole landing"]]
+    },
+    "doom": {
+      "identity": "melee strength offlaner with devour bonus farm, scorched earth chase speed, and a doom ult that silences one hero out of the fight",
+      "why": "doom mutes their engine hero out of the fight with items silenced, favored into timber, void, and morph style fight-carried cores",
+      "how": "devour farm, scorched earth chase, blink doom the engine hero",
+      "when": "devour accelerates the item plan all game, doom windows decide every fight once it comes online",
+      "build": "ancient janggo, midas, rad, shard, bkb, shiva, octarine",
+      "timings": [["ancient janggo", 11], ["midas", 13]],
+      "tech": [
+        "timber, faceless void, morph are the jump-the-queue triggers, never doom the tank",
+        "meepo, brewmaster, visage veto, unit flood ignores single target doom"
+      ],
+      "mechanics": [["tip", "doom silences, blocks healing, and dispels on cast, one of the only spells that purges through bkb"], ["tip", "the level 25 talent adds break on top of the silence and heal ban"], ["tip", "self cast scepter doom is not a self doom, you just walk an aoe around"], ["counter", "infernal blade is his only stun, if he wastes it with no channel cancel you can tp out"], ["counter", "linkens and lotus are the answers, scepter self cast aoe doom plays around both"], ["counter", "hp set spells cheat the heal ban, sunder and scepter time lapse still work under doom"]]
+    },
+    "dragon-knight": {
+      "identity": "lane brick that counters magic mids",
+      "why": "counter pick into puck and TA, dragon blood blanks magic harass",
+      "how": "win lane by existing, stun their carry out of elder form, take towers behind it",
+      "when": "lane brick early, mid game tower monster in elder form",
+      "build": "rad, bkb, octarine, shiva, bloodthorn, assault, overwhelming blink",
+      "timings": [["rad", 19], ["bkb", 26]],
+      "tech": [
+        "break and heal cut turn dragon blood off, viper and huskar are the veto cluster"
+      ],
+      "mechanics": [["tip", "breathe fire cuts total attack damage including bonus damage from items, use it early in the fight"], ["tip", "corrosive breath burn works on towers, the dot is the whole early push package"], ["tip", "the transform itself is the gank, nobody respects the instant ranged stun out of knight form"], ["counter", "silver edge and viper strike carry the break, dragon blood regen goes with it"], ["counter", "vessel, skadi, ice blast, doom, even withering mist all cut the dragon blood regen"]]
+    },
+    "drow-ranger": {
+      "identity": "ranged aura anchor carry, frost arrows kite everything, gust silences and shoves, multishot blankets the cone, marksmanship pierces armor",
+      "why": "dedicated carry, favored into shadow fiend and necrophos lines, vetoed by dragon knight rush and spectre haunt",
+      "how": "frost the engage at max range, gust the caster wave, multishot the push, hold the high ground aura and kite the dive",
+      "when": "lane wins on frost range, mid game aura siege, late game falls to gap closers without spacing",
+      "build": "falcon blade, manta, pike, butterfly, silver edge, bkb, daedalus",
+      "timings": [["falcon blade", 6], ["manta", 23]],
+      "tech": [
+        "dragon knight, spectre, and phantom lancer are the vetoes, dive bodies and illusion spam collapse the range wall",
+        "shadow fiend, necrophos, and lina style lines are the free wins, paper ranged lines lose the aura war"
+      ],
+      "mechanics": [["tip", "gust reveals invisible units for the silence duration, the debuff grants true sight"], ["tip", "gust's knockback does not interrupt channels, it never cancels a teleport"], ["tip", "marksmanship procs cannot miss and pierce base armor, evasion is not an answer"], ["tip", "multishot arrows grant flying vision as they travel, sweep the fog line with a volley"], ["counter", "her passive drops when an enemy hero stands close, get in her face, illusions do not count"]]
+    },
+    "earth-spirit": {
+      "identity": "stone remnant brawler, boulder smash kicks units and allies out of trouble, rolling boulder turns invulnerable, grip silences from range, magnetize sticks the fight together",
+      "why": "dedicated mid, the roll ganks every lane and magnetize chains the disables, favored into SF and spectre, vetoed by legion and slark",
+      "how": "smash the remnant through the carry, roll in behind, grip the remnant to silence, magnetize the clump, reapply to keep the slow rolling",
+      "when": "roams the moment remnants allow, mid game lockdown peak, falls off late when the stoned targets outtank the magnetize",
+      "build": "vessel, blade mail, bkb, kaya and sange, shiva, octarine, bloodstone",
+      "timings": [["vessel", 13], ["blade mail", 19]],
+      "tech": [
+        "legion, slark, and techies are the vetoes, duel deletes the tempo and pounce leashes the roll",
+        "SF, spectre, and lina lines are the free wins, paper squishies melt to the roll combo"
+      ],
+      "mechanics": [["tip", "boulder smash kicks allied units too, boot a caught teammate out of danger across cliffs and trees"], ["tip", "rolling boulder turns invulnerable right after the windup, roll through the big spells and out"], ["tip", "grip any allied creep or hero, the enemies the pull passes through still eat the silence"], ["tip", "silence or slow one magnetized target and every magnetized enemy refreshes the same debuff"], ["counter", "stand in the roll's path, the boulder stops dead on hero contact"], ["counter", "he is only catchable while the roll winds up, once moving he is invulnerable"]]
+    },
+    "earthshaker": {
+      "identity": "melee initiator whose fissure stuns and walls the path, whose totem swings land as burst, whose every cast ripples an aftershock stun, and whose echo slam detonates off every enemy caught in the clump",
+      "why": "dedicated mid, the burst deletes clumped fights and the fissure walls the rune and rosh pits, favored into weaver, SF, and underlord lines",
+      "how": "fissure the lane and the gank, close on the clump, echo slam the fight, totem the follow up",
+      "when": "roam windows from the first fissure points, strongest once the initiation lands inside their grouping, weak into spread splitpush drafts",
+      "build": "shard, yasha and kaya, bkb, octarine, refresher, blessing, overwhelming blink",
+      "timings": [["shard", 24], ["yasha and kaya", 27]],
+      "tech": [
+        "dk, warlock, and sven are the vetoes, the tanky sustain and the cleave outlast the burst window",
+        "weaver, SF, and underlord lines are the free wins, the slam punishes everything they group"
+      ],
+      "mechanics": [["tip", "the fissure lands instantly along its whole line, and standing on it phases him through every wall"], ["tip", "the slam fully hits invisible and fogged units, there is no hiding from the echo"], ["counter", "every enemy in the slam rings echoes to the rest and real heroes ring twice, never clump into his fight"], ["tip", "the totem buff holds until a swing actually lands, prime it before the fight and walk in loaded"]]
+    },
+    "elder-titan": {
+      "identity": "aura sleep soft support, astral spirit roams and stacks damage, echo stomp sleeps the lane, natural order shreds armor and magic resist, earth splitter cracks the fight",
+      "why": "soft support tempo anchor, favored into pudge and invoker lines, the stomp spirit combo wins the lane then the auras carry the mid game",
+      "how": "send the spirit through creeps for damage, stomp onto the sleep setup, walk natural order onto their frontline, split the field with the crack",
+      "when": "lane stomp threat early, mid aura windows peak with spirit returns, late auras still shred while the kit slows",
+      "build": "ancient janggo, cyclone, atos, agh",
+      "timings": [["ancient janggo", 18], ["cyclone", 23]],
+      "tech": [
+        "invoker and pudge are the only measured lines, both lean favorable, no vetoes clear the floor",
+        "pudge and invoker style lines are the free wins, stomp catches their channels and auras melt them"
+      ],
+      "mechanics": [["tip", "echo stomp sleep wakes early once the victim takes enough damage, hold your burst for positioning"], ["tip", "the spirit inherits the titans current move speed, send it out while sped up"], ["tip", "natural order armor shred centers on the titan, the magic resist shred centers on the spirit"], ["tip", "natural order strips only base armor and base magic resist, item granted defenses stay whole"], ["tip", "the spirit returns granting move speed and attack damage per enemy hero it crossed"], ["counter", "the astral spirit buff is dispellable, purge the move speed and damage off the titan"]]
+    },
+    "ember-spirit": {
+      "identity": "remnant mobility skirmisher, sleight of fist dances through the fight untouchable, searing chains root from the dance, flame guard soaks magic, remnants fly him across the map",
+      "why": "dedicated mid, sleight dance trades hp for free and remnant ganks hit every lane, favored into storm and SF, vetoed by arc warden and legion",
+      "how": "drop a remnant before you commit, sleight into the clump, chains the carry mid dance, flame guard the magic, fly out through the remnant",
+      "when": "fragile lane until the dance ranks, mid game skirmish king, late splits pushes and never dies",
+      "build": "vessel, mage slayer, shard, bkb, kaya and sange, shiva, blessing",
+      "timings": [["vessel", 13], ["mage slayer", 18]],
+      "tech": [
+        "arc warden, legion, and tidehunter are the vetoes, the double outtrades the dance and duel steals the damage",
+        "storm, underlord, and jakiro lines are the free wins, the dance dodges their engage"
+      ],
+      "mechanics": [["tip", "searing chains cannot grab fogged or invisible units, but the chains reveal everything they catch"], ["tip", "you can cast during sleight, orders and spells flow free mid dance, only attack orders are locked"], ["tip", "sleight never disjoints, but the dash invulnerability eats projectiles that land inside the dance"], ["tip", "sleight marks and hits fogged units, dash the high ground to scout the clump"], ["counter", "sleight always returns him to the fiery replica of his start point, park your disable on it"], ["counter", "remnant travel speed scales off his own move speed, heavy slows gut his escape"]]
+    },
+    "enigma": {
+      "identity": "ranged offlaner with demonic conversion eidolon pushing, midnight pulse zones, and a black hole ultimate that wins teamfights",
+      "why": "black hole wins the teamfight game, favored into BS and troll style clumped drafts, eidolons push the map",
+      "how": "eidolon lane pressure and tower sieges, midnight zones, blink bkb hole the stack",
+      "when": "eidolon push through the early game, hole windows every fight once blink and bkb land",
+      "build": "ancient janggo, midas, blink, bkb, octarine, shiva, refresher",
+      "timings": [["ancient janggo", 7], ["midas", 13]],
+      "tech": [
+        "lycan and meepo veto, unit flood overruns the eidolons",
+        "count their hole cancels before locking, a stack of rubick, sd, charge, or long silences means no enigma"
+      ],
+      "mechanics": [["tip", "midnight pulse chews trees in a huge aoe, it burns sprout and knocks a tree dancing mk off his perch"], ["tip", "midnight pulse deals full damage through bkb and debuff immunity, bkbd targets still melt in the zone"], ["tip", "spawn multiplied eidolons before a solo early black hole, the channel alone doesn't have the damage"], ["tip", "black hole silences on top of the stun, abaddon can't manually pop borrowed time and ursa can't enrage out"], ["counter", "primal roar, global silence, overgrowth, and rubick steal all cancel hole through debuff immunity, count them first"], ["counter", "walking away from a close range enigma eats an event horizon slow, respect the innate when disengaging"]]
+    },
+    "faceless-void": {
+      "identity": "melee carry with time walk damage rewind, time lock bashes, and a chronosphere that freezes the fight for his side",
+      "why": "dedicated pos 1, chrono freezes their carry for the free kill, favored into SF and dark seer style fight cores",
+      "how": "farm the time lock, time walk out of their burst, drop chrono on the carry and let the team clean the sphere",
+      "when": "mask of madness and bfury open the farm, fight windows arrive with mjollnir and manta, bkb holds the sphere",
+      "build": "mask of madness, bfury, mjollnir, manta, bkb, monkey king bar, butterfly",
+      "timings": [["mask of madness", 13], ["bfury", 15]],
+      "tech": [
+        "spirit breaker and slark hunt him out of the sphere, juggernaut spin wastes the chrono window",
+        "shadow fiend and dark seer lines are the free wins, the sphere catches their flood"
+      ],
+      "mechanics": [["tip", "time walk flight is invulnerable, run head first into the projectile and rewind it"], ["tip", "time dilation stretches their cooldowns and slows per cooldown caught, combo heroes grind to a halt"], ["tip", "chronosphere carries true sight across the whole dome, shadow blade escapes die inside it"], ["tip", "his own units walk free in the sphere, even enemy void illusions are immune to the disable"], ["counter", "the sphere is a cylinder not a sphere, tree perchers get unperched on its edge"], ["counter", "backtrack is not evasion, accuracy never bypasses it, only evasion takes priority"]]
+    },
+    "hoodwink": {
+      "identity": "tree squirrel soft support, acorn shot plants and bounces, bushwhack nets to her trees, scurry skitters through woods, sharpshooter snipes across the map",
+      "why": "soft support skirmisher, favored into prophet and jakiro lines, vetoed by bounty hunter tracking and ursa bursts, tree cover is her whole defense",
+      "how": "plant the acorn tree, bushwhack the net onto it, scurry between woods for angles, hold sharpshooter for the rooted kill, bounce acorns to pop spellblock",
+      "when": "lane pest with acorn harass, mid game tree ganks, late sharpshooter chunks from fog before fights break",
+      "build": "essence distiller, glimmer, aether lens, blink, shard, gungir, sheepstick",
+      "timings": [["essence distiller", 15], ["glimmer", 26]],
+      "tech": [
+        "bounty hunter, spectre, and ursa are the vetoes, track gold and jump bursts end the squirrel games",
+        "prophet, jakiro, and sniper style lines are the free wins, slow bodies and treeline mazes feed bushwhack chains"
+      ],
+      "mechanics": [["tip", "mistwoods wayfarer redirects incoming attacks into a nearby tree, hug treelines for the free defense"], ["tip", "alt cast acorn shot to ground target and plant a tree anywhere inside the cast circle"], ["tip", "bushwhack grants flying vision around the latch tree whether or not it catches anyone"], ["tip", "the sharpshooter bolt fires automatically after the windup, juke the line instead of trying to cancel it"], ["counter", "destroying the tree a victim is bound to dispels the bushwhack debuff instantly"]]
+    },
+    "juggernaut": {
+      "identity": "melee carry whose blade fury spin shrugs off spells, whose healing ward sustains every push, whose blade dance crits scale the right clicks, and whose omnislash leaps between targets untouchable",
+      "why": "dedicated pos 1, the spin blanks the magic burst and the slash isolates the locked target, favored into NP, centaur, and SF lines",
+      "how": "spin the magic trade, ward the siege, crit the tank, omnislash the isolated target or the diving core",
+      "when": "strong level gates through the mid game with the ward sustaining every push, dips into the kiting floods before the late items land",
+      "build": "bfury, manta, butterfly, monkey king bar, skadi, swift blink, blessing",
+      "timings": [["bfury", 14], ["manta", 22]],
+      "tech": [
+        "OD, night stalker, and spirit breaker are the vetoes, the astral and the hunt blank the spin economy",
+        "NP, centaur, and SF lines are the free wins, the slash and the spin punish everything that commits close"
+      ],
+      "mechanics": [["tip", "blade fury does not interrupt his channeling, spin mid tp and the escape channel holds"], ["tip", "casting the spin is a basic dispel, the debuffs riding him wipe off as the storm starts"], ["tip", "the storm negates his own attack damage, the spin is the damage and the sword waits it out"], ["tip", "mid omnislash he still casts items and spells, the spin alone is locked out of the slash"], ["counter", "the slash hunts a short radius around him, outrun the jump range and the chain cuts early"], ["counter", "the healing ward dies to one hit and heals their whole team, kill it the moment it lands"]]
+    },
+    "kunkka": {
+      "identity": "ghostship admiral, torrent stalls from fog, tidebringer cleaves the wave, x marks returns anyone home, rum soaks the burst",
+      "why": "dedicated offlane crew captain, favored into lina and lion lines, vetoed by spirit breaker and phantom lancer",
+      "how": "cleave the wave with tidebringer, torrent from fog, mark their carry and drag the fight out, boat the engage for the rum",
+      "when": "cleave lane bully early, combo threat mid once the boat lands, rum carries the late fights",
+      "build": "blade mail, rad, lotus, bkb, shard, shiva, octarine",
+      "timings": [["blade mail", 14], ["rad", 17]],
+      "tech": [
+        "spirit breaker, phantom lancer, and earthshaker are the vetoes, charge and echo flood dodge the combo",
+        "lina, lion, and pudge style lines are the free wins, squishy casters eat the full boat combo"
+      ],
+      "mechanics": [["tip", "torrent ignores facing, kunkka casts it toward any direction within cast range"], ["tip", "the torrent field damages and slows every enemy in the radius for the full duration, the stun is only the knockup"], ["tip", "x marks the spot returns the marked hero on command, mark yourself or an ally and yank them back"], ["tip", "the ghostship hands allies the rum, move speed and damage reduction now, the held damage lands later"], ["counter", "the shard tidal wave disarms and drags without silencing, enemies still cast spells while carried"], ["counter", "the innate rum never procs while the ghostship rum buff is already on him"]]
+    },
+    "legion-commander": {
+      "identity": "duel snowball offlaner, overwhelming odds clears waves and grants attack speed, press the attack dispels an ally, moment of courage counterattacks under focus, duel banks damage",
+      "why": "dedicated offlane duelist, favored into jakiro and ember spirit lines, vetoed by spectre and wraith king late monsters",
+      "how": "stack odds on the wave, open with press on the focused ally, close the gap from fog, duel their solo farmer, bank the damage",
+      "when": "lane bully early, duel windows from the first rank, snowballs mid, falls off when spectre style carries come online",
+      "build": "blade mail, bkb, harpoon, shard, assault, monkey king bar, daedalus",
+      "timings": [["blade mail", 16], ["bkb", 28]],
+      "tech": [
+        "spectre, wraith king, and phantom assassin are the vetoes, evasion and second lives waste the duel window",
+        "jakiro, ember spirit, and silencer style lines are the free wins, squishy casters melt inside the duel"
+      ],
+      "mechanics": [["tip", "overwhelming odds grants its attack speed on cast, the bonus lands even with nothing in the radius"], ["tip", "press the attack drops a strong dispel on the targeted ally, use it to wipe stuns and disables"], ["tip", "she can cast her abilities while dueling but not use items, odds and press stay live in the duel"], ["tip", "duel forces the target to fight and blocks their items and abilities, no manual saves inside it"], ["counter", "odds damage scales with every unit in the radius, creeps and heroes both pay, summon floods feed it"], ["counter", "the shard odds barrier is dispellable, any basic dispel strips the stonehall plate shield"]]
+    },
+    "lifestealer": {
+      "identity": "melee carry with rage spell immunity, feast percent lifesteal, and infest dives through allies",
+      "why": "dedicated pos 1, feast eats tanks and rage blanks their disables, favored into SF and gyro style farmers",
+      "how": "rage their disables, feast the tank, open wounds the chase, infest an ally to dive or escape",
+      "when": "lane bully from levels, armlet spike in the early mid game, monster late with rad and manta online",
+      "build": "rad, armlet, sange and yasha, manta, assault, monkey king bar, abyssal blade",
+      "timings": [["rad", 16], ["armlet", 19]],
+      "tech": [
+        "enigma, visage, leshrac, and riki veto, unit flood and the kite blank the feast plan",
+        "SF and gyro style farmers are the free wins, lanes well beside bounty roam or enigma setups"
+      ],
+      "mechanics": [["tip", "rage's debuff immunity prevents the tormentor's damage reflect"], ["tip", "infest applies a rare dispel that also wipes buffs, infesting right after a rune loses the rune buff"], ["counter", "ghost scepter, force, blink, and shiva's kite him, a tp scroll saves you until the basher lands"], ["counter", "break shuts off ghoul frenzy and feast together, silver edge, khanda, and viper strike carry it"]]
+    },
+    "lina": {
+      "identity": "ranged nuke mage, dragon slave clears and pokes, light strike array stuns on delay, fiery soul stacks attack speed, laguna blade deletes a single target",
+      "why": "dedicated mid, array into laguna deletes any paper hero and fiery soul scales the click, favored into SF and prophet, vetoed by razor and void",
+      "how": "slave the wave for the last hits, ground cast from fog, array where they will stand, laguna the runner, ride the stacks into right clicks",
+      "when": "spikes when the nuke levels land, mid game delete window, late needs the stacks to keep hitting",
+      "build": "yasha and kaya, bkb, sphere, ethereal blade, shard, sheepstick, blessing",
+      "timings": [["yasha and kaya", 23], ["bkb", 32]],
+      "tech": [
+        "razor, void, and arc warden are the vetoes, the link drains and chrono catches the frame",
+        "SF, prophet, and skywrath lines are the free wins, the array lands on paper before they respond"
+      ],
+      "mechanics": [["tip", "dragon slave reaches far beyond its cast range, lead the runner and let the cone tip catch them"], ["tip", "every ability that deals damage grants a fiery soul stack, burn a creep wave before the fight to arrive stacked"], ["tip", "a blind cast that pops a stack means something is in the fog, spell the high ground to scout"], ["counter", "laguna blade damage lands after a short effect delay, banish or invulnerability timing dodges the hit"]]
+    },
+    "lone-druid": {
+      "identity": "twin-hero carry controlling spirit bear for pushing and item slots, relentless lane pressure",
+      "why": "entangle goes through escape buttons, bear tower damage ends games before farmers come online, favored into drow and void",
+      "how": "bear lane pressure on both last hits, entangle locks the escape, siege with the bear tanking",
+      "when": "strongest early to mid pushing towers, win before the late game when farmers outscale",
+      "build": "mjollnir, silver edge, shard, bkb, butterfly, monkey king bar, blessing",
+      "timings": [["mjollnir", 17], ["silver edge", 30]],
+      "tech": [
+        "omni and visage veto",
+        "drow and void are the free wins, entangle through the escape button"
+      ],
+      "mechanics": [["tip", "killing the bear pays nothing permanent, cull, flesh heap, and silencer int steal all whiff on it"], ["tip", "savage roar is stun silence and mute in one, it stops bkb pops, borrowed time, and ursa enrage"], ["tip", "shard roar dispels a cyclone or silence, cast it from whichever of you or the bear isn't disabled"], ["tip", "shard fetch roots but never disarms, the fetched target keeps right clicking you"], ["counter", "a suddenly full hp bear means a fresh spawn, kill the druid while he's bearless and his lane is over"], ["counter", "minus armor melts the bear easiest, desolator and cuirass are the standard buys against ld"]]
+    },
+    "magnataur": {
+      "identity": "skewer playmaker mid, shockwave pokes and drags the wave toward him, empower buffs the melee carry's damage and cleave, reverse polarity stacks the enemy team in front of his horn",
+      "why": "dedicated mid, polarity wins every clumped fight and empower doubles the carry's cleave, favored into shadow fiend and jakiro lines, vetoed by earthshaker and winter wyvern",
+      "how": "shockwave the wave for the last hits, empower the carry before the fight, charge the skewer through their front, polarity the clump and drag the stack into your team",
+      "when": "lane sustain off the shockwave poke, fight windows on every polarity cooldown, falls off when the enemy stops clumping and the stuns interrupt the charge",
+      "build": "force, harpoon, yasha and kaya, aether lens, bkb, shard, refresher",
+      "timings": [["force", 24], ["harpoon", 24]],
+      "tech": [
+        "earthshaker, winter wyvern, and enigma are the vetoes, echo slam and the curse flip the polarity stack",
+        "shadow fiend, jakiro, and kez lines are the free wins, the skewer drags the paper mids into your team"
+      ],
+      "mechanics": [["tip", "the skewer grab is a circle around him, polarity then shockwave stacks them on your hero for the backwards drag"], ["tip", "empower buffs any ally's damage but grants cleave only to melee units"], ["tip", "empower multiplies base damage alone, flat item damage does not scale with it"], ["counter", "roots cannot stop a charging skewer, they only lock out the cast before it starts"], ["counter", "knockback moves him half as far, the solid core blunts every shove, budget your peel accordingly"]]
+    },
+    "medusa": {
+      "identity": "mana shield tank carry, split shot clears waves, mystic snake drains and returns mana, stone gaze petrifies the dive",
+      "why": "dedicated carry, favored into pudge and lifestealer lines, vetoed by invoker burn and mirana arrows",
+      "how": "stack the mana pool, snake the wave for the refund, split the camp, gaze the dive and walk them into stone",
+      "when": "lane scales with snake sustain, mid game unkillable front, late game hydras the fight with split shot",
+      "build": "falcon blade, manta, butterfly, skadi, monkey king bar, daedalus, blessing",
+      "timings": [["falcon blade", 5], ["manta", 16]],
+      "tech": [
+        "mirana, invoker, and spirit breaker are the vetoes, mana burn and long disables drain the shield economy",
+        "snapfire, lifestealer, and pudge style lines are the free wins, meaty bodies feed the gaze and the split"
+      ],
+      "mechanics": [["tip", "mana shield eats the damage before armor or magic resistance apply, resists barely move her survivability"], ["tip", "the snake always bounces to the closest valid target, aim it down the melee creeps to fish the hero hits"], ["tip", "each snake hit boosts the next bounce's damage, open on creeps and let it grow into the hero"], ["tip", "split shot's damage reduction applies even on a single target, toggle it off for rosh and clean camps"], ["counter", "stone gaze petrifies after 2 cumulative seconds of facing her, looking away does not reset the timer"]]
+    },
+    "mirana": {
+      "identity": "arrow hunt hard support, sacred arrow snipes long range stuns from fog, starstorm showers the closest cluster, leap hops cliffs, moonlight veils the team",
+      "why": "hard support playmaker, favored into jakiro and void spirit lines, vetoed by arc warden clones and bounty tracks, arrows decide picks before fights start",
+      "how": "arrow the fog lines beside their stun, starstorm the trade, leap the cliff, quiver poke without creep aggro, veil the team for the engage",
+      "when": "lane arrow threat from the start, mid roams land the long stun, late moonlight ghost starts the engage",
+      "build": "essence distiller, vessel, mekansm, force, blink, lotus, shard",
+      "timings": [["essence distiller", 14], ["vessel", 18]],
+      "tech": [
+        "arc warden, io, and bounty hunter are the vetoes, clones and track reveal gut the invis value",
+        "jakiro, void spirit, and shadow fiend style lines are the free wins, clumped paper bodies eat free arrows"
+      ],
+      "mechanics": [["tip", "the starstorm follow-up meteor strikes the nearest target and hits fogged units, blind cast it to finish jukers"], ["tip", "arrow damage and stun scale with travel distance and peak at half max range, skip the max range greed"], ["tip", "the arrow instantly kills the first creep it hits, snipe big neutrals and siege creeps for free gold"], ["tip", "the arrow grants flying vision while flying and brief vision on impact, use it to scout fog"], ["tip", "leap crosses cliffs and impassable terrain, save the charges for real escapes over panic hops"], ["counter", "moonlight shadow re-fades every ally invis for the full duration, stock sentries and dust before pushing"]]
+    },
+    "natures-prophet": {
+      "identity": "global split push carry, teleport lands anywhere on the map, sprout traps and scouts, treants swarm lanes, wrath bounces the map",
+      "why": "dedicated carry, favored into anti mage and sven lines, vetoed by dragon knight shell and night stalker skies",
+      "how": "teleport behind the undefended lane, sprout the defender, treant the wave, wrath the map and never stop moving",
+      "when": "lane weak without backup, mid game map pressure everywhere, late game race wins with global pressure",
+      "build": "mjollnir, pike, bkb, butterfly, daedalus, monkey king bar, satanic",
+      "timings": [["mjollnir", 16], ["pike", 24]],
+      "tech": [
+        "dragon knight, night stalker, and phantom lancer are the vetoes, push answers and illusion spam blunt the split",
+        "anti mage, sven, and ogre magi style lines are the free wins, slow farmers lose the map race"
+      ],
+      "mechanics": [["tip", "sprout grants flying vision around the point, scout fog jukes and cliff wards with it"], ["tip", "sprout can be ground targeted, trap invis guesses and linken holders without direct targeting"], ["tip", "canceling teleportation mid cast costs nothing, no cooldown and no mana, fake the rotation"], ["tip", "wrath bounces a fixed count and each hit beyond the first adds damage, cast with vision across the map"], ["tip", "the scepter wrath entangles every enemy it hits, a root and disarm bind scaling with the bounce"], ["counter", "hold your disable for the end of the teleport animation, the cast is long and fully visible"]]
+    },
+    "necrophos": {
+      "identity": "sustain offlane core that outlasts burst and deletes tanky cores with reaper scythe",
+      "why": "sustain core that outlasts burst from the offlane, reaper deletes tanky cores, favored into treant and tiny",
+      "how": "pulse sustain through harass, farm to rad, scythe the tank in every fight",
+      "when": "strong mid game once rad and shard land, dies to heal cut timings",
+      "build": "rad, shard, consecrated wraps, lotus, heart, bkb, shiva",
+      "timings": [["rad", 15], ["shard", 20]],
+      "tech": [
+        "bloodseeker and kotl are the vetoes, heal cut and mana drain kill the sustain plan",
+        "heartstopper wins long fights, never fight into AA"
+      ],
+      "mechanics": [["tip", "sadist regen triggers on any unit dying, wards, buildings, denies, never illusions"], ["tip", "death pulse lands on invis and fogged targets, no vision needed"], ["tip", "ghost shroud blanks physical damage even from spells, omnislash and quill spray whiff"], ["counter", "grave and false promise undo the scythe, sd and od banishes steal the window"], ["counter", "he takes bonus magic damage inside ghost shroud, bait it before dumping nukes"], ["counter", "vessel, skadi, and ice blast cut his healing, stack them before dueling him"]]
+    },
+    "night-stalker": {
+      "identity": "night predator offlaner, void stuns under darkness, crippling fear silences the area, dark ascension flies the map, midnight feast eats creeps for sustain",
+      "why": "dedicated offlane ganker, favored into nature's prophet and underlord lines, vetoed by enigma and io",
+      "how": "hunt the first night, void the runner, fear the caster before the fight, fly the dark ascension flank onto their farmer",
+      "when": "day blind and passive, every night is a power spike, dark ascension is the all in window",
+      "build": "ancient janggo, midas, bkb, harpoon, nullifier, assault, abyssal blade",
+      "timings": [["ancient janggo", 10], ["midas", 13]],
+      "tech": [
+        "enigma, io, and arc warden are the vetoes, black hole and split pressure ignore the night hunt",
+        "nature's prophet, underlord, and tiny style lines are the free wins, farm dependent lines fold to night tempo"
+      ],
+      "mechanics": [["tip", "void only mini stuns at night, the daytime cast is just damage and slow"], ["tip", "dark ascension turns day to night and grants flight, unobstructed vision, and bonus damage"], ["tip", "the shard feast consumes the targeted creep, restoring health and mana on the cast"], ["counter", "void never ministuns during the day, tp out in the open while the sun is up"], ["counter", "crippling fear is a death only silence aura, dispels do nothing against it, walk out of the radius"]]
+    },
+    "nyx-assassin": {
+      "identity": "reflect punish hard support, vendetta stalks picks from invis, impale lines the stun through their team, spiked carapace turns their nukes into self stuns",
+      "why": "hard support stalker, favored into techies and shadow fiend lines, vetoed by luna and zeus long range spam, the carapace flips every spell trade",
+      "how": "vendetta the pick from fog, impale the stacked lineup, carapace their retaliation, drain the caster with the strike, vanish off the map again",
+      "when": "absent from lane once vendetta lands, mid game pick machine, late the invis sets up stuns instead of burst",
+      "build": "phylactery, blink, cyclone, force, shard, agh, dagon 5",
+      "timings": [["phylactery", 22], ["blink", 27]],
+      "tech": [
+        "luna, zeus, and invoker are the vetoes, long range spell spam outranges the stalk combo",
+        "techies, shadow fiend, and skywrath style lines are the free wins, paper backs fold to the stalk burst"
+      ],
+      "mechanics": [["tip", "use vendetta invis for positioning, land the impale on their stack, the spikes stun the whole line"], ["tip", "carapace negates and reflects one damage instance per source, stuns whoever hit you"], ["tip", "carapace can be cast inside vendetta without dropping the invis, run into their spell spam for free stuns"], ["tip", "late game vendetta's invis and speed are for impale positioning, the bonus damage matters less"], ["counter", "do not retaliate after his combo, the carapace reflects and stuns whoever damages him, just walk away"], ["counter", "carapace reflects once per source on a short buff, bait it out then commit your damage"]]
+    },
+    "ogre-magi": {
+      "identity": "club swinging luck soft support, fireblast stuns and multicasts, ignite burns and slows, bloodlust buffs the carry, multicast rolls extra casts on spells and items",
+      "why": "soft support lane brute, favored into timbersaw and lina lines, vetoed by bounty tracking and lancer swarms, fat hp and armor win the early trades",
+      "how": "club the lane with fireblast ignite trades, bloodlust the carry before fights, stack camps between casts, stun through the multicast luck and body the squishies",
+      "when": "lane dominator from the start, mid game stun luck swings fights, late bloodlust keeps the carry scaling",
+      "build": "midas, glimmer, blink, aether lens, lotus, mekansm, sheepstick",
+      "timings": [["midas", 18], ["glimmer", 26]],
+      "tech": [
+        "bounty hunter, phantom lancer, and magnus are the vetoes, track hunts him and skewers drag the slow ogre",
+        "timbersaw, lina, and queen of pain style lines are the free wins, multicast luck breaks their lanes"
+      ],
+      "mechanics": [["tip", "ogre trades hits with any laner, the fat base armor and hp pool win the early scrap"], ["tip", "ignite seeks a second unburnt enemy near the first, one cast can clip both laners"], ["tip", "bloodlust casts on buildings, haste the tower under dive or speed the siege"], ["tip", "only offensive unit targeted items multicast, ally targeted items never double fire"], ["tip", "multicast items search well past their cast range, expect fire from farther out"], ["counter", "ogre casts slowly, sidestep or break vision during the windup to make the fireblast whiff"]]
+    },
+    "phantom-assassin": {
+      "identity": "crit fisher carry, stifling dagger pokes and slows, phantom strike hops units, blur evades and cloaks, coup de grace rolls the killing blow",
+      "why": "dedicated carry, favored into spectre and lina lines, vetoed by skywrath burst and dawnbreaker sustain",
+      "how": "dagger from fog for the last hit, strike the lone target, blur the gank, fish the crit and back off",
+      "when": "lane scales with dagger discipline, mid game pickoffs, late game crit lottery deletes supports",
+      "build": "bfury, desolator, bkb, satanic, monkey king bar, nullifier, abyssal blade",
+      "timings": [["bfury", 15], ["desolator", 21]],
+      "tech": [
+        "skywrath mage, dawnbreaker, and ogre magi are the vetoes, magic burst and fat frontline outtrade the crit fish",
+        "spectre, lina, and hoodwink style lines are the free wins, squishy bodies pop to a single focus crit"
+      ],
+      "mechanics": [["tip", "stifling dagger is an attack in projectile form, it applies attack effects and counts as attack damage"], ["tip", "phantom strike teleports to any unit, friendly or enemy, keep an escape unit in mind"], ["tip", "fan of knives deals a percent of each victim's max health, it shreds illusions and tanky lines alike"], ["counter", "never trust the map against her, the blur active keeps her unseen until an enemy hero gets close"]]
+    },
+    "phantom-lancer": {
+      "identity": "illusion flood carry that overwhelms single target drafts",
+      "why": "dedicated pos 1, illusion flood blanks single target drafts, favored into drow and SF style single target lines",
+      "how": "lane with lance spam, farm to manta, fight with illusions tanking, split with dopple when they group",
+      "when": "spikes once manta lands, scales into a late game monster with heart and stacked illusions",
+      "build": "manta, skadi, shard, bloodthorn, heart, butterfly, blessing",
+      "timings": [["manta", 17], ["skadi", 31]],
+      "tech": [
+        "sven is the loudest veto, leshrac and elder titan eat the flood with aoe",
+        "mars, SF, drow style single target drafts are the free wins, count their clear before locking"
+      ],
+      "mechanics": [["tip", "the brighter doppel illusion takes full damage, group it and bait them onto the fake"], ["tip", "doppel dispels everything manta would, roots and silences lock the cast entirely"], ["tip", "doppel forces your landing spot, it outranks glimpse and x marks repositioning"], ["tip", "juxtapose multiplies off wards not buildings, serpent wards and tombstone feed the flood"], ["counter", "rupture, viper strike, maledict survive doppel and tag the real one"], ["counter", "mjollnir static shield rolls on every illusion swing, the army chips itself"]]
+    },
+    "phoenix": {
+      "identity": "fire bird soft support, icarus dive arcs through fights, fire spirits gut attack speed, sun ray burns and heals through anything, supernova trades an egg for a stun",
+      "why": "soft support brawler, favored into axe and snapfire lines, vetoed by bounty tracking and outworld bursts, the egg drags enemies off everything else",
+      "how": "dive in trailing the burn, spirit the carriers before they swing, ray the clumped fight from max distance, egg where the cleave punishes the attackers",
+      "when": "lane sustains on dive trades, mid game egg fights break sieges, late the burn scales with enemy hp",
+      "build": "vessel, cyclone, shard, shiva, lotus, agh, refresher",
+      "timings": [["vessel", 16], ["cyclone", 25]],
+      "tech": [
+        "bounty hunter, outworld destroyer, and queen of pain are the vetoes, track and bursts delete the egg",
+        "axe, snapfire, and shadow fiend style lines are the free wins, clumped brawlers feed the egg stun"
+      ],
+      "mechanics": [["tip", "icarus dive burns and slows everything it passes through, finish the arc over them before cancelling"], ["tip", "sun ray leaves the rest of the kit free, phoenix casts spells and items while the beam burns"], ["tip", "fire spirits gut enemy attack speed, land them on the hitters before the egg drops"], ["tip", "towers and creeps never attack the sun, only enemy hero attacks can break the egg"], ["tip", "allies can deny the egg once it falls past half its hit count"], ["counter", "the dive is interrupted by disable sources, hold a stun to ground the bird mid arc"]]
+    },
+    "pudge": {
+      "identity": "hook roamer soft support, meat hook drags victims through everything, rot self-ticks for trades, flesh heap stacks tank him into a brick, dismember chews the caught target",
+      "why": "soft support roamer, favored into shadow fiend and tiny lines, vetoed by arc warden and monkey king mobility, every landed hook flips a rotation",
+      "how": "hide in fog, hook the last hitting carry, rot on arrival, dismember mid pull so they get no reaction window, body block the lane gaps",
+      "when": "lane terror from the first hook, mid game picks set the tempo, late flesh heap makes him a fat frontline",
+      "build": "vessel, aether lens, blade mail, glimmer, force, lotus, bkb",
+      "timings": [["vessel", 20], ["aether lens", 24]],
+      "tech": [
+        "arc warden, monkey king, and wraith king are the vetoes, clones and free respawns waste every hook",
+        "shadow fiend, tiny, and shadow demon style lines are the free wins, squishy slow bodies feed the hook"
+      ],
+      "mechanics": [["tip", "meat hook can snag runes, landing one refunds the full mana cost of the cast"], ["tip", "the hook instantly kills the non ancient creeps it snags, clear camps and pulls with it"], ["tip", "the hook counts illusions as creeps and kills them on contact"], ["tip", "rot self damage is never lethal, toggle it at any hp for the slow and the farm"], ["tip", "dismember grants true sight over the target for the whole channel"], ["counter", "dismember is a channeled spell, any stun or silence on pudge ends the eat"]]
+    },
+    "razor": {
+      "identity": "offlane static core that drains enemy damage with static link, plasma fields the wave, and melts armor with eye of the storm",
+      "why": "dedicated pos 3, the link strips their carry damage every fight, favored into lina and snapfire style lane cores",
+      "how": "link their carry when the fight starts, plasma the wave, eye of the storm the tower push",
+      "when": "falcon blade holds the lane, sange and yasha and manta carry the mid game fights, shiva and satanic close out the late sieges",
+      "build": "falcon blade, consecrated wraps, manta, sange and yasha, bkb, shiva, satanic",
+      "timings": [["falcon blade", 8], ["consecrated wraps", 18]],
+      "tech": [
+        "outworld destroyer and luna outrange the link, dragon blood shrugs it, never link the brick",
+        "lina and windranger lines are the free wins, the link wins their lane and their mid game"
+      ],
+      "mechanics": [["tip", "the link drain ends at the break range but the stolen damage lingers on, death is its only dispel"], ["counter", "the link snaps past its break range, force or a dash on the ally ends the drain early"], ["counter", "killing razor never refunds the stolen damage, the drain debuff rides out its full duration"], ["tip", "eye of the storm strikes the lowest health unit each interval and shreds a point of armor per strike"]]
+    },
+    "ringmaster": {
+      "identity": "herd control circus hard support, escape act boxes allies from targeted spells, impalement knives chase through fog, tame the beasts fears the herd, the wheel taunts the pile",
+      "why": "hard support fight conductor, favored into shadow fiend and centaur lines, vetoed by nyx stalking and dark willow bursts, the wheel plus fear wins fights",
+      "how": "knife the fog chase, box the focused ally, fear them into your pile, wheel behind their backs, hand out souvenirs for the escape",
+      "when": "lane knife poke bleeds them, mid wheel sieges the objectives, late the box decides the fights",
+      "build": "essence distiller, glimmer, force, blink, aether lens, mekansm, shard",
+      "timings": [["essence distiller", 17], ["glimmer", 25]],
+      "tech": [
+        "nyx, dark willow, and juggernaut are the vetoes, stalkers and spell immune spins break the circus setup",
+        "shadow fiend, centaur, and zeus style lines are the free wins, clumped paper lines dance inside the wheel"
+      ],
+      "mechanics": [["tip", "the whip fear always sends enemies running away from ringmaster, you cannot fear them into your hero"], ["tip", "the escape act box disjoints incoming projectiles on the packed ally, box them out of the burst"], ["tip", "enemies need vision of the wheel to be mesmerized, wheeling it behind trees or walls wastes the taunt"], ["tip", "drop the wheel behind them, then fear them with the whip so they turn and stare into the wheel"], ["counter", "the escape act box only blocks attacks and targeted abilities, ground targeted spells still hit the boxed ally"], ["counter", "souvenirs are pseudo items, they work under silence but not mute, silence does not stop the tricks"]]
+    },
+    "rubick": {
+      "identity": "spell thief soft support, telekinesis lifts instantly, fade bolt bounces and guts damage, arcane supremacy stretches cast range, spell steal turns their ultimate against them",
+      "why": "soft support opportunist, favored into underlord and shadow fiend lines, vetoed by dazzle dispels and primal beast grapple, the steal punishes every thrown ultimate",
+      "how": "lift the initiator, fade bolt the wave to blunt pushes, hold spell steal for the fight winner, cast the stolen spell past its owners range",
+      "when": "lane bully with fade bolt harass, mid game steals swing fights, late the stolen ultimates decide the team fights",
+      "build": "essence distiller, vessel, blink, aether lens, glimmer, force, shard",
+      "timings": [["essence distiller", 15], ["vessel", 19]],
+      "tech": [
+        "dazzle, primal beast, and arc warden are the vetoes, shallow graves and clones waste the steal",
+        "underlord, shadow fiend, and venomancer style lines are the free wins, big telegraphed ultimates beg to be stolen"
+      ],
+      "mechanics": [["tip", "aim the telekinesis landing back into the chasers, the landing stuns everything in its radius"], ["tip", "fade bolt loses damage per bounce, open on the ranged creep to land the full hit"], ["tip", "spell steal takes the last ability the target cast, wait for the spell you actually want"], ["tip", "stolen spell cooldowns persist through swaps, wasting a stolen ultimate burns a future steal"], ["counter", "arcane supremacy grants huge cast range and spell amp, he casts your own spells farther than you"]]
+    },
+    "sand-king": {
+      "identity": "burrowstorm initiator, burrowstrike stuns through the line, sand storm channels invis clear, caustic finale pops the wave, epicenter grinds the fight",
+      "why": "dedicated offlane burrow initiator, favored into windranger and undying lines, vetoed by dawnbreaker and lich",
+      "how": "strike the line from fog, storm the wave clear, burrow behind their tank, grind the epicenter through the stack",
+      "when": "storm clears waves from lane, epicenter windows decide mid fights, falls off when burst answers the channel",
+      "build": "shard, bkb, shiva, bloodstone, daedalus, wind waker, blessing",
+      "timings": [["shard", 29], ["bkb", 33]],
+      "tech": [
+        "dawnbreaker, lich, and winter wyvern are the vetoes, global saves bail the burrowed catch",
+        "windranger, undying, and rubick style lines are the free wins, squishy zones fold to the storm clear"
+      ],
+      "mechanics": [["tip", "burrowstrike works unit targeted or point targeted, the alt cast strikes without needing the full cast range"], ["tip", "sand storm invisibility is persistent, attacks and casts reveal you briefly then the fade returns"], ["tip", "stinger strikes the area as an instant attack, attack modifiers apply to every unit caught"], ["counter", "sand storm invisibility is anchored to the cloud, the storm dissipates the moment he steps outside the radius"]]
+    },
+    "shadow-shaman": {
+      "identity": "chain disable siege hard support, hex blanks any hero, shackles lock the channel, serpent wards melt towers, fowl play cheats death",
+      "why": "hard support lockdown merchant, favored into zeus and undying lines, vetoed by lancer swarms and lich poke, the shackle chain holds any core still",
+      "how": "hex the initiator first, shock the wave and the runner, shackle the carry, ward the tower, deny the spent wards",
+      "when": "lane push threat from the shock spam, mid wards siege every objective, late hex chains anchor the fights",
+      "build": "blink, aether lens, glimmer, force, shard, bkb, refresher",
+      "timings": [["blink", 20], ["aether lens", 26]],
+      "tech": [
+        "phantom lancer, bounty hunter, and lich are the vetoes, illusions and spam swarm past the single target locks",
+        "zeus, undying, and skywrath style lines are the free wins, paper bodies die inside the hex shackle chain"
+      ],
+      "mechanics": [["tip", "ether shock reaches far past its cast range through the cone, cast it on the ranged creep to clip the runner"], ["tip", "hex is instant cast, kills illusions on touch, and is a silence mute disarm break in one"], ["tip", "hex has no cast point and out-ranges shackles, hex first in the gank order"], ["tip", "drop the ward ring straight onto a hero, the circle blocks pathing and traps them inside"], ["counter", "serpent ward attacks are not affected by damage block, block items do not mitigate them"], ["counter", "shackles is channeled, keep a stun or silence ready to break the link off your ally"]]
+    },
+    "slardar": {
+      "identity": "armored deep diver, guardian sprint rushes through slows, crush stuns in a puddle, bash of the deep layers stuns on hits, corrosive haze strips armor and true sights",
+      "why": "dedicated mid, sprint ganks the sides before rotations answer and haze melts roshan, favored into lifestealer and pudge, vetoed by bounty and jugg",
+      "how": "sprint down the river, crush the target on arrival, haze the runner, bash through the spell immunity, sprint back out",
+      "when": "the dive window opens once the gap closer lands, mid game hunt peak, late frontlines while bash holds the carry",
+      "build": "blink, shard, bkb, harpoon, agh, assault, nullifier",
+      "timings": [["blink", 13], ["shard", 20]],
+      "tech": [
+        "bounty, juggernaut, and legion are the vetoes, track money hunts the dive and spin dodges the crush",
+        "lifestealer, pudge, and grimstroke lines are the free wins, the bash hunt runs down every fat walkup target"
+      ],
+      "mechanics": [["tip", "guardian sprint opens with total slow resistance that decays over the buff, dive through the kiting"], ["tip", "crush leaves a puddle that counts as home water, the sentinel passive fights at full power on it"], ["tip", "bash runs on an attack tally, warm the count on creeps so the next hero hit lands stunned"], ["counter", "guardian sprint is a basic dispel away from gone, purge it and the hunt stops"], ["counter", "corrosive haze true sights everything it touches, invisibility is no escape from the hunt"], ["counter", "a basic dispel wipes the haze off, only his talent makes it death locked"]]
+    },
+    "slark": {
+      "identity": "melee carry stealing stats with essence shift, dark pact self-dispel, shadow dance invis roaming and escape",
+      "why": "dedicated pos 2, essence shift snowballs every fight, favored into treant and soft support lines",
+      "how": "dark pact the dust and track, pounce the leash, shadow dance resets the map",
+      "when": "spikes once mage slayer lands, monster late with disperser and skadi off stolen stats",
+      "build": "mage slayer, blink, shard, silver edge, bkb, disperser, skadi",
+      "timings": [["mage slayer", 18], ["blink", 23]],
+      "tech": [
+        "grimstroke and kunkka veto, visage familiars reveal the dance",
+        "dark pact dispels track and dust but never silences, steal stats off the tank then leave"
+      ],
+      "mechanics": [["tip", "every dark pact tick is a strong dispel, it rips stuns off you"], ["tip", "pounce leash cancels tps and most mobility, it functions like a root"], ["tip", "dance regen drops when enemy vision touches you, use it to sweep their wards"], ["counter", "never stun into dark pact, the ticks purge it, wait the spell out then disable"], ["counter", "break kills essence shift and dance regen, silver edge break never dispels"], ["counter", "bloodseeker owns him, no pact off rupture, thirst true sights the dance"]]
+    },
+    "sniper": {
+      "identity": "long range mid that shreds from behind the line, take aim extends the reach, assassinate picks the runner",
+      "why": "dedicated pos 2 counter mid, not a blind pick, the range wins lanes against the slow projectiles, venge and cm lines are the free wins",
+      "how": "stand at max range behind the frontline, shred the tank line, assassinate the runner",
+      "when": "mask of madness turns the lane kill on, pike keeps the divers off, daedalus shreds the tank line late",
+      "build": "mask of madness, pike, mjollnir, hydras breath, bkb, monkey king bar, daedalus",
+      "timings": [["mask of madness", 14], ["pike", 25]],
+      "tech": [
+        "spectre haunt and PL illusions reach him wherever he stands, night stalker and legion are the dive vetoes",
+        "venge, shadow fiend, and cm lines are the free wins, he outlans everything that clicks close"
+      ],
+      "mechanics": [["tip", "any hero kill refreshes assassinate, the credit is his however the kill happened"], ["tip", "assassinate ministuns the target when the projectile lands"], ["tip", "assassinate true sights and shares vision of the target until the shot connects"], ["tip", "the grenade shoves enemies and sniper himself back, the self-knockback doubles as a reposition"], ["counter", "night vision 1400, he sees the dark gank coming"]]
+    },
+    "spectre": {
+      "identity": "global haunt scaler that punishes squishy backlines",
+      "why": "dedicated scaling pos 1, free win into sniper and drow style ranged carries that haunt deletes",
+      "how": "farm to rad, farm both jungles, haunt fights that already started, never initiate",
+      "when": "weak till rad, strong through the mid game, scales into a late game monster",
+      "build": "rad, manta, skadi, bloodthorn, butterfly, abyssal blade, nullifier",
+      "timings": [["rad", 18], ["manta", 25]],
+      "tech": [
+        "undying, necro, and invoker visible means no spectre, the tank plan dies first",
+        "haunt executes the backline, dispersion punishes physical burst"
+      ],
+      "mechanics": [["tip", "dagger grants shared vision of everyone it hits, pings invis spots without true sight"], ["tip", "the trail's free pathing lingers 1 second off the edge, cliff out behind you"], ["tip", "dispersion reflects before reductions, armor and barriers never soften it"], ["counter", "hug creeps when she shadow steps, the illusion damage is desolate only early"]]
+    },
+    "spirit-breaker": {
+      "identity": "global charge ganker that hunts solo farmers",
+      "why": "dedicated pos 4 answer into broodmother and illusion flood lines",
+      "how": "charge their farming carry on cooldown, never charge into their grouped five",
+      "when": "charge pressure from level 6",
+      "build": "ancient janggo, midas, vessel, yasha and kaya, lotus, bkb, silver edge",
+      "timings": [["ancient janggo", 17], ["midas", 18]],
+      "tech": [
+        "batrider is the loudest veto, never charge into their grouped five"
+      ],
+      "mechanics": [["tip", "greater bash stun goes through bkb, spell immunity never saves the target"], ["tip", "bulldoze is castable mid charge, the move speed boost jacks up greater bash damage on contact"], ["tip", "charge shares vision around the target, fog lifts wherever the enemy can see, dark ascension vision becomes yours"], ["counter", "root or leash locks out charge and nether strike entirely, he is helpless while planted"], ["counter", "any stun or root mid charge cancels it, force staff and knockback also end the charge"]]
+    },
+    "sven": {
+      "identity": "melee strength carry with a cleave steroid and a single-target storm hammer stun, god strength ult turns teamfights",
+      "why": "dedicated pos 1, cleave plus god strength ends teamfights, favored into SF and muerta",
+      "how": "farm with cleave, hammer their carry, god strength behind warcry armor",
+      "when": "online once mask of madness lands, ult windows decide fights, strongest through the mid and late game",
+      "build": "mask of madness, bkb, daedalus, harpoon, monkey king bar, swift blink, satanic",
+      "timings": [["mask of madness", 10], ["bkb", 24]],
+      "tech": [
+        "lycan, troll, ww are the vetoes",
+        "cleave eats illusion drafts, ghost scepter blanks the hammer dive, never ult into ghost timings"
+      ],
+      "mechanics": [["tip", "god's strength multiplies strength damage only, raw green damage items do not get scaled"], ["tip", "agh's storm hammer dispels ghost scepter and windrun in its aoe"], ["tip", "agh's hammer ignores roots and leashes, the invulnerability walks him out of mars arena"], ["counter", "the hammer is a disjointable projectile, any disjoint wastes the stun"], ["counter", "basic dispels strip warcry off him and his team, only the shard version is protected"], ["counter", "break shuts off great cleave, god's strength is an active buff break never touches"]]
+    },
+    "templar-assassin": {
+      "identity": "refraction shield assassin, meld ambushes from stillness, psi blades spill through the wave, traps slow and watch the map",
+      "why": "dedicated carry, favored into shadow fiend and lina lines, vetoed by invoker spam and dragon knight shell",
+      "how": "shield up before the trade, meld the ambush, spill the wave through the front unit, trap the choke and chase the slow",
+      "when": "lane dominator behind refraction, mid game meld pickoffs, late game splash damage with armor shred",
+      "build": "falcon blade, desolator, pike, daedalus, bkb, monkey king bar, swift blink",
+      "timings": [["falcon blade", 6], ["desolator", 15]],
+      "tech": [
+        "spirit breaker, invoker, and dragon knight are the vetoes, global charge and dot ticks strip the refraction layers",
+        "shadow fiend, sven, and lina style lines are the free wins, paper midlaners fold to the meld burst"
+      ],
+      "mechanics": [["tip", "refraction negates each damage instance fully, on-damage effects never trigger, regen and the escape dagger stay live"], ["tip", "meld is instant invisibility while still, juke into fog or high ground and the chase runs past you"], ["tip", "meld armor reduction fully stacks, open the target with a double meld before the spills"], ["tip", "psi blades slice through to units directly behind the target, line the wave and wipe it in spills"], ["counter", "meld only breaks on her actions or movement, knock her sideways to pop the ambush"]]
+    },
+    "terrorblade": {
+      "identity": "ranged illusion carry, conjure image doubles the farm, reflection slows and copies the runner, metamorphosis turns the whole kit ranged, and sunder trades hp pools on a single cast",
+      "why": "dedicated pos 1, the illusion siege melts towers and the swarm wins every even fight, armor for days with thin hp underneath so magic nukes are the threat, favored into QoP, snapfire, and undying, vetoed by PL, techies, and lich",
+      "how": "reflection the engagement, conjure images to farm and flank, metamorph only with the team around, sunder the low swap to reset the fight",
+      "when": "weak between cooldowns and terrifying with them up, every fight bends on the sunder timer, terrified of the burst that lands first",
+      "build": "falcon blade, manta, skadi, pike, butterfly, bkb, daedalus",
+      "timings": [["falcon blade", 7], ["manta", 18]],
+      "tech": [
+        "PL, techies, and lich are the vetoes, the illusion flood and the lane nukes blank the thin hp carry",
+        "QoP, snapfire, and undying lines are the free wins, the metamorphosis sieges outpace the squishy mids"
+      ],
+      "mechanics": [["tip", "conjure images only hold metamorphosis form near the hero, the form drops when he walks away"], ["tip", "sunder can be cast on allies and on your own illusions"], ["tip", "sunder is an hp swap, not a damage or heal, it works through the ice blast debuff"], ["counter", "armor for days with no hp behind it, magic nukes wreck him and the illusions"], ["counter", "the reflection slow and its illusion come off with a basic dispel"]]
+    },
+    "tiny": {
+      "identity": "avalanche toss combo carry, rocks pulse stun in an area, toss grabs and hurls any unit, tree grab swings splash, grow inflates the stats",
+      "why": "dedicated carry, favored into spirit breaker and ember spirit lines, vetoed by phantom lancer and luna",
+      "how": "lead the avalanche, toss the nearest body through it, grab a tree for the splash, grow into the siege",
+      "when": "lane kill threat once the combo lands, mid game burst pickoffs, late game building crusher",
+      "build": "silver edge, harpoon, bkb, daedalus, assault, monkey king bar, swift blink",
+      "timings": [["silver edge", 25], ["harpoon", 28]],
+      "tech": [
+        "phantom lancer, luna, and windranger are the vetoes, illusions and split pressure outpace the combo tempo",
+        "spirit breaker, lion, and ember spirit style lines are the free wins, single bodies eat the full combo"
+      ],
+      "mechanics": [["tip", "avalanche pulses damage and stun in intervals, lead the target and the rocks catch walkers"], ["tip", "toss disables whoever is thrown, and avalanche deals double damage to the tossed unit"], ["tip", "debuff immune enemies can never be thrown, but you can still toss something at them"], ["tip", "toss always grabs the nearest unit around tiny, allies included, mash it in a crowd"], ["tip", "toss grabs units inside the grab radius even from fog, invisible units are the exception"], ["counter", "the avalanche area keeps stunning, walking in late still eats the rocks"]]
+    },
+    "troll-warlord": {
+      "identity": "stance swap brawler, melee rage roots and armors up, whirling axes blind or slow, fervor stacks warp speed, trance refuses death",
+      "why": "dedicated carry, favored into lifestealer and pudge lines, vetoed by rubick spell steal and magnus skewer",
+      "how": "swap melee for the commit, axes the wave, stack fervor on the tower, ensnare the runner, trance through the lethal burst",
+      "when": "lane grinder with the blind, early rosh threat, mid game tower sieger, late game unkillable trance windows",
+      "build": "bfury, sange and yasha, manta, bkb, monkey king bar, satanic, abyssal blade",
+      "timings": [["bfury", 14], ["sange and yasha", 23]],
+      "tech": [
+        "rubick, magnus, and hoodwink are the vetoes, stolen trances and reposition tools waste the lock",
+        "lifestealer, spirit breaker, and pudge style lines are the free wins, melee bodies feed the fervor stacks"
+      ],
+      "mechanics": [["tip", "melee rage is the combat form, bonus armor, move speed, faster base swing, and the ensnare chance"], ["tip", "fervor stacks reset on the first attack at a new target, keep hitting one thing to hold the speed"], ["tip", "casting battle trance applies a basic dispel, wipe the slow off yourself as you commit"], ["tip", "cast battle trance mid attack animation to lock on, he sticks to that target until it dies"], ["counter", "the trance shares vision on his target through fog, you cannot juke him by breaking line of sight"]]
+    },
+    "tusk": {
+      "identity": "brawl initiator soft support, ice shards walls the choke, snowball wraps allies invulnerable into the fight, tag team buffs the swarm, walrus punch launches the carry",
+      "why": "soft support playmaker, favored into shadow fiend and doom lines, vetoed by dark seer walls and zeus spam, the punch lockdown starts every fight",
+      "how": "shard the choke behind them, snowball through their stun, tag team on contact, punch the core into your team",
+      "when": "early brawling king, mid game snowball saves and picks, late the punch stays relevant on the carry pile",
+      "build": "blink, vessel, glimmer, force, agh, lotus, bkb",
+      "timings": [["blink", 19], ["vessel", 22]],
+      "tech": [
+        "dark seer, zeus, and kotl are the vetoes, walls and mana spam blank the snowball tempo",
+        "shadow fiend, doom, and skywrath style lines are the free wins, paper bodies die inside the punch combo"
+      ],
+      "mechanics": [["tip", "ice shards create a path blocking wall at the target point, save it for chokes and retreat lines"], ["tip", "the ice shards projectile grants flying vision on its flight and lingers at the landing spot"], ["tip", "everyone gathered in the snowball is hidden, invulnerable, and spell immune until it lands"], ["tip", "tag team adds flat damage at the attack point, enable it before the walrus punch for the bigger crit"], ["tip", "walrus punch has true strike while off cooldown, evasion will not save the target"], ["counter", "hold your spells while the snowball rolls, everyone inside is invulnerable and hidden"]]
+    },
+    "undying": {
+      "identity": "melee strength lane bully, decay steals strength with every cast, soul rip turns the crowd into a heal or a nuke, tombstone floods the fight with zombies, and flesh golem makes him the walking front line",
+      "why": "dedicated pos 5, the decay lanes win from the support slot and the tombstone grinds every fight that stays put, vetoed by enigma, AA, and ember lines, favored into natures prophet, wraith king, and kez",
+      "how": "decay the double targets in lane, rip the crowd for the heal, plant the tombstone where the fight commits, walk the golem through their carry",
+      "when": "dominates the lane and the early fights, the zombie flood thins as the cleaves and nukes come online, wants the game that ends on the tombstone clock",
+      "build": "mekansm, glimmer, holy locket, shard, blink, pipe, lotus",
+      "timings": [["mekansm", 22], ["glimmer", 24]],
+      "tech": [
+        "enigma, AA, and ember are the vetoes, the black hole parks the fight and the cold stops the heal",
+        "natures prophet, wraith king, and kez lines are the free wins, the shuffles feed the decay doubles"
+      ],
+      "mechanics": [["tip", "decay steals strength from every enemy hero caught and grants it to you, catch both laners in one cast"], ["tip", "soul rip heals a flat pool, decay raises current and max hp, rip before the stacks for the larger share"], ["tip", "soul rip your tombstone, it restores a set hit count regardless of the units found in the search"], ["tip", "the shard tombstone bunkers an ally out of the fight, but destroying it with them inside stuns them"], ["counter", "kill the tombstone the moment it drops, its zombies all die instantly when it falls"], ["counter", "spread in lane, decay steals from every hero in the radius, spacing starves the strength take"]]
+    },
+    "ursa": {
+      "identity": "fury swipes stack carry, overpower bursts attack speed, earthshock slows and hops cliffs, enrage shrugs disables while rosh falls fast",
+      "why": "dedicated carry, favored into shadow fiend and hoodwink lines, vetoed by legion commander duel and undying lane",
+      "how": "stack swipes on the lane target, precast overpower before the commit, shock the gap, enrage through the disable and tank rosh",
+      "when": "lane thug once swipes stack, early rosh threat, mid game brawler, late game kited without lockdown help",
+      "build": "bfury, bkb, monkey king bar, abyssal blade, satanic, swift blink, blessing",
+      "timings": [["bfury", 14], ["bkb", 28]],
+      "tech": [
+        "legion commander, mirana, and ogre magi are the vetoes, point click lockdown deletes the short range brawler",
+        "shadow fiend, hoodwink, and dark seer style lines are the free wins, paper carries fold before swipes stack"
+      ],
+      "mechanics": [["tip", "earthshock leaps over impassable terrain, hop cliffs and walls melee heroes cannot cross"], ["tip", "every attack executed burns an overpower charge, even missed swings"], ["tip", "fury swipes ramp on consecutive hits to the same target, refresh the stacks or the bonus damage is lost"], ["tip", "enrage removes debuffs and grants status resistance with damage reduction, self dispel the slow and fight"], ["counter", "hold your disables until enrage ends, the frenzy gives status resistance and damage reduction"]]
+    },
+    "visage": {
+      "identity": "familiar dive offlane tempo hero, grave chill steals speed, gravekeeper cloak stacks shrug damage, familiars stun and siege, silent as the grave haunts from invis",
+      "why": "dedicated offlane tempo pusher, favored into witch doctor and lina lines, vetoed by luna and phantom lancer",
+      "how": "chill the lane opponent, send familiars onto the squishy backline, stone form the chainstun, ride the tempo and take towers",
+      "when": "tempo spike once familiars land, tower pressure all mid, falls off when their late comp groups",
+      "build": "vladmir, ancient janggo, shard, agh, assault, bloodthorn, sheepstick",
+      "timings": [["vladmir", 13], ["ancient janggo", 13]],
+      "tech": [
+        "luna, invoker, and phantom lancer are the vetoes, clear waves and illusions blank the familiar plan",
+        "witch doctor, lina, and axe style lines are the free wins, they cannot touch the birds"
+      ],
+      "mechanics": [["tip", "grave chill drains move and attack speed from any enemy unit, chill a creep to flee or close ground"], ["tip", "grave chill and cloak bonuses only apply to familiars inside their radius, keep the birds close"], ["tip", "familiars are fully controllable flyers, dive them onto the squishiest support"], ["counter", "familiars are conjured blind, they carry no vision of their own"], ["counter", "break disables the cloak stack gain, existing stacks stay but no new ones form"]]
+    },
+    "windranger": {
+      "identity": "shackle latch carry, shackleshot pins targets to trees and creeps, powershot pierces the wave, windrun evades the dive, focus fire melts a locked target",
+      "why": "dedicated carry, favored into shadow fiend and puck lines, vetoed by shadow demon and wraith king lockdown",
+      "how": "fish for the shackle beside a creep or tree, charge the pierce down the wave, windrun the dive, focus fire the locked carry",
+      "when": "lane bully with the latch, mid game pickoff artist, late game tower sieger behind focus fire",
+      "build": "mjollnir, bkb, pike, hydras breath, sphere, daedalus, satanic",
+      "timings": [["mjollnir", 20], ["bkb", 27]],
+      "tech": [
+        "shadow demon, wraith king, and legion commander are the vetoes, dispels and lockdown blank the latch game",
+        "shadow fiend, venomancer, and puck style lines are the free wins, squishy targets die in the shackle"
+      ],
+      "mechanics": [["tip", "shackleshot latches from the cast location, not her position when the projectile lands"], ["tip", "shackleshot prefers a unit over a tree behind the target, and the full stun holds even if the latch dies"], ["tip", "windrun gives evasion from all physical attacks, run down the tower dive untouched"], ["tip", "focus fire works on buildings too, turn it on the siege when the fight is won"], ["counter", "mirror her movement and mind the creep between you, she needs a unit or tree behind you to latch"]]
+    },
+    "winter-wyvern": {
+      "identity": "curse setup soft support, arctic burn flies over vision lines, splinter blast chases through fog, cold embrace blanks physical focus, winter's curse turns their carry on the team",
+      "why": "soft support playmaker, favored into shadow fiend and tiny lines, vetoed by arc warden clones and lancer swarms, the curse flips every crowd control war",
+      "how": "burn fat hp from arctic flight, splinter out of fog, embrace the focused core, curse the clumped engage, let their carry do the killing",
+      "when": "lane bully with burn harass, mid curse setups decide fights, late embrace keeps the core alive through physical burst",
+      "build": "blink, glimmer, witch blade, aether lens, cyclone, pike, aeon disk",
+      "timings": [["blink", 21], ["glimmer", 27]],
+      "tech": [
+        "arc warden, phantom lancer, and necrophos are the vetoes, clones and sustained heals blunt the curse",
+        "shadow fiend, tiny, and kez style lines are the free wins, clumped squishy folds to curse plus splinter"
+      ],
+      "mechanics": [["tip", "arctic burn attacks burn a share of the target's current hp per second and slow it, hunt the fattest bodies"], ["tip", "splinter blast leaves the primary target completely unaffected, only the flying splinters damage and slow"], ["tip", "cold embrace cocoons an ally, healing it while blocking every physical damage instance"], ["tip", "winters curse grows longer per enemy caught, taunted creeps add duration too, aim for the clumped wave"], ["tip", "the frozen target and its taunted attackers are immune to enemy damage, only auroth and her units can hurt them"], ["counter", "never stand near a cursed ally, the curse forces everyone in the radius to attack the frozen teammate"]]
+    },
+    "witch-doctor": {
+      "identity": "voodoo restoration healer with paralyzing cask bounces, maledict execute damage, and a death ward teamfight ult",
+      "why": "dedicated pos 5, maledict turns won lanes into executes, death ward wins fights behind the frontline, favored into SF and drow",
+      "how": "cask the clump, maledict the focus target, death ward from fog behind your frontline",
+      "when": "cask wins lanes from level 1, death ward windows every fight from level 6, glimmer makes the channel",
+      "build": "vessel, glimmer, blink, shard, force, aether lens, aeon disk",
+      "timings": [["vessel", 19], ["glimmer", 23]],
+      "tech": [
+        "meepo and troll veto, unit flood eats the cask bounces and outtempoes the ward",
+        "SF and drow lines are the free wins, best laned beside venge or visage lockdown"
+      ],
+      "mechanics": [["tip", "maledict is undispellable, no cleanse saves the target"], ["tip", "glimmer and shadow blade do not break channels, pop them mid death ward, ghost scepter and bkb do"], ["tip", "death ward is its own unit, blade mail and aeon disk never touch it, spell amp items do not buff it either"], ["tip", "death ward freezes inside chronosphere, drop it outside the dome to keep shredding people trapped in"], ["counter", "maledict damage scales with hp lost since application, healing before a tick cuts the burst"], ["counter", "death ward cannot hit ethereal units, ghost scepter blanks the ult for supports"]]
+    },
+    "wraith-king": {
+      "identity": "skeleton swarm offlane king, wraithfire blast stuns the runner, bone guard skeletons flood the lane, vampiric spirit lifesteals into a second form, reincarnation rises again",
+      "why": "dedicated offlane siege front, favored into shadow fiend and lina lines, vetoed by undying and bounty hunter",
+      "how": "blast the runner, march the skeletons down the lane, drain with vampiric spirit in fights, rise on reincarnation and press again",
+      "when": "skeleton lane bully early, siege monster mid, the second life carries every late fight",
+      "build": "armlet, rad, desolator, shard, bkb, bloodthorn, assault",
+      "timings": [["armlet", 15], ["rad", 17]],
+      "tech": [
+        "undying, bounty hunter, and dark seer are the vetoes, decay and track out tempo the second life",
+        "shadow fiend, lina, and night stalker style lines are the free wins, squishy fighters melt under the swarm"
+      ],
+      "mechanics": [["tip", "wraithfire blast is a stun projectile, spell block nullifies it on impact, throw it point blank"], ["tip", "wraith form delays his death and grants unobstructed movement with bonus attack and move speed"], ["tip", "the scepter vampiric spirit becomes an aura, allies turn into wraiths and delay their deaths too"], ["tip", "reincarnation is inactive during wraith form, the rise never triggers mid drift"], ["tip", "self cast reincarnation to die on command, it refunds the mana cost on the self kill"], ["counter", "reincarnation only rises when he pays the mana cost, mana burn cheapens the second life"]]
+    },
+    "zeus": {
+      "identity": "ranged magic artillery, arc lightning pokes the lane, lightning bolt true sight and ministun, heavenly jump repositions, thundergod wrath strikes every hero on the map",
+      "why": "dedicated mid, bolt spam bullies the lane and the global ult hunts every lane, favored into shadow fiend and tusk, vetoed by bounty and wyvern",
+      "how": "poke with arc lightning off high ground, bolt for vision and the ministun, jump the cliff to safety, wrath to snipe and to reveal",
+      "when": "lane bully early, global ult secures map kills, mid fights stall on his burst, late thins as magic resistance stacks",
+      "build": "shard, yasha and kaya, kaya and sange, refresher, blink, octarine, blessing",
+      "timings": [["shard", 21], ["yasha and kaya", 31]],
+      "tech": [
+        "winter wyvern, bounty, and wraith king are the vetoes, the curse flips fights and track hunts him down",
+        "shadow fiend, tusk, and sniper lines are the free wins, squishy paper heroes melt to the bolt spam"
+      ],
+      "mechanics": [["tip", "lightning bolt grants flying vision and true sight, cast it first on the chase so fog never eats the target"], ["tip", "ground cast the bolt, the search radius around the point catches enemies just past unit targeting range"], ["tip", "the bolt stun cancels channels, punch it into the enemy teleport to break the escape"], ["tip", "wrath strikes every enemy hero globally and lights each one up with vision, open fights with it to reveal the team"], ["counter", "melee hits strip the nimbus twice as fast, ranged heroes need double the hits to kill the cloud"]]
+    }
+  },
+  "principles": [
+    {
+      "name": "count bodies",
+      "body": "single target damage loses to unit flood, AoE eats it. check the enemy hero count per fight before you lock: BS into PL or naga is a veto, warlock into PL is a 4.6 win."
+    },
+    {
+      "name": "count mobility locks",
+      "body": "their mobility cores vs your lockdown. thirst hunts movers, entangle goes through escape buttons, rupture blanks dashes. if they have 3 dashes and you have 0 locks, do not fight them in open space."
+    },
+    {
+      "name": "heal cut beats sustain, sustain beats burst",
+      "body": "necro and AA veto the spectre tank plan, silver edge breaks feast and dragon blood. when their kit heals, buy the cut, when their kit bursts, buy the sustain."
+    },
+    {
+      "name": "know your side of the clock",
+      "body": "pre 15 lane winners (undying, hoodwink) vs 35+ scalers (spectre, AW, visage). your draft decides whether you force at 15 or farm to 35, never switch plans mid game."
+    },
+    {
+      "name": "mechanics first, numbers confirm",
+      "body": "TP scroll blanks rupture, ghost scepter blanks right click divers, break blanks feast and dragon blood. these stay true below any stat threshold, the 1.5 filter only trims noise, never mechanics."
+    },
+    {
+      "name": "economy is the only win condition you control",
+      "body": "55+ cs at 10, 120+ at 20, 600+ GPM in free farm. at 2k the enemy carry averages ~450 GPM, beat him by 150 every game and most fights win themselves."
+    },
+    {
+      "name": "objectives after advantages, trades after losses",
+      "body": "win a fight, take a tower, Rosh, or the tormentor. lose a fight, cut the dead lane wave or take their offlane T1. never lose a fight and then also lose 2 waves doing nothing."
+    },
+    {
+      "name": "fixed info routines beat vibes",
+      "body": "glance the minimap on every last hit. the gold graph is spectator only: estimate enemy net worth from visible items (~items + 1k) and tower count, Dota Plus has a live HUD if you pay. check enemy buybacks before you walk high ground."
+    },
+    {
+      "name": "shard law",
+      "body": "buy the shard with gold at 15+ when your spike needs it. the 7.41 tormentor has a 3000 barrier shield and 30% reflect on low ground bottom, it is a 3-man post-fight objective. never solo it, never ping-beg for it."
+    }
+  ],
+  "practice": {
+    "warmup": [
+      "10 min last hit trainer, target 90+",
+      "1 demo mode drill for tonight first pick hero",
+      "glance your last session death notes before queueing"
+    ],
+    "drills": [
+      ["phantom-lancer", "doppleganger dodge timing into telegraphed stuns"],
+      ["spectre", "haunt target swapping and dagger pathing"],
+      ["doom", "blink doom on the engine hero through minions"],
+      ["dragon-knight", "fireball stun chain into tower dive"],
+      ["necrophos", "reaper scythe threshold math on tanky cores"],
+      ["bloodseeker", "thirst tracking across lanes and rupture timing on the moving target"],
+      ["dawnbreaker", "celestial hammer into starbreaker chain across the map"],
+      ["enigma", "eidolon camp clears and blink hole onto the clump"],
+      ["bounty-hunter", "track uptime and shuriken bounce range"],
+      ["spirit-breaker", "charge target selection across the map"],
+      ["witch-doctor", "maledict threshold tracking and death ward placement from fog"],
+      ["sven", "blink hammer into god strength target lock"],
+      ["lone-druid", "bear micro entangle lock on escape heroes"],
+      ["slark", "pounce leash spacing and dark pact dispel timing"],
+      ["abaddon", "aphotic shield dispel timing on the stunned ally and mist coil save thresholds"],
+      ["lifestealer", "rage timing into their disable chain and infest dive resets"],
+      ["earthshaker", "fissure wall angles onto the escape and echo slam commit onto the clump"],
+      ["juggernaut", "spin timing into their disable chain and omnislash isolation angles"],
+      ["terrorblade", "metamorphosis fight timing and sunder threshold tracking"],
+      ["anti-mage", "counterspell reflect timing into telegraphed single targets"],
+      ["faceless-void", "chrono placement that catches their carry and strands your team outside"],
+      ["sniper", "take aim range kiting and assassinate tracking on the runner"],
+      ["razor", "static link timing on their carry at the fight start and plasma field wave clearing"],
+      ["undying", "decay double hits and tombstone placement in committed fights"],
+      ["alchemist", "concoction cook timing, throw at max stun before the self detonation"],
+      ["arc-warden", "wraith placement that covers every approach to your tower"],
+      ["centaur", "double edge self damage timing against the harass you can afford to trade"],
+      ["crystal-maiden", "field timing after their disables burn, nova vision for the deward sweep"],
+      ["dark-seer", "vacuum placement that clumps the enemy onto the wall line"],
+      ["drow-ranger", "gust knockback spacing and frost arrow kite orbits"],
+      ["earth-spirit", "roll then kick the target back along your approach path"],
+      ["elder-titan", "spirit path through stacked camps, then stomp timing on the return"],
+      ["ember-spirit", "sleight then chains timing on the solo target, never cast chains first"],
+      ["hoodwink", "acorn tree placement into instant bushwhack net on the same spot"],
+      ["kunkka", "torrent cast from fog on the rooted target, then mark return timing"],
+      ["legion-commander", "press the attack dispel timing on the stunned ally before you commit"],
+      ["magnataur", "skewer angles that drag their carry back into the team, polarity timing on the clumped fight"],
+      ["lina", "array the predicted stop, cast where they will be not where they are"],
+      ["medusa", "mystic snake bounce routing off the melee creeps"],
+      ["mirana", "parallel arrow angles that stretch the hit window, secondary starstorm kills through fog"],
+      ["natures-prophet", "teleport entry points behind lanes out of enemy vision"],
+      ["night-stalker", "crippling fear placement that catches the caster cluster"],
+      ["nyx-assassin", "impale angle off vendetta that stuns both targets, carapace timing on the retaliation"],
+      ["ogre-magi", "fireblast ignite trade rhythm in lane, bloodlust timing on the core"],
+      ["phantom-assassin", "stifling dagger last hit and deny timing from melee range"],
+      ["phoenix", "fire spirit timing before every egg, land the attack speed slow on all attackers"],
+      ["pudge", "hook timing on the enemy last hit, then instant dismember as they arrive"],
+      ["ringmaster", "wheel behind them then fear them to face it, box timing on the core"],
+      ["rubick", "spell steal patience, track the enemy ultimate order before committing the lift"],
+      ["sand-king", "epicenter channel timing right after the burrowstrike lands behind them"],
+      ["shadow-shaman", "hex before shackle in the gank order, ward cage trapping the runner inside"],
+      ["slardar", "crush on arrival timing, end the sprint exactly on the target"],
+      ["templar-assassin", "psi blades spill angles off the front creep"],
+      ["tiny", "avalanche placement into toss timing on the same target"],
+      ["troll-warlord", "berserker rage swap timing for the ensnare proc"],
+      ["tusk", "shard placement that cuts the retreat before the snowball connects"],
+      ["ursa", "fury swipes stack maintenance and overpower precast timing"],
+      ["visage", "stone form chain timing off the familiar charge"],
+      ["windranger", "shackleshot latch angles off creeps and trees in fog"],
+      ["winter-wyvern", "curse placement catching the carry plus supports, splinter secures the cursed kill"],
+      ["wraith-king", "wraithfire blast cancel bait before you commit the skeleton dive"],
+      ["zeus", "ground target the bolt from fog so the cast never reveals you"]
+    ],
+    "replay": [
+      "after each session: 10 min, only your deaths, write one line per death: where you should have been",
+      "weekly: rewatch your 2 best farm games to lock in what good felt like"
+    ],
+    "calibration": [
+      "first pick from the dedicated board only",
+      "counter picks only after enemy cores are visible",
+      "comfort pool only during calibration games"
+    ],
+    "bo5": [
+      "stop at 3 wins or 3 losses, no exceptions",
+      "no queue after checking a teammate profile while tilted",
+      "mute all at 0:00, communicate with pings and alt-click timers",
+      "track Rosh, buyback, and TP cooldowns with alt-clicks"
+    ]
+  },
+  "picker": {
+    "intro": "the <a href='../picker/picker.html'>pick simulator</a> is the main tool, this page is the supplement: the pool reasoning lives here, the draft math lives there. keep both open while you draft.",
+    "cards": [
+      {
+        "name": "aim, search, enter",
+        "body": "click any empty board slot to aim the search at it: the aim chip names where enter lands (our pick, enemy pick, or ban) and reads board full when the draft is done, the aimed slot wears the ring. type a name, press enter, the hero lands in the aimed slot and the aim walks on: picks alternate to whichever side is behind, bans chain forward through the strip. click a filled slot to clear it. there is no mode toggle anymore, the board is the mode."
+      },
+      {
+        "name": "the search covers the whole roster",
+        "body": "matching runs in tiers: exact name, prefix, initials (pl finds phantom lancer), substring, then fuzzy subsequence, so half a name is enough. legacy names still resolve through the alias map (furion, wisp, windrunner). an empty query browses the full roster in the legend's role order, pool heroes first with the repertoire dot; typed lists stay capped, the browse never is."
+      },
+      {
+        "name": "read the ranking columns",
+        "body": "every row carries signed term columns plus the score. known mu: average matchup against the enemies already placed. known syn: synergy with the allies already placed, weighted for the role you are picking. prior: the hero's standing before any draft context, its within-pool rank on overall win rate. generic fit: expectation against the heroes nobody has picked yet. exposure: how much the candidate loses to popular unseen enemies, the score subtracts it. flex: a flatter matchup spread against likely enemies reads higher. gate: the authored veto and bonus rules, a fired rule can pin a note on the row, a veto tags it, and the list greys only when every candidate is vetoed. score is the weighted sum, recomputed on every board change."
+      },
+      {
+        "name": "banners and chips tell you where you stand",
+        "body": "the phase banner tracks the draft (pick n/10, our pick, enemy pick incoming, bans n/16). on an empty board the ranking is expectation driven, the prior leads until picks land. a widened ranking means the selected role ran out of candidates and the list shows the whole pool with mismatch tags. meta chips pin the patch, the data date, and the bracket; rows add the hero's data position, the win-rate trend off the latest snapshots, and a veto tag when a veto rule fired. click any row for the full framework prose, the gate notes, and the lane-partner signal."
+      }
+    ]
+  },
+  "buildsMeta": "stratz itemFullPurchase completed week 1789948800, divine_immortal, fetched 2026-09-29, series 7.41"
+}

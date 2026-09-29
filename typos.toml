@@ -1,0 +1,23 @@
+# verbatim api and scrape dumps are machine data, not prose: no spell gating.
+# dota names below look like english typos and appear in authored notes.
+[files]
+extend-exclude = [
+    "ref/dota2/builds/raw/**",
+    "ref/dota2/synergy/raw/**",
+    "ref/dota2/matchups/raw/**",
+    "ref/dota2/matchups/archive-dotabuff/**",
+    "ref/dota2/howdoiplay/raw/**",
+    "ref/dota2/howdoiplay/howdoiplay.json",
+    "ref/dota2/matches/raw/**",
+]
+
+[default.extend-words]
+dota = "dota"
+stratz = "stratz"
+als = "als"
+vor = "vor"
+crystalys = "crystalys"
+mekansm = "mekansm"
+aghanim = "aghanim"
+diffusal = "diffusal"
+mjollnir = "mjollnir"

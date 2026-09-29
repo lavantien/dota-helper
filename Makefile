@@ -1,62 +1,212 @@
-# make mirror of Taskfile.yml for environments without task
-export CGO_ENABLED := 1
+.PHONY: dota picker engine-build engine-test test-picker test probe-stratz probe-opendota \
+        probe-builds probe-matches probe-scope probe-window fetch-stratz fetch-stratz-refresh fetch-opendota fetch-builds \
+        fetch-builds-refresh fetch-matches fetch-matches-refresh fetch-positions ingest db-query mine sync-builds order-pool emit emit-data \
+        emit-guide emit-picker emit-goldens eval eval-fit eval-fit-alphas eval-fit-completion \
+        eval-promote refresh fixtures verify fetch-matchups \
+        build-guide-data fetch-howdoiplay merge-mechanics check
 
-BINARY := autochess.exe
-# inner-loop passthrough: make test PKG=./internal/analytics RUN=-run=TestX
-PKG ?= ./...
-RUN ?=
+# duckdb cgo has no supported native windows toolchain (crt-mixing, verified),
+# so every go build and test runs in the linux golang image, same pattern as the
+# capstone analytics module. named volumes keep module and build caches warm.
+ENGINE_DIR = engine
+BIN = var/engine
+GO_IMG = golang:1.27
+PORT ?= 8631
+GO_RUN = docker run --rm -v $(CURDIR):/src -w /src -v poolguide-mod:/go/pkg/mod -v poolguide-build:/root/.cache/go-build -e CGO_ENABLED=1 -e STRATZ_TOKEN $(GO_IMG)
 
-.PHONY: build gen fmt lint vet test cover badge e2e playwright seed serve uiwatch dev shot check
+dota:
+	pwsh -NoProfile -Command "Start-Process (Join-Path (Get-Location) 'guide/index.html')"
 
-build:
-	go build -o $(BINARY) ./cmd/autochess
+picker:
+	pwsh -NoProfile -Command "Start-Process (Join-Path (Get-Location) 'picker/picker.html')"
 
-gen:
-	go tool templ generate
-
-fmt:
-	gofmt -l -w .
-	go tool templ fmt .
-
-lint:
-	golangci-lint run
-
-vet:
-	go vet $(PKG)
-
-test:
-	go test $(RUN) $(PKG)
-
-# coverpkg: every test binary reports all packages, so cross-package
-# execution counts (the badge parser dedups the repeated blocks)
-cover:
-	go test -coverprofile=coverage.out -covermode=atomic -coverpkg=./... ./...
-
-# badge: cover profile to shields json plus min coverage gate (ci publishes it)
-badge: cover
-	go run ./cmd/badge -skip _templ.go
-
-e2e:
-	go test -tags=e2e ./e2e/... -count=1 $(RUN)
-
-playwright:
-	go run ./e2e/cmd/playwright-install
-
-seed:
-	go run ./cmd/autochess -seed
-
-# release gate: refreshes docs/screenshots + the readme shot block
-shot:
-	go run ./cmd/screenshot
-
+# static server for visual checks over http (file:// is blocked in browser tooling)
 serve:
-	go run ./cmd/autochess
+	python -m http.server $(PORT)
 
-uiwatch:
-	go tool templ generate --watch
+engine-build:
+	$(GO_RUN) go -C $(ENGINE_DIR) build -o ../$(BIN) ./cmd/engine
 
-# concurrent ui watch plus serve: run as make -j2 dev
-dev: uiwatch serve
+# -count=1: the emit golden tests read content.json at runtime, which sits
+# outside go's test cache key, so a warm volume would mask prose drift.
+# -timeout: ./... runs every package binary concurrently, and the two slow
+# ones (emit over the pool fixtures, eval over the fit pipeline) each take
+# ~20m solo and stretch past 30m when they share cores, so the per-binary
+# cap sits at twice that
+engine-test:
+	$(GO_RUN) go -C $(ENGINE_DIR) test -count=1 -timeout 60m ./...
 
-check: gen fmt lint vet test e2e
-	git diff --exit-code -- internal/ui
+# scoped loop for one internal package during TDD: make engine-test-stats
+# (-timeout for the same cold-cache reason as engine-test: a cgo build plus a
+# concurrent container can exceed go's 600s per-package default)
+engine-test-%:
+	$(GO_RUN) go -C $(ENGINE_DIR) test -count=1 -timeout 30m ./internal/$*/...
+
+test-picker:
+	node --test picker/picker-score.test.mjs
+
+test: engine-test test-picker
+
+probe-stratz: engine-build
+	$(GO_RUN) ./$(BIN) probe stratz
+
+probe-opendota: engine-build
+	$(GO_RUN) ./$(BIN) probe opendota
+
+probe-builds: engine-build
+	$(GO_RUN) ./$(BIN) probe builds
+
+# live shape/coverage probe for the per-match draft backfill
+probe-matches: engine-build
+	$(GO_RUN) ./$(BIN) probe matches
+
+# live accept/reject ladder for gameMode/lobbyType/position filter args on
+# the heroStats aggregates (scope.gameMode/lobbyType scoping evidence)
+probe-scope: engine-build
+	$(GO_RUN) ./$(BIN) probe scope
+
+# live window-honoring ladder for the heroStats families against the hub take:
+# hard-fails when a take-controllable endpoint refuses the pinned window
+probe-window: engine-build
+	$(GO_RUN) ./$(BIN) probe window
+
+fetch-stratz: engine-build
+	$(GO_RUN) ./$(BIN) fetch stratz
+
+# force-refetches every hero cache instead of resuming around fresh ones
+fetch-stratz-refresh: engine-build
+	$(GO_RUN) ./$(BIN) fetch stratz -refresh
+
+fetch-opendota: engine-build
+	$(GO_RUN) ./$(BIN) fetch opendota
+
+# stratz item-build crawl feeding the content.json build/timings sync
+fetch-builds: engine-build
+	$(GO_RUN) ./$(BIN) fetch builds
+
+fetch-builds-refresh: engine-build
+	$(GO_RUN) ./$(BIN) fetch builds -refresh
+
+# per-match draft backfill from stratz league matches into ref/dota2/matches/raw
+fetch-matches: engine-build
+	$(GO_RUN) ./$(BIN) fetch matches
+
+# re-opens a done backfill manifest: window end extends to now, the leagues
+# cache re-lists, dedupe keeps committed matches unique
+fetch-matches-refresh: engine-build
+	$(GO_RUN) ./$(BIN) fetch matches -refresh
+
+# per-farm-position winDay aggregates (5 requests, display data only)
+fetch-positions: engine-build
+	$(GO_RUN) ./$(BIN) fetch positions
+
+ingest: engine-build
+	$(GO_RUN) ./$(BIN) ingest
+
+# read-only sql against the live duckdb, e.g. make db-query Q="'select count(*) from match_raw'"
+db-query: engine-build
+	$(GO_RUN) ./$(BIN) db-query $(Q)
+
+mine: engine-build
+	$(GO_RUN) ./$(BIN) mine
+
+# derives hero builds from the committed builds crawl and syncs content.json
+sync-builds: engine-build
+	$(GO_RUN) ./$(BIN) sync builds
+
+# re-sorts each role's pool entries and the gates fallbackOrder by mined
+# per-position win rate (divine-immortal ranked all pick, display order only,
+# membership never touched)
+order-pool: engine-build
+	$(GO_RUN) ./$(BIN) sync order
+
+emit: engine-build
+	$(GO_RUN) ./$(BIN) emit
+
+# single-step emits: bare emit regenerates every artifact (and rewrites each
+# date line against the live db), these regenerate exactly one
+emit-data: engine-build
+	$(GO_RUN) ./$(BIN) emit data
+
+emit-guide: engine-build
+	$(GO_RUN) ./$(BIN) emit guide
+
+emit-picker: engine-build
+	$(GO_RUN) ./$(BIN) emit picker
+
+# rewrites the emit golden pins after an intentional config hub change
+# (-timeout: the suite re-emits every artifact at testdata scale, which crossed
+# the go default 10m once the pool grew past 64 entries)
+emit-goldens:
+	$(GO_RUN) go -C $(ENGINE_DIR) test -timeout 30m ./internal/emit -update
+
+# order-aware eval: replays the committed league drafts against the live
+# picker model and writes ref/dota2/eval/latest.json (see ref/dota2/eval/README.md)
+eval: engine-build
+	$(GO_RUN) ./$(BIN) eval report
+
+# phase 4 fits, proposals land in var/ (gitignored) beside paths.fitOut:
+# weights by coordinate ascent on train mean pick percentile, shrinkage
+# alphas by empirical-Bayes moment matching, completion rank/lambda by
+# masked-cell CV
+eval-fit: engine-build
+	$(GO_RUN) ./$(BIN) eval fit weights
+
+eval-fit-alphas: engine-build
+	$(GO_RUN) ./$(BIN) eval fit alphas
+
+eval-fit-completion: engine-build
+	$(GO_RUN) ./$(BIN) eval fit completion
+
+# applies one fit proposal behind its guard (SECTION=weights|alphas|completion)
+# and rebuilds the chain it feeds: alphas and completion flow through the
+# mined tables, weights through the emitted picker data
+SECTION ?= weights
+eval-promote: engine-build
+	$(GO_RUN) ./$(BIN) eval promote $(SECTION)
+	$(MAKE) --no-print-directory mine emit emit-goldens test
+
+# unified data refresh, one command for the whole pipeline: stratz is the
+# single live source (matchups, synergy, popularity, overall win rates, item
+# builds, positions, trends), so refresh force-refetches every hero cache,
+# the builds crawl, the positions crawl, and the per-match backfill (re-opened
+# window, match-id dedupe), re-syncs the stratz-derived build/timings fields
+# into content.json, rebuilds all derived data and both artifacts, re-sorts
+# the pool order and fallbackOrder from the fresh per-position win rates
+# (order-pool rewrites config.json and gates.json the same way sync-builds
+# rewrites content.json, so ordering churn on a refresh is intentional, not
+# drift), re-pins the
+# emit goldens (sync-builds rewrites content.json prose the goldens embed, so
+# a refresh is an intentional golden change, not drift), appends the day's
+# trends snapshot, then regenerates the eval report and verifies the whole
+# chain end to end. fits and promotions stay manual and guarded
+# (make eval-fit*, eval-promote SECTION=...). serial only: fetch-builds needs
+# the roster cache fetch-stratz writes, so never run this with -j. needs the
+# stratz token at var/stratz.token (or STRATZ_TOKEN in env before docker).
+# opendota is manual fallback tooling only: run make fetch-opendota when the
+# crawl is unusable.
+refresh: fetch-stratz-refresh fetch-builds-refresh fetch-positions fetch-matches-refresh sync-builds
+	$(MAKE) --no-print-directory ingest mine order-pool emit emit-goldens test check eval
+
+fixtures: engine-build
+	$(GO_RUN) ./$(BIN) fixtures
+
+verify: engine-build
+	$(GO_RUN) ./$(BIN) verify
+
+fetch-matchups:
+	pwsh -NoProfile -File scripts/fetch-matchups.ps1
+
+# patch-scoped prose crawl, rerun when the patch series moves (not in refresh)
+fetch-howdoiplay:
+	pwsh -NoProfile -File scripts/fetch-howdoiplay.ps1
+
+build-guide-data:
+	pwsh -NoProfile -File scripts/build-guide-data.ps1
+
+# fold var/howdoiplay-curation fragments into content.json mechanics + curated.json
+merge-mechanics:
+	node playground/merge-mechanics.mjs
+
+check:
+	pwsh -NoProfile -File scripts/check.ps1

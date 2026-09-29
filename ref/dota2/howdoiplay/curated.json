@@ -1,0 +1,3521 @@
+{
+  "curatedAt": "2026-09-28",
+  "source": "ref/dota2/howdoiplay/howdoiplay.json",
+  "patch": "7.41",
+  "heroes": {
+    "abaddon": [
+      {
+        "idx": 0,
+        "from": "tips[2]",
+        "verified": {
+          "date": "2026-09-25",
+          "verdict": "confirmed",
+          "source": "https://dota2.fandom.com/wiki/Abaddon",
+          "text": "aphotic shield is a strong dispel, slap it on an ally to wipe stuns and most disables"
+        }
+      },
+      {
+        "idx": 1,
+        "from": "tips[12]",
+        "verified": {
+          "date": "2026-09-25",
+          "verdict": "confirmed",
+          "source": "https://dota2.fandom.com/wiki/Abaddon",
+          "text": "borrowed time can be manually cast while stunned, dispel yourself then shield the ally still stuck in the stun"
+        }
+      },
+      {
+        "idx": 2,
+        "from": "tips[8]",
+        "verified": {
+          "date": "2026-09-25",
+          "verdict": "confirmed",
+          "source": "https://dota2.fandom.com/wiki/Abaddon",
+          "text": "barriers eat damage before on-damage effects, blink and salve stay live under shield or borrowed time"
+        }
+      },
+      {
+        "idx": 3,
+        "from": "counters[2]",
+        "verified": {
+          "date": "2026-09-25",
+          "verdict": "corrected",
+          "source": "https://dota2.fandom.com/wiki/Abaddon",
+          "text": "a hit larger than his current health skips the auto trigger, chip him low before dumping the nuke"
+        }
+      },
+      {
+        "idx": 4,
+        "from": "counters[3]",
+        "verified": {
+          "date": "2026-09-25",
+          "verdict": "confirmed",
+          "source": "https://dota2.fandom.com/wiki/Abaddon",
+          "text": "ice blast and culling blade kill through borrowed time below the kill check hp"
+        }
+      },
+      {
+        "idx": 5,
+        "from": "counters[4].notes[0]",
+        "verified": {
+          "date": "2026-09-25",
+          "verdict": "confirmed",
+          "source": "https://dota2.fandom.com/wiki/Abaddon",
+          "text": "break him so it can't auto trigger, then silence so he can't manual cast, that is the full ult counter"
+        }
+      }
+    ],
+    "alchemist": [
+      {
+        "idx": 0,
+        "from": "tips[0]",
+        "verified": {
+          "date": "2026-09-28",
+          "verdict": "confirmed",
+          "source": "https://liquipedia.net/dota2/Alchemist",
+          "text": "greed stacks bonus gold on chained kills, keep last hitting anything that moves to hold the cap"
+        }
+      },
+      {
+        "idx": 1,
+        "from": "tips[10]",
+        "verified": {
+          "date": "2026-09-28",
+          "verdict": "confirmed",
+          "source": "https://liquipedia.net/dota2/Alchemist",
+          "text": "the scepter synth melts one into an ally, they gain every upgrade while you keep bonus damage"
+        }
+      },
+      {
+        "idx": 2,
+        "from": "counters[0]",
+        "verified": {
+          "date": "2026-09-28",
+          "verdict": "confirmed",
+          "source": "https://liquipedia.net/dota2/Alchemist",
+          "text": "acid spray strips armor from everyone inside, standing in it invites the physical burst"
+        }
+      },
+      {
+        "idx": 3,
+        "from": "counters[1]",
+        "verified": {
+          "date": "2026-09-28",
+          "verdict": "confirmed",
+          "source": "https://liquipedia.net/dota2/Alchemist",
+          "text": "the concoction detonates in an area, never hug the target about to eat the stun"
+        }
+      },
+      {
+        "idx": 4,
+        "from": "counters[3]",
+        "verified": {
+          "date": "2026-09-28",
+          "verdict": "confirmed",
+          "source": "https://liquipedia.net/dota2/Alchemist",
+          "text": "the concoction throw cannot be disjointed, no blink or banish dodges it once airborne"
+        }
+      },
+      {
+        "idx": 5,
+        "from": "counters[5]",
+        "verified": {
+          "date": "2026-09-28",
+          "verdict": "confirmed",
+          "source": "https://liquipedia.net/dota2/Alchemist",
+          "text": "rage regen counts as health restoration, heal reduction cuts the manfight engine"
+        }
+      }
+    ],
+    "anti-mage": [
+      {
+        "idx": 0,
+        "from": "tips[0]",
+        "verified": {
+          "date": "2026-09-27",
+          "verdict": "confirmed",
+          "source": "https://dota2.fandom.com/wiki/Anti-Mage",
+          "text": "blink disjoints incoming spell and attack projectiles"
+        }
+      },
+      {
+        "idx": 1,
+        "from": "tips[3]",
+        "verified": {
+          "date": "2026-09-27",
+          "verdict": "corrected",
+          "source": "https://dota2.fandom.com/wiki/Anti-Mage",
+          "text": "hold mana void for the out of mana caster, the area damage scales with the missing pool"
+        }
+      },
+      {
+        "idx": 2,
+        "from": "tips[4]",
+        "verified": {
+          "date": "2026-09-27",
+          "verdict": "corrected",
+          "source": "https://dota2.fandom.com/wiki/Anti-Mage",
+          "text": "mana void ministuns only the main target, casting it on a manaless unit still applies the stun"
+        }
+      },
+      {
+        "idx": 3,
+        "from": "counters[4]",
+        "verified": {
+          "date": "2026-09-27",
+          "verdict": "confirmed",
+          "source": "https://dota2.fandom.com/wiki/Anti-Mage",
+          "text": "roots and leashes stop the blink cast entirely"
+        }
+      },
+      {
+        "idx": 4,
+        "from": "counters[7]",
+        "verified": {
+          "date": "2026-09-27",
+          "verdict": "confirmed",
+          "source": "https://dota2.fandom.com/wiki/Anti-Mage",
+          "text": "break shuts off the mana break and the spell resist passive"
+        }
+      }
+    ],
+    "arc-warden": [
+      {
+        "idx": 0,
+        "from": "tips[2]",
+        "verified": {
+          "date": "2026-09-28",
+          "verdict": "confirmed",
+          "source": "https://liquipedia.net/dota2/Arc_Warden",
+          "text": "magnetic field pulls in every nearby rune and pops it on arrival, field the bounty spawn"
+        }
+      },
+      {
+        "idx": 1,
+        "from": "tips[8].notes[2]",
+        "verified": {
+          "date": "2026-09-28",
+          "verdict": "confirmed",
+          "source": "https://liquipedia.net/dota2/Arc_Warden",
+          "text": "the double runs its own item and ability cooldowns, both of you cycle the same items twice"
+        }
+      },
+      {
+        "idx": 2,
+        "from": "counters[0]",
+        "verified": {
+          "date": "2026-09-28",
+          "verdict": "confirmed",
+          "source": "https://liquipedia.net/dota2/Arc_Warden",
+          "text": "flux deals nothing while any allied unit stands near the target, hug a creep or a teammate to mute it"
+        }
+      },
+      {
+        "idx": 3,
+        "from": "counters[4]",
+        "verified": {
+          "date": "2026-09-28",
+          "verdict": "confirmed",
+          "source": "https://liquipedia.net/dota2/Arc_Warden",
+          "text": "the field evasion only stops attacks from outside it, fight him from inside the bubble"
+        }
+      },
+      {
+        "idx": 4,
+        "from": "counters[7]",
+        "verified": {
+          "date": "2026-09-28",
+          "verdict": "confirmed",
+          "source": "https://liquipedia.net/dota2/Arc_Warden",
+          "text": "most spells treat the double like a hero, on-hit and steal effects all proc on it"
+        }
+      },
+      {
+        "idx": 5,
+        "from": "counters[6]",
+        "verified": {
+          "date": "2026-09-28",
+          "verdict": "confirmed",
+          "source": "https://liquipedia.net/dota2/Arc_Warden",
+          "text": "killing the double pays real gold and experience that scales with his level, hunt it when it overextends"
+        }
+      }
+    ],
+    "bloodseeker": [
+      {
+        "idx": 0,
+        "from": "tips[0]",
+        "verified": {
+          "date": "2026-09-25",
+          "verdict": "confirmed",
+          "source": "https://dota2.fandom.com/wiki/Bloodseeker",
+          "text": "blood rage amplifies every source of outgoing spell damage, item actives ride the amp too"
+        }
+      },
+      {
+        "idx": 1,
+        "from": "counters[6].notes[0]",
+        "verified": {
+          "date": "2026-09-25",
+          "verdict": "confirmed",
+          "source": "https://dota2.fandom.com/wiki/Bloodseeker",
+          "text": "thirst exposes anyone under the health threshold with vision and true sight, the whole map sees the wounded"
+        }
+      },
+      {
+        "idx": 2,
+        "from": "counters[6]",
+        "verified": {
+          "date": "2026-09-25",
+          "verdict": "corrected",
+          "source": "https://dota2.fandom.com/wiki/Bloodseeker",
+          "text": "learning thirst removes the movement speed cap outright, the hunt has no speed ceiling"
+        }
+      },
+      {
+        "idx": 3,
+        "from": "tips[3]",
+        "verified": {
+          "date": "2026-09-25",
+          "verdict": "corrected",
+          "source": "https://dota2.fandom.com/wiki/Bloodseeker",
+          "text": "recasting rupture redeals the instant chunk and refreshes the debuff, it never stacks"
+        }
+      },
+      {
+        "idx": 4,
+        "from": "counters[0]",
+        "verified": {
+          "date": "2026-09-25",
+          "verdict": "confirmed",
+          "source": "https://dota2.fandom.com/wiki/Bloodseeker",
+          "text": "tp out of his gank, nothing in the kit stuns, roots, or leashes the channel"
+        }
+      },
+      {
+        "idx": 5,
+        "from": "counters[1]",
+        "verified": {
+          "date": "2026-09-25",
+          "verdict": "confirmed",
+          "source": "https://dota2.fandom.com/wiki/Bloodseeker",
+          "text": "instant repositioning skips the rupture tick, a max range blink or the tp scroll covers the distance in one burst"
+        }
+      },
+      {
+        "idx": 6,
+        "from": "counters[3]",
+        "verified": {
+          "date": "2026-09-25",
+          "verdict": "corrected",
+          "source": "https://dota2.fandom.com/wiki/Bloodseeker",
+          "text": "break kills the thirst detection and the speed bonus, the cap removal and the kill healing survive it"
+        }
+      },
+      {
+        "idx": 7,
+        "from": "counters[4]",
+        "verified": {
+          "date": "2026-09-25",
+          "verdict": "confirmed",
+          "source": "https://dota2.fandom.com/wiki/Bloodseeker",
+          "text": "blade mail turns the rupture chase around, every step he forces pays him back"
+        }
+      }
+    ],
+    "bounty-hunter": [
+      {
+        "idx": 0,
+        "from": "tips[0]",
+        "verified": {
+          "date": "2026-09-25",
+          "verdict": "confirmed",
+          "source": "https://dota2.fandom.com/wiki/Bounty_Hunter",
+          "text": "shuriken bounces to tracked targets, open on a creep so it reaches the distant hero"
+        }
+      },
+      {
+        "idx": 1,
+        "from": "tips[4]",
+        "verified": {
+          "date": "2026-09-25",
+          "verdict": "corrected",
+          "source": "https://dota2.fandom.com/wiki/Dust_of_Appearance",
+          "text": "dust reveal and slow linger after leaving the radius, euls or lotus dispels it"
+        }
+      },
+      {
+        "idx": 2,
+        "from": "counters[0]",
+        "verified": {
+          "date": "2026-09-25",
+          "verdict": "corrected",
+          "source": "https://dota2.fandom.com/wiki/Bounty_Hunter",
+          "text": "euls, manta, lotus, greaves, disperser all dispel track, so do allied dispels like aphotic shield"
+        }
+      },
+      {
+        "idx": 3,
+        "from": "counters[3]",
+        "verified": {
+          "date": "2026-09-25",
+          "verdict": "confirmed",
+          "source": "https://dota2.fandom.com/wiki/Bounty_Hunter",
+          "text": "track gold makes even trades pay, a 1 for 1 is really 1.5 gold for 1, don't coinflip fights into bounty"
+        }
+      },
+      {
+        "idx": 4,
+        "from": "counters[5]",
+        "verified": {
+          "date": "2026-09-25",
+          "verdict": "confirmed",
+          "source": "https://liquipedia.net/dota2/Essence_Distiller",
+          "text": "essence distiller gives true sight on the debuffed target, it sees shadow walk"
+        }
+      }
+    ],
+    "centaur": [
+      {
+        "idx": 0,
+        "from": "tips[0]",
+        "verified": {
+          "date": "2026-09-28",
+          "verdict": "confirmed",
+          "source": "https://liquipedia.net/dota2/Centaur_Warrunner",
+          "text": "double edge self damage is never lethal and costs no mana, spam it to shove waves"
+        }
+      },
+      {
+        "idx": 1,
+        "from": "tips[1]",
+        "verified": {
+          "date": "2026-09-28",
+          "verdict": "confirmed",
+          "source": "https://liquipedia.net/dota2/Centaur_Warrunner",
+          "text": "retaliate still damages towers at half effect, draw the tower onto you while pushing"
+        }
+      },
+      {
+        "idx": 2,
+        "from": "tips[5]",
+        "verified": {
+          "date": "2026-09-28",
+          "verdict": "confirmed",
+          "source": "https://liquipedia.net/dota2/Centaur_Warrunner",
+          "text": "stampede hurries every ally to max speed and the trample slows each enemy crossed once"
+        }
+      },
+      {
+        "idx": 3,
+        "from": "tips[6]",
+        "verified": {
+          "date": "2026-09-28",
+          "verdict": "corrected",
+          "source": "https://liquipedia.net/dota2/Centaur_Warrunner",
+          "text": "the hitched ally casts and attacks from the cart but cannot be targeted, non targeted effects still land"
+        }
+      },
+      {
+        "idx": 4,
+        "from": "counters[0]",
+        "verified": {
+          "date": "2026-09-28",
+          "verdict": "corrected",
+          "source": "https://dota2.fandom.com/wiki/Centaur_Warrunner",
+          "text": "retaliate only pays the attacker back when the attack lands, missed attacks never feed the return"
+        }
+      }
+    ],
+    "crystal-maiden": [
+      {
+        "idx": 0,
+        "from": "tips[0]",
+        "verified": {
+          "date": "2026-09-28",
+          "verdict": "confirmed",
+          "source": "https://liquipedia.net/dota2/Crystal_Maiden",
+          "text": "crystal nova grants six seconds of flying vision around the cast point, scout rosh and deward with it"
+        }
+      },
+      {
+        "idx": 1,
+        "from": "tips[1]",
+        "verified": {
+          "date": "2026-09-28",
+          "verdict": "confirmed",
+          "source": "https://liquipedia.net/dota2/Crystal_Maiden",
+          "text": "frostbite is far more effective on creeps, root the big neutral to clear or steal camps"
+        }
+      },
+      {
+        "idx": 2,
+        "from": "tips[4]",
+        "verified": {
+          "date": "2026-09-28",
+          "verdict": "confirmed",
+          "source": "https://liquipedia.net/dota2/Crystal_Maiden",
+          "text": "crystal clone does not interrupt your channels, cast it mid freezing field or mid tp"
+        }
+      },
+      {
+        "idx": 3,
+        "from": "tips[9]",
+        "verified": {
+          "date": "2026-09-28",
+          "verdict": "corrected",
+          "source": "https://liquipedia.net/dota2/Crystal_Maiden",
+          "text": "with the scepter the field stops channeling, she walks and casts freely despite the self slow"
+        }
+      },
+      {
+        "idx": 4,
+        "from": "tips[10]",
+        "verified": {
+          "date": "2026-09-28",
+          "verdict": "confirmed",
+          "source": "https://liquipedia.net/dota2/Crystal_Maiden",
+          "text": "hold the field until their disables burn and they forget you, one good channel flips the fight"
+        }
+      },
+      {
+        "idx": 5,
+        "from": "counters[1]",
+        "verified": {
+          "date": "2026-09-28",
+          "verdict": "confirmed",
+          "source": "https://liquipedia.net/dota2/Crystal_Maiden",
+          "text": "frostbite applies a root and disarm, it holds blinkers and mobility heroes in place"
+        }
+      }
+    ],
+    "dark-seer": [
+      {
+        "idx": 0,
+        "from": "tips[3]",
+        "verified": {
+          "date": "2026-09-28",
+          "verdict": "confirmed",
+          "source": "https://liquipedia.net/dota2/Dark_Seer",
+          "text": "ion shell is castable on enemy units too, shell their melee core during a tower defense"
+        }
+      },
+      {
+        "idx": 1,
+        "from": "tips[7]",
+        "verified": {
+          "date": "2026-09-28",
+          "verdict": "confirmed",
+          "source": "https://liquipedia.net/dota2/Dark_Seer",
+          "text": "surge charges an allied unit with max speed and slow immunity, spend it on the engager"
+        }
+      },
+      {
+        "idx": 2,
+        "from": "tips[10]",
+        "verified": {
+          "date": "2026-09-28",
+          "verdict": "confirmed",
+          "source": "https://liquipedia.net/dota2/Dark_Seer",
+          "text": "wall replicas serve at your will until destroyed, order them onto the priority target"
+        }
+      },
+      {
+        "idx": 3,
+        "from": "counters[1]",
+        "verified": {
+          "date": "2026-09-28",
+          "verdict": "confirmed",
+          "source": "https://liquipedia.net/dota2/Dark_Seer",
+          "text": "the ion shell buff is dispellable by any dispel, supports with a dispel starve his lane pressure"
+        }
+      },
+      {
+        "idx": 4,
+        "from": "counters[2]",
+        "verified": {
+          "date": "2026-09-28",
+          "verdict": "confirmed",
+          "source": "https://liquipedia.net/dota2/Dark_Seer",
+          "text": "the surge buff is dispellable, any dispel strips the haste off the target"
+        }
+      }
+    ],
+    "dawnbreaker": [
+      {
+        "idx": 0,
+        "from": "tips[4].notes[1]",
+        "verified": {
+          "date": "2026-09-25",
+          "verdict": "confirmed",
+          "source": "https://dota2.fandom.com/wiki/Dawnbreaker",
+          "text": "blink forward after the opening swipes to land the final starbreaker stun on top of a target"
+        }
+      },
+      {
+        "idx": 1,
+        "from": "tips[25]",
+        "verified": {
+          "date": "2026-09-25",
+          "verdict": "confirmed",
+          "source": "https://dota2.fandom.com/wiki/Dawnbreaker",
+          "text": "solar guardian stun pierces bkb, debuff immune enemies still eat the landing"
+        }
+      },
+      {
+        "idx": 2,
+        "from": "tips[26]",
+        "verified": {
+          "date": "2026-09-25",
+          "verdict": "corrected",
+          "source": "https://dota2.fandom.com/wiki/Dawnbreaker",
+          "text": "once airborne she is invulnerable and hidden, nothing interrupts the landing, damage lands just before the stun"
+        }
+      },
+      {
+        "idx": 3,
+        "from": "counters[2]",
+        "verified": {
+          "date": "2026-09-25",
+          "verdict": "confirmed",
+          "source": "https://dota2.fandom.com/wiki/Dawnbreaker",
+          "text": "silence cannot cancel a started starbreaker, stuns, sleeps, and fears all can"
+        }
+      },
+      {
+        "idx": 4,
+        "from": "counters[5]",
+        "verified": {
+          "date": "2026-09-25",
+          "verdict": "confirmed",
+          "source": "https://dota2.fandom.com/wiki/Nyx_Assassin",
+          "text": "nyx walks into solar guardian with carapace up and reflects the whole landing"
+        }
+      }
+    ],
+    "doom": [
+      {
+        "idx": 0,
+        "from": "tips[5]",
+        "verified": {
+          "date": "2026-09-25",
+          "verdict": "confirmed",
+          "source": "https://dota2.fandom.com/wiki/Doom",
+          "text": "doom silences, blocks healing, and dispels on cast, one of the only spells that purges through bkb"
+        }
+      },
+      {
+        "idx": 1,
+        "from": "tips[5].notes[1]",
+        "verified": {
+          "date": "2026-09-25",
+          "verdict": "corrected",
+          "source": "https://dota2.fandom.com/wiki/Doom",
+          "text": "the level 25 talent adds break on top of the silence and heal ban"
+        }
+      },
+      {
+        "idx": 2,
+        "from": "tips[6]",
+        "verified": {
+          "date": "2026-09-25",
+          "verdict": "confirmed",
+          "source": "https://dota2.fandom.com/wiki/Doom",
+          "text": "self cast scepter doom is not a self doom, you just walk an aoe around"
+        }
+      },
+      {
+        "idx": 3,
+        "from": "counters[2]",
+        "verified": {
+          "date": "2026-09-25",
+          "verdict": "confirmed",
+          "source": "https://dota2.fandom.com/wiki/Doom",
+          "text": "infernal blade is his only stun, if he wastes it with no channel cancel you can tp out"
+        }
+      },
+      {
+        "idx": 4,
+        "from": "counters[3]",
+        "verified": {
+          "date": "2026-09-25",
+          "verdict": "confirmed",
+          "source": "https://dota2.fandom.com/wiki/Doom",
+          "text": "linkens and lotus are the answers, scepter self cast aoe doom plays around both"
+        }
+      },
+      {
+        "idx": 5,
+        "from": "counters[0].notes[0]",
+        "verified": {
+          "date": "2026-09-25",
+          "verdict": "confirmed",
+          "source": "https://dota2.fandom.com/wiki/Doom",
+          "text": "hp set spells cheat the heal ban, sunder and scepter time lapse still work under doom"
+        }
+      }
+    ],
+    "dragon-knight": [
+      {
+        "idx": 0,
+        "from": "tips[0]",
+        "verified": {
+          "date": "2026-09-25",
+          "verdict": "confirmed",
+          "source": "https://dota2.fandom.com/wiki/Dragon_Knight",
+          "text": "breathe fire cuts total attack damage including bonus damage from items, use it early in the fight"
+        }
+      },
+      {
+        "idx": 1,
+        "from": "tips[1]",
+        "verified": {
+          "date": "2026-09-25",
+          "verdict": "confirmed",
+          "source": "https://dota2.fandom.com/wiki/Dragon_Knight",
+          "text": "corrosive breath burn works on towers, the dot is the whole early push package"
+        }
+      },
+      {
+        "idx": 2,
+        "from": "tips[3]",
+        "verified": {
+          "date": "2026-09-25",
+          "verdict": "confirmed",
+          "source": "https://dota2.fandom.com/wiki/Dragon_Knight",
+          "text": "the transform itself is the gank, nobody respects the instant ranged stun out of knight form"
+        }
+      },
+      {
+        "idx": 3,
+        "from": "counters[0]",
+        "verified": {
+          "date": "2026-09-25",
+          "verdict": "confirmed",
+          "source": "https://dota2.fandom.com/wiki/Break",
+          "text": "silver edge and viper strike carry the break, dragon blood regen goes with it"
+        }
+      },
+      {
+        "idx": 4,
+        "from": "counters[1]",
+        "verified": {
+          "date": "2026-09-25",
+          "verdict": "confirmed",
+          "source": "https://dota2.fandom.com/wiki/Spirit_Vessel",
+          "text": "vessel, skadi, ice blast, doom, even withering mist all cut the dragon blood regen"
+        }
+      }
+    ],
+    "drow-ranger": [
+      {
+        "idx": 0,
+        "from": "tips[3]",
+        "verified": {
+          "date": "2026-09-28",
+          "verdict": "confirmed",
+          "source": "https://dota2.fandom.com/wiki/Drow_Ranger",
+          "text": "gust reveals invisible units for the silence duration, the debuff grants true sight"
+        }
+      },
+      {
+        "idx": 1,
+        "from": "tips[2]",
+        "verified": {
+          "date": "2026-09-28",
+          "verdict": "confirmed",
+          "source": "https://dota2.fandom.com/wiki/Drow_Ranger",
+          "text": "gust's knockback does not interrupt channels, it never cancels a teleport"
+        }
+      },
+      {
+        "idx": 2,
+        "from": "tips[16]",
+        "verified": {
+          "date": "2026-09-28",
+          "verdict": "confirmed",
+          "source": "https://dota2.fandom.com/wiki/Drow_Ranger",
+          "text": "marksmanship procs cannot miss and pierce base armor, evasion is not an answer"
+        }
+      },
+      {
+        "idx": 3,
+        "from": "tips[5]",
+        "verified": {
+          "date": "2026-09-28",
+          "verdict": "confirmed",
+          "source": "https://dota2.fandom.com/wiki/Drow_Ranger",
+          "text": "multishot arrows grant flying vision as they travel, sweep the fog line with a volley"
+        }
+      },
+      {
+        "idx": 4,
+        "from": "counters[0]",
+        "verified": {
+          "date": "2026-09-28",
+          "verdict": "confirmed",
+          "source": "https://dota2.fandom.com/wiki/Drow_Ranger",
+          "text": "her passive drops when an enemy hero stands close, get in her face, illusions do not count"
+        }
+      }
+    ],
+    "earth-spirit": [
+      {
+        "idx": 0,
+        "from": "tips[0]",
+        "verified": {
+          "date": "2026-09-28",
+          "verdict": "corrected",
+          "source": "https://liquipedia.net/dota2/Earth_Spirit",
+          "text": "boulder smash kicks allied units too, boot a caught teammate out of danger across cliffs and trees"
+        }
+      },
+      {
+        "idx": 1,
+        "from": "tips[5]",
+        "verified": {
+          "date": "2026-09-28",
+          "verdict": "confirmed",
+          "source": "https://liquipedia.net/dota2/Earth_Spirit",
+          "text": "rolling boulder turns invulnerable right after the windup, roll through the big spells and out"
+        }
+      },
+      {
+        "idx": 2,
+        "from": "tips[14]",
+        "verified": {
+          "date": "2026-09-28",
+          "verdict": "confirmed",
+          "source": "https://liquipedia.net/dota2/Earth_Spirit",
+          "text": "grip any allied creep or hero, the enemies the pull passes through still eat the silence"
+        }
+      },
+      {
+        "idx": 3,
+        "from": "tips[17]",
+        "verified": {
+          "date": "2026-09-28",
+          "verdict": "confirmed",
+          "source": "https://liquipedia.net/dota2/Earth_Spirit",
+          "text": "silence or slow one magnetized target and every magnetized enemy refreshes the same debuff"
+        }
+      },
+      {
+        "idx": 4,
+        "from": "counters[2]",
+        "verified": {
+          "date": "2026-09-28",
+          "verdict": "confirmed",
+          "source": "https://liquipedia.net/dota2/Earth_Spirit",
+          "text": "stand in the roll's path, the boulder stops dead on hero contact"
+        }
+      },
+      {
+        "idx": 5,
+        "from": "counters[1]",
+        "verified": {
+          "date": "2026-09-28",
+          "verdict": "confirmed",
+          "source": "https://liquipedia.net/dota2/Earth_Spirit",
+          "text": "he is only catchable while the roll winds up, once moving he is invulnerable"
+        }
+      }
+    ],
+    "earthshaker": [
+      {
+        "idx": 0,
+        "from": "tips[1]",
+        "verified": {
+          "date": "2026-09-27",
+          "verdict": "confirmed",
+          "source": "https://dota2.fandom.com/wiki/Earthshaker",
+          "text": "the fissure lands instantly along its whole line, and standing on it phases him through every wall"
+        }
+      },
+      {
+        "idx": 1,
+        "from": "tips[6]",
+        "verified": {
+          "date": "2026-09-27",
+          "verdict": "confirmed",
+          "source": "https://dota2.fandom.com/wiki/Earthshaker",
+          "text": "the slam fully hits invisible and fogged units, there is no hiding from the echo"
+        }
+      },
+      {
+        "idx": 2,
+        "from": "counters[0]",
+        "verified": {
+          "date": "2026-09-27",
+          "verdict": "confirmed",
+          "source": "https://dota2.fandom.com/wiki/Earthshaker",
+          "text": "every enemy in the slam rings echoes to the rest and real heroes ring twice, never clump into his fight"
+        }
+      },
+      {
+        "idx": 3,
+        "from": "tips[3]",
+        "verified": {
+          "date": "2026-09-27",
+          "verdict": "confirmed",
+          "source": "https://dota2.fandom.com/wiki/Earthshaker",
+          "text": "the totem buff holds until a swing actually lands, prime it before the fight and walk in loaded"
+        }
+      }
+    ],
+    "elder-titan": [
+      {
+        "idx": 0,
+        "from": "tips[1]",
+        "verified": {
+          "date": "2026-09-28",
+          "verdict": "confirmed",
+          "source": "https://liquipedia.net/dota2/Elder_Titan",
+          "text": "echo stomp sleep wakes early once the victim takes enough damage, hold your burst for positioning"
+        }
+      },
+      {
+        "idx": 1,
+        "from": "tips[5]",
+        "verified": {
+          "date": "2026-09-28",
+          "verdict": "confirmed",
+          "source": "https://liquipedia.net/dota2/Elder_Titan",
+          "text": "the spirit inherits the titans current move speed, send it out while sped up"
+        }
+      },
+      {
+        "idx": 2,
+        "from": "tips[6]",
+        "verified": {
+          "date": "2026-09-28",
+          "verdict": "confirmed",
+          "source": "https://liquipedia.net/dota2/Elder_Titan",
+          "text": "natural order armor shred centers on the titan, the magic resist shred centers on the spirit"
+        }
+      },
+      {
+        "idx": 3,
+        "from": "tips[7]",
+        "verified": {
+          "date": "2026-09-28",
+          "verdict": "confirmed",
+          "source": "https://liquipedia.net/dota2/Elder_Titan",
+          "text": "natural order strips only base armor and base magic resist, item granted defenses stay whole"
+        }
+      },
+      {
+        "idx": 4,
+        "from": "tips[11]",
+        "verified": {
+          "date": "2026-09-28",
+          "verdict": "corrected",
+          "source": "https://liquipedia.net/dota2/Elder_Titan",
+          "text": "the spirit returns granting move speed and attack damage per enemy hero it crossed"
+        }
+      },
+      {
+        "idx": 5,
+        "from": "counters[1]",
+        "verified": {
+          "date": "2026-09-28",
+          "verdict": "confirmed",
+          "source": "https://liquipedia.net/dota2/Elder_Titan",
+          "text": "the astral spirit buff is dispellable, purge the move speed and damage off the titan"
+        }
+      }
+    ],
+    "ember-spirit": [
+      {
+        "idx": 0,
+        "from": "tips[0]",
+        "verified": {
+          "date": "2026-09-28",
+          "verdict": "confirmed",
+          "source": "https://liquipedia.net/dota2/Ember_Spirit",
+          "text": "searing chains cannot grab fogged or invisible units, but the chains reveal everything they catch"
+        }
+      },
+      {
+        "idx": 1,
+        "from": "tips[1]",
+        "verified": {
+          "date": "2026-09-28",
+          "verdict": "confirmed",
+          "source": "https://liquipedia.net/dota2/Ember_Spirit",
+          "text": "you can cast during sleight, orders and spells flow free mid dance, only attack orders are locked"
+        }
+      },
+      {
+        "idx": 2,
+        "from": "tips[5]",
+        "verified": {
+          "date": "2026-09-28",
+          "verdict": "confirmed",
+          "source": "https://liquipedia.net/dota2/Ember_Spirit",
+          "text": "sleight never disjoints, but the dash invulnerability eats projectiles that land inside the dance"
+        }
+      },
+      {
+        "idx": 3,
+        "from": "tips[10]",
+        "verified": {
+          "date": "2026-09-28",
+          "verdict": "confirmed",
+          "source": "https://liquipedia.net/dota2/Ember_Spirit",
+          "text": "sleight marks and hits fogged units, dash the high ground to scout the clump"
+        }
+      },
+      {
+        "idx": 4,
+        "from": "counters[0]",
+        "verified": {
+          "date": "2026-09-28",
+          "verdict": "confirmed",
+          "source": "https://liquipedia.net/dota2/Ember_Spirit",
+          "text": "sleight always returns him to the fiery replica of his start point, park your disable on it"
+        }
+      },
+      {
+        "idx": 5,
+        "from": "counters[1]",
+        "verified": {
+          "date": "2026-09-28",
+          "verdict": "confirmed",
+          "source": "https://liquipedia.net/dota2/Ember_Spirit",
+          "text": "remnant travel speed scales off his own move speed, heavy slows gut his escape"
+        }
+      }
+    ],
+    "enigma": [
+      {
+        "idx": 0,
+        "from": "tips[4]",
+        "verified": {
+          "date": "2026-09-25",
+          "verdict": "confirmed",
+          "source": "https://dota2.fandom.com/wiki/Enigma",
+          "text": "midnight pulse chews trees in a huge aoe, it burns sprout and knocks a tree dancing mk off his perch"
+        }
+      },
+      {
+        "idx": 1,
+        "from": "tips[5]",
+        "verified": {
+          "date": "2026-09-25",
+          "verdict": "confirmed",
+          "source": "https://dota2.fandom.com/wiki/Debuff_Immunity/Interactions",
+          "text": "midnight pulse deals full damage through bkb and debuff immunity, bkbd targets still melt in the zone"
+        }
+      },
+      {
+        "idx": 2,
+        "from": "tips[8]",
+        "verified": {
+          "date": "2026-09-25",
+          "verdict": "confirmed",
+          "source": "https://dota2.fandom.com/wiki/Enigma",
+          "text": "spawn multiplied eidolons before a solo early black hole, the channel alone doesn't have the damage"
+        }
+      },
+      {
+        "idx": 3,
+        "from": "tips[9]",
+        "verified": {
+          "date": "2026-09-25",
+          "verdict": "confirmed",
+          "source": "https://dota2.fandom.com/wiki/Enigma",
+          "text": "black hole silences on top of the stun, abaddon can't manually pop borrowed time and ursa can't enrage out"
+        }
+      },
+      {
+        "idx": 4,
+        "from": "counters[1]",
+        "verified": {
+          "date": "2026-09-25",
+          "verdict": "confirmed",
+          "source": "https://dota2.fandom.com/wiki/Debuff_Immunity/Interactions",
+          "text": "primal roar, global silence, overgrowth, and rubick steal all cancel hole through debuff immunity, count them first"
+        }
+      },
+      {
+        "idx": 5,
+        "from": "counters[4]",
+        "verified": {
+          "date": "2026-09-25",
+          "verdict": "confirmed",
+          "source": "https://www.dotabuff.com/heroes/enigma/abilities",
+          "text": "walking away from a close range enigma eats an event horizon slow, respect the innate when disengaging"
+        }
+      }
+    ],
+    "faceless-void": [
+      {
+        "idx": 0,
+        "from": "tips[0]",
+        "verified": {
+          "date": "2026-09-28",
+          "verdict": "confirmed",
+          "source": "https://dota2.fandom.com/wiki/Faceless_Void",
+          "text": "time walk flight is invulnerable, run head first into the projectile and rewind it"
+        }
+      },
+      {
+        "idx": 1,
+        "from": "tips[2]",
+        "verified": {
+          "date": "2026-09-28",
+          "verdict": "confirmed",
+          "source": "https://dota2.fandom.com/wiki/Faceless_Void",
+          "text": "time dilation stretches their cooldowns and slows per cooldown caught, combo heroes grind to a halt"
+        }
+      },
+      {
+        "idx": 2,
+        "from": "tips[7]",
+        "verified": {
+          "date": "2026-09-28",
+          "verdict": "confirmed",
+          "source": "https://dota2.fandom.com/wiki/Faceless_Void",
+          "text": "chronosphere carries true sight across the whole dome, shadow blade escapes die inside it"
+        }
+      },
+      {
+        "idx": 3,
+        "from": "tips[9]",
+        "verified": {
+          "date": "2026-09-28",
+          "verdict": "confirmed",
+          "source": "https://dota2.fandom.com/wiki/Faceless_Void",
+          "text": "his own units walk free in the sphere, even enemy void illusions are immune to the disable"
+        }
+      },
+      {
+        "idx": 4,
+        "from": "counters[8]",
+        "verified": {
+          "date": "2026-09-28",
+          "verdict": "confirmed",
+          "source": "https://dota2.fandom.com/wiki/Faceless_Void",
+          "text": "the sphere is a cylinder not a sphere, tree perchers get unperched on its edge"
+        }
+      },
+      {
+        "idx": 5,
+        "from": "counters[10]",
+        "verified": {
+          "date": "2026-09-28",
+          "verdict": "corrected",
+          "source": "https://dota2.fandom.com/wiki/Faceless_Void",
+          "text": "backtrack is not evasion, accuracy never bypasses it, only evasion takes priority"
+        }
+      }
+    ],
+    "hoodwink": [
+      {
+        "idx": 0,
+        "from": "tips[0]",
+        "verified": {
+          "date": "2026-09-28",
+          "verdict": "confirmed",
+          "source": "https://liquipedia.net/dota2/Hoodwink",
+          "text": "mistwoods wayfarer redirects incoming attacks into a nearby tree, hug treelines for the free defense"
+        }
+      },
+      {
+        "idx": 1,
+        "from": "tips[2]",
+        "verified": {
+          "date": "2026-09-28",
+          "verdict": "confirmed",
+          "source": "https://liquipedia.net/dota2/Hoodwink",
+          "text": "alt cast acorn shot to ground target and plant a tree anywhere inside the cast circle"
+        }
+      },
+      {
+        "idx": 2,
+        "from": "tips[13]",
+        "verified": {
+          "date": "2026-09-28",
+          "verdict": "confirmed",
+          "source": "https://liquipedia.net/dota2/Hoodwink",
+          "text": "bushwhack grants flying vision around the latch tree whether or not it catches anyone"
+        }
+      },
+      {
+        "idx": 3,
+        "from": "tips[25]",
+        "verified": {
+          "date": "2026-09-28",
+          "verdict": "confirmed",
+          "source": "https://liquipedia.net/dota2/Hoodwink",
+          "text": "the sharpshooter bolt fires automatically after the windup, juke the line instead of trying to cancel it"
+        }
+      },
+      {
+        "idx": 4,
+        "from": "counters[0]",
+        "verified": {
+          "date": "2026-09-28",
+          "verdict": "confirmed",
+          "source": "https://liquipedia.net/dota2/Hoodwink",
+          "text": "destroying the tree a victim is bound to dispels the bushwhack debuff instantly"
+        }
+      }
+    ],
+    "juggernaut": [
+      {
+        "idx": 0,
+        "from": "tips[0]",
+        "verified": {
+          "date": "2026-09-27",
+          "verdict": "confirmed",
+          "source": "https://dota2.fandom.com/wiki/Juggernaut",
+          "text": "blade fury does not interrupt his channeling, spin mid tp and the escape channel holds"
+        }
+      },
+      {
+        "idx": 1,
+        "from": "tips[2]",
+        "verified": {
+          "date": "2026-09-27",
+          "verdict": "corrected",
+          "source": "https://dota2.fandom.com/wiki/Juggernaut",
+          "text": "casting the spin is a basic dispel, the debuffs riding him wipe off as the storm starts"
+        }
+      },
+      {
+        "idx": 2,
+        "from": "tips[3]",
+        "verified": {
+          "date": "2026-09-27",
+          "verdict": "confirmed",
+          "source": "https://dota2.fandom.com/wiki/Juggernaut",
+          "text": "the storm negates his own attack damage, the spin is the damage and the sword waits it out"
+        }
+      },
+      {
+        "idx": 3,
+        "from": "tips[11]",
+        "verified": {
+          "date": "2026-09-27",
+          "verdict": "confirmed",
+          "source": "https://dota2.fandom.com/wiki/Juggernaut",
+          "text": "mid omnislash he still casts items and spells, the spin alone is locked out of the slash"
+        }
+      },
+      {
+        "idx": 4,
+        "from": "counters[8]",
+        "verified": {
+          "date": "2026-09-27",
+          "verdict": "confirmed",
+          "source": "https://dota2.fandom.com/wiki/Juggernaut",
+          "text": "the slash hunts a short radius around him, outrun the jump range and the chain cuts early"
+        }
+      },
+      {
+        "idx": 5,
+        "from": "counters[2]",
+        "verified": {
+          "date": "2026-09-27",
+          "verdict": "confirmed",
+          "source": "https://dota2.fandom.com/wiki/Juggernaut",
+          "text": "the healing ward dies to one hit and heals their whole team, kill it the moment it lands"
+        }
+      }
+    ],
+    "kunkka": [
+      {
+        "idx": 0,
+        "from": "tips[1]",
+        "verified": {
+          "date": "2026-09-28",
+          "verdict": "confirmed",
+          "source": "https://liquipedia.net/dota2/Kunkka",
+          "text": "torrent ignores facing, kunkka casts it toward any direction within cast range"
+        }
+      },
+      {
+        "idx": 1,
+        "from": "tips[4]",
+        "verified": {
+          "date": "2026-09-28",
+          "verdict": "confirmed",
+          "source": "https://liquipedia.net/dota2/Kunkka",
+          "text": "the torrent field damages and slows every enemy in the radius for the full duration, the stun is only the knockup"
+        }
+      },
+      {
+        "idx": 2,
+        "from": "tips[9]",
+        "verified": {
+          "date": "2026-09-28",
+          "verdict": "confirmed",
+          "source": "https://liquipedia.net/dota2/Kunkka",
+          "text": "x marks the spot returns the marked hero on command, mark yourself or an ally and yank them back"
+        }
+      },
+      {
+        "idx": 3,
+        "from": "tips[14]",
+        "verified": {
+          "date": "2026-09-28",
+          "verdict": "confirmed",
+          "source": "https://liquipedia.net/dota2/Kunkka",
+          "text": "the ghostship hands allies the rum, move speed and damage reduction now, the held damage lands later"
+        }
+      },
+      {
+        "idx": 4,
+        "from": "counters[8]",
+        "verified": {
+          "date": "2026-09-28",
+          "verdict": "confirmed",
+          "source": "https://liquipedia.net/dota2/Kunkka",
+          "text": "the shard tidal wave disarms and drags without silencing, enemies still cast spells while carried"
+        }
+      },
+      {
+        "idx": 5,
+        "from": "tips[14].notes[0]",
+        "verified": {
+          "date": "2026-09-28",
+          "verdict": "confirmed",
+          "source": "https://liquipedia.net/dota2/Kunkka",
+          "text": "the innate rum never procs while the ghostship rum buff is already on him"
+        }
+      }
+    ],
+    "legion-commander": [
+      {
+        "idx": 0,
+        "from": "tips[0]",
+        "verified": {
+          "date": "2026-09-28",
+          "verdict": "confirmed",
+          "source": "https://liquipedia.net/dota2/Legion_Commander",
+          "text": "overwhelming odds grants its attack speed on cast, the bonus lands even with nothing in the radius"
+        }
+      },
+      {
+        "idx": 1,
+        "from": "tips[1]",
+        "verified": {
+          "date": "2026-09-28",
+          "verdict": "confirmed",
+          "source": "https://liquipedia.net/dota2/Legion_Commander",
+          "text": "press the attack drops a strong dispel on the targeted ally, use it to wipe stuns and disables"
+        }
+      },
+      {
+        "idx": 2,
+        "from": "tips[5]",
+        "verified": {
+          "date": "2026-09-28",
+          "verdict": "confirmed",
+          "source": "https://liquipedia.net/dota2/Legion_Commander",
+          "text": "she can cast her abilities while dueling but not use items, odds and press stay live in the duel"
+        }
+      },
+      {
+        "idx": 3,
+        "from": "tips[6]",
+        "verified": {
+          "date": "2026-09-28",
+          "verdict": "confirmed",
+          "source": "https://liquipedia.net/dota2/Legion_Commander",
+          "text": "duel forces the target to fight and blocks their items and abilities, no manual saves inside it"
+        }
+      },
+      {
+        "idx": 4,
+        "from": "counters[1]",
+        "verified": {
+          "date": "2026-09-28",
+          "verdict": "confirmed",
+          "source": "https://liquipedia.net/dota2/Legion_Commander",
+          "text": "odds damage scales with every unit in the radius, creeps and heroes both pay, summon floods feed it"
+        }
+      },
+      {
+        "idx": 5,
+        "from": "counters[2]",
+        "verified": {
+          "date": "2026-09-28",
+          "verdict": "confirmed",
+          "source": "https://liquipedia.net/dota2/Legion_Commander",
+          "text": "the shard odds barrier is dispellable, any basic dispel strips the stonehall plate shield"
+        }
+      }
+    ],
+    "lifestealer": [
+      {
+        "idx": 0,
+        "from": "tips[0]",
+        "verified": {
+          "date": "2026-09-25",
+          "verdict": "confirmed",
+          "source": "https://dota2.fandom.com/wiki/Debuff_Immunity",
+          "text": "rage's debuff immunity prevents the tormentor's damage reflect"
+        }
+      },
+      {
+        "idx": 1,
+        "from": "tips[2]",
+        "verified": {
+          "date": "2026-09-25",
+          "verdict": "confirmed",
+          "source": "https://dota2.fandom.com/wiki/Lifestealer",
+          "text": "infest applies a rare dispel that also wipes buffs, infesting right after a rune loses the rune buff"
+        }
+      },
+      {
+        "idx": 2,
+        "from": "counters[0]",
+        "verified": {
+          "date": "2026-09-25",
+          "verdict": "confirmed",
+          "source": "https://dota2.fandom.com/wiki/Lifestealer",
+          "text": "ghost scepter, force, blink, and shiva's kite him, a tp scroll saves you until the basher lands"
+        }
+      },
+      {
+        "idx": 3,
+        "from": "counters[2]",
+        "verified": {
+          "date": "2026-09-25",
+          "verdict": "confirmed",
+          "source": "https://dota2.fandom.com/wiki/Break",
+          "text": "break shuts off ghoul frenzy and feast together, silver edge, khanda, and viper strike carry it"
+        }
+      }
+    ],
+    "lina": [
+      {
+        "idx": 0,
+        "from": "tips[1]",
+        "verified": {
+          "date": "2026-09-28",
+          "verdict": "confirmed",
+          "source": "https://dota2.fandom.com/wiki/Lina",
+          "text": "dragon slave reaches far beyond its cast range, lead the runner and let the cone tip catch them"
+        }
+      },
+      {
+        "idx": 1,
+        "from": "tips[4]",
+        "verified": {
+          "date": "2026-09-28",
+          "verdict": "confirmed",
+          "source": "https://dota2.fandom.com/wiki/Lina",
+          "text": "every ability that deals damage grants a fiery soul stack, burn a creep wave before the fight to arrive stacked"
+        }
+      },
+      {
+        "idx": 2,
+        "from": "tips[5]",
+        "verified": {
+          "date": "2026-09-28",
+          "verdict": "confirmed",
+          "source": "https://dota2.fandom.com/wiki/Lina",
+          "text": "a blind cast that pops a stack means something is in the fog, spell the high ground to scout"
+        }
+      },
+      {
+        "idx": 3,
+        "from": "counters[1]",
+        "verified": {
+          "date": "2026-09-28",
+          "verdict": "confirmed",
+          "source": "https://dota2.fandom.com/wiki/Lina",
+          "text": "laguna blade damage lands after a short effect delay, banish or invulnerability timing dodges the hit"
+        }
+      }
+    ],
+    "lone-druid": [
+      {
+        "idx": 0,
+        "from": "tips[6].notes[4]",
+        "verified": {
+          "date": "2026-09-25",
+          "verdict": "confirmed",
+          "source": "https://dota2.fandom.com/wiki/Lone_Druid",
+          "text": "killing the bear pays nothing permanent, cull, flesh heap, and silencer int steal all whiff on it"
+        }
+      },
+      {
+        "idx": 1,
+        "from": "tips[11]",
+        "verified": {
+          "date": "2026-09-25",
+          "verdict": "confirmed",
+          "source": "https://dota2.fandom.com/wiki/Lone_Druid",
+          "text": "savage roar is stun silence and mute in one, it stops bkb pops, borrowed time, and ursa enrage"
+        }
+      },
+      {
+        "idx": 2,
+        "from": "tips[13]",
+        "verified": {
+          "date": "2026-09-25",
+          "verdict": "confirmed",
+          "source": "https://dota2.fandom.com/wiki/Lone_Druid",
+          "text": "shard roar dispels a cyclone or silence, cast it from whichever of you or the bear isn't disabled"
+        }
+      },
+      {
+        "idx": 3,
+        "from": "tips[15]",
+        "verified": {
+          "date": "2026-09-25",
+          "verdict": "confirmed",
+          "source": "https://dota2.fandom.com/wiki/Lone_Druid",
+          "text": "shard fetch roots but never disarms, the fetched target keeps right clicking you"
+        }
+      },
+      {
+        "idx": 4,
+        "from": "counters[2]",
+        "verified": {
+          "date": "2026-09-25",
+          "verdict": "confirmed",
+          "source": "https://dota2.fandom.com/wiki/Lone_Druid",
+          "text": "a suddenly full hp bear means a fresh spawn, kill the druid while he's bearless and his lane is over"
+        }
+      },
+      {
+        "idx": 5,
+        "from": "counters[4]",
+        "verified": {
+          "date": "2026-09-25",
+          "verdict": "confirmed",
+          "source": "https://dota2.fandom.com/wiki/Lone_Druid",
+          "text": "minus armor melts the bear easiest, desolator and cuirass are the standard buys against ld"
+        }
+      }
+    ],
+    "magnataur": [
+      {
+        "idx": 0,
+        "from": "tips[7].notes[0]",
+        "verified": {
+          "date": "2026-09-28",
+          "verdict": "confirmed",
+          "source": "https://liquipedia.net/dota2/Magnus",
+          "text": "the skewer grab is a circle around him, polarity then shockwave stacks them on your hero for the backwards drag"
+        }
+      },
+      {
+        "idx": 1,
+        "from": "tips[2]",
+        "verified": {
+          "date": "2026-09-28",
+          "verdict": "confirmed",
+          "source": "https://liquipedia.net/dota2/Magnus",
+          "text": "empower buffs any ally's damage but grants cleave only to melee units"
+        }
+      },
+      {
+        "idx": 2,
+        "from": "tips[3]",
+        "verified": {
+          "date": "2026-09-28",
+          "verdict": "confirmed",
+          "source": "https://liquipedia.net/dota2/Magnus",
+          "text": "empower multiplies base damage alone, flat item damage does not scale with it"
+        }
+      },
+      {
+        "idx": 3,
+        "from": "counters[0]",
+        "verified": {
+          "date": "2026-09-28",
+          "verdict": "confirmed",
+          "source": "https://liquipedia.net/dota2/Magnus",
+          "text": "roots cannot stop a charging skewer, they only lock out the cast before it starts"
+        }
+      },
+      {
+        "idx": 4,
+        "from": "counters[4]",
+        "verified": {
+          "date": "2026-09-28",
+          "verdict": "confirmed",
+          "source": "https://liquipedia.net/dota2/Magnus",
+          "text": "knockback moves him half as far, the solid core blunts every shove, budget your peel accordingly"
+        }
+      }
+    ],
+    "medusa": [
+      {
+        "idx": 0,
+        "from": "tips[1]",
+        "verified": {
+          "date": "2026-09-28",
+          "verdict": "confirmed",
+          "source": "https://dota2.fandom.com/wiki/Medusa",
+          "text": "mana shield eats the damage before armor or magic resistance apply, resists barely move her survivability"
+        }
+      },
+      {
+        "idx": 1,
+        "from": "tips[8]",
+        "verified": {
+          "date": "2026-09-28",
+          "verdict": "confirmed",
+          "source": "https://dota2.fandom.com/wiki/Medusa",
+          "text": "the snake always bounces to the closest valid target, aim it down the melee creeps to fish the hero hits"
+        }
+      },
+      {
+        "idx": 2,
+        "from": "tips[9]",
+        "verified": {
+          "date": "2026-09-28",
+          "verdict": "confirmed",
+          "source": "https://dota2.fandom.com/wiki/Medusa",
+          "text": "each snake hit boosts the next bounce's damage, open on creeps and let it grow into the hero"
+        }
+      },
+      {
+        "idx": 3,
+        "from": "tips[5]",
+        "verified": {
+          "date": "2026-09-28",
+          "verdict": "confirmed",
+          "source": "https://dota2.fandom.com/wiki/Medusa",
+          "text": "split shot's damage reduction applies even on a single target, toggle it off for rosh and clean camps"
+        }
+      },
+      {
+        "idx": 4,
+        "from": "counters[1]",
+        "verified": {
+          "date": "2026-09-28",
+          "verdict": "confirmed",
+          "source": "https://dota2.fandom.com/wiki/Medusa",
+          "text": "stone gaze petrifies after 2 cumulative seconds of facing her, looking away does not reset the timer"
+        }
+      }
+    ],
+    "mirana": [
+      {
+        "idx": 0,
+        "from": "tips[1]",
+        "verified": {
+          "date": "2026-09-28",
+          "verdict": "confirmed",
+          "source": "https://liquipedia.net/dota2/Mirana",
+          "text": "the starstorm follow-up meteor strikes the nearest target and hits fogged units, blind cast it to finish jukers"
+        }
+      },
+      {
+        "idx": 1,
+        "from": "tips[6]",
+        "verified": {
+          "date": "2026-09-28",
+          "verdict": "confirmed",
+          "source": "https://liquipedia.net/dota2/Mirana",
+          "text": "arrow damage and stun scale with travel distance and peak at half max range, skip the max range greed"
+        }
+      },
+      {
+        "idx": 2,
+        "from": "tips[3]",
+        "verified": {
+          "date": "2026-09-28",
+          "verdict": "confirmed",
+          "source": "https://liquipedia.net/dota2/Mirana",
+          "text": "the arrow instantly kills the first creep it hits, snipe big neutrals and siege creeps for free gold"
+        }
+      },
+      {
+        "idx": 3,
+        "from": "tips[5]",
+        "verified": {
+          "date": "2026-09-28",
+          "verdict": "confirmed",
+          "source": "https://liquipedia.net/dota2/Mirana",
+          "text": "the arrow grants flying vision while flying and brief vision on impact, use it to scout fog"
+        }
+      },
+      {
+        "idx": 4,
+        "from": "tips[8]",
+        "verified": {
+          "date": "2026-09-28",
+          "verdict": "confirmed",
+          "source": "https://liquipedia.net/dota2/Mirana",
+          "text": "leap crosses cliffs and impassable terrain, save the charges for real escapes over panic hops"
+        }
+      },
+      {
+        "idx": 5,
+        "from": "counters[1]",
+        "verified": {
+          "date": "2026-09-28",
+          "verdict": "confirmed",
+          "source": "https://liquipedia.net/dota2/Mirana",
+          "text": "moonlight shadow re-fades every ally invis for the full duration, stock sentries and dust before pushing"
+        }
+      }
+    ],
+    "natures-prophet": [
+      {
+        "idx": 0,
+        "from": "tips[1]",
+        "verified": {
+          "date": "2026-09-28",
+          "verdict": "confirmed",
+          "source": "https://dota2.fandom.com/wiki/Nature%27s_Prophet",
+          "text": "sprout grants flying vision around the point, scout fog jukes and cliff wards with it"
+        }
+      },
+      {
+        "idx": 1,
+        "from": "tips[3]",
+        "verified": {
+          "date": "2026-09-28",
+          "verdict": "confirmed",
+          "source": "https://dota2.fandom.com/wiki/Nature%27s_Prophet",
+          "text": "sprout can be ground targeted, trap invis guesses and linken holders without direct targeting"
+        }
+      },
+      {
+        "idx": 2,
+        "from": "tips[10]",
+        "verified": {
+          "date": "2026-09-28",
+          "verdict": "confirmed",
+          "source": "https://dota2.fandom.com/wiki/Nature%27s_Prophet",
+          "text": "canceling teleportation mid cast costs nothing, no cooldown and no mana, fake the rotation"
+        }
+      },
+      {
+        "idx": 3,
+        "from": "tips[19]",
+        "verified": {
+          "date": "2026-09-28",
+          "verdict": "confirmed",
+          "source": "https://dota2.fandom.com/wiki/Nature%27s_Prophet",
+          "text": "wrath bounces a fixed count and each hit beyond the first adds damage, cast with vision across the map"
+        }
+      },
+      {
+        "idx": 4,
+        "from": "tips[21]",
+        "verified": {
+          "date": "2026-09-28",
+          "verdict": "confirmed",
+          "source": "https://dota2.fandom.com/wiki/Nature%27s_Prophet",
+          "text": "the scepter wrath entangles every enemy it hits, a root and disarm bind scaling with the bounce"
+        }
+      },
+      {
+        "idx": 5,
+        "from": "counters[6]",
+        "verified": {
+          "date": "2026-09-28",
+          "verdict": "confirmed",
+          "source": "https://dota2.fandom.com/wiki/Nature%27s_Prophet",
+          "text": "hold your disable for the end of the teleport animation, the cast is long and fully visible"
+        }
+      }
+    ],
+    "necrophos": [
+      {
+        "idx": 0,
+        "from": "tips[0]",
+        "verified": {
+          "date": "2026-09-25",
+          "verdict": "confirmed",
+          "source": "https://dota2.fandom.com/wiki/Necrophos",
+          "text": "sadist regen triggers on any unit dying, wards, buildings, denies, never illusions"
+        }
+      },
+      {
+        "idx": 1,
+        "from": "tips[2]",
+        "verified": {
+          "date": "2026-09-25",
+          "verdict": "confirmed",
+          "source": "https://dota2.fandom.com/wiki/Necrophos",
+          "text": "death pulse lands on invis and fogged targets, no vision needed"
+        }
+      },
+      {
+        "idx": 2,
+        "from": "tips[5]",
+        "verified": {
+          "date": "2026-09-25",
+          "verdict": "confirmed",
+          "source": "https://dota2.fandom.com/wiki/Necrophos",
+          "text": "ghost shroud blanks physical damage even from spells, omnislash and quill spray whiff"
+        }
+      },
+      {
+        "idx": 3,
+        "from": "counters[2]",
+        "verified": {
+          "date": "2026-09-25",
+          "verdict": "confirmed",
+          "source": "https://dota2.fandom.com/wiki/Dazzle",
+          "text": "grave and false promise undo the scythe, sd and od banishes steal the window"
+        }
+      },
+      {
+        "idx": 4,
+        "from": "counters[5]",
+        "verified": {
+          "date": "2026-09-25",
+          "verdict": "confirmed",
+          "source": "https://dota2.fandom.com/wiki/Necrophos",
+          "text": "he takes bonus magic damage inside ghost shroud, bait it before dumping nukes"
+        }
+      },
+      {
+        "idx": 5,
+        "from": "counters[6]",
+        "verified": {
+          "date": "2026-09-25",
+          "verdict": "confirmed",
+          "source": "https://dota2.fandom.com/wiki/Spirit_Vessel",
+          "text": "vessel, skadi, and ice blast cut his healing, stack them before dueling him"
+        }
+      }
+    ],
+    "night-stalker": [
+      {
+        "idx": 0,
+        "from": "tips[0]",
+        "verified": {
+          "date": "2026-09-28",
+          "verdict": "confirmed",
+          "source": "https://liquipedia.net/dota2/Night_Stalker",
+          "text": "void only mini stuns at night, the daytime cast is just damage and slow"
+        }
+      },
+      {
+        "idx": 1,
+        "from": "tips[2]",
+        "verified": {
+          "date": "2026-09-28",
+          "verdict": "confirmed",
+          "source": "https://liquipedia.net/dota2/Night_Stalker",
+          "text": "dark ascension turns day to night and grants flight, unobstructed vision, and bonus damage"
+        }
+      },
+      {
+        "idx": 2,
+        "from": "tips[1]",
+        "verified": {
+          "date": "2026-09-28",
+          "verdict": "corrected",
+          "source": "https://liquipedia.net/dota2/Night_Stalker",
+          "text": "the shard feast consumes the targeted creep, restoring health and mana on the cast"
+        }
+      },
+      {
+        "idx": 3,
+        "from": "counters[0]",
+        "verified": {
+          "date": "2026-09-28",
+          "verdict": "confirmed",
+          "source": "https://liquipedia.net/dota2/Night_Stalker",
+          "text": "void never ministuns during the day, tp out in the open while the sun is up"
+        }
+      },
+      {
+        "idx": 4,
+        "from": "counters[6]",
+        "verified": {
+          "date": "2026-09-28",
+          "verdict": "confirmed",
+          "source": "https://liquipedia.net/dota2/Night_Stalker",
+          "text": "crippling fear is a death only silence aura, dispels do nothing against it, walk out of the radius"
+        }
+      }
+    ],
+    "nyx-assassin": [
+      {
+        "idx": 0,
+        "from": "tips[0]",
+        "verified": {
+          "date": "2026-09-28",
+          "verdict": "confirmed",
+          "source": "https://dota2.fandom.com/wiki/Nyx_Assassin",
+          "text": "use vendetta invis for positioning, land the impale on their stack, the spikes stun the whole line"
+        }
+      },
+      {
+        "idx": 1,
+        "from": "tips[3]",
+        "verified": {
+          "date": "2026-09-28",
+          "verdict": "confirmed",
+          "source": "https://dota2.fandom.com/wiki/Nyx_Assassin",
+          "text": "carapace negates and reflects one damage instance per source, stuns whoever hit you"
+        }
+      },
+      {
+        "idx": 2,
+        "from": "tips[5]",
+        "verified": {
+          "date": "2026-09-28",
+          "verdict": "confirmed",
+          "source": "https://dota2.fandom.com/wiki/Nyx_Assassin",
+          "text": "carapace can be cast inside vendetta without dropping the invis, run into their spell spam for free stuns"
+        }
+      },
+      {
+        "idx": 3,
+        "from": "tips[7]",
+        "verified": {
+          "date": "2026-09-28",
+          "verdict": "confirmed",
+          "source": "https://dota2.fandom.com/wiki/Nyx_Assassin",
+          "text": "late game vendetta's invis and speed are for impale positioning, the bonus damage matters less"
+        }
+      },
+      {
+        "idx": 4,
+        "from": "counters[2]",
+        "verified": {
+          "date": "2026-09-28",
+          "verdict": "confirmed",
+          "source": "https://dota2.fandom.com/wiki/Nyx_Assassin",
+          "text": "do not retaliate after his combo, the carapace reflects and stuns whoever damages him, just walk away"
+        }
+      },
+      {
+        "idx": 5,
+        "from": "counters[3]",
+        "verified": {
+          "date": "2026-09-28",
+          "verdict": "confirmed",
+          "source": "https://dota2.fandom.com/wiki/Nyx_Assassin",
+          "text": "carapace reflects once per source on a short buff, bait it out then commit your damage"
+        }
+      }
+    ],
+    "ogre-magi": [
+      {
+        "idx": 0,
+        "from": "tips[0]",
+        "verified": {
+          "date": "2026-09-28",
+          "verdict": "confirmed",
+          "source": "https://liquipedia.net/dota2/Ogre_Magi",
+          "text": "ogre trades hits with any laner, the fat base armor and hp pool win the early scrap"
+        }
+      },
+      {
+        "idx": 1,
+        "from": "tips[1]",
+        "verified": {
+          "date": "2026-09-28",
+          "verdict": "confirmed",
+          "source": "https://liquipedia.net/dota2/Ogre_Magi",
+          "text": "ignite seeks a second unburnt enemy near the first, one cast can clip both laners"
+        }
+      },
+      {
+        "idx": 2,
+        "from": "tips[2]",
+        "verified": {
+          "date": "2026-09-28",
+          "verdict": "confirmed",
+          "source": "https://liquipedia.net/dota2/Ogre_Magi",
+          "text": "bloodlust casts on buildings, haste the tower under dive or speed the siege"
+        }
+      },
+      {
+        "idx": 3,
+        "from": "tips[4]",
+        "verified": {
+          "date": "2026-09-28",
+          "verdict": "confirmed",
+          "source": "https://liquipedia.net/dota2/Ogre_Magi",
+          "text": "only offensive unit targeted items multicast, ally targeted items never double fire"
+        }
+      },
+      {
+        "idx": 4,
+        "from": "tips[5]",
+        "verified": {
+          "date": "2026-09-28",
+          "verdict": "confirmed",
+          "source": "https://liquipedia.net/dota2/Ogre_Magi",
+          "text": "multicast items search well past their cast range, expect fire from farther out"
+        }
+      },
+      {
+        "idx": 5,
+        "from": "counters[0]",
+        "verified": {
+          "date": "2026-09-28",
+          "verdict": "corrected",
+          "source": "https://liquipedia.net/dota2/Ogre_Magi",
+          "text": "ogre casts slowly, sidestep or break vision during the windup to make the fireblast whiff"
+        }
+      }
+    ],
+    "phantom-assassin": [
+      {
+        "idx": 0,
+        "from": "tips[2]",
+        "verified": {
+          "date": "2026-09-28",
+          "verdict": "corrected",
+          "source": "https://dota2.fandom.com/wiki/Phantom_Assassin",
+          "text": "stifling dagger is an attack in projectile form, it applies attack effects and counts as attack damage"
+        }
+      },
+      {
+        "idx": 1,
+        "from": "tips[3]",
+        "verified": {
+          "date": "2026-09-28",
+          "verdict": "confirmed",
+          "source": "https://dota2.fandom.com/wiki/Phantom_Assassin",
+          "text": "phantom strike teleports to any unit, friendly or enemy, keep an escape unit in mind"
+        }
+      },
+      {
+        "idx": 2,
+        "from": "tips[11]",
+        "verified": {
+          "date": "2026-09-28",
+          "verdict": "confirmed",
+          "source": "https://dota2.fandom.com/wiki/Phantom_Assassin",
+          "text": "fan of knives deals a percent of each victim's max health, it shreds illusions and tanky lines alike"
+        }
+      },
+      {
+        "idx": 3,
+        "from": "counters[9]",
+        "verified": {
+          "date": "2026-09-28",
+          "verdict": "corrected",
+          "source": "https://dota2.fandom.com/wiki/Phantom_Assassin",
+          "text": "never trust the map against her, the blur active keeps her unseen until an enemy hero gets close"
+        }
+      }
+    ],
+    "phantom-lancer": [
+      {
+        "idx": 0,
+        "from": "tips[2]",
+        "verified": {
+          "date": "2026-09-25",
+          "verdict": "confirmed",
+          "source": "https://dota2.fandom.com/wiki/Phantom_Lancer",
+          "text": "the brighter doppel illusion takes full damage, group it and bait them onto the fake"
+        }
+      },
+      {
+        "idx": 1,
+        "from": "tips[3]",
+        "verified": {
+          "date": "2026-09-25",
+          "verdict": "confirmed",
+          "source": "https://dota2.fandom.com/wiki/Phantom_Lancer",
+          "text": "doppel dispels everything manta would, roots and silences lock the cast entirely"
+        }
+      },
+      {
+        "idx": 2,
+        "from": "tips[7]",
+        "verified": {
+          "date": "2026-09-25",
+          "verdict": "confirmed",
+          "source": "https://dota2.fandom.com/wiki/Phantom_Lancer",
+          "text": "doppel forces your landing spot, it outranks glimpse and x marks repositioning"
+        }
+      },
+      {
+        "idx": 3,
+        "from": "tips[16]",
+        "verified": {
+          "date": "2026-09-25",
+          "verdict": "confirmed",
+          "source": "https://dota2.fandom.com/wiki/Phantom_Lancer",
+          "text": "juxtapose multiplies off wards not buildings, serpent wards and tombstone feed the flood"
+        }
+      },
+      {
+        "idx": 4,
+        "from": "counters[2]",
+        "verified": {
+          "date": "2026-09-25",
+          "verdict": "confirmed",
+          "source": "https://dota2.fandom.com/wiki/Bloodseeker",
+          "text": "rupture, viper strike, maledict survive doppel and tag the real one"
+        }
+      },
+      {
+        "idx": 5,
+        "from": "counters[8]",
+        "verified": {
+          "date": "2026-09-25",
+          "verdict": "confirmed",
+          "source": "https://dota2.fandom.com/wiki/Mjollnir",
+          "text": "mjollnir static shield rolls on every illusion swing, the army chips itself"
+        }
+      }
+    ],
+    "phoenix": [
+      {
+        "idx": 0,
+        "from": "tips[1]",
+        "verified": {
+          "date": "2026-09-28",
+          "verdict": "confirmed",
+          "source": "https://liquipedia.net/dota2/Phoenix",
+          "text": "icarus dive burns and slows everything it passes through, finish the arc over them before cancelling"
+        }
+      },
+      {
+        "idx": 1,
+        "from": "tips[9]",
+        "verified": {
+          "date": "2026-09-28",
+          "verdict": "confirmed",
+          "source": "https://liquipedia.net/dota2/Phoenix",
+          "text": "sun ray leaves the rest of the kit free, phoenix casts spells and items while the beam burns"
+        }
+      },
+      {
+        "idx": 2,
+        "from": "tips[11]",
+        "verified": {
+          "date": "2026-09-28",
+          "verdict": "confirmed",
+          "source": "https://liquipedia.net/dota2/Phoenix",
+          "text": "fire spirits gut enemy attack speed, land them on the hitters before the egg drops"
+        }
+      },
+      {
+        "idx": 3,
+        "from": "tips[15]",
+        "verified": {
+          "date": "2026-09-28",
+          "verdict": "confirmed",
+          "source": "https://liquipedia.net/dota2/Phoenix",
+          "text": "towers and creeps never attack the sun, only enemy hero attacks can break the egg"
+        }
+      },
+      {
+        "idx": 4,
+        "from": "tips[17]",
+        "verified": {
+          "date": "2026-09-28",
+          "verdict": "confirmed",
+          "source": "https://liquipedia.net/dota2/Phoenix",
+          "text": "allies can deny the egg once it falls past half its hit count"
+        }
+      },
+      {
+        "idx": 5,
+        "from": "counters[0]",
+        "verified": {
+          "date": "2026-09-28",
+          "verdict": "confirmed",
+          "source": "https://liquipedia.net/dota2/Phoenix",
+          "text": "the dive is interrupted by disable sources, hold a stun to ground the bird mid arc"
+        }
+      }
+    ],
+    "pudge": [
+      {
+        "idx": 0,
+        "from": "tips[2]",
+        "verified": {
+          "date": "2026-09-28",
+          "verdict": "confirmed",
+          "source": "https://liquipedia.net/dota2/Pudge",
+          "text": "meat hook can snag runes, landing one refunds the full mana cost of the cast"
+        }
+      },
+      {
+        "idx": 1,
+        "from": "tips[7]",
+        "verified": {
+          "date": "2026-09-28",
+          "verdict": "confirmed",
+          "source": "https://liquipedia.net/dota2/Pudge",
+          "text": "the hook instantly kills the non ancient creeps it snags, clear camps and pulls with it"
+        }
+      },
+      {
+        "idx": 2,
+        "from": "tips[8]",
+        "verified": {
+          "date": "2026-09-28",
+          "verdict": "confirmed",
+          "source": "https://liquipedia.net/dota2/Pudge",
+          "text": "the hook counts illusions as creeps and kills them on contact"
+        }
+      },
+      {
+        "idx": 3,
+        "from": "tips[10]",
+        "verified": {
+          "date": "2026-09-28",
+          "verdict": "confirmed",
+          "source": "https://liquipedia.net/dota2/Pudge",
+          "text": "rot self damage is never lethal, toggle it at any hp for the slow and the farm"
+        }
+      },
+      {
+        "idx": 4,
+        "from": "tips[18]",
+        "verified": {
+          "date": "2026-09-28",
+          "verdict": "confirmed",
+          "source": "https://liquipedia.net/dota2/Pudge",
+          "text": "dismember grants true sight over the target for the whole channel"
+        }
+      },
+      {
+        "idx": 5,
+        "from": "counters[3]",
+        "verified": {
+          "date": "2026-09-28",
+          "verdict": "confirmed",
+          "source": "https://liquipedia.net/dota2/Pudge",
+          "text": "dismember is a channeled spell, any stun or silence on pudge ends the eat"
+        }
+      }
+    ],
+    "razor": [
+      {
+        "idx": 0,
+        "from": "tips[5]",
+        "verified": {
+          "date": "2026-09-28",
+          "verdict": "confirmed",
+          "source": "https://liquipedia.net/dota2/Razor",
+          "text": "the link drain ends at the break range but the stolen damage lingers on, death is its only dispel"
+        }
+      },
+      {
+        "idx": 1,
+        "from": "counters[1]",
+        "verified": {
+          "date": "2026-09-28",
+          "verdict": "confirmed",
+          "source": "https://liquipedia.net/dota2/Razor",
+          "text": "the link snaps past its break range, force or a dash on the ally ends the drain early"
+        }
+      },
+      {
+        "idx": 2,
+        "from": "counters[0]",
+        "verified": {
+          "date": "2026-09-28",
+          "verdict": "confirmed",
+          "source": "https://liquipedia.net/dota2/Razor",
+          "text": "killing razor never refunds the stolen damage, the drain debuff rides out its full duration"
+        }
+      },
+      {
+        "idx": 3,
+        "from": "tips[14]",
+        "verified": {
+          "date": "2026-09-28",
+          "verdict": "confirmed",
+          "source": "https://liquipedia.net/dota2/Razor",
+          "text": "eye of the storm strikes the lowest health unit each interval and shreds a point of armor per strike"
+        }
+      }
+    ],
+    "ringmaster": [
+      {
+        "idx": 0,
+        "from": "tips[0]",
+        "verified": {
+          "date": "2026-09-28",
+          "verdict": "confirmed",
+          "source": "https://liquipedia.net/dota2/Ringmaster",
+          "text": "the whip fear always sends enemies running away from ringmaster, you cannot fear them into your hero"
+        }
+      },
+      {
+        "idx": 1,
+        "from": "tips[4]",
+        "verified": {
+          "date": "2026-09-28",
+          "verdict": "confirmed",
+          "source": "https://liquipedia.net/dota2/Ringmaster",
+          "text": "the escape act box disjoints incoming projectiles on the packed ally, box them out of the burst"
+        }
+      },
+      {
+        "idx": 2,
+        "from": "tips[14]",
+        "verified": {
+          "date": "2026-09-28",
+          "verdict": "confirmed",
+          "source": "https://liquipedia.net/dota2/Ringmaster",
+          "text": "enemies need vision of the wheel to be mesmerized, wheeling it behind trees or walls wastes the taunt"
+        }
+      },
+      {
+        "idx": 3,
+        "from": "tips[15]",
+        "verified": {
+          "date": "2026-09-28",
+          "verdict": "confirmed",
+          "source": "https://liquipedia.net/dota2/Ringmaster",
+          "text": "drop the wheel behind them, then fear them with the whip so they turn and stare into the wheel"
+        }
+      },
+      {
+        "idx": 4,
+        "from": "counters[0]",
+        "verified": {
+          "date": "2026-09-28",
+          "verdict": "confirmed",
+          "source": "https://liquipedia.net/dota2/Ringmaster",
+          "text": "the escape act box only blocks attacks and targeted abilities, ground targeted spells still hit the boxed ally"
+        }
+      },
+      {
+        "idx": 5,
+        "from": "counters[5]",
+        "verified": {
+          "date": "2026-09-28",
+          "verdict": "confirmed",
+          "source": "https://liquipedia.net/dota2/Ringmaster",
+          "text": "souvenirs are pseudo items, they work under silence but not mute, silence does not stop the tricks"
+        }
+      }
+    ],
+    "rubick": [
+      {
+        "idx": 0,
+        "from": "tips[6]",
+        "verified": {
+          "date": "2026-09-28",
+          "verdict": "confirmed",
+          "source": "https://liquipedia.net/dota2/Rubick",
+          "text": "aim the telekinesis landing back into the chasers, the landing stuns everything in its radius"
+        }
+      },
+      {
+        "idx": 1,
+        "from": "tips[12]",
+        "verified": {
+          "date": "2026-09-28",
+          "verdict": "confirmed",
+          "source": "https://liquipedia.net/dota2/Rubick",
+          "text": "fade bolt loses damage per bounce, open on the ranged creep to land the full hit"
+        }
+      },
+      {
+        "idx": 2,
+        "from": "tips[15]",
+        "verified": {
+          "date": "2026-09-28",
+          "verdict": "confirmed",
+          "source": "https://liquipedia.net/dota2/Rubick",
+          "text": "spell steal takes the last ability the target cast, wait for the spell you actually want"
+        }
+      },
+      {
+        "idx": 3,
+        "from": "tips[19]",
+        "verified": {
+          "date": "2026-09-28",
+          "verdict": "confirmed",
+          "source": "https://liquipedia.net/dota2/Rubick",
+          "text": "stolen spell cooldowns persist through swaps, wasting a stolen ultimate burns a future steal"
+        }
+      },
+      {
+        "idx": 4,
+        "from": "counters[1]",
+        "verified": {
+          "date": "2026-09-28",
+          "verdict": "confirmed",
+          "source": "https://liquipedia.net/dota2/Rubick",
+          "text": "arcane supremacy grants huge cast range and spell amp, he casts your own spells farther than you"
+        }
+      }
+    ],
+    "sand-king": [
+      {
+        "idx": 0,
+        "from": "tips[0]",
+        "verified": {
+          "date": "2026-09-28",
+          "verdict": "confirmed",
+          "source": "https://liquipedia.net/dota2/Sand_King",
+          "text": "burrowstrike works unit targeted or point targeted, the alt cast strikes without needing the full cast range"
+        }
+      },
+      {
+        "idx": 1,
+        "from": "tips[4]",
+        "verified": {
+          "date": "2026-09-28",
+          "verdict": "confirmed",
+          "source": "https://liquipedia.net/dota2/Sand_King",
+          "text": "sand storm invisibility is persistent, attacks and casts reveal you briefly then the fade returns"
+        }
+      },
+      {
+        "idx": 2,
+        "from": "tips[6]",
+        "verified": {
+          "date": "2026-09-28",
+          "verdict": "confirmed",
+          "source": "https://liquipedia.net/dota2/Sand_King",
+          "text": "stinger strikes the area as an instant attack, attack modifiers apply to every unit caught"
+        }
+      },
+      {
+        "idx": 3,
+        "from": "counters[0]",
+        "verified": {
+          "date": "2026-09-28",
+          "verdict": "corrected",
+          "source": "https://liquipedia.net/dota2/Sand_King",
+          "text": "sand storm invisibility is anchored to the cloud, the storm dissipates the moment he steps outside the radius"
+        }
+      }
+    ],
+    "shadow-shaman": [
+      {
+        "idx": 0,
+        "from": "tips[1]",
+        "verified": {
+          "date": "2026-09-28",
+          "verdict": "confirmed",
+          "source": "https://liquipedia.net/dota2/Shadow_Shaman",
+          "text": "ether shock reaches far past its cast range through the cone, cast it on the ranged creep to clip the runner"
+        }
+      },
+      {
+        "idx": 1,
+        "from": "tips[3]",
+        "verified": {
+          "date": "2026-09-28",
+          "verdict": "confirmed",
+          "source": "https://liquipedia.net/dota2/Shadow_Shaman",
+          "text": "hex is instant cast, kills illusions on touch, and is a silence mute disarm break in one"
+        }
+      },
+      {
+        "idx": 2,
+        "from": "tips[4]",
+        "verified": {
+          "date": "2026-09-28",
+          "verdict": "corrected",
+          "source": "https://liquipedia.net/dota2/Shadow_Shaman",
+          "text": "hex has no cast point and out-ranges shackles, hex first in the gank order"
+        }
+      },
+      {
+        "idx": 3,
+        "from": "tips[7]",
+        "verified": {
+          "date": "2026-09-28",
+          "verdict": "confirmed",
+          "source": "https://liquipedia.net/dota2/Shadow_Shaman",
+          "text": "drop the ward ring straight onto a hero, the circle blocks pathing and traps them inside"
+        }
+      },
+      {
+        "idx": 4,
+        "from": "counters[1]",
+        "verified": {
+          "date": "2026-09-28",
+          "verdict": "confirmed",
+          "source": "https://liquipedia.net/dota2/Shadow_Shaman",
+          "text": "serpent ward attacks are not affected by damage block, block items do not mitigate them"
+        }
+      },
+      {
+        "idx": 5,
+        "from": "counters[4]",
+        "verified": {
+          "date": "2026-09-28",
+          "verdict": "confirmed",
+          "source": "https://liquipedia.net/dota2/Shadow_Shaman",
+          "text": "shackles is channeled, keep a stun or silence ready to break the link off your ally"
+        }
+      }
+    ],
+    "slardar": [
+      {
+        "idx": 0,
+        "from": "tips[1]",
+        "verified": {
+          "date": "2026-09-28",
+          "verdict": "confirmed",
+          "source": "https://liquipedia.net/dota2/Slardar",
+          "text": "guardian sprint opens with total slow resistance that decays over the buff, dive through the kiting"
+        }
+      },
+      {
+        "idx": 1,
+        "from": "tips[2]",
+        "verified": {
+          "date": "2026-09-28",
+          "verdict": "confirmed",
+          "source": "https://liquipedia.net/dota2/Slardar",
+          "text": "crush leaves a puddle that counts as home water, the sentinel passive fights at full power on it"
+        }
+      },
+      {
+        "idx": 2,
+        "from": "tips[4]",
+        "verified": {
+          "date": "2026-09-28",
+          "verdict": "confirmed",
+          "source": "https://liquipedia.net/dota2/Slardar",
+          "text": "bash runs on an attack tally, warm the count on creeps so the next hero hit lands stunned"
+        }
+      },
+      {
+        "idx": 3,
+        "from": "counters[0]",
+        "verified": {
+          "date": "2026-09-28",
+          "verdict": "confirmed",
+          "source": "https://liquipedia.net/dota2/Slardar",
+          "text": "guardian sprint is a basic dispel away from gone, purge it and the hunt stops"
+        }
+      },
+      {
+        "idx": 4,
+        "from": "counters[3]",
+        "verified": {
+          "date": "2026-09-28",
+          "verdict": "confirmed",
+          "source": "https://liquipedia.net/dota2/Slardar",
+          "text": "corrosive haze true sights everything it touches, invisibility is no escape from the hunt"
+        }
+      },
+      {
+        "idx": 5,
+        "from": "counters[4]",
+        "verified": {
+          "date": "2026-09-28",
+          "verdict": "confirmed",
+          "source": "https://liquipedia.net/dota2/Slardar",
+          "text": "a basic dispel wipes the haze off, only his talent makes it death locked"
+        }
+      }
+    ],
+    "slark": [
+      {
+        "idx": 0,
+        "from": "tips[3]",
+        "verified": {
+          "date": "2026-09-25",
+          "verdict": "confirmed",
+          "source": "https://dota2.fandom.com/wiki/Slark",
+          "text": "every dark pact tick is a strong dispel, it rips stuns off you"
+        }
+      },
+      {
+        "idx": 1,
+        "from": "tips[9]",
+        "verified": {
+          "date": "2026-09-25",
+          "verdict": "confirmed",
+          "source": "https://dota2.fandom.com/wiki/Leash",
+          "text": "pounce leash cancels tps and most mobility, it functions like a root"
+        }
+      },
+      {
+        "idx": 2,
+        "from": "tips[12]",
+        "verified": {
+          "date": "2026-09-25",
+          "verdict": "confirmed",
+          "source": "https://dota2.fandom.com/wiki/Slark",
+          "text": "dance regen drops when enemy vision touches you, use it to sweep their wards"
+        }
+      },
+      {
+        "idx": 3,
+        "from": "counters[2]",
+        "verified": {
+          "date": "2026-09-25",
+          "verdict": "confirmed",
+          "source": "https://dota2.fandom.com/wiki/Slark",
+          "text": "never stun into dark pact, the ticks purge it, wait the spell out then disable"
+        }
+      },
+      {
+        "idx": 4,
+        "from": "counters[11]",
+        "verified": {
+          "date": "2026-09-25",
+          "verdict": "confirmed",
+          "source": "https://dota2.fandom.com/wiki/Slark",
+          "text": "break kills essence shift and dance regen, silver edge break never dispels"
+        }
+      },
+      {
+        "idx": 5,
+        "from": "counters[14]",
+        "verified": {
+          "date": "2026-09-25",
+          "verdict": "confirmed",
+          "source": "https://dota2.fandom.com/wiki/Bloodseeker",
+          "text": "bloodseeker owns him, no pact off rupture, thirst true sights the dance"
+        }
+      }
+    ],
+    "sniper": [
+      {
+        "idx": 0,
+        "from": "tips[8]",
+        "verified": {
+          "date": "2026-09-28",
+          "verdict": "confirmed",
+          "source": "https://dota2.fandom.com/wiki/Sniper",
+          "text": "any hero kill refreshes assassinate, the credit is his however the kill happened"
+        }
+      },
+      {
+        "idx": 1,
+        "from": "tips[5]",
+        "verified": {
+          "date": "2026-09-28",
+          "verdict": "corrected",
+          "source": "https://dota2.fandom.com/wiki/Sniper",
+          "text": "assassinate ministuns the target when the projectile lands"
+        }
+      },
+      {
+        "idx": 2,
+        "from": "tips[6]",
+        "verified": {
+          "date": "2026-09-28",
+          "verdict": "confirmed",
+          "source": "https://dota2.fandom.com/wiki/Sniper",
+          "text": "assassinate true sights and shares vision of the target until the shot connects"
+        }
+      },
+      {
+        "idx": 3,
+        "from": "tips[12]",
+        "verified": {
+          "date": "2026-09-28",
+          "verdict": "corrected",
+          "source": "https://dota2.fandom.com/wiki/Sniper",
+          "text": "the grenade shoves enemies and sniper himself back, the self-knockback doubles as a reposition"
+        }
+      },
+      {
+        "idx": 4,
+        "from": "counters[2]",
+        "verified": {
+          "date": "2026-09-28",
+          "verdict": "corrected",
+          "source": "https://dota2.fandom.com/wiki/Sniper",
+          "text": "night vision 1400, he sees the dark gank coming"
+        }
+      }
+    ],
+    "spectre": [
+      {
+        "idx": 0,
+        "from": "tips[1]",
+        "verified": {
+          "date": "2026-09-25",
+          "verdict": "confirmed",
+          "source": "https://dota2.fandom.com/wiki/Spectre",
+          "text": "dagger grants shared vision of everyone it hits, pings invis spots without true sight"
+        }
+      },
+      {
+        "idx": 1,
+        "from": "tips[5]",
+        "verified": {
+          "date": "2026-09-25",
+          "verdict": "confirmed",
+          "source": "https://dota2.fandom.com/wiki/Spectre",
+          "text": "the trail's free pathing lingers 1 second off the edge, cliff out behind you"
+        }
+      },
+      {
+        "idx": 2,
+        "from": "tips[9]",
+        "verified": {
+          "date": "2026-09-25",
+          "verdict": "confirmed",
+          "source": "https://dota2.fandom.com/wiki/Spectre",
+          "text": "dispersion reflects before reductions, armor and barriers never soften it"
+        }
+      },
+      {
+        "idx": 3,
+        "from": "counters[4]",
+        "verified": {
+          "date": "2026-09-25",
+          "verdict": "confirmed",
+          "source": "https://dota2.fandom.com/wiki/Spectre",
+          "text": "hug creeps when she shadow steps, the illusion damage is desolate only early"
+        }
+      }
+    ],
+    "spirit-breaker": [
+      {
+        "idx": 0,
+        "from": "tips[14]",
+        "verified": {
+          "date": "2026-09-25",
+          "verdict": "confirmed",
+          "source": "https://dota2.fandom.com/wiki/Spirit_Breaker",
+          "text": "greater bash stun goes through bkb, spell immunity never saves the target"
+        }
+      },
+      {
+        "idx": 1,
+        "from": "tips[10]",
+        "verified": {
+          "date": "2026-09-25",
+          "verdict": "confirmed",
+          "source": "https://dota2.fandom.com/wiki/Spirit_Breaker",
+          "text": "bulldoze is castable mid charge, the move speed boost jacks up greater bash damage on contact"
+        }
+      },
+      {
+        "idx": 2,
+        "from": "tips[6]",
+        "verified": {
+          "date": "2026-09-25",
+          "verdict": "confirmed",
+          "source": "https://dota2.fandom.com/wiki/Spirit_Breaker",
+          "text": "charge shares vision around the target, fog lifts wherever the enemy can see, dark ascension vision becomes yours"
+        }
+      },
+      {
+        "idx": 3,
+        "from": "counters[5]",
+        "verified": {
+          "date": "2026-09-25",
+          "verdict": "confirmed",
+          "source": "https://dota2.fandom.com/wiki/Spirit_Breaker",
+          "text": "root or leash locks out charge and nether strike entirely, he is helpless while planted"
+        }
+      },
+      {
+        "idx": 4,
+        "from": "counters[8]",
+        "verified": {
+          "date": "2026-09-25",
+          "verdict": "confirmed",
+          "source": "https://dota2.fandom.com/wiki/Spirit_Breaker",
+          "text": "any stun or root mid charge cancels it, force staff and knockback also end the charge"
+        }
+      }
+    ],
+    "sven": [
+      {
+        "idx": 0,
+        "from": "tips[2]",
+        "verified": {
+          "date": "2026-09-25",
+          "verdict": "confirmed",
+          "source": "https://dota2.fandom.com/wiki/Sven",
+          "text": "god's strength multiplies strength damage only, raw green damage items do not get scaled"
+        }
+      },
+      {
+        "idx": 1,
+        "from": "tips[3]",
+        "verified": {
+          "date": "2026-09-25",
+          "verdict": "corrected",
+          "source": "https://dota2.fandom.com/wiki/Sven",
+          "text": "agh's storm hammer dispels ghost scepter and windrun in its aoe"
+        }
+      },
+      {
+        "idx": 2,
+        "from": "tips[4]",
+        "verified": {
+          "date": "2026-09-25",
+          "verdict": "confirmed",
+          "source": "https://dota2.fandom.com/wiki/Sven",
+          "text": "agh's hammer ignores roots and leashes, the invulnerability walks him out of mars arena"
+        }
+      },
+      {
+        "idx": 3,
+        "from": "counters[0]",
+        "verified": {
+          "date": "2026-09-25",
+          "verdict": "confirmed",
+          "source": "https://dota2.fandom.com/wiki/Sven",
+          "text": "the hammer is a disjointable projectile, any disjoint wastes the stun"
+        }
+      },
+      {
+        "idx": 4,
+        "from": "counters[1]",
+        "verified": {
+          "date": "2026-09-25",
+          "verdict": "confirmed",
+          "source": "https://dota2.fandom.com/wiki/Sven",
+          "text": "basic dispels strip warcry off him and his team, only the shard version is protected"
+        }
+      },
+      {
+        "idx": 5,
+        "from": "counters[3]",
+        "verified": {
+          "date": "2026-09-25",
+          "verdict": "corrected",
+          "source": "https://dota2.fandom.com/wiki/Sven",
+          "text": "break shuts off great cleave, god's strength is an active buff break never touches"
+        }
+      }
+    ],
+    "templar-assassin": [
+      {
+        "idx": 0,
+        "from": "tips[1]",
+        "verified": {
+          "date": "2026-09-28",
+          "verdict": "confirmed",
+          "source": "https://dota2.fandom.com/wiki/Templar_Assassin",
+          "text": "refraction negates each damage instance fully, on-damage effects never trigger, regen and the escape dagger stay live"
+        }
+      },
+      {
+        "idx": 1,
+        "from": "tips[4]",
+        "verified": {
+          "date": "2026-09-28",
+          "verdict": "confirmed",
+          "source": "https://dota2.fandom.com/wiki/Templar_Assassin",
+          "text": "meld is instant invisibility while still, juke into fog or high ground and the chase runs past you"
+        }
+      },
+      {
+        "idx": 2,
+        "from": "tips[7]",
+        "verified": {
+          "date": "2026-09-28",
+          "verdict": "corrected",
+          "source": "https://dota2.fandom.com/wiki/Templar_Assassin",
+          "text": "meld armor reduction fully stacks, open the target with a double meld before the spills"
+        }
+      },
+      {
+        "idx": 3,
+        "from": "tips[11]",
+        "verified": {
+          "date": "2026-09-28",
+          "verdict": "confirmed",
+          "source": "https://dota2.fandom.com/wiki/Templar_Assassin",
+          "text": "psi blades slice through to units directly behind the target, line the wave and wipe it in spills"
+        }
+      },
+      {
+        "idx": 4,
+        "from": "counters[1]",
+        "verified": {
+          "date": "2026-09-28",
+          "verdict": "corrected",
+          "source": "https://dota2.fandom.com/wiki/Templar_Assassin",
+          "text": "meld only breaks on her actions or movement, knock her sideways to pop the ambush"
+        }
+      }
+    ],
+    "terrorblade": [
+      {
+        "idx": 0,
+        "from": "tips[5]",
+        "verified": {
+          "date": "2026-09-27",
+          "verdict": "confirmed",
+          "source": "https://dota2.fandom.com/wiki/Terrorblade",
+          "text": "conjure images only hold metamorphosis form near the hero, the form drops when he walks away"
+        }
+      },
+      {
+        "idx": 1,
+        "from": "tips[9]",
+        "verified": {
+          "date": "2026-09-27",
+          "verdict": "confirmed",
+          "source": "https://dota2.fandom.com/wiki/Terrorblade",
+          "text": "sunder can be cast on allies and on your own illusions"
+        }
+      },
+      {
+        "idx": 2,
+        "from": "tips[13]",
+        "verified": {
+          "date": "2026-09-27",
+          "verdict": "confirmed",
+          "source": "https://dota2.fandom.com/wiki/Terrorblade",
+          "text": "sunder is an hp swap, not a damage or heal, it works through the ice blast debuff"
+        }
+      },
+      {
+        "idx": 3,
+        "from": "counters[2]",
+        "verified": {
+          "date": "2026-09-27",
+          "verdict": "confirmed",
+          "source": "https://dota2.fandom.com/wiki/Terrorblade/Counters",
+          "text": "armor for days with no hp behind it, magic nukes wreck him and the illusions"
+        }
+      },
+      {
+        "idx": 4,
+        "from": "counters[0]",
+        "verified": {
+          "date": "2026-09-27",
+          "verdict": "confirmed",
+          "source": "https://dota2.fandom.com/wiki/Terrorblade",
+          "text": "the reflection slow and its illusion come off with a basic dispel"
+        }
+      }
+    ],
+    "tiny": [
+      {
+        "idx": 0,
+        "from": "tips[0]",
+        "verified": {
+          "date": "2026-09-28",
+          "verdict": "confirmed",
+          "source": "https://dota2.fandom.com/wiki/Tiny",
+          "text": "avalanche pulses damage and stun in intervals, lead the target and the rocks catch walkers"
+        }
+      },
+      {
+        "idx": 1,
+        "from": "tips[1]",
+        "verified": {
+          "date": "2026-09-28",
+          "verdict": "confirmed",
+          "source": "https://dota2.fandom.com/wiki/Tiny",
+          "text": "toss disables whoever is thrown, and avalanche deals double damage to the tossed unit"
+        }
+      },
+      {
+        "idx": 2,
+        "from": "tips[2]",
+        "verified": {
+          "date": "2026-09-28",
+          "verdict": "confirmed",
+          "source": "https://dota2.fandom.com/wiki/Tiny",
+          "text": "debuff immune enemies can never be thrown, but you can still toss something at them"
+        }
+      },
+      {
+        "idx": 3,
+        "from": "tips[5]",
+        "verified": {
+          "date": "2026-09-28",
+          "verdict": "confirmed",
+          "source": "https://dota2.fandom.com/wiki/Tiny",
+          "text": "toss always grabs the nearest unit around tiny, allies included, mash it in a crowd"
+        }
+      },
+      {
+        "idx": 4,
+        "from": "tips[7]",
+        "verified": {
+          "date": "2026-09-28",
+          "verdict": "confirmed",
+          "source": "https://dota2.fandom.com/wiki/Tiny",
+          "text": "toss grabs units inside the grab radius even from fog, invisible units are the exception"
+        }
+      },
+      {
+        "idx": 5,
+        "from": "counters[0]",
+        "verified": {
+          "date": "2026-09-28",
+          "verdict": "confirmed",
+          "source": "https://dota2.fandom.com/wiki/Tiny",
+          "text": "the avalanche area keeps stunning, walking in late still eats the rocks"
+        }
+      }
+    ],
+    "troll-warlord": [
+      {
+        "idx": 0,
+        "from": "tips[0]",
+        "verified": {
+          "date": "2026-09-28",
+          "verdict": "confirmed",
+          "source": "https://dota2.fandom.com/wiki/Troll_Warlord",
+          "text": "melee rage is the combat form, bonus armor, move speed, faster base swing, and the ensnare chance"
+        }
+      },
+      {
+        "idx": 1,
+        "from": "tips[8]",
+        "verified": {
+          "date": "2026-09-28",
+          "verdict": "confirmed",
+          "source": "https://dota2.fandom.com/wiki/Troll_Warlord",
+          "text": "fervor stacks reset on the first attack at a new target, keep hitting one thing to hold the speed"
+        }
+      },
+      {
+        "idx": 2,
+        "from": "tips[10]",
+        "verified": {
+          "date": "2026-09-28",
+          "verdict": "confirmed",
+          "source": "https://dota2.fandom.com/wiki/Troll_Warlord",
+          "text": "casting battle trance applies a basic dispel, wipe the slow off yourself as you commit"
+        }
+      },
+      {
+        "idx": 3,
+        "from": "tips[14]",
+        "verified": {
+          "date": "2026-09-28",
+          "verdict": "confirmed",
+          "source": "https://dota2.fandom.com/wiki/Troll_Warlord",
+          "text": "cast battle trance mid attack animation to lock on, he sticks to that target until it dies"
+        }
+      },
+      {
+        "idx": 4,
+        "from": "counters[3]",
+        "verified": {
+          "date": "2026-09-28",
+          "verdict": "confirmed",
+          "source": "https://dota2.fandom.com/wiki/Troll_Warlord",
+          "text": "the trance shares vision on his target through fog, you cannot juke him by breaking line of sight"
+        }
+      }
+    ],
+    "tusk": [
+      {
+        "idx": 0,
+        "from": "tips[0]",
+        "verified": {
+          "date": "2026-09-28",
+          "verdict": "confirmed",
+          "source": "https://liquipedia.net/dota2/Tusk",
+          "text": "ice shards create a path blocking wall at the target point, save it for chokes and retreat lines"
+        }
+      },
+      {
+        "idx": 1,
+        "from": "tips[2]",
+        "verified": {
+          "date": "2026-09-28",
+          "verdict": "confirmed",
+          "source": "https://liquipedia.net/dota2/Tusk",
+          "text": "the ice shards projectile grants flying vision on its flight and lingers at the landing spot"
+        }
+      },
+      {
+        "idx": 2,
+        "from": "tips[5]",
+        "verified": {
+          "date": "2026-09-28",
+          "verdict": "confirmed",
+          "source": "https://liquipedia.net/dota2/Tusk",
+          "text": "everyone gathered in the snowball is hidden, invulnerable, and spell immune until it lands"
+        }
+      },
+      {
+        "idx": 3,
+        "from": "tips[16].notes[0]",
+        "verified": {
+          "date": "2026-09-28",
+          "verdict": "confirmed",
+          "source": "https://liquipedia.net/dota2/Tusk",
+          "text": "tag team adds flat damage at the attack point, enable it before the walrus punch for the bigger crit"
+        }
+      },
+      {
+        "idx": 4,
+        "from": "tips[21]",
+        "verified": {
+          "date": "2026-09-28",
+          "verdict": "confirmed",
+          "source": "https://liquipedia.net/dota2/Tusk",
+          "text": "walrus punch has true strike while off cooldown, evasion will not save the target"
+        }
+      },
+      {
+        "idx": 5,
+        "from": "counters[1]",
+        "verified": {
+          "date": "2026-09-28",
+          "verdict": "confirmed",
+          "source": "https://liquipedia.net/dota2/Tusk",
+          "text": "hold your spells while the snowball rolls, everyone inside is invulnerable and hidden"
+        }
+      }
+    ],
+    "undying": [
+      {
+        "idx": 0,
+        "from": "tips[4]",
+        "verified": {
+          "date": "2026-09-28",
+          "verdict": "confirmed",
+          "source": "https://liquipedia.net/dota2/Undying",
+          "text": "decay steals strength from every enemy hero caught and grants it to you, catch both laners in one cast"
+        }
+      },
+      {
+        "idx": 1,
+        "from": "tips[7]",
+        "verified": {
+          "date": "2026-09-28",
+          "verdict": "corrected",
+          "source": "https://liquipedia.net/dota2/Undying",
+          "text": "soul rip heals a flat pool, decay raises current and max hp, rip before the stacks for the larger share"
+        }
+      },
+      {
+        "idx": 2,
+        "from": "tips[10]",
+        "verified": {
+          "date": "2026-09-28",
+          "verdict": "confirmed",
+          "source": "https://liquipedia.net/dota2/Undying",
+          "text": "soul rip your tombstone, it restores a set hit count regardless of the units found in the search"
+        }
+      },
+      {
+        "idx": 3,
+        "from": "tips[18]",
+        "verified": {
+          "date": "2026-09-28",
+          "verdict": "confirmed",
+          "source": "https://liquipedia.net/dota2/Undying",
+          "text": "the shard tombstone bunkers an ally out of the fight, but destroying it with them inside stuns them"
+        }
+      },
+      {
+        "idx": 4,
+        "from": "counters[5]",
+        "verified": {
+          "date": "2026-09-28",
+          "verdict": "confirmed",
+          "source": "https://liquipedia.net/dota2/Undying",
+          "text": "kill the tombstone the moment it drops, its zombies all die instantly when it falls"
+        }
+      },
+      {
+        "idx": 5,
+        "from": "counters[0]",
+        "verified": {
+          "date": "2026-09-28",
+          "verdict": "confirmed",
+          "source": "https://liquipedia.net/dota2/Undying",
+          "text": "spread in lane, decay steals from every hero in the radius, spacing starves the strength take"
+        }
+      }
+    ],
+    "ursa": [
+      {
+        "idx": 0,
+        "from": "tips[0]",
+        "verified": {
+          "date": "2026-09-28",
+          "verdict": "confirmed",
+          "source": "https://dota2.fandom.com/wiki/Ursa",
+          "text": "earthshock leaps over impassable terrain, hop cliffs and walls melee heroes cannot cross"
+        }
+      },
+      {
+        "idx": 1,
+        "from": "tips[1]",
+        "verified": {
+          "date": "2026-09-28",
+          "verdict": "confirmed",
+          "source": "https://dota2.fandom.com/wiki/Ursa",
+          "text": "every attack executed burns an overpower charge, even missed swings"
+        }
+      },
+      {
+        "idx": 2,
+        "from": "tips[3]",
+        "verified": {
+          "date": "2026-09-28",
+          "verdict": "confirmed",
+          "source": "https://dota2.fandom.com/wiki/Ursa",
+          "text": "fury swipes ramp on consecutive hits to the same target, refresh the stacks or the bonus damage is lost"
+        }
+      },
+      {
+        "idx": 3,
+        "from": "tips[4]",
+        "verified": {
+          "date": "2026-09-28",
+          "verdict": "confirmed",
+          "source": "https://dota2.fandom.com/wiki/Ursa",
+          "text": "enrage removes debuffs and grants status resistance with damage reduction, self dispel the slow and fight"
+        }
+      },
+      {
+        "idx": 4,
+        "from": "counters[1]",
+        "verified": {
+          "date": "2026-09-28",
+          "verdict": "confirmed",
+          "source": "https://dota2.fandom.com/wiki/Ursa",
+          "text": "hold your disables until enrage ends, the frenzy gives status resistance and damage reduction"
+        }
+      }
+    ],
+    "visage": [
+      {
+        "idx": 0,
+        "from": "tips[1]",
+        "verified": {
+          "date": "2026-09-28",
+          "verdict": "confirmed",
+          "source": "https://liquipedia.net/dota2/Visage",
+          "text": "grave chill drains move and attack speed from any enemy unit, chill a creep to flee or close ground"
+        }
+      },
+      {
+        "idx": 1,
+        "from": "tips[2]",
+        "verified": {
+          "date": "2026-09-28",
+          "verdict": "confirmed",
+          "source": "https://liquipedia.net/dota2/Visage",
+          "text": "grave chill and cloak bonuses only apply to familiars inside their radius, keep the birds close"
+        }
+      },
+      {
+        "idx": 2,
+        "from": "tips[7]",
+        "verified": {
+          "date": "2026-09-28",
+          "verdict": "confirmed",
+          "source": "https://liquipedia.net/dota2/Visage",
+          "text": "familiars are fully controllable flyers, dive them onto the squishiest support"
+        }
+      },
+      {
+        "idx": 3,
+        "from": "counters[1]",
+        "verified": {
+          "date": "2026-09-28",
+          "verdict": "confirmed",
+          "source": "https://liquipedia.net/dota2/Visage",
+          "text": "familiars are conjured blind, they carry no vision of their own"
+        }
+      },
+      {
+        "idx": 4,
+        "from": "counters[5]",
+        "verified": {
+          "date": "2026-09-28",
+          "verdict": "confirmed",
+          "source": "https://liquipedia.net/dota2/Visage",
+          "text": "break disables the cloak stack gain, existing stacks stay but no new ones form"
+        }
+      }
+    ],
+    "windranger": [
+      {
+        "idx": 0,
+        "from": "tips[0]",
+        "verified": {
+          "date": "2026-09-28",
+          "verdict": "confirmed",
+          "source": "https://dota2.fandom.com/wiki/Windranger",
+          "text": "shackleshot latches from the cast location, not her position when the projectile lands"
+        }
+      },
+      {
+        "idx": 1,
+        "from": "tips[1]",
+        "verified": {
+          "date": "2026-09-28",
+          "verdict": "corrected",
+          "source": "https://dota2.fandom.com/wiki/Windranger",
+          "text": "shackleshot prefers a unit over a tree behind the target, and the full stun holds even if the latch dies"
+        }
+      },
+      {
+        "idx": 2,
+        "from": "tips[9]",
+        "verified": {
+          "date": "2026-09-28",
+          "verdict": "confirmed",
+          "source": "https://dota2.fandom.com/wiki/Windranger",
+          "text": "windrun gives evasion from all physical attacks, run down the tower dive untouched"
+        }
+      },
+      {
+        "idx": 3,
+        "from": "tips[13]",
+        "verified": {
+          "date": "2026-09-28",
+          "verdict": "confirmed",
+          "source": "https://dota2.fandom.com/wiki/Windranger",
+          "text": "focus fire works on buildings too, turn it on the siege when the fight is won"
+        }
+      },
+      {
+        "idx": 4,
+        "from": "counters[0]",
+        "verified": {
+          "date": "2026-09-28",
+          "verdict": "confirmed",
+          "source": "https://dota2.fandom.com/wiki/Windranger",
+          "text": "mirror her movement and mind the creep between you, she needs a unit or tree behind you to latch"
+        }
+      }
+    ],
+    "winter-wyvern": [
+      {
+        "idx": 0,
+        "from": "tips[2]",
+        "verified": {
+          "date": "2026-09-28",
+          "verdict": "confirmed",
+          "source": "https://liquipedia.net/dota2/Winter_Wyvern",
+          "text": "arctic burn attacks burn a share of the target's current hp per second and slow it, hunt the fattest bodies"
+        }
+      },
+      {
+        "idx": 1,
+        "from": "tips[5]",
+        "verified": {
+          "date": "2026-09-28",
+          "verdict": "confirmed",
+          "source": "https://liquipedia.net/dota2/Winter_Wyvern",
+          "text": "splinter blast leaves the primary target completely unaffected, only the flying splinters damage and slow"
+        }
+      },
+      {
+        "idx": 2,
+        "from": "tips[9]",
+        "verified": {
+          "date": "2026-09-28",
+          "verdict": "confirmed",
+          "source": "https://liquipedia.net/dota2/Winter_Wyvern",
+          "text": "cold embrace cocoons an ally, healing it while blocking every physical damage instance"
+        }
+      },
+      {
+        "idx": 3,
+        "from": "tips[13]",
+        "verified": {
+          "date": "2026-09-28",
+          "verdict": "confirmed",
+          "source": "https://liquipedia.net/dota2/Winter_Wyvern",
+          "text": "winters curse grows longer per enemy caught, taunted creeps add duration too, aim for the clumped wave"
+        }
+      },
+      {
+        "idx": 4,
+        "from": "tips[17]",
+        "verified": {
+          "date": "2026-09-28",
+          "verdict": "confirmed",
+          "source": "https://liquipedia.net/dota2/Winter_Wyvern",
+          "text": "the frozen target and its taunted attackers are immune to enemy damage, only auroth and her units can hurt them"
+        }
+      },
+      {
+        "idx": 5,
+        "from": "counters[3]",
+        "verified": {
+          "date": "2026-09-28",
+          "verdict": "confirmed",
+          "source": "https://liquipedia.net/dota2/Winter_Wyvern",
+          "text": "never stand near a cursed ally, the curse forces everyone in the radius to attack the frozen teammate"
+        }
+      }
+    ],
+    "witch-doctor": [
+      {
+        "idx": 0,
+        "from": "tips[9]",
+        "verified": {
+          "date": "2026-09-25",
+          "verdict": "confirmed",
+          "source": "https://dota2.fandom.com/wiki/Witch_Doctor",
+          "text": "maledict is undispellable, no cleanse saves the target"
+        }
+      },
+      {
+        "idx": 1,
+        "from": "tips[21]",
+        "verified": {
+          "date": "2026-09-25",
+          "verdict": "confirmed",
+          "source": "https://dota2.fandom.com/wiki/Channeling",
+          "text": "glimmer and shadow blade do not break channels, pop them mid death ward, ghost scepter and bkb do"
+        }
+      },
+      {
+        "idx": 2,
+        "from": "tips[22]",
+        "verified": {
+          "date": "2026-09-25",
+          "verdict": "confirmed",
+          "source": "https://dota2.fandom.com/wiki/Witch_Doctor",
+          "text": "death ward is its own unit, blade mail and aeon disk never touch it, spell amp items do not buff it either"
+        }
+      },
+      {
+        "idx": 3,
+        "from": "tips[18]",
+        "verified": {
+          "date": "2026-09-25",
+          "verdict": "confirmed",
+          "source": "https://dota2.fandom.com/wiki/Faceless_Void",
+          "text": "death ward freezes inside chronosphere, drop it outside the dome to keep shredding people trapped in"
+        }
+      },
+      {
+        "idx": 4,
+        "from": "counters[1]",
+        "verified": {
+          "date": "2026-09-25",
+          "verdict": "confirmed",
+          "source": "https://dota2.fandom.com/wiki/Witch_Doctor",
+          "text": "maledict damage scales with hp lost since application, healing before a tick cuts the burst"
+        }
+      },
+      {
+        "idx": 5,
+        "from": "counters[6]",
+        "verified": {
+          "date": "2026-09-25",
+          "verdict": "confirmed",
+          "source": "https://dota2.fandom.com/wiki/Witch_Doctor",
+          "text": "death ward cannot hit ethereal units, ghost scepter blanks the ult for supports"
+        }
+      }
+    ],
+    "wraith-king": [
+      {
+        "idx": 0,
+        "from": "tips[0]",
+        "verified": {
+          "date": "2026-09-28",
+          "verdict": "confirmed",
+          "source": "https://liquipedia.net/dota2/Wraith_King",
+          "text": "wraithfire blast is a stun projectile, spell block nullifies it on impact, throw it point blank"
+        }
+      },
+      {
+        "idx": 1,
+        "from": "tips[5]",
+        "verified": {
+          "date": "2026-09-28",
+          "verdict": "confirmed",
+          "source": "https://liquipedia.net/dota2/Wraith_King",
+          "text": "wraith form delays his death and grants unobstructed movement with bonus attack and move speed"
+        }
+      },
+      {
+        "idx": 2,
+        "from": "tips[5].notes[0]",
+        "verified": {
+          "date": "2026-09-28",
+          "verdict": "confirmed",
+          "source": "https://liquipedia.net/dota2/Wraith_King",
+          "text": "the scepter vampiric spirit becomes an aura, allies turn into wraiths and delay their deaths too"
+        }
+      },
+      {
+        "idx": 3,
+        "from": "tips[6].notes[0]",
+        "verified": {
+          "date": "2026-09-28",
+          "verdict": "confirmed",
+          "source": "https://liquipedia.net/dota2/Wraith_King",
+          "text": "reincarnation is inactive during wraith form, the rise never triggers mid drift"
+        }
+      },
+      {
+        "idx": 4,
+        "from": "tips[8]",
+        "verified": {
+          "date": "2026-09-28",
+          "verdict": "confirmed",
+          "source": "https://liquipedia.net/dota2/Wraith_King",
+          "text": "self cast reincarnation to die on command, it refunds the mana cost on the self kill"
+        }
+      },
+      {
+        "idx": 5,
+        "from": "counters[0]",
+        "verified": {
+          "date": "2026-09-28",
+          "verdict": "confirmed",
+          "source": "https://liquipedia.net/dota2/Wraith_King",
+          "text": "reincarnation only rises when he pays the mana cost, mana burn cheapens the second life"
+        }
+      }
+    ],
+    "zeus": [
+      {
+        "idx": 0,
+        "from": "tips[2]",
+        "verified": {
+          "date": "2026-09-28",
+          "verdict": "confirmed",
+          "source": "https://liquipedia.net/dota2/Zeus",
+          "text": "lightning bolt grants flying vision and true sight, cast it first on the chase so fog never eats the target"
+        }
+      },
+      {
+        "idx": 1,
+        "from": "tips[4]",
+        "verified": {
+          "date": "2026-09-28",
+          "verdict": "confirmed",
+          "source": "https://liquipedia.net/dota2/Zeus",
+          "text": "ground cast the bolt, the search radius around the point catches enemies just past unit targeting range"
+        }
+      },
+      {
+        "idx": 2,
+        "from": "tips[7]",
+        "verified": {
+          "date": "2026-09-28",
+          "verdict": "confirmed",
+          "source": "https://liquipedia.net/dota2/Zeus",
+          "text": "the bolt stun cancels channels, punch it into the enemy teleport to break the escape"
+        }
+      },
+      {
+        "idx": 3,
+        "from": "tips[10]",
+        "verified": {
+          "date": "2026-09-28",
+          "verdict": "confirmed",
+          "source": "https://liquipedia.net/dota2/Zeus",
+          "text": "wrath strikes every enemy hero globally and lights each one up with vision, open fights with it to reveal the team"
+        }
+      },
+      {
+        "idx": 4,
+        "from": "counters[3]",
+        "verified": {
+          "date": "2026-09-28",
+          "verdict": "confirmed",
+          "source": "https://liquipedia.net/dota2/Zeus",
+          "text": "melee hits strip the nimbus twice as fast, ranged heroes need double the hits to kill the cloud"
+        }
+      }
+    ]
+  }
+}

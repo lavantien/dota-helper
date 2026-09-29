@@ -1,0 +1,189 @@
+{
+  "note": "how every scoring-affecting config key got its value: method fitted means measured by a phase 4 fit procedure (status pending until `engine eval promote` applies a guarded measurement), justified means fixed by the definition it names, authored means a hand-set design choice. scripts/check.ps1 gates that every key under weights, gateDeltas, shrink, completion, score, and normalize appears here with a method and a value in sync with dota2/config.json. See ref/dota2/eval/README.md.",
+  "entries": [
+    {
+      "key": "completion.lambda",
+      "value": 0.1,
+      "method": "fitted",
+      "procedure": "masked-cell ALS cross-validation over eval.completionFit grids scored by Spearman against held-out shrunk values; promote guard: difference CI low > 0",
+      "status": "pending"
+    },
+    {
+      "key": "completion.maxIter",
+      "value": 200,
+      "method": "justified",
+      "procedure": "ALS iteration cap; solver numerics, sized so tol normally stops the sweep first"
+    },
+    {
+      "key": "completion.pivotFloor",
+      "value": 1e-12,
+      "method": "justified",
+      "procedure": "singular-matrix pivot guard inside the ALS least-squares solve; solver numerics"
+    },
+    {
+      "key": "completion.rank",
+      "value": 8,
+      "method": "fitted",
+      "procedure": "masked-cell ALS cross-validation over eval.completionFit grids scored by Spearman against held-out shrunk values; promote guard: difference CI low > 0",
+      "status": "pending"
+    },
+    {
+      "key": "completion.seed",
+      "value": 42,
+      "method": "justified",
+      "procedure": "ALS factor initialization seed; solver numerics, any fixed seed is equivalent and the run must be deterministic"
+    },
+    {
+      "key": "completion.tol",
+      "value": 0.000001,
+      "method": "justified",
+      "procedure": "ALS convergence tolerance on factor movement; solver numerics"
+    },
+    {
+      "key": "gateDeltas.bonus",
+      "value": 0,
+      "method": "fitted",
+      "procedure": "coordinate ascent on train mean pick percentile over the sequential-replay term cache; promote guard: holdout gain >= eval.fit.minHoldoutGain with bootstrap CI low > 0",
+      "status": "measured",
+      "measuredAt": "2026-09-26T17:53:58Z"
+    },
+    {
+      "key": "gateDeltas.penalty",
+      "value": -0.25,
+      "method": "fitted",
+      "procedure": "coordinate ascent on train mean pick percentile over the sequential-replay term cache; promote guard: holdout gain >= eval.fit.minHoldoutGain with bootstrap CI low > 0",
+      "status": "measured",
+      "measuredAt": "2026-09-26T17:53:58Z"
+    },
+    {
+      "key": "normalize.zSdFloor",
+      "value": 0.05,
+      "method": "justified",
+      "procedure": "division guard for standardizing a zero-spread percentile row; a floor, not a signal carrier"
+    },
+    {
+      "key": "score.allySlots",
+      "value": 4,
+      "method": "justified",
+      "procedure": "four allied slots remain on the picking side once the picked hero is counted; a rule of the game"
+    },
+    {
+      "key": "score.enemySlots",
+      "value": 5,
+      "method": "justified",
+      "procedure": "five enemy slots oppose the picking side; a rule of the game"
+    },
+    {
+      "key": "score.flexCap",
+      "value": 50,
+      "method": "authored",
+      "procedure": "popularity horizon of the flexibility set (the stdev runs over the most popular unseen enemies); the one future promote-to-fitted candidate among the authored constants"
+    },
+    {
+      "key": "score.flexHalf",
+      "value": 2,
+      "method": "justified",
+      "procedure": "percentile-scale normalization divisor: a two-point stdev maps to one half-width of the flexibility term"
+    },
+    {
+      "key": "score.midPct",
+      "value": 0.5,
+      "method": "justified",
+      "procedure": "the fair-midpoint definition every pp delta measures distance from; definitional, not fitted"
+    },
+    {
+      "key": "shrink.matchupAlpha",
+      "value": 1633.6489730617834,
+      "method": "fitted",
+      "procedure": "empirical-Bayes moment matching per family over the pooled raw aggregate tables (sigma2 = 2500 pp^2), holdout deviance cross-check over eval.alphaFit.grid; promote guard: bootstrap CI excludes the current value; re-measured 2026-09-27 under the re-scoped crawl and strict-priority pooling: moment tau2 at the floor, guard kept this value",
+      "status": "measured",
+      "measuredAt": "2026-09-26T05:18:34Z"
+    },
+    {
+      "key": "shrink.overallWrAlpha",
+      "value": 500,
+      "method": "fitted",
+      "procedure": "empirical-Bayes moment matching per family over the pooled raw aggregate tables (sigma2 = 2500 pp^2), holdout deviance cross-check over eval.alphaFit.grid; promote guard: bootstrap CI excludes the current value; re-measured 2026-09-27: moment 330.0 CI [206.6, 852.0] contains this value, guard kept it",
+      "status": "measured",
+      "measuredAt": "2026-09-26T05:18:34Z"
+    },
+    {
+      "key": "shrink.synergyAlpha",
+      "value": 25,
+      "method": "fitted",
+      "procedure": "empirical-Bayes moment matching per family over the pooled raw aggregate tables (sigma2 = 2500 pp^2), holdout deviance cross-check over eval.alphaFit.grid; promote guard: bootstrap CI excludes the current value; re-measured 2026-09-27 under the re-scoped crawl and strict-priority pooling: moment tau2 at the floor, guard kept this value",
+      "status": "measured",
+      "measuredAt": "2026-09-26T05:18:34Z"
+    },
+    {
+      "key": "weights.exposure",
+      "value": 2,
+      "method": "fitted",
+      "procedure": "coordinate ascent on train mean pick percentile over the sequential-replay term cache; promote guard: holdout gain >= eval.fit.minHoldoutGain with bootstrap CI low > 0",
+      "status": "measured",
+      "measuredAt": "2026-09-26T17:53:58Z"
+    },
+    {
+      "key": "weights.flexibility",
+      "value": 2,
+      "method": "fitted",
+      "procedure": "coordinate ascent on train mean pick percentile over the sequential-replay term cache; promote guard: holdout gain >= eval.fit.minHoldoutGain with bootstrap CI low > 0",
+      "status": "measured",
+      "measuredAt": "2026-09-26T17:53:58Z"
+    },
+    {
+      "key": "weights.genericFit",
+      "value": -0.5,
+      "method": "fitted",
+      "procedure": "coordinate ascent on train mean pick percentile over the sequential-replay term cache; promote guard: holdout gain >= eval.fit.minHoldoutGain with bootstrap CI low > 0",
+      "status": "measured",
+      "measuredAt": "2026-09-26T17:53:58Z"
+    },
+    {
+      "key": "weights.knownMu",
+      "value": 1,
+      "method": "fitted",
+      "procedure": "coordinate ascent on train mean pick percentile over the sequential-replay term cache; promote guard: holdout gain >= eval.fit.minHoldoutGain with bootstrap CI low > 0",
+      "status": "measured",
+      "measuredAt": "2026-09-26T17:53:58Z"
+    },
+    {
+      "key": "weights.prior",
+      "value": 0.2,
+      "method": "fitted",
+      "procedure": "coordinate ascent on train mean pick percentile over the sequential-replay term cache; promote guard: holdout gain >= eval.fit.minHoldoutGain with bootstrap CI low > 0",
+      "status": "measured",
+      "measuredAt": "2026-09-26T17:53:58Z"
+    },
+    {
+      "key": "weights.synByRole.1",
+      "value": 0.3,
+      "method": "authored",
+      "procedure": "role-differentiated replacement of the retired fitted weights.knownSyn (-0.5, holdout ablation delta +0.0014, i.e. measurement-inert, and the next fit's +0.5 proposal failed its bootstrap CI guard): support picks pair with the already-picked allies at full weight because pairing with the lane partner is the pick's job, cores factor pairs at a reduced weight because the picking player cannot control the allied picks; carry and offlane share the reduced rung"
+    },
+    {
+      "key": "weights.synByRole.2",
+      "value": 0.2,
+      "method": "authored",
+      "procedure": "role-differentiated replacement of the retired fitted weights.knownSyn (-0.5, holdout ablation delta +0.0014, i.e. measurement-inert, and the next fit's +0.5 proposal failed its bootstrap CI guard): mid is the solo lane with no lane partner, the weakest pair rung"
+    },
+    {
+      "key": "weights.synByRole.3",
+      "value": 0.3,
+      "method": "authored",
+      "procedure": "role-differentiated replacement of the retired fitted weights.knownSyn (-0.5, holdout ablation delta +0.0014, i.e. measurement-inert, and the next fit's +0.5 proposal failed its bootstrap CI guard): support picks pair with the already-picked allies at full weight because pairing with the lane partner is the pick's job, cores factor pairs at a reduced weight because the picking player cannot control the allied picks; carry and offlane share the reduced rung"
+    },
+    {
+      "key": "weights.synByRole.4",
+      "value": 1,
+      "method": "authored",
+      "procedure": "role-differentiated replacement of the retired fitted weights.knownSyn (-0.5, holdout ablation delta +0.0014, i.e. measurement-inert, and the next fit's +0.5 proposal failed its bootstrap CI guard): support picks pair with the already-picked allies at full weight because pairing with the lane partner is the pick's job"
+    },
+    {
+      "key": "weights.synByRole.5",
+      "value": 1,
+      "method": "authored",
+      "procedure": "role-differentiated replacement of the retired fitted weights.knownSyn (-0.5, holdout ablation delta +0.0014, i.e. measurement-inert, and the next fit's +0.5 proposal failed its bootstrap CI guard): support picks pair with the already-picked allies at full weight because pairing with the lane partner is the pick's job"
+    }
+  ]
+}

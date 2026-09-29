@@ -1,0 +1,898 @@
+{
+  "crawledAt": "2026-09-29T11:11:31Z",
+  "bracket": "DIVINE_IMMORTAL",
+  "source": "stratz completed-week crawl",
+  "take": 7,
+  "week": 1789948800,
+  "heroes": [
+    {
+      "slug": "anti-mage",
+      "heroId": 1,
+      "fetchedAt": "2026-09-29T08:55:17Z",
+      "cached": true,
+      "accepted": true
+    },
+    {
+      "slug": "axe",
+      "heroId": 2,
+      "fetchedAt": "2026-09-29T08:55:18Z",
+      "cached": true,
+      "accepted": true
+    },
+    {
+      "slug": "bane",
+      "heroId": 3,
+      "fetchedAt": "2026-09-29T08:55:18Z",
+      "cached": true,
+      "accepted": true
+    },
+    {
+      "slug": "bloodseeker",
+      "heroId": 4,
+      "fetchedAt": "2026-09-29T08:55:19Z",
+      "cached": true,
+      "accepted": true
+    },
+    {
+      "slug": "crystal-maiden",
+      "heroId": 5,
+      "fetchedAt": "2026-09-29T08:55:20Z",
+      "cached": true,
+      "accepted": true
+    },
+    {
+      "slug": "drow-ranger",
+      "heroId": 6,
+      "fetchedAt": "2026-09-29T08:55:21Z",
+      "cached": true,
+      "accepted": true
+    },
+    {
+      "slug": "earthshaker",
+      "heroId": 7,
+      "fetchedAt": "2026-09-29T08:55:22Z",
+      "cached": true,
+      "accepted": true
+    },
+    {
+      "slug": "juggernaut",
+      "heroId": 8,
+      "fetchedAt": "2026-09-29T08:55:23Z",
+      "cached": true,
+      "accepted": true
+    },
+    {
+      "slug": "mirana",
+      "heroId": 9,
+      "fetchedAt": "2026-09-29T08:55:23Z",
+      "cached": true,
+      "accepted": true
+    },
+    {
+      "slug": "morphling",
+      "heroId": 10,
+      "fetchedAt": "2026-09-29T08:55:24Z",
+      "cached": true,
+      "accepted": true
+    },
+    {
+      "slug": "shadow-fiend",
+      "heroId": 11,
+      "fetchedAt": "2026-09-29T08:55:25Z",
+      "cached": true,
+      "accepted": true
+    },
+    {
+      "slug": "phantom-lancer",
+      "heroId": 12,
+      "fetchedAt": "2026-09-29T08:55:26Z",
+      "cached": true,
+      "accepted": true
+    },
+    {
+      "slug": "puck",
+      "heroId": 13,
+      "fetchedAt": "2026-09-29T08:55:26Z",
+      "cached": true,
+      "accepted": true
+    },
+    {
+      "slug": "pudge",
+      "heroId": 14,
+      "fetchedAt": "2026-09-29T08:55:27Z",
+      "cached": true,
+      "accepted": true
+    },
+    {
+      "slug": "razor",
+      "heroId": 15,
+      "fetchedAt": "2026-09-29T08:55:28Z",
+      "cached": true,
+      "accepted": true
+    },
+    {
+      "slug": "sand-king",
+      "heroId": 16,
+      "fetchedAt": "2026-09-29T08:55:29Z",
+      "cached": true,
+      "accepted": true
+    },
+    {
+      "slug": "storm-spirit",
+      "heroId": 17,
+      "fetchedAt": "2026-09-29T08:55:30Z",
+      "cached": true,
+      "accepted": true
+    },
+    {
+      "slug": "sven",
+      "heroId": 18,
+      "fetchedAt": "2026-09-29T08:55:31Z",
+      "cached": true,
+      "accepted": true
+    },
+    {
+      "slug": "tiny",
+      "heroId": 19,
+      "fetchedAt": "2026-09-29T08:55:31Z",
+      "cached": true,
+      "accepted": true
+    },
+    {
+      "slug": "vengefulspirit",
+      "heroId": 20,
+      "fetchedAt": "2026-09-29T08:55:32Z",
+      "cached": true,
+      "accepted": true
+    },
+    {
+      "slug": "windranger",
+      "heroId": 21,
+      "fetchedAt": "2026-09-29T08:55:33Z",
+      "cached": true,
+      "accepted": true
+    },
+    {
+      "slug": "zeus",
+      "heroId": 22,
+      "fetchedAt": "2026-09-29T08:55:34Z",
+      "cached": true,
+      "accepted": true
+    },
+    {
+      "slug": "kunkka",
+      "heroId": 23,
+      "fetchedAt": "2026-09-29T08:55:35Z",
+      "cached": true,
+      "accepted": true
+    },
+    {
+      "slug": "lina",
+      "heroId": 25,
+      "fetchedAt": "2026-09-29T08:55:35Z",
+      "cached": true,
+      "accepted": true
+    },
+    {
+      "slug": "lion",
+      "heroId": 26,
+      "fetchedAt": "2026-09-29T08:55:36Z",
+      "cached": true,
+      "accepted": true
+    },
+    {
+      "slug": "shadow-shaman",
+      "heroId": 27,
+      "fetchedAt": "2026-09-29T08:55:37Z",
+      "cached": true,
+      "accepted": true
+    },
+    {
+      "slug": "slardar",
+      "heroId": 28,
+      "fetchedAt": "2026-09-29T08:55:38Z",
+      "cached": true,
+      "accepted": true
+    },
+    {
+      "slug": "tidehunter",
+      "heroId": 29,
+      "fetchedAt": "2026-09-29T08:55:38Z",
+      "cached": true,
+      "accepted": true
+    },
+    {
+      "slug": "witch-doctor",
+      "heroId": 30,
+      "fetchedAt": "2026-09-29T08:55:39Z",
+      "cached": true,
+      "accepted": true
+    },
+    {
+      "slug": "lich",
+      "heroId": 31,
+      "fetchedAt": "2026-09-29T08:55:40Z",
+      "cached": true,
+      "accepted": true
+    },
+    {
+      "slug": "riki",
+      "heroId": 32,
+      "fetchedAt": "2026-09-29T08:55:41Z",
+      "cached": true,
+      "accepted": true
+    },
+    {
+      "slug": "enigma",
+      "heroId": 33,
+      "fetchedAt": "2026-09-29T08:55:42Z",
+      "cached": true,
+      "accepted": true
+    },
+    {
+      "slug": "tinker",
+      "heroId": 34,
+      "fetchedAt": "2026-09-29T08:55:43Z",
+      "cached": true,
+      "accepted": true
+    },
+    {
+      "slug": "sniper",
+      "heroId": 35,
+      "fetchedAt": "2026-09-29T08:55:44Z",
+      "cached": true,
+      "accepted": true
+    },
+    {
+      "slug": "necrophos",
+      "heroId": 36,
+      "fetchedAt": "2026-09-29T08:55:45Z",
+      "cached": true,
+      "accepted": true
+    },
+    {
+      "slug": "warlock",
+      "heroId": 37,
+      "fetchedAt": "2026-09-29T08:55:46Z",
+      "cached": true,
+      "accepted": true
+    },
+    {
+      "slug": "beastmaster",
+      "heroId": 38,
+      "fetchedAt": "2026-09-29T08:55:46Z",
+      "cached": true,
+      "accepted": true
+    },
+    {
+      "slug": "queenofpain",
+      "heroId": 39,
+      "fetchedAt": "2026-09-29T08:55:47Z",
+      "cached": true,
+      "accepted": true
+    },
+    {
+      "slug": "venomancer",
+      "heroId": 40,
+      "fetchedAt": "2026-09-29T08:55:48Z",
+      "cached": true,
+      "accepted": true
+    },
+    {
+      "slug": "faceless-void",
+      "heroId": 41,
+      "fetchedAt": "2026-09-29T08:55:49Z",
+      "cached": true,
+      "accepted": true
+    },
+    {
+      "slug": "wraith-king",
+      "heroId": 42,
+      "fetchedAt": "2026-09-29T08:55:49Z",
+      "cached": true,
+      "accepted": true
+    },
+    {
+      "slug": "death-prophet",
+      "heroId": 43,
+      "fetchedAt": "2026-09-29T08:55:50Z",
+      "cached": true,
+      "accepted": true
+    },
+    {
+      "slug": "phantom-assassin",
+      "heroId": 44,
+      "fetchedAt": "2026-09-29T08:55:51Z",
+      "cached": true,
+      "accepted": true
+    },
+    {
+      "slug": "pugna",
+      "heroId": 45,
+      "fetchedAt": "2026-09-29T08:55:52Z",
+      "cached": true,
+      "accepted": true
+    },
+    {
+      "slug": "templar-assassin",
+      "heroId": 46,
+      "fetchedAt": "2026-09-29T08:55:53Z",
+      "cached": true,
+      "accepted": true
+    },
+    {
+      "slug": "viper",
+      "heroId": 47,
+      "fetchedAt": "2026-09-29T08:55:53Z",
+      "cached": true,
+      "accepted": true
+    },
+    {
+      "slug": "luna",
+      "heroId": 48,
+      "fetchedAt": "2026-09-29T08:55:54Z",
+      "cached": true,
+      "accepted": true
+    },
+    {
+      "slug": "dragon-knight",
+      "heroId": 49,
+      "fetchedAt": "2026-09-29T08:55:55Z",
+      "cached": true,
+      "accepted": true
+    },
+    {
+      "slug": "dazzle",
+      "heroId": 50,
+      "fetchedAt": "2026-09-29T08:55:56Z",
+      "cached": true,
+      "accepted": true
+    },
+    {
+      "slug": "rattletrap",
+      "heroId": 51,
+      "fetchedAt": "2026-09-29T08:55:57Z",
+      "cached": true,
+      "accepted": true
+    },
+    {
+      "slug": "leshrac",
+      "heroId": 52,
+      "fetchedAt": "2026-09-29T08:55:58Z",
+      "cached": true,
+      "accepted": true
+    },
+    {
+      "slug": "natures-prophet",
+      "heroId": 53,
+      "fetchedAt": "2026-09-29T08:55:58Z",
+      "cached": true,
+      "accepted": true
+    },
+    {
+      "slug": "lifestealer",
+      "heroId": 54,
+      "fetchedAt": "2026-09-29T08:55:59Z",
+      "cached": true,
+      "accepted": true
+    },
+    {
+      "slug": "dark-seer",
+      "heroId": 55,
+      "fetchedAt": "2026-09-29T08:56:00Z",
+      "cached": true,
+      "accepted": true
+    },
+    {
+      "slug": "clinkz",
+      "heroId": 56,
+      "fetchedAt": "2026-09-29T08:56:01Z",
+      "cached": true,
+      "accepted": true
+    },
+    {
+      "slug": "omniknight",
+      "heroId": 57,
+      "fetchedAt": "2026-09-29T08:56:02Z",
+      "cached": true,
+      "accepted": true
+    },
+    {
+      "slug": "enchantress",
+      "heroId": 58,
+      "fetchedAt": "2026-09-29T08:56:02Z",
+      "cached": true,
+      "accepted": true
+    },
+    {
+      "slug": "huskar",
+      "heroId": 59,
+      "fetchedAt": "2026-09-29T08:56:03Z",
+      "cached": true,
+      "accepted": true
+    },
+    {
+      "slug": "night-stalker",
+      "heroId": 60,
+      "fetchedAt": "2026-09-29T08:56:04Z",
+      "cached": true,
+      "accepted": true
+    },
+    {
+      "slug": "broodmother",
+      "heroId": 61,
+      "fetchedAt": "2026-09-29T08:56:05Z",
+      "cached": true,
+      "accepted": true
+    },
+    {
+      "slug": "bounty-hunter",
+      "heroId": 62,
+      "fetchedAt": "2026-09-29T08:56:06Z",
+      "cached": true,
+      "accepted": true
+    },
+    {
+      "slug": "weaver",
+      "heroId": 63,
+      "fetchedAt": "2026-09-29T08:56:06Z",
+      "cached": true,
+      "accepted": true
+    },
+    {
+      "slug": "jakiro",
+      "heroId": 64,
+      "fetchedAt": "2026-09-29T08:56:07Z",
+      "cached": true,
+      "accepted": true
+    },
+    {
+      "slug": "batrider",
+      "heroId": 65,
+      "fetchedAt": "2026-09-29T08:56:08Z",
+      "cached": true,
+      "accepted": true
+    },
+    {
+      "slug": "chen",
+      "heroId": 66,
+      "fetchedAt": "2026-09-29T08:56:09Z",
+      "cached": true,
+      "accepted": true
+    },
+    {
+      "slug": "spectre",
+      "heroId": 67,
+      "fetchedAt": "2026-09-29T08:56:10Z",
+      "cached": true,
+      "accepted": true
+    },
+    {
+      "slug": "ancient-apparition",
+      "heroId": 68,
+      "fetchedAt": "2026-09-29T08:56:11Z",
+      "cached": true,
+      "accepted": true
+    },
+    {
+      "slug": "doom",
+      "heroId": 69,
+      "fetchedAt": "2026-09-29T08:56:11Z",
+      "cached": true,
+      "accepted": true
+    },
+    {
+      "slug": "ursa",
+      "heroId": 70,
+      "fetchedAt": "2026-09-29T08:56:12Z",
+      "cached": true,
+      "accepted": true
+    },
+    {
+      "slug": "spirit-breaker",
+      "heroId": 71,
+      "fetchedAt": "2026-09-29T08:56:13Z",
+      "cached": true,
+      "accepted": true
+    },
+    {
+      "slug": "gyrocopter",
+      "heroId": 72,
+      "fetchedAt": "2026-09-29T08:56:14Z",
+      "cached": true,
+      "accepted": true
+    },
+    {
+      "slug": "alchemist",
+      "heroId": 73,
+      "fetchedAt": "2026-09-29T08:56:15Z",
+      "cached": true,
+      "accepted": true
+    },
+    {
+      "slug": "invoker",
+      "heroId": 74,
+      "fetchedAt": "2026-09-29T08:56:15Z",
+      "cached": true,
+      "accepted": true
+    },
+    {
+      "slug": "silencer",
+      "heroId": 75,
+      "fetchedAt": "2026-09-29T08:56:16Z",
+      "cached": true,
+      "accepted": true
+    },
+    {
+      "slug": "outworld-destroyer",
+      "heroId": 76,
+      "fetchedAt": "2026-09-29T08:56:17Z",
+      "cached": true,
+      "accepted": true
+    },
+    {
+      "slug": "lycan",
+      "heroId": 77,
+      "fetchedAt": "2026-09-29T08:56:18Z",
+      "cached": true,
+      "accepted": true
+    },
+    {
+      "slug": "brewmaster",
+      "heroId": 78,
+      "fetchedAt": "2026-09-29T08:56:19Z",
+      "cached": true,
+      "accepted": true
+    },
+    {
+      "slug": "shadow-demon",
+      "heroId": 79,
+      "fetchedAt": "2026-09-29T08:56:20Z",
+      "cached": true,
+      "accepted": true
+    },
+    {
+      "slug": "lone-druid",
+      "heroId": 80,
+      "fetchedAt": "2026-09-29T08:56:21Z",
+      "cached": true,
+      "accepted": true
+    },
+    {
+      "slug": "chaos-knight",
+      "heroId": 81,
+      "fetchedAt": "2026-09-29T08:56:21Z",
+      "cached": true,
+      "accepted": true
+    },
+    {
+      "slug": "meepo",
+      "heroId": 82,
+      "fetchedAt": "2026-09-29T08:56:22Z",
+      "cached": true,
+      "accepted": true
+    },
+    {
+      "slug": "treant",
+      "heroId": 83,
+      "fetchedAt": "2026-09-29T08:56:23Z",
+      "cached": true,
+      "accepted": true
+    },
+    {
+      "slug": "ogre-magi",
+      "heroId": 84,
+      "fetchedAt": "2026-09-29T08:56:24Z",
+      "cached": true,
+      "accepted": true
+    },
+    {
+      "slug": "undying",
+      "heroId": 85,
+      "fetchedAt": "2026-09-29T08:56:25Z",
+      "cached": true,
+      "accepted": true
+    },
+    {
+      "slug": "rubick",
+      "heroId": 86,
+      "fetchedAt": "2026-09-29T08:56:25Z",
+      "cached": true,
+      "accepted": true
+    },
+    {
+      "slug": "disruptor",
+      "heroId": 87,
+      "fetchedAt": "2026-09-29T08:56:26Z",
+      "cached": true,
+      "accepted": true
+    },
+    {
+      "slug": "nyx-assassin",
+      "heroId": 88,
+      "fetchedAt": "2026-09-29T08:56:27Z",
+      "cached": true,
+      "accepted": true
+    },
+    {
+      "slug": "naga-siren",
+      "heroId": 89,
+      "fetchedAt": "2026-09-29T08:56:28Z",
+      "cached": true,
+      "accepted": true
+    },
+    {
+      "slug": "keeper-of-the-light",
+      "heroId": 90,
+      "fetchedAt": "2026-09-29T08:56:29Z",
+      "cached": true,
+      "accepted": true
+    },
+    {
+      "slug": "io",
+      "heroId": 91,
+      "fetchedAt": "2026-09-29T08:56:30Z",
+      "cached": true,
+      "accepted": true
+    },
+    {
+      "slug": "visage",
+      "heroId": 92,
+      "fetchedAt": "2026-09-29T08:56:30Z",
+      "cached": true,
+      "accepted": true
+    },
+    {
+      "slug": "slark",
+      "heroId": 93,
+      "fetchedAt": "2026-09-29T08:56:31Z",
+      "cached": true,
+      "accepted": true
+    },
+    {
+      "slug": "medusa",
+      "heroId": 94,
+      "fetchedAt": "2026-09-29T08:56:32Z",
+      "cached": true,
+      "accepted": true
+    },
+    {
+      "slug": "troll-warlord",
+      "heroId": 95,
+      "fetchedAt": "2026-09-29T08:56:33Z",
+      "cached": true,
+      "accepted": true
+    },
+    {
+      "slug": "centaur",
+      "heroId": 96,
+      "fetchedAt": "2026-09-29T08:56:34Z",
+      "cached": true,
+      "accepted": true
+    },
+    {
+      "slug": "magnataur",
+      "heroId": 97,
+      "fetchedAt": "2026-09-29T08:56:35Z",
+      "cached": true,
+      "accepted": true
+    },
+    {
+      "slug": "timbersaw",
+      "heroId": 98,
+      "fetchedAt": "2026-09-29T08:56:35Z",
+      "cached": true,
+      "accepted": true
+    },
+    {
+      "slug": "bristleback",
+      "heroId": 99,
+      "fetchedAt": "2026-09-29T08:56:36Z",
+      "cached": true,
+      "accepted": true
+    },
+    {
+      "slug": "tusk",
+      "heroId": 100,
+      "fetchedAt": "2026-09-29T08:56:37Z",
+      "cached": true,
+      "accepted": true
+    },
+    {
+      "slug": "skywrath-mage",
+      "heroId": 101,
+      "fetchedAt": "2026-09-29T08:56:38Z",
+      "cached": true,
+      "accepted": true
+    },
+    {
+      "slug": "abaddon",
+      "heroId": 102,
+      "fetchedAt": "2026-09-29T08:56:39Z",
+      "cached": true,
+      "accepted": true
+    },
+    {
+      "slug": "elder-titan",
+      "heroId": 103,
+      "fetchedAt": "2026-09-29T08:56:39Z",
+      "cached": true,
+      "accepted": true
+    },
+    {
+      "slug": "legion-commander",
+      "heroId": 104,
+      "fetchedAt": "2026-09-29T08:56:40Z",
+      "cached": true,
+      "accepted": true
+    },
+    {
+      "slug": "techies",
+      "heroId": 105,
+      "fetchedAt": "2026-09-29T08:56:41Z",
+      "cached": true,
+      "accepted": true
+    },
+    {
+      "slug": "ember-spirit",
+      "heroId": 106,
+      "fetchedAt": "2026-09-29T08:56:42Z",
+      "cached": true,
+      "accepted": true
+    },
+    {
+      "slug": "earth-spirit",
+      "heroId": 107,
+      "fetchedAt": "2026-09-29T08:56:43Z",
+      "cached": true,
+      "accepted": true
+    },
+    {
+      "slug": "underlord",
+      "heroId": 108,
+      "fetchedAt": "2026-09-29T08:56:43Z",
+      "cached": true,
+      "accepted": true
+    },
+    {
+      "slug": "terrorblade",
+      "heroId": 109,
+      "fetchedAt": "2026-09-29T08:56:44Z",
+      "cached": true,
+      "accepted": true
+    },
+    {
+      "slug": "phoenix",
+      "heroId": 110,
+      "fetchedAt": "2026-09-29T08:56:45Z",
+      "cached": true,
+      "accepted": true
+    },
+    {
+      "slug": "oracle",
+      "heroId": 111,
+      "fetchedAt": "2026-09-29T08:56:46Z",
+      "cached": true,
+      "accepted": true
+    },
+    {
+      "slug": "winter-wyvern",
+      "heroId": 112,
+      "fetchedAt": "2026-09-29T08:56:47Z",
+      "cached": true,
+      "accepted": true
+    },
+    {
+      "slug": "arc-warden",
+      "heroId": 113,
+      "fetchedAt": "2026-09-29T08:56:48Z",
+      "cached": true,
+      "accepted": true
+    },
+    {
+      "slug": "monkey-king",
+      "heroId": 114,
+      "fetchedAt": "2026-09-29T08:56:49Z",
+      "cached": true,
+      "accepted": true
+    },
+    {
+      "slug": "dark-willow",
+      "heroId": 119,
+      "fetchedAt": "2026-09-29T08:56:49Z",
+      "cached": true,
+      "accepted": true
+    },
+    {
+      "slug": "pangolier",
+      "heroId": 120,
+      "fetchedAt": "2026-09-29T08:56:50Z",
+      "cached": true,
+      "accepted": true
+    },
+    {
+      "slug": "grimstroke",
+      "heroId": 121,
+      "fetchedAt": "2026-09-29T08:56:51Z",
+      "cached": true,
+      "accepted": true
+    },
+    {
+      "slug": "hoodwink",
+      "heroId": 123,
+      "fetchedAt": "2026-09-29T08:56:52Z",
+      "cached": true,
+      "accepted": true
+    },
+    {
+      "slug": "void-spirit",
+      "heroId": 126,
+      "fetchedAt": "2026-09-29T08:56:53Z",
+      "cached": true,
+      "accepted": true
+    },
+    {
+      "slug": "snapfire",
+      "heroId": 128,
+      "fetchedAt": "2026-09-29T08:56:53Z",
+      "cached": true,
+      "accepted": true
+    },
+    {
+      "slug": "mars",
+      "heroId": 129,
+      "fetchedAt": "2026-09-29T08:56:54Z",
+      "cached": true,
+      "accepted": true
+    },
+    {
+      "slug": "ringmaster",
+      "heroId": 131,
+      "fetchedAt": "2026-09-29T08:56:55Z",
+      "cached": true,
+      "accepted": true
+    },
+    {
+      "slug": "dawnbreaker",
+      "heroId": 135,
+      "fetchedAt": "2026-09-29T08:56:56Z",
+      "cached": true,
+      "accepted": true
+    },
+    {
+      "slug": "marci",
+      "heroId": 136,
+      "fetchedAt": "2026-09-29T08:56:57Z",
+      "cached": true,
+      "accepted": true
+    },
+    {
+      "slug": "primal-beast",
+      "heroId": 137,
+      "fetchedAt": "2026-09-29T08:56:58Z",
+      "cached": true,
+      "accepted": true
+    },
+    {
+      "slug": "muerta",
+      "heroId": 138,
+      "fetchedAt": "2026-09-29T08:56:59Z",
+      "cached": true,
+      "accepted": true
+    },
+    {
+      "slug": "kez",
+      "heroId": 145,
+      "fetchedAt": "2026-09-29T08:57:00Z",
+      "cached": true,
+      "accepted": true
+    },
+    {
+      "slug": "largo",
+      "heroId": 155,
+      "fetchedAt": "2026-09-29T08:57:01Z",
+      "cached": true,
+      "accepted": true
+    }
+  ]
+}

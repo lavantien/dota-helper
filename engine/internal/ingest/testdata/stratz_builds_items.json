@@ -1,0 +1,84 @@
+{
+  "data": {
+    "constants": {
+      "items": [
+        {
+          "id": 147,
+          "name": "item_manta",
+          "displayName": "Manta Style",
+          "shortName": "manta",
+          "components": null,
+          "stat": {
+            "cost": 4650,
+            "isRecipe": false
+          }
+        },
+        {
+          "id": 1,
+          "name": "item_blink",
+          "displayName": "Blink Dagger",
+          "shortName": "blink",
+          "components": null,
+          "stat": {
+            "cost": 2250,
+            "isRecipe": false
+          }
+        },
+        {
+          "id": 116,
+          "name": "item_black_king_bar",
+          "displayName": "Black King Bar",
+          "shortName": "black_king_bar",
+          "components": null,
+          "stat": {
+            "cost": 4050,
+            "isRecipe": false
+          }
+        },
+        {
+          "id": 36,
+          "name": "item_magic_wand",
+          "displayName": "Magic Wand",
+          "shortName": "magic_wand",
+          "components": null,
+          "stat": {
+            "cost": 460,
+            "isRecipe": false
+          }
+        },
+        {
+          "id": 63,
+          "name": "item_power_treads",
+          "displayName": "Power Treads",
+          "shortName": "power_treads",
+          "components": null,
+          "stat": {
+            "cost": 1400,
+            "isRecipe": false
+          }
+        },
+        {
+          "id": 35,
+          "name": "item_recipe_magic_wand",
+          "displayName": "Magic Wand Recipe",
+          "shortName": "recipe_magic_wand",
+          "components": [
+            {
+              "componentId": 34
+            },
+            {
+              "componentId": 16
+            },
+            {
+              "componentId": 16
+            }
+          ],
+          "stat": {
+            "cost": 150,
+            "isRecipe": true
+          }
+        }
+      ]
+    }
+  }
+}

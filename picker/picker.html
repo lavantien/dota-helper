@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="dark">
+<title>pick simulator</title>
+<link rel="stylesheet" href="../ui/ui.css">
+<link rel="stylesheet" href="picker.css">
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <a class="back" href="../guide/index.html">back to the guide</a>
+    <h1>pick simulator</h1>
+    <div id="metaChips" class="chips"></div>
+  </header>
+
+  <section class="card">
+    <div id="phase" class="phasebanner"></div>
+    <div class="board">
+      <div>
+        <div class="teamhead">our picks</div>
+        <div id="allySlots" class="slots"></div>
+      </div>
+      <div>
+        <div class="teamhead">enemy picks</div>
+        <div id="enemySlots" class="slots"></div>
+      </div>
+    </div>
+    <div class="searchline">
+      <div id="aimChip" class="aimchip" role="status" aria-live="polite"></div>
+      <div class="acwrap">
+        <input id="search" placeholder="search any roster hero, enter to place" autocomplete="off"
+          role="combobox" aria-label="search roster heroes" aria-autocomplete="list"
+          aria-expanded="false" aria-controls="acList">
+        <div id="acList" class="aclist" role="listbox" hidden></div>
+      </div>
+    </div>
+    <div id="bans" class="bans"></div>
+    <div id="legend" class="poollist"></div>
+    <div id="banner" class="banner"></div>
+  </section>
+
+  <section class="card">
+    <div class="roleline"><span>role</span><div id="roleSel" class="seg"></div></div>
+    <div class="rscroll"><div id="results" class="results"></div></div>
+  </section>
+</div>
+
+<script src="picker-data-generated.js"></script>
+<script src="picker-score.js"></script>
+<script src="picker-search.js"></script>
+<script src="picker-app.js"></script>
+</body>
+</html>

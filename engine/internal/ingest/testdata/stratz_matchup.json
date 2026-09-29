@@ -1,0 +1,22 @@
+{
+  "data": {
+    "heroStats": {
+      "matchUp": [
+        {
+          "heroId": 8,
+          "vs": [
+            { "heroId2": 0, "matchCount": 5000000, "winCount": 2500000, "synergy": 0 },
+            { "heroId2": 1, "matchCount": 61234, "winCount": 29871, "synergy": -0.42 },
+            { "heroId2": 8, "matchCount": 0, "winCount": 0, "synergy": 0 },
+            { "heroId2": 14, "matchCount": 5120, "winCount": 2701, "synergy": 1.83 }
+          ],
+          "with": [
+            { "heroId2": 0, "matchCount": 5000000, "winCount": 2500000, "synergy": 0 },
+            { "heroId2": 2, "matchCount": 9412, "winCount": 4920, "synergy": 0.51 },
+            { "heroId2": 21, "matchCount": 811, "winCount": 402, "synergy": -2.06 }
+          ]
+        }
+      ]
+    }
+  }
+}

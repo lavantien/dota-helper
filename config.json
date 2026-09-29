@@ -1,0 +1,669 @@
+{
+  "patch": "7.41f",
+  "patchEpoch": "2026-09-15",
+  "roles": [
+    {
+      "id": "1",
+      "label": "pos 1, carry"
+    },
+    {
+      "id": "2",
+      "label": "pos 2, mid"
+    },
+    {
+      "id": "3",
+      "label": "pos 3, offlane"
+    },
+    {
+      "id": "4",
+      "label": "pos 4, soft supp"
+    },
+    {
+      "id": "5",
+      "label": "pos 5, hard supp"
+    }
+  ],
+  "pool": [
+    {
+      "slug": "phantom-lancer",
+      "name": "Phantom Lancer",
+      "role": "1",
+      "tier": "dedicated"
+    },
+    {
+      "slug": "juggernaut",
+      "name": "Juggernaut",
+      "role": "1",
+      "tier": "dedicated"
+    },
+    {
+      "slug": "troll-warlord",
+      "name": "Troll Warlord",
+      "role": "1",
+      "tier": "dedicated"
+    },
+    {
+      "slug": "spectre",
+      "name": "Spectre",
+      "role": "1",
+      "tier": "dedicated"
+    },
+    {
+      "slug": "lifestealer",
+      "name": "Lifestealer",
+      "role": "1",
+      "tier": "dedicated"
+    },
+    {
+      "slug": "sven",
+      "name": "Sven",
+      "role": "1",
+      "tier": "dedicated"
+    },
+    {
+      "slug": "anti-mage",
+      "name": "Anti-Mage",
+      "role": "1",
+      "tier": "dedicated"
+    },
+    {
+      "slug": "windranger",
+      "name": "Windranger",
+      "role": "1",
+      "tier": "dedicated"
+    },
+    {
+      "slug": "phantom-assassin",
+      "name": "Phantom Assassin",
+      "role": "1",
+      "tier": "dedicated"
+    },
+    {
+      "slug": "ursa",
+      "name": "Ursa",
+      "role": "1",
+      "tier": "dedicated"
+    },
+    {
+      "slug": "faceless-void",
+      "name": "Faceless Void",
+      "role": "1",
+      "tier": "dedicated"
+    },
+    {
+      "slug": "terrorblade",
+      "name": "Terrorblade",
+      "role": "1",
+      "tier": "dedicated"
+    },
+    {
+      "slug": "medusa",
+      "name": "Medusa",
+      "role": "1",
+      "tier": "dedicated"
+    },
+    {
+      "slug": "lone-druid",
+      "name": "Lone Druid",
+      "role": "1",
+      "tier": "dedicated"
+    },
+    {
+      "slug": "templar-assassin",
+      "name": "Templar Assassin",
+      "role": "1",
+      "tier": "dedicated"
+    },
+    {
+      "slug": "drow-ranger",
+      "name": "Drow Ranger",
+      "role": "1",
+      "tier": "dedicated"
+    },
+    {
+      "slug": "alchemist",
+      "name": "Alchemist",
+      "role": "1",
+      "tier": "dedicated"
+    },
+    {
+      "slug": "tiny",
+      "name": "Tiny",
+      "role": "1",
+      "tier": "dedicated"
+    },
+    {
+      "slug": "natures-prophet",
+      "name": "Nature's Prophet",
+      "role": "1",
+      "tier": "dedicated"
+    },
+    {
+      "slug": "arc-warden",
+      "name": "Arc Warden",
+      "role": "2",
+      "tier": "dedicated"
+    },
+    {
+      "slug": "bloodseeker",
+      "name": "Bloodseeker",
+      "role": "2",
+      "tier": "dedicated"
+    },
+    {
+      "slug": "dragon-knight",
+      "name": "Dragon Knight",
+      "role": "2",
+      "tier": "dedicated"
+    },
+    {
+      "slug": "earth-spirit",
+      "name": "Earth Spirit",
+      "role": "2",
+      "tier": "dedicated"
+    },
+    {
+      "slug": "earthshaker",
+      "name": "Earthshaker",
+      "role": "2",
+      "tier": "dedicated"
+    },
+    {
+      "slug": "slark",
+      "name": "Slark",
+      "role": "2",
+      "tier": "dedicated"
+    },
+    {
+      "slug": "slardar",
+      "name": "Slardar",
+      "role": "2",
+      "tier": "dedicated"
+    },
+    {
+      "slug": "magnataur",
+      "name": "Magnus",
+      "role": "2",
+      "tier": "dedicated"
+    },
+    {
+      "slug": "ember-spirit",
+      "name": "Ember Spirit",
+      "role": "2",
+      "tier": "dedicated"
+    },
+    {
+      "slug": "lina",
+      "name": "Lina",
+      "role": "2",
+      "tier": "dedicated"
+    },
+    {
+      "slug": "sniper",
+      "name": "Sniper",
+      "role": "2",
+      "tier": "dedicated"
+    },
+    {
+      "slug": "zeus",
+      "name": "Zeus",
+      "role": "2",
+      "tier": "dedicated"
+    },
+    {
+      "slug": "visage",
+      "name": "Visage",
+      "role": "3",
+      "tier": "dedicated"
+    },
+    {
+      "slug": "enigma",
+      "name": "Enigma",
+      "role": "3",
+      "tier": "dedicated"
+    },
+    {
+      "slug": "wraith-king",
+      "name": "Wraith King",
+      "role": "3",
+      "tier": "dedicated"
+    },
+    {
+      "slug": "night-stalker",
+      "name": "Night Stalker",
+      "role": "3",
+      "tier": "dedicated"
+    },
+    {
+      "slug": "legion-commander",
+      "name": "Legion Commander",
+      "role": "3",
+      "tier": "dedicated"
+    },
+    {
+      "slug": "dawnbreaker",
+      "name": "Dawnbreaker",
+      "role": "3",
+      "tier": "dedicated"
+    },
+    {
+      "slug": "dark-seer",
+      "name": "Dark Seer",
+      "role": "3",
+      "tier": "dedicated"
+    },
+    {
+      "slug": "kunkka",
+      "name": "Kunkka",
+      "role": "3",
+      "tier": "dedicated"
+    },
+    {
+      "slug": "razor",
+      "name": "Razor",
+      "role": "3",
+      "tier": "dedicated"
+    },
+    {
+      "slug": "centaur",
+      "name": "Centaur Warrunner",
+      "role": "3",
+      "tier": "dedicated"
+    },
+    {
+      "slug": "necrophos",
+      "name": "Necrophos",
+      "role": "3",
+      "tier": "dedicated"
+    },
+    {
+      "slug": "doom",
+      "name": "Doom",
+      "role": "3",
+      "tier": "dedicated"
+    },
+    {
+      "slug": "sand-king",
+      "name": "Sand King",
+      "role": "3",
+      "tier": "dedicated"
+    },
+    {
+      "slug": "bounty-hunter",
+      "name": "Bounty Hunter",
+      "role": "4",
+      "tier": "dedicated"
+    },
+    {
+      "slug": "elder-titan",
+      "name": "Elder Titan",
+      "role": "4",
+      "tier": "dedicated"
+    },
+    {
+      "slug": "spirit-breaker",
+      "name": "Spirit Breaker",
+      "role": "4",
+      "tier": "dedicated"
+    },
+    {
+      "slug": "phoenix",
+      "name": "Phoenix",
+      "role": "4",
+      "tier": "dedicated"
+    },
+    {
+      "slug": "winter-wyvern",
+      "name": "Winter Wyvern",
+      "role": "4",
+      "tier": "dedicated"
+    },
+    {
+      "slug": "rubick",
+      "name": "Rubick",
+      "role": "4",
+      "tier": "dedicated"
+    },
+    {
+      "slug": "pudge",
+      "name": "Pudge",
+      "role": "4",
+      "tier": "dedicated"
+    },
+    {
+      "slug": "tusk",
+      "name": "Tusk",
+      "role": "4",
+      "tier": "dedicated"
+    },
+    {
+      "slug": "ogre-magi",
+      "name": "Ogre Magi",
+      "role": "4",
+      "tier": "dedicated"
+    },
+    {
+      "slug": "hoodwink",
+      "name": "Hoodwink",
+      "role": "4",
+      "tier": "dedicated"
+    },
+    {
+      "slug": "shadow-shaman",
+      "name": "Shadow Shaman",
+      "role": "5",
+      "tier": "dedicated"
+    },
+    {
+      "slug": "nyx-assassin",
+      "name": "Nyx Assassin",
+      "role": "5",
+      "tier": "dedicated"
+    },
+    {
+      "slug": "abaddon",
+      "name": "Abaddon",
+      "role": "5",
+      "tier": "dedicated"
+    },
+    {
+      "slug": "mirana",
+      "name": "Mirana",
+      "role": "5",
+      "tier": "dedicated"
+    },
+    {
+      "slug": "witch-doctor",
+      "name": "Witch Doctor",
+      "role": "5",
+      "tier": "dedicated"
+    },
+    {
+      "slug": "ringmaster",
+      "name": "Ringmaster",
+      "role": "5",
+      "tier": "dedicated"
+    },
+    {
+      "slug": "crystal-maiden",
+      "name": "Crystal Maiden",
+      "role": "5",
+      "tier": "dedicated"
+    },
+    {
+      "slug": "undying",
+      "name": "Undying",
+      "role": "5",
+      "tier": "dedicated"
+    }
+  ],
+  "heatmap": {
+    "enemyCount": 26
+  },
+  "aoeClearHeroes": [
+    "axe",
+    "beastmaster",
+    "dark-seer",
+    "earthshaker",
+    "invoker",
+    "jakiro",
+    "kunkka",
+    "leshrac",
+    "magnataur",
+    "sand-king",
+    "warlock",
+    "winter-wyvern"
+  ],
+  "scope": {
+    "bracket": "DIVINE_IMMORTAL",
+    "gameMode": 22,
+    "lobbyType": 7,
+    "explorer": {
+      "rankTierMin": 71
+    },
+    "note": "divine-immortal ranked all pick; gameMode 22 = ALL_PICK_RANKED and lobbyType 7 = RANKED verified against constants by make probe-scope; the win* aggregates filter by gameMode, the pair and item fields accept no mode arg at any tier (ref/dota2/README.md scope conventions)"
+  },
+  "endpoints": {
+    "howdoiplay": "https://howdoiplay.com",
+    "opendota": "https://api.opendota.com",
+    "stratz": "https://api.stratz.com/graphql"
+  },
+  "stratz": {
+    "take": 7,
+    "note": "window semantics live-verified 2026-09-29 by make probe-window: take = days on the winDay family (popularity, positions, trends) and saturates at 30 server-side; matchUp take is pagination (row cap, pinned at 200 = every enemy row) and its Long week arg is a calendar-week stamp pinned to the last completed week (week-start unix seconds, Monday UTC; the in-progress week is ignored server-side); itemFullPurchase shares the week stamp while its minTime/maxTime filter purchase minutes inside a match, not the window",
+    "requestIntervalMs": 420,
+    "burstCapPerSec": 7,
+    "minWithRows": 100,
+    "minVsRows": 100,
+    "maxAbsSynergy": 20,
+    "headers": {
+      "Origin": "https://stratz.com",
+      "Referer": "https://stratz.com/",
+      "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
+    }
+  },
+  "opendota": {
+    "requestsPerMin": 60,
+    "explorerMinMatches": 30
+  },
+  "builds": {
+    "minMatches": 100,
+    "topN": 7,
+    "timingTopN": 2,
+    "minCost": 1000,
+    "proseContextItems": [
+      "ghost scepter",
+      "blade mail",
+      "dust"
+    ],
+    "proseGateStopWords": [
+      "force",
+      "lifesteal",
+      "echo",
+      "blink",
+      "cyclone",
+      "arcane",
+      "tombstone",
+      "sphere",
+      "blessing",
+      "cloak",
+      "shard",
+      "vampiric"
+    ],
+    "itemAliases": {
+      "aghanims_shard": "shard",
+      "arcane_boots": "arcane",
+      "black_king_bar": "bkb",
+      "diffusal_blade": "diffusal",
+      "echo_sabre": "echo",
+      "force_staff": "force",
+      "glimmer_cape": "glimmer",
+      "greater_crit": "daedalus",
+      "hand_of_midas": "midas",
+      "helm_of_the_overlord": "helm dom",
+      "hurricane_pike": "pike",
+      "invis_sword": "shadow blade",
+      "lotus_orb": "lotus",
+      "medallion_of_courage": "medallion",
+      "octarine_core": "octarine",
+      "phase_boots": "phase",
+      "power_treads": "treads",
+      "radiance": "rad",
+      "rod_of_atos": "atos",
+      "scythe_of_vyse": "sheepstick",
+      "shivas_guard": "shiva",
+      "spirit_vessel": "vessel",
+      "ultimate_scepter": "agh",
+      "ultimate_scepter_2": "blessing",
+      "urn_of_shadows": "urn"
+    }
+  },
+  "backfill": {
+    "take": 100,
+    "maxRequests": 1500,
+    "targetMatches": 20000,
+    "minDurationSec": 900,
+    "gameMode": 2,
+    "lobbyType": 1,
+    "note": "per-match drafts via stratz league matches: pub per-match lists are token-gated on the default tier (player.matches serves empty, matches(ids) answers User is not an admin, verified by make probe-matches), while league.matches serves full pickBans; gameMode 2 = CAPTAINS_MODE is the mode that carries drafts on that path, lobbyType 1 = PRACTICE is what every served league row echoes (unranked pub scope stays covered by the heroStats aggregate crawl)"
+  },
+  "eval": {
+    "topK": [
+      1,
+      3
+    ],
+    "minSidePool": 1,
+    "split": {
+      "trainFrac": 0.7
+    },
+    "bootstrap": {
+      "resamples": 1000,
+      "seed": 42
+    },
+    "calibrationBins": 10,
+    "reportMaxCells": 400,
+    "alphaFit": {
+      "grid": [
+        5,
+        10,
+        20,
+        40,
+        80,
+        160
+      ],
+      "minHoldoutN": 30
+    },
+    "completionFit": {
+      "ranks": [
+        4,
+        8,
+        12,
+        16
+      ],
+      "lambdas": [
+        0.01,
+        0.1,
+        1
+      ],
+      "maskFrac": 0.2
+    },
+    "fit": {
+      "gridStep": 0.1,
+      "maxWeight": 2,
+      "maxPasses": 3,
+      "minHoldoutGain": 0.005
+    },
+    "screen": {
+      "enabled": false,
+      "q": 0.05,
+      "minMatches": 30,
+      "chiSqMinExpected": 5,
+      "failAlphaMult": 4
+    },
+    "naiveBayes": {
+      "alpha": 1
+    },
+    "knn": {
+      "k": 50
+    },
+    "triples": {
+      "minSupport": 30,
+      "enabled": false
+    },
+    "seq": {
+      "enabled": false,
+      "censusMinCount": 30,
+      "censusRatio": 2
+    },
+    "ensemble": {
+      "enabled": false,
+      "bags": 25
+    }
+  },
+  "thresholds": {
+    "disCut": 1,
+    "minKept": 2,
+    "matchupMinMatches": 1,
+    "thinCellMatches": 50,
+    "autoseedCap": 3
+  },
+  "shrink": {
+    "matchupAlpha": 1633.6489730617834,
+    "synergyAlpha": 25,
+    "overallWrAlpha": 500
+  },
+  "completion": {
+    "rank": 8,
+    "lambda": 0.1,
+    "maxIter": 200,
+    "tol": 0.000001,
+    "seed": 42,
+    "pivotFloor": 1e-12
+  },
+  "weights": {
+    "knownMu": 1,
+    "synByRole": {
+      "1": 0.3,
+      "2": 0.2,
+      "3": 0.3,
+      "4": 1,
+      "5": 1
+    },
+    "prior": 0.2,
+    "genericFit": -0.5,
+    "exposure": 2,
+    "flexibility": 2
+  },
+  "score": {
+    "enemySlots": 5,
+    "allySlots": 4,
+    "midPct": 0.5,
+    "flexCap": 50,
+    "flexHalf": 2
+  },
+  "normalize": {
+    "zSdFloor": 0.05
+  },
+  "gateDeltas": {
+    "bonus": 0,
+    "penalty": -0.25
+  },
+  "aliases": {
+    "abyssal-underlord": "underlord",
+    "antimage": "anti-mage",
+    "doom-bringer": "doom",
+    "furion": "natures-prophet",
+    "life-stealer": "lifestealer",
+    "necrolyte": "necrophos",
+    "nevermore": "shadow-fiend",
+    "obsidian-destroyer": "outworld-destroyer",
+    "shredder": "timbersaw",
+    "skeleton-king": "wraith-king",
+    "windrunner": "windranger",
+    "wisp": "io",
+    "zuus": "zeus"
+  },
+  "paths": {
+    "tokenFile": "var/stratz.token",
+    "dbFile": "var/dota.duckdb",
+    "stratzRawDir": "ref/dota2/synergy/raw",
+    "opendotaRawDir": "ref/dota2/raw/opendota",
+    "buildsRawDir": "ref/dota2/builds/raw",
+    "matchesRawDir": "ref/dota2/matches/raw",
+    "positionsRawDir": "ref/dota2/positions/raw",
+    "trendsFile": "ref/dota2/trends/snapshots.ndjson",
+    "matchupsDir": "ref/dota2/matchups",
+    "pickerDir": "picker",
+    "guideDir": "guide",
+    "contentPath": "content.json",
+    "evalOut": "ref/dota2/eval/latest.json",
+    "fitOut": "var/eval-fit.json",
+    "derivationsPath": "ref/dota2/eval/derivations.json"
+  },
+  "emit": {
+    "pickerOut": "picker/picker-data-generated.js",
+    "guideOut": "guide/guide-data-generated.js",
+    "dataJsOut": "guide/data.js",
+    "decimals": 4
+  }
+}

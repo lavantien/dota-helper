@@ -1,7 +1,5 @@
-data/*.db-journal
-*.tgz
-node_modules/
+var/
+.claude/
+.playwright-mcp/
 .superpowers/
-/autochess.exe
-/coverage.out
-/coverage.json
+ref/dota2/matchups/archive-dotabuff/

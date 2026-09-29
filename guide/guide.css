@@ -1,0 +1,105 @@
+/* guide layout: masthead with patch stamp, tabbed sections, heatmap, hero panels.
+   tokens and shared primitives live in ../ui/ui.css */
+
+header { padding: var(--sp-4) var(--sp-5) var(--sp-2); }
+.masthead { display: flex; gap: var(--sp-4); align-items: center; flex-wrap: wrap; }
+.stamp {
+  font-family: var(--font-display); font-size: var(--fs-display); line-height: 1;
+  font-weight: var(--fw-bold); letter-spacing: .04em; color: var(--accent);
+  border: 2px solid var(--accent-line); border-radius: var(--r-2);
+  padding: var(--sp-1) var(--sp-3); display: inline-block;
+}
+header .sub { margin-top: var(--sp-2); }
+.poolstrip { display: flex; flex-wrap: wrap; gap: 4px; margin-top: var(--sp-3); }
+.poolstrip button { padding: 0.125rem; border: 1px solid transparent; border-radius: 4px; }
+.poolstrip button:hover { border-color: var(--grid); }
+.poolstrip img, .poolstrip .hinit { width: var(--hicon-strip-w); height: var(--hicon-strip-h); }
+
+nav {
+  display: flex; flex-wrap: wrap; gap: var(--sp-1);
+  padding: var(--sp-2) var(--sp-5); position: sticky; top: 0;
+  background: var(--surface-2); border-bottom: 1px solid var(--grid); z-index: 5;
+}
+nav button { font-family: var(--font-display); }
+
+main { padding: var(--sp-1) var(--sp-5) var(--sp-5); }
+
+#rolePool { display: flex; flex-wrap: wrap; gap: var(--sp-1); }
+
+ul { padding-left: 1.4rem; margin: var(--sp-1) 0; }
+.plain li { margin-bottom: var(--sp-1); }
+.fix { color: var(--ink-2); max-width: var(--prose-w); }
+.fix b { color: var(--ink-1); font-weight: var(--fw-medium); }
+.cap { text-transform: capitalize; }
+
+/* hero panel */
+.herohead { display: flex; gap: var(--sp-3); align-items: center; margin-bottom: var(--sp-2); }
+.herohead img.big { width: var(--hicon-big-w); height: var(--hicon-big-h); border-radius: var(--r-2); object-fit: cover; }
+.herohead .name { font-family: var(--font-display); font-size: var(--fs-h2); font-weight: var(--fw-strong); }
+.kv { display: grid; grid-template-columns: 7rem 1fr; gap: var(--sp-1) var(--sp-3); margin: var(--sp-2) 0; }
+.kv dt { color: var(--muted); font-size: var(--fs-small); }
+.kv dd { margin: 0; max-width: var(--prose-w); }
+/* using the picker: same wall language as the principles quips with a taller
+   track floor for their longer prose; the intro spans with the paragraph
+   measure, the min() floor lets tracks collapse on phone widths */
+#usingPicker { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(420px, 100%), 1fr)); gap: var(--sp-3); }
+#usingPicker > h2, #usingPicker > .sub { grid-column: 1 / -1; }
+#usingPicker > .pcard { margin-bottom: 0; }
+
+/* principle quips are a card wall, the grid track is the measure; the min()
+   floor lets tracks collapse on phone widths instead of overflowing */
+#principles { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(340px, 100%), 1fr)); gap: var(--sp-3); }
+#principles > h2 { grid-column: 1 / -1; }
+#principles .card { margin-bottom: 0; }
+
+/* matchup grids: countered by / counters as two dense chip columns */
+.mugrid { display: grid; grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr)); gap: var(--sp-2) var(--sp-4); font-variant-numeric: tabular-nums; }
+.mugrid .cap { margin-bottom: var(--sp-1); }
+.muchips { display: flex; flex-wrap: wrap; gap: var(--sp-1); }
+.muitem {
+  display: inline-flex; align-items: center; gap: var(--sp-2);
+  border: 1px solid var(--grid); border-radius: var(--r-1); background: var(--surface-3);
+  padding: 0.125rem var(--sp-2) 0.125rem 0.125rem; font-size: var(--fs-small);
+  transition: border-color .12s ease;
+}
+.muitem img, .muitem .hinit { width: var(--hicon-strip-w); height: var(--hicon-strip-h); }
+.muitem.pool { cursor: pointer; }
+.muitem.pool:hover { border-color: var(--ink-2); }
+.muitem .z { font-family: var(--font-display); }
+.muitem .z.bad { color: var(--bad-text); }
+.muitem .z.good { color: var(--good-text); }
+
+/* heatmap */
+.key { display: flex; gap: var(--sp-4); align-items: center; font-size: var(--fs-small); color: var(--ink-2); flex-wrap: wrap; margin: var(--sp-2) 0; }
+.sw { width: 1.6rem; height: 0.7rem; border-radius: 3px; display: inline-block; vertical-align: -1px; margin-right: var(--sp-1); }
+.sw-bad { background: var(--bad-strong); }
+.sw-bad-mild { background: var(--bad-mild); }
+.sw-good { background: var(--good-strong); }
+.sw-good-mild { background: var(--good-mild); }
+.sw-off { background: var(--off-cell); }
+.hmwrap { overflow-x: auto; }
+.hm { border-collapse: collapse; font-variant-numeric: tabular-nums; }
+.hm th { font-weight: 500; color: var(--ink-2); font-size: var(--fs-micro); }
+.hm th.colh { padding: 0 0.125rem; }
+.hm th.colh img, .hm th.colh .hinit { width: var(--hicon-col-w); height: var(--hicon-col-h); }
+.hm th.rowh { text-align: left; padding-right: var(--sp-2); white-space: nowrap; }
+.rowlink {
+  display: inline-flex; align-items: center; gap: var(--sp-1); min-height: var(--control-h);
+  font-family: var(--font-display); font-size: var(--fs-small); color: var(--ink-1);
+}
+.rowlink:hover { color: var(--accent); }
+.hm td { width: 2.5rem; height: 2.5rem; border: 2px solid var(--surface-1); border-radius: var(--r-1);
+  text-align: center; font-size: var(--fs-small); }
+.hm td.off { background: var(--off-cell); color: var(--ink-2); }
+.hmcell { display: block; width: 100%; height: 100%; min-width: 2.2rem; min-height: 2.2rem; border-radius: var(--r-1); font-family: var(--font-display); font-weight: var(--fw-medium); }
+
+#tip {
+  position: fixed; pointer-events: none; background: var(--surface-3); color: var(--ink-1);
+  border: 1px solid var(--ring); border-radius: var(--r-2); padding: var(--sp-1) var(--sp-2);
+  font-size: var(--fs-small); box-shadow: var(--shadow-1); display: none; z-index: 20; max-width: 280px;
+}
+
+/* practice drills */
+.drill { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(340px, 100%), 1fr)); gap: var(--sp-2); }
+.drill div { border-left: 3px solid var(--grid); padding-left: var(--sp-3); }
+.drill b { font-weight: var(--fw-medium); }
