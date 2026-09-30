@@ -1,5 +1,5 @@
 {
-  "crawledAt": "2026-09-30T04:13:24Z",
+  "crawledAt": "2026-09-30T05:39:12Z",
   "bracket": "DIVINE_IMMORTAL",
   "source": "stratz completed-week crawl",
   "field": "itemFullPurchase",
@@ -135,6 +135,15 @@
       "rowCount": 1734
     },
     {
+      "slug": "marci",
+      "role": "2",
+      "heroId": 136,
+      "fetchedAt": "2026-09-30T05:39:12Z",
+      "cached": false,
+      "accepted": true,
+      "rowCount": 1265
+    },
+    {
       "slug": "dragon-knight",
       "role": "2",
       "heroId": 49,
@@ -142,15 +151,6 @@
       "cached": true,
       "accepted": true,
       "rowCount": 2377
-    },
-    {
-      "slug": "storm-spirit",
-      "role": "2",
-      "heroId": 17,
-      "fetchedAt": "2026-09-30T04:13:24Z",
-      "cached": false,
-      "accepted": true,
-      "rowCount": 2213
     },
     {
       "slug": "slark",
@@ -169,6 +169,15 @@
       "cached": true,
       "accepted": true,
       "rowCount": 1394
+    },
+    {
+      "slug": "storm-spirit",
+      "role": "2",
+      "heroId": 17,
+      "fetchedAt": "2026-09-30T04:13:24Z",
+      "cached": true,
+      "accepted": true,
+      "rowCount": 2213
     },
     {
       "slug": "enigma",

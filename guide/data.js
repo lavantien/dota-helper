@@ -10,7 +10,7 @@ window.GUIDE = {
       'Roshan and Tormentor swapped sides, Tormentor sits bottom low ground, spawns ~20 min, 3000 barrier shield, 30% damage reflect',
       'neutral items are crafted, tier 1 exists at 0:00, full-clear camps to bank Madstone',
       'rescale puts immortal draft at 8500, your first 10 to 15 calibration games outweigh the next 100',
-      'meta: v0.2 pool cut from dota2protracker pro tier lists on 7.41f, Alchemist, Terrorblade, Luna, Windranger and Anti-Mage join pos 1, Storm Spirit the mid, Doom, Centaur and Slardar the offlane, Rubick, Lion, Shadow Shaman, Clockwerk and Witch Doctor the supports',
+      'meta: v0.2 pool cut from dota2protracker pro tier lists on 7.41f, Alchemist, Terrorblade, Luna, Windranger and Anti-Mage join pos 1, Storm Spirit and Marci the mid, Doom, Centaur and Slardar the offlane, Rubick, Lion, Shadow Shaman, Clockwerk and Witch Doctor the supports',
     ],
     corrections: [
       'tormentor: old advice said contest it at 20 for the shard. corrected: buy the shard with gold at 15+ when your spike needs it, treat the Tormentor as a 3-man post-fight objective, never solo it, never ping-beg for it',
@@ -152,6 +152,15 @@ window.GUIDE = {
       timings: [['mjollnir', 16], ['pike', 24]],
       tech: ['dragon knight, night stalker, and phantom lancer are the vetoes, push answers and illusion spam blunt the split', 'anti mage, sven, and ogre magi style lines are the free wins, slow farmers lose the map race'],
       mechanics: [['tip', 'sprout grants flying vision around the point, scout fog jukes and cliff wards with it'], ['tip', 'sprout can be ground targeted, trap invis guesses and linken holders without direct targeting'], ['tip', 'canceling teleportation mid cast costs nothing, no cooldown and no mana, fake the rotation'], ['tip', 'wrath bounces a fixed count and each hit beyond the first adds damage, cast with vision across the map'], ['tip', 'the scepter wrath entangles every enemy it hits, a root and disarm bind scaling with the bounce'], ['counter', 'hold your disable for the end of the teleport animation, the cast is long and fully visible']] },
+    { slug: 'marci', name: 'Marci', roles: ['2'], tier: 'dedicated',
+      identity: 'melee brawler mid, dispose grabs and hurls any body behind her, rebound leaps off allies into the landing stun, bodyguard shares the shield and the lifesteal, unleash flurries through the committed fight',
+      why: 'dedicated pos 2, every roaming ally becomes a kill setup for the leap and the throwback, favored into immobile paper mids, vetoed by the root crew',
+      how: 'leap off the ranged creep into the wave, throw the target back into the team, shield the diving core, unleash inside the brawl',
+      when: 'lane tempo off the pair setups from the opening ranks, mid roams land the throw picks, mid game brawls feed the flurry windows, falls behind when the roots and the kite stack up',
+      build: 'bkb, blink, shard, daedalus, monkey king bar, nullifier, abyssal blade',
+      timings: [['bkb', 23], ['blink', 24]],
+      tech: ['crystal maiden, dark willow, and treant are the vetoes, the roots blank the rebound and the planted body dies', 'sniper, zeus, and shadow fiend style immobile mids are the free wins, the leap and the throw reach every paper body'],
+      mechanics: [['tip', 'the dispose throw counts as a stun, it breaks enemy channels mid cast'], ['tip', 'the dispose throw runs shorter uphill and longer downhill, map height bends the distance'], ['tip', 'the rebound leap still fires when the target dies mid dash, the corpse carries you'], ['tip', 'enemies cannot see the unleash pulses while she sits in fog, the damage still lands'], ['counter', 'roots and leashes stop the rebound cast entirely, hold one ready for her dash'], ['counter', 'a started rebound only stops for forced movement and knockback, she eats the stun and keeps flying']] },
     { slug: 'dragon-knight', name: 'Dragon Knight', roles: ['2'], tier: 'dedicated',
       identity: 'lane brick that counters magic mids',
       why: 'counter pick into puck and TA, dragon blood blanks magic harass',
@@ -401,7 +410,7 @@ window.GUIDE = {
       ['centaur', 'initiate stomp into the stampede follow until the whole team moves as one body'], ['lion', 'ground cast earth spike from fog onto a moving target until the cast stops revealing lion'],
       ['rattletrap', 'hook into cog cage sequence on a lone target until the trap closes every time'], ['witch-doctor', 'cask bounce counting off the wave until the second hit always catches the enemy hero'],
       ['slardar', 'sprint crush entry onto the runner until the bash and the haze land as one motion'], ['rubick', 'lift timing onto the blinking initiator until the pick lands before their spell starts'],
-      ['storm-spirit', 'ball onto the lone target and vortex on landing until the zip entry, the pull, and the overload hit land as one motion']
+      ['storm-spirit', 'ball onto the lone target and vortex on landing until the zip entry, the pull, and the overload hit land as one motion'], ['marci', 'rebound entry off the roaming ally into the dispose throwback until the pick lands as one motion']
     ],
     replay: ['after each session: 10 min, only your deaths, write one line per death: where you should have been', 'weekly: rewatch your 2 best farm games to lock in what good felt like'],
     calibration: ['first pick from the dedicated board only', 'counter picks only after enemy cores are visible', 'comfort pool only during calibration games'],

@@ -7,7 +7,7 @@
       "Roshan and Tormentor swapped sides, Tormentor sits bottom low ground, spawns ~20 min, 3000 barrier shield, 30% damage reflect",
       "neutral items are crafted, tier 1 exists at 0:00, full-clear camps to bank Madstone",
       "rescale puts immortal draft at 8500, your first 10 to 15 calibration games outweigh the next 100",
-      "meta: v0.2 pool cut from dota2protracker pro tier lists on 7.41f, Alchemist, Terrorblade, Luna, Windranger and Anti-Mage join pos 1, Storm Spirit the mid, Doom, Centaur and Slardar the offlane, Rubick, Lion, Shadow Shaman, Clockwerk and Witch Doctor the supports"
+      "meta: v0.2 pool cut from dota2protracker pro tier lists on 7.41f, Alchemist, Terrorblade, Luna, Windranger and Anti-Mage join pos 1, Storm Spirit and Marci the mid, Doom, Centaur and Slardar the offlane, Rubick, Lion, Shadow Shaman, Clockwerk and Witch Doctor the supports"
     ],
     "corrections": [
       "tormentor: old advice said contest it at 20 for the shard. corrected: buy the shard with gold at 15+ when your spike needs it, treat the Tormentor as a 3-man post-fight objective, never solo it, never ping-beg for it",
@@ -235,6 +235,19 @@
         "meepo, broodmother, and lifestealer style floods are the free wins, the glaive bounce shreds every clumped body"
       ],
       "mechanics": [["tip", "the blessing aura counts creep-hero bodies as heroes, brewlings and familiars ride the damage too"], ["tip", "her night vision outranges nearly every hero, at the vision edge at night you see them and they do not see you"], ["tip", "the orbiting glaive strikes carry true strike and ignore disarms entirely"], ["tip", "glaive bounces count as spell damage yet damage block still trims every bounce"], ["counter", "once the tier three falls the glaives bounce through every base structure, an errant bounce breaks your blink"], ["counter", "summons and illusions tank the eclipse beams, feed bodies into the storm instead of your carry"]]
+    },
+    "marci": {
+      "identity": "melee brawler mid, dispose grabs and hurls any body behind her, rebound leaps off allies into the landing stun, bodyguard shares the shield and the lifesteal, unleash flurries through the committed fight",
+      "why": "dedicated pos 2, every roaming ally becomes a kill setup for the leap and the throwback, favored into immobile paper mids, vetoed by the root crew",
+      "how": "leap off the ranged creep into the wave, throw the target back into the team, shield the diving core, unleash inside the brawl",
+      "when": "lane tempo off the pair setups from the opening ranks, mid roams land the throw picks, mid game brawls feed the flurry windows, falls behind when the roots and the kite stack up",
+      "build": "bkb, blink, shard, daedalus, monkey king bar, nullifier, abyssal blade",
+      "timings": [["bkb", 23], ["blink", 24]],
+      "tech": [
+        "crystal maiden, dark willow, and treant are the vetoes, the roots blank the rebound and the planted body dies",
+        "sniper, zeus, and shadow fiend style immobile mids are the free wins, the leap and the throw reach every paper body"
+      ],
+      "mechanics": [["tip", "the dispose throw counts as a stun, it breaks enemy channels mid cast"], ["tip", "the dispose throw runs shorter uphill and longer downhill, map height bends the distance"], ["tip", "the rebound leap still fires when the target dies mid dash, the corpse carries you"], ["tip", "enemies cannot see the unleash pulses while she sits in fog, the damage still lands"], ["counter", "roots and leashes stop the rebound cast entirely, hold one ready for her dash"], ["counter", "a started rebound only stops for forced movement and knockback, she eats the stun and keeps flying"]]
     },
     "mirana": {
       "identity": "arrow hunt soft support, sacred arrow snipes long range stuns from fog, starstorm showers the closest cluster, leap hops cliffs, moonlight veils the team",
@@ -550,7 +563,8 @@
       ["witch-doctor", "cask bounce counting off the wave until the second hit always catches the enemy hero"],
       ["slardar", "sprint crush entry onto the runner until the bash and the haze land as one motion"],
       ["rubick", "lift timing onto the blinking initiator until the pick lands before their spell starts"],
-      ["storm-spirit", "ball onto the lone target and vortex on landing until the zip entry, the pull, and the overload hit land as one motion"]
+      ["storm-spirit", "ball onto the lone target and vortex on landing until the zip entry, the pull, and the overload hit land as one motion"],
+      ["marci", "rebound entry off the roaming ally into the dispose throwback until the pick lands as one motion"]
     ],
     "replay": [
       "after each session: 10 min, only your deaths, write one line per death: where you should have been",

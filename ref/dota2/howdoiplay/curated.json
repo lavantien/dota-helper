@@ -1057,6 +1057,68 @@
         }
       }
     ],
+    "marci": [
+      {
+        "idx": 0,
+        "from": "tips[3]",
+        "verified": {
+          "date": "2026-09-30",
+          "verdict": "confirmed",
+          "source": "https://howdoiplay.com/tips/marci.html",
+          "text": "the dispose throw counts as a stun, it breaks enemy channels mid cast"
+        }
+      },
+      {
+        "idx": 1,
+        "from": "tips[4]",
+        "verified": {
+          "date": "2026-09-30",
+          "verdict": "confirmed",
+          "source": "https://howdoiplay.com/tips/marci.html",
+          "text": "the dispose throw runs shorter uphill and longer downhill, map height bends the distance"
+        }
+      },
+      {
+        "idx": 2,
+        "from": "tips[13]",
+        "verified": {
+          "date": "2026-09-30",
+          "verdict": "confirmed",
+          "source": "https://howdoiplay.com/tips/marci.html",
+          "text": "the rebound leap still fires when the target dies mid dash, the corpse carries you"
+        }
+      },
+      {
+        "idx": 3,
+        "from": "tips[20]",
+        "verified": {
+          "date": "2026-09-30",
+          "verdict": "confirmed",
+          "source": "https://howdoiplay.com/tips/marci.html",
+          "text": "enemies cannot see the unleash pulses while she sits in fog, the damage still lands"
+        }
+      },
+      {
+        "idx": 4,
+        "from": "counters[3]",
+        "verified": {
+          "date": "2026-09-30",
+          "verdict": "confirmed",
+          "source": "https://howdoiplay.com/tips/marci.html",
+          "text": "roots and leashes stop the rebound cast entirely, hold one ready for her dash"
+        }
+      },
+      {
+        "idx": 5,
+        "from": "counters[4]",
+        "verified": {
+          "date": "2026-09-30",
+          "verdict": "confirmed",
+          "source": "https://liquipedia.net/dota2/api.php?action=parse&page=Marci&format=json&prop=wikitext",
+          "text": "a started rebound only stops for forced movement and knockback, she eats the stun and keeps flying"
+        }
+      }
+    ],
     "mirana": [
       {
         "idx": 0,
