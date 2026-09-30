@@ -31,26 +31,14 @@
       "tier": "dedicated"
     },
     {
-      "slug": "juggernaut",
-      "name": "Juggernaut",
-      "role": "1",
-      "tier": "dedicated"
-    },
-    {
       "slug": "clinkz",
       "name": "Clinkz",
       "role": "1",
       "tier": "dedicated"
     },
     {
-      "slug": "sven",
-      "name": "Sven",
-      "role": "1",
-      "tier": "dedicated"
-    },
-    {
-      "slug": "lifestealer",
-      "name": "Lifestealer",
+      "slug": "juggernaut",
+      "name": "Juggernaut",
       "role": "1",
       "tier": "dedicated"
     },
@@ -61,14 +49,50 @@
       "tier": "dedicated"
     },
     {
+      "slug": "lifestealer",
+      "name": "Lifestealer",
+      "role": "1",
+      "tier": "dedicated"
+    },
+    {
+      "slug": "sven",
+      "name": "Sven",
+      "role": "1",
+      "tier": "dedicated"
+    },
+    {
+      "slug": "anti-mage",
+      "name": "Anti-Mage",
+      "role": "1",
+      "tier": "dedicated"
+    },
+    {
+      "slug": "windranger",
+      "name": "Windranger",
+      "role": "1",
+      "tier": "dedicated"
+    },
+    {
+      "slug": "luna",
+      "name": "Luna",
+      "role": "1",
+      "tier": "dedicated"
+    },
+    {
+      "slug": "terrorblade",
+      "name": "Terrorblade",
+      "role": "1",
+      "tier": "dedicated"
+    },
+    {
       "slug": "lone-druid",
       "name": "Lone Druid",
       "role": "1",
       "tier": "dedicated"
     },
     {
-      "slug": "natures-prophet",
-      "name": "Nature's Prophet",
+      "slug": "alchemist",
+      "name": "Alchemist",
       "role": "1",
       "tier": "dedicated"
     },
@@ -79,14 +103,14 @@
       "tier": "dedicated"
     },
     {
-      "slug": "dragon-knight",
-      "name": "Dragon Knight",
-      "role": "2",
+      "slug": "natures-prophet",
+      "name": "Nature's Prophet",
+      "role": "1",
       "tier": "dedicated"
     },
     {
-      "slug": "leshrac",
-      "name": "Leshrac",
+      "slug": "dragon-knight",
+      "name": "Dragon Knight",
       "role": "2",
       "tier": "dedicated"
     },
@@ -97,14 +121,14 @@
       "tier": "dedicated"
     },
     {
-      "slug": "enigma",
-      "name": "Enigma",
-      "role": "3",
+      "slug": "leshrac",
+      "name": "Leshrac",
+      "role": "2",
       "tier": "dedicated"
     },
     {
-      "slug": "dawnbreaker",
-      "name": "Dawnbreaker",
+      "slug": "enigma",
+      "name": "Enigma",
       "role": "3",
       "tier": "dedicated"
     },
@@ -115,8 +139,32 @@
       "tier": "dedicated"
     },
     {
+      "slug": "dawnbreaker",
+      "name": "Dawnbreaker",
+      "role": "3",
+      "tier": "dedicated"
+    },
+    {
+      "slug": "centaur",
+      "name": "Centaur Warrunner",
+      "role": "3",
+      "tier": "dedicated"
+    },
+    {
       "slug": "necrophos",
       "name": "Necrophos",
+      "role": "3",
+      "tier": "dedicated"
+    },
+    {
+      "slug": "slardar",
+      "name": "Slardar",
+      "role": "3",
+      "tier": "dedicated"
+    },
+    {
+      "slug": "doom",
+      "name": "Doom",
       "role": "3",
       "tier": "dedicated"
     },
@@ -133,15 +181,27 @@
       "tier": "dedicated"
     },
     {
+      "slug": "shadow-shaman",
+      "name": "Shadow Shaman",
+      "role": "4",
+      "tier": "dedicated"
+    },
+    {
       "slug": "mirana",
       "name": "Mirana",
       "role": "4",
       "tier": "dedicated"
     },
     {
-      "slug": "winter-wyvern",
-      "name": "Winter Wyvern",
-      "role": "5",
+      "slug": "rubick",
+      "name": "Rubick",
+      "role": "4",
+      "tier": "dedicated"
+    },
+    {
+      "slug": "lion",
+      "name": "Lion",
+      "role": "4",
       "tier": "dedicated"
     },
     {
@@ -151,8 +211,20 @@
       "tier": "dedicated"
     },
     {
-      "slug": "shadow-shaman",
-      "name": "Shadow Shaman",
+      "slug": "winter-wyvern",
+      "name": "Winter Wyvern",
+      "role": "5",
+      "tier": "dedicated"
+    },
+    {
+      "slug": "witch-doctor",
+      "name": "Witch Doctor",
+      "role": "5",
+      "tier": "dedicated"
+    },
+    {
+      "slug": "rattletrap",
+      "name": "Clockwerk",
       "role": "5",
       "tier": "dedicated"
     }

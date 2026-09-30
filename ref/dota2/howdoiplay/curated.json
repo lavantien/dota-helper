@@ -1,8 +1,132 @@
 {
-  "curatedAt": "2026-09-29",
+  "curatedAt": "2026-09-30",
   "source": "ref/dota2/howdoiplay/howdoiplay.json",
   "patch": "7.41",
   "heroes": {
+    "alchemist": [
+      {
+        "idx": 0,
+        "from": "tips[2]",
+        "verified": {
+          "date": "2026-09-30",
+          "verdict": "confirmed",
+          "source": "https://dota2.fandom.com/wiki/Alchemist",
+          "text": "catch them standing in the spray before the stun lands, the armor strip makes the concoction hit far harder"
+        }
+      },
+      {
+        "idx": 1,
+        "from": "tips[5]",
+        "verified": {
+          "date": "2026-09-30",
+          "verdict": "confirmed",
+          "source": "https://dota2.fandom.com/wiki/Alchemist",
+          "text": "the concoction's self detonation is lethal, cook it to deny yourself when the gank has you dead"
+        }
+      },
+      {
+        "idx": 2,
+        "from": "tips[7]",
+        "verified": {
+          "date": "2026-09-30",
+          "verdict": "confirmed",
+          "source": "https://dota2.fandom.com/wiki/Alchemist",
+          "text": "start brewing before the teleport and land with the stun fully cooked, only when you are first to the fight"
+        }
+      },
+      {
+        "idx": 3,
+        "from": "tips[8]",
+        "verified": {
+          "date": "2026-09-30",
+          "verdict": "confirmed",
+          "source": "https://dota2.fandom.com/wiki/Alchemist",
+          "text": "chemical rage is a basic dispel on cast, wipe damage over time, slows, blinds, and roots off yourself"
+        }
+      },
+      {
+        "idx": 4,
+        "from": "tips[9]",
+        "verified": {
+          "date": "2026-09-30",
+          "verdict": "confirmed",
+          "source": "https://dota2.fandom.com/wiki/Alchemist",
+          "text": "chemical rage disjoints projectiles on activation, pop it as the spell or attack flies at you"
+        }
+      },
+      {
+        "idx": 5,
+        "from": "counters[6]",
+        "verified": {
+          "date": "2026-09-30",
+          "verdict": "confirmed",
+          "source": "https://dota2.fandom.com/wiki/Alchemist",
+          "text": "the greed multiplies bounty rune gold, contest every spawn or quietly fund his lead"
+        }
+      }
+    ],
+    "anti-mage": [
+      {
+        "idx": 0,
+        "from": "tips[0]",
+        "verified": {
+          "date": "2026-09-30",
+          "verdict": "confirmed",
+          "source": "https://howdoiplay.com/tips/anti-mage.html",
+          "text": "blink disjoints any spell or attack projectile already flying at him"
+        }
+      },
+      {
+        "idx": 1,
+        "from": "tips[3]",
+        "verified": {
+          "date": "2026-09-30",
+          "verdict": "confirmed",
+          "source": "https://liquipedia.net/dota2/Anti-Mage",
+          "text": "mana void is not just an execute, the splash off a drained pool shreds the clump and the stun cuts channels"
+        }
+      },
+      {
+        "idx": 2,
+        "from": "tips[6]",
+        "verified": {
+          "date": "2026-09-30",
+          "verdict": "confirmed",
+          "source": "https://howdoiplay.com/tips/anti-mage.html",
+          "text": "tap the treads to intelligence before every blink and back to agility after, the mana saved adds up fast"
+        }
+      },
+      {
+        "idx": 3,
+        "from": "counters[4]",
+        "verified": {
+          "date": "2026-09-30",
+          "verdict": "confirmed",
+          "source": "https://howdoiplay.com/tips/anti-mage.html",
+          "text": "roots and leashes stop the blink cast entirely, hold one ready for him"
+        }
+      },
+      {
+        "idx": 4,
+        "from": "counters[5]",
+        "verified": {
+          "date": "2026-09-30",
+          "verdict": "confirmed",
+          "source": "https://howdoiplay.com/tips/anti-mage.html",
+          "text": "the blink particle trail always floats the direction he traveled, read it and cut the angle"
+        }
+      },
+      {
+        "idx": 5,
+        "from": "counters[10]",
+        "verified": {
+          "date": "2026-09-30",
+          "verdict": "confirmed",
+          "source": "https://liquipedia.net/dota2/Anti-Mage",
+          "text": "never hug an out of mana teammate late, they are the bomb his mana void detonates"
+        }
+      }
+    ],
     "bounty-hunter": [
       {
         "idx": 0,
@@ -137,6 +261,68 @@
         }
       }
     ],
+    "centaur": [
+      {
+        "idx": 0,
+        "from": "tips[0]",
+        "verified": {
+          "date": "2026-09-30",
+          "verdict": "confirmed",
+          "source": "https://dota2.fandom.com/wiki/Centaur_Warrunner",
+          "text": "double edge costs no mana at all, spam it as the free nuke for pushing and wave clear"
+        }
+      },
+      {
+        "idx": 1,
+        "from": "tips[5]",
+        "verified": {
+          "date": "2026-09-30",
+          "verdict": "confirmed",
+          "source": "https://dota2.fandom.com/wiki/Centaur_Warrunner",
+          "text": "stampede speeds every allied hero and summon on the map, and every stampeding body applies the slow"
+        }
+      },
+      {
+        "idx": 2,
+        "from": "tips[6]",
+        "verified": {
+          "date": "2026-09-30",
+          "verdict": "confirmed",
+          "source": "https://dota2.fandom.com/wiki/Centaur_Warrunner",
+          "text": "hitch a ride makes the carried ally fully invulnerable, damage, debuffs, even the chrono arena cannot touch them"
+        }
+      },
+      {
+        "idx": 3,
+        "from": "counters[0]",
+        "verified": {
+          "date": "2026-09-30",
+          "verdict": "confirmed",
+          "source": "https://dota2.fandom.com/wiki/Centaur_Warrunner",
+          "text": "flak cannon, glaive, and split shot splashes only trigger the return when centaur is the primary target"
+        }
+      },
+      {
+        "idx": 4,
+        "from": "counters[1]",
+        "verified": {
+          "date": "2026-09-30",
+          "verdict": "confirmed",
+          "source": "https://dota2.fandom.com/wiki/Spiked_Carapace",
+          "text": "nyx carapace reflects the return off a plain right click, auto attacking him just hands him free stuns"
+        }
+      },
+      {
+        "idx": 5,
+        "from": "counters[2]",
+        "verified": {
+          "date": "2026-09-30",
+          "verdict": "corrected",
+          "source": "https://dota2.fandom.com/wiki/Silver_Edge",
+          "text": "silver edge still answers him through the break, the shadow walk hit shuts the return passive off, its speed cap is gone"
+        }
+      }
+    ],
     "clinkz": [
       {
         "idx": 0,
@@ -258,6 +444,58 @@
           "verdict": "confirmed",
           "source": "https://dota2.fandom.com/wiki/Nyx_Assassin",
           "text": "nyx walks into solar guardian with carapace up and reflects the whole landing"
+        }
+      }
+    ],
+    "doom": [
+      {
+        "idx": 0,
+        "from": "tips[0]",
+        "verified": {
+          "date": "2026-09-30",
+          "verdict": "confirmed",
+          "source": "https://dota2.fandom.com/wiki/Doom",
+          "text": "devour only pays the bonus gold when the digest buff runs out, budget it as unreliable income"
+        }
+      },
+      {
+        "idx": 1,
+        "from": "tips[5]",
+        "verified": {
+          "date": "2026-09-30",
+          "verdict": "confirmed",
+          "source": "https://dota2.fandom.com/wiki/Doom",
+          "text": "the ult silences, dispels the target on cast, and freezes their health so every heal source fails"
+        }
+      },
+      {
+        "idx": 2,
+        "from": "tips[6]",
+        "verified": {
+          "date": "2026-09-30",
+          "verdict": "confirmed",
+          "source": "https://dota2.fandom.com/wiki/Doom",
+          "text": "self cast the scepter ult and it never curses you, you just walk around wearing the doom as an aura"
+        }
+      },
+      {
+        "idx": 3,
+        "from": "counters[1]",
+        "verified": {
+          "date": "2026-09-30",
+          "verdict": "confirmed",
+          "source": "https://dota2.fandom.com/wiki/Doom",
+          "text": "click him before the fight, the devoured spell swaps his kit, a hidden war stomp or the wolf aura flips the engage"
+        }
+      },
+      {
+        "idx": 4,
+        "from": "counters[2]",
+        "verified": {
+          "date": "2026-09-30",
+          "verdict": "confirmed",
+          "source": "https://www.dota2.com/hero/doom",
+          "text": "if he opens with the burn and holds no devoured cancel, tp out fast, the burn is his only lockdown"
         }
       }
     ],
@@ -633,6 +871,68 @@
         }
       }
     ],
+    "lion": [
+      {
+        "idx": 0,
+        "from": "tips[0]",
+        "verified": {
+          "date": "2026-09-30",
+          "verdict": "confirmed",
+          "source": "https://dota2.fandom.com/wiki/Lion",
+          "text": "ground cast earth spike reaches well past the cast range and threads between bodies to catch the clump"
+        }
+      },
+      {
+        "idx": 1,
+        "from": "tips[6]",
+        "verified": {
+          "date": "2026-09-30",
+          "verdict": "confirmed",
+          "source": "https://dota2.fandom.com/wiki/Lion",
+          "text": "hex instantly destroys most illusions, ignore the flood and frog the real body"
+        }
+      },
+      {
+        "idx": 2,
+        "from": "tips[11]",
+        "verified": {
+          "date": "2026-09-30",
+          "verdict": "confirmed",
+          "source": "https://dota2.fandom.com/wiki/Lion",
+          "text": "mana drain grants true sight on the target but no shared vision, fog still snaps the link"
+        }
+      },
+      {
+        "idx": 3,
+        "from": "tips[14]",
+        "verified": {
+          "date": "2026-09-30",
+          "verdict": "confirmed",
+          "source": "https://dota2.fandom.com/wiki/Lion",
+          "text": "finger still stacks the bonus damage if the victim dies within three seconds, spend it early in the kill"
+        }
+      },
+      {
+        "idx": 4,
+        "from": "tips[2]",
+        "verified": {
+          "date": "2026-09-30",
+          "verdict": "corrected",
+          "source": "https://dota2.fandom.com/wiki/Lion",
+          "text": "earth spike no longer slips past linken spheres, each protected body blocks its own hit"
+        }
+      },
+      {
+        "idx": 5,
+        "from": "counters[2]",
+        "verified": {
+          "date": "2026-09-30",
+          "verdict": "confirmed",
+          "source": "https://dota2.fandom.com/wiki/Lion",
+          "text": "the drain link snaps on entering fog, ducking into tree fog cuts it far faster than outrunning the range"
+        }
+      }
+    ],
     "lone-druid": [
       {
         "idx": 0,
@@ -692,6 +992,68 @@
           "verdict": "confirmed",
           "source": "https://dota2.fandom.com/wiki/Lone_Druid",
           "text": "minus armor melts the bear easiest, desolator and cuirass are the standard buys against ld"
+        }
+      }
+    ],
+    "luna": [
+      {
+        "idx": 0,
+        "from": "tips[0]",
+        "verified": {
+          "date": "2026-09-30",
+          "verdict": "confirmed",
+          "source": "https://dota2.fandom.com/wiki/Luna",
+          "text": "the blessing aura counts creep-hero bodies as heroes, brewlings and familiars ride the damage too"
+        }
+      },
+      {
+        "idx": 1,
+        "from": "tips[1]",
+        "verified": {
+          "date": "2026-09-30",
+          "verdict": "confirmed",
+          "source": "https://dota2.fandom.com/wiki/Luna",
+          "text": "her night vision outranges nearly every hero, at the vision edge at night you see them and they do not see you"
+        }
+      },
+      {
+        "idx": 2,
+        "from": "tips[2].notes[2]",
+        "verified": {
+          "date": "2026-09-30",
+          "verdict": "confirmed",
+          "source": "https://dota2.fandom.com/wiki/Luna",
+          "text": "the orbiting glaive strikes carry true strike and ignore disarms entirely"
+        }
+      },
+      {
+        "idx": 3,
+        "from": "tips[3].notes[3]",
+        "verified": {
+          "date": "2026-09-30",
+          "verdict": "confirmed",
+          "source": "https://dota2.fandom.com/wiki/Luna",
+          "text": "glaive bounces count as spell damage yet damage block still trims every bounce"
+        }
+      },
+      {
+        "idx": 4,
+        "from": "counters[2]",
+        "verified": {
+          "date": "2026-09-30",
+          "verdict": "confirmed",
+          "source": "https://dota2.fandom.com/wiki/Luna",
+          "text": "once the tier three falls the glaives bounce through every base structure, an errant bounce breaks your blink"
+        }
+      },
+      {
+        "idx": 5,
+        "from": "counters[4]",
+        "verified": {
+          "date": "2026-09-30",
+          "verdict": "confirmed",
+          "source": "https://dota2.fandom.com/wiki/Luna",
+          "text": "summons and illusions tank the eclipse beams, feed bodies into the storm instead of your carry"
         }
       }
     ],
@@ -1005,6 +1367,130 @@
         }
       }
     ],
+    "rattletrap": [
+      {
+        "idx": 0,
+        "from": "tips[4]",
+        "verified": {
+          "date": "2026-09-30",
+          "verdict": "confirmed",
+          "source": "https://liquipedia.net/dota2/Clockwerk",
+          "text": "attacking your own cog punts it a full stretch ahead, shove the wall where you want it"
+        }
+      },
+      {
+        "idx": 1,
+        "from": "tips[11]",
+        "verified": {
+          "date": "2026-09-30",
+          "verdict": "confirmed",
+          "source": "https://liquipedia.net/dota2/Clockwerk",
+          "text": "each cog is a ward body with its own vision, punch one onto a cliff to scout or deward for free"
+        }
+      },
+      {
+        "idx": 2,
+        "from": "tips[16]",
+        "verified": {
+          "date": "2026-09-30",
+          "verdict": "confirmed",
+          "source": "https://liquipedia.net/dota2/Clockwerk",
+          "text": "the hook latches onto any unit it touches, allies, neutral creeps, even roshan, ride it out of a gank"
+        }
+      },
+      {
+        "idx": 3,
+        "from": "counters[1]",
+        "verified": {
+          "date": "2026-09-30",
+          "verdict": "confirmed",
+          "source": "https://liquipedia.net/dota2/Clockwerk",
+          "text": "cog shocks only land on bodies outside the ring with mana to burn, hug the middle to stay safe"
+        }
+      },
+      {
+        "idx": 4,
+        "from": "counters[2]",
+        "verified": {
+          "date": "2026-09-30",
+          "verdict": "confirmed",
+          "source": "https://liquipedia.net/dota2/Clockwerk",
+          "text": "he flares globally to snipe regen from anywhere, keep salve and clarity use quiet against him"
+        }
+      },
+      {
+        "idx": 5,
+        "from": "counters[3]",
+        "verified": {
+          "date": "2026-09-30",
+          "verdict": "confirmed",
+          "source": "https://liquipedia.net/dota2/Clockwerk",
+          "text": "the flare aims at a point, stand still a beat after you break vision and he has to guess where you went"
+        }
+      }
+    ],
+    "rubick": [
+      {
+        "idx": 0,
+        "from": "tips[4]",
+        "verified": {
+          "date": "2026-09-30",
+          "verdict": "confirmed",
+          "source": "https://dota2.fandom.com/wiki/Rubick",
+          "text": "keep re-aiming the landing point until the drop, the body lands wherever the last click pointed"
+        }
+      },
+      {
+        "idx": 1,
+        "from": "tips[11]",
+        "verified": {
+          "date": "2026-09-30",
+          "verdict": "confirmed",
+          "source": "https://dota2.fandom.com/wiki/Rubick",
+          "text": "fade bolt never bounces to bodies you cannot see, fog and invis break the chain"
+        }
+      },
+      {
+        "idx": 2,
+        "from": "tips[12]",
+        "verified": {
+          "date": "2026-09-30",
+          "verdict": "confirmed",
+          "source": "https://dota2.fandom.com/wiki/Rubick",
+          "text": "every bounce shaves the bolt's damage, open on the ranged creep so the last hit lands near full power"
+        }
+      },
+      {
+        "idx": 3,
+        "from": "tips[17]",
+        "verified": {
+          "date": "2026-09-30",
+          "verdict": "confirmed",
+          "source": "https://dota2.fandom.com/wiki/Rubick",
+          "text": "stolen spells inherit his quick cast point, slow windups like split earth snap off at his tempo"
+        }
+      },
+      {
+        "idx": 4,
+        "from": "tips[19]",
+        "verified": {
+          "date": "2026-09-30",
+          "verdict": "confirmed",
+          "source": "https://dota2.fandom.com/wiki/Rubick",
+          "text": "stolen spell cooldowns persist, dumping a stolen ravage for fun costs the next fight you steal it for"
+        }
+      },
+      {
+        "idx": 5,
+        "from": "counters[2]",
+        "verified": {
+          "date": "2026-09-30",
+          "verdict": "confirmed",
+          "source": "https://dota2.fandom.com/wiki/Rubick",
+          "text": "he always steals the last spell cast, dump a cheap cover spell right after the big one"
+        }
+      }
+    ],
     "shadow-shaman": [
       {
         "idx": 0,
@@ -1064,6 +1550,68 @@
           "verdict": "confirmed",
           "source": "https://liquipedia.net/dota2/Shadow_Shaman",
           "text": "shackles is channeled, keep a stun or silence ready to break the link off your ally"
+        }
+      }
+    ],
+    "slardar": [
+      {
+        "idx": 0,
+        "from": "tips[0]",
+        "verified": {
+          "date": "2026-09-30",
+          "verdict": "confirmed",
+          "source": "https://howdoiplay.com/tips/slardar.html",
+          "text": "cast the sprint mid teleport channel, the channel holds and he lands already moving"
+        }
+      },
+      {
+        "idx": 1,
+        "from": "tips[2]",
+        "verified": {
+          "date": "2026-09-30",
+          "verdict": "confirmed",
+          "source": "https://dota2.fandom.com/wiki/Slardar",
+          "text": "the crush puddle and the haze trail both count as river, the sprint river bonuses pay inside them"
+        }
+      },
+      {
+        "idx": 2,
+        "from": "tips[4]",
+        "verified": {
+          "date": "2026-09-30",
+          "verdict": "confirmed",
+          "source": "https://dota2.fandom.com/wiki/Slardar",
+          "text": "the bash counter builds on creeps and never expires, buildings and wards never count or eat the proc"
+        }
+      },
+      {
+        "idx": 3,
+        "from": "tips[5]",
+        "verified": {
+          "date": "2026-09-30",
+          "verdict": "confirmed",
+          "source": "https://dota2.fandom.com/wiki/Slardar",
+          "text": "skull basher and abyssal blade bashes are dead on him, the deep bash disables them even when unleveled"
+        }
+      },
+      {
+        "idx": 4,
+        "from": "counters[0]",
+        "verified": {
+          "date": "2026-09-30",
+          "verdict": "confirmed",
+          "source": "https://dota2.fandom.com/wiki/Slardar",
+          "text": "the sprint buff wipes off with any basic dispel, purge him mid dash to cut the chase"
+        }
+      },
+      {
+        "idx": 5,
+        "from": "counters[4]",
+        "verified": {
+          "date": "2026-09-30",
+          "verdict": "confirmed",
+          "source": "https://dota2.fandom.com/wiki/Slardar",
+          "text": "the haze wipes off with any basic dispel, lotus, greaves, and manta strip it unless the undispellable talent is in"
         }
       }
     ],
@@ -1233,6 +1781,68 @@
         }
       }
     ],
+    "terrorblade": [
+      {
+        "idx": 0,
+        "from": "tips[5]",
+        "verified": {
+          "date": "2026-09-30",
+          "verdict": "confirmed",
+          "source": "https://dota2.fandom.com/wiki/Terrorblade",
+          "text": "his own illusions only hold metamorphosis inside the transform aura, walk the real hero with the siege"
+        }
+      },
+      {
+        "idx": 1,
+        "from": "tips[10]",
+        "verified": {
+          "date": "2026-09-30",
+          "verdict": "confirmed",
+          "source": "https://dota2.fandom.com/wiki/Terrorblade",
+          "text": "sunder never touches debuff immune targets, a bkb on the low hero blanks the swap"
+        }
+      },
+      {
+        "idx": 2,
+        "from": "tips[11]",
+        "verified": {
+          "date": "2026-09-30",
+          "verdict": "confirmed",
+          "source": "https://dota2.fandom.com/wiki/Terrorblade",
+          "text": "sunder floors both bodies at a minimum share of max health, two low targets both rise to the floor"
+        }
+      },
+      {
+        "idx": 3,
+        "from": "tips[13]",
+        "verified": {
+          "date": "2026-09-30",
+          "verdict": "confirmed",
+          "source": "https://dota2.fandom.com/wiki/Terrorblade",
+          "text": "sunder sets health instead of dealing damage or healing, the swap still lands through heal cuts like ice blast"
+        }
+      },
+      {
+        "idx": 4,
+        "from": "counters[1]",
+        "verified": {
+          "date": "2026-09-30",
+          "verdict": "confirmed",
+          "source": "https://dota2.fandom.com/wiki/Terrorblade",
+          "text": "reflection copies item auras onto its illusions, your radiance and cuirass auras end up working for him"
+        }
+      },
+      {
+        "idx": 5,
+        "from": "counters[2]",
+        "verified": {
+          "date": "2026-09-30",
+          "verdict": "confirmed",
+          "source": "https://dota2.fandom.com/wiki/Terrorblade",
+          "text": "huge armor on a paper thin health pool, magic damage shreds him and every illusion he owns"
+        }
+      }
+    ],
     "tiny": [
       {
         "idx": 0,
@@ -1295,6 +1905,68 @@
         }
       }
     ],
+    "windranger": [
+      {
+        "idx": 0,
+        "from": "tips[0]",
+        "verified": {
+          "date": "2026-09-30",
+          "verdict": "confirmed",
+          "source": "https://dota2.fandom.com/wiki/Windranger",
+          "text": "the shackle latch angle is computed from where the shot was cast, not where windranger stands when it lands"
+        }
+      },
+      {
+        "idx": 1,
+        "from": "tips[3]",
+        "verified": {
+          "date": "2026-09-30",
+          "verdict": "confirmed",
+          "source": "https://dota2.fandom.com/wiki/Windranger",
+          "text": "shackleshot latches fogged and invisible units, park a creep to pin the melded templar assassin as the second body"
+        }
+      },
+      {
+        "idx": 2,
+        "from": "tips[9]",
+        "verified": {
+          "date": "2026-09-30",
+          "verdict": "confirmed",
+          "source": "https://howdoiplay.com/tips/windranger.html",
+          "text": "windrun dodges every incoming attack, towers included, even a projectile already in flight rolls the dodge on impact"
+        }
+      },
+      {
+        "idx": 3,
+        "from": "tips[12]",
+        "verified": {
+          "date": "2026-09-30",
+          "verdict": "confirmed",
+          "source": "https://howdoiplay.com/tips/windranger.html",
+          "text": "focus fire grants no vision on the target, drop a quick powershot to hold the fogged runner in sight"
+        }
+      },
+      {
+        "idx": 4,
+        "from": "counters[7]",
+        "verified": {
+          "date": "2026-09-30",
+          "verdict": "confirmed",
+          "source": "https://howdoiplay.com/tips/windranger.html",
+          "text": "focus fire strings many small hits together, damage block like vanguard or crimson guard eats the window"
+        }
+      },
+      {
+        "idx": 5,
+        "from": "counters[11]",
+        "verified": {
+          "date": "2026-09-30",
+          "verdict": "confirmed",
+          "source": "https://howdoiplay.com/tips/windranger.html",
+          "text": "venomancer snakebite bursts on every attack she lands, it wrecks a focus fire commitment"
+        }
+      }
+    ],
     "winter-wyvern": [
       {
         "idx": 0,
@@ -1354,6 +2026,68 @@
           "verdict": "confirmed",
           "source": "https://liquipedia.net/dota2/Winter_Wyvern",
           "text": "never stand near a cursed ally, the curse forces everyone in the radius to attack the frozen teammate"
+        }
+      }
+    ],
+    "witch-doctor": [
+      {
+        "idx": 0,
+        "from": "tips[2]",
+        "verified": {
+          "date": "2026-09-30",
+          "verdict": "confirmed",
+          "source": "https://dota2.fandom.com/wiki/Witch_Doctor",
+          "text": "paralyzing cask bounces to units hidden in fog, the pinball keeps hunting unseen bodies"
+        }
+      },
+      {
+        "idx": 1,
+        "from": "tips[4]",
+        "verified": {
+          "date": "2026-09-30",
+          "verdict": "confirmed",
+          "source": "https://dota2.fandom.com/wiki/Witch_Doctor",
+          "text": "cask stuns hardest when the wave thins, pop the enemy once the lone ranged creep is the only bounce anchor"
+        }
+      },
+      {
+        "idx": 2,
+        "from": "tips[13]",
+        "verified": {
+          "date": "2026-09-30",
+          "verdict": "confirmed",
+          "source": "https://howdoiplay.com/tips/witch_doctor.html",
+          "text": "death ward can attack creep-hero bodies like brewlings, familiars, and the golem"
+        }
+      },
+      {
+        "idx": 3,
+        "from": "tips[5]",
+        "verified": {
+          "date": "2026-09-30",
+          "verdict": "confirmed",
+          "source": "https://dota2.fandom.com/wiki/Witch_Doctor",
+          "text": "toggling voodoo restoration never breaks the death ward channel, keep the heal running through the ult"
+        }
+      },
+      {
+        "idx": 4,
+        "from": "counters[1]",
+        "verified": {
+          "date": "2026-09-30",
+          "verdict": "confirmed",
+          "source": "https://dota2.fandom.com/wiki/Witch_Doctor",
+          "text": "maledict punishes health lost since it landed, healing yourself softens every later tick"
+        }
+      },
+      {
+        "idx": 5,
+        "from": "counters[5]",
+        "verified": {
+          "date": "2026-09-30",
+          "verdict": "confirmed",
+          "source": "https://dota2.fandom.com/wiki/Witch_Doctor",
+          "text": "one stun, silence, or banish ends the death ward channel, dedicate someone to the cancel"
         }
       }
     ]

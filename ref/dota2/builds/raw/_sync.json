@@ -1,6 +1,18 @@
 {
   "series": "7.41",
   "heroes": {
+    "alchemist": {
+      "roles": [
+        "1"
+      ],
+      "dropped": null
+    },
+    "anti-mage": {
+      "roles": [
+        "1"
+      ],
+      "dropped": null
+    },
     "bounty-hunter": {
       "roles": [
         "4"
@@ -13,6 +25,12 @@
       ],
       "dropped": null
     },
+    "centaur": {
+      "roles": [
+        "3"
+      ],
+      "dropped": null
+    },
     "clinkz": {
       "roles": [
         "1"
@@ -20,6 +38,12 @@
       "dropped": null
     },
     "dawnbreaker": {
+      "roles": [
+        "3"
+      ],
+      "dropped": null
+    },
+    "doom": {
       "roles": [
         "3"
       ],
@@ -61,7 +85,19 @@
       ],
       "dropped": null
     },
+    "lion": {
+      "roles": [
+        "4"
+      ],
+      "dropped": null
+    },
     "lone-druid": {
+      "roles": [
+        "1"
+      ],
+      "dropped": null
+    },
+    "luna": {
       "roles": [
         "1"
       ],
@@ -97,9 +133,27 @@
       ],
       "dropped": null
     },
-    "shadow-shaman": {
+    "rattletrap": {
       "roles": [
         "5"
+      ],
+      "dropped": null
+    },
+    "rubick": {
+      "roles": [
+        "4"
+      ],
+      "dropped": null
+    },
+    "shadow-shaman": {
+      "roles": [
+        "4"
+      ],
+      "dropped": null
+    },
+    "slardar": {
+      "roles": [
+        "3"
       ],
       "dropped": null
     },
@@ -121,13 +175,31 @@
       ],
       "dropped": null
     },
+    "terrorblade": {
+      "roles": [
+        "1"
+      ],
+      "dropped": null
+    },
     "tiny": {
       "roles": [
         "1"
       ],
       "dropped": null
     },
+    "windranger": {
+      "roles": [
+        "1"
+      ],
+      "dropped": null
+    },
     "winter-wyvern": {
+      "roles": [
+        "5"
+      ],
+      "dropped": null
+    },
+    "witch-doctor": {
       "roles": [
         "5"
       ],

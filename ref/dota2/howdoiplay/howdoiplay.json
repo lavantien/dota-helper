@@ -1,14 +1,209 @@
 {
   "patch": "7.41",
-  "fetchedAt": "2026-09-29T21:36:42Z",
-  "note": "Tsunami's hero tips and counters, extracted structure; the site's own content and license, see ref/dota2/README.md",
-  "source": "https://howdoiplay.com/tips/{tipSlug}.html",
   "heroes": {
+    "alchemist": {
+      "name": "Alchemist",
+      "tipSlug": "alchemist",
+      "url": "https://howdoiplay.com/tips/alchemist.html",
+      "fetchedAt": "2026-09-30T02:32:58Z",
+      "tips": [
+        {
+          "text": "You get a lot of time between stacks on your Greevil's Greed innate. If you're free farming, you should be hitting the max cap constantly. If you're jungling, learn how to strategically draw aggro from neutral creeps using Acid Spray or any items you have to keep stacks up.",
+          "notes": []
+        },
+        {
+          "text": "You can Greevil's Greed off Undying Tombstone zombies, Wraith King skeletons (both lives!), and any type of ward unit. You don't get Greevil's Greed from illusions or buildings.",
+          "notes": []
+        },
+        {
+          "text": "Try to catch people in Acid Spray before you stun them. Spray lowers armor significantly and Unstable Concoction deals physical damage.",
+          "notes": []
+        },
+        {
+          "text": "Unstable Concoction will affect the entire AoE, even when it detonates on you. If you're debuff immune/BKB'd, you won't be affected by the self-stun.",
+          "notes": [
+            "You can use this Concoction self-stun tech to stun an enemy who has a Linken's Sphere."
+          ]
+        },
+        {
+          "text": "You can't target creeps with Unstable Concoction, but you can use the self-detonate AoE damage to farm stacked camps slightly faster, especially if you lay an Acid Spray down first for the armor reduction.",
+          "notes": []
+        },
+        {
+          "text": "You can use Unstable Concoction's self-detonate damage to deny yourself.",
+          "notes": []
+        },
+        {
+          "text": "Be aware that enemies can see the Concoction countdown timer.",
+          "notes": []
+        },
+        {
+          "text": "If you're teleporting into a fight, consider casting Unstable Concoction before you start the TP. That way you'll have a pre-cooked stun ready the moment you show up. Only do this if you're the first person to TP to a building, though, otherwise you may end up stunning yourself before a delayed TP channel completes.",
+          "notes": []
+        },
+        {
+          "text": "Activating Chemical Rage applies a basic dispel on your hero. Use it to wipe off things like damage over time debuffs, slows, blinds, or roots.",
+          "notes": []
+        },
+        {
+          "text": "Activating Chemical Rage disjoints projectiles on cast. You don't need to time it with the impact, just activate the spell whenever you see a spell or attack projectile flying towards you and it'll get disjointed.",
+          "notes": []
+        },
+        {
+          "text": "Gifting an Agh's Scepter also gives an ally all the stats that come with an Agh's Scepter and raises their net worth.",
+          "notes": []
+        },
+        {
+          "text": "If you gift an Agh's Scepter to an ally that already has one, it will be immediately removed from their inventory and they will get all their gold back.",
+          "notes": [
+            "If you gift an Agh's Scepter to an ally that has an Agh's Blessing, it will also fully refund the price of an Agh's Blessing to that hero."
+          ]
+        }
+      ],
+      "counters": [
+        {
+          "text": "Just because you think the damage from Acid Spray isn't hurting you that much doesn't mean you should stand around in it. Acid Spray drops your armor substantially, so you're far more vulnerable to physical damage when in the Spray.",
+          "notes": []
+        },
+        {
+          "text": "Unstable Concoction explodes in a small AoE. Don't give your teammate a hug if they're about to get hit by the Concoction because it'll stun both of you.",
+          "notes": [
+            "Similarly, if you have Alchemist disabled mid-Concoction, stay away from the self-detonation. You'll also get stunned if you're standing too close to him."
+          ]
+        },
+        {
+          "text": "If you silence Alchemist during Unstable Concoction, he won't be able to throw it until the silence ends.",
+          "notes": []
+        },
+        {
+          "text": "Unstable Concoction's projectile cannot be disjointed.",
+          "notes": []
+        },
+        {
+          "text": "You can click on Alchemist to see how much time is left on the Chemical Rage buff. Try to time your ganks when the buff is about to run out.",
+          "notes": []
+        },
+        {
+          "text": "The HP regen Alchemist gains during Chemical Rage can be reduced by debuffs that affect health restoration:",
+          "notes": [
+            "Items that can reduce health restoration: Spirit Vessel, Orb of Frost/Corrosion, Eye of Skadi, Crella's Crozier, as well as the \"Crippling Crossbow\" and \"Jidi Pollen Bag\" neutral item artifacts.",
+            "Be aware that Chemical Rage dispels Alchemist on cast, so only use a Spirit Vessel charge on him after he activates Chemical Rage.",
+            "Spells that can reduce health restoration: Abaddon's Withering Mist innate, Ancient Apparition's Ice Blast, Doom's Doom, Drow Ranger's Agh's Scepter Hypothermia, Pudge's Agh's Scepter Rot, Slark's Saltwater Shiv, and a few others."
+          ]
+        },
+        {
+          "text": "You should always care about getting bounty runes, but you should really care about bounty runes if you're playing against an Alchemist. He gets a ton of gold from each rune thanks to his Greevil's Greed innate.",
+          "notes": []
+        },
+        {
+          "text": "The Agh's Shard Berserk Potion buff can be dispelled off enemies.",
+          "notes": []
+        }
+      ]
+    },
+    "anti-mage": {
+      "name": "Anti-Mage",
+      "tipSlug": "anti-mage",
+      "url": "https://howdoiplay.com/tips/anti-mage.html",
+      "fetchedAt": "2026-09-30T02:32:59Z",
+      "tips": [
+        {
+          "text": "Blink disjoints any incoming enemy spell or attack projectiles.",
+          "notes": []
+        },
+        {
+          "text": "All Linken's Sphere and Lotus Orb interactions are consistent with Counterspell's behavior. There are a few unique spells to note:",
+          "notes": [
+            "Grimstroke's Phantom's Embrace can only be blocked on cast, not when the Phantom projectile connects on your hero.",
+            "Counterspell can ignore a Bounty Hunter Shuriken Toss that's bounced towards you.",
+            "If you Counterspell Tusk's Snowball when he casts it on you , it'll be blocked. If you Counterspell Tusk's Snowball when it hits you , you'll enter your own Snowball to reflect it.",
+            "Some other displacement spells act uniquely when blocked on cast versus blocked on impact. These mechanics are constantly getting randomly shadow patched, so test for yourself what the current interactions are.",
+            "If you attack a target that's Bane Nightmared with Counterspell on, you'll take it off the target and the enemy Bane will get Nightmared instead of you. Since you're considered the 'owner' of the Nightmare, you're also allowed to attack Bane without the Nightmare getting dispelled. Pretty funny.",
+            "Gleipnir's root can be blocked/reflected by Counterspell (and Linken's Sphere/Lotus Orb respectively).",
+            "Linken's Sphere will only trigger on your hero if Counterspell's shield isn't active."
+          ]
+        },
+        {
+          "text": "Rather than trying to perfectly time Counterspell when a projectile hits you, just force the issue. If you're escaping from an enemy who you think is trying to cast a spell on you, take them by surprise by walking towards them with Counterspell on and they may fire their spell straight into your shield.",
+          "notes": []
+        },
+        {
+          "text": "While it's often tempting to spend Mana Void as a baller finishing move on a pick-off target, know that it's really not meant to be used like an Axe Culling Blade in the late game. The AoE damage can be significant when used on a out-of-mana target with a large mana pool and you never know if you may need the stun to cancel an enemy channel.",
+          "notes": [
+            "That being said, it's okay for you to steal kills with Mana Void in the early/mid game. You do more with the gold than anyone else at that stage. The typical Anti-Mage team fight contribution is a two way street."
+          ]
+        },
+        {
+          "text": "Mana Void stuns everything in the AoE. If you're trying to stun an enemy who has a Linken's Sphere, consider Mana Voiding a creep next to them to bypass Linken's and stun them.",
+          "notes": []
+        },
+        {
+          "text": "This is useless information, but the bonus damage from the passive Quell of Quelling Blade stacks with Battle Fury. Now that I mention it, the active also stacks and doesn't share a cooldown with Battle Fury allowing you to cut double the trees!",
+          "notes": []
+        },
+        {
+          "text": "An excellent hero to practice learning Tread switching on. Get in the rhythm of always tapping your Treads to INT before Blinking and then immediately turning them back to AGI. You'd be surprised at how much mana you save.",
+          "notes": []
+        }
+      ],
+      "counters": [
+        {
+          "text": "Shadow Demon is a notable counter against AM since the illusions created by Disruption will Mana Break him. Dark Seer's Wall of Replica and Terrorblade's Reflection are also ways to create illusions of an enemy Anti-Mage.",
+          "notes": []
+        },
+        {
+          "text": "Any level of Dagon can instakill illusions. As do spells like Disruptor's Glimpse, Pudge's Meat Hook, Skywrath Mage's Mystic Flare, and any Hex.",
+          "notes": [
+            "Brewmaster's Storm Brewling with Dispel Magic deals full damage to all types of illusions."
+          ]
+        },
+        {
+          "text": "Enchantress can take control of enemy illusions with Enchant.",
+          "notes": []
+        },
+        {
+          "text": "Try not to stack disables when ganking AM. Stuns and silences are invaluable when you're trying to kill him, but you need to stagger them appropriately, otherwise he'll blink out.",
+          "notes": [
+            "The best players will not only stagger disables, but wait for the middle of AM's 0.4s cast animation on Blink to disable him."
+          ]
+        },
+        {
+          "text": "Roots/leashes prevent Anti-Mage from casting Blink.",
+          "notes": []
+        },
+        {
+          "text": "Watch his Blink animation to determine the direction that he Blinks in. The particle 'trail' always floats in the direction that he traveled.",
+          "notes": []
+        },
+        {
+          "text": "Try baiting Counterspell by canceling cast animations of single targeted spells. The Counterspell buff doesn't last that long and skittish Anti-Mages may be too trigger happy with activating the shield. Same concept as baiting an enemy Slark into casting Dark Pact too early.",
+          "notes": []
+        },
+        {
+          "text": "AM's Mana Break passive and magic resistance from Counterspell's passive can both be disabled by breaks.",
+          "notes": [
+            "Breaks can be provided with items like Silver Edge or Khanda. Spells that Break include Doom's Agh's Scepter Doom, Hoodwink's Sharpshooter, Naga Siren's Agh's Scepter Ensnare, Nyx Assassin's Vendetta, Phantom Assassin's Agh's Scepter Fan of Knives, Shadow Demon's Agh's Scepter Demonic Purge, Viper's Viper Strike, and a few others."
+          ]
+        },
+        {
+          "text": "Counterspell's active can be dispelled. Not really too useful since most dispels are targeted spells that'll get blocked by Counterspell anyway, but handy to know with Nullifier or Shadow Demon's Demonic Purge.",
+          "notes": []
+        },
+        {
+          "text": "A Ghost Scepter can save your life in the late game as a support.",
+          "notes": []
+        },
+        {
+          "text": "Don't stand near allies who are out of mana in the late game. They're a mana bomb waiting for AM to Mana Void detonate their ass.",
+          "notes": []
+        }
+      ]
+    },
     "bounty-hunter": {
       "name": "Bounty Hunter",
       "tipSlug": "bounty_hunter",
       "url": "https://howdoiplay.com/tips/bounty_hunter.html",
-      "fetchedAt": "2026-09-29T21:36:26Z",
+      "fetchedAt": "2026-09-30T02:33:00Z",
       "tips": [
         {
           "text": "Shuriken will bounce to Tracked targets even if the initial target isn't Tracked. Try hitting a non-Tracked unit first (like a creep) to reach a distant target.",
@@ -90,7 +285,7 @@
       "name": "Brewmaster",
       "tipSlug": "brewmaster",
       "url": "https://howdoiplay.com/tips/brewmaster.html",
-      "fetchedAt": "2026-09-29T21:36:27Z",
+      "fetchedAt": "2026-09-30T02:33:01Z",
       "tips": [
         {
           "text": "You can ignite Cinder Brew with damage from items like Blood Grenade, Urn/Vessel/Distiller, or Radiance.",
@@ -183,11 +378,69 @@
         }
       ]
     },
+    "centaur": {
+      "name": "Centaur Warrunner",
+      "tipSlug": "centaur_warrunner",
+      "url": "https://howdoiplay.com/tips/centaur_warrunner.html",
+      "fetchedAt": "2026-09-30T02:33:02Z",
+      "tips": [
+        {
+          "text": "Double Edge costs no mana, so use it as your primary pushing spell late game.",
+          "notes": []
+        },
+        {
+          "text": "Retaliate damages towers. Be a boss and draw aggro from the tower to speed up the pushing process. If you ever want to force aggro, just right click any enemy hero anywhere on the map while you're in tower range, or attack+move their top bar portrait if they're in vision, or just be the closest target attacking the tower.",
+          "notes": []
+        },
+        {
+          "text": "Retaliate triggers on instant attacks , like from Pangolier's Swashbuckle.",
+          "notes": []
+        },
+        {
+          "text": "All Returned damage under the \"Retaliate Aura\" talent credits Centaur as the damage source.",
+          "notes": []
+        },
+        {
+          "text": "Pay attention to when you can use Stampede from across the map. If your boy Shadow Fiend is getting ganked, don't be shy about turning on your lawnmower with R to help him escape globally. Similarly, if SF is ganking an enemy Luna, but just can't keep up, use your ultimate to help him chase.",
+          "notes": []
+        },
+        {
+          "text": "Stampede boosts the move speed of all allied heroes and summons. All Stampeding units can apply the slow on enemies.",
+          "notes": []
+        },
+        {
+          "text": "An ally affected by Agh's Scepter Hitch A Ride is completely invulnerable during the duration. This means they can't be affected by damage, debuffs, or even something like a Faceless Void's Chronosphere.",
+          "notes": []
+        },
+        {
+          "text": "You can Agh's Scepter Hitch A Ride an ally out of Batrider's Lasso, but you cannot Hitch them out of a Primal Beast's Pulverize.",
+          "notes": []
+        },
+        {
+          "text": "You can use Blink Dagger while an ally is riding in the Agh's Scepter Hitch A Ride and they'll come with you.",
+          "notes": []
+        }
+      ],
+      "counters": [
+        {
+          "text": "Attacks from Gyrocopter's Flak Cannon, Luna's Moon Glaives, or Medusa's Split Shot won't trigger Retaliate unless Centaur is the primary target.",
+          "notes": []
+        },
+        {
+          "text": "Nyx Assassin can easily stun Centaur since Retaliate damage can be reflected with Spiked Carapace just by right clicking him.",
+          "notes": []
+        },
+        {
+          "text": "Silver Edge's debuff applies a move speed cap on enemies. This can be a great counter to the move speed provided by Stampede.",
+          "notes": []
+        }
+      ]
+    },
     "clinkz": {
       "name": "Clinkz",
       "tipSlug": "clinkz",
       "url": "https://howdoiplay.com/tips/clinkz.html",
-      "fetchedAt": "2026-09-29T21:36:28Z",
+      "fetchedAt": "2026-09-30T02:33:02Z",
       "tips": [
         {
           "text": "Manually casting Searing Arrows on enemy heroes won't draw creep aggro.",
@@ -270,7 +523,7 @@
       "name": "Dawnbreaker",
       "tipSlug": "dawnbreaker",
       "url": "https://howdoiplay.com/tips/dawnbreaker.html",
-      "fetchedAt": "2026-09-29T21:36:29Z",
+      "fetchedAt": "2026-09-30T02:33:03Z",
       "tips": [
         {
           "text": "Your Break of Dawn innate makes you more powerful right as the map transitions to daytime.",
@@ -435,11 +688,85 @@
         }
       ]
     },
+    "doom": {
+      "name": "Doom",
+      "tipSlug": "doom",
+      "url": "https://howdoiplay.com/tips/doom.html",
+      "fetchedAt": "2026-09-30T02:33:04Z",
+      "tips": [
+        {
+          "text": "Devour bonus gold is unreliable and granted when the buff expires.",
+          "notes": []
+        },
+        {
+          "text": "Devour with alt-cast off (which can be toggled by right clicking the spell icon, or pressing alt+hotkey, or by holding ctrl+hotkey) allows you to steal abilities from neutral creeps. Toggle it on when you want to Devour a creep that has some useless spell so you don't replace whatever ability you already have consumed.",
+          "notes": []
+        },
+        {
+          "text": "Learn the abilities and auras of neutral creeps and figure out which one best matches your playstyle at various points of the game.",
+          "notes": [
+            "For a defensive early game, get a hard camp big red Satyr for the HP regen, hard/medium camp blue Satyr for the mana regen, or medium camp blue Ogre for the Ice Armor.",
+            "For an offensive early game, consider the easy camp darker purple Harpy Stormcrafter for the Chain Lightning.",
+            "The Vhoul Assassins give your attack a passive which applies a heal reduction debuff on enemies, but it only reduces HP regeneration, not heals or lifesteal. This can be situationally useful against heroes like Huskar, Io, Morphling, Timbersaw, or other heroes that buy HP sustain items early on.",
+            "Mid game, the blue Centaur or Mud Golems provide useful stuns or the little Troll with its Ensnare. Other options could be the goblet Kobold for the move speed aura or the Dark Troll Summoner for its Skeletons' Rally aura for pushing.",
+            "Late game, the Alpha Wolf can be valuable for the crits and damage aura.",
+            "Situationally, some other creeps can also be useful. The lance Kobold gives you a passive that disarms, the easy camp shield Troll gives you a passive that breaks, the small Ghost gives you an undisjointable silence, the small white Satyr gives you a dispel that can be cast on enemies and allies, and the small Wolf lets you reduce enemy total attack damage.",
+            "The Wildwing Ripper Hurricane ability can let you pull allies out of Faceless Void's Chronosphere and Enigma's Black Hole. Doesn't work against Disruptor's Kinetic Field, Mars's Arena, or leashes. It can also be self-cast to move yourself into a better position.",
+            "With Agh's Shard Devour, some ancients worth considering are the small Frostbitten Golem for the cooldown reduction aura, big Granite Golem for the max HP aura, the big yellow Thunderhide lizard for the attack speed buff, or the blue Thunderhide lizard for the accuracy aura.",
+            "If enemies are picking up Linken's, find a neutral spell that is targeted to pop them before casting Doom. The longest range targeted neutral spell is the Harpy's Chain Lightning and the Mud Golem's Hurl Boulder is a close second."
+          ]
+        },
+        {
+          "text": "Devour can kill creeps through the Glyph or Roshan's Banner invulnerability.",
+          "notes": []
+        },
+        {
+          "text": "Doom has a pretty long cast animation. It can often times be more reliable to initiate with your Infernal Blade attack+stun as opposed to blinking in and trying to get a raw Doom off first.",
+          "notes": [
+            "Against heroes with high evasion, you may want to consider building a Witch Blade. Witch Blade gives true strike on its debuff attack, so you can use it in conjunction with Infernal Blade to give some cheap accuracy."
+          ]
+        },
+        {
+          "text": "DOOOOOOOOOOOOOM silences enemies, prevents them from healing, and dispels them on cast.",
+          "notes": [
+            "This is a rare example of a spell that can dispel enemies through debuff immunity/BKB.",
+            "Agh's Scepter DOOOOOOOOOOOOOM also breaks enemies."
+          ]
+        },
+        {
+          "text": "Self-casting Agh's Scepter Doom doesn't actually Doom yourself. You just walk around with a Doom AoE around your hero.",
+          "notes": []
+        }
+      ],
+      "counters": [
+        {
+          "text": "Doom's ultimate prevents you from healing.",
+          "notes": [
+            "The exceptions to gaining HP under Doom are spells that set HP value like Terrorblade's Sunder or Weaver's Agh's Scepter Time Lapse.",
+            "The \"Essence Ring\" neutral item artifact will give you bonus HP on activation even under Doom."
+          ]
+        },
+        {
+          "text": "Pay attention to what creep ability Doom has by clicking on him. Don't get surprised when his team rushes out of nowhere because he has the Kobold aura or if he breaks your channel because he took a Centaur Stomp stun.",
+          "notes": []
+        },
+        {
+          "text": "If Doom uses Infernal Blade on you and doesn't have a neutral spell that can cancel channels, you can TP out if you're fast since he used his only stun.",
+          "notes": []
+        },
+        {
+          "text": "Linken's Sphere is the textbook anti-Doom item. Lotus Orb is also good for offensive situations.",
+          "notes": [
+            "Just be aware that Doom can counter these single target defensive items by building Agh's Scepter and self-casting AoE Doom on himself."
+          ]
+        }
+      ]
+    },
     "dragon-knight": {
       "name": "Dragon Knight",
       "tipSlug": "dragon_knight",
       "url": "https://howdoiplay.com/tips/dragon_knight.html",
-      "fetchedAt": "2026-09-29T21:36:29Z",
+      "fetchedAt": "2026-09-30T02:33:05Z",
       "tips": [
         {
           "text": "Breathe Fire's damage reduction component is a big deal in team fights, especially since it reduces total attack damage including +dmg items. Don't save it for kill stealing, use it early on in a fight.",
@@ -480,7 +807,7 @@
       "name": "Enigma",
       "tipSlug": "enigma",
       "url": "https://howdoiplay.com/tips/enigma.html",
-      "fetchedAt": "2026-09-29T21:36:30Z",
+      "fetchedAt": "2026-09-30T02:33:05Z",
       "tips": [
         {
           "text": "Jungle creeps have a tendency to use their spells whenever three units are in close proximity to them. When jungling a neutral camp, spread your Eidolons out so they don't trigger the neutrals to use their spells.",
@@ -562,7 +889,7 @@
       "name": "Juggernaut",
       "tipSlug": "juggernaut",
       "url": "https://howdoiplay.com/tips/juggernaut.html",
-      "fetchedAt": "2026-09-29T21:36:31Z",
+      "fetchedAt": "2026-09-30T02:33:06Z",
       "tips": [
         {
           "text": "You can activate Blade Fury while TPing and your channel won't break. Use this to go debuff immune if someone is walking up to you while you're TPing or use it to show up to your destination pre-debuff immune.",
@@ -698,7 +1025,7 @@
       "name": "Leshrac",
       "tipSlug": "leshrac",
       "url": "https://howdoiplay.com/tips/leshrac.html",
-      "fetchedAt": "2026-09-29T21:36:32Z",
+      "fetchedAt": "2026-09-30T02:33:07Z",
       "tips": [
         {
           "text": "Split Earth destroys trees.",
@@ -794,7 +1121,7 @@
       "name": "Lich",
       "tipSlug": "lich",
       "url": "https://howdoiplay.com/tips/lich.html",
-      "fetchedAt": "2026-09-29T21:36:32Z",
+      "fetchedAt": "2026-09-30T02:33:08Z",
       "tips": [
         {
           "text": "When figuring out what to eat with your Sacrifice innate, here's a few things to keep in mind:",
@@ -893,7 +1220,7 @@
       "name": "Lifestealer",
       "tipSlug": "lifestealer",
       "url": "https://howdoiplay.com/tips/lifestealer.html",
-      "fetchedAt": "2026-09-29T21:36:33Z",
+      "fetchedAt": "2026-09-30T02:33:09Z",
       "tips": [
         {
           "text": "Debuff immunity, like from Rage, prevents Tormentor damage from reflecting on you.",
@@ -941,11 +1268,107 @@
         }
       ]
     },
+    "lion": {
+      "name": "Lion",
+      "tipSlug": "lion",
+      "url": "https://howdoiplay.com/tips/lion.html",
+      "fetchedAt": "2026-09-30T02:33:09Z",
+      "tips": [
+        {
+          "text": "Be aware of the advantages of ground targeting Earth Spike. The cast range is about 300 units shorter than the actual range of the stun. Ground targeting also makes it possible to thread the needle between heroes, allowing you to potentially land the stun on multiple targets.",
+          "notes": [
+            "That being said, stop ground targeting Earth Spike when you don't have to. IceFrog's such a nice guy, he gives you a mostly guaranteed targeting system for free. There is a special circle in hell for Lions who skillshot and whiff Earth Spike on solo targets in targetable cast range."
+          ]
+        },
+        {
+          "text": "If you ground target Earth Spike from fog, you won't reveal yourself to the enemy who gets hit by it. If you directly target them, they'll get vision of you.",
+          "notes": [
+            "This is true for any spell that has the option between ground and direct unit targeting. If you ever directly target an enemy unit, the enemy team will briefly get vision of your hero. If you ground target, you won't be revealed through fog."
+          ]
+        },
+        {
+          "text": "Earth Spike ignores Linken's Sphere and Lotus Orbs regardless of how you target it.",
+          "notes": []
+        },
+        {
+          "text": "You can stack certain neutral camps with Earth Spike. This only works on some camps, however. The reason is because Earth Spike raises the creeps above the spawn box check height, but different camps have different heights. You'll have to test it in a lobby yourself (use the -spawnneutrals command with cheats enabled) to see which camps work and which ones don't. The timing is extremely close, you have to click the spell at ~59s.",
+          "notes": []
+        },
+        {
+          "text": "If you a feel a team fight coming on, keep casting and canceling Hex on their initiator. Hexes have 0 cast time and the moment your target comes into range (like with a Blink Dagger), the Hex will instantly get cast. If you're worried about Tidehunter Ravaging your team, group up all juicy-like, bait his Blink, then Frogitize him, Cap'n.",
+          "notes": []
+        },
+        {
+          "text": "Hexes are effectively casting a silence, a mute, and a slow on enemies. Some enemies can cast spells while stunned (like Abaddon with Borrowed Time), but can't during a hex because hexes also silence.",
+          "notes": []
+        },
+        {
+          "text": "Hex can instantly kill most illusions.",
+          "notes": []
+        },
+        {
+          "text": "You can cast Mana Drain on allies to give them mana and buff their move speed.",
+          "notes": []
+        },
+        {
+          "text": "You can Mana Drain enemy ranged creeps and many jungle creeps to quickly get mana. Left click on a jungle creep to see if it has mana, some don't.",
+          "notes": []
+        },
+        {
+          "text": "Time your Mana Drains on enemy heroes in lane with last hits. If one of your creeps is about to die, start Draining the enemy. Either they go for the last hit and lose a bunch of mana or they immediately back off and lose the last hit.",
+          "notes": []
+        },
+        {
+          "text": "Mana Drain is a cheap and long range way to break Linken's Sphere.",
+          "notes": []
+        },
+        {
+          "text": "Mana Drain provides true sight on the target for its duration, but does not provide shared vision, so enemies can still break it by going into fog.",
+          "notes": []
+        },
+        {
+          "text": "Secondary drains from Agh's Shard Mana Drain go further than Mana Drain's cast range. If you're trying to Drain an enemy out of range, try Draining yourself into an allied hero or ranged creep and you may catch the enemy with a secondary Drain.",
+          "notes": []
+        },
+        {
+          "text": "Despite Agh's Shard Mana Drain turning you debuff immune, it does not provide any kind of dispel on your hero.",
+          "notes": []
+        },
+        {
+          "text": "You get the Finger of Death bonus damage as long as the target dies within 3 seconds of getting Fingered. You don't have to kill steal everything at 100 HP to get the stack...",
+          "notes": []
+        },
+        {
+          "text": "You can toggle alt-cast (by right clicking the spell icon, or pressing alt+hotkey, or by holding ctrl+hotkey) on Finger of Death to control whether Lion uses melee attacks or ranged attacks after Finger.",
+          "notes": []
+        }
+      ],
+      "counters": [
+        {
+          "text": "You can dispel the buff Lion gets from his To Hell and Back innate.",
+          "notes": []
+        },
+        {
+          "text": "Always be afraid of this guy. He can kill you with relative ease and makes disabling you seem such a breeze. If you see him suddenly start walking towards you, he's probably gearing up to Finger you or he's setting up for a gank.",
+          "notes": []
+        },
+        {
+          "text": "Mana Drain breaks if you go into fog. If he's Draining you in lane, you may be able to stop the Drain quicker by going into tree fog rather than running out of the break distance.",
+          "notes": [
+            "If his Mana Drain doesn't break when you think it should, he likely has a ward providing vision of you."
+          ]
+        },
+        {
+          "text": "There is an extremely brief (0.25s) moment after Finger of Death connects before the nuke damage is actually dealt. You can dodge the damage with banishes, or invulnerability from spells like Morphling's Waveform or Ember Spirit's Sleight of Fist, or from items like Eul's Scepter or even a Manta Style activation if your timing is impeccable.",
+          "notes": []
+        }
+      ]
+    },
     "lone-druid": {
       "name": "Lone Druid",
       "tipSlug": "lone_druid",
       "url": "https://howdoiplay.com/tips/lone_druid.html",
-      "fetchedAt": "2026-09-29T21:36:34Z",
+      "fetchedAt": "2026-09-30T02:33:10Z",
       "tips": [
         {
           "text": "Don't be afraid of letting your Spirit Bear wander away from you. Use it to draw aggro from an incoming creep wave, stack jungle camps, go shopping for you, teleport to the fountain to heal, play checkers with Death Prophet, or just scout for you.",
@@ -1058,11 +1481,100 @@
         }
       ]
     },
+    "luna": {
+      "name": "Luna",
+      "tipSlug": "luna",
+      "url": "https://howdoiplay.com/tips/luna.html",
+      "fetchedAt": "2026-09-30T02:33:11Z",
+      "tips": [
+        {
+          "text": "The Lunar Blessing innate damage aura works on creep-hero units like Brewmaster's Primal Split Brewlings, Visage's Familiars, or Warlock's Golem.",
+          "notes": []
+        },
+        {
+          "text": "The Lunar Blessing innate gives you bonus night vision. If you see an enemy at night just at the edge of your vision, there's a good chance you can see them but they can't see you.",
+          "notes": []
+        },
+        {
+          "text": "Lunar Orbit deals damage in the form of multiple instant attacks, but behaves a little differently than other instant attacks. Here are a few rules on how it works:",
+          "notes": [
+            "Unlike most instant attacks, on-hit effects (like lifesteal, Basher, Maelstrom, or Desolator) will NOT apply during Lunar Orbit.",
+            "Unlike most instant attacks, you will NOT lose invisibility from Shadow Blade or Silver Edge or even Smoke if you damage a unit.",
+            "Lunar Orbit instant attacks will ignore disarms and have true strike.",
+            "Lunar Orbit instant attacks can damage invisible enemies that are in the AoE.",
+            "Lunar Orbit instant attacks can damage couriers."
+          ]
+        },
+        {
+          "text": "Bounces from Moon Glaives don't actually behave as right clicks or instant attacks, but rather as a passive spell. Some rules on how Glaives operate:",
+          "notes": [
+            "Glaive bounces have true strike.",
+            "Glaive bounces won't proc on-hit effects like Centaur Warrunner's Retaliate or break enemy Tranquil Boots.",
+            "Lifesteal sources don't work with Glaives bounces.",
+            "Glaives are reduced by damage block."
+          ]
+        },
+        {
+          "text": "Lunar Orbit and Moon Glaive bounces can kill Undying Tombstone zombies.",
+          "notes": []
+        },
+        {
+          "text": "Eclipse is married to Lucent Beam. If for some reason you're keeping Lucent Beam at low levels, Eclipse is going to do less damage.",
+          "notes": []
+        },
+        {
+          "text": "Eclipse doesn't continue after you die, so don't use it if you're getting ganked just because you're angry that you got caught.",
+          "notes": [
+            "Agh's Scepter Eclipse (ground or self targeted) ends prematurely if Luna dies. When cast on an ally, it ends prematurely if that ally dies."
+          ]
+        },
+        {
+          "text": "Agh's Scepter Eclipse can be targeted on any allied unit except ward-type units. You can even target it on couriers.",
+          "notes": []
+        },
+        {
+          "text": "A ground targeted Agh's Scepter Eclipse only provides a small radius of ground vision, not flying vision, around the center of the AoE. If enemies are hiding in fog behind trees, but inside the AoE, they won't get hit by the Beams.",
+          "notes": []
+        },
+        {
+          "text": "Eclipse has a fairly long cast time. It's okay to cast it earlier than you need it just so you can get it off before getting perma-stunned.",
+          "notes": []
+        },
+        {
+          "text": "Eclipse turns the map to night for 10 seconds. If you see a bunch of enemies moments away from ganking you and you really don't want to die, you can use Eclipse's night to potentially hide yourself from enemy vision.",
+          "notes": []
+        }
+      ],
+      "counters": [
+        {
+          "text": "Luna has one of the highest base move speeds in the game, so as tempting as it can be to dive her in the early game, it can be risky without disables.",
+          "notes": []
+        },
+        {
+          "text": "Luna has bonus night vision thanks to her Lunar Blessing innate, so you need to be sneaky if you're trying to gank her at night.",
+          "notes": []
+        },
+        {
+          "text": "Once your tier 3 tower goes down, get ready to enter Glaive City. Not only will the Glaives bounce through all your base's structures and damage everything in sight, but there is a high probability that your Blink Dagger is going to get disabled from an errant Glaive. Stand as far back as possible from your structures if you're planning on Blink initiating.",
+          "notes": []
+        },
+        {
+          "text": "Luna's Moon Glaives passive and Lunar Blessing innate can both be disabled by breaks.",
+          "notes": [
+            "Breaks can be provided with items like Silver Edge or Khanda. Spells that Break include Doom's Agh's Scepter Doom, Hoodwink's Sharpshooter, Naga Siren's Agh's Scepter Ensnare, Nyx Assassin's Vendetta, Phantom Assassin's Agh's Scepter Fan of Knives, Shadow Demon's Agh's Scepter Demonic Purge, Viper's Viper Strike, and a few others."
+          ]
+        },
+        {
+          "text": "Eclipse can be a terrifying spell, but there are ways to deal with it by having more units in the AoE to tank Beams. Summons and illusions good ways to mitigate the risk of eating Beams. Blade Mail could potentially kill her if you're tanky.",
+          "notes": []
+        }
+      ]
+    },
     "mirana": {
       "name": "Mirana",
       "tipSlug": "mirana",
       "url": "https://howdoiplay.com/tips/mirana.html",
-      "fetchedAt": "2026-09-29T21:36:35Z",
+      "fetchedAt": "2026-09-30T02:33:12Z",
       "tips": [
         {
           "text": "The second Starstorm hit will land on the closest target to your hero when the spell was cast.",
@@ -1150,7 +1662,7 @@
       "name": "Nature's Prophet",
       "tipSlug": "nature's_prophet",
       "url": "https://howdoiplay.com/tips/nature%27s_prophet.html",
-      "fetchedAt": "2026-09-29T21:36:35Z",
+      "fetchedAt": "2026-09-30T02:33:13Z",
       "tips": [
         {
           "text": "Try hugging trees whenever it's convenient to take advantage of the damage given from your Spirit of the Forest innate.",
@@ -1302,7 +1814,7 @@
       "name": "Necrophos",
       "tipSlug": "necrophos",
       "url": "https://howdoiplay.com/tips/necrophos.html",
-      "fetchedAt": "2026-09-29T21:36:36Z",
+      "fetchedAt": "2026-09-30T02:33:13Z",
       "tips": [
         {
           "text": "You get innate Sadist regen stacks off of any unit you kill including buildings, wards, and creep denies. The only exceptions are illusions or Arc Warden's Tempest Double.",
@@ -1401,7 +1913,7 @@
       "name": "Nyx Assassin",
       "tipSlug": "nyx_assassin",
       "url": "https://howdoiplay.com/tips/nyx_assassin.html",
-      "fetchedAt": "2026-09-29T21:36:37Z",
+      "fetchedAt": "2026-09-30T02:33:14Z",
       "tips": [
         {
           "text": "Nyx gets the luxury of easy positioning thanks to Vendetta to make multi hero Impales simpler. Vendetta one hero and then roughly target the Impale on another hero. Since you're in such close range to your first target, you will most likely nyx them both with the Impale.",
@@ -1495,7 +2007,7 @@
       "name": "Phantom Lancer",
       "tipSlug": "phantom_lancer",
       "url": "https://howdoiplay.com/tips/phantom_lancer.html",
-      "fetchedAt": "2026-09-29T21:36:37Z",
+      "fetchedAt": "2026-09-30T02:33:15Z",
       "tips": [
         {
           "text": "Doppelganger allows you to travel up and down cliffs.",
@@ -1623,11 +2135,312 @@
         }
       ]
     },
+    "rattletrap": {
+      "name": "Clockwerk",
+      "tipSlug": "clockwerk",
+      "url": "https://howdoiplay.com/tips/clockwerk.html",
+      "fetchedAt": "2026-09-30T02:33:16Z",
+      "tips": [
+        {
+          "text": "When using Battery Assault in lane, position yourself so that the enemy creeps won't absorb hits. Stand along the outer perimeter of an enemy hero, rather than bulldozing through the middle of the creep wave.",
+          "notes": []
+        },
+        {
+          "text": "Avoid immediately right clicking the enemy hero and drawing creep aggro when you're going in with Battery Assault in lane.",
+          "notes": []
+        },
+        {
+          "text": "Battery Assault can't hit invis or untargetable units, but Power Cogs can. So if an enemy Templar Assassin uses Meld or a Slark goes into Shadow Dance, be aware that the shock on Cogs can still hit them.",
+          "notes": []
+        },
+        {
+          "text": "When you walk on top of your Power Cogs, they briefly retract into the ground. While retracted, the Cogs won't block pathing for allies and won't shock enemies.",
+          "notes": []
+        },
+        {
+          "text": "If Clockwerk attempts to deny a Power Cog, you'll attack it and it'll slide it straight ahead of your hero.",
+          "notes": []
+        },
+        {
+          "text": "The shock on Power Cogs counts as a stun. Even if Battery Assault is on cooldown, you can still cancel enemy TPs if you hit them with Cogs.",
+          "notes": [
+            "Setting up Cogs right beside an Aegis grave can give you an instant disable when an enemy respawns.",
+            "Power Cogs won't shock enemies inside the Cog circle even if you hit a Cog at them. It can only shock enemies outside the circle."
+          ]
+        },
+        {
+          "text": "Power Cogs will freeze when hit into the edge of a Faceless Void's Chronosphere. However, once a Cog is already affected by Chrono, Clock can hit it again and it'll fly through the Chrono.",
+          "notes": []
+        },
+        {
+          "text": "Using Cogs as an area denial tool is just as useful as locking someone in. Use it to prevent enemies from chasing you or use it during high ground tower defenses.",
+          "notes": []
+        },
+        {
+          "text": "If you're offlaning, consider using Cogs to lock your lane creeps in at the beginning of the game so the waves meet closer to your tower.",
+          "notes": []
+        },
+        {
+          "text": "Power Cogs destroy all trees within the circle and pushed Cogs also destroy trees in their path.",
+          "notes": []
+        },
+        {
+          "text": "Consider planting Cogs near your team during high ground sieges to preempt an enemy who's trying to Blink in and initiate on your team. If they do, they may immediately get shocked when they Blink in.",
+          "notes": []
+        },
+        {
+          "text": "Power Cogs give a small radius of vision. Consider punching a few into enemy high grounds or other fogged areas to scout. You can also try dewarding by spawning a Power Cog on a cliff for vision instead of wasting your Rocket Flare cooldown.",
+          "notes": []
+        },
+        {
+          "text": "Rocket Flares give vision on detonation, we all know that, but the vision provided during the Flare's flight is just as important. Make a decision whether you want vision of a small area for a long time or a large area for a short time. If you are policing the Rosh pit, detonate the Flare there. If you're trying to get information about where the enemies are during a lull, let it fly all over their jungle and explode somewhere useless. Ideally, you can do both in one Flare and get a double kill where it explodes, but that's not always going to happen.",
+          "notes": []
+        },
+        {
+          "text": "In late game situations, consider using Rocket Flare vision to keep track of power runes.",
+          "notes": []
+        },
+        {
+          "text": "If you are within ~1800 range of a neutral camp, you can draw aggro and stack it with Rocket Flare.",
+          "notes": []
+        },
+        {
+          "text": "A target can get hit by two Agh's Scepter Overclocked Rocket Flares if you target the primary Flare ~200 units or more left/right off center.",
+          "notes": []
+        },
+        {
+          "text": "You can Hookshot to allied units, neutrals, Tormentor, or Rosh. Keep this in mind if Hook is off cooldown and you're getting ganked.",
+          "notes": []
+        },
+        {
+          "text": "Hookshot stuns debuff immune/BKB'd enemies.",
+          "notes": []
+        },
+        {
+          "text": "Clockwerk will briefly stun everything in his path while flying to a Hookshotted target. Normally this isn't relevant since the only target you'll usually collide with is the one you landed the Hook on. However, if you quickly change your 'starting' location after casting Hookshot with something like Blink Dagger, you can change your trajectory and use your flying body as a debuff immune piercing disable.",
+          "notes": []
+        },
+        {
+          "text": "Cancel the cast animation for Hookshot with your 'Cancel Current Action'/stop hotkey to bait enemies into juking for no reason.",
+          "notes": []
+        },
+        {
+          "text": "You can interrupt Hookshot from dragging Clockwerk to his target by self-casting Force Staff or Eul's mid-flight.",
+          "notes": []
+        },
+        {
+          "text": "You can toggle Agh's Shard Jetpack on and off.",
+          "notes": []
+        },
+        {
+          "text": "You can cast items while flying in Agh's Shard Jetpack. In fact, you don't even have to turn your hero to target items (or spells) if you cast them mid-Jetpack. You can even TP while Jetpacking.",
+          "notes": []
+        },
+        {
+          "text": "You can channel an Outpost or Watcher while Jetpacking. Just be sure you're happy with the direction you're traveling before you start because you'll have to keep moving in a straight line until the channel completes.",
+          "notes": [
+            "If you channel a Twin Gate or Underlord Fiend's Gate while Jetpacking, your hero will stop moving and channel in place."
+          ]
+        }
+      ],
+      "counters": [
+        {
+          "text": "When Clockwerk walks over his Power Cogs, they briefly retract into the ground. When retracted, they won't shock enemies if you walk into them.",
+          "notes": []
+        },
+        {
+          "text": "Power Cogs can only shock you if you're outside the circle and you get hit by one or walk into one.",
+          "notes": []
+        },
+        {
+          "text": "Rattletrap: Professional Salve Assassin. Try to keep Healing Salve/Clarity usage on the down low. That dude will Flare you at the worst possible times.",
+          "notes": []
+        },
+        {
+          "text": "Rocket Flare is a popular spell to get long range kills. If you're low on HP and Clock is far away, pause for a moment once you're in fog to try to evade a potential Flare.",
+          "notes": []
+        },
+        {
+          "text": "Hookshots are fairly easy to juke if you know they're coming. If you're trying to escape and you just walked into a Flare, stand still for a moment or change your current pathing trajectory.",
+          "notes": []
+        },
+        {
+          "text": "Pay attention to the Flare particles. If you're in the Rosh pit and you think you're safe because you haven't gotten hit, Clock may have Flared the area a few seconds earlier.",
+          "notes": []
+        },
+        {
+          "text": "Nature's Prophet casting Sprout on a target in Cogs will always shove everyone except the main target out of the Cogs.",
+          "notes": []
+        },
+        {
+          "text": "Clock's Agh's Shard Jetpack ability can be dispelled.",
+          "notes": []
+        }
+      ]
+    },
+    "rubick": {
+      "name": "Rubick",
+      "tipSlug": "rubick",
+      "url": "https://howdoiplay.com/tips/rubick.html",
+      "fetchedAt": "2026-09-30T02:33:17Z",
+      "tips": [
+        {
+          "text": "Rubick's Curiosity innate debuff amplification is basically the opposite of status resistance in terms of mechanics.",
+          "notes": []
+        },
+        {
+          "text": "It could be worth carrying Blood Grenades later in the game for an easy source of damage on enemy heroes to gain Curiosity innate stacks.",
+          "notes": []
+        },
+        {
+          "text": "Telekinesis is a damn good disable mainly because Rubick has essentially non-existent cast times. For the most part, Telekinesis can be pulled off just as quickly as a hex. So if you're worried an initiator is about to Blink in and start a team fight, keep spam casting and canceling it on their initiator so that once they Blink in range, you'll instantly pick them up.",
+          "notes": []
+        },
+        {
+          "text": "Telekinesis being instant allows you to steal spells that good players will usually avoid letting you get. If an Earthshaker just threw out a casual Fissure, they'll almost always cover it with Enchant Totem. However, if you pluck them out of the air with an instant Telekinesis disable, you can steal their spell before they get the chance to cast another.",
+          "notes": []
+        },
+        {
+          "text": "You can continue changing the Telekinesis Land location until the spell goes off.",
+          "notes": [
+            "However, Agh's Shard Telekinesis when targeted on allies will make them land as soon as you target Telekinesis Land rather than waiting the full duration."
+          ]
+        },
+        {
+          "text": "If a Telekinesed enemy gets affected by any items/spells that apply forced movement or knockback, they'll immediately drop straight down and stun the area underneath.",
+          "notes": [
+            "When a Telekinesed unit dies, it also immediately drops down and stuns the AoE. You can pick up a weak creep and Fade Bolt it to death to instantly get an AoE Telekinsis stun."
+          ]
+        },
+        {
+          "text": "If you're getting chased by multiple heroes, it can be smart to cast the Land towards you, rather than away from you. During the Lift's duration, the other enemies will have probably passed your target up, so the Land should stun them on the way back.",
+          "notes": []
+        },
+        {
+          "text": "Agh's Shard Telekinesis allows you to throw allies out of things like an enemy Disruptor's Kinetic Field or Slark's Pounce leash.",
+          "notes": [
+            "You cannot Telekinesis allies out of Enigma's Black Hole, Faceless Void's Chronosphere, or Legion Commander's Duel, so don't even bother. It'll put the spell on cooldown and do nothing if you try."
+          ]
+        },
+        {
+          "text": "If things are getting chaotic in a fight, know that you can target spells on allies, like Agh's Shard Telekinsis, by clicking on the allied hero's portrait in the top bar.",
+          "notes": []
+        },
+        {
+          "text": "One of the hallmarks of a strong anti-pusher is the ability to draw aggro from a creep wave off of a tower during pushes. Fade Bolt is probably one of the strongest spells in the game to do this, mainly because of its zero cast time, huge range, damage reduction ability, and substantial nuke damage. When you want to slow down the enemy's push, cast it on the creep wave and the creeps will lose interest in hammering your tower and come for you instead.",
+          "notes": []
+        },
+        {
+          "text": "Fade Bolt bounces always take the shortest possible distance when jumping from target to target.",
+          "notes": []
+        },
+        {
+          "text": "Fade Bolt will not bounce to enemies that aren't in vision. If you're Fade Bolting a creep wave at night time you'll only zap the creeps you see.",
+          "notes": []
+        },
+        {
+          "text": "Fade Bolt loses damage with each bounce, so you should generally target the ranged creep first when trying to clear waves so you can actually get the last hit with full damage.",
+          "notes": []
+        },
+        {
+          "text": "Arcane Supremacy cast range bonuses also apply to Rubick's items.",
+          "notes": [
+            "This is also true for Curiosity innate bonuses."
+          ]
+        },
+        {
+          "text": "You can Spell Steal through debuff immunity. Just because Enigma is a big golden teardrop doesn't mean you can't steal Black Hole through BKB.",
+          "notes": []
+        },
+        {
+          "text": "Patience is a virtue. Don't steal spells all willy nilly. Go into a team fight knowing the spells that you would want to steal and wait for them to be cast.",
+          "notes": []
+        },
+        {
+          "text": "Different spells are useful at different stages of the game. Sure, most ultimates are almost always worth keeping, but other spells that help Rubick farm or scout can prove valuable during downtime.",
+          "notes": []
+        },
+        {
+          "text": "Rubick has minimal cast times on any stolen spells. Forget everything you know about landing Leshrac's Split Earth, be amazed at how you can bust out an Earthshaker Fissure in a split second, and revel in how much better a spell Zeus's Lightning Bolt is when you don't have to fist pump for half a second to cast it.",
+          "notes": []
+        },
+        {
+          "text": "Buffs/spells/summons lingering after a Spell Steal times out or if you Steal another Spell all follow different rules. You'll just have to play a bunch of Rubick to find out what works and what doesn't.",
+          "notes": [
+            "Morph's Attribute Shift is a rare example of a spell that lasts not only after Spell Steal times out, but after death. Even after many deaths."
+          ]
+        },
+        {
+          "text": "Stolen spell cooldowns are persistent on Rubick. If a Spell Steal is about to time out and you're sad you never got to use your stolen Tidehunter Ravage, don't just cast it for giggles. You may end up screwing yourself over in a future team fight if you steal it again.",
+          "notes": []
+        },
+        {
+          "text": "There is a slight delay as a stolen spell \"projectile\" travels to your hero. You can use this window to get one last cast of your previously stolen spell, like an invisibility spell, before the new one arrives.",
+          "notes": []
+        },
+        {
+          "text": "You can globally check if an enemy hero is an illusion or not by attempting to cast Spell Steal on them. If you clicked on an illusion, you'll immediately get an error even if you're not in cast range.",
+          "notes": []
+        },
+        {
+          "text": "Any stolen spells that have Agh's Scepter upgrades will automatically be upgraded if you have an Agh's Scepter.",
+          "notes": []
+        },
+        {
+          "text": "Any stolen spells that have Agh's Shard upgrades will automatically be upgraded if you have an Agh's Shard.",
+          "notes": []
+        },
+        {
+          "text": "While Agh's Scepter allows you steal two spells, if you steal a spell that takes two slots (like Puck's Illusory Orb + Ethereal Jaunt), you'll still lose your previously stolen spell.",
+          "notes": []
+        },
+        {
+          "text": "You can't Spell Steal Morphling's Morph or Tinker's Rearm. Balance reasons? Or because it would simply cause too many programming headaches?",
+          "notes": [
+            "However, you can Spell Steal from a Morphling who is in a Morph. You could theoretically duplicate one of your teammates spells this way."
+          ]
+        },
+        {
+          "text": "You can Spell Steal Faceless Void's Chronosphere but Void has a unique mechanic that allows him to move in any Chronosphere regardless of who cast it.",
+          "notes": []
+        },
+        {
+          "text": "Spells that repeatedly drain mana, like Leshrac's Pulse Nova or Storm Sprit's Ball Lightning, do not have their draining mana cost reduced. Only the initial cost is reduced by Spell Steal. Mana cost reduction mechanics do not work on any abilities that drain mana over time on any hero.",
+          "notes": []
+        },
+        {
+          "text": "You can use Earth Spirit's own Stone Remnants with your stolen versions of his spells.",
+          "notes": []
+        },
+        {
+          "text": "With Agh's Shard, you can cast a stolen Life Drain into an enemy Pugna's Nether Ward.",
+          "notes": []
+        }
+      ],
+      "counters": [
+        {
+          "text": "Rubick being in your lane automatically adds an extra danger range that you need to keep in your safety zone because of Telekinesis's repositioning ability. Don't let him into your zone.",
+          "notes": []
+        },
+        {
+          "text": "Remember that Rubick has much better cast range on your abilities than you do thanks to Arcane Supremacy.",
+          "notes": []
+        },
+        {
+          "text": "Rubick is all about capitalizing on your forgetfulness/laziness. \"Oh right, they have a Rubick, I'm Tidehunter and I should have cast Anchor Smash after Ravage. I'm Mars and I should have cast Bulwark after Arena. I'm Batrider and I should have cast Sticky Napalm after Flaming Lasso.\" Put a condom on all of your spells, it's 99% effective.",
+          "notes": []
+        },
+        {
+          "text": "Always check what spell Rubick has stolen by clicking on him. If you're Pudge and Rubick just Ghostbuster'd your essence, face your shame and tell your team that he has stolen Meat Hook, not Rot.",
+          "notes": []
+        }
+      ]
+    },
     "shadow-shaman": {
       "name": "Shadow Shaman",
       "tipSlug": "shadow_shaman",
       "url": "https://howdoiplay.com/tips/shadow_shaman.html",
-      "fetchedAt": "2026-09-29T21:36:38Z",
+      "fetchedAt": "2026-09-30T02:33:17Z",
       "tips": [
         {
           "text": "Your Fowl Play innate will not protect you from a lethal Axe Culling Blade or Necrophos Reaper's Scythe.",
@@ -1741,11 +2554,89 @@
         }
       ]
     },
+    "slardar": {
+      "name": "Slardar",
+      "tipSlug": "slardar",
+      "url": "https://howdoiplay.com/tips/slardar.html",
+      "fetchedAt": "2026-09-30T02:33:18Z",
+      "tips": [
+        {
+          "text": "You can cast Guardian Sprint while TPing and it won't cancel the channel.",
+          "notes": []
+        },
+        {
+          "text": "Guardian Sprint gives Slardar 100% slow resistance for the first few seconds of the buff.",
+          "notes": []
+        },
+        {
+          "text": "Slithereen Crush's puddle and the water trail from Corrosive Haze buffs your Seaborn Sentinel innate the same way being in the river would.",
+          "notes": [
+            "Make a puddle with Crush when pushing towers to benefit from the bonus passive damage from Seaborn Sentinel."
+          ]
+        },
+        {
+          "text": "Slithereen Crush and Bash procs deal physical damage, making them work very well with Corrosive Haze's armor reduction.",
+          "notes": []
+        },
+        {
+          "text": "Increase your Bash attack counter on jungle or lane creeps. The buff lasts indefinitely and won't increase/proc on building or ward targets.",
+          "notes": []
+        },
+        {
+          "text": "Basher/Abyssal passive bashes don't work with Slardar. The game won't allow you to have another bash besides Bash of the Deep.",
+          "notes": []
+        },
+        {
+          "text": "Bash of the Deep can stun enemies through spell immunity/BKB.",
+          "notes": []
+        },
+        {
+          "text": "Corrosive Haze's armor reduction makes taking Rosh or Tormentor much easier for your team.",
+          "notes": []
+        },
+        {
+          "text": "Corrosive Haze's true sight isn't some sort of get-out-of-buying-detection-free card. The way to counter invis heroes is to know where they are before they know you know where they are.",
+          "notes": []
+        },
+        {
+          "text": "Corrosive Haze fully works on debuff immune/BKB'd enemies.",
+          "notes": []
+        },
+        {
+          "text": "You can cast Corrosive Haze on enemy couriers.",
+          "notes": []
+        }
+      ],
+      "counters": [
+        {
+          "text": "Slardar's Guardian Sprint can be dispelled.",
+          "notes": []
+        },
+        {
+          "text": "Guardian Sprint gives Slardar 100% slow resistance for the first few seconds of the buff.",
+          "notes": []
+        },
+        {
+          "text": "Be aware that Corrosive Haze's armor reduction can allow the enemy team to take Roshan super early.",
+          "notes": []
+        },
+        {
+          "text": "Corrosive Haze provides true sight on any debuffed targets.",
+          "notes": []
+        },
+        {
+          "text": "Corrosive Haze can be removed with basic dispels like from Lotus Orb, Guardian Greaves, Manta Style, Disperser, or Satanic.",
+          "notes": [
+            "Slardar has a \"Corrosive Haze Undispellable\" talent."
+          ]
+        }
+      ]
+    },
     "slark": {
       "name": "Slark",
       "tipSlug": "slark",
       "url": "https://howdoiplay.com/tips/slark.html",
-      "fetchedAt": "2026-09-29T21:36:39Z",
+      "fetchedAt": "2026-09-30T02:33:19Z",
       "tips": [
         {
           "text": "Capitalize on Essence Shift innate stacks. Take a tower or TP to another lane and use all the damage you have to continue snowballing. Don't just sit around and farm, the enemy should be scared of how much damage you have after winning a fight.",
@@ -1918,7 +2809,7 @@
       "name": "Spectre",
       "tipSlug": "spectre",
       "url": "https://howdoiplay.com/tips/spectre.html",
-      "fetchedAt": "2026-09-29T21:36:40Z",
+      "fetchedAt": "2026-09-30T02:33:20Z",
       "tips": [
         {
           "text": "When farming neutral camps, kill the smaller creeps first. That way you can proc your Desolate innate damage on the big creep.",
@@ -2028,7 +2919,7 @@
       "name": "Sven",
       "tipSlug": "sven",
       "url": "https://howdoiplay.com/tips/sven.html",
-      "fetchedAt": "2026-09-29T21:36:40Z",
+      "fetchedAt": "2026-09-30T02:33:20Z",
       "tips": [
         {
           "text": "Storm Hammer stuns and damages everything in its AoE. If an enemy has Linken's Sphere, but is sitting inside their creep wave, just target the Hammer on a creep.",
@@ -2078,11 +2969,133 @@
         }
       ]
     },
+    "terrorblade": {
+      "name": "Terrorblade",
+      "tipSlug": "terrorblade",
+      "url": "https://howdoiplay.com/tips/terrorblade.html",
+      "fetchedAt": "2026-09-30T02:33:21Z",
+      "tips": [
+        {
+          "text": "Terrorblade's Dark Unity innate changes how much damage your illusions do depending on how far they are from your hero.",
+          "notes": [
+            "Reflection illusions are also affected."
+          ]
+        },
+        {
+          "text": "Reflection works on heroes that are in fog, but not invisible heroes.",
+          "notes": []
+        },
+        {
+          "text": "Reflection illusions carry all the auras that normal illusions carry. It's quite useful to cast Reflection on heroes with aura items (like Radiance, Shiva's Guard, or Assault Cuirass) or aura passives (like Beastmaster's Inner Beast, Drow Ranger's Precision Aura, Lycan's Feral Impulse, or Vengeful Spirit's Vengeance Aura).",
+          "notes": []
+        },
+        {
+          "text": "Reflection illusions don't consider Terrorblade to be the damage source, so you don't need to worry about Reflection illusions damaging an enemy Blade Mail or Nyx Assassin's Spiked Carapace and reflecting onto your main hero.",
+          "notes": []
+        },
+        {
+          "text": "Use Conjure Image illusions to stack the jungle, serve as wards, intercept an incoming creep wave, or deny runes in the early game.",
+          "notes": []
+        },
+        {
+          "text": "Terrorblade illusions can only be in Metamorphosis form if the real hero is within 1200 range of them.",
+          "notes": []
+        },
+        {
+          "text": "If you create an illusion on the exact same tick that Metamorphosis times out on your hero, the illusion will spawn in Metamorphosis form for its entire duration. This works with Conjure Image and Manta Style illusions, but is not easy to pull off consistently.",
+          "notes": []
+        },
+        {
+          "text": "Each Conjure Image cast spawns the illusion in a counterclockwise fashion around your hero. Spawns will rotate between north of your hero, west of your hero, then south, then east, and repeat. Not particularly useful, but it is cool trivia.",
+          "notes": []
+        },
+        {
+          "text": "Be aware that basic illusions (like from Conjure Image) have a fixed 800/400 day/night vision which is significantly less than a hero's base vision.",
+          "notes": []
+        },
+        {
+          "text": "Sunder can be cast on allies and illusions (like Conjure Image or Manta Style illusions).",
+          "notes": []
+        },
+        {
+          "text": "You can't Sunder debuff immune/BKB'd enemies or allies.",
+          "notes": []
+        },
+        {
+          "text": "Sunder has a minimum HP transfer percentage. If you and a target are both below the percentage, Sunder will heal you both to the minimum.",
+          "notes": []
+        },
+        {
+          "text": "If you use Sunder while in a \"wraith\" form, like from Wraith King's Agh's Scepter, you will Sunder the target as if you have 1 HP.",
+          "notes": []
+        },
+        {
+          "text": "You can Sunder through Ancient Apparition's Ice Blast to gain HP. You can Sunder a Borrowed Time Abaddon to make him lose HP. Sunder is considered an HP swap; it doesn't behave as a traditional source of damage/heal.",
+          "notes": []
+        },
+        {
+          "text": "Infused Raindrops can be super value on TB. He has tons of armor, but is very susceptible to magic damage nukes.",
+          "notes": []
+        },
+        {
+          "text": "There is a brief delay when activating Agh's Scepter Terror Wave before the fear actually goes out.",
+          "notes": []
+        },
+        {
+          "text": "Agh's Scepter Terror Wave will follow your hero as you move similar to a Shiva's Guard active.",
+          "notes": []
+        }
+      ],
+      "counters": [
+        {
+          "text": "The Reflection slow and illusion can be removed with basic dispels.",
+          "notes": []
+        },
+        {
+          "text": "Reflection illusions carry all things that normal illusions carry. This includes item auras, so be wary about building things like Radiance or Assault Cuirass against a TB.",
+          "notes": []
+        },
+        {
+          "text": "TB has armor for days, but very little HP to back it up. Magic damage makes life for TB and his illusions hell. If your team is mostly physical damage, consider building Maelstrom or Shiva's (yeah I know I just told you not to build auras, but Shiva's is usually worth it) to clear his illusions.",
+          "notes": []
+        },
+        {
+          "text": "Sunder. It's a spell. That swaps your HP for his. Something you should be acutely aware of when trying to kill him.",
+          "notes": []
+        },
+        {
+          "text": "Any level of Dagon can instakill illusions. As do spells like Disruptor's Glimpse, Pudge's Meat Hook, Skywrath Mage's Mystic Flare, and any Hex.",
+          "notes": [
+            "Brewmaster's Storm Brewling with Dispel Magic deals full damage to all types of illusions."
+          ]
+        },
+        {
+          "text": "Dazzle's Poison Touch when cast from his Nothl Projection applies a hex to all units hit. This is a useful tool for mass clearing illusions.",
+          "notes": []
+        },
+        {
+          "text": "Enchantress can take control of enemy illusions with Enchant.",
+          "notes": []
+        },
+        {
+          "text": "Illusions your team creates of an enemy Terrorblade will spawn in Metamorphosis form if the hero himself has it activated, but they won't transform if TB activates Meta afterwards. The transformation only works on illusions Terrorblade owns.",
+          "notes": []
+        },
+        {
+          "text": "If you're a carry, consider buying a Revenant's Brooch to bypass Terrorblade's extremely high armor in the late game.",
+          "notes": []
+        },
+        {
+          "text": "The Agh's Scepter Terror Wave fear can be dispelled by basic dispels.",
+          "notes": []
+        }
+      ]
+    },
     "tiny": {
       "name": "Tiny",
       "tipSlug": "tiny",
       "url": "https://howdoiplay.com/tips/tiny.html",
-      "fetchedAt": "2026-09-29T21:36:41Z",
+      "fetchedAt": "2026-09-30T02:33:22Z",
       "tips": [
         {
           "text": "Mechanically, think of Avalanche as being similar to a mini Faceless Void Chronosphere. The Avalanche AoE is an aura that is constantly stunning. So throw it in advance if you know a hero will be in the AoE before it finishes (mid-banish, pre-TP).",
@@ -2221,11 +3234,143 @@
         }
       ]
     },
+    "windranger": {
+      "name": "Windranger",
+      "tipSlug": "windranger",
+      "url": "https://howdoiplay.com/tips/windranger.html",
+      "fetchedAt": "2026-09-30T02:33:23Z",
+      "tips": [
+        {
+          "text": "Shackleshot calculates latch angles based on where it was originally cast, not from Windranger's location on projectile impact.",
+          "notes": []
+        },
+        {
+          "text": "For years man has wondered, \"How does Shackleshot work?\" Basically, it'll search for the closest available unit to the primary target to latch to. If there are no units in the AoE, it'll search for the closest available tree. It does not prioritize heroes over other unit types nor does it prioritize units in a straight line behind the main target.",
+          "notes": []
+        },
+        {
+          "text": "What sets good Windrangers apart from bad Windrangers is how frequently Shackleshots are cast on creeps. Bad Windrangers will almost always target it on a hero even if there's a far larger window to miss the latch.",
+          "notes": []
+        },
+        {
+          "text": "Shackleshot can latch to units in fog and invisible units. If you know where an invisible target is (like a Templar Assassin in Meld), then you can try to position a creep in such a way that you can shackle the invisible enemy hero as the secondary target.",
+          "notes": []
+        },
+        {
+          "text": "Powershot gives flying vision as the projectile travels and the vision lingers for a few seconds at the end point.",
+          "notes": []
+        },
+        {
+          "text": "Be aware that Powershot's massive range can also be a liability at times. If you're farming in dangerous areas, be careful with your Powershot angles, otherwise enemies may discover you're farming their jungle when they see a random green arrow fly by their heads.",
+          "notes": []
+        },
+        {
+          "text": "If your hero is within ~1800 range of a neutral camp, you can draw aggro and stack it if you damage the camp, like with Powershot. Any further away and neutrals won't aggro your hero when damaged and just keep sitting in their camp.",
+          "notes": []
+        },
+        {
+          "text": "The \"Powershot Executes Enemy Heroes\" talent adds Powershot nuke damage first and then calculates if the enemy is within the kill threshold.",
+          "notes": []
+        },
+        {
+          "text": "Unlike Axe's Culling Blade, Powershots with the \"Powershot Executes Enemy Heroes\" talent can't kill enemies when they're under the effects of a buff that prevents them from going below 1 HP, like during Dazzle's Shallow Grave or Troll Warlord's Battle Trance.",
+          "notes": []
+        },
+        {
+          "text": "Windrun gives you 100% evasion from incoming attacks, including attacks from towers. Even if a ranged attack projectile is already in the air, all sources of evasion calculate the dodge chance on projectile impact.",
+          "notes": []
+        },
+        {
+          "text": "You can stop yourself from attacking a Focus Fired target by hitting the 'Cancel Current Action'/stop or 'hold' hotkeys. If you right click on the target again, Focus Fire will resume. Useful to know against Blade Mail carriers.",
+          "notes": []
+        },
+        {
+          "text": "When moving in Focus Fire, you will face the direction you're clicking in, but once you stop clicking, Windranger will turn around to face the enemy she's attacking. This is relevant when Focus Firing a Medusa Stone Gazing so you can attack her and not get Stoned.",
+          "notes": []
+        },
+        {
+          "text": "Focus Fire doesn't give vision on the target. If someone is about to escape in fog, use a quick Powershot to keep them in vision.",
+          "notes": []
+        },
+        {
+          "text": "You can target buildings with Focus Fire.",
+          "notes": [
+            "You cannot target ward type units (like Phoenix's Supernova, Pugna's Nether Ward, Undying's Tombstone) with Focus Fire."
+          ]
+        },
+        {
+          "text": "Focus Fire is undispellable and even persists on enemies after they die with Aegis/Reincarnation. You'll immediately resume attacking the target at Focus Fire speed once they respawn.",
+          "notes": [
+            "If Windranger has Aegis, however, you will lose the Focus Fire buff when you reincarnate."
+          ]
+        },
+        {
+          "text": "If a melee hero reflects Focus Fire with Lotus Orb, they'll need to be within 350 + melee hero attack range (default 150) to land attacks on Windranger. Any further and the attacks will miss.",
+          "notes": []
+        },
+        {
+          "text": "Despite its appearance, Agh's Shard Gale Force is not classified as traditional forced movement , but rather a \"pull.\" This means it can't interrupt things like Magnus's Skewer, Phoenix's Icarus Dive, Primal Beast's Onslaught, Spirit Breaker's Charge, Techies' Blast Off, or Templar Assassin's Meld.",
+          "notes": []
+        }
+      ],
+      "counters": [
+        {
+          "text": "Be acutely aware of Windranger's angle to you and any allied creeps between you and her in lane. Windrangers are always fishing for Shackles, so keep mirroring her movements to make it difficult.",
+          "notes": []
+        },
+        {
+          "text": "Constantly keep her in your camera when laning against her. A full duration Powershot is not an easy spell for her to land, but it is if you're asleep at the wheel. Watch where she's aiming and move away.",
+          "notes": []
+        },
+        {
+          "text": "Windrun gives 100% evasion against physical attacks, but physical damage can still hurt her. This includes damage from spells like Dazzle's Shadow Wave or Death Prophet's Exorcism.",
+          "notes": []
+        },
+        {
+          "text": "Get an MKB or Bloodthorn to deal with Windrun evasion if you're a carry.",
+          "notes": []
+        },
+        {
+          "text": "Windrun can be removed with basic dispels like from Enchantress's Enchant, Largo's Catchy Lick, Oracle's Fortune's End, or Shadow Demon's Demonic Purge.",
+          "notes": [
+            "Nullifier, Disperser, and Eul's can also dispel enemies."
+          ]
+        },
+        {
+          "text": "Silver Edge's debuff applies a move speed cap on enemies. This can be a great counter to the move speed provided by Windrun.",
+          "notes": []
+        },
+        {
+          "text": "Windranger will Focus Fire under any circumstances when she can normally right click her target. If she's stunned, slept, feared, ethereal, hexed, taunted, disarmed, or out of range, she won't attack.",
+          "notes": []
+        },
+        {
+          "text": "Focus Fire involves a bunch of smaller damage attacks in a quick period of time. This makes damage block items like Vanguard or Crimson Guard very effective at mitigating her damage.",
+          "notes": []
+        },
+        {
+          "text": "Blade Mail can make her think twice about wanting to Focus Fire you.",
+          "notes": []
+        },
+        {
+          "text": "If a melee hero reflects Focus Fire with Lotus Orb, they'll need to be within 350 + melee hero attack range (default 150) to land attacks on Windranger. Any further and the attacks will miss.",
+          "notes": []
+        },
+        {
+          "text": "The \"Chipped Vest\" neutral item artifact can discourage Windranger from using Focus Fire on you due to the return damage.",
+          "notes": []
+        },
+        {
+          "text": "Venomancer's Snakebite deals burst damage on the enemy every time they attack which can be a huge issue for Windranger with Focus Fire.",
+          "notes": []
+        }
+      ]
+    },
     "winter-wyvern": {
       "name": "Winter Wyvern",
       "tipSlug": "winter_wyvern",
       "url": "https://howdoiplay.com/tips/winter_wyvern.html",
-      "fetchedAt": "2026-09-29T21:36:42Z",
+      "fetchedAt": "2026-09-30T02:33:24Z",
       "tips": [
         {
           "text": "The Eldwurm's Edda item from your innate can be moved out of the neutral slot to a normal inventory slot.",
@@ -2351,6 +3496,159 @@
           ]
         }
       ]
+    },
+    "witch-doctor": {
+      "name": "Witch Doctor",
+      "tipSlug": "witch_doctor",
+      "url": "https://howdoiplay.com/tips/witch_doctor.html",
+      "fetchedAt": "2026-09-30T02:33:24Z",
+      "tips": [
+        {
+          "text": "The Gris-Gris item from your innate can be moved out of the neutral slot to a normal inventory slot.",
+          "notes": []
+        },
+        {
+          "text": "To use your Gris-Gris item innate, you have to right click on the item and select \"Consume Item.\"",
+          "notes": []
+        },
+        {
+          "text": "Paralyzing Cask can bounce to units in fog.",
+          "notes": []
+        },
+        {
+          "text": "Linken's Sphere blocks Paralyzing Cask when targeted on a hero, but it'll continue bouncing afterwards.",
+          "notes": []
+        },
+        {
+          "text": "The fewer units there are around, the more effective Cask is at stunning. In lane, try to pop an enemy with Cask after all their melee creeps die and only the lone ranged creep remains as a bounce target for maximum pinballing.",
+          "notes": []
+        },
+        {
+          "text": "You can toggle Voodoo Restoration while channeling, such as during Death Ward or TPing.",
+          "notes": [
+            "This is extremely important when playing against a Rubick to make sure he can't easily steal your Death Ward."
+          ]
+        },
+        {
+          "text": "If you're trying to heal allies with Voodoo Restoration, just right click on them to follow them (assuming you don't have right click allies set to attack), rather than starting the impromptu Dota Hoedown that always occurs whenever people are fumbling to get into the heal AoE.",
+          "notes": []
+        },
+        {
+          "text": "Maledict can affect player-controlled creeps, like summons or Dominated creeps.",
+          "notes": []
+        },
+        {
+          "text": "Maledict can be a good way to keep an enemy Blink Dagger on cooldown since it lasts for so long.",
+          "notes": []
+        },
+        {
+          "text": "Maledict cannot be dispelled.",
+          "notes": []
+        },
+        {
+          "text": "You can choose your Death Ward's target. If you have the \"Unified Orders with CTRL\" setting enabled, you can just ctrl+right click who you want it to attack and you won't break your channel. Or, if you have your hero and Death Ward selected and issue an attack command, it'll only send it to the Ward since you're channeling. Otherwise, just select it manually and right click your target.",
+          "notes": []
+        },
+        {
+          "text": "Did you know that you can get one extra Death Ward attack off if you spawn it west of your target? It's true! Is this important? Almost never!",
+          "notes": []
+        },
+        {
+          "text": "You can get Death Ward to stop attacking by issuing it a 'Cancel Current Action'/stop command. I think this would only be relevant against an Abaddon in Borrowed Time.",
+          "notes": []
+        },
+        {
+          "text": "Death Ward can attack creep-hero units like Brewmaster's Primal Split Brewlings, Visage's Familiars, or Warlock's Golem.",
+          "notes": []
+        },
+        {
+          "text": "Death Ward's cast range isn't too shabby. You want to try to exploit the full range every time you cast it so that enemies can't easily get to you to stop your channeling.",
+          "notes": []
+        },
+        {
+          "text": "Death Ward requires vision of the target to hit them. Beware of casting Death Ward on low ground or near a bunch of trees because your target may escape into fog.",
+          "notes": []
+        },
+        {
+          "text": "Death Ward provides vision around the unit itself (1200 day/800 night). The vision lingers for 5 seconds after Death Ward disappears.",
+          "notes": []
+        },
+        {
+          "text": "Death Ward can benefit from the attack speed buff provided by Chen's Penitence.",
+          "notes": []
+        },
+        {
+          "text": "Death Ward is frozen inside Faceless Void's Chronosphere. Place the Ward outside of the Chrono if you want to hit enemies inside.",
+          "notes": []
+        },
+        {
+          "text": "Agh's Shard Voodoo Switcheroo's Death Ward behaves identically to a normal Death Ward. This means it benefits from Death Ward talents and the Agh's Scepter Death Ward bonuses.",
+          "notes": [
+            "This also means you can control the target of the Agh's Shard Voodoo Switcheroo Death Ward by right clicking on the enemy you want to attack."
+          ]
+        },
+        {
+          "text": "You're stuck in the Agh's Shard Voodoo Switcheroo for the entire cast. You can't cancel it early, it's not a channel, it's more like a fixed duration banish.",
+          "notes": []
+        },
+        {
+          "text": "Activating Glimmer Cape/Shadow Amulet/Shadow Blade will not cancel channels, so you can use these items in the middle of channeling Death Ward.",
+          "notes": [
+            "Activating Ghost Scepter or BKB will cancel channels, so use these items before you start channeling Death Ward."
+          ]
+        },
+        {
+          "text": "Aeon Disk being triggered on Witch Doctor does not stop Death Ward from dealing damage since wards are considered separate units. Same reason why an enemy with Blade Mail won't reflect any Death Ward damage onto Witch Doctor.",
+          "notes": [
+            "Death Ward being its own damage source also means that building spell damage amplification items on Witch Doctor will not increase Death Ward's damage."
+          ]
+        },
+        {
+          "text": "Death Ward attacks have 50% accuracy against evasion.",
+          "notes": []
+        },
+        {
+          "text": "Agh's Scepter Death Ward attacks can bounce to creeps. This can be useful against zoo teams with a lot of summons/units.",
+          "notes": []
+        },
+        {
+          "text": "Agh's Scepter Death Ward attacks will not bounce to targets in fog.",
+          "notes": []
+        }
+      ],
+      "counters": [
+        {
+          "text": "Don't sit around next to your ranged creep once the rest of your creep wave dies. You're just asking for a Casking.",
+          "notes": []
+        },
+        {
+          "text": "Maledict deals extra damage depending on the amount of HP you've lost since the debuff was applied. If you heal yourself, you'll take less damage on the next curse tick.",
+          "notes": []
+        },
+        {
+          "text": "The burst damage tick from Maledict triggers once every few seconds. Try timing whatever invulnerability you may have (like from a banish) at those times.",
+          "notes": []
+        },
+        {
+          "text": "Maledict's last few ticks can do a ton of damage. If you narrowly TP'd back to fountain, but still think you'll die, consider buying a Raindrop or Faerie Fire in base to help reduce the final tick.",
+          "notes": []
+        },
+        {
+          "text": "Maledict cannot be dispelled.",
+          "notes": []
+        },
+        {
+          "text": "Someone on your team needs to be dedicated to canceling WD's Death Ward. You only need one stun/silence/banish to completely shut it down.",
+          "notes": []
+        },
+        {
+          "text": "Death Ward can't hit ethereal units. This makes Ghost Scepter a useful item if you're a support who keeps dying to the ult.",
+          "notes": []
+        }
+      ]
     }
-  }
+  },
+  "fetchedAt": "2026-09-30T02:33:25Z",
+  "source": "https://howdoiplay.com/tips/{tipSlug}.html",
+  "note": "Tsunami's hero tips and counters, extracted structure; the site's own content and license, see ref/dota2/README.md"
 }
