@@ -1057,6 +1057,68 @@
         }
       }
     ],
+    "lycan": [
+      {
+        "idx": 0,
+        "from": "tips[0]",
+        "verified": {
+          "date": "2026-09-30",
+          "verdict": "confirmed",
+          "source": "https://howdoiplay.com/tips/lycan.html",
+          "text": "grown wolves sit permanently invisible, a follow command tails a priority target without attacking, free scouting on demand"
+        }
+      },
+      {
+        "idx": 1,
+        "from": "tips[2]",
+        "verified": {
+          "date": "2026-09-30",
+          "verdict": "confirmed",
+          "source": "https://howdoiplay.com/tips/lycan.html",
+          "text": "howl works on roshan, the armor and damage strip applies inside the pit"
+        }
+      },
+      {
+        "idx": 2,
+        "from": "tips[3]",
+        "verified": {
+          "date": "2026-09-30",
+          "verdict": "confirmed",
+          "source": "https://howdoiplay.com/tips/lycan.html",
+          "text": "the howl debuff goes global at night, one cast strips every enemy on the map"
+        }
+      },
+      {
+        "idx": 3,
+        "from": "tips[7]",
+        "verified": {
+          "date": "2026-09-30",
+          "verdict": "confirmed",
+          "source": "https://howdoiplay.com/tips/lycan.html",
+          "text": "a bitten ally returning from banish collects the shapeshift health bonus again, phase shifts and doppelgangers heal on every return"
+        }
+      },
+      {
+        "idx": 4,
+        "from": "counters[2]",
+        "verified": {
+          "date": "2026-09-30",
+          "verdict": "confirmed",
+          "source": "https://liquipedia.net/dota2/api.php?action=parse&page=Lycan&format=json&prop=wikitext",
+          "text": "the shapeshift run ignores slows entirely, only stuns, hexes, and the cyclone crew hold the wolf down"
+        }
+      },
+      {
+        "idx": 5,
+        "from": "counters[5]",
+        "verified": {
+          "date": "2026-09-30",
+          "verdict": "confirmed",
+          "source": "https://howdoiplay.com/tips/lycan.html",
+          "text": "winter curse turns his own pack into the executioners, the wolf plan feeds itself"
+        }
+      }
+    ],
     "marci": [
       {
         "idx": 0,

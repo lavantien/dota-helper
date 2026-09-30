@@ -1,5 +1,5 @@
 {
-  "crawledAt": "2026-09-30T05:39:12Z",
+  "crawledAt": "2026-09-30T14:40:55Z",
   "bracket": "DIVINE_IMMORTAL",
   "source": "stratz completed-week crawl",
   "field": "itemFullPurchase",
@@ -139,7 +139,7 @@
       "role": "2",
       "heroId": 136,
       "fetchedAt": "2026-09-30T05:39:12Z",
-      "cached": false,
+      "cached": true,
       "accepted": true,
       "rowCount": 1265
     },
@@ -196,6 +196,15 @@
       "cached": true,
       "accepted": true,
       "rowCount": 1651
+    },
+    {
+      "slug": "lycan",
+      "role": "3",
+      "heroId": 77,
+      "fetchedAt": "2026-09-30T14:40:55Z",
+      "cached": false,
+      "accepted": true,
+      "rowCount": 1085
     },
     {
       "slug": "dawnbreaker",

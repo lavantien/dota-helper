@@ -7,7 +7,7 @@
       "Roshan and Tormentor swapped sides, Tormentor sits bottom low ground, spawns ~20 min, 3000 barrier shield, 30% damage reflect",
       "neutral items are crafted, tier 1 exists at 0:00, full-clear camps to bank Madstone",
       "rescale puts immortal draft at 8500, your first 10 to 15 calibration games outweigh the next 100",
-      "meta: v0.2 pool cut from dota2protracker pro tier lists on 7.41f, Alchemist, Terrorblade, Luna, Windranger and Anti-Mage join pos 1, Storm Spirit and Marci the mid, Doom, Centaur and Slardar the offlane, Rubick, Lion, Shadow Shaman, Clockwerk and Witch Doctor the supports"
+      "meta: v0.2 pool cut from dota2protracker pro tier lists on 7.41f, Alchemist, Terrorblade, Luna, Windranger and Anti-Mage join pos 1, Storm Spirit and Marci the mid, Doom, Centaur, Slardar and Lycan the offlane, Rubick, Lion, Shadow Shaman, Clockwerk and Witch Doctor the supports"
     ],
     "corrections": [
       "tormentor: old advice said contest it at 20 for the shard. corrected: buy the shard with gold at 15+ when your spike needs it, treat the Tormentor as a 3-man post-fight objective, never solo it, never ping-beg for it",
@@ -235,6 +235,19 @@
         "meepo, broodmother, and lifestealer style floods are the free wins, the glaive bounce shreds every clumped body"
       ],
       "mechanics": [["tip", "the blessing aura counts creep-hero bodies as heroes, brewlings and familiars ride the damage too"], ["tip", "her night vision outranges nearly every hero, at the vision edge at night you see them and they do not see you"], ["tip", "the orbiting glaive strikes carry true strike and ignore disarms entirely"], ["tip", "glaive bounces count as spell damage yet damage block still trims every bounce"], ["counter", "once the tier three falls the glaives bounce through every base structure, an errant bounce breaks your blink"], ["counter", "summons and illusions tank the eclipse beams, feed bodies into the storm instead of your carry"]]
+    },
+    "lycan": {
+      "identity": "pack push offlaner, summoned wolves scout and siege, howl shreds the armor and the swing of every enemy near him and his pack, feral impulse feeds every body he controls, shapeshift runs the pack at unslowable haste with the crits",
+      "why": "dedicated pos 3, the wolves take towers while the enemy farms and the night howl strips every fight on the map, favored into the passive farm lines and the slow only kite crews, vetoed by the curse crew that feeds him to his own pack",
+      "how": "scout and siege with the wolves, howl the defenders as the fight breaks, run the shapeshift pack through the runner, hand the spare wolf form to the diving core",
+      "when": "wolf pressure from the opening minutes, tower sieges and the night howl windows through the mid game, shapeshift commits decide the late fights, falls behind when the clear and the lockdown stack up",
+      "build": "helm dom, shard, assault, bkb, nullifier, agh, blink",
+      "timings": [["helm dom", 15], ["shard", 19]],
+      "tech": [
+        "winter wyvern and enchantress are the vetoes, the curse and the little friends turn the pack against him",
+        "viper and drow ranger style slow kite lines are the free wins, the wolf run ignores every slow they hold"
+      ],
+      "mechanics": [["tip", "grown wolves sit permanently invisible, a follow command tails a priority target without attacking, free scouting on demand"], ["tip", "howl works on roshan, the armor and damage strip applies inside the pit"], ["tip", "the howl debuff goes global at night, one cast strips every enemy on the map"], ["tip", "a bitten ally returning from banish collects the shapeshift health bonus again, phase shifts and doppelgangers heal on every return"], ["counter", "the shapeshift run ignores slows entirely, only stuns, hexes, and the cyclone crew hold the wolf down"], ["counter", "winter curse turns his own pack into the executioners, the wolf plan feeds itself"]]
     },
     "marci": {
       "identity": "melee brawler mid, dispose grabs and hurls any body behind her, rebound leaps off allies into the landing stun, bodyguard shares the shield and the lifesteal, unleash flurries through the committed fight",
@@ -551,6 +564,7 @@
       ["leshrac", "split earth placement on the predicted path and nova toggle discipline through the committed fight"],
       ["lich", "frost blast spam rhythm on the wave and chain frost release onto the clumped pair"],
       ["brewmaster", "primal split teamfight flow, cyclone the fed core and hold the storm dispel for the summon flood"],
+      ["lycan", "wolf siege flow, park the pack on the tower while the howl strips the defenders off it"],
       ["alchemist", "brew timer tracking and acid spray placement into the fully cooked throw"],
       ["terrorblade", "image positioning inside the metamorphosis aura and sunder timing at the brink of death"],
       ["luna", "beam ministun chaining onto the runner and glaive bounce positioning through the clumped wave"],
