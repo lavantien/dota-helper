@@ -25,6 +25,12 @@
   ],
   "pool": [
     {
+      "slug": "pangolier",
+      "name": "Pangolier",
+      "role": "1",
+      "tier": "dedicated"
+    },
+    {
       "slug": "phantom-lancer",
       "name": "Phantom Lancer",
       "role": "1",
@@ -139,8 +145,20 @@
       "tier": "dedicated"
     },
     {
+      "slug": "pangolier",
+      "name": "Pangolier",
+      "role": "2",
+      "tier": "dedicated"
+    },
+    {
       "slug": "enigma",
       "name": "Enigma",
+      "role": "3",
+      "tier": "dedicated"
+    },
+    {
+      "slug": "timbersaw",
+      "name": "Timbersaw",
       "role": "3",
       "tier": "dedicated"
     },
@@ -217,12 +235,6 @@
       "tier": "dedicated"
     },
     {
-      "slug": "lion",
-      "name": "Lion",
-      "role": "4",
-      "tier": "dedicated"
-    },
-    {
       "slug": "lich",
       "name": "Lich",
       "role": "5",
@@ -231,6 +243,12 @@
     {
       "slug": "winter-wyvern",
       "name": "Winter Wyvern",
+      "role": "5",
+      "tier": "dedicated"
+    },
+    {
+      "slug": "bane",
+      "name": "Bane",
       "role": "5",
       "tier": "dedicated"
     },

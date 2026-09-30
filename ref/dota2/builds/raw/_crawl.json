@@ -1,5 +1,5 @@
 {
-  "crawledAt": "2026-09-30T14:40:55Z",
+  "crawledAt": "2026-09-30T16:27:19Z",
   "bracket": "DIVINE_IMMORTAL",
   "source": "stratz completed-week crawl",
   "field": "itemFullPurchase",
@@ -8,6 +8,15 @@
   "week": 1789948800,
   "windowNote": "completed calendar week 1789948800, per (item, minute, instance) purchase counts",
   "entries": [
+    {
+      "slug": "pangolier",
+      "role": "1",
+      "heroId": 120,
+      "fetchedAt": "2026-09-30T15:54:55Z",
+      "cached": true,
+      "accepted": true,
+      "rowCount": 67
+    },
     {
       "slug": "phantom-lancer",
       "role": "1",
@@ -180,6 +189,15 @@
       "rowCount": 2213
     },
     {
+      "slug": "pangolier",
+      "role": "2",
+      "heroId": 120,
+      "fetchedAt": "2026-09-30T16:27:19Z",
+      "cached": false,
+      "accepted": true,
+      "rowCount": 1768
+    },
+    {
       "slug": "enigma",
       "role": "3",
       "heroId": 33,
@@ -187,6 +205,15 @@
       "cached": true,
       "accepted": true,
       "rowCount": 1597
+    },
+    {
+      "slug": "timbersaw",
+      "role": "3",
+      "heroId": 98,
+      "fetchedAt": "2026-09-30T15:54:56Z",
+      "cached": true,
+      "accepted": true,
+      "rowCount": 1942
     },
     {
       "slug": "brewmaster",
@@ -202,7 +229,7 @@
       "role": "3",
       "heroId": 77,
       "fetchedAt": "2026-09-30T14:40:55Z",
-      "cached": false,
+      "cached": true,
       "accepted": true,
       "rowCount": 1085
     },
@@ -297,15 +324,6 @@
       "rowCount": 2726
     },
     {
-      "slug": "lion",
-      "role": "4",
-      "heroId": 26,
-      "fetchedAt": "2026-09-30T02:19:45Z",
-      "cached": true,
-      "accepted": true,
-      "rowCount": 2117
-    },
-    {
       "slug": "lich",
       "role": "5",
       "heroId": 31,
@@ -322,6 +340,15 @@
       "cached": true,
       "accepted": true,
       "rowCount": 2260
+    },
+    {
+      "slug": "bane",
+      "role": "5",
+      "heroId": 3,
+      "fetchedAt": "2026-09-30T15:54:56Z",
+      "cached": true,
+      "accepted": true,
+      "rowCount": 1144
     },
     {
       "slug": "witch-doctor",

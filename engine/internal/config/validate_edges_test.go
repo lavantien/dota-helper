@@ -161,13 +161,24 @@ func TestLoadErrorPaths(t *testing.T) {
 }
 
 // TestHeroBySlug covers the merge lookup both ways: found returns the merged
-// hero, unknown slugs return nil.
+// hero, unknown slugs return nil. the fixture picks a single-role entry so
+// the merged roles pin exactly, independent of the dual-seat cores.
 func TestHeroBySlug(t *testing.T) {
 	c, err := Load(realConfig)
 	if err != nil {
 		t.Fatal(err)
 	}
+	counts := map[string]int{}
+	for _, e := range c.Pool {
+		counts[e.Slug]++
+	}
 	first := c.Pool[0]
+	for _, e := range c.Pool {
+		if counts[e.Slug] == 1 {
+			first = e
+			break
+		}
+	}
 	h := c.HeroBySlug(first.Slug)
 	if h == nil {
 		t.Fatalf("HeroBySlug(%q) = nil, want the merged hero", first.Slug)

@@ -126,8 +126,9 @@ func TestDataJSRequiresProseForEachPoolHero(t *testing.T) {
 	}
 }
 
-// the live pool is pinned single-role, but the merge contract must still sort
-// a multi-role hero's roles ascending when one appears.
+// the live pool carries multi-role heroes (the dual-seat cores), so the
+// fixture starts from a single-role hero and the merge contract must still
+// sort the synthetic pair ascending.
 func TestDataJSMultiRoleHeroRolesSorted(t *testing.T) {
 	cfg, err := config.Load(hubPath)
 	if err != nil {
@@ -137,7 +138,21 @@ func TestDataJSMultiRoleHeroRolesSorted(t *testing.T) {
 	if err != nil {
 		t.Fatalf("load prose: %v", err)
 	}
-	orig := cfg.Pool[0]
+	counts := map[string]int{}
+	for _, e := range cfg.Pool {
+		counts[e.Slug]++
+	}
+	origIdx := -1
+	for i, e := range cfg.Pool {
+		if counts[e.Slug] == 1 {
+			origIdx = i
+			break
+		}
+	}
+	if origIdx < 0 {
+		t.Fatal("no single-role pool hero to build the fixture from")
+	}
+	orig := cfg.Pool[origIdx]
 	second := "5"
 	if orig.Role == "5" {
 		second = "1"

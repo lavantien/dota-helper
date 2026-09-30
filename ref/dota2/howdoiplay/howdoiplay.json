@@ -1,11 +1,10 @@
 {
-  "fetchedAt": "2026-09-30T14:42:19Z",
   "heroes": {
     "alchemist": {
       "name": "Alchemist",
       "tipSlug": "alchemist",
       "url": "https://howdoiplay.com/tips/alchemist.html",
-      "fetchedAt": "2026-09-30T14:40:41Z",
+      "fetchedAt": "2026-09-30T16:27:23Z",
       "tips": [
         {
           "text": "You get a lot of time between stacks on your Greevil's Greed innate. If you're free farming, you should be hitting the max cap constantly. If you're jungling, learn how to strategically draw aggro from neutral creeps using Acid Spray or any items you have to keep stacks up.",
@@ -105,7 +104,7 @@
       "name": "Anti-Mage",
       "tipSlug": "anti-mage",
       "url": "https://howdoiplay.com/tips/anti-mage.html",
-      "fetchedAt": "2026-09-30T14:40:48Z",
+      "fetchedAt": "2026-09-30T16:27:24Z",
       "tips": [
         {
           "text": "Blink disjoints any incoming enemy spell or attack projectiles.",
@@ -199,11 +198,149 @@
         }
       ]
     },
+    "bane": {
+      "name": "Bane",
+      "tipSlug": "bane",
+      "url": "https://howdoiplay.com/tips/bane.html",
+      "fetchedAt": "2026-09-30T16:27:25Z",
+      "tips": [
+        {
+          "text": "Try to apply debuffs on enemies before they die to get stacks of your Ichor of Nyctasha innate. Debuffs from items can also count.",
+          "notes": []
+        },
+        {
+          "text": "Enfeeble reduces enemy cast range on items in addition to spells.",
+          "notes": []
+        },
+        {
+          "text": "Brain Sap heals you for the same amount of damage you deal to a target. This means if you Brain Sap an illusion, you heal a ton because of the illusion damage multiplier.",
+          "notes": []
+        },
+        {
+          "text": "Brain Sap fully pierces debuff immunity/BKB.",
+          "notes": []
+        },
+        {
+          "text": "A lot of players don't know how Nightmare works, so let me learn you something. For the first second of the Nightmare the unit is completely invulnerable, similar to Naga Song sleep. If anyone besides Bane right clicks this hero after the first second, the Nightmare will be transferred to them. However, if any damaging spells are used on the hero, they'll instantly wake up, take the damage, and the Nightmare will be dispelled.",
+          "notes": [
+            "Bane can damage Nightmared units with spells, items, or attacks without waking them.",
+            "However, casting Fiend's Grip on an enemy will end Nightmare.",
+            "Nightmared targets can get hit by Kunkka's Tidebringer splash and still not wake up for some reason."
+          ]
+        },
+        {
+          "text": "You can use the first second of invulnerability on Nightmare to protect yourself or an ally from being affected by any incoming projectiles or damaging/debuffing spells.",
+          "notes": [
+            "Debuff immune targets also receive the invulnerability period. So if you Nightmare a BKB'd ally (or enemy), they can even briefly act in a Faceless Void Chronosphere or Enigma Black Hole.",
+            "You can use the Nightmare invulnerability period to dodge getting repositioned by a Kunkka X, but it does not work to dodge getting repositioned by Disruptor's Glimpse."
+          ]
+        },
+        {
+          "text": "If you have an active Nightmare out, you can dispel all other active Nightmares with Nightmare End, including reflected Lotus Nightmares or Rubick Spell Steal Nightmares.",
+          "notes": []
+        },
+        {
+          "text": "You can cast Nightmare End without interrupting channels, like during Fiend's Grip or TPs. You can even cast Nightmare End while you're stunned.",
+          "notes": []
+        },
+        {
+          "text": "Towers completely ignore creeps that are Nightmared. Consider Nightmaring an allied creep during a push to keep it alive whenever the enemy team uses Glyph.",
+          "notes": [
+            "You can try using Nightmare to save a siege creep that's about to go on a solo mission straight into an enemy tower."
+          ]
+        },
+        {
+          "text": "Creeps completely ignore Nightmared targets. If an enemy hero is try to cut creep waves, putting them to sleep will get your creeps back on track to the lane.",
+          "notes": []
+        },
+        {
+          "text": "You can use Nightmare's movement to travel up and down cliffs.",
+          "notes": []
+        },
+        {
+          "text": "Because Nightmare's movement turns enemies to face the targeted direction, you could potentially use a Force Staff to reposition them even further.",
+          "notes": []
+        },
+        {
+          "text": "When contesting Shrines of Wisdom, the timer resets back to zero if enemies from opposite teams are in the Shrine at the same time. However, if one team exits the Shrine and the enemy team enters the Shrine afterwards, you can steal the channel progress. So if you're trying to steal a Shrine, you can cast Nightmare to get the enemy to start sliding out and wait to walk in after the enemy has fully exited the Shrine AoE to steal their progress.",
+          "notes": []
+        },
+        {
+          "text": "Targets moving from Nightmare will destroy trees in a small AoE whenever they wake from the Nightmare. You could potentially use this on yourself to break trees to give your wards more vision.",
+          "notes": [
+            "Could also be useful against Nature's Prophet's Sprout."
+          ]
+        },
+        {
+          "text": "You can Nightmare allies who are stunned to slide them into a better position. This even works against disables like Faceless Void's Chronosphere.",
+          "notes": []
+        },
+        {
+          "text": "You can use Nightmare movement to slide yourself or allies through an enemy Disruptor's Kinetic Field and break out of Slark's Pounce. To break the Pounce leash, you only need to walk to the edge of the Leash, cast Nightmare forward, and then immediately cancel it. You don't need to wait for the \"leash\" visual to disappear.",
+          "notes": []
+        },
+        {
+          "text": "Like during all channels, you can cast Shadow Amulet/Shadow Blade/Glimmer Cape to go invis during the Fiend's Grip channel.",
+          "notes": []
+        },
+        {
+          "text": "Fiend's Grip provides true sight on the target for the full duration of the channel.",
+          "notes": []
+        },
+        {
+          "text": "Fiend's Grip can be used to stun couriers, but won't damage them.",
+          "notes": []
+        },
+        {
+          "text": "With Agh's Scepter, you can cast Fiend's Grip on Lotus Orbed enemies and your illusions can continue the channel without it getting cancelled.",
+          "notes": []
+        },
+        {
+          "text": "Bane has 1200 night vision. This is higher than the typical 800 night vision that most heroes have.",
+          "notes": []
+        }
+      ],
+      "counters": [
+        {
+          "text": "TAKE THE NIGHTMARE OFF YOUR ALLIES. If they're Nightmared out of position, take it off them and slowly migrate the Nightmare to safer territory. To transfer a Nightmare, attempt to deny your Nightmared ally.",
+          "notes": [
+            "Whenever Nightmare is transferred, the new target will be slept for the full Nightmare duration again and travel in the same direction.",
+            "If you're debuff immune/BKB'd consider taking Nightmare off an ally (or enemy). The Nightmare debuff will be transferred to you, but chances are someone besides Bane will damage you and dispel the Nightmare. What's even better is if an enemy besides Bane tries to right click you, they'll get Nightmared."
+          ]
+        },
+        {
+          "text": "Use summons to take the Nightmare off allies or yourself when possible. Beastmaster Boars, Lycan Wolves, Brood Spiderlings, Nature's Prophet Treants, or illusions are all great sacrificial lambs to remove the Nightmare.",
+          "notes": []
+        },
+        {
+          "text": "Fiend's Grip is no joke as a disable. Save stuns and silences to stop the channel on Bane's ult.",
+          "notes": [
+            "Or save strong dispels. Things like Abaddon's Aphotic Shield, Legion Commander's Press the Attack, and Oracle's False Promise can dispel Bane's ult off your allies."
+          ]
+        },
+        {
+          "text": "Disruptor's Glimpse is a long range and convenient way to cancel Fiend's Grip's channel.",
+          "notes": []
+        },
+        {
+          "text": "Lotus Orb prevents Bane from casting Fiend's Grip on a target without it getting canceled instantly.",
+          "notes": []
+        },
+        {
+          "text": "Lotus Orb has an interesting interaction with Nightmare. If you attempt to take Nightmare off a target while you have an active Lotus Orb on your hero, the Nightmare will transfer to you and also apply a Nightmare to Bane. Most of the time this isn't useful since Bane can end Nightmares and get out of the disable, but if he's in the middle of a Fiend's Grip channel, you could potentially interrupt it using this mechanic.",
+          "notes": []
+        },
+        {
+          "text": "Rubick is a common counter to Bane since Fiend's Grip is a guaranteed steal, but Nightmare also has an interesting interaction with Rubick. If Bane and Rubick both have a Nightmare out, anyone who casts the Nightmare End sub-spell will end all active Nightmares.",
+          "notes": []
+        }
+      ]
+    },
     "bounty-hunter": {
       "name": "Bounty Hunter",
       "tipSlug": "bounty_hunter",
       "url": "https://howdoiplay.com/tips/bounty_hunter.html",
-      "fetchedAt": "2026-09-30T14:40:51Z",
+      "fetchedAt": "2026-09-30T16:27:26Z",
       "tips": [
         {
           "text": "Shuriken will bounce to Tracked targets even if the initial target isn't Tracked. Try hitting a non-Tracked unit first (like a creep) to reach a distant target.",
@@ -285,7 +422,7 @@
       "name": "Brewmaster",
       "tipSlug": "brewmaster",
       "url": "https://howdoiplay.com/tips/brewmaster.html",
-      "fetchedAt": "2026-09-30T14:40:52Z",
+      "fetchedAt": "2026-09-30T16:27:27Z",
       "tips": [
         {
           "text": "You can ignite Cinder Brew with damage from items like Blood Grenade, Urn/Vessel/Distiller, or Radiance.",
@@ -382,7 +519,7 @@
       "name": "Centaur Warrunner",
       "tipSlug": "centaur_warrunner",
       "url": "https://howdoiplay.com/tips/centaur_warrunner.html",
-      "fetchedAt": "2026-09-30T14:40:54Z",
+      "fetchedAt": "2026-09-30T16:27:28Z",
       "tips": [
         {
           "text": "Double Edge costs no mana, so use it as your primary pushing spell late game.",
@@ -440,7 +577,7 @@
       "name": "Clinkz",
       "tipSlug": "clinkz",
       "url": "https://howdoiplay.com/tips/clinkz.html",
-      "fetchedAt": "2026-09-30T14:40:56Z",
+      "fetchedAt": "2026-09-30T16:27:29Z",
       "tips": [
         {
           "text": "Manually casting Searing Arrows on enemy heroes won't draw creep aggro.",
@@ -523,7 +660,7 @@
       "name": "Dawnbreaker",
       "tipSlug": "dawnbreaker",
       "url": "https://howdoiplay.com/tips/dawnbreaker.html",
-      "fetchedAt": "2026-09-30T14:40:57Z",
+      "fetchedAt": "2026-09-30T16:27:30Z",
       "tips": [
         {
           "text": "Your Break of Dawn innate makes you more powerful right as the map transitions to daytime.",
@@ -692,7 +829,7 @@
       "name": "Doom",
       "tipSlug": "doom",
       "url": "https://howdoiplay.com/tips/doom.html",
-      "fetchedAt": "2026-09-30T14:40:58Z",
+      "fetchedAt": "2026-09-30T16:27:31Z",
       "tips": [
         {
           "text": "Devour bonus gold is unreliable and granted when the buff expires.",
@@ -766,7 +903,7 @@
       "name": "Dragon Knight",
       "tipSlug": "dragon_knight",
       "url": "https://howdoiplay.com/tips/dragon_knight.html",
-      "fetchedAt": "2026-09-30T14:41:02Z",
+      "fetchedAt": "2026-09-30T16:27:31Z",
       "tips": [
         {
           "text": "Breathe Fire's damage reduction component is a big deal in team fights, especially since it reduces total attack damage including +dmg items. Don't save it for kill stealing, use it early on in a fight.",
@@ -807,7 +944,7 @@
       "name": "Enigma",
       "tipSlug": "enigma",
       "url": "https://howdoiplay.com/tips/enigma.html",
-      "fetchedAt": "2026-09-30T14:41:04Z",
+      "fetchedAt": "2026-09-30T16:27:32Z",
       "tips": [
         {
           "text": "Jungle creeps have a tendency to use their spells whenever three units are in close proximity to them. When jungling a neutral camp, spread your Eidolons out so they don't trigger the neutrals to use their spells.",
@@ -889,7 +1026,7 @@
       "name": "Juggernaut",
       "tipSlug": "juggernaut",
       "url": "https://howdoiplay.com/tips/juggernaut.html",
-      "fetchedAt": "2026-09-30T14:41:05Z",
+      "fetchedAt": "2026-09-30T16:27:34Z",
       "tips": [
         {
           "text": "You can activate Blade Fury while TPing and your channel won't break. Use this to go debuff immune if someone is walking up to you while you're TPing or use it to show up to your destination pre-debuff immune.",
@@ -1025,7 +1162,7 @@
       "name": "Leshrac",
       "tipSlug": "leshrac",
       "url": "https://howdoiplay.com/tips/leshrac.html",
-      "fetchedAt": "2026-09-30T14:41:07Z",
+      "fetchedAt": "2026-09-30T16:27:35Z",
       "tips": [
         {
           "text": "Split Earth destroys trees.",
@@ -1121,7 +1258,7 @@
       "name": "Lich",
       "tipSlug": "lich",
       "url": "https://howdoiplay.com/tips/lich.html",
-      "fetchedAt": "2026-09-30T14:41:07Z",
+      "fetchedAt": "2026-09-30T16:27:35Z",
       "tips": [
         {
           "text": "When figuring out what to eat with your Sacrifice innate, here's a few things to keep in mind:",
@@ -1220,7 +1357,7 @@
       "name": "Lifestealer",
       "tipSlug": "lifestealer",
       "url": "https://howdoiplay.com/tips/lifestealer.html",
-      "fetchedAt": "2026-09-30T14:41:09Z",
+      "fetchedAt": "2026-09-30T16:27:38Z",
       "tips": [
         {
           "text": "Debuff immunity, like from Rage, prevents Tormentor damage from reflecting on you.",
@@ -1268,107 +1405,11 @@
         }
       ]
     },
-    "lion": {
-      "name": "Lion",
-      "tipSlug": "lion",
-      "url": "https://howdoiplay.com/tips/lion.html",
-      "fetchedAt": "2026-09-30T14:41:11Z",
-      "tips": [
-        {
-          "text": "Be aware of the advantages of ground targeting Earth Spike. The cast range is about 300 units shorter than the actual range of the stun. Ground targeting also makes it possible to thread the needle between heroes, allowing you to potentially land the stun on multiple targets.",
-          "notes": [
-            "That being said, stop ground targeting Earth Spike when you don't have to. IceFrog's such a nice guy, he gives you a mostly guaranteed targeting system for free. There is a special circle in hell for Lions who skillshot and whiff Earth Spike on solo targets in targetable cast range."
-          ]
-        },
-        {
-          "text": "If you ground target Earth Spike from fog, you won't reveal yourself to the enemy who gets hit by it. If you directly target them, they'll get vision of you.",
-          "notes": [
-            "This is true for any spell that has the option between ground and direct unit targeting. If you ever directly target an enemy unit, the enemy team will briefly get vision of your hero. If you ground target, you won't be revealed through fog."
-          ]
-        },
-        {
-          "text": "Earth Spike ignores Linken's Sphere and Lotus Orbs regardless of how you target it.",
-          "notes": []
-        },
-        {
-          "text": "You can stack certain neutral camps with Earth Spike. This only works on some camps, however. The reason is because Earth Spike raises the creeps above the spawn box check height, but different camps have different heights. You'll have to test it in a lobby yourself (use the -spawnneutrals command with cheats enabled) to see which camps work and which ones don't. The timing is extremely close, you have to click the spell at ~59s.",
-          "notes": []
-        },
-        {
-          "text": "If you a feel a team fight coming on, keep casting and canceling Hex on their initiator. Hexes have 0 cast time and the moment your target comes into range (like with a Blink Dagger), the Hex will instantly get cast. If you're worried about Tidehunter Ravaging your team, group up all juicy-like, bait his Blink, then Frogitize him, Cap'n.",
-          "notes": []
-        },
-        {
-          "text": "Hexes are effectively casting a silence, a mute, and a slow on enemies. Some enemies can cast spells while stunned (like Abaddon with Borrowed Time), but can't during a hex because hexes also silence.",
-          "notes": []
-        },
-        {
-          "text": "Hex can instantly kill most illusions.",
-          "notes": []
-        },
-        {
-          "text": "You can cast Mana Drain on allies to give them mana and buff their move speed.",
-          "notes": []
-        },
-        {
-          "text": "You can Mana Drain enemy ranged creeps and many jungle creeps to quickly get mana. Left click on a jungle creep to see if it has mana, some don't.",
-          "notes": []
-        },
-        {
-          "text": "Time your Mana Drains on enemy heroes in lane with last hits. If one of your creeps is about to die, start Draining the enemy. Either they go for the last hit and lose a bunch of mana or they immediately back off and lose the last hit.",
-          "notes": []
-        },
-        {
-          "text": "Mana Drain is a cheap and long range way to break Linken's Sphere.",
-          "notes": []
-        },
-        {
-          "text": "Mana Drain provides true sight on the target for its duration, but does not provide shared vision, so enemies can still break it by going into fog.",
-          "notes": []
-        },
-        {
-          "text": "Secondary drains from Agh's Shard Mana Drain go further than Mana Drain's cast range. If you're trying to Drain an enemy out of range, try Draining yourself into an allied hero or ranged creep and you may catch the enemy with a secondary Drain.",
-          "notes": []
-        },
-        {
-          "text": "Despite Agh's Shard Mana Drain turning you debuff immune, it does not provide any kind of dispel on your hero.",
-          "notes": []
-        },
-        {
-          "text": "You get the Finger of Death bonus damage as long as the target dies within 3 seconds of getting Fingered. You don't have to kill steal everything at 100 HP to get the stack...",
-          "notes": []
-        },
-        {
-          "text": "You can toggle alt-cast (by right clicking the spell icon, or pressing alt+hotkey, or by holding ctrl+hotkey) on Finger of Death to control whether Lion uses melee attacks or ranged attacks after Finger.",
-          "notes": []
-        }
-      ],
-      "counters": [
-        {
-          "text": "You can dispel the buff Lion gets from his To Hell and Back innate.",
-          "notes": []
-        },
-        {
-          "text": "Always be afraid of this guy. He can kill you with relative ease and makes disabling you seem such a breeze. If you see him suddenly start walking towards you, he's probably gearing up to Finger you or he's setting up for a gank.",
-          "notes": []
-        },
-        {
-          "text": "Mana Drain breaks if you go into fog. If he's Draining you in lane, you may be able to stop the Drain quicker by going into tree fog rather than running out of the break distance.",
-          "notes": [
-            "If his Mana Drain doesn't break when you think it should, he likely has a ward providing vision of you."
-          ]
-        },
-        {
-          "text": "There is an extremely brief (0.25s) moment after Finger of Death connects before the nuke damage is actually dealt. You can dodge the damage with banishes, or invulnerability from spells like Morphling's Waveform or Ember Spirit's Sleight of Fist, or from items like Eul's Scepter or even a Manta Style activation if your timing is impeccable.",
-          "notes": []
-        }
-      ]
-    },
     "lone-druid": {
       "name": "Lone Druid",
       "tipSlug": "lone_druid",
       "url": "https://howdoiplay.com/tips/lone_druid.html",
-      "fetchedAt": "2026-09-30T14:41:13Z",
+      "fetchedAt": "2026-09-30T16:27:39Z",
       "tips": [
         {
           "text": "Don't be afraid of letting your Spirit Bear wander away from you. Use it to draw aggro from an incoming creep wave, stack jungle camps, go shopping for you, teleport to the fountain to heal, play checkers with Death Prophet, or just scout for you.",
@@ -1485,7 +1526,7 @@
       "name": "Luna",
       "tipSlug": "luna",
       "url": "https://howdoiplay.com/tips/luna.html",
-      "fetchedAt": "2026-09-30T14:41:15Z",
+      "fetchedAt": "2026-09-30T16:27:40Z",
       "tips": [
         {
           "text": "The Lunar Blessing innate damage aura works on creep-hero units like Brewmaster's Primal Split Brewlings, Visage's Familiars, or Warlock's Golem.",
@@ -1574,7 +1615,7 @@
       "name": "Lycan",
       "tipSlug": "lycan",
       "url": "https://howdoiplay.com/tips/lycan.html",
-      "fetchedAt": "2026-09-30T14:41:17Z",
+      "fetchedAt": "2026-09-30T16:27:42Z",
       "tips": [
         {
           "text": "Wolves are quite possibly the strongest scouting tool in the game. They can serve as two moving, permanently invisible, temporary observer wards on demand. Use them to scout, check/kill runes, block/stack camps, body block targets, and most importantly, follow around high priority targets.",
@@ -1652,7 +1693,7 @@
       "name": "Marci",
       "tipSlug": "marci",
       "url": "https://howdoiplay.com/tips/marci.html",
-      "fetchedAt": "2026-09-30T14:41:18Z",
+      "fetchedAt": "2026-09-30T16:27:43Z",
       "tips": [
         {
           "text": "You can cast Dispose on an ally's top bar portrait to easily target them. Useful if you're trying to save a specific target in a sea of summons or illusions in a chaotic team fight.",
@@ -1797,7 +1838,7 @@
       "name": "Mirana",
       "tipSlug": "mirana",
       "url": "https://howdoiplay.com/tips/mirana.html",
-      "fetchedAt": "2026-09-30T14:41:20Z",
+      "fetchedAt": "2026-09-30T16:27:44Z",
       "tips": [
         {
           "text": "The second Starstorm hit will land on the closest target to your hero when the spell was cast.",
@@ -1885,7 +1926,7 @@
       "name": "Nature's Prophet",
       "tipSlug": "nature's_prophet",
       "url": "https://howdoiplay.com/tips/nature%27s_prophet.html",
-      "fetchedAt": "2026-09-30T14:41:29Z",
+      "fetchedAt": "2026-09-30T16:27:47Z",
       "tips": [
         {
           "text": "Try hugging trees whenever it's convenient to take advantage of the damage given from your Spirit of the Forest innate.",
@@ -2037,7 +2078,7 @@
       "name": "Necrophos",
       "tipSlug": "necrophos",
       "url": "https://howdoiplay.com/tips/necrophos.html",
-      "fetchedAt": "2026-09-30T14:41:30Z",
+      "fetchedAt": "2026-09-30T16:27:48Z",
       "tips": [
         {
           "text": "You get innate Sadist regen stacks off of any unit you kill including buildings, wards, and creep denies. The only exceptions are illusions or Arc Warden's Tempest Double.",
@@ -2136,7 +2177,7 @@
       "name": "Nyx Assassin",
       "tipSlug": "nyx_assassin",
       "url": "https://howdoiplay.com/tips/nyx_assassin.html",
-      "fetchedAt": "2026-09-30T14:41:32Z",
+      "fetchedAt": "2026-09-30T16:27:49Z",
       "tips": [
         {
           "text": "Nyx gets the luxury of easy positioning thanks to Vendetta to make multi hero Impales simpler. Vendetta one hero and then roughly target the Impale on another hero. Since you're in such close range to your first target, you will most likely nyx them both with the Impale.",
@@ -2226,11 +2267,191 @@
         }
       ]
     },
+    "pangolier": {
+      "name": "Pangolier",
+      "tipSlug": "pangolier",
+      "url": "https://howdoiplay.com/tips/pangolier.html",
+      "fetchedAt": "2026-09-30T16:27:50Z",
+      "tips": [
+        {
+          "text": "Swashbuckle sets your damage flat and attacks every unit in the AoE multiple times. There are a few interactions to note:",
+          "notes": [
+            "Even though there are several... swashes? Each target receives their own individual 'attack' per swash strike. A Javelin Piercing one target doesn't mean every target will get Pierced on the same strike.",
+            "Each attack will burn mana with Diffusal Blade.",
+            "Crits are not great because they multiply off of Swashbuckle's damage, not your attack damage.",
+            "Basher gives you a pretty high probability of Bashing a target in Swashbuckle, but only one unit in the AoE can ever get bashed due to Basher's cooldown.",
+            "Maelstrom also has a cooldown, but you can potentially proc it twice in a Swashbuckle.",
+            "Quelling Blade doesn't add damage to creeps in Swashbuckle.",
+            "Cleave can take advantage of the individual Swashbuckle attacks since each target will proc its own cleave AoE.",
+            "If you slide through a target while traveling in Swashbuckle, you have an instance of Swashbuckle damage around your hero. The collision size for this damage instance is tiny, but it gives you another chance to proc a Lucky Shot or item effect.",
+            "Swashbuckle attacks can kill Undying Tombstone zombies."
+          ]
+        },
+        {
+          "text": "Swashbuckle attacks have true strike and work through disarms.",
+          "notes": []
+        },
+        {
+          "text": "Since Swashbuckle counts as an instant attack , it'll break your Smoke if it damages a unit.",
+          "notes": []
+        },
+        {
+          "text": "Swashbuckle and Shield Crash's movements are classed as forced movement. You can use them to move up and down cliffs, travel through trees without destroying them, and break out of spells like Disruptor's Kinetic Field.",
+          "notes": []
+        },
+        {
+          "text": "You don't always have to Swashbuckle backwards, you know? Sometimes if you're escaping and there's no chance of landing a Swashbuckle hit on a pursuing enemy, you may just be giving away your position by sending Swashbuckle attacks into their vision.",
+          "notes": []
+        },
+        {
+          "text": "Every time you successfully hit a hero in Shield Crash, the barrier amount increments and the buff is refreshed.",
+          "notes": []
+        },
+        {
+          "text": "Your Shield Crash barrier incrementing could be a way to verify if enemies are hiding nearby in fog or invisible.",
+          "notes": []
+        },
+        {
+          "text": "Shield Crash's barrier buff doesn't factor illusions as valid heroes, but it does factor clones. Like Meepo. Sweet, sweet Meepo.",
+          "notes": []
+        },
+        {
+          "text": "Because barriers, like from Shield Crash, prevent your actual HP from being touched, you can use regen like Bottle without it getting broken as long as the barrier is taking the damage. This also prevents your Blink Dagger from getting broken when taking enemy damage.",
+          "notes": []
+        },
+        {
+          "text": "You're disabled during the Shield Crash animation when walking, but you're not disabled during the Shield Crash animation when Rolling. This means that you can cancel a Rolling Shield Crash into Swashbuckle to move your Shield Crash landing AoE.",
+          "notes": []
+        },
+        {
+          "text": "Each Agh's Scepter Swashbuckle AoE from Shield Crash slightly overlaps in the corners around your hero. You can potentially deal more damage to a target if you Shield Crash next to them diagonally to hit them with both the horizontal and vertical Swashbuckle swipes.",
+          "notes": []
+        },
+        {
+          "text": "If you shift+queue Blink Dagger+Shield Crash during your Rolling Thunder cast animation, you'll blink to the location and Shield Crash vertically in place. However, your Rolling Thunder will not damage or stun enemies until after the Shield Crash cast finishes landing.",
+          "notes": []
+        },
+        {
+          "text": "If you cancel Rolling Thunder in the middle of jumping in Shield Crash, you'll immediately drop down and Shield Crash in place without keeping the Rolling Thunder momentum.",
+          "notes": []
+        },
+        {
+          "text": "You can jump off the edges of the map in Rolling Thunder with Shield Crash. I can really only see this being useful if you want to hide yourself as you TP out if you think the enemy can cancel it.",
+          "notes": []
+        },
+        {
+          "text": "When playing against Rubick, immediately Shield Crash after going into Rolling Thunder. Putting Shield Crash on cooldown is usually worth preventing Rubick from Spell Stealing your ult.",
+          "notes": []
+        },
+        {
+          "text": "All items work while in Rolling Thunder:",
+          "notes": [
+            "You can channel a TP while Rolling.",
+            "You can Blink while Rolling. You'll continue Rolling in the same direction after Blinking.",
+            "You can Eul's yourself while Rolling to multihit a single enemy without needing to bounce.",
+            "If you don't press anything except for the Shield Crash hotkey while in the Eul's cyclone, you'll do stationary Shield Crash in-place after landing.",
+            "You can Harpoon an enemy while Rolling to drag yourself towards them for a stun."
+          ]
+        },
+        {
+          "text": "In general, if you have to \"path\" around an object on the map, you can probably bounce into it during Rolling Thunder. Here are some notes:",
+          "notes": [
+            "Most buildings on the map don't count. You can't bounce into towers, barracks, the ancient, Outposts, Twin Gates, or Shrines of Wisdom.",
+            "You can bounce into the Lotus Pool, surprisingly.",
+            "You can usually bounce into the random map features like Radiant crystals and stuff sticking out of the ground.",
+            "The secret shop owners can be bounced into. The Radiant secret shop owner has a pretty janky hitbox, though.",
+            "You can bounce into Clockwerk's Power Cogs, Earthshaker's Fissure, Tusk's Ice Shards, and Drow Ranger's Agh's Shard Glacier."
+          ]
+        },
+        {
+          "text": "You can mess with Rolling Thunder's trajectory by repeatedly attempting to enter a Twin Gate or an Underlord's Fiend's Gate.",
+          "notes": []
+        },
+        {
+          "text": "You can drive by an Outpost or Watcher and channel it in the middle of Rolling Thunder. Just make sure you're fine with traveling in a straight line for a few seconds because changing your direction will cancel the channel.",
+          "notes": []
+        },
+        {
+          "text": "It's impossible to perma-chain stun an enemy with Rolling Thunder. Even with perfect bounces, they can always get a BKB or instant cast spell off between bumps.",
+          "notes": []
+        },
+        {
+          "text": "Rolling Thunder provides debuff immunity and also serves as a basic dispel on cast.",
+          "notes": []
+        },
+        {
+          "text": "Agh's Shard Roll Up provides debuff immunity but does not apply a dispel on your hero.",
+          "notes": []
+        },
+        {
+          "text": "Normally, roots/leashes prevent you from using your movement spells. However, you can cast Agh's Shard Roll Up through roots/leashes. If the disable does not pierce debuff immunity, then you should be able to Rolling Thunder or Swashbuckle while in Roll Up.",
+          "notes": []
+        },
+        {
+          "text": "Hitting someone in Chronosphere with Rolling Thunder will damage and bump them away like normal and you'll continue Rolling in place on the edge of the Chrono.",
+          "notes": []
+        },
+        {
+          "text": "The moment you ricochet off a wall, there's an extremely small window of time when you can click in the same direction you were traveling to keep bumping into the same wall. It requires nearly tick perfect timing, but there's no harm in going for it.",
+          "notes": [
+            "If you're committed to using this trick, there is a method to consistently pull this off and perma-bounce against a wall. If you have a mouse with a freescrolling wheel, type in your console: bind mwheeldown mc_move And enable the \"Quick Move\" setting in the settings menu. This will bind the move command to your mousewheel down and makes your hero act whenever a move hotkey is pressed. Now you can spin mousewheel down to issue a million move commands at once which solves the whole 'timing' issue with this trick.",
+            "\"But Tsunami, the 'Auto-repeat Right Mouse' setting already exists!\" Yup and even that doesn't click fast enough to pull this tech off."
+          ]
+        },
+        {
+          "text": "Pangolier is the only hero in the game that doesn't have to turn to cast items.",
+          "notes": []
+        },
+        {
+          "text": "Lucky Shot's debuff works on Rosh.",
+          "notes": []
+        }
+      ],
+      "counters": [
+        {
+          "text": "Pangolier can't cast Swashbuckle or Rolling Thunder if he's rooted/leashed.",
+          "notes": []
+        },
+        {
+          "text": "The Shield Crash barrier can be dispelled off Pango.",
+          "notes": []
+        },
+        {
+          "text": "Leashes/roots that go through debuff immunity (like Grimstroke's Soulbind) will cause Pango's Rolling Thunder do a burnout and just spin in place.",
+          "notes": []
+        },
+        {
+          "text": "Stuns that go through debuff immunity won't cancel Rolling Thunder, but Pango will stop moving during the stun.",
+          "notes": [
+            "The only exception is Primal Beast's Pulverize. For some reason Pulverize instantly cancels Rolling Thunder."
+          ]
+        },
+        {
+          "text": "Bloodseeker's Rupture forces Pangolier to make some tough choices about life while Rolling.",
+          "notes": []
+        },
+        {
+          "text": "Pango is only debuff immune in Rolling Thunder. He can still be attacked and take damage. Difficult if you're a melee hero, but ranged heroes can still hit him easily.",
+          "notes": []
+        },
+        {
+          "text": "If you're touching a high/low ground cliff, Pango may push you to the other level of terrain with the Rolling Thunder bump. Try hugging a cliff if he's about to run you over to possibly escape the pinball machine.",
+          "notes": []
+        },
+        {
+          "text": "The occasional question marks you see pop up above Pango sometimes when attacking him are from his Fortune Favors the Bold innate. This innate makes it so enemy attack modifiers with proc chances randomly may not work on Pango. For example, if you roll a Faceless Void Time Lock proc, it may just not bash him.",
+          "notes": [
+            "The Fortune Favors the Bold innate can be disabled by breaks.",
+            "Breaks can be provided with items like Silver Edge or Khanda. Spells that Break include Doom's Agh's Scepter Doom, Hoodwink's Sharpshooter, Naga Siren's Agh's Scepter Ensnare, Nyx Assassin's Vendetta, Phantom Assassin's Agh's Scepter Fan of Knives, Shadow Demon's Agh's Scepter Demonic Purge, Viper's Viper Strike, and a few others."
+          ]
+        }
+      ]
+    },
     "phantom-lancer": {
       "name": "Phantom Lancer",
       "tipSlug": "phantom_lancer",
       "url": "https://howdoiplay.com/tips/phantom_lancer.html",
-      "fetchedAt": "2026-09-30T14:41:35Z",
+      "fetchedAt": "2026-09-30T16:27:51Z",
       "tips": [
         {
           "text": "Doppelganger allows you to travel up and down cliffs.",
@@ -2362,7 +2583,7 @@
       "name": "Clockwerk",
       "tipSlug": "clockwerk",
       "url": "https://howdoiplay.com/tips/clockwerk.html",
-      "fetchedAt": "2026-09-30T14:41:37Z",
+      "fetchedAt": "2026-09-30T16:27:52Z",
       "tips": [
         {
           "text": "When using Battery Assault in lane, position yourself so that the enemy creeps won't absorb hits. Stand along the outer perimeter of an enemy hero, rather than bulldozing through the middle of the creep wave.",
@@ -2505,7 +2726,7 @@
       "name": "Rubick",
       "tipSlug": "rubick",
       "url": "https://howdoiplay.com/tips/rubick.html",
-      "fetchedAt": "2026-09-30T14:41:39Z",
+      "fetchedAt": "2026-09-30T16:27:53Z",
       "tips": [
         {
           "text": "Rubick's Curiosity innate debuff amplification is basically the opposite of status resistance in terms of mechanics.",
@@ -2663,7 +2884,7 @@
       "name": "Shadow Shaman",
       "tipSlug": "shadow_shaman",
       "url": "https://howdoiplay.com/tips/shadow_shaman.html",
-      "fetchedAt": "2026-09-30T14:41:41Z",
+      "fetchedAt": "2026-09-30T16:27:54Z",
       "tips": [
         {
           "text": "Your Fowl Play innate will not protect you from a lethal Axe Culling Blade or Necrophos Reaper's Scythe.",
@@ -2781,7 +3002,7 @@
       "name": "Slardar",
       "tipSlug": "slardar",
       "url": "https://howdoiplay.com/tips/slardar.html",
-      "fetchedAt": "2026-09-30T14:41:42Z",
+      "fetchedAt": "2026-09-30T16:27:55Z",
       "tips": [
         {
           "text": "You can cast Guardian Sprint while TPing and it won't cancel the channel.",
@@ -2859,7 +3080,7 @@
       "name": "Slark",
       "tipSlug": "slark",
       "url": "https://howdoiplay.com/tips/slark.html",
-      "fetchedAt": "2026-09-30T14:41:44Z",
+      "fetchedAt": "2026-09-30T16:27:56Z",
       "tips": [
         {
           "text": "Capitalize on Essence Shift innate stacks. Take a tower or TP to another lane and use all the damage you have to continue snowballing. Don't just sit around and farm, the enemy should be scared of how much damage you have after winning a fight.",
@@ -3032,7 +3253,7 @@
       "name": "Spectre",
       "tipSlug": "spectre",
       "url": "https://howdoiplay.com/tips/spectre.html",
-      "fetchedAt": "2026-09-30T14:41:45Z",
+      "fetchedAt": "2026-09-30T16:27:58Z",
       "tips": [
         {
           "text": "When farming neutral camps, kill the smaller creeps first. That way you can proc your Desolate innate damage on the big creep.",
@@ -3142,7 +3363,7 @@
       "name": "Storm Spirit",
       "tipSlug": "storm_spirit",
       "url": "https://howdoiplay.com/tips/storm_spirit.html",
-      "fetchedAt": "2026-09-30T14:41:47Z",
+      "fetchedAt": "2026-09-30T16:27:59Z",
       "tips": [
         {
           "text": "Static Remnants last quite a while, so it's not a bad idea to set some up if you're afraid a Riki or Smoked hero is trailing you since they'll detonate and damage on invis units.",
@@ -3290,7 +3511,7 @@
       "name": "Sven",
       "tipSlug": "sven",
       "url": "https://howdoiplay.com/tips/sven.html",
-      "fetchedAt": "2026-09-30T14:41:51Z",
+      "fetchedAt": "2026-09-30T16:28:00Z",
       "tips": [
         {
           "text": "Storm Hammer stuns and damages everything in its AoE. If an enemy has Linken's Sphere, but is sitting inside their creep wave, just target the Hammer on a creep.",
@@ -3344,7 +3565,7 @@
       "name": "Terrorblade",
       "tipSlug": "terrorblade",
       "url": "https://howdoiplay.com/tips/terrorblade.html",
-      "fetchedAt": "2026-09-30T14:42:12Z",
+      "fetchedAt": "2026-09-30T16:28:01Z",
       "tips": [
         {
           "text": "Terrorblade's Dark Unity innate changes how much damage your illusions do depending on how far they are from your hero.",
@@ -3462,11 +3683,156 @@
         }
       ]
     },
+    "timbersaw": {
+      "name": "Timbersaw",
+      "tipSlug": "timbersaw",
+      "url": "https://howdoiplay.com/tips/timbersaw.html",
+      "fetchedAt": "2026-09-30T16:28:02Z",
+      "tips": [
+        {
+          "text": "Timbersaw's Exposure Therapy innate gives him mana for every tree he kills.",
+          "notes": []
+        },
+        {
+          "text": "Whirling Death can be activated while you're mid-Timber Chain.",
+          "notes": []
+        },
+        {
+          "text": "Be generous when targeting Timber Chain on trees. It's okay to sacrifice ~50 range to ensure you aren't whiffing Chains.",
+          "notes": []
+        },
+        {
+          "text": "Timber Chain gives a very small slice of vision as it travels and gives a small radius of ground vision for a split second once it reaches max distance. You can use this to quickly scout inside the Rosh pit if you don't want to spend Chakram for vision.",
+          "notes": []
+        },
+        {
+          "text": "If you Eul's yourself after casting Timber Chain, you'll fly up and the cyclone will get canceled once the Chain hits a tree. Use this to dodge enemies who may try to cancel your Chain cast with stuns.",
+          "notes": []
+        },
+        {
+          "text": "Using Blink Dagger immediately after casting Timber Chain allows you to change your angle of approach to a targeted tree. You can use this to get Chain damage on an enemy and still quickly return to safety. You can also toss a Chain, blink into a creep wave and Whirling Death, and promptly fly out.",
+          "notes": []
+        },
+        {
+          "text": "If you and your lane partner have amazing communication, you may be able to catch enemies off guard by having an ally plant an Iron Branch right on top of an enemy to give you a surprise Timber Chain target.",
+          "notes": []
+        },
+        {
+          "text": "You can cast Chakram before Timber Chain connects or during the travel time to cut down on the Chakram cast animation. Timber will start the animation for Chakram as soon as he's in range of wherever you targeted it. Shift+queueing Chakram after casting Chain is the guaranteed fastest way to do this.",
+          "notes": []
+        },
+        {
+          "text": "Remember that you can draw aggro from creeps on demand by right clicking enemy heroes. Even if the enemy hero is across the map, right clicking them will draw creep aggro to help build Reactive Armor stacks.",
+          "notes": [
+            "You can even use the top bar portraits to draw aggro. If you see an enemy hero is in vision on your minimap, you can attack+move/force attack (default a+left click) the enemy top bar portrait and it'll issue an attack command which'll draw creep aggro without having to move your camera."
+          ]
+        },
+        {
+          "text": "Go into the jungle and tank a few neutrals to build up Reactive Armor stacks before a gank/dive.",
+          "notes": []
+        },
+        {
+          "text": "The Agh's Scepter Reactive Armor active can be dispelled by enemies, but you'll deal the explosion damage when the buff is removed.",
+          "notes": []
+        },
+        {
+          "text": "An enemy can receive the pass damage from the Chakram once when it flies out and once when it's coming back. So if it looks like an enemy is about to escape the AoE of the Chakram, just return it while they're still in it. The extra passthrough damage will be more useful than a few more milliseconds of slow.",
+          "notes": []
+        },
+        {
+          "text": "The lower an enemy's HP, the greater the Chakram slow will be.",
+          "notes": []
+        },
+        {
+          "text": "Timbersaw is disarmed when Chakram is out.",
+          "notes": []
+        },
+        {
+          "text": "If you're trying to prevent someone from Blinking out when they're exiting a banish or Eul's or respawning from Aegis, don't expect a stationary Chakram to reliably cancel their Dagger. A Chakram in place only deals damage during set intervals. However, a moving Chakram checks for units to damage every tick that it's traveling. So time your Chakram cast/return so that it's moving underneath the enemy when they appear.",
+          "notes": []
+        },
+        {
+          "text": "Learn the trees on the map. There are many unique juke paths that only Timber can take advantage of thanks to his skill set.",
+          "notes": []
+        },
+        {
+          "text": "When escaping late game, try carving out paths with Chakram before Timber Chaining. Timber Chaining into a deforested area could buy you a few seconds of fog.",
+          "notes": []
+        },
+        {
+          "text": "Agh's Shard Flamethrower can damage buildings.",
+          "notes": []
+        },
+        {
+          "text": "Agh's Shard Flamethrower sets trees on fire as well. They will be destroyed after burning for 5 seconds.",
+          "notes": []
+        }
+      ],
+      "counters": [
+        {
+          "text": "Don't stand next to trees when laning against or escaping from a Timbersaw. The distance you're saving by hugging the treeline won't matter when he purely damages your ass.",
+          "notes": []
+        },
+        {
+          "text": "In lane, consider constantly cutting down trees if you have a Quelling Blade. You'll give Timbersaw fewer angles to Chain off of or fewer trees to get Whirling Death damage off of.",
+          "notes": []
+        },
+        {
+          "text": "If you're a strength hero, Whirling Death's primary attribute loss debuff will make you extremely vulnerable in lane.",
+          "notes": []
+        },
+        {
+          "text": "Timbersaw hates being silenced, especially if he has a Chakram out because that means he literally can't do anything. He can't attack because Chakram disarms him, and he can't return the Chakram because he's silenced.",
+          "notes": []
+        },
+        {
+          "text": "Timbersaw cannot Timber Chain when rooted/leashed.",
+          "notes": [
+            "Or more accurately, he can't cast Timber Chain. If he's already shot his Chain projectile, it'll still pull him even if he's rooted."
+          ]
+        },
+        {
+          "text": "If you stun Timbersaw at any point after the Chain projectile comes out, he'll stop moving. If your team has a shortage of stuns, save them for when you see his Chain come out as opposed to stunning him before he casts the spell. That way his Chain goes on cooldown, but he won't go anywhere.",
+          "notes": []
+        },
+        {
+          "text": "If you have an Iron Branch in lane and wanna go for big plays, you can try planting a tree right in front of Timber when he's trying to escape and intercept his Timber Chain cast. Other players besides Arteezy probably do this, but no one cares when they do it.",
+          "notes": []
+        },
+        {
+          "text": "Breaking Timbersaw will stop him from gaining new Reactive Armor stacks, but existing stacks will remain.",
+          "notes": []
+        },
+        {
+          "text": "The HP regen Timbersaw gains from his Reactive Armor passive can be reduced by debuffs that affect health restoration:",
+          "notes": [
+            "Items that can reduce health restoration: Spirit Vessel, Orb of Frost/Corrosion, Eye of Skadi, Crella's Crozier, as well as the \"Crippling Crossbow\" and \"Jidi Pollen Bag\" neutral item artifacts.",
+            "Spells that can reduce health restoration: Abaddon's Withering Mist innate, Ancient Apparition's Ice Blast, Doom's Doom, Drow Ranger's Agh's Scepter Hypothermia, Pudge's Agh's Scepter Rot, Slark's Saltwater Shiv, and a few others."
+          ]
+        },
+        {
+          "text": "Be mindful when right click harassing him in lane. Often times, Timber's prefer the Reactive stacks. Ideally you want to harass him with magic damage exclusively, if possible.",
+          "notes": []
+        },
+        {
+          "text": "Chakram has a fairly slow travel time, so it's usually worth sacrificing some positioning if it means you can sidestep the saw when he's chasing you.",
+          "notes": []
+        },
+        {
+          "text": "The lower your HP, the more Chakram slows your hero.",
+          "notes": []
+        },
+        {
+          "text": "You can remove the Agh's Scepter Reactive Armor barrier with basic dispels, but Timbersaw will explode the moment it's dispelled.",
+          "notes": []
+        }
+      ]
+    },
     "tiny": {
       "name": "Tiny",
       "tipSlug": "tiny",
       "url": "https://howdoiplay.com/tips/tiny.html",
-      "fetchedAt": "2026-09-30T14:42:13Z",
+      "fetchedAt": "2026-09-30T16:28:02Z",
       "tips": [
         {
           "text": "Mechanically, think of Avalanche as being similar to a mini Faceless Void Chronosphere. The Avalanche AoE is an aura that is constantly stunning. So throw it in advance if you know a hero will be in the AoE before it finishes (mid-banish, pre-TP).",
@@ -3609,7 +3975,7 @@
       "name": "Windranger",
       "tipSlug": "windranger",
       "url": "https://howdoiplay.com/tips/windranger.html",
-      "fetchedAt": "2026-09-30T14:42:17Z",
+      "fetchedAt": "2026-09-30T16:28:03Z",
       "tips": [
         {
           "text": "Shackleshot calculates latch angles based on where it was originally cast, not from Windranger's location on projectile impact.",
@@ -3741,7 +4107,7 @@
       "name": "Winter Wyvern",
       "tipSlug": "winter_wyvern",
       "url": "https://howdoiplay.com/tips/winter_wyvern.html",
-      "fetchedAt": "2026-09-30T14:42:18Z",
+      "fetchedAt": "2026-09-30T16:28:04Z",
       "tips": [
         {
           "text": "The Eldwurm's Edda item from your innate can be moved out of the neutral slot to a normal inventory slot.",
@@ -3872,7 +4238,7 @@
       "name": "Witch Doctor",
       "tipSlug": "witch_doctor",
       "url": "https://howdoiplay.com/tips/witch_doctor.html",
-      "fetchedAt": "2026-09-30T14:42:19Z",
+      "fetchedAt": "2026-09-30T16:28:05Z",
       "tips": [
         {
           "text": "The Gris-Gris item from your innate can be moved out of the neutral slot to a normal inventory slot.",
@@ -4020,6 +4386,7 @@
     }
   },
   "note": "Tsunami's hero tips and counters, extracted structure; the site's own content and license, see ref/dota2/README.md",
+  "source": "https://howdoiplay.com/tips/{tipSlug}.html",
   "patch": "7.41",
-  "source": "https://howdoiplay.com/tips/{tipSlug}.html"
+  "fetchedAt": "2026-09-30T16:28:05Z"
 }

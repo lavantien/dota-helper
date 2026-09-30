@@ -13,6 +13,12 @@
       ],
       "dropped": null
     },
+    "bane": {
+      "roles": [
+        "5"
+      ],
+      "dropped": null
+    },
     "bounty-hunter": {
       "roles": [
         "4"
@@ -85,12 +91,6 @@
       ],
       "dropped": null
     },
-    "lion": {
-      "roles": [
-        "4"
-      ],
-      "dropped": null
-    },
     "lone-druid": {
       "roles": [
         "1"
@@ -138,6 +138,14 @@
         "4"
       ],
       "dropped": null
+    },
+    "pangolier": {
+      "roles": [
+        "2"
+      ],
+      "dropped": [
+        "1"
+      ]
     },
     "phantom-lancer": {
       "roles": [
@@ -196,6 +204,12 @@
     "terrorblade": {
       "roles": [
         "1"
+      ],
+      "dropped": null
+    },
+    "timbersaw": {
+      "roles": [
+        "3"
       ],
       "dropped": null
     },

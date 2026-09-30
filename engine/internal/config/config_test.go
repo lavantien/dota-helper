@@ -70,19 +70,27 @@ func TestHeroesFoldsMultiRoleEntries(t *testing.T) {
 	}
 }
 
-// the live pool is pinned: every hero single-role, every tier dedicated.
-func TestPoolHeroesPinnedSingleRoleDedicated(t *testing.T) {
+// the live pool is pinned: every tier dedicated, and pangolier is the one
+// dual-seat hero, fielded at both core seats for the shared candidate field.
+func TestPoolHeroesPinnedTiersAndSeats(t *testing.T) {
 	c, err := Load(realConfig)
 	if err != nil {
 		t.Fatal(err)
 	}
+	multi := map[string][]string{}
 	for _, h := range c.Heroes() {
-		if len(h.Roles) != 1 {
-			t.Errorf("%s plays %v, want a single pinned role", h.Slug, h.Roles)
+		for _, r := range h.Roles {
+			if h.Tier[r] != "dedicated" {
+				t.Errorf("%s tier[%s] = %q, want dedicated", h.Slug, r, h.Tier[r])
+			}
 		}
-		if h.Tier[h.Roles[0]] != "dedicated" {
-			t.Errorf("%s tier[%s] = %q, want dedicated", h.Slug, h.Roles[0], h.Tier[h.Roles[0]])
+		if len(h.Roles) > 1 {
+			multi[h.Slug] = h.Roles
 		}
+	}
+	want := map[string][]string{"pangolier": {"1", "2"}}
+	if !reflect.DeepEqual(multi, want) {
+		t.Errorf("multi-role heroes = %v, want exactly %v", multi, want)
 	}
 }
 
