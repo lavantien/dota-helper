@@ -34,10 +34,10 @@
     "kind": "sequential",
     "picks": 943,
     "rankedPicks": 925,
-    "meanPercentile": 0.5440545873569965,
+    "meanPercentile": 0.5440799230375046,
     "meanPercentileCI": {
-      "lo": 0.5283279518443339,
-      "hi": 0.5605385879929775
+      "lo": 0.5283470513171539,
+      "hi": 0.560540295398336
     },
     "topK": {
       "top1": 0.18133616118769882,
@@ -65,10 +65,10 @@
     "kind": "finalSet",
     "picks": 943,
     "rankedPicks": 908,
-    "meanPercentile": 0.5191766962723138,
+    "meanPercentile": 0.5192577283345854,
     "meanPercentileCI": {
-      "lo": 0.5038718099774216,
-      "hi": 0.5351349965921787
+      "lo": 0.503894074874029,
+      "hi": 0.535147083270932
     },
     "topK": {
       "top1": 0.16755037115588547,

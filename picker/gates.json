@@ -458,9 +458,18 @@
       "id": "lycan-turn-veto",
       "target": "lycan",
       "roles": ["3"],
-      "when": [{ "kind": "enemyVisibleAny", "heroes": ["winter-wyvern", "enchantress"] }],
+      "when": [{ "kind": "enemyVisibleAny", "heroes": ["winter-wyvern"] }],
       "action": "hard_gate",
-      "note": "the curse and the little friends turn the pack against him, the wolf plan feeds itself",
+      "note": "winter curse turns his own pack into the executioners, the wolf plan feeds itself",
+      "origin": "authored"
+    },
+    {
+      "id": "lycan-friends-penalty",
+      "target": "lycan",
+      "roles": ["3"],
+      "when": [{ "kind": "enemyVisibleAny", "heroes": ["enchantress"] }],
+      "action": "penalty",
+      "note": "the scepter little friends turn the wolf bodies against him once they land",
       "origin": "authored"
     }
   ],
