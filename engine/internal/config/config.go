@@ -247,6 +247,7 @@ type Config struct {
 	Patch          string             `json:"patch"`
 	PatchEpoch     string             `json:"patchEpoch"`
 	Roles          []RoleDef          `json:"roles"`
+	SharedRolePools [][]string        `json:"sharedRolePools"` // roles fielding one shared picker candidate pool
 	Pool           []PoolEntry        `json:"pool"`
 	Heatmap        HeatmapCfg         `json:"heatmap"`
 	AoEClearHeroes []string           `json:"aoeClearHeroes"`
@@ -295,6 +296,9 @@ func (c *Config) Validate() error {
 	}
 	if len(roleIDs) != 5 {
 		return fmt.Errorf("want 5 roles, got %d", len(roleIDs))
+	}
+	if err := c.validateSharedRolePools(roleIDs); err != nil {
+		return err
 	}
 	seen := map[string]bool{}
 	for _, e := range c.Pool {

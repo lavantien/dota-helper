@@ -158,7 +158,7 @@ func validCondition(c Condition) bool {
 func Evaluate(rules []Rule, target string, s DraftState, c *config.Config) Result {
 	var res Result
 	for _, r := range rules {
-		if r.Target != target || !roleMatches(r, s) {
+		if r.Target != target || !roleMatches(r, s, c) {
 			continue
 		}
 		fired := true
@@ -187,13 +187,19 @@ func Evaluate(rules []Rule, target string, s DraftState, c *config.Config) Resul
 	return res
 }
 
-func roleMatches(r Rule, s DraftState) bool {
+// roleMatches scopes a rule by the view role's candidate field: the seat
+// itself plus its shared pool, so authored knowledge follows heroes into the
+// sibling seats they share a field with.
+func roleMatches(r Rule, s DraftState, c *config.Config) bool {
 	if len(r.Roles) == 0 {
 		return true
 	}
+	field := c.RoleField(s.Role)
 	for _, role := range r.Roles {
-		if role == s.Role {
-			return true
+		for _, f := range field {
+			if role == f {
+				return true
+			}
 		}
 	}
 	return false

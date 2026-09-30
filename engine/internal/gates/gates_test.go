@@ -111,6 +111,25 @@ func TestRoleScoping(t *testing.T) {
 	}
 }
 
+// a shared pool widens rule scoping across its seats: knowledge authored for
+// one seat follows the hero into the sibling view.
+func TestSharedPoolScoping(t *testing.T) {
+	cfg := testCfg()
+	cfg.SharedRolePools = [][]string{{"1", "2"}}
+	rule := Rule{
+		Id: "r", Target: "spectre", Roles: []string{"2"}, Action: ActionNoteOnly,
+		When: []Condition{{Kind: KindEnemyCountMin, Count: 0}},
+	}
+	state := DraftState{Role: "1"}
+	if res := Evaluate([]Rule{rule}, "spectre", state, cfg); len(res.FiredRuleIds) != 1 {
+		t.Errorf("shared seat must fire: %+v", res)
+	}
+	state.Role = "3"
+	if res := Evaluate([]Rule{rule}, "spectre", state, cfg); len(res.FiredRuleIds) != 0 {
+		t.Errorf("unshared seat must stay silent: %+v", res)
+	}
+}
+
 func TestActionEffects(t *testing.T) {
 	cfg := testCfg()
 	state := DraftState{Role: "2", VisibleEnemies: []string{"axe"}}

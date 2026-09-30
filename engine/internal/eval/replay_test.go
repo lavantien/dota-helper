@@ -25,6 +25,9 @@ func handModel(t *testing.T, extraRules ...gates.Rule) (*Model, *config.Config) 
 		SynByRole: map[string]float64{"1": 0.7, "2": 0.7, "3": 0.7, "4": 0.7, "5": 0.7},
 	}
 	cfg.GateDeltas = map[string]float64{"bonus": 0.25, "penalty": -0.25}
+	// same pin as the weights: the hub's shared role pools are policy, the
+	// hand arithmetic must not move when policy does
+	cfg.SharedRolePools = nil
 	slugs := make([]string, 8)
 	for i := range slugs {
 		slugs[i] = "h" + strconv.Itoa(i)
@@ -159,6 +162,31 @@ func TestSequentialReplayHandStates(t *testing.T) {
 	// advantage: radiant 0.90 + 0.52 minus dire 0.55
 	if math.Abs(r.Advantage-0.87) > 1e-9 {
 		t.Fatalf("advantage %v, want 0.87", r.Advantage)
+	}
+}
+
+// the shared core field: with roles 1 and 2 pooled, an early h3 pick ranks
+// inside the full core field instead of its seat alone, while the role
+// agnostic full-pool ranking does not move.
+func TestSequentialReplaySharedRoleField(t *testing.T) {
+	solo := Match{ID: 2, StartTime: 1000, RadiantWin: true, GameMode: "CAPTAINS_MODE",
+		LobbyType: "PRACTICE", Bracket: "TEST", AverageRank: 30,
+		Events: []DraftEvent{{Seq: 0, IsRadiant: true, IsPick: true, Slug: "h3", HeroID: 200}}}
+	m, cfg := handModel(t)
+	cfg.SharedRolePools = nil
+	out := SequentialReplay(cfg, m, []Match{solo})
+	if rr := out[0].Picks[0].RoleRank["2"]; rr.N != 1 {
+		t.Fatalf("unshared role-2 field N = %d, want 1", rr.N)
+	}
+	m2, cfg2 := handModel(t)
+	cfg2.SharedRolePools = [][]string{{"1", "2"}}
+	out2 := SequentialReplay(cfg2, m2, []Match{solo})
+	p := out2[0].Picks[0]
+	if rr := p.RoleRank["2"]; rr.N != 3 || rr.Rank != 3 {
+		t.Fatalf("shared role-2 field %+v, want rank 3 of 3 under the priors", rr)
+	}
+	if p.PoolN != 3 || out[0].Picks[0].PoolN != 3 {
+		t.Fatal("full-pool field must not move with the shared seats")
 	}
 }
 

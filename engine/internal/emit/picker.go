@@ -218,6 +218,11 @@ func FormatPicker(in PickerInput, cfg *config.Config) ([]byte, error) {
 	}
 	b.WriteString("  ],\n")
 	b.WriteString("  roles: " + jsValue(cfg.Roles) + ",\n")
+	shared := cfg.SharedRolePools
+	if shared == nil {
+		shared = [][]string{}
+	}
+	b.WriteString("  sharedRolePools: " + jsValue(shared) + ",\n")
 	b.WriteString("  weights: " + jsValue(cfg.Weights) + ",\n")
 	b.WriteString("  scoreConsts: " + jsValue(cfg.Score) + ",\n")
 	b.WriteString("  meta: {\n")

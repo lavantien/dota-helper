@@ -177,6 +177,7 @@ window.PICKER_GEN = {
     null,
   ],
   roles: [{ 'id': '1', 'label': 'pos 1, carry' }, { 'id': '2', 'label': 'pos 2, mid' }, { 'id': '3', 'label': 'pos 3, offlane' }, { 'id': '4', 'label': 'pos 4, soft supp' }, { 'id': '5', 'label': 'pos 5, hard supp' }],
+  sharedRolePools: [['1', '2']],
   weights: { 'knownMu': 1, 'synByRole': { '1': 0.3, '2': 0.2, '3': 0.3, '4': 1, '5': 1 }, 'prior': 0.2, 'genericFit': -0.5, 'exposure': 2, 'flexibility': 2 },
   scoreConsts: { 'enemySlots': 5, 'allySlots': 4, 'midPct': 0.5, 'flexCap': 50, 'flexHalf': 2 },
   meta: {

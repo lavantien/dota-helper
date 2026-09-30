@@ -23,6 +23,12 @@
       "label": "pos 5, hard supp"
     }
   ],
+  "sharedRolePools": [
+    [
+      "1",
+      "2"
+    ]
+  ],
   "pool": [
     {
       "slug": "pangolier",

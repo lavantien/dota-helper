@@ -291,3 +291,49 @@ test('rankRole filters by role and taken heroes, flags hard gates', () => {
   assert.deepEqual(one.map(r => r.idx), [0]);
   assert.equal(one[0].hardGated, true);
 });
+
+test('sharedRolePools unify the candidate field across seats', () => {
+  const g = baseGen();
+  g.sharedRolePools = [['1', '2']];
+  const pos1 = PS.rankRole(g, EMPTY, '1').map(r => r.idx);
+  const pos2 = PS.rankRole(g, EMPTY, '2').map(r => r.idx);
+  // alpha (roles ['1']) ranks in the pos 2 field, echo (['2','3']) in pos 1
+  assert.ok(pos2.includes(0), 'alpha must rank in the shared pos 2 field');
+  assert.ok(pos1.includes(4), 'echo must rank in the shared pos 1 field');
+  // unshared seats stay exact: golf and hotel (['3']) never rank in pos 2
+  assert.ok(!pos2.includes(6) && !pos2.includes(7));
+  // without the hub key nothing is shared
+  const solo = PS.rankRole(baseGen(), EMPTY, '2').map(r => r.idx);
+  assert.deepEqual(solo, [4]);
+});
+
+test('sharedRolePools widen rule scoping across the shared seats', () => {
+  const g = baseGen();
+  g.sharedRolePools = [['1', '2']];
+  g.gates.rules = [{ id: 'x1', target: 'alpha', roles: ['1'],
+    when: [{ kind: 'enemyVisibleAny', heroes: ['delta'] }], action: 'bonus' }];
+  const st = { allies: [], enemies: [3], banned: [], role: '2' };
+  close(PS.scoreCandidate(g, st, '2', 0).terms.gateDelta, 0.25);
+  // unshared seats keep the exact scope: the pos 3 view stays silent
+  const st3 = { allies: [], enemies: [3], banned: [], role: '3' };
+  close(PS.scoreCandidate(g, st3, '3', 0).terms.gateDelta, 0);
+});
+
+test('roleCandidatesGated counts the shared field, not the seat', () => {
+  const rules = [
+    { id: 'av', target: 'alpha', roles: ['1'],
+      when: [{ kind: 'enemyVisibleAny', heroes: ['delta'] }], action: 'hard_gate' },
+    { id: 'eb', target: 'echo', roles: ['2'],
+      when: [{ kind: 'roleCandidatesGated', count: 1 }], action: 'bonus' },
+  ];
+  const st = { allies: [], enemies: [3], banned: [], role: '2' };
+  const g = baseGen();
+  g.sharedRolePools = [['1', '2']];
+  g.gates.rules = rules;
+  // alpha is gated and sits in the shared pos 2 field, count 1 fires for echo
+  close(PS.scoreCandidate(g, st, '2', 4).terms.gateDelta, 0.25);
+  // without sharing alpha is outside the pos 2 field, the count stays 0
+  const solo = baseGen();
+  solo.gates.rules = rules;
+  close(PS.scoreCandidate(solo, st, '2', 4).terms.gateDelta, 0);
+});

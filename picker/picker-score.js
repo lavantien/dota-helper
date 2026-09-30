@@ -62,6 +62,21 @@ const synWeight = (G, role) => {
   return w;
 };
 
+// candidate field of a role: the seat plus the other seats of its shared
+// pool (hub sharedRolePools), mirroring the go twin's Config.RoleField.
+// candidate membership and rule scoping both key on it
+function roleField(G, role) {
+  const groups = G.sharedRolePools || [];
+  for (const g of groups) {
+    if (g.includes(role)) return g;
+  }
+  return [role];
+}
+
+function playsInField(roles, field) {
+  return (roles || []).some(r => field.includes(r));
+}
+
 // a missing packed cell reads 0, the same as a map miss in the go twin
 function pctAt(rows, pos, idx) {
   const hit = rows[pos].find(r => r.idx === idx);
@@ -95,7 +110,7 @@ function gateResult(rules, ctx, role, cIdx) {
   const res = { hardGated: false, notes: [], firedRuleIds: [], gateDelta: 0 };
   for (const r of rules) {
     if (ctx.slugIdx[r.target] !== cIdx) continue;
-    if (r.roles && r.roles.length && !r.roles.includes(role)) continue;
+    if (r.roles && r.roles.length && !r.roles.some(x => ctx.roleField.includes(x))) continue;
     const when = r.when || [];
     if (!when.every(c => condHolds(c, ctx))) continue;
     res.firedRuleIds.push(r.id);
@@ -107,13 +122,14 @@ function gateResult(rules, ctx, role, cIdx) {
   return res;
 }
 
-// gated count for roleCandidatesGated: role candidates that are hard gated
+// gated count for roleCandidatesGated: field candidates that are hard gated
 // under this state, with roleCandidatesGated conditions inert to avoid recursion
 function gatedCount(G, rules, role, baseCtx) {
+  const field = roleField(G, role);
   let n = 0;
   for (let p = 0; p < G.poolIdx.length; p++) {
     const entry = G.entries[p] || { roles: [], tier: {} };
-    if (!entry.roles.includes(role)) continue;
+    if (!playsInField(entry.roles, field)) continue;
     const r = gateResult(rules, baseCtx, role, G.poolIdx[p]);
     if (r.hardGated) n++;
   }
@@ -133,6 +149,7 @@ function makeCtx(G, state, role) {
   const aoeSet = new Set((G.gates && G.gates.aoeClearHeroes) || []);
   const inert = {
     slugIdx,
+    roleField: roleField(G, role),
     enemies: new Set(state.enemies),
     allies: new Set(state.allies),
     enemyN: state.enemies.length,
@@ -196,12 +213,13 @@ function scoreCandidate(G, state, role, candidateIdx) {
 
 function rankRole(G, state, role) {
   const taken = new Set(state.allies.concat(state.enemies, state.banned));
+  const field = roleField(G, role);
   const rows = [];
   for (let p = 0; p < G.poolIdx.length; p++) {
     const idx = G.poolIdx[p];
     if (taken.has(idx)) continue;
     const entry = G.entries[p] || { roles: [], tier: {} };
-    if (!entry.roles.includes(role)) continue;
+    if (!playsInField(entry.roles, field)) continue;
     rows.push(Object.assign({ idx }, scoreCandidate(G, state, role, idx)));
   }
   rows.sort((x, y) => y.score - x.score || x.idx - y.idx);

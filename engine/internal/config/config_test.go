@@ -37,6 +37,41 @@ func TestLoadReal(t *testing.T) {
 	if len(c.Pool) != len(rolesBySlug)+extra {
 		t.Errorf("pool entries = %d, want %d unique + %d multi-role extras", len(c.Pool), len(rolesBySlug), extra)
 	}
+	if !reflect.DeepEqual(c.SharedRolePools, [][]string{{"1", "2"}}) {
+		t.Errorf("sharedRolePools = %v, want the pos 1/2 core field", c.SharedRolePools)
+	}
+}
+
+// sharedRolePools: groups reference real roles, stay disjoint, and drive the
+// candidate-field helpers both picker twins key on.
+func TestSharedRolePools(t *testing.T) {
+	ids := map[string]bool{"1": true, "2": true, "3": true, "4": true, "5": true}
+	c := &Config{SharedRolePools: [][]string{{"1", "2"}}}
+	if err := c.validateSharedRolePools(ids); err != nil {
+		t.Fatalf("valid group rejected: %v", err)
+	}
+	if got := c.RoleField("1"); !reflect.DeepEqual(got, []string{"1", "2"}) {
+		t.Errorf("RoleField(1) = %v, want [1 2]", got)
+	}
+	if got := c.RoleField("3"); !reflect.DeepEqual(got, []string{"3"}) {
+		t.Errorf("RoleField(3) = %v, want [3]", got)
+	}
+	if !c.PlaysRole([]string{"2"}, "1") {
+		t.Error("PlaysRole([2], 1) = false, want the shared field")
+	}
+	if c.PlaysRole([]string{"3"}, "1") {
+		t.Error("PlaysRole([3], 1) = true, want exact seats only")
+	}
+	for name, groups := range map[string][][]string{
+		"unknown role": {{"1", "6"}},
+		"overlap":      {{"1", "2"}, {"2", "3"}},
+		"singleton":    {{"1"}},
+	} {
+		bad := &Config{SharedRolePools: groups}
+		if err := bad.validateSharedRolePools(ids); err == nil {
+			t.Errorf("%s: group accepted", name)
+		}
+	}
 }
 
 // Heroes folds pool entries per slug: roles ascending, tier per role. the

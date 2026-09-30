@@ -108,12 +108,13 @@ func gateState(s draftState, role string, candidatesGated int) gates.DraftState 
 	}
 }
 
-// gatedCount mirrors gatedCount in picker-score.js: every pool hero with
-// the role, taken or not, hard-gated under the inert view of this state.
+// gatedCount mirrors gatedCount in picker-score.js: every pool hero in the
+// role's candidate field (shared seats included), taken or not, hard-gated
+// under the inert view of this state.
 func gatedCount(cfg *config.Config, m *Model, rules []gates.Rule, s draftState, role string) int {
 	n := 0
 	for _, idx := range m.PoolIdx {
-		if !hasRole(m.Roles[idx], role) {
+		if !cfg.PlaysRole(m.Roles[idx], role) {
 			continue
 		}
 		if gates.Evaluate(rules, m.Slugs[idx], gateState(s, role, inertGated), cfg).HardGated {
@@ -217,12 +218,13 @@ func scorePick(cfg *config.Config, m *Model, rules []gates.Rule, s draftState, p
 	return eval
 }
 
-// roleStandings ranks the picked hero inside one role's candidate field.
+// roleStandings ranks the picked hero inside one role's candidate field,
+// shared seats included.
 func roleStandings(cfg *config.Config, m *Model, rules []gates.Rule, s draftState,
 	draft analytics.Draft, taken map[int]bool, role string, picked int, deltaFor func(string, int) float64) RoleRank {
 	var cands []analytics.Candidate
 	for pi, idx := range m.PoolIdx {
-		if taken[idx] || idx == picked || !hasRole(m.Roles[idx], role) {
+		if taken[idx] || idx == picked || !cfg.PlaysRole(m.Roles[idx], role) {
 			continue
 		}
 		if gates.Evaluate(rules, m.Slugs[idx], gateState(s, role, inertGated), cfg).HardGated {
