@@ -1,10 +1,12 @@
 {
+  "note": "Tsunami's hero tips and counters, extracted structure; the site's own content and license, see ref/dota2/README.md",
+  "fetchedAt": "2026-09-30T18:28:01Z",
   "heroes": {
     "alchemist": {
       "name": "Alchemist",
       "tipSlug": "alchemist",
       "url": "https://howdoiplay.com/tips/alchemist.html",
-      "fetchedAt": "2026-09-30T16:27:23Z",
+      "fetchedAt": "2026-09-30T18:27:33Z",
       "tips": [
         {
           "text": "You get a lot of time between stacks on your Greevil's Greed innate. If you're free farming, you should be hitting the max cap constantly. If you're jungling, learn how to strategically draw aggro from neutral creeps using Acid Spray or any items you have to keep stacks up.",
@@ -104,7 +106,7 @@
       "name": "Anti-Mage",
       "tipSlug": "anti-mage",
       "url": "https://howdoiplay.com/tips/anti-mage.html",
-      "fetchedAt": "2026-09-30T16:27:24Z",
+      "fetchedAt": "2026-09-30T18:27:34Z",
       "tips": [
         {
           "text": "Blink disjoints any incoming enemy spell or attack projectiles.",
@@ -202,7 +204,7 @@
       "name": "Bane",
       "tipSlug": "bane",
       "url": "https://howdoiplay.com/tips/bane.html",
-      "fetchedAt": "2026-09-30T16:27:25Z",
+      "fetchedAt": "2026-09-30T18:27:35Z",
       "tips": [
         {
           "text": "Try to apply debuffs on enemies before they die to get stacks of your Ichor of Nyctasha innate. Debuffs from items can also count.",
@@ -340,7 +342,7 @@
       "name": "Bounty Hunter",
       "tipSlug": "bounty_hunter",
       "url": "https://howdoiplay.com/tips/bounty_hunter.html",
-      "fetchedAt": "2026-09-30T16:27:26Z",
+      "fetchedAt": "2026-09-30T18:27:36Z",
       "tips": [
         {
           "text": "Shuriken will bounce to Tracked targets even if the initial target isn't Tracked. Try hitting a non-Tracked unit first (like a creep) to reach a distant target.",
@@ -422,7 +424,7 @@
       "name": "Brewmaster",
       "tipSlug": "brewmaster",
       "url": "https://howdoiplay.com/tips/brewmaster.html",
-      "fetchedAt": "2026-09-30T16:27:27Z",
+      "fetchedAt": "2026-09-30T18:27:36Z",
       "tips": [
         {
           "text": "You can ignite Cinder Brew with damage from items like Blood Grenade, Urn/Vessel/Distiller, or Radiance.",
@@ -519,7 +521,7 @@
       "name": "Centaur Warrunner",
       "tipSlug": "centaur_warrunner",
       "url": "https://howdoiplay.com/tips/centaur_warrunner.html",
-      "fetchedAt": "2026-09-30T16:27:28Z",
+      "fetchedAt": "2026-09-30T18:27:37Z",
       "tips": [
         {
           "text": "Double Edge costs no mana, so use it as your primary pushing spell late game.",
@@ -577,7 +579,7 @@
       "name": "Clinkz",
       "tipSlug": "clinkz",
       "url": "https://howdoiplay.com/tips/clinkz.html",
-      "fetchedAt": "2026-09-30T16:27:29Z",
+      "fetchedAt": "2026-09-30T18:27:38Z",
       "tips": [
         {
           "text": "Manually casting Searing Arrows on enemy heroes won't draw creep aggro.",
@@ -660,7 +662,7 @@
       "name": "Dawnbreaker",
       "tipSlug": "dawnbreaker",
       "url": "https://howdoiplay.com/tips/dawnbreaker.html",
-      "fetchedAt": "2026-09-30T16:27:30Z",
+      "fetchedAt": "2026-09-30T18:27:39Z",
       "tips": [
         {
           "text": "Your Break of Dawn innate makes you more powerful right as the map transitions to daytime.",
@@ -829,7 +831,7 @@
       "name": "Doom",
       "tipSlug": "doom",
       "url": "https://howdoiplay.com/tips/doom.html",
-      "fetchedAt": "2026-09-30T16:27:31Z",
+      "fetchedAt": "2026-09-30T18:27:39Z",
       "tips": [
         {
           "text": "Devour bonus gold is unreliable and granted when the buff expires.",
@@ -903,7 +905,7 @@
       "name": "Dragon Knight",
       "tipSlug": "dragon_knight",
       "url": "https://howdoiplay.com/tips/dragon_knight.html",
-      "fetchedAt": "2026-09-30T16:27:31Z",
+      "fetchedAt": "2026-09-30T18:27:40Z",
       "tips": [
         {
           "text": "Breathe Fire's damage reduction component is a big deal in team fights, especially since it reduces total attack damage including +dmg items. Don't save it for kill stealing, use it early on in a fight.",
@@ -944,7 +946,7 @@
       "name": "Enigma",
       "tipSlug": "enigma",
       "url": "https://howdoiplay.com/tips/enigma.html",
-      "fetchedAt": "2026-09-30T16:27:32Z",
+      "fetchedAt": "2026-09-30T18:27:41Z",
       "tips": [
         {
           "text": "Jungle creeps have a tendency to use their spells whenever three units are in close proximity to them. When jungling a neutral camp, spread your Eidolons out so they don't trigger the neutrals to use their spells.",
@@ -1026,7 +1028,7 @@
       "name": "Juggernaut",
       "tipSlug": "juggernaut",
       "url": "https://howdoiplay.com/tips/juggernaut.html",
-      "fetchedAt": "2026-09-30T16:27:34Z",
+      "fetchedAt": "2026-09-30T18:27:41Z",
       "tips": [
         {
           "text": "You can activate Blade Fury while TPing and your channel won't break. Use this to go debuff immune if someone is walking up to you while you're TPing or use it to show up to your destination pre-debuff immune.",
@@ -1162,7 +1164,7 @@
       "name": "Leshrac",
       "tipSlug": "leshrac",
       "url": "https://howdoiplay.com/tips/leshrac.html",
-      "fetchedAt": "2026-09-30T16:27:35Z",
+      "fetchedAt": "2026-09-30T18:27:42Z",
       "tips": [
         {
           "text": "Split Earth destroys trees.",
@@ -1258,7 +1260,7 @@
       "name": "Lich",
       "tipSlug": "lich",
       "url": "https://howdoiplay.com/tips/lich.html",
-      "fetchedAt": "2026-09-30T16:27:35Z",
+      "fetchedAt": "2026-09-30T18:27:43Z",
       "tips": [
         {
           "text": "When figuring out what to eat with your Sacrifice innate, here's a few things to keep in mind:",
@@ -1357,7 +1359,7 @@
       "name": "Lifestealer",
       "tipSlug": "lifestealer",
       "url": "https://howdoiplay.com/tips/lifestealer.html",
-      "fetchedAt": "2026-09-30T16:27:38Z",
+      "fetchedAt": "2026-09-30T18:27:43Z",
       "tips": [
         {
           "text": "Debuff immunity, like from Rage, prevents Tormentor damage from reflecting on you.",
@@ -1409,7 +1411,7 @@
       "name": "Lone Druid",
       "tipSlug": "lone_druid",
       "url": "https://howdoiplay.com/tips/lone_druid.html",
-      "fetchedAt": "2026-09-30T16:27:39Z",
+      "fetchedAt": "2026-09-30T18:27:44Z",
       "tips": [
         {
           "text": "Don't be afraid of letting your Spirit Bear wander away from you. Use it to draw aggro from an incoming creep wave, stack jungle camps, go shopping for you, teleport to the fountain to heal, play checkers with Death Prophet, or just scout for you.",
@@ -1526,7 +1528,7 @@
       "name": "Luna",
       "tipSlug": "luna",
       "url": "https://howdoiplay.com/tips/luna.html",
-      "fetchedAt": "2026-09-30T16:27:40Z",
+      "fetchedAt": "2026-09-30T18:27:45Z",
       "tips": [
         {
           "text": "The Lunar Blessing innate damage aura works on creep-hero units like Brewmaster's Primal Split Brewlings, Visage's Familiars, or Warlock's Golem.",
@@ -1615,7 +1617,7 @@
       "name": "Lycan",
       "tipSlug": "lycan",
       "url": "https://howdoiplay.com/tips/lycan.html",
-      "fetchedAt": "2026-09-30T16:27:42Z",
+      "fetchedAt": "2026-09-30T18:27:46Z",
       "tips": [
         {
           "text": "Wolves are quite possibly the strongest scouting tool in the game. They can serve as two moving, permanently invisible, temporary observer wards on demand. Use them to scout, check/kill runes, block/stack camps, body block targets, and most importantly, follow around high priority targets.",
@@ -1693,7 +1695,7 @@
       "name": "Marci",
       "tipSlug": "marci",
       "url": "https://howdoiplay.com/tips/marci.html",
-      "fetchedAt": "2026-09-30T16:27:43Z",
+      "fetchedAt": "2026-09-30T18:27:46Z",
       "tips": [
         {
           "text": "You can cast Dispose on an ally's top bar portrait to easily target them. Useful if you're trying to save a specific target in a sea of summons or illusions in a chaotic team fight.",
@@ -1838,7 +1840,7 @@
       "name": "Mirana",
       "tipSlug": "mirana",
       "url": "https://howdoiplay.com/tips/mirana.html",
-      "fetchedAt": "2026-09-30T16:27:44Z",
+      "fetchedAt": "2026-09-30T18:27:47Z",
       "tips": [
         {
           "text": "The second Starstorm hit will land on the closest target to your hero when the spell was cast.",
@@ -1922,11 +1924,153 @@
         }
       ]
     },
+    "monkey-king": {
+      "name": "Monkey King",
+      "tipSlug": "monkey_king",
+      "url": "https://howdoiplay.com/tips/monkey_king.html",
+      "fetchedAt": "2026-09-30T18:27:48Z",
+      "tips": [
+        {
+          "text": "Boundless Strike's damage is applied as an instant attack . This instant attack ignores disarms, has true strike, and applies attack modifiers (except cleave). If you have an attack modifier with a proc, it'll roll for a chance to proc on each target hit.",
+          "notes": [
+            "Since Boundless Strike is an instant attack, it'll break your Smoke if it damages a unit."
+          ]
+        },
+        {
+          "text": "If you Boundless Strike Mud Golems to death, the Shard Golems will also get hit by the Boundless Strike as they spawn. Small farming efficiency note.",
+          "notes": []
+        },
+        {
+          "text": "No matter how many targets are hit in Boundless Strike, only one Jingu Mastery stack is consumed. If you're low on HP and have Jingu active, try saving Boundless to smack an entire creep wave and lifesteal off every target.",
+          "notes": []
+        },
+        {
+          "text": "You can't place Jingu stacks on illusions. An optimist sees this as a way to identify the real Phantom Lancer with a Boundless Strike, a pessimist would be angry they can't tap that unattended Terrorblade illusion for a free Jingu.",
+          "notes": []
+        },
+        {
+          "text": "If you save your first skill point in Tree Dance, you can skill it up and immediately cast it after taking damage since the damage cooldown is only in effect after the spell is learned.",
+          "notes": []
+        },
+        {
+          "text": "You can keep an Iron Branch in your pocket to create a tree to Dance off of on demand. Usually this is pointless given the density of trees around the map, but if you're mid you could take someone by surprise by Primal Springing on them straight from the river.",
+          "notes": []
+        },
+        {
+          "text": "You're considered two 'levels' of high ground elevation up when perched during Tree Dance, but enemy units will have vision of you at their ground level whenever you're jumping from tree to tree.",
+          "notes": []
+        },
+        {
+          "text": "Ground targeted spells will still affect you as normal when you're on a tree.",
+          "notes": []
+        },
+        {
+          "text": "Casting Boundless Strike or Mischief won't unperch you from a tree, but finishing a Wukong's Command cast will. You can use items, like TP, without getting unperched.",
+          "notes": []
+        },
+        {
+          "text": "The enemy will hear your Primal Spring channeling sound at wherever the landing is targeted.",
+          "notes": []
+        },
+        {
+          "text": "You can Tree Dance through a Disruptor's Kinetic Field, but you cannot Primal Spring through it.",
+          "notes": []
+        },
+        {
+          "text": "If Mars casts an Arena within ~3000 range of your hero, you just straight up will not be allowed to cast Tree Dance on anything. You can attempt to cast Primal Spring if you're already on a tree, but if the Arena is still up when the channel ends, you'll just walk off your tree and put the spell on cooldown.",
+          "notes": []
+        },
+        {
+          "text": "Agh's Shard Boundless Strike applies a lower strength Primal Spring debuff on enemies. However, if you've already applied a stronger Primal Spring debuff onto a target, hitting them with Agh's Shard Boundless Strike will refresh that stronger debuff.",
+          "notes": []
+        },
+        {
+          "text": "Here are a few Mischief interactions:",
+          "notes": [
+            "When in Mischief, you won't appear on the enemy minimap at all. Handy for courier sniping or sneaking through warded areas.",
+            "Enemy towers and creeps won't attack you when you're in Mischief.",
+            "The first 0.1s of Mischief provides damage immunity from any source. It's not a disjoint and it's not a banish, but you can prevent taking damage from any incoming projectiles/attacks/damage over time ticks for that period.",
+            "You can instantly drop aggro from creeps by going into Mischief.",
+            "Right clicking heroes while in Mischief won't draw aggro from creeps, but creeps will aggro you as soon as you start your attack.",
+            "Activating Mischief in most situations will turn you into a Courier, Iron Branch, Clarity, Salve, TP Scroll, Tango, or a banana.",
+            "If you're standing next to a non-hero unit, like a lane/neutral creep or summoned unit (excluding creep-heroes), you'll turn into that unit.",
+            "Other transformations are location dependent. Standing near a tree will make you a tree. Rosh pit will make you an Aegis, Cheese, Refresher Shard, or Roshan himself. Rune spot will make you a bounty or power rune depending on location.",
+            "The enemy can't see the Jingu Mastery buff over your head when you're in Mischief, but debuffs (like Dust or Ursa's Fury Swipes) will still show above your disguise.",
+            "You can instantly lose a Troll Warlord's Battle Trance aggro by going into Mischief. This is more consistent to pull off if there are other aggro targets available for him to shift focus onto."
+          ]
+        },
+        {
+          "text": "Wukong's Command soldiers can't proc Basher/Abyssal or Echo Sabre, but they can proc every other on-hit item effect. They also individually carry whatever auras your hero has.",
+          "notes": [
+            "Wukong soldiers do not copy your neutral item."
+          ]
+        },
+        {
+          "text": "Agh's Scepter soldiers won't attack buildings unless the real Monkey King is within 500 range of them.",
+          "notes": []
+        },
+        {
+          "text": "Agh's Scepter soldiers will disappear when you die, even if you have an Aegis.",
+          "notes": []
+        },
+        {
+          "text": "When using Changing of the Guard, enemies won't be able to see the ring surrounding the soldier you transformed to, only allies can.",
+          "notes": []
+        },
+        {
+          "text": "You disjoint incoming projectiles and are invulnerable while in Changing of the Guard.",
+          "notes": []
+        }
+      ],
+      "counters": [
+        {
+          "text": "Tree Dance follows a stricter set of Blink Dagger rules in terms of going on cooldown when damaged, so damage over time debuffs, like from like Urn, help make Monkey King a little less slippery. It's stricter than Blink Dagger because even damage from lane/neutral creeps will put it on cooldown.",
+          "notes": []
+        },
+        {
+          "text": "Destroying the tree Monkey King is perched on will stun him for a hefty period of time. Not many heroes can easily take advantage of this, but: Beastmaster's Wild Axes, Windranger's Powershot, Storm Spirit's Ball Lightning, Phoenix's Icarus Dive and Supernova, Enigma's Midnight Pulse, Keeper of the Light's Agh's Scepter Will-O-Wisp, Mars's Arena of Blood, Underlord's Fiend's Gate, Timbersaw's everything, Earth Spirit's everything, Batrider's Firefly, or Kez's Echo Slash are a few examples of spells that are either fast enough or large enough to catch a Tree Dancing Monkey King by surprise.",
+          "notes": [
+            "Don't forget about the tree cutting capabilities of Quelling Blade or Battle Fury late game.",
+            "Roshan's Banner is a long range instant cast item that destroys trees in a fairly large AoE. In a late game situation, it could be worth sitting on the Banner in your inventory to stun a Tree Dancing Monkey King.",
+            "Force Staffed units can destroy trees.",
+            "Harpoon can target trees and will destroy all trees in your travel path."
+          ]
+        },
+        {
+          "text": "You'll need vision of him to even know what tree he's on to begin with. Heroes with vision providing spells like Razor's Plasma Field, Disruptor's Thunder Strike, Puck's Illusory Orb, Drow Ranger's Agh's Shard Glacier, or Nature's Prophet's Agh's Shard Curse of the Oldgrowth can be handy.",
+          "notes": [
+            "For items that provide vision, Essence Distiller can be ground targeted and provide vision in its AoE and Shiva's Guard's active also provides a lot of flying vision."
+          ]
+        },
+        {
+          "text": "Monkey's Jingu Mastery damage+lifesteal buff can be removed with basic dispels. This makes heroes like Oracle with Fortune's End or Enchantress with Enchant useful in the laning phase or Shadow Demon with Demonic Purge useful in the late game.",
+          "notes": [
+            "However, be aware that Monkey King has a \"Jingu Mastery Undispellable\" talent."
+          ]
+        },
+        {
+          "text": "The audio cue from Primal Spring is played based on your camera placement. For example, if you hear the guzheng to your left, he targeted the Spring on the left side of whatever your camera's looking at.",
+          "notes": []
+        },
+        {
+          "text": "Wukong's Command soldiers' right clicks can be reduced by damage block from Vanguard or Crimson Guard.",
+          "notes": []
+        },
+        {
+          "text": "You can try shoving Monkey King out of his Wukong's Command circle to end the spell with a Force Staff if he's near the edge or use spells that Fear or spells that apply forced movement or knockback like Batrider's Flamebreak or Keeper of the Light's Blinding Light.",
+          "notes": []
+        },
+        {
+          "text": "Glyphing the creep wave can be an effective way to minimize the amount of lifesteal MK gets from a Boundless Strike if he has Jingu ready. This is mainly relevant when you're laning against him. Just be sure you have a hotkey assigned to your Glyph to pull this trick off quickly.",
+          "notes": []
+        }
+      ]
+    },
     "natures-prophet": {
       "name": "Nature's Prophet",
       "tipSlug": "nature's_prophet",
       "url": "https://howdoiplay.com/tips/nature%27s_prophet.html",
-      "fetchedAt": "2026-09-30T16:27:47Z",
+      "fetchedAt": "2026-09-30T18:27:48Z",
       "tips": [
         {
           "text": "Try hugging trees whenever it's convenient to take advantage of the damage given from your Spirit of the Forest innate.",
@@ -2078,7 +2222,7 @@
       "name": "Necrophos",
       "tipSlug": "necrophos",
       "url": "https://howdoiplay.com/tips/necrophos.html",
-      "fetchedAt": "2026-09-30T16:27:48Z",
+      "fetchedAt": "2026-09-30T18:27:49Z",
       "tips": [
         {
           "text": "You get innate Sadist regen stacks off of any unit you kill including buildings, wards, and creep denies. The only exceptions are illusions or Arc Warden's Tempest Double.",
@@ -2177,7 +2321,7 @@
       "name": "Nyx Assassin",
       "tipSlug": "nyx_assassin",
       "url": "https://howdoiplay.com/tips/nyx_assassin.html",
-      "fetchedAt": "2026-09-30T16:27:49Z",
+      "fetchedAt": "2026-09-30T18:27:50Z",
       "tips": [
         {
           "text": "Nyx gets the luxury of easy positioning thanks to Vendetta to make multi hero Impales simpler. Vendetta one hero and then roughly target the Impale on another hero. Since you're in such close range to your first target, you will most likely nyx them both with the Impale.",
@@ -2271,7 +2415,7 @@
       "name": "Pangolier",
       "tipSlug": "pangolier",
       "url": "https://howdoiplay.com/tips/pangolier.html",
-      "fetchedAt": "2026-09-30T16:27:50Z",
+      "fetchedAt": "2026-09-30T18:27:51Z",
       "tips": [
         {
           "text": "Swashbuckle sets your damage flat and attacks every unit in the AoE multiple times. There are a few interactions to note:",
@@ -2451,7 +2595,7 @@
       "name": "Phantom Lancer",
       "tipSlug": "phantom_lancer",
       "url": "https://howdoiplay.com/tips/phantom_lancer.html",
-      "fetchedAt": "2026-09-30T16:27:51Z",
+      "fetchedAt": "2026-09-30T18:27:51Z",
       "tips": [
         {
           "text": "Doppelganger allows you to travel up and down cliffs.",
@@ -2583,7 +2727,7 @@
       "name": "Clockwerk",
       "tipSlug": "clockwerk",
       "url": "https://howdoiplay.com/tips/clockwerk.html",
-      "fetchedAt": "2026-09-30T16:27:52Z",
+      "fetchedAt": "2026-09-30T18:27:52Z",
       "tips": [
         {
           "text": "When using Battery Assault in lane, position yourself so that the enemy creeps won't absorb hits. Stand along the outer perimeter of an enemy hero, rather than bulldozing through the middle of the creep wave.",
@@ -2726,7 +2870,7 @@
       "name": "Rubick",
       "tipSlug": "rubick",
       "url": "https://howdoiplay.com/tips/rubick.html",
-      "fetchedAt": "2026-09-30T16:27:53Z",
+      "fetchedAt": "2026-09-30T18:27:53Z",
       "tips": [
         {
           "text": "Rubick's Curiosity innate debuff amplification is basically the opposite of status resistance in terms of mechanics.",
@@ -2884,7 +3028,7 @@
       "name": "Shadow Shaman",
       "tipSlug": "shadow_shaman",
       "url": "https://howdoiplay.com/tips/shadow_shaman.html",
-      "fetchedAt": "2026-09-30T16:27:54Z",
+      "fetchedAt": "2026-09-30T18:27:53Z",
       "tips": [
         {
           "text": "Your Fowl Play innate will not protect you from a lethal Axe Culling Blade or Necrophos Reaper's Scythe.",
@@ -3002,7 +3146,7 @@
       "name": "Slardar",
       "tipSlug": "slardar",
       "url": "https://howdoiplay.com/tips/slardar.html",
-      "fetchedAt": "2026-09-30T16:27:55Z",
+      "fetchedAt": "2026-09-30T18:27:54Z",
       "tips": [
         {
           "text": "You can cast Guardian Sprint while TPing and it won't cancel the channel.",
@@ -3080,7 +3224,7 @@
       "name": "Slark",
       "tipSlug": "slark",
       "url": "https://howdoiplay.com/tips/slark.html",
-      "fetchedAt": "2026-09-30T16:27:56Z",
+      "fetchedAt": "2026-09-30T18:27:55Z",
       "tips": [
         {
           "text": "Capitalize on Essence Shift innate stacks. Take a tower or TP to another lane and use all the damage you have to continue snowballing. Don't just sit around and farm, the enemy should be scared of how much damage you have after winning a fight.",
@@ -3253,7 +3397,7 @@
       "name": "Spectre",
       "tipSlug": "spectre",
       "url": "https://howdoiplay.com/tips/spectre.html",
-      "fetchedAt": "2026-09-30T16:27:58Z",
+      "fetchedAt": "2026-09-30T18:27:56Z",
       "tips": [
         {
           "text": "When farming neutral camps, kill the smaller creeps first. That way you can proc your Desolate innate damage on the big creep.",
@@ -3363,7 +3507,7 @@
       "name": "Storm Spirit",
       "tipSlug": "storm_spirit",
       "url": "https://howdoiplay.com/tips/storm_spirit.html",
-      "fetchedAt": "2026-09-30T16:27:59Z",
+      "fetchedAt": "2026-09-30T18:27:56Z",
       "tips": [
         {
           "text": "Static Remnants last quite a while, so it's not a bad idea to set some up if you're afraid a Riki or Smoked hero is trailing you since they'll detonate and damage on invis units.",
@@ -3511,7 +3655,7 @@
       "name": "Sven",
       "tipSlug": "sven",
       "url": "https://howdoiplay.com/tips/sven.html",
-      "fetchedAt": "2026-09-30T16:28:00Z",
+      "fetchedAt": "2026-09-30T18:27:57Z",
       "tips": [
         {
           "text": "Storm Hammer stuns and damages everything in its AoE. If an enemy has Linken's Sphere, but is sitting inside their creep wave, just target the Hammer on a creep.",
@@ -3565,7 +3709,7 @@
       "name": "Terrorblade",
       "tipSlug": "terrorblade",
       "url": "https://howdoiplay.com/tips/terrorblade.html",
-      "fetchedAt": "2026-09-30T16:28:01Z",
+      "fetchedAt": "2026-09-30T18:27:58Z",
       "tips": [
         {
           "text": "Terrorblade's Dark Unity innate changes how much damage your illusions do depending on how far they are from your hero.",
@@ -3687,7 +3831,7 @@
       "name": "Timbersaw",
       "tipSlug": "timbersaw",
       "url": "https://howdoiplay.com/tips/timbersaw.html",
-      "fetchedAt": "2026-09-30T16:28:02Z",
+      "fetchedAt": "2026-09-30T18:27:58Z",
       "tips": [
         {
           "text": "Timbersaw's Exposure Therapy innate gives him mana for every tree he kills.",
@@ -3832,7 +3976,7 @@
       "name": "Tiny",
       "tipSlug": "tiny",
       "url": "https://howdoiplay.com/tips/tiny.html",
-      "fetchedAt": "2026-09-30T16:28:02Z",
+      "fetchedAt": "2026-09-30T18:27:59Z",
       "tips": [
         {
           "text": "Mechanically, think of Avalanche as being similar to a mini Faceless Void Chronosphere. The Avalanche AoE is an aura that is constantly stunning. So throw it in advance if you know a hero will be in the AoE before it finishes (mid-banish, pre-TP).",
@@ -3975,7 +4119,7 @@
       "name": "Windranger",
       "tipSlug": "windranger",
       "url": "https://howdoiplay.com/tips/windranger.html",
-      "fetchedAt": "2026-09-30T16:28:03Z",
+      "fetchedAt": "2026-09-30T18:28:00Z",
       "tips": [
         {
           "text": "Shackleshot calculates latch angles based on where it was originally cast, not from Windranger's location on projectile impact.",
@@ -4107,7 +4251,7 @@
       "name": "Winter Wyvern",
       "tipSlug": "winter_wyvern",
       "url": "https://howdoiplay.com/tips/winter_wyvern.html",
-      "fetchedAt": "2026-09-30T16:28:04Z",
+      "fetchedAt": "2026-09-30T18:28:00Z",
       "tips": [
         {
           "text": "The Eldwurm's Edda item from your innate can be moved out of the neutral slot to a normal inventory slot.",
@@ -4238,7 +4382,7 @@
       "name": "Witch Doctor",
       "tipSlug": "witch_doctor",
       "url": "https://howdoiplay.com/tips/witch_doctor.html",
-      "fetchedAt": "2026-09-30T16:28:05Z",
+      "fetchedAt": "2026-09-30T18:28:01Z",
       "tips": [
         {
           "text": "The Gris-Gris item from your innate can be moved out of the neutral slot to a normal inventory slot.",
@@ -4385,8 +4529,6 @@
       ]
     }
   },
-  "note": "Tsunami's hero tips and counters, extracted structure; the site's own content and license, see ref/dota2/README.md",
-  "source": "https://howdoiplay.com/tips/{tipSlug}.html",
   "patch": "7.41",
-  "fetchedAt": "2026-09-30T16:28:05Z"
+  "source": "https://howdoiplay.com/tips/{tipSlug}.html"
 }

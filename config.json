@@ -109,6 +109,12 @@
       "tier": "dedicated"
     },
     {
+      "slug": "monkey-king",
+      "name": "Monkey King",
+      "role": "1",
+      "tier": "dedicated"
+    },
+    {
       "slug": "tiny",
       "name": "Tiny",
       "role": "1",
@@ -333,6 +339,7 @@
     "proseGateStopWords": [
       "force",
       "lifesteal",
+      "boundless",
       "echo",
       "blink",
       "cyclone",

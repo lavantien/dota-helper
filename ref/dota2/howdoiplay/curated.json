@@ -1,5 +1,5 @@
 {
-  "curatedAt": "2026-09-30",
+  "curatedAt": "2026-10-01",
   "source": "ref/dota2/howdoiplay/howdoiplay.json",
   "patch": "7.41",
   "heroes": {
@@ -1240,6 +1240,78 @@
           "verdict": "confirmed",
           "source": "https://liquipedia.net/dota2/Mirana",
           "text": "moonlight shadow re-fades every ally invis for the full duration, stock sentries and dust before pushing"
+        }
+      }
+    ],
+    "monkey-king": [
+      {
+        "idx": 0,
+        "from": "tips[0]",
+        "verified": {
+          "date": "2026-10-01",
+          "verdict": "confirmed",
+          "source": "https://liquipedia.net/dota2/Monkey_King",
+          "text": "boundless strike is an instant attack with true strike, it lands through disarms and carries every attack modifier across the arc"
+        }
+      },
+      {
+        "idx": 1,
+        "from": "tips[2]",
+        "verified": {
+          "date": "2026-10-01",
+          "verdict": "confirmed",
+          "source": "https://howdoiplay.com/tips/monkey-king.html",
+          "text": "one boundless sweep spends a single jingu stack, low on health smack the whole wave and the lifesteal pays off every body hit"
+        }
+      },
+      {
+        "idx": 2,
+        "from": "tips[13]",
+        "verified": {
+          "date": "2026-10-01",
+          "verdict": "confirmed",
+          "source": "https://howdoiplay.com/tips/monkey-king.html",
+          "text": "mischief hides him from the enemy minimap and drops tower and creep aggro, the first beat of the disguise is damage immune"
+        }
+      },
+      {
+        "idx": 3,
+        "from": "tips[14]",
+        "verified": {
+          "date": "2026-10-01",
+          "verdict": "confirmed",
+          "source": "https://howdoiplay.com/tips/monkey-king.html",
+          "text": "the wukong soldiers never roll bash or echo sabre procs, every other on hit effect rides their swings and they carry his auras"
+        }
+      },
+      {
+        "idx": 4,
+        "from": "tips[18]",
+        "verified": {
+          "date": "2026-10-01",
+          "verdict": "confirmed",
+          "source": "https://howdoiplay.com/tips/monkey-king.html",
+          "text": "the changing of the guard swap disjoints incoming projectiles and holds him invulnerable for the flight"
+        }
+      },
+      {
+        "idx": 5,
+        "from": "counters[1]",
+        "verified": {
+          "date": "2026-10-01",
+          "verdict": "confirmed",
+          "source": "https://howdoiplay.com/tips/monkey-king.html",
+          "text": "cutting the tree under the perch stuns him for a long beat, the wild axes and midnight pulse crew catch the mid hop dancer"
+        }
+      },
+      {
+        "idx": 6,
+        "from": "counters[3]",
+        "verified": {
+          "date": "2026-10-01",
+          "verdict": "confirmed",
+          "source": "https://howdoiplay.com/tips/monkey-king.html",
+          "text": "basic dispels rip the jingu buff off, fortune's end and the demonic purge strip the sustain"
         }
       }
     ],
