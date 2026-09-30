@@ -43,6 +43,8 @@ window.PICKER_GEN = {
     [0.8, -0.3] | null         // latest-pair movement [wr delta pp, pick share delta pp] between
   ],                           // the two most recent snapshot dates, null before two snapshots
   roles: [{ id, label }, ...], // role definitions from the config hub
+  sharedRolePools: [['1','2'], ...],  // hub sharedRolePools: seats fielding one candidate pool,
+                               // drives field membership and gate rule scoping in both twins
   weights: { knownMu, synByRole: {role: w}, prior, genericFit, exposure, flexibility },  // synByRole
                                // weights the knownSyn phase by the role being picked (authored:
                                // supports pair with the picked allies at full weight, cores less)

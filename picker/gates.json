@@ -1,6 +1,6 @@
 {
   "roleNotes": {
-    "1": "dedicated pangolier for the roll flips and the swashbuckle crits, phantom lancer and sven into the squishy clumped lines, juggernaut for the spin immunity and the ward sieges, clinkz for the skeleton walk tempo and the archer sieges, lifestealer into tanks, spectre for the global haunt cleanup, lone druid for the relentless bear sieges, nature's prophet for the global farm and the split pressure, tiny for the toss catches and the tower pressure, alchemist for the greed farm and the early stun follow ups, monkey king for the jingu trade loops and the soldier ring sieges, terrorblade for the metamorph sieges and the sunder saves, luna for the glaive wave clear and the eclipse clump kills, windranger for the shackle picks and the focus fire deletes, anti mage for the counter spell and the split push tempo",
+    "1": "pangolier flexing onto the carry seat for the roll flips and the swashbuckle poke, phantom lancer and sven into the squishy clumped lines, juggernaut for the spin immunity and the ward sieges, clinkz for the skeleton walk tempo and the archer sieges, lifestealer into tanks, spectre for the global haunt cleanup, lone druid for the relentless bear sieges, nature's prophet for the global farm and the split pressure, tiny for the toss catches and the tower pressure, alchemist for the greed farm and the early stun follow ups, monkey king for the jingu trade loops and the soldier ring sieges, terrorblade for the metamorph sieges and the sunder saves, luna for the glaive wave clear and the eclipse clump kills, windranger for the shackle picks and the focus fire deletes, anti mage for the counter spell and the split push tempo",
     "2": "dedicated marci for the rebound pair setups and the unleash brawls, dragon knight into the magic mids, storm spirit for the zip tempo and the overload picks, leshrac for the pulse nova teamfights and the edict sieges, slark for the pickoffs and the late snowball, pangolier flexing in for the roll flips off either core seat",
     "3": "dedicated enigma for the black hole teamfights and the eidolon pushes, timbersaw for the chain brawls and the reactive armor front, dawnbreaker for the global ult presence and the tanky front, brewmaster for the primal split teamfights and the earth brewling sieges, lycan for the wolf sieges and the unslowable shapeshift runs, necrophos as the sustain offlane that outlasts burst and deletes the tanky cores, doom for the ult that shuts any hero off and the devour lane lead, centaur for the stomp engages and the tanky front with the stampede saves, slardar for the corrosive haze strips and the amplified pick damage",
     "4": "dedicated rubick for the spell steals and the fade bolt trades, bounty hunter for the track economy, nyx assassin into the caster lines, mirana for the arrow picks and the moonlight engages, shadow shaman for the chain lockdown and the ward sieges from the roam",
@@ -480,18 +480,27 @@
       "id": "timber-quiet-veto",
       "target": "timbersaw",
       "roles": ["3"],
-      "when": [{ "kind": "enemyVisibleAny", "heroes": ["silencer", "ancient-apparition"] }],
+      "when": [{ "kind": "enemyVisibleAny", "heroes": ["silencer"] }],
       "action": "hard_gate",
-      "note": "the silence strands the saw mid flight and the ice blast cuts the armor regen",
+      "note": "the instant silence strands the saw mid flight, the whole brawl plan dies with it",
+      "origin": "authored"
+    },
+    {
+      "id": "timber-frost-penalty",
+      "target": "timbersaw",
+      "roles": ["3"],
+      "when": [{ "kind": "enemyVisibleAny", "heroes": ["ancient-apparition"] }],
+      "action": "penalty",
+      "note": "the ice blast heal cut trims the armor regen mid brawl, the crawl still reads the saw ahead",
       "origin": "authored"
     },
     {
       "id": "bane-steal-penalty",
       "target": "bane",
       "roles": ["5"],
-      "when": [{ "kind": "enemyVisibleAny", "heroes": ["rubick", "disruptor"] }],
+      "when": [{ "kind": "enemyVisibleAny", "heroes": ["rubick"] }],
       "action": "penalty",
-      "note": "the steal eats the grip whole and the glimpse snaps the channel from range",
+      "note": "the steal eats the grip channel whole",
       "origin": "authored"
     },
     {
@@ -500,7 +509,7 @@
       "roles": ["1"],
       "when": [{ "kind": "enemyVisibleAny", "heroes": ["enigma", "keeper-of-the-light"] }],
       "action": "hard_gate",
-      "note": "the midnight pulse and the wisp cut the perch trees, the whole tree plan dies with them",
+      "note": "the midnight pulse and the scepter wisp cut the perch trees, the whole tree plan dies with them",
       "origin": "authored"
     },
     {
