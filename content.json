@@ -7,7 +7,7 @@
       "Roshan and Tormentor swapped sides, Tormentor sits bottom low ground, spawns ~20 min, 3000 barrier shield, 30% damage reflect",
       "neutral items are crafted, tier 1 exists at 0:00, full-clear camps to bank Madstone",
       "rescale puts immortal draft at 8500, your first 10 to 15 calibration games outweigh the next 100",
-      "meta: v0.2 pool cut from dota2protracker pro tier lists on 7.41f, Alchemist, Terrorblade, Luna, Windranger and Anti-Mage join pos 1, Doom, Centaur and Slardar the offlane, Rubick, Lion, Shadow Shaman, Clockwerk and Witch Doctor the supports"
+      "meta: v0.2 pool cut from dota2protracker pro tier lists on 7.41f, Alchemist, Terrorblade, Luna, Windranger and Anti-Mage join pos 1, Storm Spirit the mid, Doom, Centaur and Slardar the offlane, Rubick, Lion, Shadow Shaman, Clockwerk and Witch Doctor the supports"
     ],
     "corrections": [
       "tormentor: old advice said contest it at 20 for the shard. corrected: buy the shard with gold at 15+ when your spike needs it, treat the Tormentor as a 3-man post-fight objective, never solo it, never ping-beg for it",
@@ -379,6 +379,19 @@
       ],
       "mechanics": [["tip", "dagger grants shared vision of everyone it hits, pings invis spots without true sight"], ["tip", "the trail's free pathing lingers 1 second off the edge, cliff out behind you"], ["tip", "dispersion reflects before reductions, armor and barriers never soften it"], ["counter", "hug creeps when she shadow steps, the illusion damage is desolate only early"]]
     },
+    "storm-spirit": {
+      "identity": "roaming zip mid, static remnant clones zone the lane, electric vortex drags the pick, overload charges every cast, ball lightning rips across the map and out again",
+      "why": "dedicated pos 2, the zip hunts the whole map and the overload tempo snowballs every cast into a pick, favored into sniper and drow style immobile backlines, vetoed by silence chains and mana burn",
+      "how": "remnant the lane, vortex the pick out of the wave, overload every cast, ball onto the backline, chain the zips home before their answers land",
+      "when": "lane poke off remnant zones, kill windows once the zip unlocks, mid game hunt tempo off every rotation and rune, dies when the silence and mana burn answers stack up",
+      "build": "kaya and sange, bkb, sphere, devastator, bloodthorn, shard, sheepstick",
+      "timings": [["kaya and sange", 25], ["bkb", 28]],
+      "tech": [
+        "anti mage, nyx, and silencer are the vetoes, mana break and the silence chains starve the zip economy",
+        "sniper, drow, and crystal maiden style paper lines are the free wins, the zip reaches every backline that cannot answer"
+      ],
+      "mechanics": [["tip", "overload can load an attack already in the air, toss the long right click then cast and the hit lands charged"], ["tip", "ball lightning disjoints projectiles the moment it is cast, zip as the stun flies to waste it"], ["tip", "he counts as invulnerable for the whole flight, dot ticks, delayed stuns, and rupture damage all dodge mid zip"], ["tip", "spells keep casting mid flight, remnant and vortex never wait for the landing"], ["counter", "most of his damage is magic but it rides the right clicks, no landed hit means no overload payout"], ["counter", "the zip drinks mana with every stretch, mana burn and drain starve him, anti mage feasts"]]
+    },
     "sven": {
       "identity": "melee strength carry with a cleave steroid and a single-target storm hammer stun, god strength ult turns teamfights",
       "why": "dedicated pos 1, cleave plus god strength ends teamfights, favored into SF and muerta",
@@ -536,7 +549,8 @@
       ["rattletrap", "hook into cog cage sequence on a lone target until the trap closes every time"],
       ["witch-doctor", "cask bounce counting off the wave until the second hit always catches the enemy hero"],
       ["slardar", "sprint crush entry onto the runner until the bash and the haze land as one motion"],
-      ["rubick", "lift timing onto the blinking initiator until the pick lands before their spell starts"]
+      ["rubick", "lift timing onto the blinking initiator until the pick lands before their spell starts"],
+      ["storm-spirit", "ball onto the lone target and vortex on landing until the zip entry, the pull, and the overload hit land as one motion"]
     ],
     "replay": [
       "after each session: 10 min, only your deaths, write one line per death: where you should have been",

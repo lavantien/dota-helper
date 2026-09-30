@@ -66,6 +66,7 @@ window.GUIDE_GEN = {
     'slardar': 50,
     'slark': 50.810631629701085,
     'spectre': 52.41869041547332,
+    'storm-spirit': 50,
     'sven': 52.27914219900723,
     'terrorblade': 49.737378068388885,
     'tiny': 45.75052128698499,
