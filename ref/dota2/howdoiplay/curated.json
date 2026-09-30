@@ -317,9 +317,9 @@
         "from": "counters[2]",
         "verified": {
           "date": "2026-09-30",
-          "verdict": "corrected",
-          "source": "https://dota2.fandom.com/wiki/Silver_Edge",
-          "text": "silver edge still answers him through the break, the shadow walk hit shuts the return passive off, its speed cap is gone"
+          "verdict": "confirmed",
+          "source": "https://www.dota2.com/datafeed/itemdata?language=english&item_id=249",
+          "text": "silver edge breaks the return passive and caps his move speed, the stampede escape dies under it"
         }
       }
     ],
@@ -917,9 +917,9 @@
         "from": "tips[2]",
         "verified": {
           "date": "2026-09-30",
-          "verdict": "corrected",
-          "source": "https://dota2.fandom.com/wiki/Lion",
-          "text": "earth spike no longer slips past linken spheres, each protected body blocks its own hit"
+          "verdict": "confirmed",
+          "source": "https://www.dota2.com/datafeed/herodata?language=english&hero_id=26",
+          "text": "earth spike ignores linken spheres and lotus orbs regardless of targeting"
         }
       },
       {
@@ -1404,8 +1404,8 @@
         "verified": {
           "date": "2026-09-30",
           "verdict": "confirmed",
-          "source": "https://liquipedia.net/dota2/Clockwerk",
-          "text": "cog shocks only land on bodies outside the ring with mana to burn, hug the middle to stay safe"
+          "source": "https://www.dota2.com/datafeed/herodata?language=english&hero_id=51",
+          "text": "the cog shocks hit the bodies outside the ring and drain their mana, hug the middle to stay safe"
         }
       },
       {
@@ -1590,8 +1590,8 @@
         "verified": {
           "date": "2026-09-30",
           "verdict": "confirmed",
-          "source": "https://dota2.fandom.com/wiki/Slardar",
-          "text": "skull basher and abyssal blade bashes are dead on him, the deep bash disables them even when unleveled"
+          "source": "https://www.dota2.com/datafeed/herodata?language=english&hero_id=28",
+          "text": "skull basher and abyssal blade bashes are dead on him, the game allows only the deep bash"
         }
       },
       {

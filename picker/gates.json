@@ -327,12 +327,12 @@
       "origin": "authored"
     },
     {
-      "id": "alchemist-pickoff-veto",
+      "id": "alchemist-healcut-veto",
       "target": "alchemist",
       "roles": ["1"],
-      "when": [{ "kind": "enemyVisibleAnyCountMin", "heroes": ["riki", "slark", "spirit-breaker", "nyx-assassin", "bounty-hunter"], "count": 2 }],
+      "when": [{ "kind": "enemyVisibleAny", "heroes": ["ancient-apparition", "storm-spirit", "shadow-demon"] }],
       "action": "hard_gate",
-      "note": "the pickoff hunters shut the greed down before the farm pays",
+      "note": "the ice blast heal cut and the kite crew gut the rage plan",
       "origin": "authored"
     },
     {
@@ -357,9 +357,9 @@
       "id": "windranger-lockdown-veto",
       "target": "windranger",
       "roles": ["1"],
-      "when": [{ "kind": "enemyVisibleAny", "heroes": ["axe", "legion-commander", "doom", "silencer"] }],
+      "when": [{ "kind": "enemyVisibleAny", "heroes": ["axe", "legion-commander"] }],
       "action": "hard_gate",
-      "note": "the hard disables end the focus fire channel",
+      "note": "the call and the duel pin her through the windrun before the fire pays",
       "origin": "authored"
     },
     {
@@ -375,7 +375,7 @@
       "id": "rubick-silence-veto",
       "target": "rubick",
       "roles": ["4"],
-      "when": [{ "kind": "enemyVisibleAny", "heroes": ["silencer", "skywrath-mage", "drow-ranger", "death-prophet"] }],
+      "when": [{ "kind": "enemyVisibleAny", "heroes": ["silencer", "skywrath-mage"] }],
       "action": "hard_gate",
       "note": "the instant silence crew cuts the lift and the steal out of every fight",
       "origin": "authored"
@@ -393,7 +393,7 @@
       "id": "doom-carry-killer-boost",
       "target": "doom",
       "roles": ["3"],
-      "when": [{ "kind": "enemyVisibleAny", "heroes": ["phantom-assassin", "ursa", "troll-warlord", "faceless-void", "juggernaut"] }],
+      "when": [{ "kind": "enemyVisibleAny", "heroes": ["ursa", "faceless-void"] }],
       "action": "bonus",
       "note": "doom turns off the right click carries and every button they hold",
       "origin": "authored"
