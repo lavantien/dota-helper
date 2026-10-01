@@ -2,7 +2,7 @@
   "roleNotes": {
     "1": "pangolier flexing onto the carry seat for the roll flips and the swashbuckle poke, phantom lancer and sven into the squishy clumped lines, juggernaut for the spin immunity and the ward sieges, clinkz for the skeleton walk tempo and the archer sieges, lifestealer into tanks, spectre for the global haunt cleanup, lone druid for the relentless bear sieges, nature's prophet for the global farm and the split pressure, tiny for the toss catches and the tower pressure, alchemist for the greed farm and the early stun follow ups, monkey king for the jingu trade loops and the soldier ring sieges, terrorblade for the metamorph sieges and the sunder saves, luna for the glaive wave clear and the eclipse clump kills, windranger for the shackle picks and the focus fire deletes, anti mage for the counter spell and the split push tempo",
     "2": "dedicated marci for the rebound pair setups and the unleash brawls, dragon knight into the magic mids, storm spirit for the zip tempo and the overload picks, leshrac for the pulse nova teamfights and the edict sieges, slark for the pickoffs and the late snowball, pangolier flexing in for the roll flips off either core seat",
-    "3": "dedicated enigma for the black hole teamfights and the eidolon pushes, timbersaw for the chain brawls and the reactive armor front, dawnbreaker for the global ult presence and the tanky front, brewmaster for the primal split teamfights and the earth brewling sieges, lycan for the wolf sieges and the unslowable shapeshift runs, necrophos as the sustain offlane that outlasts burst and deletes the tanky cores, doom for the ult that shuts any hero off and the devour lane lead, centaur for the stomp engages and the tanky front with the stampede saves, slardar for the corrosive haze strips and the amplified pick damage",
+    "3": "dedicated enigma for the black hole teamfights and the eidolon pushes, timbersaw for the chain brawls and the reactive armor front, dawnbreaker for the global ult presence and the tanky front, brewmaster for the primal split teamfights and the earth brewling sieges, lycan for the wolf sieges and the unslowable shapeshift runs, necrophos as the sustain offlane that outlasts burst and deletes the tanky cores, doom for the ult that shuts any hero off and the devour lane lead, centaur for the stomp engages and the tanky front with the stampede saves, slardar for the corrosive haze strips and the amplified pick damage, viper for the poison kite lanes and the strike break picks",
     "4": "dedicated rubick for the spell steals and the fade bolt trades, bounty hunter for the track economy, nyx assassin into the caster lines, mirana for the arrow picks and the moonlight engages, shadow shaman for the chain lockdown and the ward sieges from the roam",
     "5": "dedicated winter wyvern for the curse turns and the cold embraces, bane for the nightmare setups and the fiend grip deletes, lich for the frost shield sieges and the chain frost teamfights, clockwerk for the cogs isolations and the flare globals, witch doctor for the maledict bites and the death ward bounces"
   },
@@ -42,7 +42,8 @@
       "centaur",
       "necrophos",
       "slardar",
-      "doom"
+      "doom",
+      "viper"
     ],
     "4": [
       "bounty-hunter",
@@ -519,6 +520,33 @@
       "when": [{ "kind": "enemyVisibleAny", "heroes": ["phantom-lancer", "night-stalker"] }],
       "action": "penalty",
       "note": "the illusion flood blanks the jingu stacks and the night skies light every hop",
+      "origin": "authored"
+    },
+    {
+      "id": "viper-flood-veto",
+      "target": "viper",
+      "roles": ["3"],
+      "when": [{ "kind": "enemyVisibleAny", "heroes": ["meepo", "lycan", "arc-warden", "visage"] }],
+      "action": "hard_gate",
+      "note": "the clone flood and the unslowable pack blank the kite, the tempest double and the bird dive out-tempo the grounded body",
+      "origin": "authored"
+    },
+    {
+      "id": "viper-siege-penalty",
+      "target": "viper",
+      "roles": ["3"],
+      "when": [{ "kind": "enemyVisibleAny", "heroes": ["enigma", "phantom-lancer", "brewmaster"] }],
+      "action": "penalty",
+      "note": "the eidolon pushes and the illusion floods wash the single target poison out, every extra body asks its own answer",
+      "origin": "authored"
+    },
+    {
+      "id": "viper-break-boost",
+      "target": "viper",
+      "roles": ["3"],
+      "when": [{ "kind": "enemyVisibleAny", "heroes": ["bristleback", "huskar"] }],
+      "action": "bonus",
+      "note": "the strike break switches the passives off, the bristle back and the berserker blood melt under the grind",
       "origin": "authored"
     }
   ],

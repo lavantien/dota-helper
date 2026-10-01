@@ -7,7 +7,7 @@
       "Roshan and Tormentor swapped sides, Tormentor sits bottom low ground, spawns ~20 min, 3000 barrier shield, 30% damage reflect",
       "neutral items are crafted, tier 1 exists at 0:00, full-clear camps to bank Madstone",
       "rescale puts immortal draft at 8500, your first 10 to 15 calibration games outweigh the next 100",
-      "meta: v0.3 pool holds the v0.2 pro tier core and reshapes the edges, Pangolier flexes the mid seat into the head of the pos 1 order, Monkey King seats pos 1 behind Alchemist, Timbersaw joins the offlane behind Enigma, Bane seats pos 5 behind Winter Wyvern, Lion leaves pos 4"
+      "meta: v0.3 pool holds the v0.2 pro tier core and reshapes the edges, Pangolier flexes the mid seat into the head of the pos 1 order, Monkey King seats pos 1 behind Alchemist, Timbersaw joins the offlane behind Enigma, Bane seats pos 5 behind Winter Wyvern, Lion leaves pos 4, Viper seats the offlane tail"
     ],
     "corrections": [
       "tormentor: old advice said contest it at 20 for the shard. corrected: buy the shard with gold at 15+ when your spike needs it, treat the Tormentor as a 3-man post-fight objective, never solo it, never ping-beg for it",
@@ -496,6 +496,19 @@
       ],
       "mechanics": [["tip", "avalanche pulses damage and stun in intervals, lead the target and the rocks catch walkers"], ["tip", "toss disables whoever is thrown, and avalanche deals double damage to the tossed unit"], ["tip", "debuff immune enemies can never be thrown, but you can still toss something at them"], ["tip", "toss always grabs the nearest unit around tiny, allies included, mash it in a crowd"], ["tip", "toss grabs units inside the grab radius even from fog, invisible units are the exception"], ["counter", "the avalanche area keeps stunning, walking in late still eats the rocks"]]
     },
+    "viper": {
+      "identity": "poison kite offlaner, poison attack arrows layer the slow and the burn on every body, nethertoxin pools the ground and grinds the clump inside it, corrosive skin returns the damage and shrugs the magic, viper strike glues the runner and switches its passives off, nosedive dives the fight from the sky",
+      "why": "dedicated pos 3, the lane poison starves every melee core and the skin flips the spell lanes around, favored into passive front heroes and the right click grinders, vetoed by the illusion flood crew and the unslowable runs",
+      "how": "layer the arrows on the lane body, drop the toxin pool over the clump and the objective, hold the strike for the runner, dive the committed fight with the nosedive and stand the ground the skin wins",
+      "when": "lane poison from the opening minutes, toxin zones hold every objective through the mid game, the nosedive and the strike pick the late fights, falls off when the burst and the saves outscale the grind",
+      "build": "mage slayer, blink, pike, manta, bkb, shiva, shard",
+      "timings": [["mage slayer", 15], ["blink", 23]],
+      "tech": [
+        "meepo and lycan are the vetoes, the clone flood and the unslowable pack blank the poison kite",
+        "bristleback and huskar are the free wins, the strike break switches the passives off and the poison grind runs them down"
+      ],
+      "mechanics": [["tip", "manually casting the poison arrow onto heroes draws no creep aggro, the autocast arrow does"], ["tip", "viper strike lands whole through spell immunity, the slow and the break both hold on the bkb body"], ["tip", "the shard poison arrows strip building armor, the debuff rides the towers"], ["tip", "the nosedive crosses cliffs both ways and the flight stretches with the distance"], ["counter", "every damage tick he takes poisons the attacker back and he carries the magic resist, the dot wars and radiance style burns feed him"], ["counter", "the viper strike missile disjoints, and roots and leashes lock the nosedive entirely"]]
+    },
     "windranger": {
       "identity": "ranged latch carry, shackleshot pins a body to whatever stands behind it, powershot arrows the wave, windrun dodges the dive, focus fire shreds the locked target",
       "why": "dedicated pos 1, the latch sets every kill and focus fire deletes the pinned body, favored into lifestealer and ursa style commit melee, vetoed by lancer floods and the blink hex crew",
@@ -620,7 +633,8 @@
       ["slardar", "sprint crush entry onto the runner until the bash and the haze land as one motion"],
       ["rubick", "lift timing onto the blinking initiator until the pick lands before their spell starts"],
       ["storm-spirit", "ball onto the lone target and vortex on landing until the zip entry, the pull, and the overload hit land as one motion"],
-      ["marci", "rebound entry off the roaming ally into the dispose throwback until the pick lands as one motion"]
+      ["marci", "rebound entry off the roaming ally into the dispose throwback until the pick lands as one motion"],
+      ["viper", "poison kite flow, layer the arrows on the lane body and park the toxin pool on the clump until every exit runs through the zone"]
     ],
     "replay": [
       "after each session: 10 min, only your deaths, write one line per death: where you should have been",
@@ -659,5 +673,5 @@
       }
     ]
   },
-  "buildsMeta": "stratz itemFullPurchase completed week 1789948800, divine_immortal, fetched 2026-09-30, series 7.41"
+  "buildsMeta": "stratz itemFullPurchase completed week 1789948800, divine_immortal, fetched 2026-10-01, series 7.41"
 }
