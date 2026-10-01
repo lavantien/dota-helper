@@ -1,5 +1,5 @@
 {
-  "crawledAt": "2026-09-30T18:26:54Z",
+  "crawledAt": "2026-10-01T16:05:03Z",
   "bracket": "DIVINE_IMMORTAL",
   "source": "stratz completed-week crawl",
   "field": "itemFullPurchase",
@@ -130,7 +130,7 @@
       "role": "1",
       "heroId": 114,
       "fetchedAt": "2026-09-30T18:26:54Z",
-      "cached": false,
+      "cached": true,
       "accepted": true,
       "rowCount": 1861
     },
@@ -286,6 +286,15 @@
       "cached": true,
       "accepted": true,
       "rowCount": 2295
+    },
+    {
+      "slug": "viper",
+      "role": "3",
+      "heroId": 47,
+      "fetchedAt": "2026-10-01T16:05:03Z",
+      "cached": false,
+      "accepted": true,
+      "rowCount": 2128
     },
     {
       "slug": "bounty-hunter",

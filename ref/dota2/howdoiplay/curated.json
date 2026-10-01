@@ -2287,6 +2287,68 @@
         }
       }
     ],
+    "viper": [
+      {
+        "idx": 0,
+        "from": "tips[0]",
+        "verified": {
+          "date": "2026-10-01",
+          "verdict": "confirmed",
+          "source": "https://howdoiplay.com/tips/viper.html",
+          "text": "manually casting the poison arrow onto heroes draws no creep aggro, the autocast arrow does"
+        }
+      },
+      {
+        "idx": 1,
+        "from": "tips[1]",
+        "verified": {
+          "date": "2026-10-01",
+          "verdict": "confirmed",
+          "source": "https://howdoiplay.com/tips/viper.html",
+          "text": "viper strike lands whole through spell immunity, the slow and the break both hold on the bkb body"
+        }
+      },
+      {
+        "idx": 2,
+        "from": "tips[2]",
+        "verified": {
+          "date": "2026-10-01",
+          "verdict": "confirmed",
+          "source": "https://liquipedia.net/dota2/Viper",
+          "text": "the shard poison arrows strip building armor, the debuff rides the towers"
+        }
+      },
+      {
+        "idx": 3,
+        "from": "tips[4]",
+        "verified": {
+          "date": "2026-10-01",
+          "verdict": "confirmed",
+          "source": "https://howdoiplay.com/tips/viper.html",
+          "text": "the nosedive crosses cliffs both ways and the flight stretches with the distance"
+        }
+      },
+      {
+        "idx": 4,
+        "from": "counters[0]",
+        "verified": {
+          "date": "2026-10-01",
+          "verdict": "confirmed",
+          "source": "https://liquipedia.net/dota2/Viper",
+          "text": "every damage tick he takes poisons the attacker back and he carries the magic resist, the dot wars and radiance style burns feed him"
+        }
+      },
+      {
+        "idx": 5,
+        "from": "counters[1]",
+        "verified": {
+          "date": "2026-10-01",
+          "verdict": "confirmed",
+          "source": "https://howdoiplay.com/tips/viper.html",
+          "text": "the viper strike missile disjoints, and roots and leashes lock the nosedive entirely"
+        }
+      }
+    ],
     "windranger": [
       {
         "idx": 0,

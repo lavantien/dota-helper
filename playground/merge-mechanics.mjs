@@ -146,13 +146,31 @@ for (const f of files) {
   if (missing.length) throw new Error(missing.join('\n'));
 }
 
-// semantic verification: parsed result equals parsed input plus mechanics
+// semantic verification: parsed result equals parsed input plus mechanics.
+// heroes without a fragment file (mechanics merged by a since-deleted one-off
+// fragment) carry their committed mechanics through when the committed
+// provenance still covers the committed wording, and their curated entry
+// rides along; only the strip-equality below applies to them otherwise
 const after = JSON.parse(text);
 for (const slug of Object.keys(after.heroes)) {
-  const frag = JSON.parse(readFileSync(`${dir}/${slug}.json`, 'utf8'));
-  const want = (frag.lines ?? []).map(l => [l.tag, l.text]);
-  if (JSON.stringify(after.heroes[slug].mechanics) !== JSON.stringify(want)) {
-    throw new Error(`${slug}: merged mechanics differ from fragment`);
+  let fragText = null;
+  try { fragText = readFileSync(`${dir}/${slug}.json`, 'utf8'); } catch (e) { if (e.code !== 'ENOENT') throw e; }
+  if (fragText !== null) {
+    const frag = JSON.parse(fragText);
+    const want = (frag.lines ?? []).map(l => [l.tag, l.text]);
+    if (JSON.stringify(after.heroes[slug].mechanics) !== JSON.stringify(want)) {
+      throw new Error(`${slug}: merged mechanics differ from fragment`);
+    }
+  } else {
+    const mech = after.heroes[slug].mechanics ?? [];
+    const prevList = prev.heroes?.[slug];
+    // the from ref's tips/counters prefix pins the tag: a hand-flipped
+    // tip<->counter no longer rides the committed verdict through
+    const covered = Array.isArray(prevList) && prevList.length === mech.length &&
+      mech.every((m, i) => prevList[i]?.verified?.text === m[1] &&
+        prevList[i]?.from?.startsWith(m[0] === 'tip' ? 'tips' : 'counters'));
+    if (covered) curated.heroes[slug] = prevList;
+    else if (mech.length) throw new Error(`${slug}: mechanics without a fragment or matching committed provenance, curate ${dir}/${slug}.json`);
   }
   const stripped = { ...after.heroes[slug] };
   delete stripped.mechanics;
@@ -162,7 +180,9 @@ for (const slug of Object.keys(after.heroes)) {
     throw new Error(`${slug}: merge mutated existing prose`);
   }
 }
-if (Object.keys(curated.heroes).length !== files.length) throw new Error('curated hero count mismatch');
+if (files.some(f => !curated.heroes[f.replace(/\.json$/, '')])) throw new Error('curated hero count mismatch');
+// carried entries re-emit in slug order so the file stays stably sorted
+curated.heroes = Object.fromEntries(Object.keys(curated.heroes).sort().map(k => [k, curated.heroes[k]]));
 
 // curatedAt records the last content change, not the last run: a no-op
 // re-merge keeps the committed stamp instead of minting a fresh diff
