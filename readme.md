@@ -5,7 +5,7 @@
 
 offline dota 2 pick simulator and hero-pool guide for patch 7.41f. static pages with zero runtime deps, an offline go engine over duckdb, and one authored config hub. the picker is the main tool, the guide supplements it.
 
-![the picker ranking the shared pos 1 and pos 2 core field against a visible meepo and enigma, ursa and monkey king vetoed, phantom assassin paying the gate penalty](docs/picker.png)
+![the picker draft board mid-draft against a visible meepo and enigma, the frozen pool panels rendering every role in order](docs/picker.png)
 
 ![the guide hero panel for phantom assassin, build, timings, tech, mechanics, and matchup tables](docs/guide.png)
 
