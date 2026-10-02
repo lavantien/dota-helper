@@ -1501,6 +1501,68 @@
         }
       }
     ],
+    "outworld-destroyer": [
+      {
+        "idx": 0,
+        "from": "tips[0]",
+        "verified": {
+          "date": "2026-10-02",
+          "verdict": "confirmed",
+          "source": "https://howdoiplay.com/tips/outworld_destroyer.html",
+          "text": "manually casting the orb onto heroes draws no creep aggro, the autocast orb does"
+        }
+      },
+      {
+        "idx": 1,
+        "from": "tips[1]",
+        "verified": {
+          "date": "2026-10-02",
+          "verdict": "confirmed",
+          "source": "https://howdoiplay.com/tips/outworld_destroyer.html",
+          "text": "the astral imprisonment jails roshan too"
+        }
+      },
+      {
+        "idx": 2,
+        "from": "tips[7]",
+        "verified": {
+          "date": "2026-10-02",
+          "verdict": "confirmed",
+          "source": "https://howdoiplay.com/tips/outworld_destroyer.html",
+          "text": "the astral steals the mana through spell immunity without the banish landing"
+        }
+      },
+      {
+        "idx": 3,
+        "from": "tips[10]",
+        "verified": {
+          "date": "2026-10-02",
+          "verdict": "confirmed",
+          "source": "https://howdoiplay.com/tips/outworld_destroyer.html",
+          "text": "astral the enemy before the eclipse, the mana gap widens and the drop pays more"
+        }
+      },
+      {
+        "idx": 4,
+        "from": "tips[11]",
+        "verified": {
+          "date": "2026-10-02",
+          "verdict": "confirmed",
+          "source": "https://liquipedia.net/dota2/Outworld_Destroyer",
+          "text": "the eclipse damages the banished bodies still inside the astral prison"
+        }
+      },
+      {
+        "idx": 5,
+        "from": "tips[12]",
+        "verified": {
+          "date": "2026-10-02",
+          "verdict": "confirmed",
+          "source": "https://howdoiplay.com/tips/outworld_destroyer.html",
+          "text": "the shard astral frees an ally to walk out of the chrono, the hole, the arena, and the kinetic field"
+        }
+      }
+    ],
     "pangolier": [
       {
         "idx": 0,
@@ -1560,6 +1622,78 @@
           "verdict": "confirmed",
           "source": "https://howdoiplay.com/tips/pangolier.html",
           "text": "break kills the luck innate, silver edge and the break carriers turn every proc back on"
+        }
+      }
+    ],
+    "phantom-assassin": [
+      {
+        "idx": 0,
+        "from": "tips[2]",
+        "verified": {
+          "date": "2026-10-02",
+          "verdict": "confirmed",
+          "source": "https://howdoiplay.com/tips/phantom_assassin.html",
+          "text": "the dagger is an instant attack, it lands through disarms with true strike and rolls the modifiers when it hits"
+        }
+      },
+      {
+        "idx": 1,
+        "from": "tips[6]",
+        "verified": {
+          "date": "2026-10-02",
+          "verdict": "confirmed",
+          "source": "https://howdoiplay.com/tips/phantom_assassin.html",
+          "text": "the blur active is no invisibility, the minimap icon goes and single target spells cannot find her, the cloaked model stays in sight"
+        }
+      },
+      {
+        "idx": 2,
+        "from": "tips[7]",
+        "verified": {
+          "date": "2026-10-02",
+          "verdict": "confirmed",
+          "source": "https://howdoiplay.com/tips/phantom_assassin.html",
+          "text": "activating blur disjoints the incoming projectiles"
+        }
+      },
+      {
+        "idx": 3,
+        "from": "tips[10]",
+        "verified": {
+          "date": "2026-10-02",
+          "verdict": "confirmed",
+          "source": "https://howdoiplay.com/tips/phantom_assassin.html",
+          "text": "the scepter fan of knives pierces the debuff immunity and the bkb"
+        }
+      },
+      {
+        "idx": 4,
+        "from": "tips[11]",
+        "verified": {
+          "date": "2026-10-02",
+          "verdict": "confirmed",
+          "source": "https://howdoiplay.com/tips/phantom_assassin.html",
+          "text": "the scepter fan of knives shreds the illusion floods, the damage rolls off max health"
+        }
+      },
+      {
+        "idx": 5,
+        "from": "tips[12]",
+        "verified": {
+          "date": "2026-10-02",
+          "verdict": "confirmed",
+          "source": "https://howdoiplay.com/tips/phantom_assassin.html",
+          "text": "the blade mail reflect stops at debuff immunity, the bkb body cashes the crits safe"
+        }
+      },
+      {
+        "idx": 6,
+        "from": "counters[1]",
+        "verified": {
+          "date": "2026-10-02",
+          "verdict": "confirmed",
+          "source": "https://howdoiplay.com/tips/phantom_assassin.html",
+          "text": "the accuracy buys hit her through the evasion, mkb and bloodthorn pay the toll"
         }
       }
     ],

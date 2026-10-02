@@ -1,64 +1,65 @@
 {
   "roleNotes": {
-    "1": "pangolier flexing onto the carry seat for the roll flips and the swashbuckle poke, phantom lancer and sven into the squishy clumped lines, juggernaut for the spin immunity and the ward sieges, clinkz for the skeleton walk tempo and the archer sieges, lifestealer into tanks, spectre for the global haunt cleanup, lone druid for the relentless bear sieges, nature's prophet for the global farm and the split pressure, tiny for the toss catches and the tower pressure, alchemist for the greed farm and the early stun follow ups, monkey king for the jingu trade loops and the soldier ring sieges, terrorblade for the metamorph sieges and the sunder saves, luna for the glaive wave clear and the eclipse clump kills, windranger for the shackle picks and the focus fire deletes, anti mage for the counter spell and the split push tempo, ursa for the swipes grind and the pit windows",
-    "2": "dedicated pangolier flexing in for the roll flips off either core seat, marci for the rebound pair setups and the unleash brawls, dragon knight into the magic mids, storm spirit for the zip tempo and the overload picks, leshrac for the pulse nova teamfights and the edict sieges, slark for the pickoffs and the late snowball",
-    "3": "dedicated enigma for the black hole teamfights and the eidolon pushes, timbersaw for the chain brawls and the reactive armor front, dawnbreaker for the global ult presence and the tanky front, brewmaster for the primal split teamfights and the earth brewling sieges, lycan for the wolf sieges and the unslowable shapeshift runs, necrophos as the sustain offlane that outlasts burst and deletes the tanky cores, doom for the ult that shuts any hero off and the devour lane lead, centaur for the stomp engages and the tanky front with the stampede saves, slardar for the corrosive haze strips and the amplified pick damage, viper for the poison kite lanes and the strike break picks",
+    "1": "lone druid for the relentless bear sieges, alchemist for the greed farm and the early stun follow ups, monkey king for the jingu trade loops and the soldier ring sieges, tiny for the toss catches and the tower pressure, sven for the cleave through the clumped lines, terrorblade for the metamorph sieges and the sunder saves, luna for the glaive wave clear and the eclipse clump kills, windranger for the shackle picks and the focus fire deletes, phantom lancer into the squishy clumped lines, clinkz for the skeleton walk tempo and the archer sieges, nature's prophet for the global farm and the split pressure, lifestealer into tanks, juggernaut for the spin immunity and the ward sieges, spectre for the global haunt cleanup, anti mage for the counter spell and the split push tempo, ursa for the swipes grind and the pit windows, phantom assassin for the blink strike crit deletes and the blur front",
+    "2": "dedicated pangolier for the roll flips through the fight and the swashbuckle poke, marci for the rebound pair setups and the unleash brawls, storm spirit for the zip tempo and the overload picks, slark for the pickoffs and the late snowball, dragon knight into the magic mids, leshrac for the pulse nova teamfights and the edict sieges, outworld destroyer for the astral picks and the eclipse mana drops",
+    "3": "doom for the ult that shuts any hero off and the devour lane lead, centaur for the stomp engages and the tanky front with the stampede saves, enigma for the black hole teamfights and the eidolon pushes, timbersaw for the chain brawls and the reactive armor front, slardar for the corrosive haze strips and the amplified pick damage, brewmaster for the primal split teamfights and the earth brewling sieges, lycan for the wolf sieges and the unslowable shapeshift runs, dawnbreaker for the global ult presence and the tanky front, necrophos as the sustain offlane that outlasts burst and deletes the tanky cores, viper for the poison kite lanes and the strike break picks",
     "4": "dedicated rubick for the spell steals and the fade bolt trades, bounty hunter for the track economy, nyx assassin into the caster lines, mirana for the arrow picks and the moonlight engages, shadow shaman for the chain lockdown and the ward sieges from the roam",
-    "5": "dedicated winter wyvern for the curse turns and the cold embraces, bane for the nightmare setups and the fiend grip deletes, lich for the frost shield sieges and the chain frost teamfights, clockwerk for the cogs isolations and the flare globals, witch doctor for the maledict bites and the death ward bounces"
+    "5": "dedicated winter wyvern for the curse turns and the cold embraces, bane for the nightmare setups and the fiend grip deletes, clockwerk for the cogs isolations and the flare globals, lich for the frost shield sieges and the chain frost teamfights, witch doctor for the maledict bites and the death ward bounces"
   },
   "fallbackOrder": {
     "1": [
-      "pangolier",
-      "phantom-lancer",
-      "clinkz",
-      "juggernaut",
-      "spectre",
-      "lifestealer",
-      "sven",
-      "anti-mage",
-      "windranger",
-      "luna",
-      "terrorblade",
       "lone-druid",
       "alchemist",
       "monkey-king",
       "tiny",
+      "sven",
+      "terrorblade",
+      "luna",
+      "windranger",
+      "phantom-lancer",
+      "clinkz",
       "natures-prophet",
-      "ursa"
+      "lifestealer",
+      "juggernaut",
+      "spectre",
+      "anti-mage",
+      "ursa",
+      "phantom-assassin"
     ],
     "2": [
       "pangolier",
       "marci",
-      "dragon-knight",
+      "storm-spirit",
       "slark",
+      "dragon-knight",
       "leshrac",
-      "storm-spirit"
+      "outworld-destroyer"
     ],
     "3": [
+      "doom",
+      "centaur",
       "enigma",
       "timbersaw",
+      "slardar",
       "brewmaster",
       "lycan",
       "dawnbreaker",
-      "centaur",
       "necrophos",
-      "slardar",
-      "doom",
       "viper"
     ],
     "4": [
+      "rubick",
       "bounty-hunter",
       "nyx-assassin",
-      "shadow-shaman",
       "mirana",
-      "rubick"
+      "shadow-shaman"
     ],
     "5": [
-      "lich",
       "winter-wyvern",
       "bane",
-      "witch-doctor",
-      "rattletrap"
+      "rattletrap",
+      "lich",
+      "witch-doctor"
     ]
   },
   "rules": [
@@ -472,7 +473,7 @@
     {
       "id": "pango-pin-veto",
       "target": "pangolier",
-      "roles": ["1", "2"],
+      "roles": ["2"],
       "when": [{ "kind": "enemyVisibleAny", "heroes": ["bloodseeker", "grimstroke"] }],
       "action": "hard_gate",
       "note": "the rupture bleeds the roll and the soulbind pins it in place, the ball dies mid lane",
@@ -575,6 +576,42 @@
       "when": [{ "kind": "enemyVisibleAny", "heroes": ["shadow-fiend", "monkey-king"] }],
       "action": "bonus",
       "note": "the paper cores stand still for the swipes, one blink leap closes the kill",
+      "origin": "authored"
+    },
+    {
+      "id": "pa-noise-penalty",
+      "target": "phantom-assassin",
+      "roles": ["1"],
+      "when": [{ "kind": "enemyVisibleAny", "heroes": ["elder-titan", "brewmaster", "phoenix", "meepo", "nyx-assassin"] }],
+      "action": "penalty",
+      "note": "the natural order and the split bodies blur the strike, the bird egg baits the crit commit, the clone flood and the carapace turn the burst around",
+      "origin": "authored"
+    },
+    {
+      "id": "pa-paper-boost",
+      "target": "phantom-assassin",
+      "roles": ["1"],
+      "when": [{ "kind": "enemyVisibleAny", "heroes": ["shadow-fiend", "huskar", "natures-prophet"] }],
+      "action": "bonus",
+      "note": "the blur halves their swings, the paper farms and the split feeders pay the crit toll",
+      "origin": "authored"
+    },
+    {
+      "id": "od-flood-penalty",
+      "target": "outworld-destroyer",
+      "roles": ["2"],
+      "when": [{ "kind": "enemyVisibleAny", "heroes": ["phantom-lancer", "nyx-assassin", "meepo"] }],
+      "action": "penalty",
+      "note": "the illusion and clone floods blank the single target banish, the carapace and the mana burn gut the pool",
+      "origin": "authored"
+    },
+    {
+      "id": "od-drop-boost",
+      "target": "outworld-destroyer",
+      "roles": ["2"],
+      "when": [{ "kind": "enemyVisibleAny", "heroes": ["shadow-fiend", "timbersaw"] }],
+      "action": "bonus",
+      "note": "the eclipse pays out on the mana gap, the shallow pools eat the full drop",
       "origin": "authored"
     }
   ],

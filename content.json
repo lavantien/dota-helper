@@ -7,7 +7,7 @@
       "Roshan and Tormentor swapped sides, Tormentor sits bottom low ground, spawns ~20 min, 3000 barrier shield, 30% damage reflect",
       "neutral items are crafted, tier 1 exists at 0:00, full-clear camps to bank Madstone",
       "rescale puts immortal draft at 8500, your first 10 to 15 calibration games outweigh the next 100",
-      "meta: v0.3 pool holds the v0.2 pro tier core and reshapes the edges, Pangolier flexes the mid seat into the head of the pos 1 order, Monkey King seats pos 1 behind Alchemist, Timbersaw joins the offlane behind Enigma, Bane seats pos 5 behind Winter Wyvern, Lion leaves pos 4, Viper seats the offlane tail, Ursa seats the pos 1 tail"
+      "meta: v0.3 pool holds the v0.2 pro tier core and reshapes the edges, Pangolier flexes the mid seat into the head of the pos 1 order, Monkey King seats pos 1 behind Alchemist, Timbersaw joins the offlane behind Enigma, Bane seats pos 5 behind Winter Wyvern, Lion leaves pos 4, Viper seats the offlane tail, Ursa seats the pos 1 tail, the freeze seats Phantom Assassin behind Ursa and Outworld Destroyer behind Leshrac, Pangolier drops the carry seat"
     ],
     "corrections": [
       "tormentor: old advice said contest it at 20 for the shard. corrected: buy the shard with gold at 15+ when your spike needs it, treat the Tormentor as a 3-man post-fight objective, never solo it, never ping-beg for it",
@@ -327,9 +327,22 @@
       ],
       "mechanics": [["tip", "use vendetta invis for positioning, land the impale on their stack, the spikes stun the whole line"], ["tip", "carapace negates and reflects one damage instance per source, stuns whoever hit you"], ["tip", "carapace can be cast inside vendetta without dropping the invis, run into their spell spam for free stuns"], ["tip", "late game vendetta's invis and speed are for impale positioning, the bonus damage matters less"], ["counter", "do not retaliate after his combo, the carapace reflects and stuns whoever damages him, just walk away"], ["counter", "carapace reflects once per source on a short buff, bait it out then commit your damage"]]
     },
+    "outworld-destroyer": {
+      "identity": "orb burn mid, arcane orb turns the spare mana into pure damage, astral imprisonment banishes a body and drains its mana, essence flux feeds the pool off the casts, sanity's eclipse drops the whole clump on the mana gap",
+      "why": "dedicated pos 2, the orb scales off the pool without items and the eclipse deletes the shallow mana pools, favored into the paper mana lines and the immobile mids, vetoed by the illusion flood and the mana burn crew",
+      "how": "imprison the runner or the threatening core, orb the wave and the hero, hold the eclipse for the clumped shallow pools",
+      "when": "lane dominance off the imprison and the orb poke, mid game astral picks and eclipse fights, late the orb burns everything on the map, starves when the mana burn and the floods stack",
+      "build": "meteor hammer, midas, pike, bkb, sphere, sheepstick, devastator",
+      "timings": [["meteor hammer", 10], ["midas", 12]],
+      "tech": [
+        "phantom lancer and nyx are the vetoes, the flood blanks the single target and the mana burn guts the pool",
+        "shadow fiend and timbersaw are the free wins, the eclipse pays the full drop on their shallow mana pools"
+      ],
+      "mechanics": [["tip", "manually casting the orb onto heroes draws no creep aggro, the autocast orb does"], ["tip", "the astral imprisonment jails roshan too"], ["tip", "the astral steals the mana through spell immunity without the banish landing"], ["tip", "astral the enemy before the eclipse, the mana gap widens and the drop pays more"], ["tip", "the eclipse damages the banished bodies still inside the astral prison"], ["tip", "the shard astral frees an ally to walk out of the chrono, the hole, the arena, and the kinetic field"]]
+    },
     "pangolier": {
-      "identity": "swashbuckling roll carry, swashbuckle dashes and slashes through the wave, shield crash hops the clump and armors the engage, lucky shot procs the strip and the slow, rolling thunder bowls the whole fight out of position",
-      "why": "dedicated core flex, the innate halves the proc rolls held against him and the roll turns their formation inside out from either core seat, favored into proc reliant carries and clumped melee lines, vetoed by the rupture and soulbind pins and the root crew",
+      "identity": "swashbuckling roll mid, swashbuckle dashes and slashes through the wave, shield crash hops the clump and armors the engage, lucky shot procs the strip and the slow, rolling thunder bowls the whole fight out of position",
+      "why": "dedicated pos 2, the innate halves the proc rolls held against him and the roll turns their formation inside out through the mid game, favored into proc reliant cores and clumped melee lines, vetoed by the rupture and soulbind pins and the root crew",
       "how": "swashbuckle the wave and the hero, crash the clump for the barrier, roll through their lines and bowl the cores out of position, shield crash the cliff mid roll and keep the ball moving",
       "when": "lane trades off the swashbuckle poke, mid game roll windows flip every standing fight, late the slashes and the proc luck snowball, dies when the lockdown stacks up",
       "build": "mage slayer, shard, shiva, octarine, disperser, abyssal blade, blessing",
@@ -339,6 +352,19 @@
         "faceless void, troll warlord, and phantom assassin style proc carries are the free wins, the innate halves the proc odds they hold"
       ],
       "mechanics": [["tip", "swashbuckle slashes carry true strike and land through disarms"], ["tip", "swashbuckle and shield crash count as forced movement, climb the cliffs, pass through trees, and break the kinetic field walls"], ["tip", "every item works mid roll, blink keeps the ball rolling and the cyclone self cast drops every bump on one body"], ["tip", "the roll bounces off cogs, fissures, ice shards, and the map furniture, never off the towers or the ancient"], ["counter", "the soulbind style leashes that pierce immunity spin the ball in place, the roll burns out mid lane"], ["counter", "break kills the luck innate, silver edge and the break carriers turn every proc back on"]]
+    },
+    "phantom-assassin": {
+      "identity": "crit carry, stifling dagger slows and chips the range, blink strike closes on the runner, blur fades her from the right clicks, coup de grace rolls the crits through the fight",
+      "why": "dedicated pos 1, the blink strike converts every pick chance and the crits delete the paper cores, favored into the attack reliant lines without the true sight, vetoed by the aoe crew and the carapace turns",
+      "how": "dagger the runner, blink strike the commit, blur through their focus and let the crits pick the kill order",
+      "when": "dagger pickoffs from the early ranks, mid game blink windows open every rotation, late the crits two shot the supports, falls off when the evasion counters arrive",
+      "build": "bfury, desolator, bkb, satanic, monkey king bar, nullifier, abyssal blade",
+      "timings": [["bfury", 15], ["desolator", 21]],
+      "tech": [
+        "elder titan, brewmaster, and nyx are the vetoes, the natural order and the split blur the strike and the carapace turns the crit around",
+        "shadow fiend and huskar style paper farms are the free wins, the blur halves their swings and the crits cash them"
+      ],
+      "mechanics": [["tip", "the dagger is an instant attack, it lands through disarms with true strike and rolls the modifiers when it hits"], ["tip", "the blur active is no invisibility, the minimap icon goes and single target spells cannot find her, the cloaked model stays in sight"], ["tip", "activating blur disjoints the incoming projectiles"], ["tip", "the scepter fan of knives pierces the debuff immunity and the bkb"], ["tip", "the scepter fan of knives shreds the illusion floods, the damage rolls off max health"], ["tip", "the blade mail reflect stops at debuff immunity, the bkb body cashes the crits safe"], ["counter", "the accuracy buys hit her through the evasion, mkb and bloodthorn pay the toll"]]
     },
     "phantom-lancer": {
       "identity": "illusion flood carry that overwhelms single target drafts",
@@ -648,7 +674,9 @@
       ["storm-spirit", "ball onto the lone target and vortex on landing until the zip entry, the pull, and the overload hit land as one motion"],
       ["marci", "rebound entry off the roaming ally into the dispose throwback until the pick lands as one motion"],
       ["viper", "poison kite flow, layer the arrows on the lane body and park the toxin pool on the clump until every exit runs through the zone"],
-      ["ursa", "swipe stacking discipline on the single body and the pit solo timing until the roshan windows are yours to call"]
+      ["ursa", "swipe stacking discipline on the single body and the pit solo timing until the roshan windows are yours to call"],
+      ["phantom-assassin", "dagger into blink strike commit onto the lone support until the crit order picks itself"],
+      ["outworld-destroyer", "astral imprisonment timing on the runner and the eclipse hold for the clump until the drop always catches three"]
     ],
     "replay": [
       "after each session: 10 min, only your deaths, write one line per death: where you should have been",

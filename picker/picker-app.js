@@ -208,7 +208,7 @@ G.slugs.forEach((s, i) => { slugIdx[s] = i; });
 
 // repertoire order: roles in order, fallbackOrder within each role, sorted by
 // per-position win rate in divine-immortal ranked all pick by make order-pool.
-// a multi-role hero appears once per authored group (pangolier seats both core groups).
+// every hero seats one role under the frozen lineup, no hero repeats across groups.
 // single source for the legend rendering and the search's empty-query browse
 function poolGroups() {
   return G.roles.map(r => {

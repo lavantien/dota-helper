@@ -470,11 +470,13 @@ if (Test-Path $pickerDir) {
 # blanket 500; config.json is machine-rewritten by `eval promote` (element per
 # line), so its cap tracks the hub's grown size, not hand-formatting; guide
 # data.js is engine-emitted pool data (one block per pool entry) and grows the
-# same way despite not carrying a -generated suffix; config.go is that hub's
+# same way despite not carrying a -generated suffix; gates.json carries the
+# per-role fallback order plus one authored rule set per hero and passed 600
+# with the v0.4 freeze (44 rules over 44 heroes); config.go is that hub's
 # loader, one struct and one validate arm per hub section, so it tracks the
 # same growth; check.ps1 grows the same way, one gate per pass that touches
 # the pool or its derived surfaces
-$slocCapFor = @{ 'config.json' = 900; 'content.json' = 1300; 'picker\gates.json' = 600; 'guide\data.js' = 700; 'engine\internal\config\config.go' = 550; 'scripts\check.ps1' = 550 }
+$slocCapFor = @{ 'config.json' = 900; 'content.json' = 1300; 'picker\gates.json' = 700; 'guide\data.js' = 700; 'engine\internal\config\config.go' = 550; 'scripts\check.ps1' = 550 }
 $seen = @{}
 $raised = 0
 foreach ($t in $slocTargets) {
