@@ -7,7 +7,7 @@
       "Roshan and Tormentor swapped sides, Tormentor sits bottom low ground, spawns ~20 min, 3000 barrier shield, 30% damage reflect",
       "neutral items are crafted, tier 1 exists at 0:00, full-clear camps to bank Madstone",
       "rescale puts immortal draft at 8500, your first 10 to 15 calibration games outweigh the next 100",
-      "meta: v0.3 pool holds the v0.2 pro tier core and reshapes the edges, Pangolier flexes the mid seat into the head of the pos 1 order, Monkey King seats pos 1 behind Alchemist, Timbersaw joins the offlane behind Enigma, Bane seats pos 5 behind Winter Wyvern, Lion leaves pos 4, Viper seats the offlane tail, Ursa seats the pos 1 tail, the freeze seats Phantom Assassin behind Ursa and Outworld Destroyer behind Leshrac, Pangolier drops the carry seat"
+      "meta: v0.3 pool holds the v0.2 pro tier core and reshapes the edges, Pangolier flexes the mid seat into the head of the pos 1 order, Monkey King seats pos 1 behind Alchemist, Timbersaw joins the offlane behind Enigma, Bane seats pos 5 behind Winter Wyvern, Lion leaves pos 4, Viper seats the offlane tail, Ursa seats the pos 1 tail, the freeze seats Phantom Assassin behind Ursa and Outworld Destroyer behind Leshrac, Pangolier drops the carry seat, Death Prophet seats the offlane tail behind Viper"
     ],
     "corrections": [
       "tormentor: old advice said contest it at 20 for the shard. corrected: buy the shard with gold at 15+ when your spike needs it, treat the Tormentor as a 3-man post-fight objective, never solo it, never ping-beg for it",
@@ -119,6 +119,19 @@
         "channel the global from fog, never in range of their stun"
       ],
       "mechanics": [["tip", "blink forward after the opening swipes to land the final starbreaker stun on top of a target"], ["tip", "solar guardian stun pierces bkb, debuff immune enemies still eat the landing"], ["tip", "once airborne she is invulnerable and hidden, nothing interrupts the landing, damage lands just before the stun"], ["counter", "silence cannot cancel a started starbreaker, stuns, sleeps, and fears all can"], ["counter", "nyx walks into solar guardian with carapace up and reflects the whole landing"]]
+    },
+    "death-prophet": {
+      "identity": "swarm tempo offlaner, crypt swarm waves the lane down, silence cuts the casters out of the trade, spirit siphon drains the front body and feeds her back, witchcraft deepens the move speed and the cooldowns as she levels, exorcism floods the fight with ghosts that strip the structures and pay the heal at the end",
+      "why": "dedicated pos 3, the swarm and the silence hold the tempo and the exorcism takes every objective on cooldown, favored into the paper frames and the refraction lines, vetoed by the rupture and the heal cut crew",
+      "how": "wave the lane down with the swarm, silence the caster mid combo, siphon the front body for the sustain, pop the exorcism on the objective and stand close so the ghosts cycle, retarget them onto the runner through the disables",
+      "when": "swarm poke from the opening ranks, the siphon holds every lane trade, mid game exorcism windows siege every tower, late the ghosts and the heal grind the long fights, starves when the heal cuts and the silence answers stack up",
+      "build": "consecrated wraps, kaya and sange, lotus, bkb, shiva, shard, crellas crozier",
+      "timings": [["consecrated wraps", 17], ["kaya and sange", 23]],
+      "tech": [
+        "bloodseeker is the veto, the rupture holds the waddle and the thirst true sights the retreat",
+        "shadow fiend, templar assassin, and venomancer style lines are the free wins, the ghosts sweep the plague wards, the paper frames feed the heal"
+      ],
+      "mechanics": [["tip", "ground target the swarm onto the juking body, the unit targeted cast cancels when they break vision"], ["tip", "several siphons run at once but never two on one body, drain every chaser when the gank lands"], ["tip", "the siphon heal ignores the magic resist, the siege creeps and the golems pay the full sustain"], ["tip", "the siphon drains roshan and the tormentor too"], ["tip", "the exorcism ghosts deal physical damage, the enemy armor decides the payout"], ["tip", "the exorcism ghosts follow her right clicks, retarget them through the stuns and the cyclone"], ["counter", "never chase her through the standing exorcism, the ghosts refill her health when the cast ends"], ["counter", "the health restoration cuts trim the siphon and the exorcism heal"]]
     },
     "doom": {
       "identity": "devour offlane core that eats the map for tempo, burns heroes down with the infernal blade and vetoes a carry with the doom",
@@ -676,7 +689,8 @@
       ["viper", "poison kite flow, layer the arrows on the lane body and park the toxin pool on the clump until every exit runs through the zone"],
       ["ursa", "swipe stacking discipline on the single body and the pit solo timing until the roshan windows are yours to call"],
       ["phantom-assassin", "dagger into blink strike commit onto the lone support until the crit order picks itself"],
-      ["outworld-destroyer", "astral imprisonment timing on the runner and the eclipse hold for the clump until the drop always catches three"]
+      ["outworld-destroyer", "astral imprisonment timing on the runner and the eclipse hold for the clump until the drop always catches three"],
+      ["death-prophet", "swarm placement onto the predicted path and the siphon drain kiting until the sustain always outlasts the trade"]
     ],
     "replay": [
       "after each session: 10 min, only your deaths, write one line per death: where you should have been",

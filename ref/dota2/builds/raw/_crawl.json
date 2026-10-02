@@ -1,5 +1,5 @@
 {
-  "crawledAt": "2026-10-02T03:41:30Z",
+  "crawledAt": "2026-10-02T05:33:38Z",
   "bracket": "DIVINE_IMMORTAL",
   "source": "stratz completed-week crawl",
   "field": "itemFullPurchase",
@@ -157,7 +157,7 @@
       "role": "1",
       "heroId": 44,
       "fetchedAt": "2026-10-02T03:41:29Z",
-      "cached": false,
+      "cached": true,
       "accepted": true,
       "rowCount": 1822
     },
@@ -220,7 +220,7 @@
       "role": "2",
       "heroId": 76,
       "fetchedAt": "2026-10-02T03:41:30Z",
-      "cached": false,
+      "cached": true,
       "accepted": true,
       "rowCount": 2547
     },
@@ -313,6 +313,15 @@
       "cached": true,
       "accepted": true,
       "rowCount": 2128
+    },
+    {
+      "slug": "death-prophet",
+      "role": "3",
+      "heroId": 43,
+      "fetchedAt": "2026-10-02T05:33:38Z",
+      "cached": false,
+      "accepted": true,
+      "rowCount": 1834
     },
     {
       "slug": "rubick",
