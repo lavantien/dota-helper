@@ -105,8 +105,8 @@ func TestHeroesFoldsMultiRoleEntries(t *testing.T) {
 	}
 }
 
-// the live pool is pinned: every tier dedicated, and pangolier is the one
-// dual-seat hero, fielded at both core seats for the shared candidate field.
+// the live pool is pinned: every tier dedicated and every hero single-seat,
+// the frozen v0.4 lineup dropped pangolier's carry seat.
 func TestPoolHeroesPinnedTiersAndSeats(t *testing.T) {
 	c, err := Load(realConfig)
 	if err != nil {
@@ -123,9 +123,8 @@ func TestPoolHeroesPinnedTiersAndSeats(t *testing.T) {
 			multi[h.Slug] = h.Roles
 		}
 	}
-	want := map[string][]string{"pangolier": {"1", "2"}}
-	if !reflect.DeepEqual(multi, want) {
-		t.Errorf("multi-role heroes = %v, want exactly %v", multi, want)
+	if len(multi) != 0 {
+		t.Errorf("multi-role heroes = %v, want none under the frozen single-seat lineup", multi)
 	}
 }
 
