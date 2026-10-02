@@ -1,5 +1,5 @@
 {
-  "curatedAt": "2026-10-01",
+  "curatedAt": "2026-10-02",
   "source": "ref/dota2/howdoiplay/howdoiplay.json",
   "patch": "7.41",
   "heroes": {
@@ -2284,6 +2284,68 @@
           "verdict": "confirmed",
           "source": "https://dota2.fandom.com/wiki/Tiny",
           "text": "the avalanche area keeps stunning, walking in late still eats the rocks"
+        }
+      }
+    ],
+    "ursa": [
+      {
+        "idx": 0,
+        "from": "tips[0]",
+        "verified": {
+          "date": "2026-10-02",
+          "verdict": "confirmed",
+          "source": "https://howdoiplay.com/tips/ursa.html",
+          "text": "the earthshock leap hops cliffs both ways and jumps clear of the kinetic field"
+        }
+      },
+      {
+        "idx": 1,
+        "from": "tips[2]",
+        "verified": {
+          "date": "2026-10-02",
+          "verdict": "confirmed",
+          "source": "https://howdoiplay.com/tips/ursa.html",
+          "text": "the overpower buff outlasts its cooldown, cast it early before the gank or the pit so the second cast waits in the chamber"
+        }
+      },
+      {
+        "idx": 2,
+        "from": "tips[4]",
+        "verified": {
+          "date": "2026-10-02",
+          "verdict": "confirmed",
+          "source": "https://howdoiplay.com/tips/ursa.html",
+          "text": "casting enrage carries a basic dispel that wipes dots, slows, blinds, and roots, the scepter upgrade walks out of the stuns"
+        }
+      },
+      {
+        "idx": 3,
+        "from": "tips[5]",
+        "verified": {
+          "date": "2026-10-02",
+          "verdict": "confirmed",
+          "source": "https://howdoiplay.com/tips/ursa.html",
+          "text": "the swipes work on roshan, the pit solo opens on demand"
+        }
+      },
+      {
+        "idx": 4,
+        "from": "counters[6]",
+        "verified": {
+          "date": "2026-10-02",
+          "verdict": "confirmed",
+          "source": "https://liquipedia.net/dota2/Ursa",
+          "text": "break only stops the new swipe stacks, the standing stack keeps paying its bonus"
+        }
+      },
+      {
+        "idx": 5,
+        "from": "counters[5]",
+        "verified": {
+          "date": "2026-10-02",
+          "verdict": "confirmed",
+          "source": "https://howdoiplay.com/tips/ursa.html",
+          "text": "the overpower burst wipes off with any basic purge, the shadow demon purge bites through the enrage plan"
         }
       }
     ],

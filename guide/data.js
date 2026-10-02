@@ -10,7 +10,7 @@ window.GUIDE = {
       'Roshan and Tormentor swapped sides, Tormentor sits bottom low ground, spawns ~20 min, 3000 barrier shield, 30% damage reflect',
       'neutral items are crafted, tier 1 exists at 0:00, full-clear camps to bank Madstone',
       'rescale puts immortal draft at 8500, your first 10 to 15 calibration games outweigh the next 100',
-      'meta: v0.3 pool holds the v0.2 pro tier core and reshapes the edges, Pangolier flexes the mid seat into the head of the pos 1 order, Monkey King seats pos 1 behind Alchemist, Timbersaw joins the offlane behind Enigma, Bane seats pos 5 behind Winter Wyvern, Lion leaves pos 4, Viper seats the offlane tail',
+      'meta: v0.3 pool holds the v0.2 pro tier core and reshapes the edges, Pangolier flexes the mid seat into the head of the pos 1 order, Monkey King seats pos 1 behind Alchemist, Timbersaw joins the offlane behind Enigma, Bane seats pos 5 behind Winter Wyvern, Lion leaves pos 4, Viper seats the offlane tail, Ursa seats the pos 1 tail',
     ],
     corrections: [
       'tormentor: old advice said contest it at 20 for the shard. corrected: buy the shard with gold at 15+ when your spike needs it, treat the Tormentor as a 3-man post-fight objective, never solo it, never ping-beg for it',
@@ -170,6 +170,15 @@ window.GUIDE = {
       timings: [['mjollnir', 16], ['pike', 24]],
       tech: ['dragon knight, night stalker, and phantom lancer are the vetoes, push answers and illusion spam blunt the split', 'anti mage, sven, and ogre magi style lines are the free wins, slow farmers lose the map race'],
       mechanics: [['tip', 'sprout grants flying vision around the point, scout fog jukes and cliff wards with it'], ['tip', 'sprout can be ground targeted, trap invis guesses and linken holders without direct targeting'], ['tip', 'canceling teleportation mid cast costs nothing, no cooldown and no mana, fake the rotation'], ['tip', 'wrath bounces a fixed count and each hit beyond the first adds damage, cast with vision across the map'], ['tip', 'the scepter wrath entangles every enemy it hits, a root and disarm bind scaling with the bounce'], ['counter', 'hold your disable for the end of the teleport animation, the cast is long and fully visible']] },
+    { slug: 'ursa', name: 'Ursa', roles: ['1'], tier: 'dedicated',
+      identity: 'swipe stack brawl carry, earthshock stomps the clump and slows it, overpower bursts the swings at max speed, fury swipes deepen with every hit on the same body, enrage shakes the debuffs off and shrugs the damage through the commit',
+      why: 'dedicated pos 1, the swipes scale off swings and the pit opens on demand, favored into the paper cores and the immobile front lines, vetoed by the clone flood and the kite crew, no chase without the blink',
+      how: 'stomp the clump, blink onto the runner, hold the swipes on one body, pop the enrage under the focus and take the objective with the stack alive',
+      when: 'pit windows from the early timings, mid game objectives and siege spikes behind the stack, late falls off when the kites, saves, and disarms arrive',
+      build: 'bfury, bkb, monkey king bar, abyssal blade, satanic, swift blink, blessing',
+      timings: [['bfury', 14], ['bkb', 28]],
+      tech: ['meepo is the veto, the clone flood blanks the swipes and the poof burst deletes the grounded ball', 'shadow fiend and monkey king are the free wins, the paper cores stand still for the swipe stack'],
+      mechanics: [['tip', 'the earthshock leap hops cliffs both ways and jumps clear of the kinetic field'], ['tip', 'the overpower buff outlasts its cooldown, cast it early before the gank or the pit so the second cast waits in the chamber'], ['tip', 'casting enrage carries a basic dispel that wipes dots, slows, blinds, and roots, the scepter upgrade walks out of the stuns'], ['tip', 'the swipes work on roshan, the pit solo opens on demand'], ['counter', 'break only stops the new swipe stacks, the standing stack keeps paying its bonus'], ['counter', 'the overpower burst wipes off with any basic purge, the shadow demon purge bites through the enrage plan']] },
     { slug: 'marci', name: 'Marci', roles: ['2'], tier: 'dedicated',
       identity: 'melee brawler mid, dispose grabs and hurls any body behind her, rebound leaps off allies into the landing stun, bodyguard shares the shield and the lifesteal, unleash flurries through the committed fight',
       why: 'dedicated pos 2, every roaming ally becomes a kill setup for the leap and the throwback, favored into immobile paper mids, vetoed by the root crew',
@@ -458,7 +467,7 @@ window.GUIDE = {
       ['rattletrap', 'hook into cog cage sequence on a lone target until the trap closes every time'], ['witch-doctor', 'cask bounce counting off the wave until the second hit always catches the enemy hero'],
       ['slardar', 'sprint crush entry onto the runner until the bash and the haze land as one motion'], ['rubick', 'lift timing onto the blinking initiator until the pick lands before their spell starts'],
       ['storm-spirit', 'ball onto the lone target and vortex on landing until the zip entry, the pull, and the overload hit land as one motion'], ['marci', 'rebound entry off the roaming ally into the dispose throwback until the pick lands as one motion'],
-      ['viper', 'poison kite flow, layer the arrows on the lane body and park the toxin pool on the clump until every exit runs through the zone']
+      ['viper', 'poison kite flow, layer the arrows on the lane body and park the toxin pool on the clump until every exit runs through the zone'], ['ursa', 'swipe stacking discipline on the single body and the pit solo timing until the roshan windows are yours to call']
     ],
     replay: ['after each session: 10 min, only your deaths, write one line per death: where you should have been', 'weekly: rewatch your 2 best farm games to lock in what good felt like'],
     calibration: ['first pick from the dedicated board only', 'counter picks only after enemy cores are visible', 'comfort pool only during calibration games'],
