@@ -1,5 +1,5 @@
 {
-  "crawledAt": "2026-10-01T16:05:03Z",
+  "crawledAt": "2026-10-02T02:08:03Z",
   "bracket": "DIVINE_IMMORTAL",
   "source": "stratz completed-week crawl",
   "field": "itemFullPurchase",
@@ -153,6 +153,24 @@
       "rowCount": 1734
     },
     {
+      "slug": "ursa",
+      "role": "1",
+      "heroId": 70,
+      "fetchedAt": "2026-10-02T02:08:03Z",
+      "cached": false,
+      "accepted": true,
+      "rowCount": 1898
+    },
+    {
+      "slug": "pangolier",
+      "role": "2",
+      "heroId": 120,
+      "fetchedAt": "2026-09-30T16:27:19Z",
+      "cached": true,
+      "accepted": true,
+      "rowCount": 1768
+    },
+    {
       "slug": "marci",
       "role": "2",
       "heroId": 136,
@@ -196,15 +214,6 @@
       "cached": true,
       "accepted": true,
       "rowCount": 2213
-    },
-    {
-      "slug": "pangolier",
-      "role": "2",
-      "heroId": 120,
-      "fetchedAt": "2026-09-30T16:27:19Z",
-      "cached": true,
-      "accepted": true,
-      "rowCount": 1768
     },
     {
       "slug": "enigma",
@@ -292,7 +301,7 @@
       "role": "3",
       "heroId": 47,
       "fetchedAt": "2026-10-01T16:05:03Z",
-      "cached": false,
+      "cached": true,
       "accepted": true,
       "rowCount": 2128
     },

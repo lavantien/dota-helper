@@ -7,7 +7,7 @@
       "Roshan and Tormentor swapped sides, Tormentor sits bottom low ground, spawns ~20 min, 3000 barrier shield, 30% damage reflect",
       "neutral items are crafted, tier 1 exists at 0:00, full-clear camps to bank Madstone",
       "rescale puts immortal draft at 8500, your first 10 to 15 calibration games outweigh the next 100",
-      "meta: v0.3 pool holds the v0.2 pro tier core and reshapes the edges, Pangolier flexes the mid seat into the head of the pos 1 order, Monkey King seats pos 1 behind Alchemist, Timbersaw joins the offlane behind Enigma, Bane seats pos 5 behind Winter Wyvern, Lion leaves pos 4, Viper seats the offlane tail"
+      "meta: v0.3 pool holds the v0.2 pro tier core and reshapes the edges, Pangolier flexes the mid seat into the head of the pos 1 order, Monkey King seats pos 1 behind Alchemist, Timbersaw joins the offlane behind Enigma, Bane seats pos 5 behind Winter Wyvern, Lion leaves pos 4, Viper seats the offlane tail, Ursa seats the pos 1 tail"
     ],
     "corrections": [
       "tormentor: old advice said contest it at 20 for the shard. corrected: buy the shard with gold at 15+ when your spike needs it, treat the Tormentor as a 3-man post-fight objective, never solo it, never ping-beg for it",
@@ -496,6 +496,19 @@
       ],
       "mechanics": [["tip", "avalanche pulses damage and stun in intervals, lead the target and the rocks catch walkers"], ["tip", "toss disables whoever is thrown, and avalanche deals double damage to the tossed unit"], ["tip", "debuff immune enemies can never be thrown, but you can still toss something at them"], ["tip", "toss always grabs the nearest unit around tiny, allies included, mash it in a crowd"], ["tip", "toss grabs units inside the grab radius even from fog, invisible units are the exception"], ["counter", "the avalanche area keeps stunning, walking in late still eats the rocks"]]
     },
+    "ursa": {
+      "identity": "swipe stack brawl carry, earthshock stomps the clump and slows it, overpower bursts the swings at max speed, fury swipes deepen with every hit on the same body, enrage shakes the debuffs off and shrugs the damage through the commit",
+      "why": "dedicated pos 1, the swipes scale off swings and the pit opens on demand, favored into the paper cores and the immobile front lines, vetoed by the clone flood and the kite crew, no chase without the blink",
+      "how": "stomp the clump, blink onto the runner, hold the swipes on one body, pop the enrage under the focus and take the objective with the stack alive",
+      "when": "pit windows from the early timings, mid game objectives and siege spikes behind the stack, late falls off when the kites, saves, and disarms arrive",
+      "build": "bfury, bkb, monkey king bar, abyssal blade, satanic, swift blink, blessing",
+      "timings": [["bfury", 14], ["bkb", 28]],
+      "tech": [
+        "meepo is the veto, the clone flood blanks the swipes and the poof burst deletes the grounded ball",
+        "shadow fiend and monkey king are the free wins, the paper cores stand still for the swipe stack"
+      ],
+      "mechanics": [["tip", "the earthshock leap hops cliffs both ways and jumps clear of the kinetic field"], ["tip", "the overpower buff outlasts its cooldown, cast it early before the gank or the pit so the second cast waits in the chamber"], ["tip", "casting enrage carries a basic dispel that wipes dots, slows, blinds, and roots, the scepter upgrade walks out of the stuns"], ["tip", "the swipes work on roshan, the pit solo opens on demand"], ["counter", "break only stops the new swipe stacks, the standing stack keeps paying its bonus"], ["counter", "the overpower burst wipes off with any basic purge, the shadow demon purge bites through the enrage plan"]]
+    },
     "viper": {
       "identity": "poison kite offlaner, poison attack arrows layer the slow and the burn on every body, nethertoxin pools the ground and grinds the clump inside it, corrosive skin returns the damage and shrugs the magic, viper strike glues the runner and switches its passives off, nosedive dives the fight from the sky",
       "why": "dedicated pos 3, the lane poison starves every melee core and the skin flips the spell lanes around, favored into passive front heroes and the right click grinders, vetoed by the illusion flood crew and the unslowable runs",
@@ -634,7 +647,8 @@
       ["rubick", "lift timing onto the blinking initiator until the pick lands before their spell starts"],
       ["storm-spirit", "ball onto the lone target and vortex on landing until the zip entry, the pull, and the overload hit land as one motion"],
       ["marci", "rebound entry off the roaming ally into the dispose throwback until the pick lands as one motion"],
-      ["viper", "poison kite flow, layer the arrows on the lane body and park the toxin pool on the clump until every exit runs through the zone"]
+      ["viper", "poison kite flow, layer the arrows on the lane body and park the toxin pool on the clump until every exit runs through the zone"],
+      ["ursa", "swipe stacking discipline on the single body and the pit solo timing until the roshan windows are yours to call"]
     ],
     "replay": [
       "after each session: 10 min, only your deaths, write one line per death: where you should have been",
@@ -673,5 +687,5 @@
       }
     ]
   },
-  "buildsMeta": "stratz itemFullPurchase completed week 1789948800, divine_immortal, fetched 2026-10-01, series 7.41"
+  "buildsMeta": "stratz itemFullPurchase completed week 1789948800, divine_immortal, fetched 2026-10-02, series 7.41"
 }
