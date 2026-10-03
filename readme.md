@@ -140,7 +140,7 @@ the go engine runs only inside the golang:1.27 linux image (the duckdb cgo drive
 
 `make refresh` is the unified pipeline command (serial only, never -j). the others by group:
 
-- view: `serve` (http server for browser tooling, file:// is blocked there), `picker`, `dota`
+- view: `serve` (http server for browser tooling, file:// is blocked there), `picker`, `dota`, `shots` (headless retake of both readme screenshots)
 - fetch: `fetch-stratz`, `fetch-builds`, `fetch-matches`, `fetch-positions`, `fetch-howdoiplay`, `fetch-matchups`, plus `-refresh` variants
 - build data: `ingest`, `mine`, `emit` (or `emit-data`, `emit-guide`, `emit-picker`), `emit-goldens`, `build-guide-data`, `sync-builds`, `merge-mechanics`, `fixtures`, `order-pool`
 - evaluate: `eval`, `eval-fit`, `eval-fit-alphas`, `eval-fit-completion`, `eval-promote SECTION=weights|alphas|completion`
@@ -153,6 +153,7 @@ the go engine runs only inside the golang:1.27 linux image (the duckdb cgo drive
 - pool counts, roster counts, and hero lists are always derived from `config.json` or the roster table, never hardcoded
 - hero prose is general first principles, no numerics in descriptions, matchup winrates live only in the generated tables, `make check` enforces the prose rules
 - tier is a board label only, it never enters scoring, every hero scores from mined data under identical terms
+- release pass: `make check`, then `make shots` so the readme art matches the shipped pages, commit the retake, then tag and publish
 
 ## ci
 

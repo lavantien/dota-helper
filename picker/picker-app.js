@@ -477,5 +477,27 @@ const ac = window.PickerSearch.mount({
   limit: UI.acLimit,
   poolOrder: orderedPool,
 });
+
+// shot bootstrap for the readme capture: query params seed the board through
+// the same first-empty placement pick() uses, so a headless capture can
+// reproduce the documented frame without driving the UI. malformed input is
+// refused per field, the page still renders
+(function seedShotState() {
+  const q = new URLSearchParams(location.search);
+  if (![...q.keys()].length) return;
+  ['allies', 'enemies', 'bans'].forEach(team => {
+    (q.get(team) || '').split(',').filter(Boolean).forEach(slug => {
+      const idx = slugIdx[slug];
+      const at = idx === undefined || takenSet().has(idx) ? -1 : firstEmpty(team);
+      if (at >= 0) state[team][at] = idx;
+    });
+  });
+  const role = q.get('role');
+  if (role && G.roles.some(r => r.id === role)) state.role = role;
+  const aim = (q.get('aim') || '').split(':');
+  const slot = aim.length === 2 && ['allies', 'enemies', 'bans'].includes(aim[0])
+    ? Number(aim[1]) - 1 : NaN;
+  if (Number.isInteger(slot) && slot >= 0 && slot < state[aim[0]].length) aimAt(aim[0], slot);
+})();
 render();
 })();

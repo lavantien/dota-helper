@@ -318,6 +318,9 @@ const stamp = G.patch.headline.match(/\d+\.\d+[a-z]/);
 if (stamp) d3.select('#stamp').text(stamp[0]);
 renderPoolStrip();
 render();
+// hash bootstrap: deep link straight to a hero panel, also the readme
+// capture entry
+if (location.hash.length > 1 && poolBySlug[location.hash.slice(1)]) showHero(location.hash.slice(1));
 </script>
 </body>
 </html>

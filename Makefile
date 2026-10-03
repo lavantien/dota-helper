@@ -3,7 +3,7 @@
         fetch-builds-refresh fetch-matches fetch-matches-refresh fetch-positions ingest db-query mine sync-builds order-pool emit emit-data \
         emit-guide emit-picker emit-goldens eval eval-fit eval-fit-alphas eval-fit-completion \
         eval-promote refresh fixtures verify fetch-matchups \
-        build-guide-data fetch-howdoiplay merge-mechanics check check-linux coverage-badge
+        build-guide-data fetch-howdoiplay merge-mechanics check check-linux coverage-badge shots
 
 # duckdb cgo has no supported native windows toolchain (crt-mixing, verified),
 # so every go build and test runs in the linux golang image, same pattern as the
@@ -24,6 +24,11 @@ picker:
 # tooling); loopback only, page trees only, so var/ and .git stay unserved
 serve:
 	python scripts/serve.py $(PORT)
+
+# readme art: headless capture of both pages through their shot bootstraps.
+# pre release step, so the screenshots always match the shipped pages
+shots:
+	pwsh -NoProfile -File scripts/take-shots.ps1 $(PORT)
 
 engine-build:
 	$(GO_RUN) go -C $(ENGINE_DIR) build -o ../$(BIN) ./cmd/engine

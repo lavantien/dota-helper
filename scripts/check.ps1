@@ -448,7 +448,7 @@ if ($fail.Count -eq 0) { Write-Host "ok: $($dumpSlugs.Count) previous-pool fallb
 # SLOC cap on every source and doc file we ship
 $slocTargets = @(
     'Makefile', 'scripts/fetch-matchups.ps1', 'scripts/build-guide-data.ps1', 'scripts/check.ps1',
-    'scripts/fetch-howdoiplay.ps1', 'scripts/serve.py',
+    'scripts/fetch-howdoiplay.ps1', 'scripts/take-shots.ps1', 'scripts/serve.py',
     'ui/ui.css', 'guide/guide.css', 'picker/picker.css',
     'guide/index.html', 'guide/data.js', 'guide/guide-data-generated.js',
     'readme.md', 'ref/dota2/README.md',
