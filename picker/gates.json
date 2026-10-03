@@ -3,64 +3,66 @@
     "1": "lone druid for the relentless bear sieges, alchemist for the greed farm and the early stun follow ups, monkey king for the jingu trade loops and the soldier ring sieges, tiny for the toss catches and the tower pressure, sven for the cleave through the clumped lines, terrorblade for the metamorph sieges and the sunder saves, luna for the glaive wave clear and the eclipse clump kills, windranger for the shackle picks and the focus fire deletes, phantom lancer into the squishy clumped lines, clinkz for the skeleton walk tempo and the archer sieges, nature's prophet for the global farm and the split pressure, lifestealer into tanks, juggernaut for the spin immunity and the ward sieges, spectre for the global haunt cleanup, anti mage for the counter spell and the split push tempo, ursa for the swipes grind and the pit windows, phantom assassin for the blink strike crit deletes and the blur front",
     "2": "dedicated pangolier for the roll flips through the fight and the swashbuckle poke, marci for the rebound pair setups and the unleash brawls, storm spirit for the zip tempo and the overload picks, slark for the pickoffs and the late snowball, dragon knight into the magic mids, leshrac for the pulse nova teamfights and the edict sieges, outworld destroyer for the astral picks and the eclipse mana drops",
     "3": "doom for the ult that shuts any hero off and the devour lane lead, centaur for the stomp engages and the tanky front with the stampede saves, enigma for the black hole teamfights and the eidolon pushes, timbersaw for the chain brawls and the reactive armor front, slardar for the corrosive haze strips and the amplified pick damage, brewmaster for the primal split teamfights and the earth brewling sieges, lycan for the wolf sieges and the unslowable shapeshift runs, dawnbreaker for the global ult presence and the tanky front, necrophos as the sustain offlane that outlasts burst and deletes the tanky cores, viper for the poison kite lanes and the strike break picks, death prophet for the exorcism sieges and the silence tempo",
-    "4": "dedicated rubick for the spell steals and the fade bolt trades, bounty hunter for the track economy, nyx assassin into the caster lines, mirana for the arrow picks and the moonlight engages, shadow shaman for the chain lockdown and the ward sieges from the roam",
-    "5": "dedicated winter wyvern for the curse turns and the cold embraces, bane for the nightmare setups and the fiend grip deletes, clockwerk for the cogs isolations and the flare globals, lich for the frost shield sieges and the chain frost teamfights, witch doctor for the maledict bites and the death ward bounces"
+    "4": "dedicated rubick for the spell steals and the fade bolt trades, bounty hunter for the track economy, nyx assassin into the caster lines, mirana for the arrow picks and the moonlight engages, shadow shaman for the chain lockdown and the ward sieges from the roam, earthshaker for the fissure cuts and the echo slams that cash the clump",
+    "5": "dedicated winter wyvern for the curse turns and the cold embraces, bane for the nightmare setups and the fiend grip deletes, clockwerk for the cogs isolations and the flare globals, enchantress for the converted neutral sieges and the impetus gap taxes, lich for the frost shield sieges and the chain frost teamfights, witch doctor for the maledict bites and the death ward bounces"
   },
   "fallbackOrder": {
     "1": [
-      "lone-druid",
-      "alchemist",
-      "monkey-king",
-      "tiny",
-      "sven",
-      "terrorblade",
-      "luna",
-      "windranger",
       "phantom-lancer",
       "clinkz",
-      "natures-prophet",
-      "lifestealer",
       "juggernaut",
       "spectre",
+      "lifestealer",
+      "sven",
       "anti-mage",
+      "windranger",
+      "phantom-assassin",
       "ursa",
-      "phantom-assassin"
+      "luna",
+      "terrorblade",
+      "lone-druid",
+      "alchemist",
+      "tiny",
+      "natures-prophet",
+      "monkey-king"
     ],
     "2": [
-      "pangolier",
       "marci",
-      "storm-spirit",
-      "slark",
       "dragon-knight",
+      "outworld-destroyer",
+      "slark",
       "leshrac",
-      "outworld-destroyer"
+      "pangolier",
+      "storm-spirit"
     ],
     "3": [
-      "doom",
-      "centaur",
       "enigma",
-      "timbersaw",
-      "slardar",
       "brewmaster",
-      "lycan",
       "dawnbreaker",
-      "necrophos",
+      "lycan",
       "viper",
-      "death-prophet"
+      "centaur",
+      "necrophos",
+      "death-prophet",
+      "slardar",
+      "doom",
+      "timbersaw"
     ],
     "4": [
-      "rubick",
       "bounty-hunter",
       "nyx-assassin",
+      "earthshaker",
+      "shadow-shaman",
       "mirana",
-      "shadow-shaman"
+      "rubick"
     ],
     "5": [
+      "lich",
       "winter-wyvern",
       "bane",
+      "witch-doctor",
       "rattletrap",
-      "lich",
-      "witch-doctor"
+      "enchantress"
     ]
   },
   "rules": [
@@ -640,6 +642,51 @@
       "when": [{ "kind": "enemyVisibleAny", "heroes": ["shadow-fiend", "templar-assassin", "venomancer"] }],
       "action": "bonus",
       "note": "the ghosts sweep the plague wards, the paper frames feed the exorcism heal",
+      "origin": "authored"
+    },
+    {
+      "id": "es-spread-penalty",
+      "target": "earthshaker",
+      "roles": ["4"],
+      "when": [{ "kind": "enemyVisibleAny", "heroes": ["elder-titan", "visage", "brewmaster", "arc-warden", "bloodseeker", "night-stalker"] }],
+      "action": "penalty",
+      "note": "the clone and spirit lines spread past the clumps, the thirst and the night vision hunt the roam, the slam never finds the stack",
+      "origin": "authored"
+    },
+    {
+      "id": "es-clump-boost",
+      "target": "earthshaker",
+      "roles": ["4"],
+      "when": [{ "kind": "enemyVisibleAny", "heroes": ["shadow-fiend", "anti-mage", "natures-prophet", "huskar"] }],
+      "action": "bonus",
+      "note": "the summons and image packs stack the echo slam payout, the paper frames and the lone divers melt inside it",
+      "origin": "authored"
+    },
+    {
+      "id": "en-rebound-veto",
+      "target": "enchantress",
+      "roles": ["5"],
+      "when": [{ "kind": "enemyVisibleAny", "heroes": ["marci"] }],
+      "action": "hard_gate",
+      "note": "the rebound closes the gap she lives on and the dispose dumps her under the tower, the impetus never gets the range it pays for",
+      "origin": "authored"
+    },
+    {
+      "id": "en-dive-penalty",
+      "target": "enchantress",
+      "roles": ["5"],
+      "when": [{ "kind": "enemyVisibleAny", "heroes": ["morphling", "primal-beast", "earth-spirit", "phantom-assassin", "spirit-breaker", "bounty-hunter"] }],
+      "action": "penalty",
+      "note": "the gap closers run her down before the impetus pays, the fan of knives break strips the untouchable",
+      "origin": "authored"
+    },
+    {
+      "id": "en-paper-boost",
+      "target": "enchantress",
+      "roles": ["5"],
+      "when": [{ "kind": "enemyVisibleAny", "heroes": ["jakiro", "natures-prophet", "shadow-fiend"] }],
+      "action": "bonus",
+      "note": "the rooted casters and the paper frames pay the impetus, the summon lines feed the converts",
       "origin": "authored"
     }
   ],

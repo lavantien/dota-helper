@@ -2,7 +2,7 @@
   "slug": "spectre",
   "role": "1",
   "heroId": 67,
-  "fetchedAt": "2026-09-29T08:57:04Z",
+  "fetchedAt": "2026-10-03T04:27:10Z",
   "bracket": "DIVINE_IMMORTAL",
   "series": "7.41",
   "week": 1789948800,
@@ -897,18 +897,18 @@
       "winCount": 5
     },
     {
+      "itemId": 164,
+      "time": 11,
+      "instance": 0,
+      "matchCount": 2,
+      "winCount": 1
+    },
+    {
       "itemId": 265,
       "time": 23,
       "instance": 0,
       "matchCount": 12,
       "winCount": 5
-    },
-    {
-      "itemId": 114,
-      "time": 65,
-      "instance": 0,
-      "matchCount": 4,
-      "winCount": 2
     },
     {
       "itemId": 247,
@@ -918,11 +918,11 @@
       "winCount": 3
     },
     {
-      "itemId": 164,
-      "time": 11,
+      "itemId": 114,
+      "time": 65,
       "instance": 0,
-      "matchCount": 2,
-      "winCount": 1
+      "matchCount": 4,
+      "winCount": 2
     },
     {
       "itemId": 73,
@@ -1037,18 +1037,18 @@
       "winCount": 4
     },
     {
-      "itemId": 267,
-      "time": 19,
-      "instance": 0,
-      "matchCount": 14,
-      "winCount": 10
-    },
-    {
       "itemId": 265,
       "time": 33,
       "instance": 2,
       "matchCount": 2,
       "winCount": 1
+    },
+    {
+      "itemId": 267,
+      "time": 19,
+      "instance": 0,
+      "matchCount": 14,
+      "winCount": 10
     },
     {
       "itemId": 1,
@@ -3613,18 +3613,18 @@
       "winCount": 3
     },
     {
-      "itemId": 174,
-      "time": 54,
-      "instance": 0,
-      "matchCount": 16,
-      "winCount": 8
-    },
-    {
       "itemId": 259,
       "time": 42,
       "instance": 0,
       "matchCount": 2,
       "winCount": 2
+    },
+    {
+      "itemId": 174,
+      "time": 54,
+      "instance": 0,
+      "matchCount": 16,
+      "winCount": 8
     },
     {
       "itemId": 240,
@@ -4222,13 +4222,6 @@
       "winCount": 40
     },
     {
-      "itemId": 603,
-      "time": 47,
-      "instance": 0,
-      "matchCount": 4,
-      "winCount": 3
-    },
-    {
       "itemId": 162,
       "time": 52,
       "instance": 0,
@@ -4241,6 +4234,13 @@
       "instance": 0,
       "matchCount": 24,
       "winCount": 22
+    },
+    {
+      "itemId": 603,
+      "time": 47,
+      "instance": 0,
+      "matchCount": 4,
+      "winCount": 3
     },
     {
       "itemId": 208,
@@ -6791,15 +6791,15 @@
       "winCount": 1
     },
     {
-      "itemId": 164,
-      "time": 7,
+      "itemId": 265,
+      "time": 27,
       "instance": 0,
       "matchCount": 3,
       "winCount": 2
     },
     {
-      "itemId": 265,
-      "time": 27,
+      "itemId": 164,
+      "time": 7,
       "instance": 0,
       "matchCount": 3,
       "winCount": 2
@@ -8989,18 +8989,18 @@
       "winCount": 7
     },
     {
-      "itemId": 137,
-      "time": 35,
-      "instance": 1,
-      "matchCount": 11,
-      "winCount": 9
-    },
-    {
       "itemId": 1852,
       "time": 40,
       "instance": 0,
       "matchCount": 4,
       "winCount": 4
+    },
+    {
+      "itemId": 137,
+      "time": 35,
+      "instance": 1,
+      "matchCount": 11,
+      "winCount": 9
     },
     {
       "itemId": 4206,
@@ -12566,18 +12566,18 @@
       "winCount": 41
     },
     {
-      "itemId": 162,
-      "time": 30,
-      "instance": 0,
-      "matchCount": 106,
-      "winCount": 86
-    },
-    {
       "itemId": 116,
       "time": 84,
       "instance": 0,
       "matchCount": 2,
       "winCount": 1
+    },
+    {
+      "itemId": 162,
+      "time": 30,
+      "instance": 0,
+      "matchCount": 106,
+      "winCount": 86
     },
     {
       "itemId": 65,
@@ -12692,18 +12692,18 @@
       "winCount": 3
     },
     {
-      "itemId": 240,
-      "time": 35,
-      "instance": 0,
-      "matchCount": 2,
-      "winCount": 2
-    },
-    {
       "itemId": 123,
       "time": 25,
       "instance": 0,
       "matchCount": 2,
       "winCount": 1
+    },
+    {
+      "itemId": 240,
+      "time": 35,
+      "instance": 0,
+      "matchCount": 2,
+      "winCount": 2
     },
     {
       "itemId": 110,
@@ -14190,18 +14190,18 @@
       "winCount": 21
     },
     {
-      "itemId": 603,
-      "time": 58,
-      "instance": 0,
-      "matchCount": 6,
-      "winCount": 5
-    },
-    {
       "itemId": 67,
       "time": 59,
       "instance": 1,
       "matchCount": 6,
       "winCount": 3
+    },
+    {
+      "itemId": 603,
+      "time": 58,
+      "instance": 0,
+      "matchCount": 6,
+      "winCount": 5
     },
     {
       "itemId": 98,
@@ -14456,18 +14456,18 @@
       "winCount": 1
     },
     {
-      "itemId": 4206,
-      "time": 39,
-      "instance": 1,
-      "matchCount": 35,
-      "winCount": 25
-    },
-    {
       "itemId": 114,
       "time": 23,
       "instance": 0,
       "matchCount": 2,
       "winCount": 2
+    },
+    {
+      "itemId": 4206,
+      "time": 39,
+      "instance": 1,
+      "matchCount": 35,
+      "winCount": 25
     },
     {
       "itemId": 114,
@@ -15107,6 +15107,13 @@
       "winCount": 4
     },
     {
+      "itemId": 98,
+      "time": 44,
+      "instance": 1,
+      "matchCount": 2,
+      "winCount": 1
+    },
+    {
       "itemId": 143,
       "time": 69,
       "instance": 0,
@@ -15119,13 +15126,6 @@
       "instance": 0,
       "matchCount": 2,
       "winCount": 2
-    },
-    {
-      "itemId": 98,
-      "time": 44,
-      "instance": 1,
-      "matchCount": 2,
-      "winCount": 1
     },
     {
       "itemId": 36,
@@ -15205,18 +15205,18 @@
       "winCount": 204
     },
     {
-      "itemId": 174,
-      "time": 24,
-      "instance": 0,
-      "matchCount": 54,
-      "winCount": 33
-    },
-    {
       "itemId": 37,
       "time": 34,
       "instance": 0,
       "matchCount": 8,
       "winCount": 7
+    },
+    {
+      "itemId": 174,
+      "time": 24,
+      "instance": 0,
+      "matchCount": 54,
+      "winCount": 33
     },
     {
       "itemId": 596,
@@ -15562,18 +15562,18 @@
       "winCount": 5
     },
     {
-      "itemId": 166,
-      "time": 19,
-      "instance": 0,
-      "matchCount": 3,
-      "winCount": 0
-    },
-    {
       "itemId": 267,
       "time": 15,
       "instance": 0,
       "matchCount": 4,
       "winCount": 2
+    },
+    {
+      "itemId": 166,
+      "time": 19,
+      "instance": 0,
+      "matchCount": 3,
+      "winCount": 0
     },
     {
       "itemId": 75,

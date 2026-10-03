@@ -36,54 +36,6 @@
   ],
   "pool": [
     {
-      "slug": "lone-druid",
-      "name": "Lone Druid",
-      "role": "1",
-      "tier": "dedicated"
-    },
-    {
-      "slug": "alchemist",
-      "name": "Alchemist",
-      "role": "1",
-      "tier": "dedicated"
-    },
-    {
-      "slug": "monkey-king",
-      "name": "Monkey King",
-      "role": "1",
-      "tier": "dedicated"
-    },
-    {
-      "slug": "tiny",
-      "name": "Tiny",
-      "role": "1",
-      "tier": "dedicated"
-    },
-    {
-      "slug": "sven",
-      "name": "Sven",
-      "role": "1",
-      "tier": "dedicated"
-    },
-    {
-      "slug": "terrorblade",
-      "name": "Terrorblade",
-      "role": "1",
-      "tier": "dedicated"
-    },
-    {
-      "slug": "luna",
-      "name": "Luna",
-      "role": "1",
-      "tier": "dedicated"
-    },
-    {
-      "slug": "windranger",
-      "name": "Windranger",
-      "role": "1",
-      "tier": "dedicated"
-    },
-    {
       "slug": "phantom-lancer",
       "name": "Phantom Lancer",
       "role": "1",
@@ -92,18 +44,6 @@
     {
       "slug": "clinkz",
       "name": "Clinkz",
-      "role": "1",
-      "tier": "dedicated"
-    },
-    {
-      "slug": "natures-prophet",
-      "name": "Nature's Prophet",
-      "role": "1",
-      "tier": "dedicated"
-    },
-    {
-      "slug": "lifestealer",
-      "name": "Lifestealer",
       "role": "1",
       "tier": "dedicated"
     },
@@ -120,14 +60,26 @@
       "tier": "dedicated"
     },
     {
+      "slug": "lifestealer",
+      "name": "Lifestealer",
+      "role": "1",
+      "tier": "dedicated"
+    },
+    {
+      "slug": "sven",
+      "name": "Sven",
+      "role": "1",
+      "tier": "dedicated"
+    },
+    {
       "slug": "anti-mage",
       "name": "Anti-Mage",
       "role": "1",
       "tier": "dedicated"
     },
     {
-      "slug": "ursa",
-      "name": "Ursa",
+      "slug": "windranger",
+      "name": "Windranger",
       "role": "1",
       "tier": "dedicated"
     },
@@ -138,26 +90,56 @@
       "tier": "dedicated"
     },
     {
-      "slug": "pangolier",
-      "name": "Pangolier",
-      "role": "2",
+      "slug": "ursa",
+      "name": "Ursa",
+      "role": "1",
+      "tier": "dedicated"
+    },
+    {
+      "slug": "luna",
+      "name": "Luna",
+      "role": "1",
+      "tier": "dedicated"
+    },
+    {
+      "slug": "terrorblade",
+      "name": "Terrorblade",
+      "role": "1",
+      "tier": "dedicated"
+    },
+    {
+      "slug": "lone-druid",
+      "name": "Lone Druid",
+      "role": "1",
+      "tier": "dedicated"
+    },
+    {
+      "slug": "alchemist",
+      "name": "Alchemist",
+      "role": "1",
+      "tier": "dedicated"
+    },
+    {
+      "slug": "tiny",
+      "name": "Tiny",
+      "role": "1",
+      "tier": "dedicated"
+    },
+    {
+      "slug": "natures-prophet",
+      "name": "Nature's Prophet",
+      "role": "1",
+      "tier": "dedicated"
+    },
+    {
+      "slug": "monkey-king",
+      "name": "Monkey King",
+      "role": "1",
       "tier": "dedicated"
     },
     {
       "slug": "marci",
       "name": "Marci",
-      "role": "2",
-      "tier": "dedicated"
-    },
-    {
-      "slug": "storm-spirit",
-      "name": "Storm Spirit",
-      "role": "2",
-      "tier": "dedicated"
-    },
-    {
-      "slug": "slark",
-      "name": "Slark",
       "role": "2",
       "tier": "dedicated"
     },
@@ -168,44 +150,38 @@
       "tier": "dedicated"
     },
     {
-      "slug": "leshrac",
-      "name": "Leshrac",
-      "role": "2",
-      "tier": "dedicated"
-    },
-    {
       "slug": "outworld-destroyer",
       "name": "Outworld Destroyer",
       "role": "2",
       "tier": "dedicated"
     },
     {
-      "slug": "doom",
-      "name": "Doom",
-      "role": "3",
+      "slug": "slark",
+      "name": "Slark",
+      "role": "2",
       "tier": "dedicated"
     },
     {
-      "slug": "centaur",
-      "name": "Centaur Warrunner",
-      "role": "3",
+      "slug": "leshrac",
+      "name": "Leshrac",
+      "role": "2",
+      "tier": "dedicated"
+    },
+    {
+      "slug": "pangolier",
+      "name": "Pangolier",
+      "role": "2",
+      "tier": "dedicated"
+    },
+    {
+      "slug": "storm-spirit",
+      "name": "Storm Spirit",
+      "role": "2",
       "tier": "dedicated"
     },
     {
       "slug": "enigma",
       "name": "Enigma",
-      "role": "3",
-      "tier": "dedicated"
-    },
-    {
-      "slug": "timbersaw",
-      "name": "Timbersaw",
-      "role": "3",
-      "tier": "dedicated"
-    },
-    {
-      "slug": "slardar",
-      "name": "Slardar",
       "role": "3",
       "tier": "dedicated"
     },
@@ -216,20 +192,14 @@
       "tier": "dedicated"
     },
     {
-      "slug": "lycan",
-      "name": "Lycan",
-      "role": "3",
-      "tier": "dedicated"
-    },
-    {
       "slug": "dawnbreaker",
       "name": "Dawnbreaker",
       "role": "3",
       "tier": "dedicated"
     },
     {
-      "slug": "necrophos",
-      "name": "Necrophos",
+      "slug": "lycan",
+      "name": "Lycan",
       "role": "3",
       "tier": "dedicated"
     },
@@ -240,15 +210,39 @@
       "tier": "dedicated"
     },
     {
+      "slug": "centaur",
+      "name": "Centaur Warrunner",
+      "role": "3",
+      "tier": "dedicated"
+    },
+    {
+      "slug": "necrophos",
+      "name": "Necrophos",
+      "role": "3",
+      "tier": "dedicated"
+    },
+    {
       "slug": "death-prophet",
       "name": "Death Prophet",
       "role": "3",
       "tier": "dedicated"
     },
     {
-      "slug": "rubick",
-      "name": "Rubick",
-      "role": "4",
+      "slug": "slardar",
+      "name": "Slardar",
+      "role": "3",
+      "tier": "dedicated"
+    },
+    {
+      "slug": "doom",
+      "name": "Doom",
+      "role": "3",
+      "tier": "dedicated"
+    },
+    {
+      "slug": "timbersaw",
+      "name": "Timbersaw",
+      "role": "3",
       "tier": "dedicated"
     },
     {
@@ -264,8 +258,8 @@
       "tier": "dedicated"
     },
     {
-      "slug": "mirana",
-      "name": "Mirana",
+      "slug": "earthshaker",
+      "name": "Earthshaker",
       "role": "4",
       "tier": "dedicated"
     },
@@ -273,6 +267,24 @@
       "slug": "shadow-shaman",
       "name": "Shadow Shaman",
       "role": "4",
+      "tier": "dedicated"
+    },
+    {
+      "slug": "mirana",
+      "name": "Mirana",
+      "role": "4",
+      "tier": "dedicated"
+    },
+    {
+      "slug": "rubick",
+      "name": "Rubick",
+      "role": "4",
+      "tier": "dedicated"
+    },
+    {
+      "slug": "lich",
+      "name": "Lich",
+      "role": "5",
       "tier": "dedicated"
     },
     {
@@ -288,20 +300,20 @@
       "tier": "dedicated"
     },
     {
+      "slug": "witch-doctor",
+      "name": "Witch Doctor",
+      "role": "5",
+      "tier": "dedicated"
+    },
+    {
       "slug": "rattletrap",
       "name": "Clockwerk",
       "role": "5",
       "tier": "dedicated"
     },
     {
-      "slug": "lich",
-      "name": "Lich",
-      "role": "5",
-      "tier": "dedicated"
-    },
-    {
-      "slug": "witch-doctor",
-      "name": "Witch Doctor",
+      "slug": "enchantress",
+      "name": "Enchantress",
       "role": "5",
       "tier": "dedicated"
     }
@@ -378,7 +390,8 @@
       "blessing",
       "cloak",
       "shard",
-      "vampiric"
+      "vampiric",
+      "assault"
     ],
     "itemAliases": {
       "aghanims_shard": "shard",

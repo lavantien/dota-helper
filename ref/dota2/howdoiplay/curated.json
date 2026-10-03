@@ -1,5 +1,5 @@
 {
-  "curatedAt": "2026-10-02",
+  "curatedAt": "2026-10-03",
   "source": "ref/dota2/howdoiplay/howdoiplay.json",
   "patch": "7.41",
   "heroes": {
@@ -692,6 +692,200 @@
           "verdict": "confirmed",
           "source": "https://dota2.fandom.com/wiki/Spirit_Vessel",
           "text": "vessel, skadi, ice blast, doom, even withering mist all cut the dragon blood regen"
+        }
+      }
+    ],
+    "earthshaker": [
+      {
+        "idx": 0,
+        "from": "tips[0]",
+        "verified": {
+          "date": "2026-10-03",
+          "verdict": "confirmed",
+          "source": "https://howdoiplay.com/tips/earthshaker.html",
+          "text": "any unit his spells kill flies backwards and deals damage on the way, the slugger innate taxes the clumped retreat"
+        }
+      },
+      {
+        "idx": 1,
+        "from": "tips[1]",
+        "verified": {
+          "date": "2026-10-03",
+          "verdict": "confirmed",
+          "source": "https://howdoiplay.com/tips/earthshaker.html",
+          "text": "the fissure block is often worth more than the stun, lead the long casts ahead and never cut the team off the target"
+        }
+      },
+      {
+        "idx": 2,
+        "from": "tips[2]",
+        "verified": {
+          "date": "2026-10-03",
+          "verdict": "confirmed",
+          "source": "https://howdoiplay.com/tips/earthshaker.html",
+          "text": "do not mash the combo, one right click fits between the casts once aftershock is maxed"
+        }
+      },
+      {
+        "idx": 3,
+        "from": "tips[4]",
+        "verified": {
+          "date": "2026-10-03",
+          "verdict": "confirmed",
+          "source": "https://howdoiplay.com/tips/earthshaker.html",
+          "text": "the shard puts aftershock on every lingering fissure from anywhere, stun off the old cracks mid fight"
+        }
+      },
+      {
+        "idx": 4,
+        "from": "tips[6]",
+        "verified": {
+          "date": "2026-10-03",
+          "verdict": "confirmed",
+          "source": "https://howdoiplay.com/tips/earthshaker.html",
+          "text": "echo slam hits the invisible in full, the smoke and the meld give no shelter"
+        }
+      },
+      {
+        "idx": 5,
+        "from": "tips[7]",
+        "verified": {
+          "date": "2026-10-03",
+          "verdict": "confirmed",
+          "source": "https://howdoiplay.com/tips/earthshaker.html",
+          "text": "echo slam carries no cast animation, it lands as long as he is not disabled"
+        }
+      },
+      {
+        "idx": 6,
+        "from": "counters[1]",
+        "verified": {
+          "date": "2026-10-03",
+          "verdict": "confirmed",
+          "source": "https://howdoiplay.com/tips/earthshaker.html",
+          "text": "clockwerk breaks the combo, the battery assault cancels most of the cast animations, the slam still lands"
+        }
+      },
+      {
+        "idx": 7,
+        "from": "counters[3]",
+        "verified": {
+          "date": "2026-10-03",
+          "verdict": "confirmed",
+          "source": "https://howdoiplay.com/tips/earthshaker.html",
+          "text": "aftershock never triggers under break, the silver edge guts the chain"
+        }
+      },
+      {
+        "idx": 8,
+        "from": "counters[4]",
+        "verified": {
+          "date": "2026-10-03",
+          "verdict": "confirmed",
+          "source": "https://howdoiplay.com/tips/earthshaker.html",
+          "text": "roots pin the scepter totem jump in place"
+        }
+      }
+    ],
+    "enchantress": [
+      {
+        "idx": 0,
+        "from": "tips[1]",
+        "verified": {
+          "date": "2026-10-03",
+          "verdict": "confirmed",
+          "source": "https://howdoiplay.com/tips/enchantress.html",
+          "text": "manual impetus on a hero draws no creep aggro, harass through the standing wave"
+        }
+      },
+      {
+        "idx": 1,
+        "from": "tips[2]",
+        "verified": {
+          "date": "2026-10-03",
+          "verdict": "confirmed",
+          "source": "https://howdoiplay.com/tips/enchantress.html",
+          "text": "impetus pays the distance when the arrow lands, capped at 1750"
+        }
+      },
+      {
+        "idx": 2,
+        "from": "tips[4].notes[0]",
+        "verified": {
+          "date": "2026-10-03",
+          "verdict": "confirmed",
+          "source": "https://howdoiplay.com/tips/enchantress.html",
+          "text": "enchant converts nearly every unit including illusions, never the creep heroes, the brewlings, the golems, and the familiars stay theirs"
+        }
+      },
+      {
+        "idx": 3,
+        "from": "tips[9].notes[0]",
+        "verified": {
+          "date": "2026-10-03",
+          "verdict": "confirmed",
+          "source": "https://howdoiplay.com/tips/enchantress.html",
+          "text": "enchant on a hero dispels first, the aphotic shield, the surge, the ion shell, and the jingu buffs wipe off"
+        }
+      },
+      {
+        "idx": 4,
+        "from": "tips[10]",
+        "verified": {
+          "date": "2026-10-03",
+          "verdict": "confirmed",
+          "source": "https://howdoiplay.com/tips/enchantress.html",
+          "text": "untouchable tanks roshan, he swings in bullet time"
+        }
+      },
+      {
+        "idx": 5,
+        "from": "tips[11]",
+        "verified": {
+          "date": "2026-10-03",
+          "verdict": "confirmed",
+          "source": "https://howdoiplay.com/tips/enchantress.html",
+          "text": "the shard sproink disjoints the incoming projectiles"
+        }
+      },
+      {
+        "idx": 6,
+        "from": "counters[0]",
+        "verified": {
+          "date": "2026-10-03",
+          "verdict": "confirmed",
+          "source": "https://howdoiplay.com/tips/enchantress.html",
+          "text": "walk into her to cut the impetus payout, the damage counts the gap when the arrow lands"
+        }
+      },
+      {
+        "idx": 7,
+        "from": "counters[1].notes[0]",
+        "verified": {
+          "date": "2026-10-03",
+          "verdict": "confirmed",
+          "source": "https://howdoiplay.com/tips/enchantress.html",
+          "text": "breaks strip untouchable, the silver edge, the vendetta, and the viper strike turn her paper again"
+        }
+      },
+      {
+        "idx": 8,
+        "from": "counters[2]",
+        "verified": {
+          "date": "2026-10-03",
+          "verdict": "confirmed",
+          "source": "https://howdoiplay.com/tips/enchantress.html",
+          "text": "untouchable bites through bkb and debuff immunity"
+        }
+      },
+      {
+        "idx": 9,
+        "from": "counters[8]",
+        "verified": {
+          "date": "2026-10-03",
+          "verdict": "confirmed",
+          "source": "https://howdoiplay.com/tips/enchantress.html",
+          "text": "the enemy jungle camps swing harder under her rabble rouser innate"
         }
       }
     ],

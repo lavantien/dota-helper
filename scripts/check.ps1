@@ -472,7 +472,8 @@ if (Test-Path $pickerDir) {
 # data.js is engine-emitted pool data (one block per pool entry) and grows the
 # same way despite not carrying a -generated suffix; gates.json carries the
 # per-role fallback order plus one authored rule set per hero and passed 600
-# with the v0.4 freeze (44 rules over 44 heroes); config.go is that hub's
+# with the v0.4 freeze (52 rules over 47 heroes after the october reshapes);
+# config.go is that hub's
 # loader, one struct and one validate arm per hub section, so it tracks the
 # same growth; check.ps1 grows the same way, one gate per pass that touches
 # the pool or its derived surfaces

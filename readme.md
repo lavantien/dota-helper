@@ -16,8 +16,8 @@ the lineup below is the hard-frozen pool: membership changes only through a deli
 - pos 1, carry: Lone Druid, Alchemist, Monkey King, Tiny, Sven, Terrorblade, Luna, Windranger, Phantom Lancer, Clinkz, Nature's Prophet, Lifestealer, Juggernaut, Spectre, Anti-Mage, Ursa, Phantom Assassin
 - pos 2, mid: Pangolier, Marci, Storm Spirit, Slark, Dragon Knight, Leshrac, Outworld Destroyer
 - pos 3, offlane: Doom, Centaur Warrunner, Enigma, Timbersaw, Slardar, Brewmaster, Lycan, Dawnbreaker, Necrophos, Viper, Death Prophet
-- pos 4, soft support: Rubick, Bounty Hunter, Nyx Assassin, Mirana, Shadow Shaman
-- pos 5, hard support: Winter Wyvern, Bane, Clockwerk, Lich, Witch Doctor
+- pos 4, soft support: Rubick, Bounty Hunter, Nyx Assassin, Mirana, Shadow Shaman, Earthshaker
+- pos 5, hard support: Winter Wyvern, Bane, Clockwerk, Enchantress, Lich, Witch Doctor
 
 ## tools
 

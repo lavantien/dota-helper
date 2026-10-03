@@ -158,6 +158,32 @@
       ],
       "mechanics": [["tip", "breathe fire cuts total attack damage including bonus damage from items, use it early in the fight"], ["tip", "corrosive breath burn works on towers, the dot is the whole early push package"], ["tip", "the transform itself is the gank, nobody respects the instant ranged stun out of knight form"], ["counter", "silver edge and viper strike carry the break, dragon blood regen goes with it"], ["counter", "vessel, skadi, ice blast, doom, even withering mist all cut the dragon blood regen"]]
     },
+    "earthshaker": {
+      "identity": "blink initiator soft support, fissure cuts the lane and the fight in half, enchant totem primes the burst, aftershock pays a stun behind every cast, echo slam cashes the clump",
+      "why": "dedicated pos 4, one fissure sets every kill and the slam flips every clumped fight, favored into the illusion and summon lines that stack the payout, the spread drafts and the battery assault crew blunt him",
+      "how": "block the runner with the fissure, walk in on a primed totem, blink the clump and slam, chain the aftershock stuns with one click between casts, stun off the lingering fissures once the shard lands",
+      "when": "fissure controls the lanes from level one, the blink turns every clumped objective into a slam window, mid game the combo deletes the paper cores, falls off when the enemy spreads and the bkbs arrive",
+      "build": "blink, shard, force, yasha and kaya, bkb, octarine, refresher",
+      "timings": [["blink", 16], ["shard", 23]],
+      "tech": [
+        "clockwerk is the veto, the battery cancels most of the combo, only the slam is safe",
+        "shadow fiend, anti mage, and nature prophet lines are the free wins, the summons and the paper frames stack the slam"
+      ],
+      "mechanics": [["tip", "any unit his spells kill flies backwards and deals damage on the way, the slugger innate taxes the clumped retreat"], ["tip", "the fissure block is often worth more than the stun, lead the long casts ahead and never cut the team off the target"], ["tip", "do not mash the combo, one right click fits between the casts once aftershock is maxed"], ["tip", "the shard puts aftershock on every lingering fissure from anywhere, stun off the old cracks mid fight"], ["tip", "echo slam hits the invisible in full, the smoke and the meld give no shelter"], ["tip", "echo slam carries no cast animation, it lands as long as he is not disabled"], ["counter", "clockwerk breaks the combo, the battery assault cancels most of the cast animations, the slam still lands"], ["counter", "aftershock never triggers under break, the silver edge guts the chain"], ["counter", "roots pin the scepter totem jump in place"]]
+    },
+    "enchantress": {
+      "identity": "convert tempo hard support, enchant takes the big neutral and turns the map, impetus taxes every retreat by the gap it leaves, untouchable slows the right clicks into bullet time, natures attendants keep the front alive",
+      "why": "dedicated pos 5, the convert owns the early rotations and the impetus scales the whole game off positioning, favored into the jakiro and prophet lines, marci and the gap closing dives dump her through the slow",
+      "how": "convert the biggest neutral and siege behind it, impetus the retreating bodies from max range, dispel the enemy buffs with the point blank enchant, sproink the projectiles and keep the gap open",
+      "when": "converts own the first ten minutes, mid game the impetus punishes every rotation, late the untouchable tanks roshan while the paper frames melt, starves when the breaks and the burst answers land",
+      "build": "ancient janggo, essence distiller, glimmer, agh, shard, orchid, pike",
+      "timings": [["ancient janggo", 16], ["essence distiller", 16]],
+      "tech": [
+        "marci is the veto, the rebound closes the gap she lives on and the dispose dumps her",
+        "jakiro, nature prophet, and shadow fiend lines are the free wins, the paper frames pay the impetus"
+      ],
+      "mechanics": [["tip", "manual impetus on a hero draws no creep aggro, harass through the standing wave"], ["tip", "impetus pays the distance when the arrow lands, capped at 1750"], ["tip", "enchant converts nearly every unit including illusions, never the creep heroes, the brewlings, the golems, and the familiars stay theirs"], ["tip", "enchant on a hero dispels first, the aphotic shield, the surge, the ion shell, and the jingu buffs wipe off"], ["tip", "untouchable tanks roshan, he swings in bullet time"], ["tip", "the shard sproink disjoints the incoming projectiles"], ["counter", "walk into her to cut the impetus payout, the damage counts the gap when the arrow lands"], ["counter", "breaks strip untouchable, the silver edge, the vendetta, and the viper strike turn her paper again"], ["counter", "untouchable bites through bkb and debuff immunity"], ["counter", "the enemy jungle camps swing harder under her rabble rouser innate"]]
+    },
     "enigma": {
       "identity": "ranged offlaner with demonic conversion eidolon pushing, midnight pulse zones, and a black hole ultimate that wins teamfights",
       "why": "black hole wins the teamfight game, favored into BS and troll style clumped drafts, eidolons push the map",
@@ -690,7 +716,9 @@
       ["ursa", "swipe stacking discipline on the single body and the pit solo timing until the roshan windows are yours to call"],
       ["phantom-assassin", "dagger into blink strike commit onto the lone support until the crit order picks itself"],
       ["outworld-destroyer", "astral imprisonment timing on the runner and the eclipse hold for the clump until the drop always catches three"],
-      ["death-prophet", "swarm placement onto the predicted path and the siphon drain kiting until the sustain always outlasts the trade"]
+      ["death-prophet", "swarm placement onto the predicted path and the siphon drain kiting until the sustain always outlasts the trade"],
+      ["earthshaker", "fissure placement that walls the runner's exit and the blink slam entry onto the clump until the aftershock chain lands as one motion"],
+      ["enchantress", "impetus gap control on the retreating body and the convert rotation timing until the big neutral always joins the first siege"]
     ],
     "replay": [
       "after each session: 10 min, only your deaths, write one line per death: where you should have been",
@@ -729,5 +757,5 @@
       }
     ]
   },
-  "buildsMeta": "stratz itemFullPurchase completed week 1789948800, divine_immortal, fetched 2026-10-02, series 7.41"
+  "buildsMeta": "stratz itemFullPurchase completed week 1789948800, divine_immortal, fetched 2026-10-03, series 7.41"
 }
