@@ -37,8 +37,8 @@ func TestLoadReal(t *testing.T) {
 	if len(c.Pool) != len(rolesBySlug)+extra {
 		t.Errorf("pool entries = %d, want %d unique + %d multi-role extras", len(c.Pool), len(rolesBySlug), extra)
 	}
-	if !reflect.DeepEqual(c.SharedRolePools, [][]string{{"1", "2"}}) {
-		t.Errorf("sharedRolePools = %v, want the pos 1/2 core field", c.SharedRolePools)
+	if !reflect.DeepEqual(c.SharedRolePools, [][]string{{"1", "2", "3"}, {"4", "5"}}) {
+		t.Errorf("sharedRolePools = %v, want the core field and the support field", c.SharedRolePools)
 	}
 }
 

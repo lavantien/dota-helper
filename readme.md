@@ -11,7 +11,7 @@ offline dota 2 pick simulator and hero-pool guide for patch 7.41f. static pages 
 
 ## frozen repertoire (v0.4)
 
-the lineup below is the hard-frozen pool: membership changes only through a deliberate reshape commit, never through a data refresh. `order-pool` may still re-sort within a role for display.
+the lineup below is the hard-frozen pool: membership changes only through a deliberate reshape commit, never through a data refresh. `order-pool` may still re-sort within a role for display. in the picker these lists are display only: every core hero competes for all three core seats and every support for both support seats, the score decides.
 
 - pos 1, carry: Lone Druid, Alchemist, Monkey King, Tiny, Sven, Terrorblade, Luna, Windranger, Phantom Lancer, Clinkz, Nature's Prophet, Lifestealer, Juggernaut, Spectre, Anti-Mage, Ursa, Phantom Assassin
 - pos 2, mid: Pangolier, Marci, Storm Spirit, Slark, Dragon Knight, Leshrac, Outworld Destroyer
