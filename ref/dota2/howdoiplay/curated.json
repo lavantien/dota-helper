@@ -1,5 +1,5 @@
 {
-  "curatedAt": "2026-10-03",
+  "curatedAt": "2026-10-04",
   "source": "ref/dota2/howdoiplay/howdoiplay.json",
   "patch": "7.41",
   "heroes": {
@@ -62,6 +62,68 @@
           "verdict": "confirmed",
           "source": "https://dota2.fandom.com/wiki/Alchemist",
           "text": "the greed multiplies bounty rune gold, contest every spawn or quietly fund his lead"
+        }
+      }
+    ],
+    "ancient-apparition": [
+      {
+        "idx": 0,
+        "from": "tips[0]",
+        "verified": {
+          "date": "2026-10-04",
+          "verdict": "confirmed",
+          "source": "https://howdoiplay.com/tips/ancient_apparition.html",
+          "text": "ice vortex strips magic resistance inside the ring, carpet the sieges and stack it with the chilling touch damage"
+        }
+      },
+      {
+        "idx": 1,
+        "from": "tips[3]",
+        "verified": {
+          "date": "2026-10-04",
+          "verdict": "confirmed",
+          "source": "https://howdoiplay.com/tips/ancient_apparition.html",
+          "text": "manual chilling touch on the enemy hero draws no creep aggro, harass through the standing wave"
+        }
+      },
+      {
+        "idx": 2,
+        "from": "tips[4]",
+        "verified": {
+          "date": "2026-10-04",
+          "verdict": "confirmed",
+          "source": "https://howdoiplay.com/tips/ancient_apparition.html",
+          "text": "the frostbite dot from any blast graze keeps the enemy blink daggers broken for the whole duration"
+        }
+      },
+      {
+        "idx": 3,
+        "from": "tips[5]",
+        "verified": {
+          "date": "2026-10-04",
+          "verdict": "confirmed",
+          "source": "https://howdoiplay.com/tips/ancient_apparition.html",
+          "text": "lead the blast past the runner, the shatter debuff counts for more than the nuke and the projectile flies slow"
+        }
+      },
+      {
+        "idx": 4,
+        "from": "counters[0]",
+        "verified": {
+          "date": "2026-10-04",
+          "verdict": "confirmed",
+          "source": "https://howdoiplay.com/tips/ancient_apparition.html",
+          "text": "the frostbite blocks every heal source, lifesteal, fountain regen, and urn charges all fail until the debuff drops"
+        }
+      },
+      {
+        "idx": 5,
+        "from": "counters[1]",
+        "verified": {
+          "date": "2026-10-04",
+          "verdict": "confirmed",
+          "source": "https://howdoiplay.com/tips/ancient_apparition.html",
+          "text": "walk the long way home at low health, the baited blast on the retreat path is the free shatter for him"
         }
       }
     ],
@@ -454,6 +516,68 @@
           "verdict": "confirmed",
           "source": "https://dota2.fandom.com/wiki/Clinkz",
           "text": "damage block never blunts skeleton archer shots, their hits ignore it entirely"
+        }
+      }
+    ],
+    "dark-seer": [
+      {
+        "idx": 0,
+        "from": "tips[3]",
+        "verified": {
+          "date": "2026-10-04",
+          "verdict": "confirmed",
+          "source": "https://howdoiplay.com/tips/dark_seer.html",
+          "text": "ion shell casts on enemy bodies too, shell their melee at the tower and force the wave or the retreat"
+        }
+      },
+      {
+        "idx": 1,
+        "from": "tips[4]",
+        "verified": {
+          "date": "2026-10-04",
+          "verdict": "confirmed",
+          "source": "https://howdoiplay.com/tips/dark_seer.html",
+          "text": "shell the second or third body in the wave, the frontline creep eats the enemy hits and dies first"
+        }
+      },
+      {
+        "idx": 2,
+        "from": "tips[7]",
+        "verified": {
+          "date": "2026-10-04",
+          "verdict": "confirmed",
+          "source": "https://howdoiplay.com/tips/dark_seer.html",
+          "text": "surge and shell the allied init more than yourself, the lasso and the charge stretch miles under the speed"
+        }
+      },
+      {
+        "idx": 3,
+        "from": "tips[10]",
+        "verified": {
+          "date": "2026-10-04",
+          "verdict": "confirmed",
+          "source": "https://howdoiplay.com/tips/dark_seer.html",
+          "text": "micro the wall copies onto the priority target, their default orders waste the replicas on nothing"
+        }
+      },
+      {
+        "idx": 4,
+        "from": "counters[0]",
+        "verified": {
+          "date": "2026-10-04",
+          "verdict": "confirmed",
+          "source": "https://howdoiplay.com/tips/dark_seer.html",
+          "text": "the shell on a creep puts his lane spell on cooldown, punish the cooldown window with harass"
+        }
+      },
+      {
+        "idx": 5,
+        "from": "counters[1]",
+        "verified": {
+          "date": "2026-10-04",
+          "verdict": "confirmed",
+          "source": "https://howdoiplay.com/tips/dark_seer.html",
+          "text": "ion shell dispels clean off, the fortune's end and the convert style dispels gut the lane plan"
         }
       }
     ],
@@ -2508,6 +2632,68 @@
           "verdict": "corrected",
           "source": "https://dota2.fandom.com/wiki/Sven",
           "text": "break shuts off great cleave, god's strength is an active buff break never touches"
+        }
+      }
+    ],
+    "techies": [
+      {
+        "idx": 0,
+        "from": "tips[8]",
+        "verified": {
+          "date": "2026-10-04",
+          "verdict": "confirmed",
+          "source": "https://howdoiplay.com/tips/techies.html",
+          "text": "blast off respects the height map, a jump over a cliff edge can land on the ledge instead of the marked circle"
+        }
+      },
+      {
+        "idx": 1,
+        "from": "tips[11]",
+        "verified": {
+          "date": "2026-10-04",
+          "verdict": "confirmed",
+          "source": "https://howdoiplay.com/tips/techies.html",
+          "text": "spells keep casting mid blast off flight, the sticky and the mine plant never wait for the landing"
+        }
+      },
+      {
+        "idx": 2,
+        "from": "tips[15]",
+        "verified": {
+          "date": "2026-10-04",
+          "verdict": "confirmed",
+          "source": "https://howdoiplay.com/tips/techies.html",
+          "text": "proximity mines hit buildings with distance falloff, plant them flush against the tower for the full damage"
+        }
+      },
+      {
+        "idx": 3,
+        "from": "counters[7]",
+        "verified": {
+          "date": "2026-10-04",
+          "verdict": "confirmed",
+          "source": "https://howdoiplay.com/tips/techies.html",
+          "text": "the armed proximity mines sit invisible until you cross the trigger ring"
+        }
+      },
+      {
+        "idx": 4,
+        "from": "counters[8]",
+        "verified": {
+          "date": "2026-10-04",
+          "verdict": "confirmed",
+          "source": "https://howdoiplay.com/tips/techies.html",
+          "text": "one right click kills an armed mine, the fast attacking carries clear them before they arm"
+        }
+      },
+      {
+        "idx": 5,
+        "from": "counters[10]",
+        "verified": {
+          "date": "2026-10-04",
+          "verdict": "confirmed",
+          "source": "https://howdoiplay.com/tips/techies.html",
+          "text": "cheap summons and illusions trip the carpets, feed the treants and spiderlings through the minefield first"
         }
       }
     ],

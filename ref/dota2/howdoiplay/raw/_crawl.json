@@ -1,21 +1,27 @@
 {
-  "source": "https://howdoiplay.com/tips/{tipSlug}.html",
-  "crawledAt": "2026-10-03T04:22:16Z",
   "patch": "7.41",
   "heroes": [
     {
       "slug": "alchemist",
       "name": "Alchemist",
       "tipSlug": "alchemist",
-      "fetchedAt": "2026-10-03T04:21:35Z",
+      "fetchedAt": "2026-10-04T13:28:33Z",
       "bytes": 6899,
+      "accepted": true
+    },
+    {
+      "slug": "ancient-apparition",
+      "name": "Ancient Apparition",
+      "tipSlug": "ancient_apparition",
+      "fetchedAt": "2026-10-04T13:28:35Z",
+      "bytes": 4510,
       "accepted": true
     },
     {
       "slug": "anti-mage",
       "name": "Anti-Mage",
       "tipSlug": "anti-mage",
-      "fetchedAt": "2026-10-03T04:21:37Z",
+      "fetchedAt": "2026-10-04T13:28:36Z",
       "bytes": 7569,
       "accepted": true
     },
@@ -23,7 +29,7 @@
       "slug": "bane",
       "name": "Bane",
       "tipSlug": "bane",
-      "fetchedAt": "2026-10-03T04:21:37Z",
+      "fetchedAt": "2026-10-04T13:28:40Z",
       "bytes": 8827,
       "accepted": true
     },
@@ -31,7 +37,7 @@
       "slug": "bounty-hunter",
       "name": "Bounty Hunter",
       "tipSlug": "bounty_hunter",
-      "fetchedAt": "2026-10-03T04:21:38Z",
+      "fetchedAt": "2026-10-04T13:28:41Z",
       "bytes": 5204,
       "accepted": true
     },
@@ -39,7 +45,7 @@
       "slug": "brewmaster",
       "name": "Brewmaster",
       "tipSlug": "brewmaster",
-      "fetchedAt": "2026-10-03T04:21:39Z",
+      "fetchedAt": "2026-10-04T13:28:42Z",
       "bytes": 8192,
       "accepted": true
     },
@@ -47,7 +53,7 @@
       "slug": "centaur",
       "name": "Centaur Warrunner",
       "tipSlug": "centaur_warrunner",
-      "fetchedAt": "2026-10-03T04:21:40Z",
+      "fetchedAt": "2026-10-04T13:28:43Z",
       "bytes": 4081,
       "accepted": true
     },
@@ -55,15 +61,23 @@
       "slug": "clinkz",
       "name": "Clinkz",
       "tipSlug": "clinkz",
-      "fetchedAt": "2026-10-03T04:21:40Z",
+      "fetchedAt": "2026-10-04T13:28:44Z",
       "bytes": 5112,
+      "accepted": true
+    },
+    {
+      "slug": "dark-seer",
+      "name": "Dark Seer",
+      "tipSlug": "dark_seer",
+      "fetchedAt": "2026-10-04T13:28:44Z",
+      "bytes": 7429,
       "accepted": true
     },
     {
       "slug": "dawnbreaker",
       "name": "Dawnbreaker",
       "tipSlug": "dawnbreaker",
-      "fetchedAt": "2026-10-03T04:21:42Z",
+      "fetchedAt": "2026-10-04T13:28:45Z",
       "bytes": 10084,
       "accepted": true
     },
@@ -71,7 +85,7 @@
       "slug": "death-prophet",
       "name": "Death Prophet",
       "tipSlug": "death_prophet",
-      "fetchedAt": "2026-10-03T04:21:42Z",
+      "fetchedAt": "2026-10-04T13:28:47Z",
       "bytes": 6183,
       "accepted": true
     },
@@ -79,7 +93,7 @@
       "slug": "doom",
       "name": "Doom",
       "tipSlug": "doom",
-      "fetchedAt": "2026-10-03T04:21:43Z",
+      "fetchedAt": "2026-10-04T13:28:49Z",
       "bytes": 6838,
       "accepted": true
     },
@@ -87,7 +101,7 @@
       "slug": "dragon-knight",
       "name": "Dragon Knight",
       "tipSlug": "dragon_knight",
-      "fetchedAt": "2026-10-03T04:21:44Z",
+      "fetchedAt": "2026-10-04T13:28:50Z",
       "bytes": 4321,
       "accepted": true
     },
@@ -95,7 +109,7 @@
       "slug": "earthshaker",
       "name": "Earthshaker",
       "tipSlug": "earthshaker",
-      "fetchedAt": "2026-10-03T04:21:45Z",
+      "fetchedAt": "2026-10-04T13:28:51Z",
       "bytes": 4136,
       "accepted": true
     },
@@ -103,7 +117,7 @@
       "slug": "enchantress",
       "name": "Enchantress",
       "tipSlug": "enchantress",
-      "fetchedAt": "2026-10-03T04:21:46Z",
+      "fetchedAt": "2026-10-04T13:28:53Z",
       "bytes": 7192,
       "accepted": true
     },
@@ -111,7 +125,7 @@
       "slug": "enigma",
       "name": "Enigma",
       "tipSlug": "enigma",
-      "fetchedAt": "2026-10-03T04:21:46Z",
+      "fetchedAt": "2026-10-04T13:28:54Z",
       "bytes": 5633,
       "accepted": true
     },
@@ -119,7 +133,7 @@
       "slug": "juggernaut",
       "name": "Juggernaut",
       "tipSlug": "juggernaut",
-      "fetchedAt": "2026-10-03T04:21:47Z",
+      "fetchedAt": "2026-10-04T13:28:54Z",
       "bytes": 8096,
       "accepted": true
     },
@@ -127,7 +141,7 @@
       "slug": "leshrac",
       "name": "Leshrac",
       "tipSlug": "leshrac",
-      "fetchedAt": "2026-10-03T04:21:48Z",
+      "fetchedAt": "2026-10-04T13:28:55Z",
       "bytes": 6155,
       "accepted": true
     },
@@ -135,7 +149,7 @@
       "slug": "lich",
       "name": "Lich",
       "tipSlug": "lich",
-      "fetchedAt": "2026-10-03T04:21:49Z",
+      "fetchedAt": "2026-10-04T13:28:57Z",
       "bytes": 5522,
       "accepted": true
     },
@@ -143,7 +157,7 @@
       "slug": "lifestealer",
       "name": "Lifestealer",
       "tipSlug": "lifestealer",
-      "fetchedAt": "2026-10-03T04:21:50Z",
+      "fetchedAt": "2026-10-04T13:28:58Z",
       "bytes": 3862,
       "accepted": true
     },
@@ -151,7 +165,7 @@
       "slug": "lone-druid",
       "name": "Lone Druid",
       "tipSlug": "lone_druid",
-      "fetchedAt": "2026-10-03T04:21:50Z",
+      "fetchedAt": "2026-10-04T13:28:59Z",
       "bytes": 8132,
       "accepted": true
     },
@@ -159,7 +173,7 @@
       "slug": "luna",
       "name": "Luna",
       "tipSlug": "luna",
-      "fetchedAt": "2026-10-03T04:21:51Z",
+      "fetchedAt": "2026-10-04T13:29:15Z",
       "bytes": 6388,
       "accepted": true
     },
@@ -167,7 +181,7 @@
       "slug": "lycan",
       "name": "Lycan",
       "tipSlug": "lycan",
-      "fetchedAt": "2026-10-03T04:21:52Z",
+      "fetchedAt": "2026-10-04T13:29:19Z",
       "bytes": 5169,
       "accepted": true
     },
@@ -175,7 +189,7 @@
       "slug": "marci",
       "name": "Marci",
       "tipSlug": "marci",
-      "fetchedAt": "2026-10-03T04:21:53Z",
+      "fetchedAt": "2026-10-04T13:29:19Z",
       "bytes": 8554,
       "accepted": true
     },
@@ -183,7 +197,7 @@
       "slug": "mirana",
       "name": "Mirana",
       "tipSlug": "mirana",
-      "fetchedAt": "2026-10-03T04:21:53Z",
+      "fetchedAt": "2026-10-04T13:29:20Z",
       "bytes": 6009,
       "accepted": true
     },
@@ -191,7 +205,7 @@
       "slug": "monkey-king",
       "name": "Monkey King",
       "tipSlug": "monkey_king",
-      "fetchedAt": "2026-10-03T04:21:54Z",
+      "fetchedAt": "2026-10-04T13:29:21Z",
       "bytes": 11476,
       "accepted": true
     },
@@ -199,7 +213,7 @@
       "slug": "natures-prophet",
       "name": "Nature's Prophet",
       "tipSlug": "nature's_prophet",
-      "fetchedAt": "2026-10-03T04:21:55Z",
+      "fetchedAt": "2026-10-04T13:29:22Z",
       "bytes": 9434,
       "accepted": true
     },
@@ -207,7 +221,7 @@
       "slug": "necrophos",
       "name": "Necrophos",
       "tipSlug": "necrophos",
-      "fetchedAt": "2026-10-03T04:21:56Z",
+      "fetchedAt": "2026-10-04T13:29:24Z",
       "bytes": 7065,
       "accepted": true
     },
@@ -215,7 +229,7 @@
       "slug": "nyx-assassin",
       "name": "Nyx Assassin",
       "tipSlug": "nyx_assassin",
-      "fetchedAt": "2026-10-03T04:21:57Z",
+      "fetchedAt": "2026-10-04T13:29:27Z",
       "bytes": 6787,
       "accepted": true
     },
@@ -223,7 +237,7 @@
       "slug": "outworld-destroyer",
       "name": "Outworld Destroyer",
       "tipSlug": "outworld_destroyer",
-      "fetchedAt": "2026-10-03T04:21:58Z",
+      "fetchedAt": "2026-10-04T13:29:28Z",
       "bytes": 5934,
       "accepted": true
     },
@@ -231,7 +245,7 @@
       "slug": "pangolier",
       "name": "Pangolier",
       "tipSlug": "pangolier",
-      "fetchedAt": "2026-10-03T04:21:59Z",
+      "fetchedAt": "2026-10-04T13:29:30Z",
       "bytes": 13496,
       "accepted": true
     },
@@ -239,7 +253,7 @@
       "slug": "phantom-assassin",
       "name": "Phantom Assassin",
       "tipSlug": "phantom_assassin",
-      "fetchedAt": "2026-10-03T04:22:00Z",
+      "fetchedAt": "2026-10-04T13:29:30Z",
       "bytes": 6220,
       "accepted": true
     },
@@ -247,7 +261,7 @@
       "slug": "phantom-lancer",
       "name": "Phantom Lancer",
       "tipSlug": "phantom_lancer",
-      "fetchedAt": "2026-10-03T04:22:00Z",
+      "fetchedAt": "2026-10-04T13:29:31Z",
       "bytes": 7759,
       "accepted": true
     },
@@ -255,7 +269,7 @@
       "slug": "rattletrap",
       "name": "Clockwerk",
       "tipSlug": "clockwerk",
-      "fetchedAt": "2026-10-03T04:22:01Z",
+      "fetchedAt": "2026-10-04T13:29:33Z",
       "bytes": 8328,
       "accepted": true
     },
@@ -263,7 +277,7 @@
       "slug": "rubick",
       "name": "Rubick",
       "tipSlug": "rubick",
-      "fetchedAt": "2026-10-03T04:22:02Z",
+      "fetchedAt": "2026-10-04T13:29:34Z",
       "bytes": 10232,
       "accepted": true
     },
@@ -271,7 +285,7 @@
       "slug": "shadow-shaman",
       "name": "Shadow Shaman",
       "tipSlug": "shadow_shaman",
-      "fetchedAt": "2026-10-03T04:22:03Z",
+      "fetchedAt": "2026-10-04T13:29:35Z",
       "bytes": 7077,
       "accepted": true
     },
@@ -279,7 +293,7 @@
       "slug": "slardar",
       "name": "Slardar",
       "tipSlug": "slardar",
-      "fetchedAt": "2026-10-03T04:22:04Z",
+      "fetchedAt": "2026-10-04T13:29:36Z",
       "bytes": 4651,
       "accepted": true
     },
@@ -287,7 +301,7 @@
       "slug": "slark",
       "name": "Slark",
       "tipSlug": "slark",
-      "fetchedAt": "2026-10-03T04:22:05Z",
+      "fetchedAt": "2026-10-04T13:29:37Z",
       "bytes": 12091,
       "accepted": true
     },
@@ -295,7 +309,7 @@
       "slug": "spectre",
       "name": "Spectre",
       "tipSlug": "spectre",
-      "fetchedAt": "2026-10-03T04:22:06Z",
+      "fetchedAt": "2026-10-04T13:29:38Z",
       "bytes": 5868,
       "accepted": true
     },
@@ -303,7 +317,7 @@
       "slug": "storm-spirit",
       "name": "Storm Spirit",
       "tipSlug": "storm_spirit",
-      "fetchedAt": "2026-10-03T04:22:07Z",
+      "fetchedAt": "2026-10-04T13:29:40Z",
       "bytes": 10861,
       "accepted": true
     },
@@ -311,15 +325,23 @@
       "slug": "sven",
       "name": "Sven",
       "tipSlug": "sven",
-      "fetchedAt": "2026-10-03T04:22:09Z",
+      "fetchedAt": "2026-10-04T13:29:41Z",
       "bytes": 3317,
+      "accepted": true
+    },
+    {
+      "slug": "techies",
+      "name": "Techies",
+      "tipSlug": "techies",
+      "fetchedAt": "2026-10-04T13:29:42Z",
+      "bytes": 9025,
       "accepted": true
     },
     {
       "slug": "terrorblade",
       "name": "Terrorblade",
       "tipSlug": "terrorblade",
-      "fetchedAt": "2026-10-03T04:22:09Z",
+      "fetchedAt": "2026-10-04T13:29:43Z",
       "bytes": 6315,
       "accepted": true
     },
@@ -327,7 +349,7 @@
       "slug": "timbersaw",
       "name": "Timbersaw",
       "tipSlug": "timbersaw",
-      "fetchedAt": "2026-10-03T04:22:10Z",
+      "fetchedAt": "2026-10-04T13:29:44Z",
       "bytes": 9209,
       "accepted": true
     },
@@ -335,7 +357,7 @@
       "slug": "tiny",
       "name": "Tiny",
       "tipSlug": "tiny",
-      "fetchedAt": "2026-10-03T04:22:11Z",
+      "fetchedAt": "2026-10-04T13:29:47Z",
       "bytes": 7941,
       "accepted": true
     },
@@ -343,7 +365,7 @@
       "slug": "ursa",
       "name": "Ursa",
       "tipSlug": "ursa",
-      "fetchedAt": "2026-10-03T04:22:12Z",
+      "fetchedAt": "2026-10-04T13:29:49Z",
       "bytes": 5442,
       "accepted": true
     },
@@ -351,7 +373,7 @@
       "slug": "viper",
       "name": "Viper",
       "tipSlug": "viper",
-      "fetchedAt": "2026-10-03T04:22:12Z",
+      "fetchedAt": "2026-10-04T13:29:50Z",
       "bytes": 4438,
       "accepted": true
     },
@@ -359,7 +381,7 @@
       "slug": "windranger",
       "name": "Windranger",
       "tipSlug": "windranger",
-      "fetchedAt": "2026-10-03T04:22:14Z",
+      "fetchedAt": "2026-10-04T13:29:50Z",
       "bytes": 8231,
       "accepted": true
     },
@@ -367,7 +389,7 @@
       "slug": "winter-wyvern",
       "name": "Winter Wyvern",
       "tipSlug": "winter_wyvern",
-      "fetchedAt": "2026-10-03T04:22:15Z",
+      "fetchedAt": "2026-10-04T13:29:51Z",
       "bytes": 8368,
       "accepted": true
     },
@@ -375,9 +397,11 @@
       "slug": "witch-doctor",
       "name": "Witch Doctor",
       "tipSlug": "witch_doctor",
-      "fetchedAt": "2026-10-03T04:22:16Z",
+      "fetchedAt": "2026-10-04T13:29:52Z",
       "bytes": 7512,
       "accepted": true
     }
-  ]
+  ],
+  "crawledAt": "2026-10-04T13:29:52Z",
+  "source": "https://howdoiplay.com/tips/{tipSlug}.html"
 }

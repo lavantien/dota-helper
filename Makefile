@@ -3,7 +3,7 @@
         fetch-builds-refresh fetch-matches fetch-matches-refresh fetch-positions ingest db-query mine sync-builds order-pool emit emit-data \
         emit-guide emit-picker emit-goldens eval eval-fit eval-fit-alphas eval-fit-completion \
         eval-promote refresh fixtures verify fetch-matchups \
-        build-guide-data fetch-howdoiplay merge-mechanics check check-linux coverage-badge shots
+        build-guide-data fetch-howdoiplay merge-mechanics validate-curation check check-linux coverage-badge shots
 
 # duckdb cgo has no supported native windows toolchain (crt-mixing, verified),
 # so every go build and test runs in the linux golang image, same pattern as the
@@ -13,6 +13,11 @@ BIN = var/engine
 GO_IMG = golang:1.27
 PORT ?= 8631
 GO_RUN = docker run --rm -v $(CURDIR):/src -w /src -v poolguide-mod:/go/pkg/mod -v poolguide-build:/root/.cache/go-build -e CGO_ENABLED=1 -e STRATZ_TOKEN $(GO_IMG)
+
+# git-for-windows make runs multi-command recipes through msys sh, whose
+# runtime rewrites container paths like -w /src into host git paths before
+# docker.exe sees them; disable that rewrite (no-op on the linux ci host)
+export MSYS_NO_PATHCONV := 1
 
 dota:
 	pwsh -NoProfile -Command "Start-Process (Join-Path (Get-Location) 'guide/index.html')"
@@ -247,6 +252,10 @@ fetch-howdoiplay:
 
 build-guide-data:
 	pwsh -NoProfile -File scripts/build-guide-data.ps1
+
+# validate var/howdoiplay-curation fragments against the fresh howdoiplay extraction
+validate-curation:
+	node playground/validate-curation.mjs
 
 # fold var/howdoiplay-curation fragments into content.json mechanics + curated.json
 merge-mechanics:

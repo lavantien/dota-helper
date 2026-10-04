@@ -204,6 +204,12 @@
       "tier": "dedicated"
     },
     {
+      "slug": "dark-seer",
+      "name": "Dark Seer",
+      "role": "3",
+      "tier": "dedicated"
+    },
+    {
       "slug": "viper",
       "name": "Viper",
       "role": "3",
@@ -276,8 +282,20 @@
       "tier": "dedicated"
     },
     {
+      "slug": "techies",
+      "name": "Techies",
+      "role": "4",
+      "tier": "dedicated"
+    },
+    {
       "slug": "rubick",
       "name": "Rubick",
+      "role": "4",
+      "tier": "dedicated"
+    },
+    {
+      "slug": "ancient-apparition",
+      "name": "Ancient Apparition",
       "role": "4",
       "tier": "dedicated"
     },

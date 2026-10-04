@@ -1,14 +1,12 @@
 {
   "note": "Tsunami's hero tips and counters, extracted structure; the site's own content and license, see ref/dota2/README.md",
-  "source": "https://howdoiplay.com/tips/{tipSlug}.html",
-  "fetchedAt": "2026-10-03T04:22:16Z",
   "patch": "7.41",
   "heroes": {
     "alchemist": {
       "name": "Alchemist",
       "tipSlug": "alchemist",
       "url": "https://howdoiplay.com/tips/alchemist.html",
-      "fetchedAt": "2026-10-03T04:21:35Z",
+      "fetchedAt": "2026-10-04T13:28:33Z",
       "tips": [
         {
           "text": "You get a lot of time between stacks on your Greevil's Greed innate. If you're free farming, you should be hitting the max cap constantly. If you're jungling, learn how to strategically draw aggro from neutral creeps using Acid Spray or any items you have to keep stacks up.",
@@ -104,11 +102,58 @@
         }
       ]
     },
+    "ancient-apparition": {
+      "name": "Ancient Apparition",
+      "tipSlug": "ancient_apparition",
+      "url": "https://howdoiplay.com/tips/ancient_apparition.html",
+      "fetchedAt": "2026-10-04T13:28:35Z",
+      "tips": [
+        {
+          "text": "Ice Vortex is more than a massive range slow. Throw them all over the place when you're pushing or defending to reduce enemy magic resistance. Keep this in mind when attacking people with Chilling Touch's magical damage as well.",
+          "notes": []
+        },
+        {
+          "text": "Ice Vortex is a great scouting tool with the vision it provides. Use it to scout out Rosh attempts or to check high ground or to help with counterwarding.",
+          "notes": []
+        },
+        {
+          "text": "Ice Vortex is a great spell to use to stack camps because of its ludicrous range and cheap mana cost.",
+          "notes": []
+        },
+        {
+          "text": "Manually casting Chilling Touch on enemy heroes won't draw creep aggro.",
+          "notes": []
+        },
+        {
+          "text": "Ice Blast is a great way to disable enemy Blink Daggers for an extended period of time. You don't even need to land the Blast, as long as they get the Frostbitten damage over time debuff an enemy's Dagger will stay broken for the whole duration.",
+          "notes": []
+        },
+        {
+          "text": "Shoot your ult further than you think it should go in most short range encounters. The Shatter debuff can be more useful than the nuke in some situations and as long as an enemy is along the path of the projectile, they'll get Frostbitten. Plus, the Ice Blast projectile travels slow as hell at low ranges and it's very easy for people to outrun it the second they see it.",
+          "notes": []
+        }
+      ],
+      "counters": [
+        {
+          "text": "AA's Ice Blast is famous for having Dota 2's most complicated tooltip. If you're against an AA, all you need to know is that if his ult flew over your head, you have a debuff that won't let you heal any HP. No lifesteal, no fountain regen, no Tranquil Boots, no Urn of Shadows, no Omniknight PYOORIFICAYSHUN. Just you sitting and praying that you don't drop below the Shattering threshold.",
+          "notes": [
+            "The exceptions to gaining HP under Ice Blast are spells that set HP value like Terrorblade's Sunder or Weaver's Time Lapse.",
+            "The \"Essence Ring\" neutral item artifact will give you bonus HP on activation even under Ice Blast."
+          ]
+        },
+        {
+          "text": "If you're walking back to the fountain at low HP and an enemy AA is alive, take a short break and try to bait the Ice Blast. It's worth spending a few extra seconds standing somewhere else in your base rather than risking getting Blasted in your fountain.",
+          "notes": [
+            "If you're too impatient to wait, you can go into your fountain and buy a cheeky Raindrop. If the Blast lands, it may save you, if it doesn't, sell it back. Buying Shawl could also work, you'll just turn a bunch of gold unreliable when you sell it back."
+          ]
+        }
+      ]
+    },
     "anti-mage": {
       "name": "Anti-Mage",
       "tipSlug": "anti-mage",
       "url": "https://howdoiplay.com/tips/anti-mage.html",
-      "fetchedAt": "2026-10-03T04:21:37Z",
+      "fetchedAt": "2026-10-04T13:28:36Z",
       "tips": [
         {
           "text": "Blink disjoints any incoming enemy spell or attack projectiles.",
@@ -206,7 +251,7 @@
       "name": "Bane",
       "tipSlug": "bane",
       "url": "https://howdoiplay.com/tips/bane.html",
-      "fetchedAt": "2026-10-03T04:21:37Z",
+      "fetchedAt": "2026-10-04T13:28:40Z",
       "tips": [
         {
           "text": "Try to apply debuffs on enemies before they die to get stacks of your Ichor of Nyctasha innate. Debuffs from items can also count.",
@@ -344,7 +389,7 @@
       "name": "Bounty Hunter",
       "tipSlug": "bounty_hunter",
       "url": "https://howdoiplay.com/tips/bounty_hunter.html",
-      "fetchedAt": "2026-10-03T04:21:38Z",
+      "fetchedAt": "2026-10-04T13:28:41Z",
       "tips": [
         {
           "text": "Shuriken will bounce to Tracked targets even if the initial target isn't Tracked. Try hitting a non-Tracked unit first (like a creep) to reach a distant target.",
@@ -426,7 +471,7 @@
       "name": "Brewmaster",
       "tipSlug": "brewmaster",
       "url": "https://howdoiplay.com/tips/brewmaster.html",
-      "fetchedAt": "2026-10-03T04:21:39Z",
+      "fetchedAt": "2026-10-04T13:28:42Z",
       "tips": [
         {
           "text": "You can ignite Cinder Brew with damage from items like Blood Grenade, Urn/Vessel/Distiller, or Radiance.",
@@ -523,7 +568,7 @@
       "name": "Centaur Warrunner",
       "tipSlug": "centaur_warrunner",
       "url": "https://howdoiplay.com/tips/centaur_warrunner.html",
-      "fetchedAt": "2026-10-03T04:21:40Z",
+      "fetchedAt": "2026-10-04T13:28:43Z",
       "tips": [
         {
           "text": "Double Edge costs no mana, so use it as your primary pushing spell late game.",
@@ -581,7 +626,7 @@
       "name": "Clinkz",
       "tipSlug": "clinkz",
       "url": "https://howdoiplay.com/tips/clinkz.html",
-      "fetchedAt": "2026-10-03T04:21:40Z",
+      "fetchedAt": "2026-10-04T13:28:44Z",
       "tips": [
         {
           "text": "Manually casting Searing Arrows on enemy heroes won't draw creep aggro.",
@@ -660,11 +705,116 @@
         }
       ]
     },
+    "dark-seer": {
+      "name": "Dark Seer",
+      "tipSlug": "dark_seer",
+      "url": "https://howdoiplay.com/tips/dark_seer.html",
+      "fetchedAt": "2026-10-04T13:28:44Z",
+      "tips": [
+        {
+          "text": "Pay attention to your XP progress in lane when playing Dark Seer to fully take advantage of your Quick Wit innate regen.",
+          "notes": []
+        },
+        {
+          "text": "Vacuum destroys trees in a small AoE around the target point.",
+          "notes": []
+        },
+        {
+          "text": "If the enemy has spells that can quickly kill your creeps or dispel Ion Shell in the laning phase, consider casting the spell on their creeps instead. Place one on the enemy melee creep tanking the least aggro from your creeps to get the most damage.",
+          "notes": []
+        },
+        {
+          "text": "For some reason you can cast Ion Shell on enemy heroes. The main use for this would be casting it on enemy melee heroes during tower defenses. They'll either kill their whole creep wave or they'll have to back off attacking the tower.",
+          "notes": [
+            "You could also cast Ion Shell on an enemy to pop their Linken's Sphere."
+          ]
+        },
+        {
+          "text": "Don't put Ion Shells on frontline creeps. You want to put it on the 2nd/3rd creep in the wave whenever you're pushing or farming. The first creep in the wave is going to tank the most damage from the enemy wave and will die first.",
+          "notes": []
+        },
+        {
+          "text": "Ion Shelling invisible allies is hilarious. The damage isn't large enough to show a huge white bar of missing HP building up on an unsuspecting enemy and the purple lines emitting from the Shell don't even appear.",
+          "notes": []
+        },
+        {
+          "text": "You can put Ion Shell on your allies and have them stand on neutral creeps to farm them for you.",
+          "notes": [
+            "A few tips to make this strategy even more reliable: Neutral creeps will only aggro your hero if you're dealing damage to them within 1800 range. If it's night time and the neutral creeps are sleeping, your ally can stand on neutrals without them freaking out. They'll just sit there and die in their sleep.",
+            "This also works at day time, but your ally will need to be Smoked and you'll still need to be further than 1800 range away from the creeps."
+          ]
+        },
+        {
+          "text": "A lot of the time, your allies will benefit from a Surge more than you can. Don't be a scrooge. Surge and Shell your allied Doom to help him catch up to an enemy. Help Crystal Maiden put that ward down without being hassled for once. Let Batrider Lasso drag someone miles away from their team. Watch Spirit Breaker zoom across the entire map in a matter of seconds.",
+          "notes": []
+        },
+        {
+          "text": "Don't hesitate to cast Wall of Replica in a 1v1 laning phase situation. It's not the illusion damage that you need, it's having an extra controllable unit that you can put an Ion Shell on that makes it a threat.",
+          "notes": []
+        },
+        {
+          "text": "A Wall of Replica across the top of the stairs on a tier 3 tower can instantly discourage a push. I know it feels bad that you won't be able to make copies if the enemy decides not to push, but if you know that you're not going to get good positioning or a good Vacuum, it can be worth it.",
+          "notes": []
+        },
+        {
+          "text": "Micro the illusions generated by Wall of Replica. I don't know what their default command is when they're created, but I'm guessing it's something along the lines of: \"Attack useless things.\" As soon as you score a good Vacuum+Wall, order all the units to attack the highest priority target on the enemy team or get them to bully a support out of a fight.",
+          "notes": []
+        },
+        {
+          "text": "Wall of Replica illusions carry auras just like all other illusions. Sometimes an offlane/support hero on the enemy team is more valuable for their aura rather than trying to get a Replica of the enemy carry.",
+          "notes": []
+        },
+        {
+          "text": "Wall of Replica can create illusions of invulnerable (but not hidden/banished) heroes. This can be useful against a Juggernaut who is solo Omnislashing you or to make illusions of heroes slept by Naga Song.",
+          "notes": []
+        }
+      ],
+      "counters": [
+        {
+          "text": "In the early game, as soon as Dark Seer sticks an Ion Shell on a creep, his most powerful offensive spell is on cooldown. Get more aggressive with harassing him when he uses Ion Shell on something other than himself and don't draw aggro from his Ion Shelled creep.",
+          "notes": []
+        },
+        {
+          "text": "You can dispel Ion Shell. This makes Largo with Catchy Lick, Oracle with Fortune's End, or Enchantress with Enchant strong lane counters to DS.",
+          "notes": [
+            "Enchantress can also steal Wall of Replica illusions making her especially annoying for Dark Seer to deal with."
+          ]
+        },
+        {
+          "text": "You can dispel Surge. This includes dispels from cyclones (like Eul's Scepter or Invoker's Tornado).",
+          "notes": []
+        },
+        {
+          "text": "When attempting to kill Seer, try to save stuns and disables for AFTER he casts Surge to waste some of the Surge duration.",
+          "notes": []
+        },
+        {
+          "text": "If you're a carry, pay attention to when an illusion is made of you. While you're critting their team for buckets o' damage, your Bizarro counterpart is doing the same to your supports. Do your team a favor and kill your illusion before it zones them out.",
+          "notes": []
+        },
+        {
+          "text": "If you have a Radiance, consider toggling it off if you anticipate enemy initiation for a team fight. After you pass through DS's Wall, you can turn it back on.",
+          "notes": []
+        },
+        {
+          "text": "A Boots of Bearing can help your team quickly scatter if you all got Vacuum'd and slowed by Wall.",
+          "notes": []
+        },
+        {
+          "text": "Mjollnir's Static Shield active has a chance to proc off any damage instance applied to your hero. This includes damage instances from spells. Since Ion Shell ticks damage extremely frequently, it can be a sneaky way to deal damage against Dark Seer lineups.",
+          "notes": []
+        },
+        {
+          "text": "Silver Edge's debuff applies a move speed cap on enemies. This can be a great counter to the move speed provided by Surge.",
+          "notes": []
+        }
+      ]
+    },
     "dawnbreaker": {
       "name": "Dawnbreaker",
       "tipSlug": "dawnbreaker",
       "url": "https://howdoiplay.com/tips/dawnbreaker.html",
-      "fetchedAt": "2026-10-03T04:21:42Z",
+      "fetchedAt": "2026-10-04T13:28:45Z",
       "tips": [
         {
           "text": "Your Break of Dawn innate makes you more powerful right as the map transitions to daytime.",
@@ -833,7 +983,7 @@
       "name": "Death Prophet",
       "tipSlug": "death_prophet",
       "url": "https://howdoiplay.com/tips/death_prophet.html",
-      "fetchedAt": "2026-10-03T04:21:42Z",
+      "fetchedAt": "2026-10-04T13:28:47Z",
       "tips": [
         {
           "text": "Crypt Swarm can use unit targeting or ground targeting. If an enemy is juking into fog, use ground targeting, otherwise it may get canceled if you unit targeted it and the enemy escapes vision during the cast animation.",
@@ -926,7 +1076,7 @@
       "name": "Doom",
       "tipSlug": "doom",
       "url": "https://howdoiplay.com/tips/doom.html",
-      "fetchedAt": "2026-10-03T04:21:43Z",
+      "fetchedAt": "2026-10-04T13:28:49Z",
       "tips": [
         {
           "text": "Devour bonus gold is unreliable and granted when the buff expires.",
@@ -1000,7 +1150,7 @@
       "name": "Dragon Knight",
       "tipSlug": "dragon_knight",
       "url": "https://howdoiplay.com/tips/dragon_knight.html",
-      "fetchedAt": "2026-10-03T04:21:44Z",
+      "fetchedAt": "2026-10-04T13:28:50Z",
       "tips": [
         {
           "text": "Breathe Fire's damage reduction component is a big deal in team fights, especially since it reduces total attack damage including +dmg items. Don't save it for kill stealing, use it early on in a fight.",
@@ -1041,7 +1191,7 @@
       "name": "Earthshaker",
       "tipSlug": "earthshaker",
       "url": "https://howdoiplay.com/tips/earthshaker.html",
-      "fetchedAt": "2026-10-03T04:21:45Z",
+      "fetchedAt": "2026-10-04T13:28:51Z",
       "tips": [
         {
           "text": "Any units killed by your spells, including Enchant Totem attacks, will fly backwards and deal damage to anything in their path thanks to your Slugger innate.",
@@ -1103,7 +1253,7 @@
       "name": "Enchantress",
       "tipSlug": "enchantress",
       "url": "https://howdoiplay.com/tips/enchantress.html",
-      "fetchedAt": "2026-10-03T04:21:46Z",
+      "fetchedAt": "2026-10-04T13:28:53Z",
       "tips": [
         {
           "text": "Enchantress's Rabble-Rouser innate works on the necrocreeps summoned by the \"Book of the Dead\" neutral item artifact. This makes their Last Will damage scale incredibly hard.",
@@ -1214,7 +1364,7 @@
       "name": "Enigma",
       "tipSlug": "enigma",
       "url": "https://howdoiplay.com/tips/enigma.html",
-      "fetchedAt": "2026-10-03T04:21:46Z",
+      "fetchedAt": "2026-10-04T13:28:54Z",
       "tips": [
         {
           "text": "Jungle creeps have a tendency to use their spells whenever three units are in close proximity to them. When jungling a neutral camp, spread your Eidolons out so they don't trigger the neutrals to use their spells.",
@@ -1296,7 +1446,7 @@
       "name": "Juggernaut",
       "tipSlug": "juggernaut",
       "url": "https://howdoiplay.com/tips/juggernaut.html",
-      "fetchedAt": "2026-10-03T04:21:47Z",
+      "fetchedAt": "2026-10-04T13:28:54Z",
       "tips": [
         {
           "text": "You can activate Blade Fury while TPing and your channel won't break. Use this to go debuff immune if someone is walking up to you while you're TPing or use it to show up to your destination pre-debuff immune.",
@@ -1432,7 +1582,7 @@
       "name": "Leshrac",
       "tipSlug": "leshrac",
       "url": "https://howdoiplay.com/tips/leshrac.html",
-      "fetchedAt": "2026-10-03T04:21:48Z",
+      "fetchedAt": "2026-10-04T13:28:55Z",
       "tips": [
         {
           "text": "Split Earth destroys trees.",
@@ -1528,7 +1678,7 @@
       "name": "Lich",
       "tipSlug": "lich",
       "url": "https://howdoiplay.com/tips/lich.html",
-      "fetchedAt": "2026-10-03T04:21:49Z",
+      "fetchedAt": "2026-10-04T13:28:57Z",
       "tips": [
         {
           "text": "When figuring out what to eat with your Sacrifice innate, here's a few things to keep in mind:",
@@ -1627,7 +1777,7 @@
       "name": "Lifestealer",
       "tipSlug": "lifestealer",
       "url": "https://howdoiplay.com/tips/lifestealer.html",
-      "fetchedAt": "2026-10-03T04:21:50Z",
+      "fetchedAt": "2026-10-04T13:28:58Z",
       "tips": [
         {
           "text": "Debuff immunity, like from Rage, prevents Tormentor damage from reflecting on you.",
@@ -1679,7 +1829,7 @@
       "name": "Lone Druid",
       "tipSlug": "lone_druid",
       "url": "https://howdoiplay.com/tips/lone_druid.html",
-      "fetchedAt": "2026-10-03T04:21:50Z",
+      "fetchedAt": "2026-10-04T13:28:59Z",
       "tips": [
         {
           "text": "Don't be afraid of letting your Spirit Bear wander away from you. Use it to draw aggro from an incoming creep wave, stack jungle camps, go shopping for you, teleport to the fountain to heal, play checkers with Death Prophet, or just scout for you.",
@@ -1796,7 +1946,7 @@
       "name": "Luna",
       "tipSlug": "luna",
       "url": "https://howdoiplay.com/tips/luna.html",
-      "fetchedAt": "2026-10-03T04:21:51Z",
+      "fetchedAt": "2026-10-04T13:29:15Z",
       "tips": [
         {
           "text": "The Lunar Blessing innate damage aura works on creep-hero units like Brewmaster's Primal Split Brewlings, Visage's Familiars, or Warlock's Golem.",
@@ -1885,7 +2035,7 @@
       "name": "Lycan",
       "tipSlug": "lycan",
       "url": "https://howdoiplay.com/tips/lycan.html",
-      "fetchedAt": "2026-10-03T04:21:52Z",
+      "fetchedAt": "2026-10-04T13:29:19Z",
       "tips": [
         {
           "text": "Wolves are quite possibly the strongest scouting tool in the game. They can serve as two moving, permanently invisible, temporary observer wards on demand. Use them to scout, check/kill runes, block/stack camps, body block targets, and most importantly, follow around high priority targets.",
@@ -1963,7 +2113,7 @@
       "name": "Marci",
       "tipSlug": "marci",
       "url": "https://howdoiplay.com/tips/marci.html",
-      "fetchedAt": "2026-10-03T04:21:53Z",
+      "fetchedAt": "2026-10-04T13:29:19Z",
       "tips": [
         {
           "text": "You can cast Dispose on an ally's top bar portrait to easily target them. Useful if you're trying to save a specific target in a sea of summons or illusions in a chaotic team fight.",
@@ -2108,7 +2258,7 @@
       "name": "Mirana",
       "tipSlug": "mirana",
       "url": "https://howdoiplay.com/tips/mirana.html",
-      "fetchedAt": "2026-10-03T04:21:53Z",
+      "fetchedAt": "2026-10-04T13:29:20Z",
       "tips": [
         {
           "text": "The second Starstorm hit will land on the closest target to your hero when the spell was cast.",
@@ -2196,7 +2346,7 @@
       "name": "Monkey King",
       "tipSlug": "monkey_king",
       "url": "https://howdoiplay.com/tips/monkey_king.html",
-      "fetchedAt": "2026-10-03T04:21:54Z",
+      "fetchedAt": "2026-10-04T13:29:21Z",
       "tips": [
         {
           "text": "Boundless Strike's damage is applied as an instant attack . This instant attack ignores disarms, has true strike, and applies attack modifiers (except cleave). If you have an attack modifier with a proc, it'll roll for a chance to proc on each target hit.",
@@ -2338,7 +2488,7 @@
       "name": "Nature's Prophet",
       "tipSlug": "nature's_prophet",
       "url": "https://howdoiplay.com/tips/nature%27s_prophet.html",
-      "fetchedAt": "2026-10-03T04:21:55Z",
+      "fetchedAt": "2026-10-04T13:29:22Z",
       "tips": [
         {
           "text": "Try hugging trees whenever it's convenient to take advantage of the damage given from your Spirit of the Forest innate.",
@@ -2490,7 +2640,7 @@
       "name": "Necrophos",
       "tipSlug": "necrophos",
       "url": "https://howdoiplay.com/tips/necrophos.html",
-      "fetchedAt": "2026-10-03T04:21:56Z",
+      "fetchedAt": "2026-10-04T13:29:24Z",
       "tips": [
         {
           "text": "You get innate Sadist regen stacks off of any unit you kill including buildings, wards, and creep denies. The only exceptions are illusions or Arc Warden's Tempest Double.",
@@ -2589,7 +2739,7 @@
       "name": "Nyx Assassin",
       "tipSlug": "nyx_assassin",
       "url": "https://howdoiplay.com/tips/nyx_assassin.html",
-      "fetchedAt": "2026-10-03T04:21:57Z",
+      "fetchedAt": "2026-10-04T13:29:27Z",
       "tips": [
         {
           "text": "Nyx gets the luxury of easy positioning thanks to Vendetta to make multi hero Impales simpler. Vendetta one hero and then roughly target the Impale on another hero. Since you're in such close range to your first target, you will most likely nyx them both with the Impale.",
@@ -2683,7 +2833,7 @@
       "name": "Outworld Destroyer",
       "tipSlug": "outworld_destroyer",
       "url": "https://howdoiplay.com/tips/outworld_destroyer.html",
-      "fetchedAt": "2026-10-03T04:21:58Z",
+      "fetchedAt": "2026-10-04T13:29:28Z",
       "tips": [
         {
           "text": "Manually casting Arcane Orb on enemy heroes won't draw creep aggro.",
@@ -2779,7 +2929,7 @@
       "name": "Pangolier",
       "tipSlug": "pangolier",
       "url": "https://howdoiplay.com/tips/pangolier.html",
-      "fetchedAt": "2026-10-03T04:21:59Z",
+      "fetchedAt": "2026-10-04T13:29:30Z",
       "tips": [
         {
           "text": "Swashbuckle sets your damage flat and attacks every unit in the AoE multiple times. There are a few interactions to note:",
@@ -2959,7 +3109,7 @@
       "name": "Phantom Assassin",
       "tipSlug": "phantom_assassin",
       "url": "https://howdoiplay.com/tips/phantom_assassin.html",
-      "fetchedAt": "2026-10-03T04:22:00Z",
+      "fetchedAt": "2026-10-04T13:29:30Z",
       "tips": [
         {
           "text": "Understanding the ins and outs of the Stifling Dagger are critical to not getting demolished in lane. Learn the projectile's travel times, be able to accurately estimate the damage of the dagger at each level on creeps, and practice timing right clicks+melee range Daggers to make it impossible to deny you.",
@@ -3068,7 +3218,7 @@
       "name": "Phantom Lancer",
       "tipSlug": "phantom_lancer",
       "url": "https://howdoiplay.com/tips/phantom_lancer.html",
-      "fetchedAt": "2026-10-03T04:22:00Z",
+      "fetchedAt": "2026-10-04T13:29:31Z",
       "tips": [
         {
           "text": "Doppelganger allows you to travel up and down cliffs.",
@@ -3200,7 +3350,7 @@
       "name": "Clockwerk",
       "tipSlug": "clockwerk",
       "url": "https://howdoiplay.com/tips/clockwerk.html",
-      "fetchedAt": "2026-10-03T04:22:01Z",
+      "fetchedAt": "2026-10-04T13:29:33Z",
       "tips": [
         {
           "text": "When using Battery Assault in lane, position yourself so that the enemy creeps won't absorb hits. Stand along the outer perimeter of an enemy hero, rather than bulldozing through the middle of the creep wave.",
@@ -3343,7 +3493,7 @@
       "name": "Rubick",
       "tipSlug": "rubick",
       "url": "https://howdoiplay.com/tips/rubick.html",
-      "fetchedAt": "2026-10-03T04:22:02Z",
+      "fetchedAt": "2026-10-04T13:29:34Z",
       "tips": [
         {
           "text": "Rubick's Curiosity innate debuff amplification is basically the opposite of status resistance in terms of mechanics.",
@@ -3501,7 +3651,7 @@
       "name": "Shadow Shaman",
       "tipSlug": "shadow_shaman",
       "url": "https://howdoiplay.com/tips/shadow_shaman.html",
-      "fetchedAt": "2026-10-03T04:22:03Z",
+      "fetchedAt": "2026-10-04T13:29:35Z",
       "tips": [
         {
           "text": "Your Fowl Play innate will not protect you from a lethal Axe Culling Blade or Necrophos Reaper's Scythe.",
@@ -3619,7 +3769,7 @@
       "name": "Slardar",
       "tipSlug": "slardar",
       "url": "https://howdoiplay.com/tips/slardar.html",
-      "fetchedAt": "2026-10-03T04:22:04Z",
+      "fetchedAt": "2026-10-04T13:29:36Z",
       "tips": [
         {
           "text": "You can cast Guardian Sprint while TPing and it won't cancel the channel.",
@@ -3697,7 +3847,7 @@
       "name": "Slark",
       "tipSlug": "slark",
       "url": "https://howdoiplay.com/tips/slark.html",
-      "fetchedAt": "2026-10-03T04:22:05Z",
+      "fetchedAt": "2026-10-04T13:29:37Z",
       "tips": [
         {
           "text": "Capitalize on Essence Shift innate stacks. Take a tower or TP to another lane and use all the damage you have to continue snowballing. Don't just sit around and farm, the enemy should be scared of how much damage you have after winning a fight.",
@@ -3870,7 +4020,7 @@
       "name": "Spectre",
       "tipSlug": "spectre",
       "url": "https://howdoiplay.com/tips/spectre.html",
-      "fetchedAt": "2026-10-03T04:22:06Z",
+      "fetchedAt": "2026-10-04T13:29:38Z",
       "tips": [
         {
           "text": "When farming neutral camps, kill the smaller creeps first. That way you can proc your Desolate innate damage on the big creep.",
@@ -3980,7 +4130,7 @@
       "name": "Storm Spirit",
       "tipSlug": "storm_spirit",
       "url": "https://howdoiplay.com/tips/storm_spirit.html",
-      "fetchedAt": "2026-10-03T04:22:07Z",
+      "fetchedAt": "2026-10-04T13:29:40Z",
       "tips": [
         {
           "text": "Static Remnants last quite a while, so it's not a bad idea to set some up if you're afraid a Riki or Smoked hero is trailing you since they'll detonate and damage on invis units.",
@@ -4128,7 +4278,7 @@
       "name": "Sven",
       "tipSlug": "sven",
       "url": "https://howdoiplay.com/tips/sven.html",
-      "fetchedAt": "2026-10-03T04:22:09Z",
+      "fetchedAt": "2026-10-04T13:29:41Z",
       "tips": [
         {
           "text": "Storm Hammer stuns and damages everything in its AoE. If an enemy has Linken's Sphere, but is sitting inside their creep wave, just target the Hammer on a creep.",
@@ -4178,11 +4328,182 @@
         }
       ]
     },
+    "techies": {
+      "name": "Techies",
+      "tipSlug": "techies",
+      "url": "https://howdoiplay.com/tips/techies.html",
+      "fetchedAt": "2026-10-04T13:29:42Z",
+      "tips": [
+        {
+          "text": "Sticky Bombs will always latch to the nearest hero upon landing.",
+          "notes": []
+        },
+        {
+          "text": "Sticky Bombs provide a small radius of ground vision when they're spinning around or once they attach to an enemy. You can try throwing a Sticky Bomb on a cliff to scout for wards.",
+          "notes": []
+        },
+        {
+          "text": "Sticky Bombs destroy trees in a tiny radius around the target point.",
+          "notes": []
+        },
+        {
+          "text": "Sticky Bomb will just straight up vanish if you cast it into a Faceless Void's Chronosphere, however, it can drive into a Chronosphere just fine if you catch a hero on the edge.",
+          "notes": []
+        },
+        {
+          "text": "You can manually detonate Reactive Tazer by pressing the spell hotkey again during the buff.",
+          "notes": []
+        },
+        {
+          "text": "Any enemy that gets hit with the Reactive Tazer debuff will also receive a basic dispel. Doesn't matter if it's the explosion or if they attacked a Tazer target, both will dispel.",
+          "notes": []
+        },
+        {
+          "text": "Reactive Tazer disarm works on Roshan.",
+          "notes": []
+        },
+        {
+          "text": "Each time a target attacks a Tazer'd target, they'll receive the Reactive Tazer damage. This usually can't happen that often during a single cast, but certain multi-attack spells like Pangolier's Swashbuckle can have him tank multiple Reactive Tazer nukes in just one cast.",
+          "notes": []
+        },
+        {
+          "text": "Respect the z-axis when casting Blast Off. If your Blast Off's downwards trajectory arcs over a cliff, you may end up landing on the cliff instead of your targeted AoE.",
+          "notes": []
+        },
+        {
+          "text": "If you're trying to squeeze every last bit of mana out from a lane, you can cast Blast Off and then level it up while you're flying. This allows you to cast it with the cheaper mana cost, but have it deal damage from the higher level. Incredibly nerdy maneuver, but it does work.",
+          "notes": []
+        },
+        {
+          "text": "You can use Blast Off to escape a Disruptor's Kinetic Field.",
+          "notes": []
+        },
+        {
+          "text": "You can cast your other spells while flying in Blast Off.",
+          "notes": []
+        },
+        {
+          "text": "If you plant a Proximity Mine directly underneath yourself after Blasting Off into some enemies, they may struggle to right click it underneath your hero model.",
+          "notes": [
+            "Even more frustrating is if they try to destroy your mine while your Reactive Tazer is on because then they'll also get disarmed with a misclick."
+          ]
+        },
+        {
+          "text": "All placed Proximity Mines will dynamically level up as more points are put into the spell.",
+          "notes": []
+        },
+        {
+          "text": "Invisible units can trigger and be damaged by Proximity Mines.",
+          "notes": []
+        },
+        {
+          "text": "Proximity Mines deal damage to buildings. However, remember that Proximity Mines deal less damage the further they are away from the target, so try to place Mines as close to the tower as possible.",
+          "notes": []
+        },
+        {
+          "text": "Towers won't ever attack Proximity Mines.",
+          "notes": []
+        },
+        {
+          "text": "Agh's Scepter Minefield Sign can trigger on enemy illusions.",
+          "notes": []
+        },
+        {
+          "text": "Take advantage of dropping/backpacking INT/mana items to get more effective regen when you use Soul Ring or Arcane Boots.",
+          "notes": []
+        }
+      ],
+      "counters": [
+        {
+          "text": "When Techies is killed, he leaves behind a mine with his M.A.D. innate. This mine gives a small radius of vision and will explode after a delay.",
+          "notes": [
+            "The Agh's Shard M.A.D. mine can be killed if you have detection while it's invis."
+          ]
+        },
+        {
+          "text": "Any type of attack that lands on an enemy with Reactive Tazer will disarm you. This includes instant attacks from spells. So if a Monkey King Boundless Strikes a Tazer'd Techies, he'll get disarmed. If a Phantom Assassin Stifling Dagger's a Tazer'd Techies, she'll get disarmed. If a Medusa Split Shot lands on a Tazer'd Techies... she actually won't get disarmed for some reason. She will if she has her Agh's Scepter Split Shot, though. Basically, if the instant attack can also proc attack modifiers, you'll get disarmed. Dota 2, amirite?",
+          "notes": [
+            "Oh, one more note! If your instant attack also banishes you, like Ember Spirit's Sleight of Fist or Riki's Tricks of the Trade, then you won't get disarmed."
+          ]
+        },
+        {
+          "text": "If you get hit with the Reactive Tazer debuff, your hero will also receive a basic dispel which will remove most buffs.",
+          "notes": []
+        },
+        {
+          "text": "Reactive Tazer targets turn brighter and more... electrick-y when the buff is about to time out and pop.",
+          "notes": []
+        },
+        {
+          "text": "If you dispel the Reactive Tazer buff off an enemy, it'll immediately detonate and disarm everything in the AoE.",
+          "notes": []
+        },
+        {
+          "text": "Don't listen to music when you're playing against Techies. Proximity Mines make a noise when you walk into the trigger AoE, even through fog.",
+          "notes": []
+        },
+        {
+          "text": "Invisible units can trigger and be damaged by Proximity Mines.",
+          "notes": []
+        },
+        {
+          "text": "Proximity Mines are invisible once armed until you walk into their AoE. Even Gem/sentry wards can't spot them.",
+          "notes": []
+        },
+        {
+          "text": "Proximity Mines only take one attack to be destroyed. SO PLEASE. ATTACK. THE MINE. Especially, as a carry. Your attack speed is way higher than a support, so you have a much better chance of killing the Mines before they fully arm and explode.",
+          "notes": []
+        },
+        {
+          "text": "Attack+moving will not target Proximity Mines. You have to manually right click each one to attack them.",
+          "notes": []
+        },
+        {
+          "text": "Cheap summons (Broodmother Spiderlings, Enigma Eidolons, Invoker Forge Spirits, Nature's Prophet Treants) or cheap illusions (Naga Siren, Phantom Lancer, Terrorblade, illusion runes) can be great for sending into Proximity Mined territory as sacrificial lambs to clear the minefields.",
+          "notes": []
+        },
+        {
+          "text": "Stuns and other disables won't stop a Techies that's in flight from a Blast Off, but sources of forced movement or knockbacks can. This means cycloning or Force Staffing or Harpooning a Techies that's Blasting Off will cancel the explosion.",
+          "notes": [
+            "Spells that move the enemy with vertical forced movement or knockback, like Sand King's Burrowstrike, Nyx's Impale, Lion's Earth Spike, and Rubick's Telekinesis, or horizontally, like Drow Ranger's Gust, Keeper of the Light's Blinding Light, Largo's Catchy Lick, and Storm Spirit's Electric Vortex, will also cancel the explosion.",
+            "Fears like Lich's Sinister Gaze or Lone Druid's Savage Roar can also cancel a flying Blast Off."
+          ]
+        },
+        {
+          "text": "Techies can do very little when getting hit by Clockwerk's Battery Assault since his cast animations take so long.",
+          "notes": []
+        },
+        {
+          "text": "Avoid standing close to treelines when pushing against Techies. It's a favorite area for hidden Proximity Mines.",
+          "notes": []
+        },
+        {
+          "text": "Techies players loooove going for offensive Force Staff plays, so be very wary if you see that item in his inventory.",
+          "notes": []
+        },
+        {
+          "text": "Be very careful when walking up any high ground stairs since there may be a Proximity Mine or two hiding just outside your vision.",
+          "notes": []
+        },
+        {
+          "text": "All of Techies' damage is magical, so items like Glimmer Cape or Pipe can improve your survivability.",
+          "notes": []
+        },
+        {
+          "text": "Infused Raindrops can give you some very valuable early game survivability against a Techies.",
+          "notes": []
+        },
+        {
+          "text": "Using Blade Mail against Proximity Mines will reflect the damage back onto Techies.",
+          "notes": []
+        }
+      ]
+    },
     "terrorblade": {
       "name": "Terrorblade",
       "tipSlug": "terrorblade",
       "url": "https://howdoiplay.com/tips/terrorblade.html",
-      "fetchedAt": "2026-10-03T04:22:09Z",
+      "fetchedAt": "2026-10-04T13:29:43Z",
       "tips": [
         {
           "text": "Terrorblade's Dark Unity innate changes how much damage your illusions do depending on how far they are from your hero.",
@@ -4304,7 +4625,7 @@
       "name": "Timbersaw",
       "tipSlug": "timbersaw",
       "url": "https://howdoiplay.com/tips/timbersaw.html",
-      "fetchedAt": "2026-10-03T04:22:10Z",
+      "fetchedAt": "2026-10-04T13:29:44Z",
       "tips": [
         {
           "text": "Timbersaw's Exposure Therapy innate gives him mana for every tree he kills.",
@@ -4449,7 +4770,7 @@
       "name": "Tiny",
       "tipSlug": "tiny",
       "url": "https://howdoiplay.com/tips/tiny.html",
-      "fetchedAt": "2026-10-03T04:22:11Z",
+      "fetchedAt": "2026-10-04T13:29:47Z",
       "tips": [
         {
           "text": "Mechanically, think of Avalanche as being similar to a mini Faceless Void Chronosphere. The Avalanche AoE is an aura that is constantly stunning. So throw it in advance if you know a hero will be in the AoE before it finishes (mid-banish, pre-TP).",
@@ -4592,7 +4913,7 @@
       "name": "Ursa",
       "tipSlug": "ursa",
       "url": "https://howdoiplay.com/tips/ursa.html",
-      "fetchedAt": "2026-10-03T04:22:12Z",
+      "fetchedAt": "2026-10-04T13:29:49Z",
       "tips": [
         {
           "text": "Ursa can Earthshock to jump up or down cliffs and out of Disruptor's Kinetic Field.",
@@ -4679,7 +5000,7 @@
       "name": "Viper",
       "tipSlug": "viper",
       "url": "https://howdoiplay.com/tips/viper.html",
-      "fetchedAt": "2026-10-03T04:22:12Z",
+      "fetchedAt": "2026-10-04T13:29:50Z",
       "tips": [
         {
           "text": "Manually casting Poison Attack on enemy heroes won't draw creep aggro.",
@@ -4739,7 +5060,7 @@
       "name": "Windranger",
       "tipSlug": "windranger",
       "url": "https://howdoiplay.com/tips/windranger.html",
-      "fetchedAt": "2026-10-03T04:22:14Z",
+      "fetchedAt": "2026-10-04T13:29:50Z",
       "tips": [
         {
           "text": "Shackleshot calculates latch angles based on where it was originally cast, not from Windranger's location on projectile impact.",
@@ -4871,7 +5192,7 @@
       "name": "Winter Wyvern",
       "tipSlug": "winter_wyvern",
       "url": "https://howdoiplay.com/tips/winter_wyvern.html",
-      "fetchedAt": "2026-10-03T04:22:15Z",
+      "fetchedAt": "2026-10-04T13:29:51Z",
       "tips": [
         {
           "text": "The Eldwurm's Edda item from your innate can be moved out of the neutral slot to a normal inventory slot.",
@@ -5002,7 +5323,7 @@
       "name": "Witch Doctor",
       "tipSlug": "witch_doctor",
       "url": "https://howdoiplay.com/tips/witch_doctor.html",
-      "fetchedAt": "2026-10-03T04:22:16Z",
+      "fetchedAt": "2026-10-04T13:29:52Z",
       "tips": [
         {
           "text": "The Gris-Gris item from your innate can be moved out of the neutral slot to a normal inventory slot.",
@@ -5148,5 +5469,7 @@
         }
       ]
     }
-  }
+  },
+  "fetchedAt": "2026-10-04T13:29:52Z",
+  "source": "https://howdoiplay.com/tips/{tipSlug}.html"
 }

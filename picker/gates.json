@@ -2,8 +2,8 @@
   "roleNotes": {
     "1": "lone druid for the relentless bear sieges, alchemist for the greed farm and the early stun follow ups, monkey king for the jingu trade loops and the soldier ring sieges, tiny for the toss catches and the tower pressure, sven for the cleave through the clumped lines, terrorblade for the metamorph sieges and the sunder saves, luna for the glaive wave clear and the eclipse clump kills, windranger for the shackle picks and the focus fire deletes, phantom lancer into the squishy clumped lines, clinkz for the skeleton walk tempo and the archer sieges, nature's prophet for the global farm and the split pressure, lifestealer into tanks, juggernaut for the spin immunity and the ward sieges, spectre for the global haunt cleanup, anti mage for the counter spell and the split push tempo, ursa for the swipes grind and the pit windows, phantom assassin for the blink strike crit deletes and the blur front",
     "2": "dedicated pangolier for the roll flips through the fight and the swashbuckle poke, marci for the rebound pair setups and the unleash brawls, storm spirit for the zip tempo and the overload picks, slark for the pickoffs and the late snowball, dragon knight into the magic mids, leshrac for the pulse nova teamfights and the edict sieges, outworld destroyer for the astral picks and the eclipse mana drops",
-    "3": "doom for the ult that shuts any hero off and the devour lane lead, centaur for the stomp engages and the tanky front with the stampede saves, enigma for the black hole teamfights and the eidolon pushes, timbersaw for the chain brawls and the reactive armor front, slardar for the corrosive haze strips and the amplified pick damage, brewmaster for the primal split teamfights and the earth brewling sieges, lycan for the wolf sieges and the unslowable shapeshift runs, dawnbreaker for the global ult presence and the tanky front, necrophos as the sustain offlane that outlasts burst and deletes the tanky cores, viper for the poison kite lanes and the strike break picks, death prophet for the exorcism sieges and the silence tempo",
-    "4": "dedicated rubick for the spell steals and the fade bolt trades, bounty hunter for the track economy, nyx assassin into the caster lines, mirana for the arrow picks and the moonlight engages, shadow shaman for the chain lockdown and the ward sieges from the roam, earthshaker for the fissure cuts and the echo slams that cash the clump",
+    "3": "doom for the ult that shuts any hero off and the devour lane lead, centaur for the stomp engages and the tanky front with the stampede saves, enigma for the black hole teamfights and the eidolon pushes, timbersaw for the chain brawls and the reactive armor front, slardar for the corrosive haze strips and the amplified pick damage, brewmaster for the primal split teamfights and the earth brewling sieges, lycan for the wolf sieges and the unslowable shapeshift runs, dawnbreaker for the global ult presence and the tanky front, necrophos as the sustain offlane that outlasts burst and deletes the tanky cores, viper for the poison kite lanes and the strike break picks, death prophet for the exorcism sieges and the silence tempo, dark seer for the vacuum clump setups and the replica walls that cash the enemy cores",
+    "4": "dedicated rubick for the spell steals and the fade bolt trades, bounty hunter for the track economy, nyx assassin into the caster lines, mirana for the arrow picks and the moonlight engages, shadow shaman for the chain lockdown and the ward sieges from the roam, earthshaker for the fissure cuts and the echo slams that cash the clump, ancient apparition for the ice blast shatters and the heal cut that starves the sustain drafts, techies for the mine carpets that tax every rotation and the blast off trades",
     "5": "dedicated winter wyvern for the curse turns and the cold embraces, bane for the nightmare setups and the fiend grip deletes, clockwerk for the cogs isolations and the flare globals, enchantress for the converted neutral sieges and the impetus gap taxes, lich for the frost shield sieges and the chain frost teamfights, witch doctor for the maledict bites and the death ward bounces"
   },
   "fallbackOrder": {
@@ -40,6 +40,7 @@
       "brewmaster",
       "dawnbreaker",
       "lycan",
+      "dark-seer",
       "viper",
       "centaur",
       "necrophos",
@@ -54,7 +55,9 @@
       "earthshaker",
       "shadow-shaman",
       "mirana",
-      "rubick"
+      "techies",
+      "rubick",
+      "ancient-apparition"
     ],
     "5": [
       "lich",
@@ -687,6 +690,69 @@
       "when": [{ "kind": "enemyVisibleAny", "heroes": ["jakiro", "natures-prophet", "shadow-fiend"] }],
       "action": "bonus",
       "note": "the rooted casters and the paper frames pay the impetus, the summon lines feed the converts",
+      "origin": "authored"
+    },
+    {
+      "id": "aa-visage-veto",
+      "target": "ancient-apparition",
+      "roles": ["4"],
+      "when": [{ "kind": "enemyVisibleAny", "heroes": ["visage"] }],
+      "action": "hard_gate",
+      "note": "the familiars flood past every frost line and the gravekeeper flips the trades, the blast never finds two bodies together",
+      "origin": "authored"
+    },
+    {
+      "id": "aa-spread-penalty",
+      "target": "ancient-apparition",
+      "roles": ["4"],
+      "when": [{ "kind": "enemyVisibleAny", "heroes": ["brewmaster", "enigma", "night-stalker", "primal-beast", "bounty-hunter", "vengefulspirit"] }],
+      "action": "penalty",
+      "note": "the split packs spread past the blast, the night vision and the track hunt the paper roam",
+      "origin": "authored"
+    },
+    {
+      "id": "aa-clump-boost",
+      "target": "ancient-apparition",
+      "roles": ["4"],
+      "when": [{ "kind": "enemyVisibleAny", "heroes": ["monkey-king", "gyrocopter", "kez", "centaur", "shadow-fiend"] }],
+      "action": "bonus",
+      "note": "the clumped melees and the paper frames hold still for the shatter, the frostbite caps the sustain",
+      "origin": "authored"
+    },
+    {
+      "id": "te-sweep-penalty",
+      "target": "techies",
+      "roles": ["4"],
+      "when": [{ "kind": "enemyVisibleAny", "heroes": ["visage", "leshrac", "arc-warden", "bounty-hunter", "nyx-assassin", "keeper-of-the-light"] }],
+      "action": "penalty",
+      "note": "the track economy and the carapace answer the carpet, the wave clear and the doubles eat the minefield",
+      "origin": "authored"
+    },
+    {
+      "id": "te-race-boost",
+      "target": "techies",
+      "roles": ["4"],
+      "when": [{ "kind": "enemyVisibleAny", "heroes": ["shadow-fiend", "natures-prophet", "drow-ranger", "slark"] }],
+      "action": "bonus",
+      "note": "the farm races walk the mine tax every rotation, the paper frames step where the carpet waits",
+      "origin": "authored"
+    },
+    {
+      "id": "ds-spread-penalty",
+      "target": "dark-seer",
+      "roles": ["3"],
+      "when": [{ "kind": "enemyVisibleAny", "heroes": ["meepo", "oracle", "largo", "bounty-hunter", "leshrac", "lone-druid"] }],
+      "action": "penalty",
+      "note": "the dispel crew strips the shell, the track hunts the vacuum engages, the spread lanes never clump for the pull",
+      "origin": "authored"
+    },
+    {
+      "id": "ds-paper-boost",
+      "target": "dark-seer",
+      "roles": ["3"],
+      "when": [{ "kind": "enemyVisibleAny", "heroes": ["shadow-fiend", "drow-ranger", "templar-assassin", "terrorblade"] }],
+      "action": "bonus",
+      "note": "the ranged paper fronts stand in the pull lane, the wall copies cash their own damage back at them",
       "origin": "authored"
     }
   ],
