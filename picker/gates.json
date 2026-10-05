@@ -3,7 +3,7 @@
     "1": "lone druid for the relentless bear sieges, alchemist for the greed farm and the early stun follow ups, monkey king for the jingu trade loops and the soldier ring sieges, tiny for the toss catches and the tower pressure, sven for the cleave through the clumped lines, terrorblade for the metamorph sieges and the sunder saves, luna for the glaive wave clear and the eclipse clump kills, windranger for the shackle picks and the focus fire deletes, phantom lancer into the squishy clumped lines, clinkz for the skeleton walk tempo and the archer sieges, nature's prophet for the global farm and the split pressure, lifestealer into tanks, juggernaut for the spin immunity and the ward sieges, spectre for the global haunt cleanup, anti mage for the counter spell and the split push tempo, ursa for the swipes grind and the pit windows, phantom assassin for the blink strike crit deletes and the blur front, templar assassin for the refraction lanes and the meld picks with the trap vision watching the map",
     "2": "dedicated pangolier for the roll flips through the fight and the swashbuckle poke, marci for the rebound pair setups and the unleash brawls, storm spirit for the zip tempo and the overload picks, slark for the pickoffs and the late snowball, dragon knight into the magic mids, leshrac for the pulse nova teamfights and the edict sieges, outworld destroyer for the astral picks and the eclipse mana drops",
     "3": "doom for the ult that shuts any hero off and the devour lane lead, centaur for the stomp engages and the tanky front with the stampede saves, enigma for the black hole teamfights and the eidolon pushes, timbersaw for the chain brawls and the reactive armor front, slardar for the corrosive haze strips and the amplified pick damage, brewmaster for the primal split teamfights and the earth brewling sieges, lycan for the wolf sieges and the unslowable shapeshift runs, dawnbreaker for the global ult presence and the tanky front, necrophos as the sustain offlane that outlasts burst and deletes the tanky cores, viper for the poison kite lanes and the strike break picks, death prophet for the exorcism sieges and the silence tempo, dark seer for the vacuum clump setups and the replica walls that cash the enemy cores, largo for the rhapsody fight swings and the lick dispels that flip the spell trades",
-    "4": "dedicated rubick for the spell steals and the fade bolt trades, bounty hunter for the track economy, nyx assassin into the caster lines, mirana for the arrow picks and the moonlight engages, shadow shaman for the chain lockdown and the ward sieges from the roam, earthshaker for the fissure cuts and the echo slams that cash the clump",
+    "4": "dedicated rubick for the spell steals and the fade bolt trades, bounty hunter for the track economy, nyx assassin into the caster lines, tusk for the snowball commits and the walrus punch deletes, hoodwink for the bushwhack stuns and the sharpshooter snipes, mirana for the arrow picks and the moonlight engages, shadow shaman for the chain lockdown and the ward sieges from the roam, earthshaker for the fissure cuts and the echo slams that cash the clump",
     "5": "dedicated winter wyvern for the curse turns and the cold embraces, bane for the nightmare setups and the fiend grip deletes, clockwerk for the cogs isolations and the flare globals, enchantress for the converted neutral sieges and the impetus gap taxes, lich for the frost shield sieges and the chain frost teamfights, witch doctor for the maledict bites and the death ward bounces, ancient apparition for the ice blast shatters and the heal cut that starves the sustain drafts, techies for the mine carpets that tax every rotation and the blast off trades, venomancer for the gale chases and the plague ward carpets that zone every objective"
   },
   "fallbackOrder": {
@@ -52,12 +52,14 @@
       "timbersaw"
     ],
     "4": [
+      "rubick",
       "bounty-hunter",
       "nyx-assassin",
-      "earthshaker",
-      "shadow-shaman",
+      "tusk",
+      "hoodwink",
       "mirana",
-      "rubick"
+      "shadow-shaman",
+      "earthshaker"
     ],
     "5": [
       "winter-wyvern",
@@ -819,6 +821,51 @@
       "when": [{ "kind": "enemyVisibleAny", "heroes": ["drow-ranger", "shadow-fiend", "mars", "ember-spirit", "razor"] }],
       "action": "bonus",
       "note": "the paper frames pay the stomp and the lick flips every spell trade",
+      "origin": "authored"
+    },
+    {
+      "id": "tusk-brick-penalty",
+      "target": "tusk",
+      "roles": ["4"],
+      "when": [{ "kind": "enemyVisibleAny", "heroes": ["meepo", "bounty-hunter", "dragon-knight", "leshrac", "dark-seer", "troll-warlord", "sven"] }],
+      "action": "penalty",
+      "note": "the clone flood blanks the punch, the track hunts the melee roam, and the tanky fronts shrug the snowball",
+      "origin": "authored"
+    },
+    {
+      "id": "tusk-paper-boost",
+      "target": "tusk",
+      "roles": ["4"],
+      "when": [{ "kind": "enemyVisibleAny", "heroes": ["medusa", "huskar", "shadow-fiend", "natures-prophet"] }],
+      "action": "bonus",
+      "note": "the immobile farm races feed the snowball commit and the walrus punch launches them",
+      "origin": "authored"
+    },
+    {
+      "id": "hw-visage-veto",
+      "target": "hoodwink",
+      "roles": ["4"],
+      "when": [{ "kind": "enemyVisibleAny", "heroes": ["visage"] }],
+      "action": "hard_gate",
+      "note": "the familiars flood past every tree line and dive the paper frame, the bushwhack never finds two bodies together",
+      "origin": "authored"
+    },
+    {
+      "id": "hw-hunt-penalty",
+      "target": "hoodwink",
+      "roles": ["4"],
+      "when": [{ "kind": "enemyVisibleAny", "heroes": ["meepo", "elder-titan", "bounty-hunter", "enigma", "bloodseeker", "death-prophet", "wraith-king", "spirit-breaker", "nyx-assassin"] }],
+      "action": "penalty",
+      "note": "the clone flood and the eidolon swarms blank the single target net, the track, the charge, and the vendetta hunt the tree dance, the wading fronts shrug the sharpshooter",
+      "origin": "authored"
+    },
+    {
+      "id": "hw-paper-boost",
+      "target": "hoodwink",
+      "roles": ["4"],
+      "when": [{ "kind": "enemyVisibleAny", "heroes": ["shadow-fiend", "treant", "lycan", "tiny", "alchemist"] }],
+      "action": "bonus",
+      "note": "the paper frames and the greed farms stand in the acorn poke, the trees they hug feed the bushwhack",
       "origin": "authored"
     }
   ],

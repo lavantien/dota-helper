@@ -1075,6 +1075,68 @@
         }
       }
     ],
+    "hoodwink": [
+      {
+        "idx": 0,
+        "from": "tips[0]",
+        "verified": {
+          "date": "2026-10-05",
+          "verdict": "confirmed",
+          "source": "https://howdoiplay.com/tips/hoodwink.html",
+          "text": "keep the mistwoods wayfarer innate on by hugging trees, the survivability lives in the tree line"
+        }
+      },
+      {
+        "idx": 1,
+        "from": "tips[9]",
+        "verified": {
+          "date": "2026-10-05",
+          "verdict": "confirmed",
+          "source": "https://howdoiplay.com/tips/hoodwink.html",
+          "text": "the acorn tree carries collision, plant it behind you to shove yourself out of the kinetic field and the pounce leash"
+        }
+      },
+      {
+        "idx": 2,
+        "from": "tips[25]",
+        "verified": {
+          "date": "2026-10-05",
+          "verdict": "confirmed",
+          "source": "https://howdoiplay.com/tips/hoodwink.html",
+          "text": "nothing interrupts a sharpshooter windup except the cancel or death, stuns and silences ride it out"
+        }
+      },
+      {
+        "idx": 3,
+        "from": "tips[23]",
+        "verified": {
+          "date": "2026-10-05",
+          "verdict": "confirmed",
+          "source": "https://howdoiplay.com/tips/hoodwink.html",
+          "text": "spells and items keep casting through the sharpshooter windup, aimed only along the shot line"
+        }
+      },
+      {
+        "idx": 4,
+        "from": "counters[0]",
+        "verified": {
+          "date": "2026-10-05",
+          "verdict": "confirmed",
+          "source": "https://howdoiplay.com/tips/hoodwink.html",
+          "text": "destroying the tree a hero is bushwhacked to cancels the stun instantly, cut the trunk to free the target"
+        }
+      },
+      {
+        "idx": 5,
+        "from": "counters[7]",
+        "verified": {
+          "date": "2026-10-05",
+          "verdict": "confirmed",
+          "source": "https://howdoiplay.com/tips/hoodwink.html",
+          "text": "the sharpshooter debuff wipes off with a basic dispel, the slow and the break never hold"
+        }
+      }
+    ],
     "juggernaut": [
       {
         "idx": 0,
@@ -2994,6 +3056,68 @@
           "verdict": "confirmed",
           "source": "https://dota2.fandom.com/wiki/Tiny",
           "text": "the avalanche area keeps stunning, walking in late still eats the rocks"
+        }
+      }
+    ],
+    "tusk": [
+      {
+        "idx": 0,
+        "from": "tips[5]",
+        "verified": {
+          "date": "2026-10-05",
+          "verdict": "confirmed",
+          "source": "https://howdoiplay.com/tips/tusk.html",
+          "text": "everyone wrapped in the snowball is invulnerable and hidden, the ball rides out the burst mid roll"
+        }
+      },
+      {
+        "idx": 1,
+        "from": "tips[4]",
+        "verified": {
+          "date": "2026-10-05",
+          "verdict": "confirmed",
+          "source": "https://howdoiplay.com/tips/tusk.html",
+          "text": "target neutrals or lane creeps with the snowball when escaping, the ball drops you at a predictable safe spot"
+        }
+      },
+      {
+        "idx": 2,
+        "from": "tips[13]",
+        "verified": {
+          "date": "2026-10-05",
+          "verdict": "confirmed",
+          "source": "https://howdoiplay.com/tips/tusk.html",
+          "text": "spells keep casting mid snowball, prime the shards and the tag team before the ball breaks"
+        }
+      },
+      {
+        "idx": 3,
+        "from": "tips[16].notes[0]",
+        "verified": {
+          "date": "2026-10-05",
+          "verdict": "confirmed",
+          "source": "https://howdoiplay.com/tips/tusk.html",
+          "text": "tag team's bonus damage is green damage, cleave, lifesteal, and crit all pay off it, always enable it before the punch"
+        }
+      },
+      {
+        "idx": 4,
+        "from": "tips[22]",
+        "verified": {
+          "date": "2026-10-05",
+          "verdict": "confirmed",
+          "source": "https://howdoiplay.com/tips/tusk.html",
+          "text": "walrus punch breaks channels through debuff immunity and ignores spell block, hold it for the teleport out"
+        }
+      },
+      {
+        "idx": 5,
+        "from": "counters[2]",
+        "verified": {
+          "date": "2026-10-05",
+          "verdict": "confirmed",
+          "source": "https://howdoiplay.com/tips/tusk.html",
+          "text": "tusk cannot cast snowball while rooted or leashed, hold the root for his commit"
         }
       }
     ],

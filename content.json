@@ -223,6 +223,19 @@
       ],
       "mechanics": [["tip", "midnight pulse chews trees in a huge aoe, it burns sprout and knocks a tree dancing mk off his perch"], ["tip", "midnight pulse deals full damage through bkb and debuff immunity, bkbd targets still melt in the zone"], ["tip", "spawn multiplied eidolons before a solo early black hole, the channel alone doesn't have the damage"], ["tip", "black hole silences on top of the stun, abaddon can't manually pop borrowed time and ursa can't enrage out"], ["counter", "primal roar, global silence, overgrowth, and rubick steal all cancel hole through debuff immunity, count them first"], ["counter", "walking away from a close range enigma eats an event horizon slow, respect the innate when disengaging"]]
     },
+    "hoodwink": {
+      "identity": "tree hopping squirrel support, acorn shot plants the tree and bounces the instant attack, bushwhack nets the bodies to the trunk and stuns them, scurry skates the tree lines, sharpshooter winds the unstoppable shot that slows and breaks",
+      "why": "dedicated pos 4, the bushwhack cashes every tree on the map into a stun and the sharpshooter snipes the runner from fog, favored into the paper lanes and the rooted casters, vetoed by the tree cutters and the flood lines",
+      "how": "acorn the tree beside the target, bushwhack the net onto it, scurry the tree line for the reset, hold the sharpshooter for the committed fight and juke the recoil across the cliffs",
+      "when": "tree hugger trades from the opening ranks, mid roams land the bushwhack picks, late the sharpshooter break guts the carries, starves when the lanes hold no trees",
+      "build": "essence distiller, glimmer, aether lens, blink, shard, gungir, sheepstick",
+      "timings": [["essence distiller", 15], ["glimmer", 26]],
+      "tech": [
+        "visage, spirit breaker, and bounty hunter are the vetoes, the familiars flood the tree lines and the hunt crew runs the paper frame down",
+        "shadow fiend, tiny, and alchemist style paper farms are the free wins, the greed races and the rooted frames stand in the acorn poke and eat the bushwhack"
+      ],
+      "mechanics": [["tip", "keep the mistwoods wayfarer innate on by hugging trees, the survivability lives in the tree line"], ["tip", "the acorn tree carries collision, plant it behind you to shove yourself out of the kinetic field and the pounce leash"], ["tip", "nothing interrupts a sharpshooter windup except the cancel or death, stuns and silences ride it out"], ["tip", "spells and items keep casting through the sharpshooter windup, aimed only along the shot line"], ["counter", "destroying the tree a hero is bushwhacked to cancels the stun instantly, cut the trunk to free the target"], ["counter", "the sharpshooter debuff wipes off with a basic dispel, the slow and the break never hold"]]
+    },
     "juggernaut": {
       "identity": "melee carry whose blade fury spin shrugs off spells, whose healing ward sustains every push, whose blade dance crits scale the right clicks, and whose omnislash leaps between targets untouchable",
       "why": "dedicated pos 1, the spin blanks the magic burst and the slash isolates the locked target, favored into NP, centaur, and SF lines",
@@ -626,6 +639,19 @@
       ],
       "mechanics": [["tip", "avalanche pulses damage and stun in intervals, lead the target and the rocks catch walkers"], ["tip", "toss disables whoever is thrown, and avalanche deals double damage to the tossed unit"], ["tip", "debuff immune enemies can never be thrown, but you can still toss something at them"], ["tip", "toss always grabs the nearest unit around tiny, allies included, mash it in a crowd"], ["tip", "toss grabs units inside the grab radius even from fog, invisible units are the exception"], ["counter", "the avalanche area keeps stunning, walking in late still eats the rocks"]]
     },
+    "tusk": {
+      "identity": "brawl roam soft support, ice shards walls the choke and scouts the fog, snowball wraps the team into an invulnerable roll, tag team feeds every allied swing, walrus punch launches the crit that breaks the channel",
+      "why": "dedicated pos 4, the snowball commits any ally through the burst and the punch deletes the paper core, favored into the immobile farm races, vetoed by the tanky fronts that shrug the roll",
+      "how": "shard the choke before the fight, roll the team onto the target, tag team the commit, punch the channeler or the runner, shard the retreat line on the way out",
+      "when": "roam tempo from the opening ranks, snowball picks through the mid game, late the punch and the tag team swings carry the brawl, falls behind when the fronts out-tank the commit",
+      "build": "blink, vessel, glimmer, force, agh, lotus, bkb",
+      "timings": [["blink", 19], ["vessel", 21]],
+      "tech": [
+        "bounty hunter, dragon knight, dark seer, and sven are the vetoes, the track hunts the melee roam and the tanky fronts shrug the snowball",
+        "shadow fiend, huskar, and nature's prophet style paper farms are the free wins, the snowball reaches every immobile frame and the punch launches it"
+      ],
+      "mechanics": [["tip", "everyone wrapped in the snowball is invulnerable and hidden, the ball rides out the burst mid roll"], ["tip", "target neutrals or lane creeps with the snowball when escaping, the ball drops you at a predictable safe spot"], ["tip", "spells keep casting mid snowball, prime the shards and the tag team before the ball breaks"], ["tip", "tag team's bonus damage is green damage, cleave, lifesteal, and crit all pay off it, always enable it before the punch"], ["tip", "walrus punch breaks channels through debuff immunity and ignores spell block, hold it for the teleport out"], ["counter", "tusk cannot cast snowball while rooted or leashed, hold the root for his commit"]]
+    },
     "ursa": {
       "identity": "swipe stack brawl carry, earthshock stomps the clump and slows it, overpower bursts the swings at max speed, fury swipes deepen with every hit on the same body, enrage shakes the debuffs off and shrugs the damage through the commit",
       "why": "dedicated pos 1, the swipes scale off swings and the pit opens on demand, favored into the paper cores and the immobile front lines, vetoed by the clone flood and the kite crew, no chase without the blink",
@@ -802,7 +828,9 @@
       ["dark-seer", "vacuum placement onto the clump and the wall angle across the engage path until the copies always join the fight"],
       ["templar-assassin", "meld timing onto the fog bank and the trap placement across the approaches until the picks always land on the vision"],
       ["venomancer", "gale placement onto the escaping pair and the ward carpet across the objective until every fight starts inside the poison"],
-      ["largo", "lick timing onto the threatened ally and the stomp placement across the engage path until the chorus always lands on the committed fight"]
+      ["largo", "lick timing onto the threatened ally and the stomp placement across the engage path until the chorus always lands on the committed fight"],
+      ["hoodwink", "acorn tree placement beside the target into the bushwhack net until the stun always lands off the planted tree"],
+      ["tusk", "snowball entry timing onto the committed pair and the walrus punch release on the channeler until the pick lands as one motion"]
     ],
     "replay": [
       "after each session: 10 min, only your deaths, write one line per death: where you should have been",

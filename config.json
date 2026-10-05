@@ -264,6 +264,12 @@
       "tier": "dedicated"
     },
     {
+      "slug": "rubick",
+      "name": "Rubick",
+      "role": "4",
+      "tier": "dedicated"
+    },
+    {
       "slug": "bounty-hunter",
       "name": "Bounty Hunter",
       "role": "4",
@@ -276,14 +282,14 @@
       "tier": "dedicated"
     },
     {
-      "slug": "earthshaker",
-      "name": "Earthshaker",
+      "slug": "tusk",
+      "name": "Tusk",
       "role": "4",
       "tier": "dedicated"
     },
     {
-      "slug": "shadow-shaman",
-      "name": "Shadow Shaman",
+      "slug": "hoodwink",
+      "name": "Hoodwink",
       "role": "4",
       "tier": "dedicated"
     },
@@ -294,8 +300,14 @@
       "tier": "dedicated"
     },
     {
-      "slug": "rubick",
-      "name": "Rubick",
+      "slug": "shadow-shaman",
+      "name": "Shadow Shaman",
+      "role": "4",
+      "tier": "dedicated"
+    },
+    {
+      "slug": "earthshaker",
+      "name": "Earthshaker",
       "role": "4",
       "tier": "dedicated"
     },
@@ -355,6 +367,7 @@
     }
   ],
   "orderPinnedRoles": [
+    "4",
     "5"
   ],
   "heatmap": {
