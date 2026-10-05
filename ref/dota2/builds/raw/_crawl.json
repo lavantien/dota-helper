@@ -1,462 +1,489 @@
 {
-  "crawledAt": "2026-10-04T14:15:49Z",
+  "crawledAt": "2026-10-05T02:59:21Z",
   "bracket": "DIVINE_IMMORTAL",
   "source": "stratz completed-week crawl",
   "field": "itemFullPurchase",
   "patch": "7.41f",
   "series": "7.41",
-  "week": 1789948800,
-  "windowNote": "completed calendar week 1789948800, per (item, minute, instance) purchase counts",
+  "week": 1790553600,
+  "windowNote": "completed calendar week 1790553600, per (item, minute, instance) purchase counts",
   "entries": [
     {
       "slug": "phantom-lancer",
       "role": "1",
       "heroId": 12,
-      "fetchedAt": "2026-10-04T14:15:10Z",
+      "fetchedAt": "2026-10-05T02:58:58Z",
       "cached": false,
       "accepted": true,
-      "rowCount": 2225
+      "rowCount": 2187
     },
     {
       "slug": "clinkz",
       "role": "1",
       "heroId": 56,
-      "fetchedAt": "2026-10-04T14:15:13Z",
+      "fetchedAt": "2026-10-05T02:58:59Z",
       "cached": false,
       "accepted": true,
-      "rowCount": 1543
+      "rowCount": 1556
     },
     {
       "slug": "juggernaut",
       "role": "1",
       "heroId": 8,
-      "fetchedAt": "2026-10-04T14:15:14Z",
-      "cached": false,
-      "accepted": true,
-      "rowCount": 2334
-    },
-    {
-      "slug": "spectre",
-      "role": "1",
-      "heroId": 67,
-      "fetchedAt": "2026-10-04T14:15:15Z",
-      "cached": false,
-      "accepted": true,
-      "rowCount": 2229
-    },
-    {
-      "slug": "lifestealer",
-      "role": "1",
-      "heroId": 54,
-      "fetchedAt": "2026-10-04T14:15:15Z",
-      "cached": false,
-      "accepted": true,
-      "rowCount": 2718
-    },
-    {
-      "slug": "sven",
-      "role": "1",
-      "heroId": 18,
-      "fetchedAt": "2026-10-04T14:15:16Z",
-      "cached": false,
-      "accepted": true,
-      "rowCount": 2190
-    },
-    {
-      "slug": "anti-mage",
-      "role": "1",
-      "heroId": 1,
-      "fetchedAt": "2026-10-04T14:15:17Z",
-      "cached": false,
-      "accepted": true,
-      "rowCount": 2125
-    },
-    {
-      "slug": "windranger",
-      "role": "1",
-      "heroId": 21,
-      "fetchedAt": "2026-10-04T14:15:17Z",
-      "cached": false,
-      "accepted": true,
-      "rowCount": 1899
-    },
-    {
-      "slug": "phantom-assassin",
-      "role": "1",
-      "heroId": 44,
-      "fetchedAt": "2026-10-04T14:15:18Z",
-      "cached": false,
-      "accepted": true,
-      "rowCount": 1822
-    },
-    {
-      "slug": "ursa",
-      "role": "1",
-      "heroId": 70,
-      "fetchedAt": "2026-10-04T14:15:19Z",
-      "cached": false,
-      "accepted": true,
-      "rowCount": 1898
-    },
-    {
-      "slug": "luna",
-      "role": "1",
-      "heroId": 48,
-      "fetchedAt": "2026-10-04T14:15:20Z",
-      "cached": false,
-      "accepted": true,
-      "rowCount": 2173
-    },
-    {
-      "slug": "terrorblade",
-      "role": "1",
-      "heroId": 109,
-      "fetchedAt": "2026-10-04T14:15:21Z",
-      "cached": false,
-      "accepted": true,
-      "rowCount": 1877
-    },
-    {
-      "slug": "lone-druid",
-      "role": "1",
-      "heroId": 80,
-      "fetchedAt": "2026-10-04T14:15:21Z",
-      "cached": false,
-      "accepted": true,
-      "rowCount": 1492
-    },
-    {
-      "slug": "alchemist",
-      "role": "1",
-      "heroId": 73,
-      "fetchedAt": "2026-10-04T14:15:22Z",
-      "cached": false,
-      "accepted": true,
-      "rowCount": 1232
-    },
-    {
-      "slug": "tiny",
-      "role": "1",
-      "heroId": 19,
-      "fetchedAt": "2026-10-04T14:15:23Z",
-      "cached": false,
-      "accepted": true,
-      "rowCount": 1248
-    },
-    {
-      "slug": "natures-prophet",
-      "role": "1",
-      "heroId": 53,
-      "fetchedAt": "2026-10-04T14:15:23Z",
-      "cached": false,
-      "accepted": true,
-      "rowCount": 1734
-    },
-    {
-      "slug": "monkey-king",
-      "role": "1",
-      "heroId": 114,
-      "fetchedAt": "2026-10-04T14:15:24Z",
-      "cached": false,
-      "accepted": true,
-      "rowCount": 1861
-    },
-    {
-      "slug": "marci",
-      "role": "2",
-      "heroId": 136,
-      "fetchedAt": "2026-10-04T14:15:25Z",
-      "cached": false,
-      "accepted": true,
-      "rowCount": 1265
-    },
-    {
-      "slug": "dragon-knight",
-      "role": "2",
-      "heroId": 49,
-      "fetchedAt": "2026-10-04T14:15:26Z",
-      "cached": false,
-      "accepted": true,
-      "rowCount": 2377
-    },
-    {
-      "slug": "outworld-destroyer",
-      "role": "2",
-      "heroId": 76,
-      "fetchedAt": "2026-10-04T14:15:26Z",
-      "cached": false,
-      "accepted": true,
-      "rowCount": 2547
-    },
-    {
-      "slug": "slark",
-      "role": "2",
-      "heroId": 93,
-      "fetchedAt": "2026-10-04T14:15:27Z",
-      "cached": false,
-      "accepted": true,
-      "rowCount": 1505
-    },
-    {
-      "slug": "leshrac",
-      "role": "2",
-      "heroId": 52,
-      "fetchedAt": "2026-10-04T14:15:27Z",
-      "cached": false,
-      "accepted": true,
-      "rowCount": 1394
-    },
-    {
-      "slug": "pangolier",
-      "role": "2",
-      "heroId": 120,
-      "fetchedAt": "2026-10-04T14:15:28Z",
-      "cached": false,
-      "accepted": true,
-      "rowCount": 1768
-    },
-    {
-      "slug": "storm-spirit",
-      "role": "2",
-      "heroId": 17,
-      "fetchedAt": "2026-10-04T14:15:28Z",
-      "cached": false,
-      "accepted": true,
-      "rowCount": 2213
-    },
-    {
-      "slug": "enigma",
-      "role": "3",
-      "heroId": 33,
-      "fetchedAt": "2026-10-04T14:15:29Z",
-      "cached": false,
-      "accepted": true,
-      "rowCount": 1597
-    },
-    {
-      "slug": "brewmaster",
-      "role": "3",
-      "heroId": 78,
-      "fetchedAt": "2026-10-04T14:15:29Z",
-      "cached": false,
-      "accepted": true,
-      "rowCount": 1651
-    },
-    {
-      "slug": "dawnbreaker",
-      "role": "3",
-      "heroId": 135,
-      "fetchedAt": "2026-10-04T14:15:32Z",
-      "cached": false,
-      "accepted": true,
-      "rowCount": 3022
-    },
-    {
-      "slug": "lycan",
-      "role": "3",
-      "heroId": 77,
-      "fetchedAt": "2026-10-04T14:15:33Z",
-      "cached": false,
-      "accepted": true,
-      "rowCount": 1085
-    },
-    {
-      "slug": "viper",
-      "role": "3",
-      "heroId": 47,
-      "fetchedAt": "2026-10-04T14:15:33Z",
-      "cached": false,
-      "accepted": true,
-      "rowCount": 2128
-    },
-    {
-      "slug": "centaur",
-      "role": "3",
-      "heroId": 96,
-      "fetchedAt": "2026-10-04T14:15:34Z",
-      "cached": false,
-      "accepted": true,
-      "rowCount": 2037
-    },
-    {
-      "slug": "necrophos",
-      "role": "3",
-      "heroId": 36,
-      "fetchedAt": "2026-10-04T14:15:35Z",
-      "cached": false,
-      "accepted": true,
-      "rowCount": 2232
-    },
-    {
-      "slug": "death-prophet",
-      "role": "3",
-      "heroId": 43,
-      "fetchedAt": "2026-10-04T14:15:36Z",
-      "cached": false,
-      "accepted": true,
-      "rowCount": 1834
-    },
-    {
-      "slug": "slardar",
-      "role": "3",
-      "heroId": 28,
-      "fetchedAt": "2026-10-04T14:15:37Z",
-      "cached": false,
-      "accepted": true,
-      "rowCount": 2030
-    },
-    {
-      "slug": "doom",
-      "role": "3",
-      "heroId": 69,
-      "fetchedAt": "2026-10-04T14:15:37Z",
+      "fetchedAt": "2026-10-05T02:58:59Z",
       "cached": false,
       "accepted": true,
       "rowCount": 2295
     },
     {
-      "slug": "timbersaw",
-      "role": "3",
-      "heroId": 98,
-      "fetchedAt": "2026-10-04T14:15:38Z",
+      "slug": "spectre",
+      "role": "1",
+      "heroId": 67,
+      "fetchedAt": "2026-10-05T02:58:59Z",
       "cached": false,
       "accepted": true,
-      "rowCount": 1942
+      "rowCount": 2168
     },
     {
-      "slug": "dark-seer",
-      "role": "3",
-      "heroId": 55,
-      "fetchedAt": "2026-10-04T14:15:39Z",
+      "slug": "lifestealer",
+      "role": "1",
+      "heroId": 54,
+      "fetchedAt": "2026-10-05T02:59:00Z",
       "cached": false,
       "accepted": true,
-      "rowCount": 2677
+      "rowCount": 2628
     },
     {
-      "slug": "bounty-hunter",
-      "role": "4",
-      "heroId": 62,
-      "fetchedAt": "2026-10-04T14:15:39Z",
+      "slug": "sven",
+      "role": "1",
+      "heroId": 18,
+      "fetchedAt": "2026-10-05T02:59:00Z",
       "cached": false,
       "accepted": true,
-      "rowCount": 3005
+      "rowCount": 2340
     },
     {
-      "slug": "nyx-assassin",
-      "role": "4",
-      "heroId": 88,
-      "fetchedAt": "2026-10-04T14:15:40Z",
+      "slug": "anti-mage",
+      "role": "1",
+      "heroId": 1,
+      "fetchedAt": "2026-10-05T02:59:01Z",
+      "cached": false,
+      "accepted": true,
+      "rowCount": 2076
+    },
+    {
+      "slug": "windranger",
+      "role": "1",
+      "heroId": 21,
+      "fetchedAt": "2026-10-05T02:59:01Z",
       "cached": false,
       "accepted": true,
       "rowCount": 1912
     },
     {
+      "slug": "phantom-assassin",
+      "role": "1",
+      "heroId": 44,
+      "fetchedAt": "2026-10-05T02:59:02Z",
+      "cached": false,
+      "accepted": true,
+      "rowCount": 1771
+    },
+    {
+      "slug": "ursa",
+      "role": "1",
+      "heroId": 70,
+      "fetchedAt": "2026-10-05T02:59:02Z",
+      "cached": false,
+      "accepted": true,
+      "rowCount": 1825
+    },
+    {
+      "slug": "luna",
+      "role": "1",
+      "heroId": 48,
+      "fetchedAt": "2026-10-05T02:59:02Z",
+      "cached": false,
+      "accepted": true,
+      "rowCount": 2155
+    },
+    {
+      "slug": "terrorblade",
+      "role": "1",
+      "heroId": 109,
+      "fetchedAt": "2026-10-05T02:59:03Z",
+      "cached": false,
+      "accepted": true,
+      "rowCount": 1832
+    },
+    {
+      "slug": "lone-druid",
+      "role": "1",
+      "heroId": 80,
+      "fetchedAt": "2026-10-05T02:59:03Z",
+      "cached": false,
+      "accepted": true,
+      "rowCount": 1483
+    },
+    {
+      "slug": "templar-assassin",
+      "role": "1",
+      "heroId": 46,
+      "fetchedAt": "2026-10-05T02:59:04Z",
+      "cached": false,
+      "accepted": true,
+      "rowCount": 1589
+    },
+    {
+      "slug": "alchemist",
+      "role": "1",
+      "heroId": 73,
+      "fetchedAt": "2026-10-05T02:59:04Z",
+      "cached": false,
+      "accepted": true,
+      "rowCount": 1166
+    },
+    {
+      "slug": "tiny",
+      "role": "1",
+      "heroId": 19,
+      "fetchedAt": "2026-10-05T02:59:05Z",
+      "cached": false,
+      "accepted": true,
+      "rowCount": 1168
+    },
+    {
+      "slug": "natures-prophet",
+      "role": "1",
+      "heroId": 53,
+      "fetchedAt": "2026-10-05T02:59:05Z",
+      "cached": false,
+      "accepted": true,
+      "rowCount": 1804
+    },
+    {
+      "slug": "monkey-king",
+      "role": "1",
+      "heroId": 114,
+      "fetchedAt": "2026-10-05T02:59:06Z",
+      "cached": false,
+      "accepted": true,
+      "rowCount": 1918
+    },
+    {
+      "slug": "marci",
+      "role": "2",
+      "heroId": 136,
+      "fetchedAt": "2026-10-05T02:59:06Z",
+      "cached": false,
+      "accepted": true,
+      "rowCount": 1187
+    },
+    {
+      "slug": "dragon-knight",
+      "role": "2",
+      "heroId": 49,
+      "fetchedAt": "2026-10-05T02:59:06Z",
+      "cached": false,
+      "accepted": true,
+      "rowCount": 2610
+    },
+    {
+      "slug": "outworld-destroyer",
+      "role": "2",
+      "heroId": 76,
+      "fetchedAt": "2026-10-05T02:59:07Z",
+      "cached": false,
+      "accepted": true,
+      "rowCount": 2623
+    },
+    {
+      "slug": "slark",
+      "role": "2",
+      "heroId": 93,
+      "fetchedAt": "2026-10-05T02:59:07Z",
+      "cached": false,
+      "accepted": true,
+      "rowCount": 1472
+    },
+    {
+      "slug": "leshrac",
+      "role": "2",
+      "heroId": 52,
+      "fetchedAt": "2026-10-05T02:59:08Z",
+      "cached": false,
+      "accepted": true,
+      "rowCount": 1397
+    },
+    {
+      "slug": "pangolier",
+      "role": "2",
+      "heroId": 120,
+      "fetchedAt": "2026-10-05T02:59:08Z",
+      "cached": false,
+      "accepted": true,
+      "rowCount": 1699
+    },
+    {
+      "slug": "storm-spirit",
+      "role": "2",
+      "heroId": 17,
+      "fetchedAt": "2026-10-05T02:59:09Z",
+      "cached": false,
+      "accepted": true,
+      "rowCount": 2119
+    },
+    {
+      "slug": "enigma",
+      "role": "3",
+      "heroId": 33,
+      "fetchedAt": "2026-10-05T02:59:09Z",
+      "cached": false,
+      "accepted": true,
+      "rowCount": 1612
+    },
+    {
+      "slug": "brewmaster",
+      "role": "3",
+      "heroId": 78,
+      "fetchedAt": "2026-10-05T02:59:10Z",
+      "cached": false,
+      "accepted": true,
+      "rowCount": 1750
+    },
+    {
+      "slug": "dawnbreaker",
+      "role": "3",
+      "heroId": 135,
+      "fetchedAt": "2026-10-05T02:59:10Z",
+      "cached": false,
+      "accepted": true,
+      "rowCount": 2901
+    },
+    {
+      "slug": "lycan",
+      "role": "3",
+      "heroId": 77,
+      "fetchedAt": "2026-10-05T02:59:10Z",
+      "cached": false,
+      "accepted": true,
+      "rowCount": 1075
+    },
+    {
+      "slug": "dark-seer",
+      "role": "3",
+      "heroId": 55,
+      "fetchedAt": "2026-10-05T02:59:11Z",
+      "cached": false,
+      "accepted": true,
+      "rowCount": 2575
+    },
+    {
+      "slug": "viper",
+      "role": "3",
+      "heroId": 47,
+      "fetchedAt": "2026-10-05T02:59:12Z",
+      "cached": false,
+      "accepted": true,
+      "rowCount": 2147
+    },
+    {
+      "slug": "centaur",
+      "role": "3",
+      "heroId": 96,
+      "fetchedAt": "2026-10-05T02:59:12Z",
+      "cached": false,
+      "accepted": true,
+      "rowCount": 1962
+    },
+    {
+      "slug": "necrophos",
+      "role": "3",
+      "heroId": 36,
+      "fetchedAt": "2026-10-05T02:59:12Z",
+      "cached": false,
+      "accepted": true,
+      "rowCount": 2201
+    },
+    {
+      "slug": "death-prophet",
+      "role": "3",
+      "heroId": 43,
+      "fetchedAt": "2026-10-05T02:59:13Z",
+      "cached": false,
+      "accepted": true,
+      "rowCount": 1775
+    },
+    {
+      "slug": "slardar",
+      "role": "3",
+      "heroId": 28,
+      "fetchedAt": "2026-10-05T02:59:13Z",
+      "cached": false,
+      "accepted": true,
+      "rowCount": 1916
+    },
+    {
+      "slug": "doom",
+      "role": "3",
+      "heroId": 69,
+      "fetchedAt": "2026-10-05T02:59:14Z",
+      "cached": false,
+      "accepted": true,
+      "rowCount": 2298
+    },
+    {
+      "slug": "timbersaw",
+      "role": "3",
+      "heroId": 98,
+      "fetchedAt": "2026-10-05T02:59:14Z",
+      "cached": false,
+      "accepted": true,
+      "rowCount": 1898
+    },
+    {
+      "slug": "largo",
+      "role": "3",
+      "heroId": 155,
+      "fetchedAt": "2026-10-05T02:59:14Z",
+      "cached": false,
+      "accepted": true,
+      "rowCount": 1321
+    },
+    {
+      "slug": "bounty-hunter",
+      "role": "4",
+      "heroId": 62,
+      "fetchedAt": "2026-10-05T02:59:15Z",
+      "cached": false,
+      "accepted": true,
+      "rowCount": 2989
+    },
+    {
+      "slug": "nyx-assassin",
+      "role": "4",
+      "heroId": 88,
+      "fetchedAt": "2026-10-05T02:59:15Z",
+      "cached": false,
+      "accepted": true,
+      "rowCount": 1987
+    },
+    {
       "slug": "earthshaker",
       "role": "4",
       "heroId": 7,
-      "fetchedAt": "2026-10-04T14:15:41Z",
+      "fetchedAt": "2026-10-05T02:59:16Z",
       "cached": false,
       "accepted": true,
-      "rowCount": 1656
+      "rowCount": 1652
     },
     {
       "slug": "shadow-shaman",
       "role": "4",
       "heroId": 27,
-      "fetchedAt": "2026-10-04T14:15:41Z",
+      "fetchedAt": "2026-10-05T02:59:16Z",
       "cached": false,
       "accepted": true,
-      "rowCount": 1190
+      "rowCount": 1160
     },
     {
       "slug": "mirana",
       "role": "4",
       "heroId": 9,
-      "fetchedAt": "2026-10-04T14:15:42Z",
+      "fetchedAt": "2026-10-05T02:59:17Z",
       "cached": false,
       "accepted": true,
-      "rowCount": 2970
+      "rowCount": 2854
     },
     {
       "slug": "rubick",
       "role": "4",
       "heroId": 86,
-      "fetchedAt": "2026-10-04T14:15:43Z",
+      "fetchedAt": "2026-10-05T02:59:17Z",
       "cached": false,
       "accepted": true,
-      "rowCount": 2726
-    },
-    {
-      "slug": "ancient-apparition",
-      "role": "4",
-      "heroId": 68,
-      "fetchedAt": "2026-10-04T14:15:43Z",
-      "cached": false,
-      "accepted": true,
-      "rowCount": 1394
-    },
-    {
-      "slug": "techies",
-      "role": "4",
-      "heroId": 105,
-      "fetchedAt": "2026-10-04T14:15:44Z",
-      "cached": false,
-      "accepted": true,
-      "rowCount": 2552
-    },
-    {
-      "slug": "lich",
-      "role": "5",
-      "heroId": 31,
-      "fetchedAt": "2026-10-04T14:15:46Z",
-      "cached": false,
-      "accepted": true,
-      "rowCount": 2153
+      "rowCount": 2687
     },
     {
       "slug": "winter-wyvern",
       "role": "5",
       "heroId": 112,
-      "fetchedAt": "2026-10-04T14:15:46Z",
+      "fetchedAt": "2026-10-05T02:59:18Z",
       "cached": false,
       "accepted": true,
-      "rowCount": 2260
+      "rowCount": 2279
     },
     {
       "slug": "bane",
       "role": "5",
       "heroId": 3,
-      "fetchedAt": "2026-10-04T14:15:47Z",
+      "fetchedAt": "2026-10-05T02:59:18Z",
       "cached": false,
       "accepted": true,
-      "rowCount": 1144
-    },
-    {
-      "slug": "witch-doctor",
-      "role": "5",
-      "heroId": 30,
-      "fetchedAt": "2026-10-04T14:15:48Z",
-      "cached": false,
-      "accepted": true,
-      "rowCount": 1842
+      "rowCount": 1037
     },
     {
       "slug": "rattletrap",
       "role": "5",
       "heroId": 51,
-      "fetchedAt": "2026-10-04T14:15:49Z",
+      "fetchedAt": "2026-10-05T02:59:18Z",
       "cached": false,
       "accepted": true,
-      "rowCount": 1536
+      "rowCount": 1448
+    },
+    {
+      "slug": "venomancer",
+      "role": "5",
+      "heroId": 40,
+      "fetchedAt": "2026-10-05T02:59:19Z",
+      "cached": false,
+      "accepted": true,
+      "rowCount": 1633
     },
     {
       "slug": "enchantress",
       "role": "5",
       "heroId": 58,
-      "fetchedAt": "2026-10-04T14:15:49Z",
+      "fetchedAt": "2026-10-05T02:59:19Z",
       "cached": false,
       "accepted": true,
-      "rowCount": 1248
+      "rowCount": 1236
+    },
+    {
+      "slug": "techies",
+      "role": "5",
+      "heroId": 105,
+      "fetchedAt": "2026-10-05T02:59:20Z",
+      "cached": false,
+      "accepted": true,
+      "rowCount": 2122
+    },
+    {
+      "slug": "lich",
+      "role": "5",
+      "heroId": 31,
+      "fetchedAt": "2026-10-05T02:59:20Z",
+      "cached": false,
+      "accepted": true,
+      "rowCount": 2083
+    },
+    {
+      "slug": "witch-doctor",
+      "role": "5",
+      "heroId": 30,
+      "fetchedAt": "2026-10-05T02:59:21Z",
+      "cached": false,
+      "accepted": true,
+      "rowCount": 1939
+    },
+    {
+      "slug": "ancient-apparition",
+      "role": "5",
+      "heroId": 68,
+      "fetchedAt": "2026-10-05T02:59:21Z",
+      "cached": false,
+      "accepted": true,
+      "rowCount": 1908
     }
   ]
 }

@@ -19,6 +19,8 @@ func loadHubCfg(t *testing.T) *config.Config {
 	if err != nil {
 		t.Fatalf("load hub config: %v", err)
 	}
+	// fixtures sort every role; a test that cares about the pin sets it itself
+	cfg.OrderPinnedRoles = nil
 	return cfg
 }
 
@@ -360,6 +362,112 @@ func TestRunIsIdempotent(t *testing.T) {
 	}
 	if string(firstGates) != string(readBytes(t, f.gatesPath)) {
 		t.Fatal("second run rewrote gates.json")
+	}
+}
+
+func TestRoleOrdersKeepsPinnedDeclarationOrder(t *testing.T) {
+	cfg := loadHubCfg(t)
+	pool := fixturePool()
+	// declare role 5 opposite to its win-rate order: hero-l (0.49) outranks
+	// nothing, hero-k (0.60) is the win-rate head, the pin must keep l first
+	last := len(pool) - 1
+	pool[last-1], pool[last] = pool[last], pool[last-1]
+	cfg.Pool = pool
+	cfg.OrderPinnedRoles = []string{"5"}
+	ordered, err := roleOrders(cfg, fixtureStats())
+	if err != nil {
+		t.Fatalf("roleOrders: %v", err)
+	}
+	var flat []string
+	for _, r := range cfg.Roles {
+		for _, e := range ordered[r.ID] {
+			flat = append(flat, e.Slug)
+		}
+	}
+	want := []string{
+		"hero-c", "hero-b", "hero-a",
+		"hero-e", "hero-f",
+		"hero-h", "hero-g",
+		"hero-j", "hero-i",
+		"hero-l", "hero-k", // declaration order survives the pin
+	}
+	if !reflect.DeepEqual(flat, want) {
+		t.Fatalf("roleOrders order = %v, want %v", flat, want)
+	}
+}
+
+func TestRunKeepsPinnedRoleDeclarationOrder(t *testing.T) {
+	f := newFixture(t)
+	pool := fixturePool()
+	last := len(pool) - 1
+	pool[last-1], pool[last] = pool[last], pool[last-1]
+	f.cfg.Pool = pool
+	f.cfg.OrderPinnedRoles = []string{"5"}
+	f.cfgBytes = writeFixtureConfig(t, f.cfgPath, pool)
+	// pre-write the fallback in sorted order, opposite of the pinned
+	// declaration, so the assertion below can only hold if the pinned run
+	// actually rewrote it
+	flipped := fixtureFallback()
+	flipped["5"] = []string{"hero-k", "hero-l"}
+	f.gatesBytes = writeFixtureGates(t, f.gatesPath, flipped)
+	if err := f.run(t); err != nil {
+		t.Fatalf("run: %v", err)
+	}
+	var hub map[string]any
+	if err := json.Unmarshal(readBytes(t, f.cfgPath), &hub); err != nil {
+		t.Fatalf("parse rendered config: %v", err)
+	}
+	var got []string
+	for _, e := range hub["pool"].([]any) {
+		m := e.(map[string]any)
+		got = append(got, m["slug"].(string))
+	}
+	want := []string{
+		"hero-c", "hero-b", "hero-a",
+		"hero-e", "hero-f",
+		"hero-h", "hero-g",
+		"hero-j", "hero-i",
+		"hero-l", "hero-k",
+	}
+	if !reflect.DeepEqual(got, want) {
+		t.Fatalf("rendered pool order = %v, want %v", got, want)
+	}
+	var doc map[string]any
+	if err := json.Unmarshal(readBytes(t, f.gatesPath), &doc); err != nil {
+		t.Fatalf("parse rendered gates: %v", err)
+	}
+	var gotRole []string
+	for _, s := range doc["fallbackOrder"].(map[string]any)["5"].([]any) {
+		gotRole = append(gotRole, s.(string))
+	}
+	if !reflect.DeepEqual(gotRole, []string{"hero-l", "hero-k"}) {
+		t.Fatalf("fallbackOrder[5] = %v, want the pinned declaration order", gotRole)
+	}
+	// a second run over the pinned output rewrites nothing
+	afterCfg := readBytes(t, f.cfgPath)
+	afterGates := readBytes(t, f.gatesPath)
+	if err := f.run(t); err != nil {
+		t.Fatalf("second run: %v", err)
+	}
+	if string(afterCfg) != string(readBytes(t, f.cfgPath)) || string(afterGates) != string(readBytes(t, f.gatesPath)) {
+		t.Fatal("second pinned run rewrote either file")
+	}
+}
+
+// a pinned role still reports missing stat rows before any write, the pin
+// never waives the data requirement
+func TestRunReportsMissingRowForPinnedRole(t *testing.T) {
+	f := newFixture(t)
+	f.cfg.OrderPinnedRoles = []string{"5"}
+	if _, err := f.db.Exec(`DELETE FROM hero_position WHERE slug = 'hero-l' AND position = 5`); err != nil {
+		t.Fatalf("delete row: %v", err)
+	}
+	err := f.run(t)
+	if err == nil {
+		t.Fatal("pinned run should fail on a missing hero_position row")
+	}
+	if !strings.Contains(err.Error(), "hero-l@5") {
+		t.Fatalf("error %q does not name hero-l@5", err)
 	}
 }
 

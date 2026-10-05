@@ -66,13 +66,13 @@ type OpenDotaCfg struct {
 // content.json build/timings. Values are data-quality knobs, the graphql field
 // itself is pinned in the ingest layer.
 type BuildsCfg struct {
-	MinMatches        int               `json:"minMatches"`        // per-item sample floor for the derived build
-	TopN              int               `json:"topN"`              // core build list length
-	TimingTopN        int               `json:"timingTopN"`        // timings entries kept
-	MinCost           int               `json:"minCost"`           // gold-cost floor, cuts regen and consumables
-	ProseContextItems []string          `json:"proseContextItems"` // item names prose may name as context
-	ProseGateStopWords []string         `json:"proseGateStopWords"`
-	ItemAliases       map[string]string `json:"itemAliases"` // shortName -> compact display token
+	MinMatches         int               `json:"minMatches"`        // per-item sample floor for the derived build
+	TopN               int               `json:"topN"`              // core build list length
+	TimingTopN         int               `json:"timingTopN"`        // timings entries kept
+	MinCost            int               `json:"minCost"`           // gold-cost floor, cuts regen and consumables
+	ProseContextItems  []string          `json:"proseContextItems"` // item names prose may name as context
+	ProseGateStopWords []string          `json:"proseGateStopWords"`
+	ItemAliases        map[string]string `json:"itemAliases"` // shortName -> compact display token
 }
 
 type Thresholds struct {
@@ -136,7 +136,9 @@ type BackfillCfg struct {
 
 // Eval section: consumed by the eval phase; validated here so a bad value
 // fails at load, not mid fit.
-type EvalSplitCfg struct{ TrainFrac float64 `json:"trainFrac"` }
+type EvalSplitCfg struct {
+	TrainFrac float64 `json:"trainFrac"`
+}
 
 type EvalBootstrapCfg struct {
 	Resamples int   `json:"resamples"`
@@ -144,8 +146,8 @@ type EvalBootstrapCfg struct {
 }
 
 type EvalAlphaFitCfg struct {
-	Grid       []float64 `json:"grid"`
-	MinHoldoutN int      `json:"minHoldoutN"`
+	Grid        []float64 `json:"grid"`
+	MinHoldoutN int       `json:"minHoldoutN"`
 }
 
 type EvalCompletionFitCfg struct {
@@ -162,16 +164,20 @@ type EvalFitCfg struct {
 }
 
 type EvalScreenCfg struct {
-	Enabled         bool    `json:"enabled"`
-	Q               float64 `json:"q"`
-	MinMatches      int     `json:"minMatches"`
+	Enabled          bool    `json:"enabled"`
+	Q                float64 `json:"q"`
+	MinMatches       int     `json:"minMatches"`
 	ChiSqMinExpected float64 `json:"chiSqMinExpected"`
-	FailAlphaMult   float64 `json:"failAlphaMult"`
+	FailAlphaMult    float64 `json:"failAlphaMult"`
 }
 
-type EvalNaiveBayesCfg struct{ Alpha float64 `json:"alpha"` }
+type EvalNaiveBayesCfg struct {
+	Alpha float64 `json:"alpha"`
+}
 
-type EvalKnnCfg struct{ K int `json:"k"` }
+type EvalKnnCfg struct {
+	K int `json:"k"`
+}
 
 type EvalTriplesCfg struct {
 	MinSupport int  `json:"minSupport"`
@@ -212,21 +218,21 @@ type EvalCfg struct {
 }
 
 type Paths struct {
-	TokenFile        string `json:"tokenFile"`
-	DBFile           string `json:"dbFile"`
-	StratzRawDir     string `json:"stratzRawDir"`
-	OpenDotaRawDir   string `json:"opendotaRawDir"`
-	BuildsRawDir     string `json:"buildsRawDir"`
-	MatchesRawDir    string `json:"matchesRawDir"`
-	PositionsRawDir  string `json:"positionsRawDir"`
-	TrendsFile       string `json:"trendsFile"`
-	MatchupsDir      string `json:"matchupsDir"`
-	PickerDir        string `json:"pickerDir"`
-	GuideDir         string `json:"guideDir"`
-	ContentPath      string `json:"contentPath"`
-	EvalOut          string `json:"evalOut"`
-	FitOut           string `json:"fitOut"`
-	DerivationsPath  string `json:"derivationsPath"`
+	TokenFile       string `json:"tokenFile"`
+	DBFile          string `json:"dbFile"`
+	StratzRawDir    string `json:"stratzRawDir"`
+	OpenDotaRawDir  string `json:"opendotaRawDir"`
+	BuildsRawDir    string `json:"buildsRawDir"`
+	MatchesRawDir   string `json:"matchesRawDir"`
+	PositionsRawDir string `json:"positionsRawDir"`
+	TrendsFile      string `json:"trendsFile"`
+	MatchupsDir     string `json:"matchupsDir"`
+	PickerDir       string `json:"pickerDir"`
+	GuideDir        string `json:"guideDir"`
+	ContentPath     string `json:"contentPath"`
+	EvalOut         string `json:"evalOut"`
+	FitOut          string `json:"fitOut"`
+	DerivationsPath string `json:"derivationsPath"`
 }
 
 type EmitCfg struct {
@@ -244,30 +250,31 @@ type HeatmapCfg struct {
 }
 
 type Config struct {
-	Patch          string             `json:"patch"`
-	PatchEpoch     string             `json:"patchEpoch"`
-	Roles          []RoleDef          `json:"roles"`
-	SharedRolePools [][]string        `json:"sharedRolePools"` // roles fielding one shared picker candidate pool
-	Pool           []PoolEntry        `json:"pool"`
-	Heatmap        HeatmapCfg         `json:"heatmap"`
-	AoEClearHeroes []string           `json:"aoeClearHeroes"`
-	Scope          Scope              `json:"scope"`
-	Endpoints      map[string]string  `json:"endpoints"` // api roots, documentation-only consumers read the file directly
-	Stratz         StratzCfg          `json:"stratz"`
-	OpenDota       OpenDotaCfg        `json:"opendota"`
-	Builds         BuildsCfg          `json:"builds"`
-	Backfill       BackfillCfg        `json:"backfill"`
-	Eval           EvalCfg            `json:"eval"`
-	Thresholds     Thresholds         `json:"thresholds"`
-	Shrink         ShrinkCfg          `json:"shrink"`
-	Completion     CompletionCfg      `json:"completion"`
-	Weights        Weights            `json:"weights"`
-	Score          ScoreConsts        `json:"score"`
-	Normalize      NormalizeCfg       `json:"normalize"`
-	GateDeltas     map[string]float64 `json:"gateDeltas"`
-	Aliases        map[string]string  `json:"aliases"`
-	Paths          Paths              `json:"paths"`
-	Emit           EmitCfg            `json:"emit"`
+	Patch            string             `json:"patch"`
+	PatchEpoch       string             `json:"patchEpoch"`
+	Roles            []RoleDef          `json:"roles"`
+	SharedRolePools  [][]string         `json:"sharedRolePools"` // roles fielding one shared picker candidate pool
+	Pool             []PoolEntry        `json:"pool"`
+	OrderPinnedRoles []string           `json:"orderPinnedRoles"` // display-only roles whose authored pool order order-pool never re-sorts
+	Heatmap          HeatmapCfg         `json:"heatmap"`
+	AoEClearHeroes   []string           `json:"aoeClearHeroes"`
+	Scope            Scope              `json:"scope"`
+	Endpoints        map[string]string  `json:"endpoints"` // api roots, documentation-only consumers read the file directly
+	Stratz           StratzCfg          `json:"stratz"`
+	OpenDota         OpenDotaCfg        `json:"opendota"`
+	Builds           BuildsCfg          `json:"builds"`
+	Backfill         BackfillCfg        `json:"backfill"`
+	Eval             EvalCfg            `json:"eval"`
+	Thresholds       Thresholds         `json:"thresholds"`
+	Shrink           ShrinkCfg          `json:"shrink"`
+	Completion       CompletionCfg      `json:"completion"`
+	Weights          Weights            `json:"weights"`
+	Score            ScoreConsts        `json:"score"`
+	Normalize        NormalizeCfg       `json:"normalize"`
+	GateDeltas       map[string]float64 `json:"gateDeltas"`
+	Aliases          map[string]string  `json:"aliases"`
+	Paths            Paths              `json:"paths"`
+	Emit             EmitCfg            `json:"emit"`
 }
 
 // Load reads and validates the config hub at path.
@@ -299,6 +306,16 @@ func (c *Config) Validate() error {
 	}
 	if err := c.validateSharedRolePools(roleIDs); err != nil {
 		return err
+	}
+	pinned := map[string]bool{}
+	for _, r := range c.OrderPinnedRoles {
+		if !roleIDs[r] {
+			return fmt.Errorf("orderPinnedRoles has unknown role %q", r)
+		}
+		if pinned[r] {
+			return fmt.Errorf("duplicate pinned role %q", r)
+		}
+		pinned[r] = true
 	}
 	seen := map[string]bool{}
 	for _, e := range c.Pool {

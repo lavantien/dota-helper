@@ -1,5 +1,5 @@
 {
-  "curatedAt": "2026-10-04",
+  "curatedAt": "2026-10-05",
   "source": "ref/dota2/howdoiplay/howdoiplay.json",
   "patch": "7.41",
   "heroes": {
@@ -1134,6 +1134,58 @@
           "verdict": "confirmed",
           "source": "https://dota2.fandom.com/wiki/Juggernaut",
           "text": "the healing ward dies to one hit and heals their whole team, kill it the moment it lands"
+        }
+      }
+    ],
+    "largo": [
+      {
+        "idx": 0,
+        "from": "tips[2]",
+        "verified": {
+          "date": "2026-10-05",
+          "verdict": "confirmed",
+          "source": "https://howdoiplay.com/tips/largo.html",
+          "text": "catchy lick is a basic dispel that lands on enemies, allies, and largo himself, one lick answers both directions"
+        }
+      },
+      {
+        "idx": 1,
+        "from": "tips[4]",
+        "verified": {
+          "date": "2026-10-05",
+          "verdict": "confirmed",
+          "source": "https://howdoiplay.com/tips/largo.html",
+          "text": "the lick drag interrupts skewer, icarus dive, charge of darkness, and blast off"
+        }
+      },
+      {
+        "idx": 2,
+        "from": "tips[11]",
+        "verified": {
+          "date": "2026-10-05",
+          "verdict": "confirmed",
+          "source": "https://howdoiplay.com/tips/largo.html",
+          "text": "frogstomp and the rhapsody blitz damage hit invisible and fogged bodies, no dust needed to clear the fog runners"
+        }
+      },
+      {
+        "idx": 3,
+        "from": "counters[0]",
+        "verified": {
+          "date": "2026-10-05",
+          "verdict": "confirmed",
+          "source": "https://howdoiplay.com/tips/largo.html",
+          "text": "the lick turns you to face him, never panic leap or heavenly jump after the lick lands or you dive deeper"
+        }
+      },
+      {
+        "idx": 4,
+        "from": "counters[1]",
+        "verified": {
+          "date": "2026-10-05",
+          "verdict": "confirmed",
+          "source": "https://howdoiplay.com/tips/largo.html",
+          "text": "croak of genius wipes off with a basic dispel, eul and nullifier peel the reverb off your backs"
         }
       }
     ],
@@ -2697,6 +2749,68 @@
         }
       }
     ],
+    "templar-assassin": [
+      {
+        "idx": 0,
+        "from": "tips[1]",
+        "verified": {
+          "date": "2026-10-04",
+          "verdict": "confirmed",
+          "source": "https://howdoiplay.com/tips/templar_assassin.html",
+          "text": "refraction blocks the whole instance, the blink dagger and the regen items never break through the shell"
+        }
+      },
+      {
+        "idx": 1,
+        "from": "tips[4]",
+        "verified": {
+          "date": "2026-10-04",
+          "verdict": "confirmed",
+          "source": "https://howdoiplay.com/tips/templar_assassin.html",
+          "text": "meld has no cast or fade time, it disjoints the shots mid chase and the juke in fog leaves them chasing ghosts"
+        }
+      },
+      {
+        "idx": 2,
+        "from": "tips[8]",
+        "verified": {
+          "date": "2026-10-04",
+          "verdict": "confirmed",
+          "source": "https://howdoiplay.com/tips/templar_assassin.html",
+          "text": "the meld strike rides the psi blade spill, the armor reduction lands on every body the attack spills onto"
+        }
+      },
+      {
+        "idx": 3,
+        "from": "counters[0]",
+        "verified": {
+          "date": "2026-10-04",
+          "verdict": "confirmed",
+          "source": "https://howdoiplay.com/tips/templar_assassin.html",
+          "text": "overkill on one refraction layer never bleeds into the next, one big nuke peels exactly one charge"
+        }
+      },
+      {
+        "idx": 4,
+        "from": "counters[1]",
+        "verified": {
+          "date": "2026-10-04",
+          "verdict": "confirmed",
+          "source": "https://howdoiplay.com/tips/templar_assassin.html",
+          "text": "meld never breaks to stuns or silences, the knockback spells break it and the dust and sentries reveal it"
+        }
+      },
+      {
+        "idx": 5,
+        "from": "counters[6]",
+        "verified": {
+          "date": "2026-10-04",
+          "verdict": "confirmed",
+          "source": "https://howdoiplay.com/tips/templar_assassin.html",
+          "text": "the early sentries on the hill finish the meld ganks and clear her traps on your side"
+        }
+      }
+    ],
     "terrorblade": [
       {
         "idx": 0,
@@ -2942,6 +3056,68 @@
           "verdict": "confirmed",
           "source": "https://howdoiplay.com/tips/ursa.html",
           "text": "the overpower burst wipes off with any basic purge, the shadow demon purge bites through the enrage plan"
+        }
+      }
+    ],
+    "venomancer": [
+      {
+        "idx": 0,
+        "from": "tips[3]",
+        "verified": {
+          "date": "2026-10-05",
+          "verdict": "confirmed",
+          "source": "https://howdoiplay.com/tips/venomancer.html",
+          "text": "no hero forces the wards to swing, stop them empty handed and park the spares on the cliffs out of sight"
+        }
+      },
+      {
+        "idx": 1,
+        "from": "tips[4]",
+        "verified": {
+          "date": "2026-10-05",
+          "verdict": "confirmed",
+          "source": "https://howdoiplay.com/tips/venomancer.html",
+          "text": "the ward attacks carry half damage poison sting with the full slow, every body the ward touches pays the chase tax"
+        }
+      },
+      {
+        "idx": 2,
+        "from": "tips[7]",
+        "verified": {
+          "date": "2026-10-05",
+          "verdict": "confirmed",
+          "source": "https://howdoiplay.com/tips/venomancer.html",
+          "text": "the wards see 800 both day and night, spam them for vision across every approach"
+        }
+      },
+      {
+        "idx": 3,
+        "from": "tips[10]",
+        "verified": {
+          "date": "2026-10-05",
+          "verdict": "confirmed",
+          "source": "https://howdoiplay.com/tips/venomancer.html",
+          "text": "the spread projectiles carry every debuff venomancer applied on the target and duplicate them on the secondary bodies"
+        }
+      },
+      {
+        "idx": 4,
+        "from": "counters[2]",
+        "verified": {
+          "date": "2026-10-05",
+          "verdict": "confirmed",
+          "source": "https://howdoiplay.com/tips/venomancer.html",
+          "text": "the venom debuffs peel to a basic dispel, manta and lotus wipe the whole kit until the snakebite talent"
+        }
+      },
+      {
+        "idx": 5,
+        "from": "counters[0]",
+        "verified": {
+          "date": "2026-10-05",
+          "verdict": "confirmed",
+          "source": "https://howdoiplay.com/tips/venomancer.html",
+          "text": "the sting dot is hp removal, it never cancels the blink daggers or the regen items"
         }
       }
     ],

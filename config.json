@@ -114,6 +114,12 @@
       "tier": "dedicated"
     },
     {
+      "slug": "templar-assassin",
+      "name": "Templar Assassin",
+      "role": "1",
+      "tier": "dedicated"
+    },
+    {
       "slug": "alchemist",
       "name": "Alchemist",
       "role": "1",
@@ -246,6 +252,12 @@
       "tier": "dedicated"
     },
     {
+      "slug": "largo",
+      "name": "Largo",
+      "role": "3",
+      "tier": "dedicated"
+    },
+    {
       "slug": "timbersaw",
       "name": "Timbersaw",
       "role": "3",
@@ -282,27 +294,9 @@
       "tier": "dedicated"
     },
     {
-      "slug": "techies",
-      "name": "Techies",
-      "role": "4",
-      "tier": "dedicated"
-    },
-    {
       "slug": "rubick",
       "name": "Rubick",
       "role": "4",
-      "tier": "dedicated"
-    },
-    {
-      "slug": "ancient-apparition",
-      "name": "Ancient Apparition",
-      "role": "4",
-      "tier": "dedicated"
-    },
-    {
-      "slug": "lich",
-      "name": "Lich",
-      "role": "5",
       "tier": "dedicated"
     },
     {
@@ -318,14 +312,14 @@
       "tier": "dedicated"
     },
     {
-      "slug": "witch-doctor",
-      "name": "Witch Doctor",
+      "slug": "rattletrap",
+      "name": "Clockwerk",
       "role": "5",
       "tier": "dedicated"
     },
     {
-      "slug": "rattletrap",
-      "name": "Clockwerk",
+      "slug": "venomancer",
+      "name": "Venomancer",
       "role": "5",
       "tier": "dedicated"
     },
@@ -334,7 +328,34 @@
       "name": "Enchantress",
       "role": "5",
       "tier": "dedicated"
+    },
+    {
+      "slug": "techies",
+      "name": "Techies",
+      "role": "5",
+      "tier": "dedicated"
+    },
+    {
+      "slug": "lich",
+      "name": "Lich",
+      "role": "5",
+      "tier": "dedicated"
+    },
+    {
+      "slug": "witch-doctor",
+      "name": "Witch Doctor",
+      "role": "5",
+      "tier": "dedicated"
+    },
+    {
+      "slug": "ancient-apparition",
+      "name": "Ancient Apparition",
+      "role": "5",
+      "tier": "dedicated"
     }
+  ],
+  "orderPinnedRoles": [
+    "5"
   ],
   "heatmap": {
     "enemyCount": 26

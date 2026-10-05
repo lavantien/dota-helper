@@ -145,7 +145,7 @@ function renderRole(roleId) {
   const r = G.roles.find(x => x.id === roleId);
   d3.select('#treeTitle').text(r.label);
   d3.select('#treeIntro').html('listed in pool declaration order, sorted by win rate at the position (divine-immortal ' +
-    'ranked all pick); the same order lives in the <a href="../picker/picker.html">pick simulator</a> legend. ' +
+    'ranked all pick, except hand-pinned roles); the same order lives in the <a href="../picker/picker.html">pick simulator</a> legend. ' +
     'the picker is the main tool, this guide is the supplement.');
   d3.select('#rolePool').html('').selectAll('button').data(
     G.pool.filter(h => h.roles.includes(roleId)))

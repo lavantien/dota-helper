@@ -9,15 +9,15 @@ offline dota 2 pick simulator and hero-pool guide for patch 7.41f. static pages 
 
 ![the guide hero panel for phantom assassin, build, timings, tech, mechanics, and matchup tables](docs/guide.png)
 
-## frozen repertoire (v0.5)
+## frozen repertoire (v0.6)
 
-the lineup below is the hard-frozen pool: membership changes only through a deliberate reshape commit, never through a data refresh. `order-pool` may still re-sort within a role for display. in the picker these lists are display only: every core hero competes for all three core seats and every support for both support seats, the score decides.
+the lineup below is the hard-frozen pool: membership changes only through a deliberate reshape commit, never through a data refresh. `order-pool` may still re-sort within a role for display, except roles pinned in `orderPinnedRoles`, which keep their authored order. in the picker these lists are display only: every core hero competes for all three core seats and every support for both support seats, the score decides.
 
-- pos 1, carry: Lone Druid, Alchemist, Monkey King, Tiny, Sven, Terrorblade, Luna, Windranger, Phantom Lancer, Clinkz, Nature's Prophet, Lifestealer, Juggernaut, Spectre, Anti-Mage, Ursa, Phantom Assassin
-- pos 2, mid: Pangolier, Marci, Storm Spirit, Slark, Dragon Knight, Leshrac, Outworld Destroyer
-- pos 3, offlane: Doom, Centaur Warrunner, Enigma, Timbersaw, Slardar, Brewmaster, Lycan, Dawnbreaker, Necrophos, Viper, Death Prophet, Dark Seer
-- pos 4, soft support: Rubick, Bounty Hunter, Nyx Assassin, Mirana, Shadow Shaman, Earthshaker, Ancient Apparition, Techies
-- pos 5, hard support: Winter Wyvern, Bane, Clockwerk, Enchantress, Lich, Witch Doctor
+- pos 1, carry: Phantom Lancer, Clinkz, Juggernaut, Spectre, Lifestealer, Sven, Anti-Mage, Windranger, Phantom Assassin, Ursa, Luna, Terrorblade, Lone Druid, Templar Assassin, Alchemist, Tiny, Nature's Prophet, Monkey King
+- pos 2, mid: Marci, Dragon Knight, Outworld Destroyer, Slark, Leshrac, Pangolier, Storm Spirit
+- pos 3, offlane: Enigma, Brewmaster, Dawnbreaker, Lycan, Dark Seer, Viper, Centaur Warrunner, Necrophos, Death Prophet, Slardar, Doom, Largo, Timbersaw
+- pos 4, soft support: Bounty Hunter, Nyx Assassin, Earthshaker, Shadow Shaman, Mirana, Rubick
+- pos 5, hard support: Winter Wyvern, Bane, Clockwerk, Venomancer, Enchantress, Techies, Lich, Witch Doctor, Ancient Apparition
 
 ## tools
 
