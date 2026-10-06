@@ -207,9 +207,7 @@ const slugIdx = {};
 G.slugs.forEach((s, i) => { slugIdx[s] = i; });
 
 // repertoire order: roles in order, fallbackOrder within each role, sorted by
-// per-position win rate in divine-immortal ranked all pick by make order-pool,
-// except hand-pinned roles from config orderPinnedRoles which keep their
-// authored declaration order.
+// per-position win rate in divine-immortal ranked all pick by make order-pool.
 // every hero seats one role under the frozen lineup, no hero repeats across groups.
 // single source for the legend rendering and the search's empty-query browse
 function poolGroups() {

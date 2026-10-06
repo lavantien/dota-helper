@@ -475,9 +475,9 @@ if (Test-Path $pickerDir) {
 # with the v0.4 freeze, 900 with the october pos 5 reseat (64 rules over 52 heroes);
 # config.go is that hub's
 # loader, one struct and one validate arm per hub section, so it tracks the
-# same growth; order.go grew past the blanket with the orderPinnedRoles pin
-# (one config field, one sort skip, one doc line); check.ps1 grows the same
-# way, one gate per pass that touches the pool or its derived surfaces
+# same growth; order.go carries the byte-splice renderer and its preservation
+# guards past the blanket; check.ps1 grows the same way, one gate per pass
+# that touches the pool or its derived surfaces
 $slocCapFor = @{ 'config.json' = 900; 'content.json' = 1300; 'picker\gates.json' = 900; 'guide\data.js' = 700; 'engine\internal\config\config.go' = 550; 'engine\internal\order\order.go' = 550; 'scripts\check.ps1' = 550 }
 $seen = @{}
 $raised = 0

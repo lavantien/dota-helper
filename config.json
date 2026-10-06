@@ -264,12 +264,6 @@
       "tier": "dedicated"
     },
     {
-      "slug": "rubick",
-      "name": "Rubick",
-      "role": "4",
-      "tier": "dedicated"
-    },
-    {
       "slug": "bounty-hunter",
       "name": "Bounty Hunter",
       "role": "4",
@@ -278,6 +272,30 @@
     {
       "slug": "nyx-assassin",
       "name": "Nyx Assassin",
+      "role": "4",
+      "tier": "dedicated"
+    },
+    {
+      "slug": "earthshaker",
+      "name": "Earthshaker",
+      "role": "4",
+      "tier": "dedicated"
+    },
+    {
+      "slug": "shadow-shaman",
+      "name": "Shadow Shaman",
+      "role": "4",
+      "tier": "dedicated"
+    },
+    {
+      "slug": "mirana",
+      "name": "Mirana",
+      "role": "4",
+      "tier": "dedicated"
+    },
+    {
+      "slug": "rubick",
+      "name": "Rubick",
       "role": "4",
       "tier": "dedicated"
     },
@@ -294,21 +312,9 @@
       "tier": "dedicated"
     },
     {
-      "slug": "mirana",
-      "name": "Mirana",
-      "role": "4",
-      "tier": "dedicated"
-    },
-    {
-      "slug": "shadow-shaman",
-      "name": "Shadow Shaman",
-      "role": "4",
-      "tier": "dedicated"
-    },
-    {
-      "slug": "earthshaker",
-      "name": "Earthshaker",
-      "role": "4",
+      "slug": "lich",
+      "name": "Lich",
+      "role": "5",
       "tier": "dedicated"
     },
     {
@@ -320,6 +326,24 @@
     {
       "slug": "bane",
       "name": "Bane",
+      "role": "5",
+      "tier": "dedicated"
+    },
+    {
+      "slug": "witch-doctor",
+      "name": "Witch Doctor",
+      "role": "5",
+      "tier": "dedicated"
+    },
+    {
+      "slug": "techies",
+      "name": "Techies",
+      "role": "5",
+      "tier": "dedicated"
+    },
+    {
+      "slug": "ancient-apparition",
+      "name": "Ancient Apparition",
       "role": "5",
       "tier": "dedicated"
     },
@@ -340,35 +364,7 @@
       "name": "Enchantress",
       "role": "5",
       "tier": "dedicated"
-    },
-    {
-      "slug": "techies",
-      "name": "Techies",
-      "role": "5",
-      "tier": "dedicated"
-    },
-    {
-      "slug": "lich",
-      "name": "Lich",
-      "role": "5",
-      "tier": "dedicated"
-    },
-    {
-      "slug": "witch-doctor",
-      "name": "Witch Doctor",
-      "role": "5",
-      "tier": "dedicated"
-    },
-    {
-      "slug": "ancient-apparition",
-      "name": "Ancient Apparition",
-      "role": "5",
-      "tier": "dedicated"
     }
-  ],
-  "orderPinnedRoles": [
-    "4",
-    "5"
   ],
   "heatmap": {
     "enemyCount": 26

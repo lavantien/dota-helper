@@ -11,13 +11,13 @@ offline dota 2 pick simulator and hero-pool guide for patch 7.41f. static pages 
 
 ## frozen repertoire (v0.7)
 
-the lineup below is the hard-frozen pool: membership changes only through a deliberate reshape commit, never through a data refresh. `order-pool` may still re-sort within a role for display, except roles pinned in `orderPinnedRoles`, which keep their authored order. in the picker these lists are display only: every core hero competes for all three core seats and every support for both support seats, the score decides.
+the lineup below is the hard-frozen pool: membership changes only through a deliberate reshape commit, never through a data refresh. `order-pool` re-sorts every role for display from the latest mined per-position win rates. in the picker these lists are display only: every core hero competes for all three core seats and every support for both support seats, the score decides.
 
 - pos 1, carry: Phantom Lancer, Clinkz, Juggernaut, Spectre, Lifestealer, Sven, Anti-Mage, Windranger, Phantom Assassin, Ursa, Luna, Terrorblade, Lone Druid, Templar Assassin, Alchemist, Tiny, Nature's Prophet, Monkey King
 - pos 2, mid: Marci, Dragon Knight, Outworld Destroyer, Slark, Leshrac, Pangolier, Storm Spirit
 - pos 3, offlane: Enigma, Brewmaster, Dawnbreaker, Lycan, Dark Seer, Viper, Centaur Warrunner, Necrophos, Death Prophet, Slardar, Doom, Largo, Timbersaw
-- pos 4, soft support: Rubick, Bounty Hunter, Nyx Assassin, Tusk, Hoodwink, Mirana, Shadow Shaman, Earthshaker
-- pos 5, hard support: Winter Wyvern, Bane, Clockwerk, Venomancer, Enchantress, Techies, Lich, Witch Doctor, Ancient Apparition
+- pos 4, soft support: Bounty Hunter, Nyx Assassin, Earthshaker, Shadow Shaman, Mirana, Rubick, Tusk, Hoodwink
+- pos 5, hard support: Lich, Winter Wyvern, Bane, Witch Doctor, Techies, Ancient Apparition, Clockwerk, Venomancer, Enchantress
 
 ## tools
 

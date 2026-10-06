@@ -2,9 +2,7 @@
 // rates (hero_position, the scoped divine-immortal ranked all pick winDay
 // crawl). It owns exactly ordering in two files, the config.json pool array
 // and the gates.json fallbackOrder arrays; membership is never touched and
-// every other byte rides through verbatim. Roles listed in the hub's
-// orderPinnedRoles keep their authored declaration order instead, a
-// display-only pin the scoring never reads.
+// every other byte rides through verbatim.
 package order
 
 import (
@@ -68,19 +66,13 @@ func loadPositionWR(db *sql.DB) (map[string]map[int]posStat, string, error) {
 }
 
 // roleOrders sorts each role's pool entries by win rate at that position
-// descending, pick count descending, slug ascending. Roles listed in
-// orderPinnedRoles keep their authored declaration order instead: the pin is
-// display-only, scoring never reads it. A hero without a row at its pooled
-// position is absent data, not a sort-last fact: every miss is reported at
-// once, pinned or not.
+// descending, pick count descending, slug ascending. A hero without a row at
+// its pooled position is absent data, not a sort-last fact: every miss is
+// reported at once.
 func roleOrders(cfg *config.Config, stats map[string]map[int]posStat) (map[string][]config.PoolEntry, error) {
 	type roleEntry struct {
 		entry config.PoolEntry
 		stat  posStat
-	}
-	pinned := map[string]bool{}
-	for _, r := range cfg.OrderPinnedRoles {
-		pinned[r] = true
 	}
 	var missing []string
 	grouped := map[string][]roleEntry{}
@@ -101,17 +93,15 @@ func roleOrders(cfg *config.Config, stats map[string]map[int]posStat) (map[strin
 	}
 	ordered := map[string][]config.PoolEntry{}
 	for role, entries := range grouped {
-		if !pinned[role] {
-			sort.Slice(entries, func(i, j int) bool {
-				if entries[i].stat.WR != entries[j].stat.WR {
-					return entries[i].stat.WR > entries[j].stat.WR
-				}
-				if entries[i].stat.PickCount != entries[j].stat.PickCount {
-					return entries[i].stat.PickCount > entries[j].stat.PickCount
-				}
-				return entries[i].entry.Slug < entries[j].entry.Slug
-			})
-		}
+		sort.Slice(entries, func(i, j int) bool {
+			if entries[i].stat.WR != entries[j].stat.WR {
+				return entries[i].stat.WR > entries[j].stat.WR
+			}
+			if entries[i].stat.PickCount != entries[j].stat.PickCount {
+				return entries[i].stat.PickCount > entries[j].stat.PickCount
+			}
+			return entries[i].entry.Slug < entries[j].entry.Slug
+		})
 		out := make([]config.PoolEntry, len(entries))
 		for i, re := range entries {
 			out[i] = re.entry

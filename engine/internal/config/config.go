@@ -255,7 +255,6 @@ type Config struct {
 	Roles            []RoleDef          `json:"roles"`
 	SharedRolePools  [][]string         `json:"sharedRolePools"` // roles fielding one shared picker candidate pool
 	Pool             []PoolEntry        `json:"pool"`
-	OrderPinnedRoles []string           `json:"orderPinnedRoles"` // display-only roles whose authored pool order order-pool never re-sorts
 	Heatmap          HeatmapCfg         `json:"heatmap"`
 	AoEClearHeroes   []string           `json:"aoeClearHeroes"`
 	Scope            Scope              `json:"scope"`
@@ -306,16 +305,6 @@ func (c *Config) Validate() error {
 	}
 	if err := c.validateSharedRolePools(roleIDs); err != nil {
 		return err
-	}
-	pinned := map[string]bool{}
-	for _, r := range c.OrderPinnedRoles {
-		if !roleIDs[r] {
-			return fmt.Errorf("orderPinnedRoles has unknown role %q", r)
-		}
-		if pinned[r] {
-			return fmt.Errorf("duplicate pinned role %q", r)
-		}
-		pinned[r] = true
 	}
 	seen := map[string]bool{}
 	for _, e := range c.Pool {

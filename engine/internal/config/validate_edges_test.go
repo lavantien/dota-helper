@@ -70,34 +70,6 @@ func TestValidateRejectsBadPoolEntries(t *testing.T) {
 	}
 }
 
-// TestValidateRejectsBadOrderPins covers the orderPinnedRoles arms: ids
-// outside the role table and duplicate pins.
-func TestValidateRejectsBadOrderPins(t *testing.T) {
-	tests := []struct {
-		name    string
-		mut     func(*Config)
-		wantErr string
-	}{
-		{"unknown role", func(c *Config) { c.OrderPinnedRoles = []string{"6"} },
-			`orderPinnedRoles has unknown role "6"`},
-		{"duplicate role", func(c *Config) { c.OrderPinnedRoles = []string{"5", "5"} },
-			`duplicate pinned role "5"`},
-	}
-	for _, tt := range tests {
-		t.Run(tt.name, func(t *testing.T) {
-			c, err := Load(realConfig)
-			if err != nil {
-				t.Fatal(err)
-			}
-			tt.mut(c)
-			err = c.Validate()
-			if err == nil || err.Error() != tt.wantErr {
-				t.Fatalf("validate error = %v, want %q", err, tt.wantErr)
-			}
-		})
-	}
-}
-
 // TestValidateRejectsBadFlatFloors covers the single-value floors across the
 // hub sections: each error names its own key so a bad value is findable.
 func TestValidateRejectsBadFlatFloors(t *testing.T) {
