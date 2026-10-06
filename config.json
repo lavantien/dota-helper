@@ -174,8 +174,32 @@
       "tier": "dedicated"
     },
     {
+      "slug": "ember-spirit",
+      "name": "Ember Spirit",
+      "role": "2",
+      "tier": "dedicated"
+    },
+    {
+      "slug": "snapfire",
+      "name": "Snapfire",
+      "role": "2",
+      "tier": "dedicated"
+    },
+    {
+      "slug": "lina",
+      "name": "Lina",
+      "role": "2",
+      "tier": "dedicated"
+    },
+    {
       "slug": "pangolier",
       "name": "Pangolier",
+      "role": "2",
+      "tier": "dedicated"
+    },
+    {
+      "slug": "sniper",
+      "name": "Sniper",
       "role": "2",
       "tier": "dedicated"
     },
@@ -194,6 +218,12 @@
     {
       "slug": "brewmaster",
       "name": "Brewmaster",
+      "role": "3",
+      "tier": "dedicated"
+    },
+    {
+      "slug": "pudge",
+      "name": "Pudge",
       "role": "3",
       "tier": "dedicated"
     },

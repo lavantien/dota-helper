@@ -1,5 +1,5 @@
 {
-  "curatedAt": "2026-10-05",
+  "curatedAt": "2026-10-06",
   "source": "ref/dota2/howdoiplay/howdoiplay.json",
   "patch": "7.41",
   "heroes": {
@@ -911,6 +911,58 @@
         }
       }
     ],
+    "ember-spirit": [
+      {
+        "idx": 0,
+        "from": "tips[0]",
+        "verified": {
+          "date": "2026-10-06",
+          "verdict": "confirmed",
+          "source": "https://howdoiplay.com/tips/ember-spirit.html",
+          "text": "searing chains never grabs fogged or invisible bodies, but the grab reveals true sight on what it holds"
+        }
+      },
+      {
+        "idx": 1,
+        "from": "tips[1]",
+        "verified": {
+          "date": "2026-10-06",
+          "verdict": "confirmed",
+          "source": "https://howdoiplay.com/tips/ember-spirit.html",
+          "text": "spells and items keep casting mid sleight of fist, the whole kit rides the dash"
+        }
+      },
+      {
+        "idx": 2,
+        "from": "tips[8]",
+        "verified": {
+          "date": "2026-10-06",
+          "verdict": "confirmed",
+          "source": "https://howdoiplay.com/tips/ember-spirit.html",
+          "text": "sleight of fist never breaks smoke when it lands on creeps, the gank walks in quiet"
+        }
+      },
+      {
+        "idx": 3,
+        "from": "counters[2]",
+        "verified": {
+          "date": "2026-10-06",
+          "verdict": "confirmed",
+          "source": "https://howdoiplay.com/tips/ember-spirit.html",
+          "text": "roots and leashes shut down both the remnant activate and the sleight, the escapes need legs"
+        }
+      },
+      {
+        "idx": 4,
+        "from": "counters[5]",
+        "verified": {
+          "date": "2026-10-06",
+          "verdict": "confirmed",
+          "source": "https://howdoiplay.com/tips/ember-spirit.html",
+          "text": "sleight of fist pays the evasion, disarm, and damage block tolls, the blind patches blunt the slash"
+        }
+      }
+    ],
     "enchantress": [
       {
         "idx": 0,
@@ -1444,6 +1496,58 @@
           "verdict": "confirmed",
           "source": "https://dota2.fandom.com/wiki/Break",
           "text": "break shuts off ghoul frenzy and feast together, silver edge, khanda, and viper strike carry it"
+        }
+      }
+    ],
+    "lina": [
+      {
+        "idx": 0,
+        "from": "tips[3]",
+        "verified": {
+          "date": "2026-10-06",
+          "verdict": "confirmed",
+          "source": "https://howdoiplay.com/tips/lina.html",
+          "text": "light strike array chops the trees in its blast, the juke lines fold"
+        }
+      },
+      {
+        "idx": 1,
+        "from": "tips[2]",
+        "verified": {
+          "date": "2026-10-06",
+          "verdict": "confirmed",
+          "source": "https://howdoiplay.com/tips/lina.html",
+          "text": "ground cast the slave from fog and the hit enemy never sees you, unit casts reveal lina"
+        }
+      },
+      {
+        "idx": 2,
+        "from": "tips[5]",
+        "verified": {
+          "date": "2026-10-06",
+          "verdict": "confirmed",
+          "source": "https://howdoiplay.com/tips/lina.html",
+          "text": "scout fog and invis by lobbing spells their way, the fiery soul stack climbing marks the body"
+        }
+      },
+      {
+        "idx": 3,
+        "from": "counters[0]",
+        "verified": {
+          "date": "2026-10-06",
+          "verdict": "confirmed",
+          "source": "https://howdoiplay.com/tips/lina.html",
+          "text": "the slow burn innate dot never dispels, the rot rides until the grave"
+        }
+      },
+      {
+        "idx": 4,
+        "from": "counters[1]",
+        "verified": {
+          "date": "2026-10-06",
+          "verdict": "confirmed",
+          "source": "https://howdoiplay.com/tips/lina.html",
+          "text": "a beat sits between the laguna connect and its damage, banishes, euls, and manta split the burst"
         }
       }
     ],
@@ -2273,6 +2377,58 @@
         }
       }
     ],
+    "pudge": [
+      {
+        "idx": 0,
+        "from": "tips[3]",
+        "verified": {
+          "date": "2026-10-06",
+          "verdict": "confirmed",
+          "source": "https://howdoiplay.com/tips/pudge.html",
+          "text": "the hook always drops its catch at the cast spot, save the repositioned ally or reel the relocating io mid return"
+        }
+      },
+      {
+        "idx": 1,
+        "from": "tips[5]",
+        "verified": {
+          "date": "2026-10-06",
+          "verdict": "confirmed",
+          "source": "https://howdoiplay.com/tips/pudge.html",
+          "text": "the hook never cancels an ally channel, the teleporting core keeps winding through the reel"
+        }
+      },
+      {
+        "idx": 2,
+        "from": "tips[8]",
+        "verified": {
+          "date": "2026-10-06",
+          "verdict": "confirmed",
+          "source": "https://howdoiplay.com/tips/pudge.html",
+          "text": "the hook instantly kills enemy illusions and every non ancient creep it clips, siege creeps included"
+        }
+      },
+      {
+        "idx": 3,
+        "from": "counters[3]",
+        "verified": {
+          "date": "2026-10-06",
+          "verdict": "confirmed",
+          "source": "https://howdoiplay.com/tips/pudge.html",
+          "text": "dismember is a channel, land the stun or the silence and the chew ends on the spot"
+        }
+      },
+      {
+        "idx": 4,
+        "from": "counters[4]",
+        "verified": {
+          "date": "2026-10-06",
+          "verdict": "confirmed",
+          "source": "https://howdoiplay.com/tips/pudge.html",
+          "text": "cut the lane trees and the hook lanes lose the fog, every reel telegraphs from the stump line"
+        }
+      }
+    ],
     "rattletrap": [
       {
         "idx": 0,
@@ -2580,6 +2736,110 @@
           "verdict": "confirmed",
           "source": "https://dota2.fandom.com/wiki/Bloodseeker",
           "text": "bloodseeker owns him, no pact off rupture, thirst true sights the dance"
+        }
+      }
+    ],
+    "snapfire": [
+      {
+        "idx": 0,
+        "from": "tips[3]",
+        "verified": {
+          "date": "2026-10-06",
+          "verdict": "confirmed",
+          "source": "https://howdoiplay.com/tips/snapfire.html",
+          "text": "the cookie bounce carries allies over cliffs, the hop reads terrain like a force staff"
+        }
+      },
+      {
+        "idx": 1,
+        "from": "tips[4]",
+        "verified": {
+          "date": "2026-10-06",
+          "verdict": "confirmed",
+          "source": "https://howdoiplay.com/tips/snapfire.html",
+          "text": "the cookie moves allies even while rooted, the bounce cares nothing for the root"
+        }
+      },
+      {
+        "idx": 2,
+        "from": "tips[6]",
+        "verified": {
+          "date": "2026-10-06",
+          "verdict": "confirmed",
+          "source": "https://howdoiplay.com/tips/snapfire.html",
+          "text": "the cookie landing chews the trees around it, the hop opens fresh juke lines"
+        }
+      },
+      {
+        "idx": 3,
+        "from": "tips[12]",
+        "verified": {
+          "date": "2026-10-06",
+          "verdict": "confirmed",
+          "source": "https://howdoiplay.com/tips/snapfire.html",
+          "text": "the kisses give vision in flight and where they pool, the lob doubles as a ward"
+        }
+      },
+      {
+        "idx": 4,
+        "from": "counters[1]",
+        "verified": {
+          "date": "2026-10-06",
+          "verdict": "confirmed",
+          "source": "https://howdoiplay.com/tips/snapfire.html",
+          "text": "the shredder buff and the minus armor debuff both wipe off with a basic dispel"
+        }
+      }
+    ],
+    "sniper": [
+      {
+        "idx": 0,
+        "from": "tips[0]",
+        "verified": {
+          "date": "2026-10-06",
+          "verdict": "confirmed",
+          "source": "https://howdoiplay.com/tips/sniper.html",
+          "text": "shrapnel casts on the same ground never stack, spread the carpet wide"
+        }
+      },
+      {
+        "idx": 1,
+        "from": "tips[8]",
+        "verified": {
+          "date": "2026-10-06",
+          "verdict": "confirmed",
+          "source": "https://howdoiplay.com/tips/sniper.html",
+          "text": "any kill refreshes the assassinate cooldown, the cast does not need the killing blow"
+        }
+      },
+      {
+        "idx": 2,
+        "from": "tips[12]",
+        "verified": {
+          "date": "2026-10-06",
+          "verdict": "confirmed",
+          "source": "https://howdoiplay.com/tips/sniper.html",
+          "text": "the shard grenade knockback hops cliffs, blast out of the kinetic field or up the high ground wall"
+        }
+      },
+      {
+        "idx": 3,
+        "from": "counters[1]",
+        "verified": {
+          "date": "2026-10-06",
+          "verdict": "confirmed",
+          "source": "https://howdoiplay.com/tips/sniper.html",
+          "text": "an early raindrop soaks the assassinate nuke, the cross map shot stops ending lanes"
+        }
+      },
+      {
+        "idx": 4,
+        "from": "counters[3]",
+        "verified": {
+          "date": "2026-10-06",
+          "verdict": "confirmed",
+          "source": "https://howdoiplay.com/tips/sniper.html",
+          "text": "roots and leashes pin the shard grenade self knockback, the escape hop dies standing"
         }
       }
     ],

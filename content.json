@@ -197,6 +197,19 @@
       ],
       "mechanics": [["tip", "any unit his spells kill flies backwards and deals damage on the way, the slugger innate taxes the clumped retreat"], ["tip", "the fissure block is often worth more than the stun, lead the long casts ahead and never cut the team off the target"], ["tip", "do not mash the combo, one right click fits between the casts once aftershock is maxed"], ["tip", "the shard puts aftershock on every lingering fissure from anywhere, stun off the old cracks mid fight"], ["tip", "echo slam hits the invisible in full, the smoke and the meld give no shelter"], ["tip", "echo slam carries no cast animation, it lands as long as he is not disabled"], ["counter", "clockwerk breaks the combo, the battery assault cancels most of the cast animations, the slam still lands"], ["counter", "aftershock never triggers under break, the silver edge guts the chain"], ["counter", "roots pin the scepter totem jump in place"]]
     },
+    "ember-spirit": {
+      "identity": "fire remnant tempo mid, sleight of fist slashes the clump from range and dodges the commit, searing chains root the chase, flame guard eats the magic trade, activate fire remnants zips the map and cashes the fight",
+      "why": "dedicated pos 2, every lane stays reachable through the remnant travel and the sleight punishes every clump, favored into the rooted casters and the paper farms, vetoed by the silence chains that catch the landing and the dispels that strip the guard",
+      "how": "guard the magic trade, chain the rooted body, throw the remnant behind the fight before the commit, sleight the clump from the edge, activate onto the remnant and zip out the second one",
+      "when": "lane wins once the guard eats the poke, mid game the remnant ganks hit every lane and the runes feed the traces, late the sleight cashes every fight unless the silence lands first",
+      "build": "vessel, mage slayer, shard, bkb, kaya and sange, shiva, blessing",
+      "timings": [["vessel", 13], ["mage slayer", 18]],
+      "tech": [
+        "oracle, broodmother, meepo, and visage are the vetoes, the fate edict blanks the slash economy, the floods body the remnant traces, and the familiars chase the zip home",
+        "treant protector, bristleback, and sand king style tanky fronts are the free wins, the chains root everything that waddles and the sleight cashes the clump"
+      ],
+      "mechanics": [["tip", "searing chains never grabs fogged or invisible bodies, but the grab reveals true sight on what it holds"], ["tip", "spells and items keep casting mid sleight of fist, the whole kit rides the dash"], ["tip", "sleight of fist never breaks smoke when it lands on creeps, the gank walks in quiet"], ["counter", "roots and leashes shut down both the remnant activate and the sleight, the escapes need legs"], ["counter", "sleight of fist pays the evasion, disarm, and damage block tolls, the blind patches blunt the slash"]]
+    },
     "enchantress": {
       "identity": "convert tempo hard support, enchant takes the big neutral and turns the map, impetus taxes every retreat by the gap it leaves, untouchable slows the right clicks into bullet time, natures attendants keep the front alive",
       "why": "dedicated pos 5, the convert owns the early rotations and the impetus scales the whole game off positioning, favored into the jakiro and prophet lines, marci and the gap closing dives dump her through the slow",
@@ -300,6 +313,19 @@
         "SF and gyro style farmers are the free wins, lanes well beside bounty roam or enigma setups"
       ],
       "mechanics": [["tip", "rage's debuff immunity prevents the tormentor's damage reflect"], ["tip", "infest applies a rare dispel that also wipes buffs, infesting right after a rune loses the rune buff"], ["counter", "ghost scepter, force, blink, and shiva's kite him, a tp scroll saves you until the basher lands"], ["counter", "break shuts off ghoul frenzy and feast together, silver edge, khanda, and viper strike carry it"]]
+    },
+    "lina": {
+      "identity": "burst mage mid, dragon slave waves the lane down, light strike array stuns the committed line, fiery soul stacks the cast and attack tempo, laguna blade deletes the isolated core through its save",
+      "why": "dedicated pos 2, the slave spam wins every lane that must stand in the wave and the laguna answers any single hero, favored into the paper mids and the rooted frames, vetoed by the gap close that reaches her frame before the array lands",
+      "how": "slave the wave and the ranged creep, array where they commit not where they stand, stack the soul on the wave before the fight, hold the laguna for the core once their saves burn",
+      "when": "lane dominance off the slave spam, mid game the array sets every pick and the rune fights feed the soul, late the right clicks carry if the farm held, dies the moment the dive lands",
+      "build": "yasha and kaya, bkb, sphere, ethereal blade, shard, sheepstick, blessing",
+      "timings": [["yasha and kaya", 23], ["bkb", 32]],
+      "tech": [
+        "visage, bounty hunter, clinkz, and enigma are the vetoes, the familiars dive the paper frame, the track crew never leaves the lane, and the hole swallows the array windup",
+        "shadow fiend, alchemist, and nature's prophet style farms are the free wins, the paper lanes eat the slave spam and the laguna ends the race"
+      ],
+      "mechanics": [["tip", "light strike array chops the trees in its blast, the juke lines fold"], ["tip", "ground cast the slave from fog and the hit enemy never sees you, unit casts reveal lina"], ["tip", "scout fog and invis by lobbing spells their way, the fiery soul stack climbing marks the body"], ["counter", "the slow burn innate dot never dispels, the rot rides until the grave"], ["counter", "a beat sits between the laguna connect and its damage, banishes, euls, and manta split the burst"]]
     },
     "lone-druid": {
       "identity": "twin-hero carry controlling spirit bear for pushing and item slots, relentless lane pressure",
@@ -470,6 +496,19 @@
       ],
       "mechanics": [["tip", "the brighter doppel illusion takes full damage, group it and bait them onto the fake"], ["tip", "doppel dispels everything manta would, roots and silences lock the cast entirely"], ["tip", "doppel forces your landing spot, it outranks glimpse and x marks repositioning"], ["tip", "juxtapose multiplies off wards not buildings, serpent wards and tombstone feed the flood"], ["counter", "rupture, viper strike, maledict survive doppel and tag the real one"], ["counter", "mjollnir static shield rolls on every illusion swing, the army chips itself"]]
     },
+    "pudge": {
+      "identity": "hook offlaner, meat hook reels the first body out of every fight, rot brawls the melee range and burns through the trade, dismember chews the locked target, flesh heap stacks the tank as the picks land",
+      "why": "dedicated pos 3, one hook flips any lane and the rot zone owns the melee commit, favored into the waddling fronts and the immobile farmers, vetoed by the mobility that never stands hookable and the floods that ignore the pick",
+      "how": "hook the approach line out of the fog, rot on and walk the melee, dismember the hooked body with the follow up, stack the heap through every rotation",
+      "when": "the lane flips on the first hook, mid game the hook picks set every objective, late the heap front soaks the fight, the whiffs feed the enemy tempo",
+      "build": "consecrated wraps, blade mail, pipe, bkb, lotus, shiva, heart",
+      "timings": [["consecrated wraps", 19], ["blade mail", 20]],
+      "tech": [
+        "meepo, visage, and wraith king are the vetoes, the poof flood ignores the hook, the familiars outtempo the rot, and the reincarnation walks the pick back",
+        "shadow fiend, alchemist, and venomancer style standing farms are the free wins, the hook reels the paper frame and the rot zones the push"
+      ],
+      "mechanics": [["tip", "the hook always drops its catch at the cast spot, save the repositioned ally or reel the relocating io mid return"], ["tip", "the hook never cancels an ally channel, the teleporting core keeps winding through the reel"], ["tip", "the hook instantly kills enemy illusions and every non ancient creep it clips, siege creeps included"], ["counter", "dismember is a channel, land the stun or the silence and the chew ends on the spot"], ["counter", "cut the lane trees and the hook lanes lose the fog, every reel telegraphs from the stump line"]]
+    },
     "rattletrap": {
       "identity": "cog control hard support that hooks the pick, cages the fight and flares the map from anywhere",
       "why": "hard support pick holder, the hook starts every skirmish and the cogs close it, the flare hunts the whole map, favored into channel lines and immobile supports, vetoed by swarm bodies that eat the cogs",
@@ -534,6 +573,32 @@
         "dark pact dispels track and dust but never silences, steal stats off the tank then leave"
       ],
       "mechanics": [["tip", "every dark pact tick is a strong dispel, it rips stuns off you"], ["tip", "pounce leash cancels tps and most mobility, it functions like a root"], ["tip", "dance regen drops when enemy vision touches you, use it to sweep their wards"], ["counter", "never stun into dark pact, the ticks purge it, wait the spell out then disable"], ["counter", "break kills essence shift and dance regen, silver edge break never dispels"], ["counter", "bloodseeker owns him, no pact off rupture, thirst true sights the dance"]]
+    },
+    "snapfire": {
+      "identity": "shotgun brawl mid, scatterblast shoves the cone and doubles on the point blank, firesnap cookie flings the ally or herself into the fight, lil shredder spins the dragon gun, mortimer kisses lob the long range cluster that slows the field",
+      "why": "dedicated pos 2, the point blank scatter wins every trade that commits and the kisses break the standing sieges, favored into the clumped melee and the tanky fronts, vetoed by the long range poke that never enters the cone",
+      "how": "scatter the point blank trade, cookie the engage or the escape, shredder the clump, lob the kisses onto the objective and walk the slow field",
+      "when": "lane bully off the point blank, mid game the cookie sets every gank, late the kisses zone every fight, starves when the poke stays out of range",
+      "build": "shard, yasha and kaya, bkb, shiva, sheepstick, daedalus, refresher",
+      "timings": [["shard", 17], ["yasha and kaya", 26]],
+      "tech": [
+        "visage, enigma, and bounty hunter are the vetoes, the familiars dive the frame, the hole swallows the brawl, and the track crew never enters the cone",
+        "shadow fiend, drow ranger, and underlord style standing fronts are the free wins, the scatter cashes the clump and the kisses slow the siege"
+      ],
+      "mechanics": [["tip", "the cookie bounce carries allies over cliffs, the hop reads terrain like a force staff"], ["tip", "the cookie moves allies even while rooted, the bounce cares nothing for the root"], ["tip", "the cookie landing chews the trees around it, the hop opens fresh juke lines"], ["tip", "the kisses give vision in flight and where they pool, the lob doubles as a ward"], ["counter", "the shredder buff and the minus armor debuff both wipe off with a basic dispel"]]
+    },
+    "sniper": {
+      "identity": "range siege mid, shrapnel carpets the ground and slows the approach, headshot procs tax every trade, take aim stretches the range past every answer, assassinate channels the cross map delete",
+      "why": "dedicated pos 2, the range outtrades every lane that cannot reach him and the shrapnel owns every objective ground, favored into the paper farms that must stand and fight, vetoed by the gap close floods and the global hunt",
+      "how": "shrapnel the lane and the objective, stand at the edge of the range and tax the approach, headshot the trade, assassinate the runner once the lock lands",
+      "when": "lane bully while the range holds, mid game the shrapnel zones every fight, late the range carries unless the dive comp reaches him, the clone floods end him on sight",
+      "build": "mask of madness, pike, mjollnir, hydras breath, bkb, monkey king bar, daedalus",
+      "timings": [["mask of madness", 14], ["pike", 25]],
+      "tech": [
+        "meepo is the hard veto, the net flood pins the range and the poof burst deletes the frame before the shrapnel pays, leshrac and the brewmaster dive follow close behind",
+        "shadow fiend, tiny, and drow ranger style standing fights are the free wins, the range taxes every approach and the assassinate cashes the stun"
+      ],
+      "mechanics": [["tip", "shrapnel casts on the same ground never stack, spread the carpet wide"], ["tip", "any kill refreshes the assassinate cooldown, the cast does not need the killing blow"], ["tip", "the shard grenade knockback hops cliffs, blast out of the kinetic field or up the high ground wall"], ["counter", "an early raindrop soaks the assassinate nuke, the cross map shot stops ending lanes"], ["counter", "roots and leashes pin the shard grenade self knockback, the escape hop dies standing"]]
     },
     "spectre": {
       "identity": "global haunt scaler that punishes squishy backlines",
@@ -830,7 +895,12 @@
       ["venomancer", "gale placement onto the escaping pair and the ward carpet across the objective until every fight starts inside the poison"],
       ["largo", "lick timing onto the threatened ally and the stomp placement across the engage path until the chorus always lands on the committed fight"],
       ["hoodwink", "acorn tree placement beside the target into the bushwhack net until the stun always lands off the planted tree"],
-      ["tusk", "snowball entry timing onto the committed pair and the walrus punch release on the channeler until the pick lands as one motion"]
+      ["tusk", "snowball entry timing onto the committed pair and the walrus punch release on the channeler until the pick lands as one motion"],
+      ["ember-spirit", "sleight entry onto the clump with the remnant thrown behind before the commit until the trace entry, the slash window, and the zip out read as one motion"],
+      ["lina", "array placement onto the approach line chained into the slave and the laguna release until the stun, the wave, and the delete land as one burst"],
+      ["sniper", "shrapnel drop ahead of the moving target and the max range stutter step until every trade lands outside the answer range"],
+      ["snapfire", "point blank scatter alignment onto the creep and the hero until the double damage window pays every time the lane commits"],
+      ["pudge", "hook lead onto the moving path from fog until the reel lands on the walk line, not the body, and the dismember follows the landing"]
     ],
     "replay": [
       "after each session: 10 min, only your deaths, write one line per death: where you should have been",
@@ -869,5 +939,5 @@
       }
     ]
   },
-  "buildsMeta": "stratz itemFullPurchase completed week 1790553600, divine_immortal, fetched 2026-10-05, series 7.41"
+  "buildsMeta": "stratz itemFullPurchase completed week 1790553600, divine_immortal, fetched 2026-10-06, series 7.41"
 }

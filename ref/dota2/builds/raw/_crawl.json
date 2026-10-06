@@ -1,5 +1,5 @@
 {
-  "crawledAt": "2026-10-05T09:21:33Z",
+  "crawledAt": "2026-10-06T11:15:49Z",
   "bracket": "DIVINE_IMMORTAL",
   "source": "stratz completed-week crawl",
   "field": "itemFullPurchase",
@@ -234,6 +234,42 @@
       "rowCount": 2119
     },
     {
+      "slug": "ember-spirit",
+      "role": "2",
+      "heroId": 106,
+      "fetchedAt": "2026-10-06T11:15:47Z",
+      "cached": false,
+      "accepted": true,
+      "rowCount": 2626
+    },
+    {
+      "slug": "lina",
+      "role": "2",
+      "heroId": 25,
+      "fetchedAt": "2026-10-06T11:15:47Z",
+      "cached": false,
+      "accepted": true,
+      "rowCount": 3336
+    },
+    {
+      "slug": "sniper",
+      "role": "2",
+      "heroId": 35,
+      "fetchedAt": "2026-10-06T11:15:48Z",
+      "cached": false,
+      "accepted": true,
+      "rowCount": 2671
+    },
+    {
+      "slug": "snapfire",
+      "role": "2",
+      "heroId": 128,
+      "fetchedAt": "2026-10-06T11:15:48Z",
+      "cached": false,
+      "accepted": true,
+      "rowCount": 1990
+    },
+    {
       "slug": "enigma",
       "role": "3",
       "heroId": 33,
@@ -351,13 +387,13 @@
       "rowCount": 1898
     },
     {
-      "slug": "rubick",
-      "role": "4",
-      "heroId": 86,
-      "fetchedAt": "2026-10-05T02:59:17Z",
-      "cached": true,
+      "slug": "pudge",
+      "role": "3",
+      "heroId": 14,
+      "fetchedAt": "2026-10-06T11:15:49Z",
+      "cached": false,
       "accepted": true,
-      "rowCount": 2687
+      "rowCount": 2101
     },
     {
       "slug": "bounty-hunter",
@@ -378,31 +414,13 @@
       "rowCount": 1987
     },
     {
-      "slug": "tusk",
+      "slug": "earthshaker",
       "role": "4",
-      "heroId": 100,
-      "fetchedAt": "2026-10-05T09:21:32Z",
-      "cached": false,
-      "accepted": true,
-      "rowCount": 1607
-    },
-    {
-      "slug": "hoodwink",
-      "role": "4",
-      "heroId": 123,
-      "fetchedAt": "2026-10-05T09:21:33Z",
-      "cached": false,
-      "accepted": true,
-      "rowCount": 2662
-    },
-    {
-      "slug": "mirana",
-      "role": "4",
-      "heroId": 9,
-      "fetchedAt": "2026-10-05T02:59:17Z",
+      "heroId": 7,
+      "fetchedAt": "2026-10-05T02:59:16Z",
       "cached": true,
       "accepted": true,
-      "rowCount": 2854
+      "rowCount": 1652
     },
     {
       "slug": "shadow-shaman",
@@ -414,13 +432,49 @@
       "rowCount": 1160
     },
     {
-      "slug": "earthshaker",
+      "slug": "mirana",
       "role": "4",
-      "heroId": 7,
-      "fetchedAt": "2026-10-05T02:59:16Z",
+      "heroId": 9,
+      "fetchedAt": "2026-10-05T02:59:17Z",
       "cached": true,
       "accepted": true,
-      "rowCount": 1652
+      "rowCount": 2854
+    },
+    {
+      "slug": "rubick",
+      "role": "4",
+      "heroId": 86,
+      "fetchedAt": "2026-10-05T02:59:17Z",
+      "cached": true,
+      "accepted": true,
+      "rowCount": 2687
+    },
+    {
+      "slug": "tusk",
+      "role": "4",
+      "heroId": 100,
+      "fetchedAt": "2026-10-05T09:21:32Z",
+      "cached": true,
+      "accepted": true,
+      "rowCount": 1607
+    },
+    {
+      "slug": "hoodwink",
+      "role": "4",
+      "heroId": 123,
+      "fetchedAt": "2026-10-05T09:21:33Z",
+      "cached": true,
+      "accepted": true,
+      "rowCount": 2662
+    },
+    {
+      "slug": "lich",
+      "role": "5",
+      "heroId": 31,
+      "fetchedAt": "2026-10-05T02:59:20Z",
+      "cached": true,
+      "accepted": true,
+      "rowCount": 2083
     },
     {
       "slug": "winter-wyvern",
@@ -439,6 +493,33 @@
       "cached": true,
       "accepted": true,
       "rowCount": 1037
+    },
+    {
+      "slug": "witch-doctor",
+      "role": "5",
+      "heroId": 30,
+      "fetchedAt": "2026-10-05T02:59:21Z",
+      "cached": true,
+      "accepted": true,
+      "rowCount": 1939
+    },
+    {
+      "slug": "techies",
+      "role": "5",
+      "heroId": 105,
+      "fetchedAt": "2026-10-05T02:59:20Z",
+      "cached": true,
+      "accepted": true,
+      "rowCount": 2122
+    },
+    {
+      "slug": "ancient-apparition",
+      "role": "5",
+      "heroId": 68,
+      "fetchedAt": "2026-10-05T02:59:21Z",
+      "cached": true,
+      "accepted": true,
+      "rowCount": 1908
     },
     {
       "slug": "rattletrap",
@@ -466,42 +547,6 @@
       "cached": true,
       "accepted": true,
       "rowCount": 1236
-    },
-    {
-      "slug": "techies",
-      "role": "5",
-      "heroId": 105,
-      "fetchedAt": "2026-10-05T02:59:20Z",
-      "cached": true,
-      "accepted": true,
-      "rowCount": 2122
-    },
-    {
-      "slug": "lich",
-      "role": "5",
-      "heroId": 31,
-      "fetchedAt": "2026-10-05T02:59:20Z",
-      "cached": true,
-      "accepted": true,
-      "rowCount": 2083
-    },
-    {
-      "slug": "witch-doctor",
-      "role": "5",
-      "heroId": 30,
-      "fetchedAt": "2026-10-05T02:59:21Z",
-      "cached": true,
-      "accepted": true,
-      "rowCount": 1939
-    },
-    {
-      "slug": "ancient-apparition",
-      "role": "5",
-      "heroId": 68,
-      "fetchedAt": "2026-10-05T02:59:21Z",
-      "cached": true,
-      "accepted": true,
-      "rowCount": 1908
     }
   ]
 }

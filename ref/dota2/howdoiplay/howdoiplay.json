@@ -1,11 +1,13 @@
 {
-  "fetchedAt": "2026-10-05T09:22:01Z",
+  "note": "Tsunami's hero tips and counters, extracted structure; the site's own content and license, see ref/dota2/README.md",
+  "source": "https://howdoiplay.com/tips/{tipSlug}.html",
+  "patch": "7.41",
   "heroes": {
     "alchemist": {
       "name": "Alchemist",
       "tipSlug": "alchemist",
       "url": "https://howdoiplay.com/tips/alchemist.html",
-      "fetchedAt": "2026-10-05T09:21:16Z",
+      "fetchedAt": "2026-10-06T11:16:49Z",
       "tips": [
         {
           "text": "You get a lot of time between stacks on your Greevil's Greed innate. If you're free farming, you should be hitting the max cap constantly. If you're jungling, learn how to strategically draw aggro from neutral creeps using Acid Spray or any items you have to keep stacks up.",
@@ -105,7 +107,7 @@
       "name": "Ancient Apparition",
       "tipSlug": "ancient_apparition",
       "url": "https://howdoiplay.com/tips/ancient_apparition.html",
-      "fetchedAt": "2026-10-05T09:21:17Z",
+      "fetchedAt": "2026-10-06T11:16:51Z",
       "tips": [
         {
           "text": "Ice Vortex is more than a massive range slow. Throw them all over the place when you're pushing or defending to reduce enemy magic resistance. Keep this in mind when attacking people with Chilling Touch's magical damage as well.",
@@ -152,7 +154,7 @@
       "name": "Anti-Mage",
       "tipSlug": "anti-mage",
       "url": "https://howdoiplay.com/tips/anti-mage.html",
-      "fetchedAt": "2026-10-05T09:21:18Z",
+      "fetchedAt": "2026-10-06T11:16:52Z",
       "tips": [
         {
           "text": "Blink disjoints any incoming enemy spell or attack projectiles.",
@@ -250,7 +252,7 @@
       "name": "Bane",
       "tipSlug": "bane",
       "url": "https://howdoiplay.com/tips/bane.html",
-      "fetchedAt": "2026-10-05T09:21:19Z",
+      "fetchedAt": "2026-10-06T11:16:52Z",
       "tips": [
         {
           "text": "Try to apply debuffs on enemies before they die to get stacks of your Ichor of Nyctasha innate. Debuffs from items can also count.",
@@ -388,7 +390,7 @@
       "name": "Bounty Hunter",
       "tipSlug": "bounty_hunter",
       "url": "https://howdoiplay.com/tips/bounty_hunter.html",
-      "fetchedAt": "2026-10-05T09:21:19Z",
+      "fetchedAt": "2026-10-06T11:16:53Z",
       "tips": [
         {
           "text": "Shuriken will bounce to Tracked targets even if the initial target isn't Tracked. Try hitting a non-Tracked unit first (like a creep) to reach a distant target.",
@@ -470,7 +472,7 @@
       "name": "Brewmaster",
       "tipSlug": "brewmaster",
       "url": "https://howdoiplay.com/tips/brewmaster.html",
-      "fetchedAt": "2026-10-05T09:21:20Z",
+      "fetchedAt": "2026-10-06T11:16:54Z",
       "tips": [
         {
           "text": "You can ignite Cinder Brew with damage from items like Blood Grenade, Urn/Vessel/Distiller, or Radiance.",
@@ -567,7 +569,7 @@
       "name": "Centaur Warrunner",
       "tipSlug": "centaur_warrunner",
       "url": "https://howdoiplay.com/tips/centaur_warrunner.html",
-      "fetchedAt": "2026-10-05T09:21:22Z",
+      "fetchedAt": "2026-10-06T11:16:55Z",
       "tips": [
         {
           "text": "Double Edge costs no mana, so use it as your primary pushing spell late game.",
@@ -625,7 +627,7 @@
       "name": "Clinkz",
       "tipSlug": "clinkz",
       "url": "https://howdoiplay.com/tips/clinkz.html",
-      "fetchedAt": "2026-10-05T09:21:23Z",
+      "fetchedAt": "2026-10-06T11:16:56Z",
       "tips": [
         {
           "text": "Manually casting Searing Arrows on enemy heroes won't draw creep aggro.",
@@ -708,7 +710,7 @@
       "name": "Dark Seer",
       "tipSlug": "dark_seer",
       "url": "https://howdoiplay.com/tips/dark_seer.html",
-      "fetchedAt": "2026-10-05T09:21:24Z",
+      "fetchedAt": "2026-10-06T11:16:57Z",
       "tips": [
         {
           "text": "Pay attention to your XP progress in lane when playing Dark Seer to fully take advantage of your Quick Wit innate regen.",
@@ -813,7 +815,7 @@
       "name": "Dawnbreaker",
       "tipSlug": "dawnbreaker",
       "url": "https://howdoiplay.com/tips/dawnbreaker.html",
-      "fetchedAt": "2026-10-05T09:21:24Z",
+      "fetchedAt": "2026-10-06T11:16:57Z",
       "tips": [
         {
           "text": "Your Break of Dawn innate makes you more powerful right as the map transitions to daytime.",
@@ -982,7 +984,7 @@
       "name": "Death Prophet",
       "tipSlug": "death_prophet",
       "url": "https://howdoiplay.com/tips/death_prophet.html",
-      "fetchedAt": "2026-10-05T09:21:25Z",
+      "fetchedAt": "2026-10-06T11:16:58Z",
       "tips": [
         {
           "text": "Crypt Swarm can use unit targeting or ground targeting. If an enemy is juking into fog, use ground targeting, otherwise it may get canceled if you unit targeted it and the enemy escapes vision during the cast animation.",
@@ -1075,7 +1077,7 @@
       "name": "Doom",
       "tipSlug": "doom",
       "url": "https://howdoiplay.com/tips/doom.html",
-      "fetchedAt": "2026-10-05T09:21:26Z",
+      "fetchedAt": "2026-10-06T11:16:59Z",
       "tips": [
         {
           "text": "Devour bonus gold is unreliable and granted when the buff expires.",
@@ -1149,7 +1151,7 @@
       "name": "Dragon Knight",
       "tipSlug": "dragon_knight",
       "url": "https://howdoiplay.com/tips/dragon_knight.html",
-      "fetchedAt": "2026-10-05T09:21:27Z",
+      "fetchedAt": "2026-10-06T11:17:00Z",
       "tips": [
         {
           "text": "Breathe Fire's damage reduction component is a big deal in team fights, especially since it reduces total attack damage including +dmg items. Don't save it for kill stealing, use it early on in a fight.",
@@ -1190,7 +1192,7 @@
       "name": "Earthshaker",
       "tipSlug": "earthshaker",
       "url": "https://howdoiplay.com/tips/earthshaker.html",
-      "fetchedAt": "2026-10-05T09:21:27Z",
+      "fetchedAt": "2026-10-06T11:17:00Z",
       "tips": [
         {
           "text": "Any units killed by your spells, including Enchant Totem attacks, will fly backwards and deal damage to anything in their path thanks to your Slugger innate.",
@@ -1248,11 +1250,184 @@
         }
       ]
     },
+    "ember-spirit": {
+      "name": "Ember Spirit",
+      "tipSlug": "ember_spirit",
+      "url": "https://howdoiplay.com/tips/ember_spirit.html",
+      "fetchedAt": "2026-10-06T11:17:01Z",
+      "tips": [
+        {
+          "text": "Searing Chains will not capture units in fog or invisible units, but will provide true sight on captured units.",
+          "notes": []
+        },
+        {
+          "text": "You can cast spells during Sleight of Fist.",
+          "notes": [
+            "If you cast a Remnant mid-Sleight, then the Remnant will start traveling from where your hero currently is in the Sleight. So if you're trying to catch a distant enemy as quickly as possible, you should Sleight closer to them first and then cast a Remnant while you're Sleighting to reduce the distance the Remnant has to travel.",
+            "You can also Activate Fire Remnant while in Sleight, but it will immediately cancel Sleight and start traveling to the Remnant.",
+            "You can use items during Sleight of Fist. This includes TP scrolls. Just be sure that your Sleight ends before the TP channel finishes, otherwise you'll be brought back to your Sleight Remnant."
+          ]
+        },
+        {
+          "text": "The hardest part of executing the Sleight+Chains combo on solo targets is knowing when Sleight will actually go off. Don't get too excited and prematurely cast Chains first. Just hit the hotkey as soon as you can react to Ember going into Sleight and you'll probably land it.",
+          "notes": [
+            "I highly recommend enabling the \"Show Ability Rangefinder While Casting\" interface setting. For Ember, it becomes far easier to tell when Sleight of Fist will go off when you can see the cast range."
+          ]
+        },
+        {
+          "text": "If you're trying to Sleight+Chain someone who's in a clump of other units, you should save the Chains until later in the Sleight. It's possible you may kill off some other useless units while Sleighting which improves your chances of Chaining the hero you want.",
+          "notes": []
+        },
+        {
+          "text": "You can slightly influence where Chains will go off when attacking a large group of units. To do so, wait for Sleight to start, then immediately issue an attack/right-click command on the unit you want to Chain, then shift+queue Searing Chains. If done correctly, Searing Chains will go off when your hero gets \"close\" to the target you right-clicked. It's easier to do the more units are within the Sleight because you'll have more opportunities to be near your desired Chains target.",
+          "notes": []
+        },
+        {
+          "text": "While Sleighted, projectiles will follow you around as you bounce from unit to unit. Sleight is not a disjoint, but you can use this invulnerability period to 'absorb' projectiles without taking any damage or stun, like from a Gyrocopter's Homing Missile for example.",
+          "notes": []
+        },
+        {
+          "text": "You are invulnerable, but you are not considered hidden/banished in Sleight of Fist or Activate Fire Remnant. That means certain spells that affect invulnerable units, like Silencer's Global Silence, can still affect you while you're in these spells.",
+          "notes": [
+            "However, you will always return to your Sleight Remnant when Sleight ends or Activated Fire Remnant when the travel time ends. This means despite these spells not being considered a banish, you can still bypass an enemy Disruptor's Glimpse or Kunkka X by being mid-Sleight when these spells move you and you'll still eventually return to your Sleight Remnant or Activated Remnant.",
+            "Because you're invulnerable when Sleight of Fisting or traveling to a Fire Remnant, you can cast items on Lotus Orbed enemies and it won't get reflected back on your hero."
+          ]
+        },
+        {
+          "text": "When manfighting early on with a low level Sleight, keep the Sleight in your pocket until the end of the fight. With good timing, you can use the banishment phase of the Sleight to mask the backswing of one of your attacks while tripping up heroes who are mashing right click on you, stalling some potential auto attacks.",
+          "notes": []
+        },
+        {
+          "text": "Unlike most other spells involving instant attacks, using Sleight won't break your Smoke when used on creeps.",
+          "notes": [
+            "Also, unlike most other instant attacks, Sleight of Fist will deal no damage if you're disarmed and it does not have true strike."
+          ]
+        },
+        {
+          "text": "Sleight of Fist can kill Undying Tombstone zombies.",
+          "notes": []
+        },
+        {
+          "text": "Sleight of Fist lands on units in fog. Use this to scout if enemies are on high ground or behind treelines or check the Rosh pit.",
+          "notes": []
+        },
+        {
+          "text": "You can cast Sleight of Fist while traveling to a Fire Remnant, but the timing is extremely tight. Not only do you need to target the Sleight of Fist immediately after entering Activate Fire Remnant, but you also need to target the Sleight directly along the path you're flying because Ember Spirit can't turn while flying to a Remnant.",
+          "notes": [
+            "Honestly, this tip is purely here for the Ember Spirit enthusiasts who are fact checking my site for comprehensiveness. It's utterly useless in 99% of situations and nothing that I just typed makes any sense to a new player trying to learn Ember. But for you, Mr. 2000 Games On Ember? Yeah, I know your tech. Your useless tech.",
+            "In fact, here's a whole video about Sleight of Fist by zzADRiANzz."
+          ]
+        },
+        {
+          "text": "Barriers, like the one from Flame Guard, will absorb damage before on-damage effects are triggered on your hero. This means things like Bottle regen won't get broken if you're only receiving magic damage during an active Flame Guard.",
+          "notes": []
+        },
+        {
+          "text": "Infused Raindrops absorb damage before Flame Guard does. If you're trying to preserve your active Flame Guard in lane for damage or to help last hit, a Raindrop may buy you some more damage to tank.",
+          "notes": []
+        },
+        {
+          "text": "Your Remnants' travel speed scales off your hero's move speed when cast. This means that you should avoid casting fresh Remnants when you're slowed.",
+          "notes": [
+            "This is relevant when dealing with weird spells like Disruptor's Kinetic Field and Slark's Pounce. If you walk to the very edge of these spells then your move speed is considered zero and your Remnant won't go anywhere.",
+            "This is also true when getting stabbed by Kez's Kazurai Katana."
+          ]
+        },
+        {
+          "text": "The speed at which you travel to a Fire Remnant is based on the distance between your hero and the Remnant on activation cast. If you activate a Remnant when it's less than ~520 range from your hero, you'll travel to it at 1300 speed. If you activate a Remnant when it's greater than ~520 range from your hero, you get to it in 0.4 seconds.",
+          "notes": [
+            "This difference is mainly relevant if you activate a Fire Remnant while it's still flying to its targeted cast point. Most of the time, you'll want to wait for the faster travel time, but sometimes the slow travel time is advantageous for a longer invulnerability period, like if a projectile is flying towards you."
+          ]
+        },
+        {
+          "text": "You can pick up items, such as Aegis, or runes while traveling to a Remnant or when flying around in a Sleight of Fist.",
+          "notes": []
+        },
+        {
+          "text": "When traveling to a Fire Remnant, you deal damage to everything on the way in a melee range radius around your hero.",
+          "notes": []
+        },
+        {
+          "text": "Here's some other esoteric tech on Ember Spirit involving auto attacks while flying in Remnant. Again, I'm only including this for obscene levels of thoroughness. This interaction is NOT usable in 99.9999% of games, but I have to include it otherwise quadruple smurf Grandmaster Ember mains are like, \"Yeah that website sucks, it doesn't mention the auto attack in Remnant tech.\" God I hate Ember players.",
+          "notes": []
+        },
+        {
+          "text": "OH YOU WANT MORE? YOU WANT MORE CONTENT? HERE, HAVE A QUINN VIDEO. SATISFIED?",
+          "notes": []
+        },
+        {
+          "text": "Use Remnants for mobility purposes as well as damage. Toss one out before teleporting back to base so you can quickly get back out on the lane. Toss one out before dying so you can get back out on the map as soon as you respawn (or buyback).",
+          "notes": []
+        },
+        {
+          "text": "You consume all placed Remnants when activating one. Ember travels to the Fire Remnant furthest away from the targeted one first.",
+          "notes": []
+        },
+        {
+          "text": "Ember Spirit will turn to face wherever you target Activate Fire Remnant regardless of which Remnant you're actually flying to. If you're just trying to mash your way out of a gank, target Activate Fire Remnant directly in front of your hero so you don't suffer through a potentially lethal turn rate.",
+          "notes": []
+        },
+        {
+          "text": "After you gank a lane, consider hiding a Remnant somewhere nearby for safekeeping before you return to a different part of the map. Another gank opportunity may present itself in the same lane and enemies may not expect it.",
+          "notes": []
+        },
+        {
+          "text": "When contesting runes, consider sending a Remnant to one rune spot and walking your hero to the other rune spot.",
+          "notes": []
+        },
+        {
+          "text": "Multiple overlapping Immolation innate auras do not stack, such as from Agh's Shard Fire Remnants.",
+          "notes": []
+        },
+        {
+          "text": "With Agh's Shard, you'll spawn a Remnant wherever you die.",
+          "notes": []
+        }
+      ],
+      "counters": [
+        {
+          "text": "Whenever Ember uses Sleight, he leaves a temporary Remnant behind during the cast. This is where he'll always return once Sleight finishes. Use this as a beacon to set up disables like Dark Willow's Bramble Maze, Jakiro's Ice Path, Mirana's Arrow, or just start mashing your silence/hex/disable on the temporary remnant so you can catch him as soon as he returns.",
+          "notes": []
+        },
+        {
+          "text": "Ember hates silences, but he also really hates slows. The travel speed on Remnant casts scale off of Ember's own move speed, so heroes with strong slows can cut Ember's aggression significantly since he'll need to pre-cast an escape Remnant before going in.",
+          "notes": []
+        },
+        {
+          "text": "Ember cannot Activate Fire Remnant or cast Sleight of Fist when rooted/leashed.",
+          "notes": []
+        },
+        {
+          "text": "Ember consumes all currently spawned Remnants when he Activates one.",
+          "notes": []
+        },
+        {
+          "text": "You can click on Ember and check his buffs to see how many Remnants he currently has out on the map. If he has zero, get ready for the easiest gank of your life.",
+          "notes": []
+        },
+        {
+          "text": "Sleight of Fist gets affected by evasion, disarms, and damage block.",
+          "notes": []
+        },
+        {
+          "text": "You can dispel Flame Guard off Ember. This makes Eul's Scepter, Nullifier, or Disperser solid items to have against Ember. Also spells like Enchantress's Enchant, Invoker's Tornado, Largo's Catchy Lick, and Oracle's Fortune's End can dispel enemies.",
+          "notes": []
+        },
+        {
+          "text": "Ember Spirit can't turn off his Immolation innate damage. This makes him easy pickings for Nyx Assassin with Spiked Carapace since Ember literally cannot stop dealing damage around himself.",
+          "notes": []
+        },
+        {
+          "text": "Ember can pick up runes while flying around in a Sleight of Fist. Depending on how good of an Ember player you're up against, you should consider stopping for a moment just short of a rune to bait his Sleight so that he can't snatch it from you.",
+          "notes": []
+        }
+      ]
+    },
     "enchantress": {
       "name": "Enchantress",
       "tipSlug": "enchantress",
       "url": "https://howdoiplay.com/tips/enchantress.html",
-      "fetchedAt": "2026-10-05T09:21:28Z",
+      "fetchedAt": "2026-10-06T11:17:02Z",
       "tips": [
         {
           "text": "Enchantress's Rabble-Rouser innate works on the necrocreeps summoned by the \"Book of the Dead\" neutral item artifact. This makes their Last Will damage scale incredibly hard.",
@@ -1363,7 +1538,7 @@
       "name": "Enigma",
       "tipSlug": "enigma",
       "url": "https://howdoiplay.com/tips/enigma.html",
-      "fetchedAt": "2026-10-05T09:21:29Z",
+      "fetchedAt": "2026-10-06T11:17:02Z",
       "tips": [
         {
           "text": "Jungle creeps have a tendency to use their spells whenever three units are in close proximity to them. When jungling a neutral camp, spread your Eidolons out so they don't trigger the neutrals to use their spells.",
@@ -1445,7 +1620,7 @@
       "name": "Hoodwink",
       "tipSlug": "hoodwink",
       "url": "https://howdoiplay.com/tips/hoodwink.html",
-      "fetchedAt": "2026-10-05T09:21:30Z",
+      "fetchedAt": "2026-10-06T11:17:03Z",
       "tips": [
         {
           "text": "Pay attention to your buffs and try to keep your Mistwoods Wayfarer innate enabled whenever possible. You'll have significantly more survivability if you're hugging trees.",
@@ -1617,7 +1792,7 @@
       "name": "Juggernaut",
       "tipSlug": "juggernaut",
       "url": "https://howdoiplay.com/tips/juggernaut.html",
-      "fetchedAt": "2026-10-05T09:21:31Z",
+      "fetchedAt": "2026-10-06T11:17:04Z",
       "tips": [
         {
           "text": "You can activate Blade Fury while TPing and your channel won't break. Use this to go debuff immune if someone is walking up to you while you're TPing or use it to show up to your destination pre-debuff immune.",
@@ -1753,7 +1928,7 @@
       "name": "Largo",
       "tipSlug": "largo",
       "url": "https://howdoiplay.com/tips/largo.html",
-      "fetchedAt": "2026-10-05T09:21:31Z",
+      "fetchedAt": "2026-10-06T11:17:05Z",
       "tips": [
         {
           "text": "Largo's Encore innate extended duration also applies to item buffs. This makes him the ideal hero on the team to be casting Smoke of Deceit.",
@@ -1862,7 +2037,7 @@
       "name": "Leshrac",
       "tipSlug": "leshrac",
       "url": "https://howdoiplay.com/tips/leshrac.html",
-      "fetchedAt": "2026-10-05T09:21:32Z",
+      "fetchedAt": "2026-10-06T11:17:06Z",
       "tips": [
         {
           "text": "Split Earth destroys trees.",
@@ -1958,7 +2133,7 @@
       "name": "Lich",
       "tipSlug": "lich",
       "url": "https://howdoiplay.com/tips/lich.html",
-      "fetchedAt": "2026-10-05T09:21:33Z",
+      "fetchedAt": "2026-10-06T11:17:07Z",
       "tips": [
         {
           "text": "When figuring out what to eat with your Sacrifice innate, here's a few things to keep in mind:",
@@ -2057,7 +2232,7 @@
       "name": "Lifestealer",
       "tipSlug": "lifestealer",
       "url": "https://howdoiplay.com/tips/lifestealer.html",
-      "fetchedAt": "2026-10-05T09:21:34Z",
+      "fetchedAt": "2026-10-06T11:17:08Z",
       "tips": [
         {
           "text": "Debuff immunity, like from Rage, prevents Tormentor damage from reflecting on you.",
@@ -2105,11 +2280,61 @@
         }
       ]
     },
+    "lina": {
+      "name": "Lina",
+      "tipSlug": "lina",
+      "url": "https://howdoiplay.com/tips/lina.html",
+      "fetchedAt": "2026-10-06T11:17:08Z",
+      "tips": [
+        {
+          "text": "Dragon Slave can use unit targeting or ground targeting. If an enemy is juking into fog, use ground targeting, otherwise Lina may cancel the unit-targeted cast if the enemy escapes vision.",
+          "notes": []
+        },
+        {
+          "text": "Dragon Slave can hit targets ~200 units farther than the max cast range of the spell, so stick to ground targeting if you're trying to damage an enemy that's just barely out of range.",
+          "notes": []
+        },
+        {
+          "text": "If you ground target Dragon Slave from fog, you won't reveal yourself to the enemy who gets hit by it. If you directly target them, they'll get vision of you.",
+          "notes": [
+            "This is true for any spell that has the option between ground and direct unit targeting. If you ever directly target an enemy unit, the enemy team will briefly get vision of your hero. If you ground target, you won't be revealed through fog."
+          ]
+        },
+        {
+          "text": "Light Strike Array breaks trees in its AoE.",
+          "notes": []
+        },
+        {
+          "text": "Keep your eye on Fiery Soul stacks in your buffs. Burn a few spells on creeps or neutrals to maintain your stacks to stay in fight-ready condition.",
+          "notes": []
+        },
+        {
+          "text": "You can scout for fogged or invisible enemies by casting spells in their direction and seeing if your Fiery Soul buff increases.",
+          "notes": [
+            "You can check Rosh status by casting spells in his pit since you'll get at least one Fiery Soul stack if he's alive."
+          ]
+        }
+      ],
+      "counters": [
+        {
+          "text": "The damage over time debuff from Lina's Slow Burn innate is undispellable.",
+          "notes": []
+        },
+        {
+          "text": "There is an extremely brief (0.25s) moment after Laguna Blade connects before the nuke damage is actually dealt. You can dodge the damage with banishes, or invulnerability from spells like Morphling's Waveform or Ember Spirit's Sleight of Fist, or from items like Eul's Scepter or even a Manta Style activation if your timing is impeccable.",
+          "notes": []
+        },
+        {
+          "text": "Lina gets a fairly large power spike at around 3-5 minutes once her nukes have a few levels. Coincidentally, this is the same time that Infused Raindrops become available for purchase. Her kill potential gets significantly cut by Raindrops, so consider buying them no matter what role you're playing.",
+          "notes": []
+        }
+      ]
+    },
     "lone-druid": {
       "name": "Lone Druid",
       "tipSlug": "lone_druid",
       "url": "https://howdoiplay.com/tips/lone_druid.html",
-      "fetchedAt": "2026-10-05T09:21:34Z",
+      "fetchedAt": "2026-10-06T11:17:09Z",
       "tips": [
         {
           "text": "Don't be afraid of letting your Spirit Bear wander away from you. Use it to draw aggro from an incoming creep wave, stack jungle camps, go shopping for you, teleport to the fountain to heal, play checkers with Death Prophet, or just scout for you.",
@@ -2226,7 +2451,7 @@
       "name": "Luna",
       "tipSlug": "luna",
       "url": "https://howdoiplay.com/tips/luna.html",
-      "fetchedAt": "2026-10-05T09:21:35Z",
+      "fetchedAt": "2026-10-06T11:17:10Z",
       "tips": [
         {
           "text": "The Lunar Blessing innate damage aura works on creep-hero units like Brewmaster's Primal Split Brewlings, Visage's Familiars, or Warlock's Golem.",
@@ -2315,7 +2540,7 @@
       "name": "Lycan",
       "tipSlug": "lycan",
       "url": "https://howdoiplay.com/tips/lycan.html",
-      "fetchedAt": "2026-10-05T09:21:36Z",
+      "fetchedAt": "2026-10-06T11:17:20Z",
       "tips": [
         {
           "text": "Wolves are quite possibly the strongest scouting tool in the game. They can serve as two moving, permanently invisible, temporary observer wards on demand. Use them to scout, check/kill runes, block/stack camps, body block targets, and most importantly, follow around high priority targets.",
@@ -2393,7 +2618,7 @@
       "name": "Marci",
       "tipSlug": "marci",
       "url": "https://howdoiplay.com/tips/marci.html",
-      "fetchedAt": "2026-10-05T09:21:37Z",
+      "fetchedAt": "2026-10-06T11:17:22Z",
       "tips": [
         {
           "text": "You can cast Dispose on an ally's top bar portrait to easily target them. Useful if you're trying to save a specific target in a sea of summons or illusions in a chaotic team fight.",
@@ -2538,7 +2763,7 @@
       "name": "Mirana",
       "tipSlug": "mirana",
       "url": "https://howdoiplay.com/tips/mirana.html",
-      "fetchedAt": "2026-10-05T09:21:38Z",
+      "fetchedAt": "2026-10-06T11:17:23Z",
       "tips": [
         {
           "text": "The second Starstorm hit will land on the closest target to your hero when the spell was cast.",
@@ -2626,7 +2851,7 @@
       "name": "Monkey King",
       "tipSlug": "monkey_king",
       "url": "https://howdoiplay.com/tips/monkey_king.html",
-      "fetchedAt": "2026-10-05T09:21:38Z",
+      "fetchedAt": "2026-10-06T11:17:24Z",
       "tips": [
         {
           "text": "Boundless Strike's damage is applied as an instant attack . This instant attack ignores disarms, has true strike, and applies attack modifiers (except cleave). If you have an attack modifier with a proc, it'll roll for a chance to proc on each target hit.",
@@ -2768,7 +2993,7 @@
       "name": "Nature's Prophet",
       "tipSlug": "nature's_prophet",
       "url": "https://howdoiplay.com/tips/nature%27s_prophet.html",
-      "fetchedAt": "2026-10-05T09:21:39Z",
+      "fetchedAt": "2026-10-06T11:17:25Z",
       "tips": [
         {
           "text": "Try hugging trees whenever it's convenient to take advantage of the damage given from your Spirit of the Forest innate.",
@@ -2920,7 +3145,7 @@
       "name": "Necrophos",
       "tipSlug": "necrophos",
       "url": "https://howdoiplay.com/tips/necrophos.html",
-      "fetchedAt": "2026-10-05T09:21:40Z",
+      "fetchedAt": "2026-10-06T11:17:25Z",
       "tips": [
         {
           "text": "You get innate Sadist regen stacks off of any unit you kill including buildings, wards, and creep denies. The only exceptions are illusions or Arc Warden's Tempest Double.",
@@ -3019,7 +3244,7 @@
       "name": "Nyx Assassin",
       "tipSlug": "nyx_assassin",
       "url": "https://howdoiplay.com/tips/nyx_assassin.html",
-      "fetchedAt": "2026-10-05T09:21:40Z",
+      "fetchedAt": "2026-10-06T11:17:26Z",
       "tips": [
         {
           "text": "Nyx gets the luxury of easy positioning thanks to Vendetta to make multi hero Impales simpler. Vendetta one hero and then roughly target the Impale on another hero. Since you're in such close range to your first target, you will most likely nyx them both with the Impale.",
@@ -3113,7 +3338,7 @@
       "name": "Outworld Destroyer",
       "tipSlug": "outworld_destroyer",
       "url": "https://howdoiplay.com/tips/outworld_destroyer.html",
-      "fetchedAt": "2026-10-05T09:21:41Z",
+      "fetchedAt": "2026-10-06T11:17:27Z",
       "tips": [
         {
           "text": "Manually casting Arcane Orb on enemy heroes won't draw creep aggro.",
@@ -3209,7 +3434,7 @@
       "name": "Pangolier",
       "tipSlug": "pangolier",
       "url": "https://howdoiplay.com/tips/pangolier.html",
-      "fetchedAt": "2026-10-05T09:21:43Z",
+      "fetchedAt": "2026-10-06T11:17:28Z",
       "tips": [
         {
           "text": "Swashbuckle sets your damage flat and attacks every unit in the AoE multiple times. There are a few interactions to note:",
@@ -3389,7 +3614,7 @@
       "name": "Phantom Assassin",
       "tipSlug": "phantom_assassin",
       "url": "https://howdoiplay.com/tips/phantom_assassin.html",
-      "fetchedAt": "2026-10-05T09:21:44Z",
+      "fetchedAt": "2026-10-06T11:17:28Z",
       "tips": [
         {
           "text": "Understanding the ins and outs of the Stifling Dagger are critical to not getting demolished in lane. Learn the projectile's travel times, be able to accurately estimate the damage of the dagger at each level on creeps, and practice timing right clicks+melee range Daggers to make it impossible to deny you.",
@@ -3498,7 +3723,7 @@
       "name": "Phantom Lancer",
       "tipSlug": "phantom_lancer",
       "url": "https://howdoiplay.com/tips/phantom_lancer.html",
-      "fetchedAt": "2026-10-05T09:21:45Z",
+      "fetchedAt": "2026-10-06T11:17:29Z",
       "tips": [
         {
           "text": "Doppelganger allows you to travel up and down cliffs.",
@@ -3626,11 +3851,130 @@
         }
       ]
     },
+    "pudge": {
+      "name": "Pudge",
+      "tipSlug": "pudge",
+      "url": "https://howdoiplay.com/tips/pudge.html",
+      "fetchedAt": "2026-10-06T11:17:30Z",
+      "tips": [
+        {
+          "text": "Part of being a good Pudge is more than landing Hooks, but also knowing when your Hooks won't land. The cast time is long enough that you should be able to at least occasionally stop-cancel unlikely Hooks. Stop-canceling Hooks is also a great way to stress out enemies who can see you.",
+          "notes": []
+        },
+        {
+          "text": "Arguably the most reliable way of predicting enemy movement for Hooks during the laning phase is to watch for last hits. While you're hiding, watch the HP of your creeps and wait for the enemy to pick up the last hit. The knowledge of where they will be plus their attack animation should be enough to land a Hook fairly easily. If the only thing between you and the enemy is a creep, start casting the Hook right before they complete the last hit so the Hook passes through the creep as it's dying.",
+          "notes": []
+        },
+        {
+          "text": "You can pull runes using Meat Hook and the mana cost on Hook will be refunded. You can abuse this with Soul Ring to refund the 'temporary' mana provided by the Ring's active.",
+          "notes": [
+            "This tech also works on any hero when interacting with Twin Gates, but it's a little trickier. Activate Soul Ring, start channeling a Twin Gate, and immediately cancel the channel. Every time you cancel a Twin Gate channel, you'll get the travel mana cost refunded. So if you spam cancel a bunch of Twin Gate channels, like 6 or so, you can fully replace the entire Soul Ring mana buffer with 'refunded' mana."
+          ]
+        },
+        {
+          "text": "Meat Hook will always bring the unit it caught to your cast location when the Hook finishes returning. With expert timing, you can use this mechanic to save allies who are being repositioned with spells (like Disruptor's Glimpse or Kunkka's X Marks the Spot) or catch escaping enemies (like an Io Relocate) by having them be mid-return-Hook when the repositioning spell is triggered.",
+          "notes": [
+            "This also works with TPing allies to bring them back after they spend a split second in the fountain.",
+            "Meat Hook can pull allies or enemies out of Disruptor's Kinetic Field, Enigma's Black Hole, Faceless Void's Chronosphere, and Mars's Arena.",
+            "A rare exception to Meat Hook beating all other spells is Clockwerk's Power Cogs. If you're pulling an ally out of Power Cogs, Hook movement will get canceled by the shock from Cogs.",
+            "Meat Hook cannot pull allies or enemies that are being pulled by a Batrider's Flaming Lasso. However, if the Lasso ends mid-Hook, the target will end up next to Pudge once the Hook finishes returning."
+          ]
+        },
+        {
+          "text": "There are certain spots in the mid lane that you can jam your hero into that'll allow you to body block a Hook victim and prevent them from walking anywhere. Toss the Hook, then walk a tiny bit backwards to create a gap that only the victim can fit into.",
+          "notes": []
+        },
+        {
+          "text": "Meat Hook does not cancel channels on allies. You can Hook them while they're TPing and it won't interrupt it. Hell, you can even Hook and move an allied Witch Doctor channeling Death Ward and it won't interrupt him.",
+          "notes": []
+        },
+        {
+          "text": "Meat Hook damages, drags, and fully disables debuff immune/BKB'd enemies.",
+          "notes": []
+        },
+        {
+          "text": "Meat Hook instantly kills any enemy/neutral non-ancient creep in connects with. This includes enemy siege creeps.",
+          "notes": [
+            "Meat Hook can kill creeps through the Glyph or Roshan's Banner invulnerability."
+          ]
+        },
+        {
+          "text": "Meat Hook instantly kills enemy illusions.",
+          "notes": []
+        },
+        {
+          "text": "Use Rot to help get last hits in lane.",
+          "notes": []
+        },
+        {
+          "text": "You can't kill yourself with Rot damage.",
+          "notes": []
+        },
+        {
+          "text": "You can toggle Rot while channeling, like during Dismember or a TP.",
+          "notes": []
+        },
+        {
+          "text": "Meat Shield can be activated while channeling, like during Dismember or a TP.",
+          "notes": []
+        },
+        {
+          "text": "Meat Shield reduces the self-damage taken from Rot.",
+          "notes": []
+        },
+        {
+          "text": "Walking up to a hero and Dismembering them without Hooking them is like getting body shots as a Sniper in TF2. No one will respect you, but who cares when you get the kill.",
+          "notes": []
+        },
+        {
+          "text": "Target and cast Dismember while an enemy is getting Hooked to give them as little time as possible to react with a BKB or some gap creating spell. This works because the sooner you start your Dismember cast animation, the less time an enemy has to react. If you start walking towards the enemy while they're returning from Hook, they'll be in Dismember cast range sooner.",
+          "notes": []
+        },
+        {
+          "text": "When Roshing, don't use Dismember unless you're absolutely safe. It's a huge red flag for the enemy team that Pudge is off enjoying some fresh meat (the Dismember sound is global every time you cast it) despite the fact there is no hero on the map getting Benihana'd.",
+          "notes": []
+        },
+        {
+          "text": "Don't ever shift-queue Meat Hook after Dismember. You are almost always better off canceling the last few milliseconds of Dismember by casting Meat Hook rather than waiting for the channel and cast backswing to end.",
+          "notes": []
+        },
+        {
+          "text": "Dismember provides true sight on the target.",
+          "notes": []
+        },
+        {
+          "text": "Never let Rubick steal Meat Hook. Constantly be spamming Rot against a Rubick.",
+          "notes": []
+        }
+      ],
+      "counters": [
+        {
+          "text": "Play the hero and read the tips. The best way to beat a Pudge is to become the Pudge. You put Pudge into a cup, he becomes the cup, you put Pudge into a teapot, he becomes the teapot. Be Pudge, my friend.",
+          "notes": []
+        },
+        {
+          "text": "Check Pudge's boots. If he's running at you with Rot and has Tranquils, you should right click him once to break his boots to slow his move speed before fleeing.",
+          "notes": []
+        },
+        {
+          "text": "Lotus Orb prevents Pudge from casting Dismember on a target without it getting canceled instantly.",
+          "notes": []
+        },
+        {
+          "text": "Dismember is a channeled disable, so stunning or silencing Pudge during the channel will end the spell.",
+          "notes": []
+        },
+        {
+          "text": "In lane, consider constantly cutting down trees if you have a Quelling Blade. Pudge's Hooks are much easier to predict if he's not able to hide behind a forest.",
+          "notes": []
+        }
+      ]
+    },
     "rattletrap": {
       "name": "Clockwerk",
       "tipSlug": "clockwerk",
       "url": "https://howdoiplay.com/tips/clockwerk.html",
-      "fetchedAt": "2026-10-05T09:21:46Z",
+      "fetchedAt": "2026-10-06T11:17:31Z",
       "tips": [
         {
           "text": "When using Battery Assault in lane, position yourself so that the enemy creeps won't absorb hits. Stand along the outer perimeter of an enemy hero, rather than bulldozing through the middle of the creep wave.",
@@ -3773,7 +4117,7 @@
       "name": "Rubick",
       "tipSlug": "rubick",
       "url": "https://howdoiplay.com/tips/rubick.html",
-      "fetchedAt": "2026-10-05T09:21:47Z",
+      "fetchedAt": "2026-10-06T11:17:31Z",
       "tips": [
         {
           "text": "Rubick's Curiosity innate debuff amplification is basically the opposite of status resistance in terms of mechanics.",
@@ -3931,7 +4275,7 @@
       "name": "Shadow Shaman",
       "tipSlug": "shadow_shaman",
       "url": "https://howdoiplay.com/tips/shadow_shaman.html",
-      "fetchedAt": "2026-10-05T09:21:48Z",
+      "fetchedAt": "2026-10-06T11:17:32Z",
       "tips": [
         {
           "text": "Your Fowl Play innate will not protect you from a lethal Axe Culling Blade or Necrophos Reaper's Scythe.",
@@ -4049,7 +4393,7 @@
       "name": "Slardar",
       "tipSlug": "slardar",
       "url": "https://howdoiplay.com/tips/slardar.html",
-      "fetchedAt": "2026-10-05T09:21:48Z",
+      "fetchedAt": "2026-10-06T11:17:33Z",
       "tips": [
         {
           "text": "You can cast Guardian Sprint while TPing and it won't cancel the channel.",
@@ -4127,7 +4471,7 @@
       "name": "Slark",
       "tipSlug": "slark",
       "url": "https://howdoiplay.com/tips/slark.html",
-      "fetchedAt": "2026-10-05T09:21:49Z",
+      "fetchedAt": "2026-10-06T11:17:34Z",
       "tips": [
         {
           "text": "Capitalize on Essence Shift innate stacks. Take a tower or TP to another lane and use all the damage you have to continue snowballing. Don't just sit around and farm, the enemy should be scared of how much damage you have after winning a fight.",
@@ -4296,11 +4640,219 @@
         }
       ]
     },
+    "snapfire": {
+      "name": "Snapfire",
+      "tipSlug": "snapfire",
+      "url": "https://howdoiplay.com/tips/snapfire.html",
+      "fetchedAt": "2026-10-06T11:17:35Z",
+      "tips": [
+        {
+          "text": "Firesnap Cookie can't target allies who are channeling spells or items. The Cookie also has no effect on banished allies.",
+          "notes": []
+        },
+        {
+          "text": "Allies can't disjoint the Firesnap Cookie if they blink, it'll follow them everywhere. Grandma's gonna feed you.",
+          "notes": []
+        },
+        {
+          "text": "Casting Firesnap Cookie on allies will interrupt any cast animations they're in the middle of.",
+          "notes": []
+        },
+        {
+          "text": "Firesnap Cookie's bounce allows targets to pass over cliffs.",
+          "notes": []
+        },
+        {
+          "text": "Firesnap Cookie will move allies even if they're rooted.",
+          "notes": [
+            "Cookie can technically move allies who are leashed, but it won't move them beyond the limits of the leash to break it (like from Slark's Pounce or Grimstroke's Soulbind). It also cannot free allies from an enemy Disruptor's Kinetic Field.",
+            "Firesnap Cookie does nothing when cast on an ally in Enigma's Black Hole or Faceless Void's Chronosphere, it just wastes the cooldown."
+          ]
+        },
+        {
+          "text": "If an ally gets affected by forced movement or knockback mid-Cookie jump, they'll immediately drop straight down and stun the area underneath their hero. Theoretically, you could Force Staff an ally right after they start bouncing from the Cookie to instantly proc the stun.",
+          "notes": [
+            "If a target dies mid-Cookie jump, their corpse will also drop down immediately and stun the ground."
+          ]
+        },
+        {
+          "text": "Firesnap Cookie destroys trees in a small radius around the target's landing location.",
+          "notes": []
+        },
+        {
+          "text": "Consider tossing Firesnap Cookie on creeps to get stuns on enemy heroes. Creeps have more predictable pathing than your allied heroes do and enemies may not think to retreat from a creep wave.",
+          "notes": []
+        },
+        {
+          "text": "Lil' Shredder attacks can apply any attack modifiers your hero has.",
+          "notes": []
+        },
+        {
+          "text": "Each Lil' Shredder attack counts as a hero attack against ward units. This is very useful against spells like Clockwerk's Power Cogs, Keeper of the Light's Agh's Scepter Will-O-Wisp, Phoenix's Supernova, Pugna's Nether Ward, Shadow Shaman's Serpent Wards, Undying's Tombstone, or Zeus's Agh's Scepter Nimbus.",
+          "notes": []
+        },
+        {
+          "text": "Lil' Shredder's armor reduction debuff works on towers.",
+          "notes": []
+        },
+        {
+          "text": "Each Lil' Shredder attack refreshes the armor reduction debuff on a target. You can minmax this by delaying using your last Shredder attack to extend the minus armor debuff on a target for as long as possible.",
+          "notes": []
+        },
+        {
+          "text": "Mortimer Kisses projectiles give vision as they fly and lingering vision wherever they land.",
+          "notes": []
+        },
+        {
+          "text": "You can cancel Mortimer Kisses early with your 'Cancel Current Action'/stop hotkey.",
+          "notes": []
+        },
+        {
+          "text": "If you Agh's Scepter Gobble Up a Pangolier in Rolling Thunder, he'll stun everything in your mouth as you walk around.",
+          "notes": []
+        },
+        {
+          "text": "You can Agh's Scepter Gobble Up enemy or neutral creeps, including enemy summons (but not creep-heroes). However, Spit Out counts as a deny, so you don't get any gold bounty from Gobbling units.",
+          "notes": []
+        },
+        {
+          "text": "The cast range on Agh's Scepter Spit Out is the same as the cast range on Mortimer Kisses.",
+          "notes": []
+        },
+        {
+          "text": "Respect the z-axis when casting Agh's Scepter Spit Out. If your Spit trajectory sends a hero over a cliff, they may end up landing on the cliff instead of the targeted AoE.",
+          "notes": []
+        }
+      ],
+      "counters": [
+        {
+          "text": "Applying forced movement or knockback on a target that is being bounced with Firesnap Cookie will make them immediately hit the ground and stun the area underneath them. You can use this to cut a Cookie jump short with spells like Drow Ranger's Gust or Lich's Sinister Gaze.",
+          "notes": []
+        },
+        {
+          "text": "Both the Lil' Shredder buff on Snapfire and the minus armor debuff can be removed with basic dispels.",
+          "notes": []
+        },
+        {
+          "text": "Most types of disables will cancel the Mortimer Kisses cast. Some exceptions that don't cancel the cast: Disruptor's Glimpse, Vengeful Spirit's Nether Swap, or any roots/leashes.",
+          "notes": [
+            "One notable long range Kiss-cancel is Sniper's Assassinate. Get vision with Shrapnel, then Assassinate her to end her Kiss cast."
+          ]
+        },
+        {
+          "text": "Nyx Assassin can walk into any glob puddle, activate Spiked Carapace, and instantly cancel the Mortimer Kisses cast.",
+          "notes": []
+        },
+        {
+          "text": "There is a minimum allowed range on Kiss targeting. If you walk into melee range of Snapfire, she can't get any Kisses on you.",
+          "notes": []
+        },
+        {
+          "text": "If you're trying to escape from long range Kisses, activate a Smoke to potentially escape Snap's vision.",
+          "notes": []
+        }
+      ]
+    },
+    "sniper": {
+      "name": "Sniper",
+      "tipSlug": "sniper",
+      "url": "https://howdoiplay.com/tips/sniper.html",
+      "fetchedAt": "2026-10-06T11:17:36Z",
+      "tips": [
+        {
+          "text": "Multiple casts of Shrapnel on the same area don't stack.",
+          "notes": []
+        },
+        {
+          "text": "Use Shrapnel to provide vision of the enemy tower during high ground sieges if your creeps are dead.",
+          "notes": []
+        },
+        {
+          "text": "Tier 1 towers never have backdoor protection enabled, only Tier 2 onwards have it. Keep this in mind if you want to sneak a quick Tier 1 tower without a creep wave.",
+          "notes": []
+        },
+        {
+          "text": "You can use the active on Take Aim to prevent Rubick from stealing your better spells.",
+          "notes": []
+        },
+        {
+          "text": "You can cancel the long Assassination cast animation with the 'Cancel Current Action'/stop key.",
+          "notes": []
+        },
+        {
+          "text": "Assassinate ministuns targets and can break enemy channels when the projectile lands.",
+          "notes": []
+        },
+        {
+          "text": "Assassinate gives true sight on the target during the cast animation and until the projectile connects.",
+          "notes": []
+        },
+        {
+          "text": "Assassinate provides shared vision around the target. This is useful when dealing with high ground (sieging or defending) since you can keep casting it and canceling it on enemies/creeps to see around them.",
+          "notes": []
+        },
+        {
+          "text": "If Sniper gets a kill, Assassinate's cooldown is refreshed. You don't even need to get the kill with Assassinate, any kill refreshes it.",
+          "notes": []
+        },
+        {
+          "text": "Assassinate applies an instant attack in addition to the nuke damage. This instant attack ignores disarms, has true strike, and applies attack modifiers. If you have an attack modifier with a proc, it'll roll for a chance once the projectile lands.",
+          "notes": [
+            "You can activate Take Aim before the projectile lands to get the guaranteed Headshot proc on the instant attack.",
+            "You can activate Shadow Blade/Silver Edge after the Assassinate projectile is launched to get the backstab damage.",
+            "Since Assassinate deals an instant attack, it'll break your Smoke once it damages a unit."
+          ]
+        },
+        {
+          "text": "The hero that needs to exploit positioning in lane the most. The Sniper Shuffle is the complex laning dance that involves waddling forward, peeping the enemy in the face until you get a Headshot, pissing them off, running backwards, praying that they don't feel like wasting the energy to kill you, waiting for them to retreat, then repeating. The better you are at predicting enemy movement, the better Sniper you can be.",
+          "notes": []
+        },
+        {
+          "text": "Agh's Shard Concussive Grenade counts as a disable, allowing you to briefly stun enemies and cancel their channels.",
+          "notes": []
+        },
+        {
+          "text": "The self-knockback from Agh's Shard Concussive Grenade allows you to travel up and down cliffs. You can even blast yourself out of a Disruptor's Kinetic Field.",
+          "notes": []
+        },
+        {
+          "text": "Nullifier can dispel the Force Staff buff off heroes. However, Hurricane Pike still kind of works. If you're trying to escape while Nullified, you'll be able to create more distance by Piking a pursuing enemy away rather than using Pike as a self-Force Staff.",
+          "notes": []
+        },
+        {
+          "text": "Sniper has higher than average night vision (1400 vs the standard 800). If you only barely see someone at night, chances are they can't see you.",
+          "notes": []
+        }
+      ],
+      "counters": [
+        {
+          "text": "If you're getting Assassinated, you will have a debuff icon present in your status bar. The shot will get fired when the debuff timer goes around halfway. There are a few ways to evade it:",
+          "notes": [
+            "Since the spell gives true sight on your hero, it can't be disjointed by traditional invisibility. However, Smoke of Deceit invis is unique and will cancel the targeting or even disjoint the projectile.",
+            "Other disjoints, like from Blinks, will only dodge the spell after the projectile is fired.",
+            "Spells that banish you or make you untargetable will cancel the Assassination cast. You don't need to time it when the projectile is fired, banishes cancel the targeting phase of Assassination. This even includes the very quick banish from a Manta Style activation.",
+            "Going invulnerable, like from Bane's Nightmare or being cycloned in Eul's, will cancel Assassinate's targeting cast. Or you can go for sick nasty plays and make him waste his cooldown and go invulnerable after the Assassinate projectile is fired."
+          ]
+        },
+        {
+          "text": "Infused Raindrop can save your life from some early game Assassinations.",
+          "notes": []
+        },
+        {
+          "text": "Sniper has higher than average night vision (1400 vs the standard 800). Something to be aware of if you're trying to gank him at night.",
+          "notes": []
+        },
+        {
+          "text": "Sniper will not receive the knockback from Agh's Shard Concussive Grenade if he's rooted or leashed.",
+          "notes": []
+        }
+      ]
+    },
     "spectre": {
       "name": "Spectre",
       "tipSlug": "spectre",
       "url": "https://howdoiplay.com/tips/spectre.html",
-      "fetchedAt": "2026-10-05T09:21:50Z",
+      "fetchedAt": "2026-10-06T11:17:37Z",
       "tips": [
         {
           "text": "When farming neutral camps, kill the smaller creeps first. That way you can proc your Desolate innate damage on the big creep.",
@@ -4410,7 +4962,7 @@
       "name": "Storm Spirit",
       "tipSlug": "storm_spirit",
       "url": "https://howdoiplay.com/tips/storm_spirit.html",
-      "fetchedAt": "2026-10-05T09:21:51Z",
+      "fetchedAt": "2026-10-06T11:17:37Z",
       "tips": [
         {
           "text": "Static Remnants last quite a while, so it's not a bad idea to set some up if you're afraid a Riki or Smoked hero is trailing you since they'll detonate and damage on invis units.",
@@ -4558,7 +5110,7 @@
       "name": "Sven",
       "tipSlug": "sven",
       "url": "https://howdoiplay.com/tips/sven.html",
-      "fetchedAt": "2026-10-05T09:21:51Z",
+      "fetchedAt": "2026-10-06T11:17:39Z",
       "tips": [
         {
           "text": "Storm Hammer stuns and damages everything in its AoE. If an enemy has Linken's Sphere, but is sitting inside their creep wave, just target the Hammer on a creep.",
@@ -4612,7 +5164,7 @@
       "name": "Techies",
       "tipSlug": "techies",
       "url": "https://howdoiplay.com/tips/techies.html",
-      "fetchedAt": "2026-10-05T09:21:52Z",
+      "fetchedAt": "2026-10-06T11:17:40Z",
       "tips": [
         {
           "text": "Sticky Bombs will always latch to the nearest hero upon landing.",
@@ -4783,7 +5335,7 @@
       "name": "Templar Assassin",
       "tipSlug": "templar_assassin",
       "url": "https://howdoiplay.com/tips/templar_assassin.html",
-      "fetchedAt": "2026-10-05T09:21:53Z",
+      "fetchedAt": "2026-10-06T11:17:41Z",
       "tips": [
         {
           "text": "The bonus damage charges you get on Refraction don't get consumed on denial attacks, but you also don't get the bonus damage when issuing deny attacks.",
@@ -4950,7 +5502,7 @@
       "name": "Terrorblade",
       "tipSlug": "terrorblade",
       "url": "https://howdoiplay.com/tips/terrorblade.html",
-      "fetchedAt": "2026-10-05T09:21:54Z",
+      "fetchedAt": "2026-10-06T11:17:42Z",
       "tips": [
         {
           "text": "Terrorblade's Dark Unity innate changes how much damage your illusions do depending on how far they are from your hero.",
@@ -5072,7 +5624,7 @@
       "name": "Timbersaw",
       "tipSlug": "timbersaw",
       "url": "https://howdoiplay.com/tips/timbersaw.html",
-      "fetchedAt": "2026-10-05T09:21:55Z",
+      "fetchedAt": "2026-10-06T11:17:42Z",
       "tips": [
         {
           "text": "Timbersaw's Exposure Therapy innate gives him mana for every tree he kills.",
@@ -5217,7 +5769,7 @@
       "name": "Tiny",
       "tipSlug": "tiny",
       "url": "https://howdoiplay.com/tips/tiny.html",
-      "fetchedAt": "2026-10-05T09:21:55Z",
+      "fetchedAt": "2026-10-06T11:17:44Z",
       "tips": [
         {
           "text": "Mechanically, think of Avalanche as being similar to a mini Faceless Void Chronosphere. The Avalanche AoE is an aura that is constantly stunning. So throw it in advance if you know a hero will be in the AoE before it finishes (mid-banish, pre-TP).",
@@ -5360,7 +5912,7 @@
       "name": "Tusk",
       "tipSlug": "tusk",
       "url": "https://howdoiplay.com/tips/tusk.html",
-      "fetchedAt": "2026-10-05T09:21:56Z",
+      "fetchedAt": "2026-10-06T11:17:45Z",
       "tips": [
         {
           "text": "Ice Shards has beastly range, but the projectile travels pretty slow. If you're going for a long range Shard, try to save it for when the enemy is moving into a chokepoint or just block the choke in advance.",
@@ -5499,7 +6051,7 @@
       "name": "Ursa",
       "tipSlug": "ursa",
       "url": "https://howdoiplay.com/tips/ursa.html",
-      "fetchedAt": "2026-10-05T09:21:57Z",
+      "fetchedAt": "2026-10-06T11:17:46Z",
       "tips": [
         {
           "text": "Ursa can Earthshock to jump up or down cliffs and out of Disruptor's Kinetic Field.",
@@ -5586,7 +6138,7 @@
       "name": "Venomancer",
       "tipSlug": "venomancer",
       "url": "https://howdoiplay.com/tips/venomancer.html",
-      "fetchedAt": "2026-10-05T09:21:58Z",
+      "fetchedAt": "2026-10-06T11:17:47Z",
       "tips": [
         {
           "text": "Snakebite deals burst damage on the enemy every time they attack. Here are a few enemies that it really annoys:",
@@ -5683,7 +6235,7 @@
       "name": "Viper",
       "tipSlug": "viper",
       "url": "https://howdoiplay.com/tips/viper.html",
-      "fetchedAt": "2026-10-05T09:21:58Z",
+      "fetchedAt": "2026-10-06T11:17:48Z",
       "tips": [
         {
           "text": "Manually casting Poison Attack on enemy heroes won't draw creep aggro.",
@@ -5743,7 +6295,7 @@
       "name": "Windranger",
       "tipSlug": "windranger",
       "url": "https://howdoiplay.com/tips/windranger.html",
-      "fetchedAt": "2026-10-05T09:21:59Z",
+      "fetchedAt": "2026-10-06T11:17:48Z",
       "tips": [
         {
           "text": "Shackleshot calculates latch angles based on where it was originally cast, not from Windranger's location on projectile impact.",
@@ -5875,7 +6427,7 @@
       "name": "Winter Wyvern",
       "tipSlug": "winter_wyvern",
       "url": "https://howdoiplay.com/tips/winter_wyvern.html",
-      "fetchedAt": "2026-10-05T09:22:00Z",
+      "fetchedAt": "2026-10-06T11:17:50Z",
       "tips": [
         {
           "text": "The Eldwurm's Edda item from your innate can be moved out of the neutral slot to a normal inventory slot.",
@@ -6006,7 +6558,7 @@
       "name": "Witch Doctor",
       "tipSlug": "witch_doctor",
       "url": "https://howdoiplay.com/tips/witch_doctor.html",
-      "fetchedAt": "2026-10-05T09:22:01Z",
+      "fetchedAt": "2026-10-06T11:17:51Z",
       "tips": [
         {
           "text": "The Gris-Gris item from your innate can be moved out of the neutral slot to a normal inventory slot.",
@@ -6153,7 +6705,5 @@
       ]
     }
   },
-  "patch": "7.41",
-  "source": "https://howdoiplay.com/tips/{tipSlug}.html",
-  "note": "Tsunami's hero tips and counters, extracted structure; the site's own content and license, see ref/dota2/README.md"
+  "fetchedAt": "2026-10-06T11:17:52Z"
 }

@@ -1,8 +1,8 @@
 {
   "roleNotes": {
     "1": "lone druid for the relentless bear sieges, alchemist for the greed farm and the early stun follow ups, monkey king for the jingu trade loops and the soldier ring sieges, tiny for the toss catches and the tower pressure, sven for the cleave through the clumped lines, terrorblade for the metamorph sieges and the sunder saves, luna for the glaive wave clear and the eclipse clump kills, windranger for the shackle picks and the focus fire deletes, phantom lancer into the squishy clumped lines, clinkz for the skeleton walk tempo and the archer sieges, nature's prophet for the global farm and the split pressure, lifestealer into tanks, juggernaut for the spin immunity and the ward sieges, spectre for the global haunt cleanup, anti mage for the counter spell and the split push tempo, ursa for the swipes grind and the pit windows, phantom assassin for the blink strike crit deletes and the blur front, templar assassin for the refraction lanes and the meld picks with the trap vision watching the map",
-    "2": "dedicated pangolier for the roll flips through the fight and the swashbuckle poke, marci for the rebound pair setups and the unleash brawls, storm spirit for the zip tempo and the overload picks, slark for the pickoffs and the late snowball, dragon knight into the magic mids, leshrac for the pulse nova teamfights and the edict sieges, outworld destroyer for the astral picks and the eclipse mana drops",
-    "3": "doom for the ult that shuts any hero off and the devour lane lead, centaur for the stomp engages and the tanky front with the stampede saves, enigma for the black hole teamfights and the eidolon pushes, timbersaw for the chain brawls and the reactive armor front, slardar for the corrosive haze strips and the amplified pick damage, brewmaster for the primal split teamfights and the earth brewling sieges, lycan for the wolf sieges and the unslowable shapeshift runs, dawnbreaker for the global ult presence and the tanky front, necrophos as the sustain offlane that outlasts burst and deletes the tanky cores, viper for the poison kite lanes and the strike break picks, death prophet for the exorcism sieges and the silence tempo, dark seer for the vacuum clump setups and the replica walls that cash the enemy cores, largo for the rhapsody fight swings and the lick dispels that flip the spell trades",
+    "2": "dedicated pangolier for the roll flips through the fight and the swashbuckle poke, marci for the rebound pair setups and the unleash brawls, storm spirit for the zip tempo and the overload picks, slark for the pickoffs and the late snowball, dragon knight into the magic mids, leshrac for the pulse nova teamfights and the edict sieges, outworld destroyer for the astral picks and the eclipse mana drops, ember spirit for the remnant traces and the sleight escapes that dodge every commit, lina for the burst lanes and the laguna blade deletes, sniper for the shrapnel zones and the take aim range that outlanes every mid, snapfire for the scatter brawls and the mortimer kisses sieges",
+    "3": "doom for the ult that shuts any hero off and the devour lane lead, centaur for the stomp engages and the tanky front with the stampede saves, enigma for the black hole teamfights and the eidolon pushes, timbersaw for the chain brawls and the reactive armor front, slardar for the corrosive haze strips and the amplified pick damage, brewmaster for the primal split teamfights and the earth brewling sieges, lycan for the wolf sieges and the unslowable shapeshift runs, dawnbreaker for the global ult presence and the tanky front, necrophos as the sustain offlane that outlasts burst and deletes the tanky cores, viper for the poison kite lanes and the strike break picks, death prophet for the exorcism sieges and the silence tempo, dark seer for the vacuum clump setups and the replica walls that cash the enemy cores, largo for the rhapsody fight swings and the lick dispels that flip the spell trades, pudge for the hook picks and the rot brawls that flip the lane",
     "4": "dedicated rubick for the spell steals and the fade bolt trades, bounty hunter for the track economy, nyx assassin into the caster lines, tusk for the snowball commits and the walrus punch deletes, hoodwink for the bushwhack stuns and the sharpshooter snipes, mirana for the arrow picks and the moonlight engages, shadow shaman for the chain lockdown and the ward sieges from the roam, earthshaker for the fissure cuts and the echo slams that cash the clump",
     "5": "dedicated winter wyvern for the curse turns and the cold embraces, bane for the nightmare setups and the fiend grip deletes, clockwerk for the cogs isolations and the flare globals, enchantress for the converted neutral sieges and the impetus gap taxes, lich for the frost shield sieges and the chain frost teamfights, witch doctor for the maledict bites and the death ward bounces, ancient apparition for the ice blast shatters and the heal cut that starves the sustain drafts, techies for the mine carpets that tax every rotation and the blast off trades, venomancer for the gale chases and the plague ward carpets that zone every objective"
   },
@@ -33,12 +33,17 @@
       "outworld-destroyer",
       "slark",
       "leshrac",
+      "ember-spirit",
+      "snapfire",
+      "lina",
       "pangolier",
+      "sniper",
       "storm-spirit"
     ],
     "3": [
       "enigma",
       "brewmaster",
+      "pudge",
       "dawnbreaker",
       "lycan",
       "dark-seer",
@@ -866,6 +871,105 @@
       "when": [{ "kind": "enemyVisibleAny", "heroes": ["shadow-fiend", "treant", "lycan", "tiny", "alchemist"] }],
       "action": "bonus",
       "note": "the paper frames and the greed farms stand in the acorn poke, the trees they hug feed the bushwhack",
+      "origin": "authored"
+    },
+    {
+      "id": "ember-lane-penalty",
+      "target": "ember-spirit",
+      "roles": ["2"],
+      "when": [{ "kind": "enemyVisibleAny", "heroes": ["oracle", "broodmother", "meepo", "visage", "abaddon", "largo", "slark", "outworld-destroyer"] }],
+      "action": "penalty",
+      "note": "the fate edict and the astral prison blank the slash economy, the floods body the remnant traces, and the leashes catch every zip lane",
+      "origin": "authored"
+    },
+    {
+      "id": "ember-paper-boost",
+      "target": "ember-spirit",
+      "roles": ["2"],
+      "when": [{ "kind": "enemyVisibleAny", "heroes": ["treant", "bristleback", "sand-king", "natures-prophet", "shadow-fiend"] }],
+      "action": "bonus",
+      "note": "the tanky waddles stand in the chains and the paper farms feed the sleight cash",
+      "origin": "authored"
+    },
+    {
+      "id": "lina-hunt-penalty",
+      "target": "lina",
+      "roles": ["2"],
+      "when": [{ "kind": "enemyVisibleAny", "heroes": ["visage", "bounty-hunter", "clinkz", "enigma", "brewmaster", "elder-titan", "arc-warden", "medusa", "kunkka"] }],
+      "action": "penalty",
+      "note": "the familiar flood and the eidolon swarms dive the paper frame, the track crew never leaves the lane, and the standing hulls shrug the burst",
+      "origin": "authored"
+    },
+    {
+      "id": "lina-paper-boost",
+      "target": "lina",
+      "roles": ["2"],
+      "when": [{ "kind": "enemyVisibleAny", "heroes": ["shadow-fiend", "alchemist", "natures-prophet", "muerta"] }],
+      "action": "bonus",
+      "note": "the paper farms eat the slave spam and the laguna ends the race before it starts",
+      "origin": "authored"
+    },
+    {
+      "id": "sniper-meepo-veto",
+      "target": "sniper",
+      "roles": ["2"],
+      "when": [{ "kind": "enemyVisibleAny", "heroes": ["meepo"] }],
+      "action": "hard_gate",
+      "note": "the net flood pins the range and the poof burst deletes the frame before the shrapnel pays",
+      "origin": "authored"
+    },
+    {
+      "id": "sniper-dive-penalty",
+      "target": "sniper",
+      "roles": ["2"],
+      "when": [{ "kind": "enemyVisibleAny", "heroes": ["leshrac", "primal-beast", "spectre", "brewmaster", "nyx-assassin", "arc-warden", "phantom-lancer"] }],
+      "action": "penalty",
+      "note": "the gap close dives and the illusion floods run through the range tax before the headshot pays",
+      "origin": "authored"
+    },
+    {
+      "id": "sniper-paper-boost",
+      "target": "sniper",
+      "roles": ["2"],
+      "when": [{ "kind": "enemyVisibleAny", "heroes": ["shadow-fiend", "tiny", "drow-ranger", "huskar"] }],
+      "action": "bonus",
+      "note": "the standing fights and the immobile farmers stand in the max range tax all game",
+      "origin": "authored"
+    },
+    {
+      "id": "snap-swarm-penalty",
+      "target": "snapfire",
+      "roles": ["2"],
+      "when": [{ "kind": "enemyVisibleAny", "heroes": ["visage", "enigma", "bounty-hunter", "brewmaster", "night-stalker", "outworld-destroyer", "io"] }],
+      "action": "penalty",
+      "note": "the floods and the astral steal the brawl, the track crew never enters the cone, and the night wings dive the frame",
+      "origin": "authored"
+    },
+    {
+      "id": "snap-paper-boost",
+      "target": "snapfire",
+      "roles": ["2"],
+      "when": [{ "kind": "enemyVisibleAny", "heroes": ["shadow-fiend", "drow-ranger", "treant", "underlord", "natures-prophet"] }],
+      "action": "bonus",
+      "note": "the standing fronts and the paper farms stand in the cone and eat the kisses",
+      "origin": "authored"
+    },
+    {
+      "id": "pudge-front-penalty",
+      "target": "pudge",
+      "roles": ["3"],
+      "when": [{ "kind": "enemyVisibleAny", "heroes": ["meepo", "visage", "wraith-king", "enigma", "elder-titan", "bounty-hunter", "sven"] }],
+      "action": "penalty",
+      "note": "the clone flood and the eidolon swarms ignore the hook, the reincarnation walks the pick back, and the cleave cashes the heap front",
+      "origin": "authored"
+    },
+    {
+      "id": "pudge-paper-boost",
+      "target": "pudge",
+      "roles": ["3"],
+      "when": [{ "kind": "enemyVisibleAny", "heroes": ["shadow-fiend", "alchemist", "naga-siren", "venomancer", "treant"] }],
+      "action": "bonus",
+      "note": "the paper frames and the immobile farmers stand hookable all game and the reel feeds the heap",
       "origin": "authored"
     }
   ],
