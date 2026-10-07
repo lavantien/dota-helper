@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="dark">
+<title>sub-pool manager</title>
+<link rel="stylesheet" href="../ui/ui.css">
+<link rel="stylesheet" href="picker.css">
+<link rel="stylesheet" href="subsets.css">
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <a class="back" href="picker.html" aria-label="open the pick simulator">sim: pick simulator</a>
+    <h1>sub-pools</h1>
+  </header>
+
+  <section class="card">
+    <div id="modeBanner" class="banner" aria-live="polite"></div>
+    <div id="errBanner" class="banner" aria-live="polite"></div>
+    <div id="emptyHint" class="sub">no sub-pools yet, name the first one and create it, then toggle pool pairs into it and save</div>
+    <div id="editRow" class="subrow" hidden>
+      <select id="subsetSel" data-fk="sel" aria-label="active sub-pool"></select>
+      <input id="renameField" data-fk="rename" autocomplete="off" placeholder="rename the active sub-pool"
+        aria-label="new name for the active sub-pool">
+      <button id="delBtn" data-fk="del" class="segbtn" aria-label="delete the active sub-pool">delete</button>
+    </div>
+    <div id="createRow" class="subrow">
+      <input id="createField" data-fk="create" autocomplete="off" placeholder="name a new sub-pool"
+        aria-label="new sub-pool name">
+      <button id="createBtn" data-fk="createBtn" class="segbtn">create</button>
+    </div>
+  </section>
+
+  <section class="card">
+    <div id="saveline" class="saveline" hidden>
+      <button id="saveBtn" data-fk="save" class="segbtn">save pairs</button>
+      <span id="pairCount" class="dim"></span>
+    </div>
+    <div id="grid" class="poollist"></div>
+    <div id="orphans" class="poollist"></div>
+  </section>
+</div>
+
+<script src="picker-data-generated.js"></script>
+<script src="subsets-app.js"></script>
+</body>
+</html>

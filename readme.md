@@ -21,7 +21,7 @@ the lineup below is the hard-frozen pool: membership changes only through a deli
 
 ## tools
 
-- `picker/`: the entry point, draft board with direct slot aiming, ban strip, and per-term scored ranking for the selected role
+- `picker/`: the entry point, draft board with direct slot aiming, ban strip, per-term scored ranking for the selected role, and the sub-pool bar, plus `subsets.html`, the manager page for carving sub-pools out of the master pool (`make subsets`)
 - `guide/`: the reference guide, patch state, hero panels, heatmap, trends, principles, practice
 - `ui/ui.css`: shared dark-hud token sheet, single source for every color, type, spacing, and control-size value. both pages link it as `../ui/ui.css`, page css adds layout only
 

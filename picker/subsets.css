@@ -1,0 +1,29 @@
+/* subsets page layout only: selector rows, save line, and the chip states
+   the shared sheets lack. tokens and primitives live in ../ui/ui.css, the
+   role-grouped grid rules in picker.css */
+
+/* display rules below must beat the row layouts when a row hides */
+[hidden] { display: none !important; }
+
+.subrow { display: flex; flex-wrap: wrap; gap: var(--sp-2); align-items: center; margin-top: var(--sp-2); }
+.subrow select, .subrow input {
+  border: 1px solid var(--grid); border-radius: var(--r-2);
+  padding: var(--sp-1) var(--sp-3); min-height: var(--control-h);
+  background: var(--surface-1); color: var(--ink-1); font: inherit; font-size: var(--fs-small);
+}
+.subrow input { flex: 1; min-width: 14rem; max-width: 24rem; }
+.subrow input::placeholder { color: var(--muted); }
+.subrow select:disabled, .subrow input:disabled { opacity: .55; }
+
+.saveline { display: flex; gap: var(--sp-3); align-items: center; margin-bottom: var(--sp-3); font-size: var(--fs-small); flex-wrap: wrap; }
+
+/* pair toggle chips: on mirrors segbtn.on, disabled is the read-only grid */
+.herochip.on {
+  border-color: var(--accent); background: var(--accent-soft);
+  color: var(--accent); font-weight: var(--fw-strong);
+}
+.herochip:disabled { opacity: .55; cursor: default; }
+.herochip:disabled:hover { border-color: var(--grid); }
+
+/* flagged stale rows never toggle */
+.herochip.orphan, .herochip.orphan:hover { border-color: var(--grid); cursor: default; }
