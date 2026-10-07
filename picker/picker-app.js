@@ -1,6 +1,6 @@
 // picker-app.js: static draft board UI for the pick simulator
-// reads window.PICKER_GEN, window.PickerScore, and window.PickerSearch,
-// no fetch, no network scripts, file:// safe
+// reads window.PICKER_GEN, window.PickerScore, window.PickerSearch, and
+// window.PickerSubset when present, file:// safe
 (function () {
 'use strict';
 
@@ -21,9 +21,7 @@ const UI = {
   },
 };
 
-// board arrays keyed by team id ('bans' included) so the targeting machine
-// can index state uniformly; snap() renames bans back to the picker-score
-// contract's flat `banned` array
+// board arrays keyed by team id, snap() maps bans to the score contract's banned
 const state = {
   allies: Array(UI.teamSize).fill(-1),
   enemies: Array(UI.teamSize).fill(-1),
@@ -98,8 +96,7 @@ function renderRoles() {
   });
 }
 
-// targeting: the aim always addresses an empty slot, except the terminal
-// board-full state where pick() refuses to place
+// the aim always addresses an empty slot, board-full refuses to place
 const firstEmpty = (team, from) => {
   for (let c = 0; c < state[team].length; c++) {
     const i = ((from || 0) + c) % state[team].length;
@@ -113,10 +110,8 @@ const behindSide = () => {
 };
 const boardFull = () => firstEmpty('allies') < 0 && firstEmpty('enemies') < 0 && firstEmpty('bans') < 0;
 
-// walk the candidate chain and aim at the first empty slot: picks alternate
-// to whichever side is behind and fill in slot order, bans chain forward
-// from the slot just filled (wrapping, so a deliberately skipped slot is
-// revisited last), full sides fall through, a full board leaves the aim
+// aim at the first empty slot in the chain: picks alternate to the side
+// behind, bans chain forward from the slot just filled (wrapping)
 function retarget(prefer) {
   const other = t => (t === 'allies' ? 'enemies' : 'allies');
   const lead = prefer || behindSide();
@@ -158,9 +153,7 @@ function renderSlots(container, slots, team) {
       d.setAttribute('aria-label', G.names[idx] + ' on ' + side + ', enter to clear');
       d.onclick = () => {
         slots[i] = -1;
-        // a clear can only free a slot, so a valid aim stays put; a stale one
-        // (left on a filled slot after a full board drained) lands on the
-        // freshly freed slot
+        // a clear can only free a slot, a stale aim lands on the freed slot
         if (state[target.team][target.slot] >= 0) aimAt(team, i);
         render();
         container.children[i].focus();
@@ -206,10 +199,9 @@ function renderBanStrip() {
 const slugIdx = {};
 G.slugs.forEach((s, i) => { slugIdx[s] = i; });
 
-// repertoire order: roles in order, fallbackOrder within each role, sorted by
-// per-position win rate in divine-immortal ranked all pick by make order-pool.
-// every hero seats one role under the frozen lineup, no hero repeats across groups.
-// single source for the legend rendering and the search's empty-query browse
+// repertoire order: roles in order, fallbackOrder within role (make
+// order-pool), one seat per hero, single source for the legend and the
+// search browse
 function poolGroups() {
   return G.roles.map(r => {
     const idxs = [];
@@ -225,10 +217,19 @@ function poolGroups() {
     return { role: r, idxs: idxs };
   });
 }
-const orderedPool = poolGroups().reduce((flat, g) => {
+const flatPool = () => poolGroups().reduce((flat, g) => {
   g.idxs.forEach(idx => { if (!flat.includes(idx)) flat.push(idx); });
   return flat;
 }, []);
+let poolOrder = flatPool();
+// a subset swap re-points the pool: rebuild the order, refresh the search
+// closure, rerender. no-op until the mount below exists
+function refreshPoolView() {
+  if (!ac) return;
+  poolOrder = flatPool();
+  ac.setPoolOrder(poolOrder);
+  render();
+}
 
 function legendChip(idx, taken) {
   const c = el('span', 'herochip' + (taken.has(idx) ? ' out' : ''));
@@ -313,9 +314,8 @@ function lowConf(pos) {
   return 2 * low > all.length;
 }
 
-// framework prose panel: the same why/how/when content the guide renders,
-// keyed by pool position so it stays parallel to poolIdx. gate notes and the
-// lane pair signal live here too, keeping the result row a single line
+// framework prose panel keyed by pool position, parallel to poolIdx. gate
+// notes and the lane pair signal live here, keeping the result row one line
 function toggleProse(row, pos) {
   const open = row.nextElementSibling;
   if (open && open.classList.contains('fw')) {
@@ -338,9 +338,7 @@ function toggleProse(row, pos) {
       panel.appendChild(line);
     });
   }
-  // pair signal: the picked ally this candidate lanes best with, read from
-  // the same syn row the scorer reads (display only, the score itself is
-  // role weighted through weights.synByRole)
+  // pair signal: the picked ally this candidate lanes best with, display only
   const sNow = snap();
   if (sNow.allies.length) {
     const synRow = PS.parsePacked(G.syn[pos]);
@@ -406,8 +404,7 @@ function renderResults(rows, widened) {
     const entry = G.entries[pos] || { roles: [], tier: {} };
     const tier = entry.tier && entry.tier[state.role];
     if (tier && tier !== 'dedicated') chips.appendChild(el('span', 'tag flex', tier));
-    // data position: most-played farm position from the scoped aggregates,
-    // mismatch-tagged when it disagrees with the authored role being viewed
+    // most-played farm position, mismatch-tagged against the viewed role
     const stats = (G.heroPos || [])[pos];
     if (stats && stats.length) {
       const top = stats[0];
@@ -415,8 +412,7 @@ function renderResults(rows, widened) {
       chips.appendChild(el('span', 'tag pos' + cls,
         'pos ' + top[0] + ' ' + Math.round(top[1] * 100) + '%'));
     }
-    // trend: week-over-week overall wr movement from the trends ledger,
-    // display only
+    // trend: week-over-week wr movement from the trends ledger, display only
     const tr = (G.trend || [])[pos];
     if (tr) {
       const chip = el('span', 'tag tr ' + (tr[0] >= 0 ? 'tup' : 'tdn'),
@@ -462,8 +458,7 @@ function render() {
   ac.refresh();
 }
 
-// one shared row template so header labels and every result row stay
-// aligned; the term column count derives from termOrder, never a literal
+// one shared row template, term column count derives from termOrder
 document.documentElement.style.setProperty('--rrow-cols',
   '2.2rem 2rem minmax(16rem, 1fr) repeat(' + UI.termOrder.length + ', 4.6rem) 4.6rem');
 
@@ -475,13 +470,11 @@ const ac = window.PickerSearch.mount({
   isTaken: takenSet,
   onPick: pick,
   limit: UI.acLimit,
-  poolOrder: orderedPool,
+  poolOrder: poolOrder,
 });
 
 // shot bootstrap for the readme capture: query params seed the board through
-// the same first-empty placement pick() uses, so a headless capture can
-// reproduce the documented frame without driving the UI. malformed input is
-// refused per field, the page still renders
+// the same placement pick() uses, malformed input refused per field
 (function seedShotState() {
   const q = new URLSearchParams(location.search);
   if (![...q.keys()].length) return;
@@ -500,4 +493,7 @@ const ac = window.PickerSearch.mount({
   if (Number.isInteger(slot) && slot >= 0 && slot < state[aim[0]].length) aimAt(aim[0], slot);
 })();
 render();
+// subset boot lives in picker-subset.js, the guard keeps the page working
+// when that script is absent
+if (window.PickerSubset) window.PickerSubset.boot({ G: G, onChange: refreshPoolView });
 })();

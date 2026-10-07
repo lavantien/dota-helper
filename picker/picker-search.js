@@ -22,9 +22,10 @@ function mount(opts) {
     if (idx >= 0) aliases.push({ idx: idx, keyLower: key.toLowerCase(), init: initialsOf(key) });
   });
   // repertoire order comes from the app (role-grouped, authored within role)
-  // so the empty-query browse matches the legend; plain poolIdx is the fallback
-  const poolOrder = opts.poolOrder || G.poolIdx;
-  const poolSet = new Set(poolOrder);
+  // so the empty-query browse matches the legend; plain poolIdx is the fallback.
+  // mutable: a subset swap re-points both through setPoolOrder
+  let poolOrder = opts.poolOrder || G.poolIdx;
+  let poolSet = new Set(poolOrder);
 
   let sel = 0;
   let visible = false;
@@ -203,6 +204,10 @@ function mount(opts) {
     refresh: () => { if (visible) renderList(); },
     clearAndHide: () => { input.value = ''; hide(); },
     hide: hide,
+    setPoolOrder: order => {
+      poolOrder = order || G.poolIdx;
+      poolSet = new Set(poolOrder);
+    },
   };
 }
 

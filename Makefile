@@ -97,7 +97,7 @@ engine-cover-%:
 	python scripts/cover-summary.py $(ENGINE_DIR)/coverage-$*.out
 
 test-picker:
-	node --test picker/picker-score.test.mjs
+	node --test picker/picker-score.test.mjs picker/picker-subset.test.mjs
 
 # lcov twin of test-picker feeding codecov alongside the engine profile; the
 # spec reporter keeps the local loop readable, only picker-score.js loads so
@@ -107,7 +107,7 @@ test-picker-cover:
 	     --test-coverage-exclude=**/*.test.mjs \
 	     --test-reporter=spec --test-reporter-destination=stdout \
 	     --test-reporter=lcov --test-reporter-destination=picker-lcov.info \
-	     picker/picker-score.test.mjs
+	     picker/picker-score.test.mjs picker/picker-subset.test.mjs
 
 test: engine-test test-picker
 
