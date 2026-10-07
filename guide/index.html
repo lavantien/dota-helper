@@ -101,9 +101,9 @@ function bigIcon(el, slug) {
 }
 
 // nav
-const views = [['patch', 'patch state'], ...G.roles.map(r => ['role' + r.id, r.label]),
+const views = [['picker', 'back to the pick simulator'], ['patch', 'patch state'], ...G.roles.map(r => ['role' + r.id, r.label]),
   ['heatmap', 'pool vs enemies'], ['trends', 'trends'], ['principles', 'principles'], ['practice', 'practice plan'],
-  ['using', 'using the picker'], ['picker', 'open the pick simulator']];
+  ['using', 'using the picker']];
 let current = 'role2';
 const nav = d3.select('#nav').selectAll('button').data(views).join('button')
   .attr('class', 'segbtn').attr('type', 'button')

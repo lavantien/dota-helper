@@ -21,8 +21,8 @@ the lineup below is the hard-frozen pool: membership changes only through a deli
 
 ## tools
 
-- `picker/`: draft board with direct slot aiming, ban strip, and per-term scored ranking for the selected role
-- `guide/`: patch state, hero panels, heatmap, trends, principles, practice
+- `picker/`: the entry point, draft board with direct slot aiming, ban strip, and per-term scored ranking for the selected role
+- `guide/`: the reference guide, patch state, hero panels, heatmap, trends, principles, practice
 - `ui/ui.css`: shared dark-hud token sheet, single source for every color, type, spacing, and control-size value. both pages link it as `../ui/ui.css`, page css adds layout only
 
 ## layout
@@ -140,7 +140,7 @@ the go engine runs only inside the golang:1.27 linux image (the duckdb cgo drive
 
 `make refresh` is the unified pipeline command (serial only, never -j). the others by group:
 
-- view: `serve` (http server for browser tooling, file:// is blocked there), `picker`, `dota`, `shots` (headless retake of both readme screenshots)
+- view: `serve` (http server for browser tooling, file:// is blocked there), `dota` and `picker` (open the pick simulator, the entry point), `guide` (opens the reference guide), `shots` (headless retake of both readme screenshots)
 - fetch: `fetch-stratz`, `fetch-builds`, `fetch-matches`, `fetch-positions`, `fetch-howdoiplay`, `fetch-matchups`, plus `-refresh` variants
 - build data: `ingest`, `mine`, `emit` (or `emit-data`, `emit-guide`, `emit-picker`), `emit-goldens`, `build-guide-data`, `sync-builds`, `merge-mechanics`, `validate-curation`, `fixtures`, `order-pool`
 - evaluate: `eval`, `eval-fit`, `eval-fit-alphas`, `eval-fit-completion`, `eval-promote SECTION=weights|alphas|completion`

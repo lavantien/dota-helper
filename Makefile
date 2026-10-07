@@ -1,4 +1,4 @@
-.PHONY: dota picker engine-build engine-test engine-cover engine-cover-summary test-picker test-picker-cover test probe-stratz probe-opendota \
+.PHONY: dota picker guide engine-build engine-test engine-cover engine-cover-summary test-picker test-picker-cover test probe-stratz probe-opendota \
         probe-builds probe-matches probe-scope probe-window fetch-stratz fetch-stratz-refresh fetch-opendota fetch-builds \
         fetch-builds-refresh fetch-matches fetch-matches-refresh fetch-positions ingest db-query mine sync-builds order-pool emit emit-data \
         emit-guide emit-picker emit-goldens eval eval-fit eval-fit-alphas eval-fit-completion \
@@ -19,11 +19,15 @@ GO_RUN = docker run --rm -v $(CURDIR):/src -w /src -v poolguide-mod:/go/pkg/mod 
 # docker.exe sees them; disable that rewrite (no-op on the linux ci host)
 export MSYS_NO_PATHCONV := 1
 
+# dota stays the habitual one-key target, it opens the entry point now
 dota:
-	pwsh -NoProfile -Command "Start-Process (Join-Path (Get-Location) 'guide/index.html')"
+	pwsh -NoProfile -Command "Start-Process (Join-Path (Get-Location) 'picker/picker.html')"
 
 picker:
 	pwsh -NoProfile -Command "Start-Process (Join-Path (Get-Location) 'picker/picker.html')"
+
+guide:
+	pwsh -NoProfile -Command "Start-Process (Join-Path (Get-Location) 'guide/index.html')"
 
 # static server for visual checks over http (file:// is blocked in browser
 # tooling); loopback only, page trees only, so var/ and .git stay unserved
