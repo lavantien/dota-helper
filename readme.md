@@ -32,7 +32,7 @@ the lineup below is the hard-frozen pool: membership changes only through a deli
 - `scripts/`: powershell orchestration, the matchups and howdoiplay crawls, the guide data build, and the check guard
 - `ref/`: committed stratz crawl caches, matchup tables, and eval reports, the rebuildable raw layer
 - `playground/`: one-off utilities
-- `var/`: gitignored live state, the duckdb database, engine binary, eval fits, and the stratz token
+- `var/`: gitignored live state, the duckdb database, engine binary, eval fits, and the stratz token, besides `subsets.db`, the committed sqlite sub-pool store
 
 ## data flow
 

@@ -21,6 +21,8 @@ $expected = @(
     'Makefile',
     '.gitignore',
     'scripts/serve.py',
+    'scripts/subsets.py',
+    'scripts/test_serve.py',
     'config.json',
     'content.json',
     'picker/gates.json',
@@ -449,6 +451,7 @@ if ($fail.Count -eq 0) { Write-Host "ok: $($dumpSlugs.Count) previous-pool fallb
 $slocTargets = @(
     'Makefile', 'scripts/fetch-matchups.ps1', 'scripts/build-guide-data.ps1', 'scripts/check.ps1',
     'scripts/fetch-howdoiplay.ps1', 'scripts/take-shots.ps1', 'scripts/serve.py',
+    'scripts/subsets.py', 'scripts/test_serve.py',
     'ui/ui.css', 'guide/guide.css', 'picker/picker.css',
     'guide/index.html', 'guide/data.js', 'guide/guide-data-generated.js',
     'readme.md', 'ref/dota2/README.md',
@@ -478,8 +481,10 @@ if (Test-Path $pickerDir) {
 # loader, one struct and one validate arm per hub section, so it tracks the
 # same growth; order.go carries the byte-splice renderer and its preservation
 # guards past the blanket; check.ps1 grows the same way, one gate per pass
-# that touches the pool or its derived surfaces
-$slocCapFor = @{ 'config.json' = 900; 'content.json' = 1300; 'picker\gates.json' = 1100; 'guide\data.js' = 700; 'engine\internal\config\config.go' = 550; 'engine\internal\order\order.go' = 550; 'scripts\check.ps1' = 550 }
+# that touches the pool or its derived surfaces. the loopback server trio
+# (serve routing, subsets storage, its e2e suite) carries explicit caps sized
+# to the api surface it ships
+$slocCapFor = @{ 'config.json' = 900; 'content.json' = 1300; 'picker\gates.json' = 1100; 'guide\data.js' = 700; 'engine\internal\config\config.go' = 550; 'engine\internal\order\order.go' = 550; 'scripts\check.ps1' = 550; 'scripts\serve.py' = 300; 'scripts\subsets.py' = 300; 'scripts\test_serve.py' = 400 }
 $seen = @{}
 $raised = 0
 foreach ($t in $slocTargets) {

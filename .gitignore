@@ -1,4 +1,6 @@
-var/
+var/*
+!var/subsets.db
+__pycache__/
 .claude/
 .playwright-mcp/
 .superpowers/

@@ -21,7 +21,11 @@ jobs:
       - uses: actions/setup-node@v6
         with:
           node-version: 24
+      - uses: actions/setup-python@v7
+        with:
+          python-version: '3.14'
       - run: make test-picker
+      - run: make test-serve
       - run: make check
 
   # the go suite runs dockerized (same GO_RUN pattern as local, tests are

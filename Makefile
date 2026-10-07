@@ -3,7 +3,8 @@
         fetch-builds-refresh fetch-matches fetch-matches-refresh fetch-positions ingest db-query mine sync-builds order-pool emit emit-data \
         emit-guide emit-picker emit-goldens eval eval-fit eval-fit-alphas eval-fit-completion \
         eval-promote refresh fixtures verify fetch-matchups \
-        build-guide-data fetch-howdoiplay merge-mechanics validate-curation check check-linux coverage-badge shots
+        build-guide-data fetch-howdoiplay merge-mechanics validate-curation check check-linux coverage-badge shots \
+        db-subsets test-serve subsets
 
 # duckdb cgo has no supported native windows toolchain (crt-mixing, verified),
 # so every go build and test runs in the linux golang image, same pattern as the
@@ -30,9 +31,19 @@ guide:
 	pwsh -NoProfile -Command "Start-Process (Join-Path (Get-Location) 'guide/index.html')"
 
 # static server for visual checks over http (file:// is blocked in browser
-# tooling); loopback only, page trees only, so var/ and .git stay unserved
+# tooling); loopback only, page trees only, so var/ and .git stay unserved.
+# /api/subsets on the same server is the one writer for the sub-pool db
 serve:
 	python scripts/serve.py $(PORT)
+
+# sqlite schema for the user-defined hero sub-pools behind /api/subsets,
+# idempotent (the server runs the same init on boot)
+db-subsets:
+	python scripts/subsets.py init
+
+# sub-pool manager dev loop: detached loopback server, then the manager page
+subsets:
+	pwsh -NoProfile -Command "Start-Process python -ArgumentList 'scripts/serve.py','$(PORT)'; Start-Sleep -Seconds 1; Start-Process 'http://localhost:$(PORT)/picker/subsets.html'"
 
 # readme art: headless capture of both pages through their shot bootstraps.
 # pre release step, so the screenshots always match the shipped pages
@@ -264,6 +275,10 @@ validate-curation:
 # fold var/howdoiplay-curation fragments into content.json mechanics + curated.json
 merge-mechanics:
 	node playground/merge-mechanics.mjs
+
+# e2e suite for the loopback server and its subsets api
+test-serve:
+	python scripts/test_serve.py
 
 check:
 	pwsh -NoProfile -File scripts/check.ps1
