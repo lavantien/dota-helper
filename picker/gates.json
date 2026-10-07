@@ -22,6 +22,7 @@
       "terrorblade",
       "lone-druid",
       "templar-assassin",
+      "drow-ranger",
       "alchemist",
       "tiny",
       "natures-prophet",
@@ -47,6 +48,7 @@
       "dawnbreaker",
       "lycan",
       "dark-seer",
+      "tidehunter",
       "viper",
       "centaur",
       "necrophos",
@@ -62,6 +64,7 @@
       "earthshaker",
       "shadow-shaman",
       "mirana",
+      "undying",
       "rubick",
       "tusk",
       "hoodwink"
@@ -970,6 +973,69 @@
       "when": [{ "kind": "enemyVisibleAny", "heroes": ["shadow-fiend", "alchemist", "naga-siren", "venomancer", "treant"] }],
       "action": "bonus",
       "note": "the paper frames and the immobile farmers stand hookable all game and the reel feeds the heap",
+      "origin": "authored"
+    },
+    {
+      "id": "undying-clump-penalty",
+      "target": "undying",
+      "roles": ["4"],
+      "when": [{ "kind": "enemyVisibleAny", "heroes": ["enigma", "marci", "luna", "bounty-hunter", "earthshaker"] }],
+      "action": "penalty",
+      "note": "the eidolon pushes walk the tomb down, the glaives and the echo slam cash the zombie clump, and the track hunts the waddle roam",
+      "origin": "authored"
+    },
+    {
+      "id": "undying-grind-boost",
+      "target": "undying",
+      "roles": ["4"],
+      "when": [{ "kind": "enemyVisibleAny", "heroes": ["tiny", "natures-prophet", "drow-ranger", "alchemist"] }],
+      "action": "bonus",
+      "note": "the tomb zone and the strength steal grind the immobile frames, the treants and the greed farms feed the decay",
+      "origin": "authored"
+    },
+    {
+      "id": "drow-hunt-veto",
+      "target": "drow-ranger",
+      "roles": ["1"],
+      "when": [{ "kind": "enemyVisibleAny", "heroes": ["bounty-hunter", "enigma", "phantom-lancer", "spectre"] }],
+      "action": "hard_gate",
+      "note": "no escape behind the gust, the track and the hole pin the frame and the haunt and the flood walk her down",
+      "origin": "authored"
+    },
+    {
+      "id": "drow-brawl-penalty",
+      "target": "drow-ranger",
+      "roles": ["1"],
+      "when": [{ "kind": "enemyVisibleAny", "heroes": ["dragon-knight", "sven", "brewmaster", "leshrac", "largo", "marci"] }],
+      "action": "penalty",
+      "note": "the tanky fronts and the standing brawls run through the range tax before the marksman pays",
+      "origin": "authored"
+    },
+    {
+      "id": "drow-paper-boost",
+      "target": "drow-ranger",
+      "roles": ["1"],
+      "when": [{ "kind": "enemyVisibleAny", "heroes": ["lina", "timbersaw", "alchemist", "natures-prophet"] }],
+      "action": "bonus",
+      "note": "the immobile mids and the split farms stand in the multishot tax all game",
+      "origin": "authored"
+    },
+    {
+      "id": "tide-ult-race-penalty",
+      "target": "tidehunter",
+      "roles": ["3"],
+      "when": [{ "kind": "enemyVisibleAny", "heroes": ["leshrac", "outworld-destroyer", "juggernaut", "enigma", "bounty-hunter", "nyx-assassin"] }],
+      "action": "penalty",
+      "note": "the spin and the astral blank the ravage window, the hole wins the ult race, and the track and the carapace tax the waddle front",
+      "origin": "authored"
+    },
+    {
+      "id": "tide-shell-boost",
+      "target": "tidehunter",
+      "roles": ["3"],
+      "when": [{ "kind": "enemyVisibleAny", "heroes": ["venomancer", "natures-prophet", "storm-spirit", "slardar", "phantom-assassin", "ember-spirit", "tiny"] }],
+      "action": "bonus",
+      "note": "the shell strips the poison and the haze, every blink and zip commit lands inside the ravage",
       "origin": "authored"
     }
   ],

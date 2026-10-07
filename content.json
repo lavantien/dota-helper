@@ -184,6 +184,19 @@
       ],
       "mechanics": [["tip", "breathe fire cuts total attack damage including bonus damage from items, use it early in the fight"], ["tip", "corrosive breath burn works on towers, the dot is the whole early push package"], ["tip", "the transform itself is the gank, nobody respects the instant ranged stun out of knight form"], ["counter", "silver edge and viper strike carry the break, dragon blood regen goes with it"], ["counter", "vessel, skadi, ice blast, doom, even withering mist all cut the dragon blood regen"]]
     },
+    "drow-ranger": {
+      "identity": "ranged siege carry, frost arrows glue the slow onto every click, gust blows the dive back and silences the casters, multishot showers the clump, precision aura arms every ranged teammate, marksmanship procs pierce from outside the answer range",
+      "why": "dedicated pos 1, the aura stacks every ranged teammate and the marksmanship grind deletes structures and paper cores from ranges nothing answers, favored into the standing farm races and the waddling fronts, vetoed by the gap close that parks a body on her and switches the procs off",
+      "how": "arrow the lane body from outside the creep aggro, gust the dive off the backline, multishot the wave and the clump, walk the edge of the range through the fight and let the procs carry the objective, step back the moment a body closes",
+      "when": "lane harass off the arrow spam, mid game the aura windows feed every ranged core and the sieges grind behind them, late the procs shred the paper frames unless the dive comp closes the gap",
+      "build": "falcon blade, manta, pike, butterfly, silver edge, bkb, daedalus",
+      "timings": [["falcon blade", 6], ["manta", 23]],
+      "tech": [
+        "storm spirit, slark, and marci are the vetoes, the gap close stands inside the marksmanship dead zone and holds there until she falls",
+        "death prophet, necrophos, and venomancer style waddling fronts are the free wins, the procs grind every body that cannot close and the arrows tax every step"
+      ],
+      "mechanics": [["tip", "manually casting frost arrows on enemy heroes won't draw creep aggro"], ["tip", "the gust knockback never breaks item channels, do not bother using it to cancel a teleport"], ["tip", "enemies get on top of you to switch off marksmanship, back off and restore it instead of fighting at point blank"], ["counter", "get in her face, she loses the marksmanship bonuses to nearby enemies, close the distance even as a ranged hero"], ["counter", "marksmanship procs bypass main armor but not bonus armor, agility armor barely helps, raw armor items carry"], ["counter", "evasion barely helps against her, marksmanship gives her built-in accuracy"]]
+    },
     "earthshaker": {
       "identity": "blink initiator soft support, fissure cuts the lane and the fight in half, enchant totem primes the burst, aftershock pays a stun behind every cast, echo slam cashes the clump",
       "why": "dedicated pos 4, one fissure sets every kill and the slam flips every clumped fight, favored into the illusion and summon lines that stack the payout, the spread drafts and the battery assault crew blunt him",
@@ -678,6 +691,19 @@
       ],
       "mechanics": [["tip", "his own illusions only hold metamorphosis inside the transform aura, walk the real hero with the siege"], ["tip", "sunder never touches debuff immune targets, a bkb on the low hero blanks the swap"], ["tip", "sunder floors both bodies at a minimum share of max health, two low targets both rise to the floor"], ["tip", "sunder sets health instead of dealing damage or healing, the swap still lands through heal cuts like ice blast"], ["counter", "reflection copies item auras onto its illusions, your radiance and cuirass auras end up working for him"], ["counter", "huge armor on a paper thin health pool, magic damage shreds him and every illusion he owns"]]
     },
+    "tidehunter": {
+      "identity": "offlane anchor, gush strips the armor and slows the body, kraken shell blocks the hits and purges the debuff stack, anchor smash grinds the wave and starves the swing off every body in reach, ravage floods the fight with the stun that anchors the whole engage",
+      "why": "dedicated pos 3, one ravage turns every standing fight and the smash lane starves the attack reliant cores, favored into clumped brawls and swing reliant lines, vetoed by the spread drafts and the spell steal",
+      "how": "gush the body before the smash lands, smash the wave and the melee on cooldown, walk the front while the shell purges, hold the ravage for the committed clump and drop it on the stack",
+      "when": "lane wins the smash economy from the early ranks, mid game ravage windows take every objective on cooldown, late the second ravage holds every ground, starves when the drafts refuse the clump and the steal answers the engage",
+      "build": "vladmir, mage slayer, consecrated wraps, shard, lotus, shiva, refresher",
+      "timings": [["vladmir", 14], ["mage slayer", 16]],
+      "tech": [
+        "rubick, nyx assassin, and outworld destroyer are the vetoes, the steal cashes the ravage against you, the carapace turns the smash, and the astral starves the ult economy",
+        "ursa, sven, and windranger style swing reliant cores are the free wins, the smash strips the attack damage and the ravage holds every commit still"
+      ],
+      "mechanics": [["tip", "gush applies minus armor, use it before anchor smash since the smash is physical damage"], ["tip", "anchor smash is trivial to animation cancel, fake smashes bait melee laners out of last hits"], ["tip", "anchor smash is an instant attack, ignores disarms, has true strike, and applies attack modifiers except cleave"], ["counter", "the kraken shell damage threshold dispel is disabled by breaks"], ["counter", "grab a magic stick in lane when tide spams anchor smash"], ["counter", "ravage expands outward with travel time, a quick force staff or reposition can slip outside it"]]
+    },
     "timbersaw": {
       "identity": "chainsaw brawl offlaner, timber chain whips him between the trees, whirling death pure nukes the clump and strips the primary attribute, reactive armor stacks the regen front, chakram saws the fight open and grinds the wounded",
       "why": "dedicated pos 3, the chain crosses terrain on tree money and the armor front outlasts every right click line, favored into strength cores and tree heavy ground, vetoed by the mana drain and break crew",
@@ -716,6 +742,19 @@
         "shadow fiend, huskar, and nature's prophet style paper farms are the free wins, the snowball reaches every immobile frame and the punch launches it"
       ],
       "mechanics": [["tip", "everyone wrapped in the snowball is invulnerable and hidden, the ball rides out the burst mid roll"], ["tip", "target neutrals or lane creeps with the snowball when escaping, the ball drops you at a predictable safe spot"], ["tip", "spells keep casting mid snowball, prime the shards and the tag team before the ball breaks"], ["tip", "tag team's bonus damage is green damage, cleave, lifesteal, and crit all pay off it, always enable it before the punch"], ["tip", "walrus punch breaks channels through debuff immunity and ignores spell block, hold it for the teleport out"], ["counter", "tusk cannot cast snowball while rooted or leashed, hold the root for his commit"]]
+    },
+    "undying": {
+      "identity": "graveyard lane bully, decay clips the strength off every body in the wave, soul rip converts the crowd into the heal or the nuke, tombstone floods the ground with the zombie chase, flesh golem swells him into the plague the melee cannot shake",
+      "why": "dedicated pos 4, the decay trades flip every lane arithmetic and the tombstone owns the standing fights, favored into melee lanes and the sustain grinds, vetoed by the kite crew and the clears that sweep the graveyard",
+      "how": "decay the lane body on every cooldown, rip the heal off the crowd when the gank lands, plant the tombstone where the fight stands, golem the commit and walk the plague through their line",
+      "when": "lane bully from the first decay ranks, mid game tombstone windows hold every objective, late the stolen strength flattens the paper frames, starves when the clears wipe the tombstone off the map",
+      "build": "mekansm, glimmer, shard, blink, pipe, lotus, agh",
+      "timings": [["mekansm", 22], ["glimmer", 24]],
+      "tech": [
+        "drow ranger, viper, and leshrac are the vetoes, the range war starves the decay trades and the clears sweep the tombstone off the map",
+        "ursa, sven, and lifestealer style melee commits are the free wins, the decay steals the strength every trade and the zombies run the commit down"
+      ],
+      "mechanics": [["tip", "decay deals double the nuke damage to creeps"], ["tip", "when ganked, soul rip before decay, the flat heal is worth more of your max hp before the strength lands"], ["tip", "tombstone zombies add to soul rip's unit count"], ["tip", "you can deny your own tombstone to avoid feeding the gold bounty, remind allies they can deny it too"], ["counter", "kill the tombstone the second it comes up, it is almost always worth it, your supports fend for dear life otherwise"], ["counter", "zombies lose interest in you and die if you go invisible"]]
     },
     "ursa": {
       "identity": "swipe stack brawl carry, earthshock stomps the clump and slows it, overpower bursts the swings at max speed, fury swipes deepen with every hit on the same body, enrage shakes the debuffs off and shrugs the damage through the commit",
@@ -900,7 +939,10 @@
       ["lina", "array placement onto the approach line chained into the slave and the laguna release until the stun, the wave, and the delete land as one burst"],
       ["sniper", "shrapnel drop ahead of the moving target and the max range stutter step until every trade lands outside the answer range"],
       ["snapfire", "point blank scatter alignment onto the creep and the hero until the double damage window pays every time the lane commits"],
-      ["pudge", "hook lead onto the moving path from fog until the reel lands on the walk line, not the body, and the dismember follows the landing"]
+      ["pudge", "hook lead onto the moving path from fog until the reel lands on the walk line, not the body, and the dismember follows the landing"],
+      ["undying", "decay trade rhythm on the lane body and the tombstone placement where the fight stands until the rip always lands before the decay and the zombies join every commit"],
+      ["drow-ranger", "manual frost arrow harass through the standing wave and the range discipline on the retreating body until the procs always land from beyond the answer range and the gust peels the dive clean"],
+      ["tidehunter", "gush into smash order on the lane body and the ravage release onto the committed clump until the armor strip always lands before the swing and the stun always catches the stack"]
     ],
     "replay": [
       "after each session: 10 min, only your deaths, write one line per death: where you should have been",
@@ -939,5 +981,5 @@
       }
     ]
   },
-  "buildsMeta": "stratz itemFullPurchase completed week 1790553600, divine_immortal, fetched 2026-10-06, series 7.41"
+  "buildsMeta": "stratz itemFullPurchase completed week 1790553600, divine_immortal, fetched 2026-10-07, series 7.41"
 }

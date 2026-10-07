@@ -120,6 +120,12 @@
       "tier": "dedicated"
     },
     {
+      "slug": "drow-ranger",
+      "name": "Drow Ranger",
+      "role": "1",
+      "tier": "dedicated"
+    },
+    {
       "slug": "alchemist",
       "name": "Alchemist",
       "role": "1",
@@ -246,6 +252,12 @@
       "tier": "dedicated"
     },
     {
+      "slug": "tidehunter",
+      "name": "Tidehunter",
+      "role": "3",
+      "tier": "dedicated"
+    },
+    {
       "slug": "viper",
       "name": "Viper",
       "role": "3",
@@ -320,6 +332,12 @@
     {
       "slug": "mirana",
       "name": "Mirana",
+      "role": "4",
+      "tier": "dedicated"
+    },
+    {
+      "slug": "undying",
+      "name": "Undying",
       "role": "4",
       "tier": "dedicated"
     },

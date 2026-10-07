@@ -1,5 +1,5 @@
 {
-  "curatedAt": "2026-10-06",
+  "curatedAt": "2026-10-07",
   "source": "ref/dota2/howdoiplay/howdoiplay.json",
   "patch": "7.41",
   "heroes": {
@@ -816,6 +816,68 @@
           "verdict": "confirmed",
           "source": "https://dota2.fandom.com/wiki/Spirit_Vessel",
           "text": "vessel, skadi, ice blast, doom, even withering mist all cut the dragon blood regen"
+        }
+      }
+    ],
+    "drow-ranger": [
+      {
+        "idx": 0,
+        "from": "tips[1]",
+        "verified": {
+          "date": "2026-10-07",
+          "verdict": "confirmed",
+          "source": "https://howdoiplay.com/tips/drow-ranger.html",
+          "text": "manually casting frost arrows on enemy heroes won't draw creep aggro"
+        }
+      },
+      {
+        "idx": 1,
+        "from": "tips[2]",
+        "verified": {
+          "date": "2026-10-07",
+          "verdict": "confirmed",
+          "source": "https://howdoiplay.com/tips/drow-ranger.html",
+          "text": "the gust knockback never breaks item channels, do not bother using it to cancel a teleport"
+        }
+      },
+      {
+        "idx": 2,
+        "from": "tips[17]",
+        "verified": {
+          "date": "2026-10-07",
+          "verdict": "confirmed",
+          "source": "https://howdoiplay.com/tips/drow-ranger.html",
+          "text": "enemies get on top of you to switch off marksmanship, back off and restore it instead of fighting at point blank"
+        }
+      },
+      {
+        "idx": 3,
+        "from": "counters[0]",
+        "verified": {
+          "date": "2026-10-07",
+          "verdict": "confirmed",
+          "source": "https://howdoiplay.com/tips/drow-ranger.html",
+          "text": "get in her face, she loses the marksmanship bonuses to nearby enemies, close the distance even as a ranged hero"
+        }
+      },
+      {
+        "idx": 4,
+        "from": "counters[2]",
+        "verified": {
+          "date": "2026-10-07",
+          "verdict": "confirmed",
+          "source": "https://howdoiplay.com/tips/drow-ranger.html",
+          "text": "marksmanship procs bypass main armor but not bonus armor, agility armor barely helps, raw armor items carry"
+        }
+      },
+      {
+        "idx": 5,
+        "from": "counters[3]",
+        "verified": {
+          "date": "2026-10-07",
+          "verdict": "confirmed",
+          "source": "https://howdoiplay.com/tips/drow-ranger.html",
+          "text": "evasion barely helps against her, marksmanship gives her built-in accuracy"
         }
       }
     ],
@@ -3195,6 +3257,68 @@
         }
       }
     ],
+    "tidehunter": [
+      {
+        "idx": 0,
+        "from": "tips[2]",
+        "verified": {
+          "date": "2026-10-07",
+          "verdict": "confirmed",
+          "source": "https://howdoiplay.com/tips/tidehunter.html",
+          "text": "gush applies minus armor, use it before anchor smash since the smash is physical damage"
+        }
+      },
+      {
+        "idx": 1,
+        "from": "tips[4]",
+        "verified": {
+          "date": "2026-10-07",
+          "verdict": "confirmed",
+          "source": "https://howdoiplay.com/tips/tidehunter.html",
+          "text": "anchor smash is trivial to animation cancel, fake smashes bait melee laners out of last hits"
+        }
+      },
+      {
+        "idx": 2,
+        "from": "tips[5]",
+        "verified": {
+          "date": "2026-10-07",
+          "verdict": "confirmed",
+          "source": "https://howdoiplay.com/tips/tidehunter.html",
+          "text": "anchor smash is an instant attack, ignores disarms, has true strike, and applies attack modifiers except cleave"
+        }
+      },
+      {
+        "idx": 3,
+        "from": "counters[0]",
+        "verified": {
+          "date": "2026-10-07",
+          "verdict": "confirmed",
+          "source": "https://howdoiplay.com/tips/tidehunter.html",
+          "text": "the kraken shell damage threshold dispel is disabled by breaks"
+        }
+      },
+      {
+        "idx": 4,
+        "from": "counters[2]",
+        "verified": {
+          "date": "2026-10-07",
+          "verdict": "confirmed",
+          "source": "https://howdoiplay.com/tips/tidehunter.html",
+          "text": "grab a magic stick in lane when tide spams anchor smash"
+        }
+      },
+      {
+        "idx": 5,
+        "from": "counters[3]",
+        "verified": {
+          "date": "2026-10-07",
+          "verdict": "confirmed",
+          "source": "https://howdoiplay.com/tips/tidehunter.html",
+          "text": "ravage expands outward with travel time, a quick force staff or reposition can slip outside it"
+        }
+      }
+    ],
     "timbersaw": [
       {
         "idx": 0,
@@ -3378,6 +3502,68 @@
           "verdict": "confirmed",
           "source": "https://howdoiplay.com/tips/tusk.html",
           "text": "tusk cannot cast snowball while rooted or leashed, hold the root for his commit"
+        }
+      }
+    ],
+    "undying": [
+      {
+        "idx": 0,
+        "from": "tips[3]",
+        "verified": {
+          "date": "2026-10-07",
+          "verdict": "confirmed",
+          "source": "https://howdoiplay.com/tips/undying.html",
+          "text": "decay deals double the nuke damage to creeps"
+        }
+      },
+      {
+        "idx": 1,
+        "from": "tips[7]",
+        "verified": {
+          "date": "2026-10-07",
+          "verdict": "confirmed",
+          "source": "https://howdoiplay.com/tips/undying.html",
+          "text": "when ganked, soul rip before decay, the flat heal is worth more of your max hp before the strength lands"
+        }
+      },
+      {
+        "idx": 2,
+        "from": "tips[11]",
+        "verified": {
+          "date": "2026-10-07",
+          "verdict": "confirmed",
+          "source": "https://howdoiplay.com/tips/undying.html",
+          "text": "tombstone zombies add to soul rip's unit count"
+        }
+      },
+      {
+        "idx": 3,
+        "from": "tips[16]",
+        "verified": {
+          "date": "2026-10-07",
+          "verdict": "confirmed",
+          "source": "https://howdoiplay.com/tips/undying.html",
+          "text": "you can deny your own tombstone to avoid feeding the gold bounty, remind allies they can deny it too"
+        }
+      },
+      {
+        "idx": 4,
+        "from": "counters[5]",
+        "verified": {
+          "date": "2026-10-07",
+          "verdict": "confirmed",
+          "source": "https://howdoiplay.com/tips/undying.html",
+          "text": "kill the tombstone the second it comes up, it is almost always worth it, your supports fend for dear life otherwise"
+        }
+      },
+      {
+        "idx": 5,
+        "from": "counters[11]",
+        "verified": {
+          "date": "2026-10-07",
+          "verdict": "confirmed",
+          "source": "https://howdoiplay.com/tips/undying.html",
+          "text": "zombies lose interest in you and die if you go invisible"
         }
       }
     ],
