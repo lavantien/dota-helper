@@ -17,6 +17,8 @@ ALLOWED = ("guide", "picker", "ui")
 API_PREFIX = "/api/"
 SUBSET_ID_RX = re.compile(r"^/api/subsets/(\d+)$")
 MAX_BODY = 1024 * 1024
+# ids above the sqlite integer range overflow the bind call, they answer 404
+SQLITE_INT_MAX = 9223372036854775807
 # the server is single threaded, the lock still keeps mutations serialized
 # if that ever changes
 api_lock = threading.Lock()
@@ -44,13 +46,28 @@ def clean_entries(entries):
 
 
 class Handler(SimpleHTTPRequestHandler):
+    # bounds every blocked read: a socket held open with a short or missing
+    # body can stall this single-threaded server for at most this many
+    # seconds, not forever
+    timeout = 30
+
     def __init__(self, *args, **kwargs):
         super().__init__(*args, directory=ROOT, **kwargs)
+
+    def handle_one_request(self):
+        # a timed out connection closes quietly, the default lets the read
+        # timeout escape as a traceback
+        try:
+            super().handle_one_request()
+        except TimeoutError:
+            self.close_connection = True
 
     def translate_path(self, path):
         resolved = super().translate_path(path)
         rel = os.path.relpath(resolved, ROOT)
-        if rel == os.curdir or rel.split(os.sep)[0] not in ALLOWED:
+        # a null byte slips through the allowlist then kills open(), answer
+        # 404 instead of dropping the connection
+        if "\x00" in rel or rel == os.curdir or rel.split(os.sep)[0] not in ALLOWED:
             return os.path.join(ROOT, "__not_served__")
         return resolved
 
@@ -92,6 +109,9 @@ class Handler(SimpleHTTPRequestHandler):
         m = SUBSET_ID_RX.match(path)
         if m:
             sid = int(m.group(1))
+            if sid > SQLITE_INT_MAX:
+                self.drain_request_body()
+                return self.reply_error(404, "no subset with that id")
             if method == "PUT":
                 return self.api_update(sid)
             if method == "DELETE":
@@ -104,7 +124,7 @@ class Handler(SimpleHTTPRequestHandler):
     def api_create(self):
         payload, err = self.read_json()
         if err:
-            return self.reply_error(400, err)
+            return self.reply_error(*err)
         name = payload.get("name") if isinstance(payload, dict) else None
         if not isinstance(name, str) or not name.strip():
             return self.reply_error(400, "name must be a non-empty string")
@@ -118,7 +138,7 @@ class Handler(SimpleHTTPRequestHandler):
     def api_update(self, sid):
         payload, err = self.read_json()
         if err:
-            return self.reply_error(400, err)
+            return self.reply_error(*err)
         if not isinstance(payload, dict):
             return self.reply_error(400, "body must be a json object")
         name = payload.get("name")
@@ -141,6 +161,7 @@ class Handler(SimpleHTTPRequestHandler):
         self.reply_json(200, subsets.get_subset(sid))
 
     def api_delete(self, sid):
+        self.drain_request_body()
         with api_lock:
             try:
                 subsets.delete_subset(sid)
@@ -164,19 +185,24 @@ class Handler(SimpleHTTPRequestHandler):
             remaining -= len(chunk)
 
     def read_json(self):
-        # returns (payload, error message), payload is None on any rejection
+        # returns (payload, (code, message)), payload is None on any
+        # rejection. an untrustworthy length closes the connection after the
+        # reply, its body cannot be drained under a bound
         try:
             length = int(self.headers.get("Content-Length") or 0)
         except ValueError:
-            return None, "bad content-length header"
+            length = -1
+        if length < 0:
+            self.close_connection = True
+            return None, (400, "bad content-length header")
         if length > MAX_BODY:
             self.drain_request_body()
-            return None, "body over the size limit"
+            return None, (413, "body over the size limit")
         raw = self.rfile.read(length)
         try:
             return json.loads(raw.decode("utf-8")), None
         except ValueError:
-            return None, "malformed json body"
+            return None, (400, "malformed json body")
 
     def reply_json(self, code, obj):
         body = json.dumps(obj).encode("utf-8")

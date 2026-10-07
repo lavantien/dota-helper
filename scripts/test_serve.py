@@ -42,6 +42,21 @@ def request(method, url, payload=None):
         return e.code, body
 
 
+def raw_request(port, data, timeout=10):
+    # prebuilt bytes on the wire, returns everything sent back before the
+    # connection closes: malformed framing needs this, urllib refuses to
+    # build it
+    with socket.create_connection(("127.0.0.1", port), timeout=timeout) as s:
+        s.sendall(data)
+        chunks = []
+        while True:
+            chunk = s.recv(65536)
+            if not chunk:
+                break
+            chunks.append(chunk)
+    return b"".join(chunks)
+
+
 class ServerTests(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
@@ -89,6 +104,19 @@ class ServerTests(unittest.TestCase):
 
     def test_db_created_on_boot(self):
         self.assertTrue(os.path.exists(self.db))
+
+    def test_reinit_leaves_existing_db_bytes_alone(self):
+        # the committed var/subsets.db must not churn under a plain boot
+        with tempfile.TemporaryDirectory() as tmp:
+            db = os.path.join(tmp, "subsets.db")
+            env = dict(os.environ, SUBSETS_DB=db)
+            init = [sys.executable, os.path.join(ROOT, "scripts", "subsets.py"), "init"]
+            subprocess.run(init, env=env, check=True, stdout=subprocess.DEVNULL)
+            with open(db, "rb") as fh:
+                first = fh.read()
+            subprocess.run(init, env=env, check=True, stdout=subprocess.DEVNULL)
+            with open(db, "rb") as fh:
+                self.assertEqual(first, fh.read())
 
     def test_create_and_list(self):
         made = self.make_subset()
@@ -169,7 +197,49 @@ class ServerTests(unittest.TestCase):
         status, _ = request(
             "POST", self.base + "/api/subsets", {"name": "x" * (1024 * 1024 + 10)}
         )
-        self.assertEqual(status, 400)
+        self.assertEqual(status, 413)
+
+    def test_negative_content_length_rejected(self):
+        # a lied negative length used to block rfile.read(-1) until client
+        # EOF, starving the single-threaded server
+        out = raw_request(
+            self.port,
+            b"POST /api/subsets HTTP/1.0\r\nContent-Length: -1\r\n\r\n",
+        )
+        self.assertIn(b" 400 ", out.split(b"\r\n")[0])
+        self.assertIn(b"bad content-length header", out)
+        status, _ = request("GET", self.base + "/api/subsets")
+        self.assertEqual(status, 200)
+
+    def test_huge_subset_id_rejected(self):
+        # digits past the sqlite integer range used to overflow the bind
+        # call and drop the connection instead of answering
+        url = self.base + "/api/subsets/" + "9" * 30
+        status, _ = request("PUT", url, {"name": "nope"})
+        self.assertEqual(status, 404)
+        status, _ = request("DELETE", url)
+        self.assertEqual(status, 404)
+
+    def test_null_byte_path_rejected(self):
+        # %00 used to pass the allowlist then kill open() with a ValueError,
+        # the client saw a dropped connection instead of a 404
+        out = raw_request(self.port, b"GET /picker/picker.html%00 HTTP/1.0\r\n\r\n")
+        self.assertIn(b" 404 ", out.split(b"\r\n")[0])
+        status, _ = request("GET", self.base + "/picker/picker.html")
+        self.assertEqual(status, 200)
+
+    def test_delete_with_body_gets_clean_204(self):
+        # an undrained delete body used to race the reply into a client side
+        # connection abort after the mutation already landed
+        made = self.make_subset()
+        status, _ = request(
+            "DELETE",
+            "%s/api/subsets/%d" % (self.base, made["id"]),
+            {"pad": "x" * 100000},
+        )
+        self.assertEqual(status, 204)
+        body = request("GET", self.base + "/api/subsets")[1]
+        self.assertNotIn(made["id"], [s["id"] for s in json.loads(body)["subsets"]])
 
     def test_unknown_id_rejected(self):
         status, _ = request("PUT", self.base + "/api/subsets/999999", {"name": "nope"})
