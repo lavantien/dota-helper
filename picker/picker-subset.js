@@ -95,6 +95,9 @@ function boot(opts) {
       if (restore) { restore(); restore = null; }
       current = name;
       if (name) restore = apply(G, byName[name].entries);
+      // keep the select honest on every programmatic apply, the ?subset=
+      // auto-apply path otherwise leaves it reading full pool
+      sel.value = name;
       clear.disabled = !name;
       opts.onChange();
     };

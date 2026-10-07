@@ -32,7 +32,13 @@ $shots = @(
   }
 )
 
+# shot against an empty temp sub-pool db so personal subsets never leak into
+# the readme art and the tracked var/subsets.db stays byte-clean
+$prevDb = $env:SUBSETS_DB
+$shotsDb = Join-Path $env:TEMP 'dota-helper-shots-subsets.db'
+$env:SUBSETS_DB = $shotsDb
 $server = Start-Process python -ArgumentList @('scripts/serve.py', "$Port") -PassThru -WindowStyle Hidden
+if ($null -ne $prevDb) { $env:SUBSETS_DB = $prevDb } else { Remove-Item Env:\SUBSETS_DB -ErrorAction SilentlyContinue }
 try {
   $base = "http://127.0.0.1:$Port/picker/picker.html"
   $up = $false
@@ -64,4 +70,5 @@ try {
   }
 } finally {
   if (-not $server.HasExited) { Stop-Process -Id $server.Id -Force }
+  Remove-Item -LiteralPath $shotsDb, "$shotsDb-journal" -ErrorAction SilentlyContinue
 }

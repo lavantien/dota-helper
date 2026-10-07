@@ -140,11 +140,11 @@ the go engine runs only inside the golang:1.27 linux image (the duckdb cgo drive
 
 `make refresh` is the unified pipeline command (serial only, never -j). the others by group:
 
-- view: `serve` (http server for browser tooling, file:// is blocked there), `dota` and `picker` (open the pick simulator, the entry point), `guide` (opens the reference guide), `shots` (headless retake of both readme screenshots)
+- view: `serve` (http server for browser tooling, file:// is blocked there), `dota` and `picker` (open the pick simulator, the entry point), `guide` (opens the reference guide), `subsets` (opens the sub-pool manager), `shots` (headless retake of both readme screenshots)
 - fetch: `fetch-stratz`, `fetch-builds`, `fetch-matches`, `fetch-positions`, `fetch-howdoiplay`, `fetch-matchups`, plus `-refresh` variants
-- build data: `ingest`, `mine`, `emit` (or `emit-data`, `emit-guide`, `emit-picker`), `emit-goldens`, `build-guide-data`, `sync-builds`, `merge-mechanics`, `validate-curation`, `fixtures`, `order-pool`
+- build data: `ingest`, `mine`, `emit` (or `emit-data`, `emit-guide`, `emit-picker`), `emit-goldens`, `build-guide-data`, `sync-builds`, `merge-mechanics`, `validate-curation`, `fixtures`, `order-pool`, `db-subsets`
 - evaluate: `eval`, `eval-fit`, `eval-fit-alphas`, `eval-fit-completion`, `eval-promote SECTION=weights|alphas|completion`
-- test: `test`, `test-picker`, `test-picker-cover`, `engine-test`, `engine-test-<pkg>`, `engine-cover`, `engine-cover-summary`, `engine-cover-<pkg>`, `coverage-badge`, `check`, `check-linux`, `verify`
+- test: `test`, `test-picker`, `test-picker-cover`, `test-serve`, `engine-test`, `engine-test-<pkg>`, `engine-cover`, `engine-cover-summary`, `engine-cover-<pkg>`, `coverage-badge`, `check`, `check-linux`, `verify`
 - inspect: `db-query Q=...`, `probe-*`
 
 ## conventions

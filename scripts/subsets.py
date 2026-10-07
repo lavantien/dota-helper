@@ -43,6 +43,13 @@ def init_db():
         os.makedirs(parent, exist_ok=True)
     con = connect()
     try:
+        exists = con.execute(
+            "SELECT 1 FROM sqlite_master WHERE type = 'table' AND name = 'subsets'"
+        ).fetchone()
+        if exists:
+            # an already-initialized db is committed to git, a plain boot
+            # must not rewrite its bytes
+            return
         con.executescript(SCHEMA)
         con.commit()
         con.execute("VACUUM")

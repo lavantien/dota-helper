@@ -294,7 +294,7 @@ function bannerLines(rows, widened) {
     lines.push('empty board: ranking is expectation driven, prior, generic fit, and flexibility lead until picks land');
   }
   if (widened) {
-    lines.push('no untaken candidates left for the selected role, ranking widened to the full pool with role mismatch chips');
+    lines.push('no untaken candidates left for the selected role, ranking widened to every untaken hero in the active pool with role mismatch chips');
   } else if (rows.length && rows.every(r => r.hardGated)) {
     lines.push('every role candidate is gated, ranking shows the least bad with veto notes');
   }

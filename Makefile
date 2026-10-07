@@ -109,7 +109,7 @@ test-picker-cover:
 	     --test-reporter=lcov --test-reporter-destination=picker-lcov.info \
 	     picker/picker-score.test.mjs picker/picker-subset.test.mjs
 
-test: engine-test test-picker
+test: engine-test test-picker test-serve
 
 probe-stratz: engine-build
 	$(GO_RUN) ./$(BIN) probe stratz
