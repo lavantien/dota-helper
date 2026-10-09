@@ -53,7 +53,7 @@
 <script>
 const G = window.GUIDE, N = window.GUIDE_GEN;
 const FRAMED = window.self !== window.top;
-const mu = {}; // slug -> [{enemy, dis}] parsed from packed strings
+const mu = {};
 for (const [slug, packed] of Object.entries(N.matchups)) {
   mu[slug] = packed.split('|').filter(Boolean).map(p => {
     const [enemy, dis] = p.split(':'); return { enemy, dis: +dis };
@@ -63,8 +63,6 @@ const poolBySlug = Object.fromEntries(G.pool.map(h => [h.slug, h]));
 const CDN = 'https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/';
 const icon = slug => CDN + (N.iconBySlug[slug] || slug) + '.png';
 const fmt = v => (v > 0 ? '+' : '') + v.toFixed(1);
-// ramp endpoints live in ui.css as tokens, resolved once; this script sits at
-// end of body so the head stylesheet is guaranteed applied
 const cssv = getComputedStyle(document.documentElement);
 const tok = n => cssv.getPropertyValue(n).trim();
 const RAMP = {
@@ -101,7 +99,6 @@ function bigIcon(el, slug) {
   el.append(img);
 }
 
-// nav
 const views = [...(FRAMED ? [] : [['picker', 'back to the pick simulator']]), ['patch', 'patch state'], ...G.roles.map(r => ['role' + r.id, r.label]),
   ['heatmap', 'pool vs enemies'], ['trends', 'trends'], ['principles', 'principles'], ['practice', 'practice plan'],
   ['using', 'using the picker']];
@@ -125,12 +122,11 @@ function render() {
   if (current === 'principles') renderPrinciples();
   if (current === 'practice') renderPractice();
   if (current === 'using') renderUsing();
-  if (current === 'hero') {} // hero panel rendered on demand
+  if (current === 'hero') {}
 }
 function showHero(slug) {
   current = 'hero'; render(); renderHeroPanel(slug);
   window.scrollTo(0, 0);
-  // the origin section is hidden, land focus on the panel heading
   const name = document.querySelector('.herohead .name');
   if (name) name.focus();
 }
@@ -210,7 +206,6 @@ function renderHeroPanel(slug) {
       else chip.attr('title', label);
       const img = new Image(); img.onerror = () => img.replaceWith(initBadge(d.enemy));
       img.src = icon(d.enemy); img.className = 'hicon';
-      // non-interactive chips carry no text name, the icon alt is their only identity
       img.alt = clickable ? '' : name;
       chip.append(() => img);
       chip.append('span').attr('class', 'z ' + tone).text(fmt(d.dis));
@@ -255,8 +250,6 @@ function renderHeatmap() {
         .on('mousemove', ev => {
           const tip = d3.select('#tip').style('display', 'block')
             .style('left', (ev.clientX + 14) + 'px').style('top', (ev.clientY + 14) + 'px');
-          // hero names are roster-sourced strings, so the tooltip is built from
-          // text nodes, never html()
           tip.html('');
           tip.append('b').text(h.name + ' vs ' + e.replace(/-/g, ' '));
           tip.append('br');
@@ -297,7 +290,10 @@ function renderPrinciples() {
 }
 function renderUsing() {
   const u = d3.select('#usingPicker').html('<h2>using the pick simulator</h2>');
-  u.append('div').attr('class', 'sub').html(G.picker.intro);
+  const sub = u.append('div').attr('class', 'sub').html(G.picker.intro);
+  if (FRAMED) sub.selectAll('a').each(function () {
+    this.replaceWith(document.createTextNode(this.textContent));
+  });
   u.selectAll('div.pcard').data(G.picker.cards).join('div')
     .attr('class', 'card pcard')
     .html(d => '<b class="cap">' + d.name + '.</b> ' + d.body);
@@ -320,8 +316,6 @@ const stamp = G.patch.headline.match(/\d+\.\d+[a-z]/);
 if (stamp) d3.select('#stamp').text(stamp[0]);
 renderPoolStrip();
 render();
-// hash bootstrap: deep link straight to a hero panel, also the readme
-// capture entry
 if (location.hash.length > 1 && poolBySlug[location.hash.slice(1)]) showHero(location.hash.slice(1));
 </script>
 </body>
