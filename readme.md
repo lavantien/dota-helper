@@ -5,31 +5,59 @@
 
 offline dota 2 pick simulator and hero-pool guide for patch 7.41f. static pages with zero runtime deps, an offline go engine over duckdb, and one authored config hub. the picker is the main tool, the guide supplements it.
 
-![the picker draft board mid-draft against a visible meepo and enigma, the frozen pool panels for every role, and the candidate ranking below with three veto tags](docs/picker.png)
+## usage
 
-![the guide hero panel for phantom assassin, build, timings, tech, mechanics, and matchup tables](docs/guide.png)
+everything runs on one page, `picker/picker.html`, hash-routed into 4 tabs: draft board, sub-pools, guide, stats. `make dota` (or `make picker`) boots the loopback server and opens it, sub-pool editing needs that server.
 
-## frozen repertoire (v0.10)
+### draft board
 
-the lineup below is the hard-frozen pool: membership changes only through a deliberate reshape commit, never through a data refresh. `order-pool` re-sorts every role for display from the latest mined per-position win rates. in the picker these lists are display only: every core hero competes for all three core seats and every support for both support seats, the score decides.
+place allies, enemies, and bans through the roster search or the pool panels, aim a pick at a specific slot, and the ranking for the selected role recomputes per term after every pick.
 
-- pos 1, carry: Phantom Lancer, Clinkz, Juggernaut, Spectre, Lifestealer, Sven, Anti-Mage, Windranger, Phantom Assassin, Ursa, Luna, Terrorblade, Lone Druid, Templar Assassin, Drow Ranger, Alchemist, Tiny, Nature's Prophet, Monkey King
-- pos 2, mid: Marci, Dragon Knight, Outworld Destroyer, Slark, Leshrac, Ember Spirit, Snapfire, Lina, Pangolier, Sniper, Storm Spirit
-- pos 3, offlane: Enigma, Brewmaster, Pudge, Dawnbreaker, Lycan, Dark Seer, Tidehunter, Viper, Centaur Warrunner, Necrophos, Death Prophet, Slardar, Doom, Largo, Timbersaw
-- pos 4, soft support: Bounty Hunter, Nyx Assassin, Earthshaker, Shadow Shaman, Mirana, Undying, Rubick, Tusk, Hoodwink
-- pos 5, hard support: Lich, Winter Wyvern, Bane, Witch Doctor, Techies, Ancient Apparition, Clockwerk, Venomancer, Enchantress
+![the draft board mid-draft against a visible meepo and enigma, the pool panels for every role, and the candidate ranking below with three veto tags](docs/picker.png)
+
+### sub-pools
+
+the sub-pools tab carves sub-pools out of the master pool through the loopback `/api/subsets`, and the subset bar in the header picks the active one, so the board panels and ranking filter live to the kept pairs (`make subsets` opens the tab). `main` is the first sub-pool, `make seed-main` reseeds it deterministically into the committed store.
+
+![the sub-pools tab with main selected on the header subset bar and its 20 pairs toggled on among the per-role pool chips](docs/subpools.png)
+
+### guide
+
+the guide tab embeds the reference guide as a lazy iframe, hero panels, heatmap, trends, principles, practice. the guide also opens standalone at `guide/index.html` (`make guide`).
+
+![the guide tab with the embedded guide open on a role view, its pool strip and nav above the pool heroes for the role card](docs/guide.png)
+
+### stats
+
+the stats tab and its standalone page `picker/stats.html` (`make stats`) read the emitted data over the full pool regardless of the active sub-pool: a sortable hero meta table per role and a pair explorer ranking best allies and worst enemies with confidence tiers.
+
+![the stats tab with the sortable hero meta table for the selected role and the pair explorer lists below](docs/stats.png)
+
+## pool
+
+the lineup below is the curated pool, membership is authored in `config.json`, a data refresh only re-sorts it: `order-pool` re-sorts every role for display from the latest mined per-position win rates. in the picker these lists are display only: every core hero competes for all three core seats and every support for both support seats, the score decides.
+
+- pos 1, carry: Phantom Lancer, Clinkz, Juggernaut, Spectre, Lifestealer, Sven, Necrophos (flex), Anti-Mage, Windranger, Phantom Assassin, Ursa, Slark (flex), Luna, Terrorblade, Lone Druid, Templar Assassin, Drow Ranger, Alchemist, Tiny, Nature's Prophet, Monkey King
+- pos 2, mid: Marci, Dragon Knight, Outworld Destroyer, Slark, Leshrac, Ember Spirit, Snapfire, Lina, Pangolier, Sniper, Necrophos (flex), Storm Spirit
+- pos 3, offlane: Enigma, Slark (flex), Brewmaster, Pudge, Dawnbreaker, Lycan, Dark Seer, Tidehunter, Viper, Centaur Warrunner, Necrophos, Death Prophet, Slardar, Doom, Largo, Timbersaw
+- pos 4, soft support: Bounty Hunter, Nyx Assassin, Earthshaker, Shadow Shaman, Mirana, Undying, Rubick, Windranger (flex), Tusk, Ogre Magi, Hoodwink
+- pos 5, hard support: Lich, Winter Wyvern, Bane, Mirana (flex), Witch Doctor, Techies, Ancient Apparition, Clockwerk, Ogre Magi, Venomancer, Hoodwink (flex), Windranger (flex), Enchantress
+
+heroes marked flex hold a secondary seat beside the dedicated seat in another role's list. ogre magi joined as a new hero, dedicated at both support seats.
+
+sub-pools carve the pool down for focused practice. `main` is the first one, 20 pairs: pos 1 slark, lifestealer, lone druid, nature's prophet, necrophos. pos 2 slark, dragon knight, necrophos. pos 3 necrophos, enigma, tidehunter, slark. pos 4 and pos 5 mirana, hoodwink, windranger, ogre magi. `make seed-main` reseeds it deterministically into the committed `var/subsets.db`.
 
 ## tools
 
-- `picker/`: the entry point, draft board with direct slot aiming, ban strip, per-term scored ranking for the selected role, and the sub-pool bar, plus `subsets.html`, the manager page for carving sub-pools out of the master pool (`make subsets`)
+- `picker/`: the entry point, one hash-routed page (`picker.html`) carrying the draft board, the sub-pool manager, the guide tab, and the stats tab, plus `stats.html`, the standalone stats page (`make dota`, `make subsets`, `make stats`)
 - `guide/`: the reference guide, patch state, hero panels, heatmap, trends, principles, practice
-- `ui/ui.css`: shared dark-hud token sheet, single source for every color, type, spacing, and control-size value. both pages link it as `../ui/ui.css`, page css adds layout only
+- `ui/ui.css`: shared dark-hud token sheet, single source for every color, type, spacing, and control-size value. every page links it as `../ui/ui.css`, page css adds layout only
 
 ## layout
 
 - `config.json` + `content.json`: the authored config hub (pool, roles, scope, scoring constants, paths) and authored prose, single source of truth
 - `engine/`: go offline engine (fetch, ingest, mine, emit, eval) over duckdb, module `poolguide`
-- `scripts/`: powershell orchestration, the matchups and howdoiplay crawls, the guide data build, and the check guard
+- `scripts/`: powershell and python orchestration, the loopback server with the sub-pool writer api, the matchups and howdoiplay crawls, the guide data build, the readme shot retake, and the check guard
 - `ref/`: committed stratz crawl caches, matchup tables, and eval reports, the rebuildable raw layer
 - `playground/`: one-off utilities
 - `var/`: gitignored live state, the duckdb database, engine binary, eval fits, and the stratz token, besides `subsets.db`, the committed sqlite sub-pool store
@@ -40,7 +68,7 @@ STRATZ graphql crawl (divine-immortal, ranked all pick) into `ref/dota2/synergy/
 
 ## techniques
 
-every number the picker shows is mined offline from the committed raw layer, the browser only runs a linear score plus authored gate rules over precomputed cells. the architecture graph shows where each stage runs, the sequence diagram walks the refresh and draft-scoring flows, and the inventory table lists each technique with where it lives and why the data forces it.
+every number the picker shows is mined offline from the committed raw layer, the browser only runs a linear score plus authored gate rules over precomputed cells. the architecture graph shows where each stage runs, the sequence diagram walks the refresh and draft-scoring flows, and the what-and-where table lists each pipeline technique and page surface with where it lives and why.
 
 ### architecture
 
@@ -102,28 +130,35 @@ sequenceDiagram
   B-->>U: ranked table with per-term breakdown
 ```
 
-### inventory
+### what and where
 
-| stage | technique | where | why |
-| --- | --- | --- | --- |
-| clean | source sign adjudication + match-weighted pooling | `engine/internal/mine/cell.go` | crawl rows arrive with flipped sign conventions and weekly duplicates, pooling folds them into one canonical (wins, n) per directed pair before any estimator runs |
-| shrink | empirical-bayes shrinkage, beta-form pseudo-counts, posterior variance per cell, source confidence tiers | `engine/internal/analytics/shrink.go`, `engine/internal/mine/cell.go` | weekly pair samples run thin, (w + alpha\*p0)/(n + alpha) pulls small-n cells toward the fair-rate neutral instead of letting noise through, each cell also carries a posterior variance and a source-confidence label |
-| shrink | moment-matched alpha fit, variance decomposition | `engine/internal/eval/fitalpha.go` | alpha = sigma^2/tau^2 estimated from binomial noise against observed delta variance, so prior strength comes from the data rather than taste |
-| screen | BH-gated significance screen with alpha inflation | `engine/internal/mine/screen.go`, `engine/internal/stats/multiple.go` | cells statistically indistinguishable from the hero baseline shrink harder, an a/b measured no gain so it ships disabled |
-| complete | ridge-regularized ALS matrix completion + masked-cell cross-validation | `engine/internal/analytics/complete.go`, `engine/internal/mine/norm.go`, `engine/internal/eval/fitcompletion.go` | the pool x 127 matchup and synergy matrices have uncrawled and thin cells, low-rank factorization refills them from structure, rank and lambda picked by held-out spearman |
-| normalize | midrank percentiles + z-score standardization, priors, pick-share popularity | `engine/internal/analytics/normalize.go`, `engine/internal/analytics/prior.go`, `engine/internal/mine/overall.go` | raw pp deltas are incomparable across heroes with different coverage, row-wise ranks make one weight vector serve all heroes, pick shares drive the expectation over unseen picks |
-| score | expectimax-lite 7-term linear draft scorer | `engine/internal/analytics/score.go`, `picker/picker-score.js` | at pick time most of the draft is unseen, genericFit and exposure take popularity-weighted expectations over unseen allies and enemies while flexibility penalizes matchup dispersion over the most popular unseen enemies, the js twin keeps browser and engine bit-identical |
-| gates | rule-based gating layer | `engine/internal/gates/gates.go`, `picker/gates.json` | authored hard gates, penalties, and bonuses layer knowledge on top of the statistical score |
-| fit | coordinate-ascent grid search + ablation + guarded promotion | `engine/internal/eval/fit.go`, `engine/internal/eval/promote.go` | scoring weights hill-climb train mean pick percentile, gains measured on a time-ordered holdout, promotions must clear bootstrap intervals before config.json changes |
-| backtest | order-aware sequential replay | `engine/internal/eval/replay.go` | replays league drafts pick by pick using only previously visible info, so no lookahead leaks into the metrics |
-| metrics | ROC AUC as mann-whitney u, mean percentile, top-k hit rate, decile calibration | `engine/internal/stats/auc.go`, `engine/internal/eval/metrics.go` | audits the scorer in the role it is used, as a ranker, plus calibration bins on the holdout |
-| stats | chi-square 2x2, exact binomial, holm + benjamini-hochberg | `engine/internal/stats/chisq.go`, `engine/internal/stats/binomial.go`, `engine/internal/stats/multiple.go` | significance testing with FWER and FDR control for the screen and the raw-count audit |
-| stats | percentile bootstrap intervals, match-level resampling, spearman rank correlation | `engine/internal/stats/bootstrap.go`, `engine/internal/stats/rankcorr.go`, `engine/internal/eval/metrics.go` | reported deltas carry resampled intervals that keep picks grouped, spearman cross-checks normalized output against raw lift |
-| comparator | vertical-bitmap apriori over side-composition triples, support, confidence, lift, conviction | `engine/internal/eval/triples.go` | levelwise frequent-set mining benchmarks the pairwise model, report-only, never feeds the live score |
-| comparator | bernoulli naive bayes with laplace smoothing, cosine knn over one-hot drafts, bagged AUC-fitted blend | `engine/internal/eval/naivebayes.go`, `engine/internal/eval/knn.go`, `engine/internal/eval/ensemble.go` | classifier baselines on final drafts contextualize the linear scorer, report-only, never feeds the live score |
-| comparator | pick-order transition stats, laplace-smoothed, direction census | `engine/internal/eval/seq.go` | sequential pattern view of draft-order asymmetry, report-only, never feeds the live score |
-| builds | frequency aggregation, weighted first moment, recipe suppression | `engine/internal/builds/builds.go` | item builds come from per-match purchase counts with component-vs-upgrade dedup |
-| trends | latest-pair snapshot differencing | `engine/internal/mine/trend.go` | wr and pick-share deltas between the two most recent snapshot dates |
+| what | where | why |
+| --- | --- | --- |
+| clean: source sign adjudication + match-weighted pooling | `engine/internal/mine/cell.go` | crawl rows arrive with flipped sign conventions and weekly duplicates, pooling folds them into one canonical (wins, n) per directed pair before any estimator runs |
+| shrink: empirical-bayes shrinkage, beta-form pseudo-counts, posterior variance per cell, source confidence tiers | `engine/internal/analytics/shrink.go`, `engine/internal/mine/cell.go` | weekly pair samples run thin, (w + alpha\*p0)/(n + alpha) pulls small-n cells toward the fair-rate neutral instead of letting noise through, each cell also carries a posterior variance and a source-confidence label |
+| shrink: moment-matched alpha fit, variance decomposition | `engine/internal/eval/fitalpha.go` | alpha = sigma^2/tau^2 estimated from binomial noise against observed delta variance, so prior strength comes from the data rather than taste |
+| screen: BH-gated significance screen with alpha inflation | `engine/internal/mine/screen.go`, `engine/internal/stats/multiple.go` | cells statistically indistinguishable from the hero baseline shrink harder, an a/b measured no gain so it ships disabled |
+| complete: ridge-regularized ALS matrix completion + masked-cell cross-validation | `engine/internal/analytics/complete.go`, `engine/internal/mine/norm.go`, `engine/internal/eval/fitcompletion.go` | the pool x 127 matchup and synergy matrices have uncrawled and thin cells, low-rank factorization refills them from structure, rank and lambda picked by held-out spearman |
+| normalize: midrank percentiles + z-score standardization, priors, pick-share popularity | `engine/internal/analytics/normalize.go`, `engine/internal/analytics/prior.go`, `engine/internal/mine/overall.go` | raw pp deltas are incomparable across heroes with different coverage, row-wise ranks make one weight vector serve all heroes, pick shares drive the expectation over unseen picks |
+| score: expectimax-lite 7-term linear draft scorer | `engine/internal/analytics/score.go` | at pick time most of the draft is unseen, genericFit and exposure take popularity-weighted expectations over unseen allies and enemies while flexibility penalizes matchup dispersion over the most popular unseen enemies |
+| gates: rule-based gating layer | `engine/internal/gates/gates.go`, `picker/gates.json` | authored hard gates, penalties, and bonuses layer knowledge on top of the statistical score |
+| fit: coordinate-ascent grid search + ablation + guarded promotion | `engine/internal/eval/fit.go`, `engine/internal/eval/promote.go` | scoring weights hill-climb train mean pick percentile, gains measured on a time-ordered holdout, promotions must clear bootstrap intervals before config.json changes |
+| backtest: order-aware sequential replay | `engine/internal/eval/replay.go` | replays league drafts pick by pick using only previously visible info, so no lookahead leaks into the metrics |
+| metrics: ROC AUC as mann-whitney u, mean percentile, top-k hit rate, decile calibration | `engine/internal/stats/auc.go`, `engine/internal/eval/metrics.go` | audits the scorer in the role it is used, as a ranker, plus calibration bins on the holdout |
+| stats: chi-square 2x2, exact binomial, holm + benjamini-hochberg | `engine/internal/stats/chisq.go`, `engine/internal/stats/binomial.go`, `engine/internal/stats/multiple.go` | significance testing with FWER and FDR control for the screen and the raw-count audit |
+| stats: percentile bootstrap intervals, match-level resampling, spearman rank correlation | `engine/internal/stats/bootstrap.go`, `engine/internal/stats/rankcorr.go`, `engine/internal/eval/metrics.go` | reported deltas carry resampled intervals that keep picks grouped, spearman cross-checks normalized output against raw lift |
+| comparator: vertical-bitmap apriori over side-composition triples, support, confidence, lift, conviction | `engine/internal/eval/triples.go` | levelwise frequent-set mining benchmarks the pairwise model, report-only, never feeds the live score |
+| comparator: bernoulli naive bayes with laplace smoothing, cosine knn over one-hot drafts, bagged AUC-fitted blend | `engine/internal/eval/naivebayes.go`, `engine/internal/eval/knn.go`, `engine/internal/eval/ensemble.go` | classifier baselines on final drafts contextualize the linear scorer, report-only, never feeds the live score |
+| comparator: pick-order transition stats, laplace-smoothed, direction census | `engine/internal/eval/seq.go` | sequential pattern view of draft-order asymmetry, report-only, never feeds the live score |
+| builds: frequency aggregation, weighted first moment, recipe suppression | `engine/internal/builds/builds.go` | item builds come from per-match purchase counts with component-vs-upgrade dedup |
+| trends: latest-pair snapshot differencing | `engine/internal/mine/trend.go` | wr and pick-share deltas between the two most recent snapshot dates |
+| board scoring twin | `picker/picker-score.js` | the browser runs the same 7-term linear score plus gate rules over the packed caches, the js twin keeps browser and engine bit-identical |
+| sub-pool manager | `picker/picker-subsets-manager.js`, `scripts/serve.py`, `scripts/subsets.py` | sub-pool CRUD runs over the loopback `/api/subsets`, the sole writer to the committed sqlite store, so the page and every tool share one validation path |
+| subset swap | `picker/picker-subset.js` | the header bar swaps the active sub-pool in place, poolIdx, entries, prose, mu, syn, prior, heroPos, trend, and fallbackOrder reshape together so the board scores exactly the kept pairs |
+| tabs shell | `picker/picker-tabs.js` | hash routing, lazy iframes, and the manager mount keep every surface on one page, deep links address tabs, frames load only on first activation |
+| stats page | `picker/picker-stats.js`, `picker/stats.html` | the meta table and pair explorer render from the emitted heroPos, trend, prior, pop, and packed mu/syn over the full pool, the parent's subset swap cannot reach the iframe |
+| screenshots | `scripts/take-shots.ps1` | headless retake of the 4 readme shots through the pages' shot bootstraps against a seeded temp sub-pool db, so the art reproduces without driving the ui |
+| static guard | `scripts/check.ps1` | pool parity, prose rules, gates, derivations sync, sloc caps, and leak scans behind one gate, `make check` runs it |
 
 ## data policy
 
@@ -140,9 +175,9 @@ the go engine runs only inside the golang:1.27 linux image (the duckdb cgo drive
 
 `make refresh` is the unified pipeline command (serial only, never -j). the others by group:
 
-- view: `serve` (http server for browser tooling, file:// is blocked there), `dota` and `picker` (open the pick simulator, the entry point), `guide` (opens the reference guide), `subsets` (opens the sub-pool manager), `shots` (headless retake of both readme screenshots)
+- view: `serve` (http server for browser tooling, file:// is blocked there), `dota` and `picker` (boot the loopback server and open the single picker page, the entry point), `guide` (opens the reference guide standalone), `subsets` (opens the sub-pools tab of the picker page), `stats` (opens the standalone stats page), `shots` (headless retake of the 4 readme screenshots)
 - fetch: `fetch-stratz`, `fetch-builds`, `fetch-matches`, `fetch-positions`, `fetch-howdoiplay`, `fetch-matchups`, plus `-refresh` variants
-- build data: `ingest`, `mine`, `emit` (or `emit-data`, `emit-guide`, `emit-picker`), `emit-goldens`, `build-guide-data`, `sync-builds`, `merge-mechanics`, `validate-curation`, `fixtures`, `order-pool`, `db-subsets`
+- build data: `ingest`, `mine`, `emit` (or `emit-data`, `emit-guide`, `emit-picker`), `emit-goldens`, `build-guide-data`, `sync-builds`, `merge-mechanics`, `validate-curation`, `fixtures`, `order-pool`, `db-subsets`, `seed-main` (deterministic reseed of the main subset in the committed sub-pool store)
 - evaluate: `eval`, `eval-fit`, `eval-fit-alphas`, `eval-fit-completion`, `eval-promote SECTION=weights|alphas|completion`
 - test: `test`, `test-picker`, `test-picker-cover`, `test-serve`, `engine-test`, `engine-test-<pkg>`, `engine-cover`, `engine-cover-summary`, `engine-cover-<pkg>`, `coverage-badge`, `check`, `check-linux`, `verify`
 - inspect: `db-query Q=...`, `probe-*`
