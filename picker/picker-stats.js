@@ -132,7 +132,7 @@ function boot(G) {
     if (G.date) chip('data ' + G.date);
     if (G.meta && G.meta.bracket) chip(G.meta.bracket);
     if (G.meta && G.meta.window) chip(G.meta.window);
-    chip(G.poolIdx.length + ' pool entries', 'prov');
+    chip(G.poolIdx.length + ' pool heroes', 'prov');
   }
 
   function renderSeg() {
