@@ -1,16 +1,8 @@
-// picker-subset.js: active-subset view of the master pool
-// computes a slug@role membership view, swaps the pool-parallel arrays in
-// place behind a restore closure, and renders the subset bar over the dev
-// server's /api/subsets. dual env like picker-score.js: module.exports for
-// node tests, plain global for the page, boot() is browser only
 (function (root) {
 'use strict';
 
-// pool-parallel arrays swapped by apply, the snapshot list for the round trip
 const SWAPS = ['poolIdx', 'entries', 'prose', 'mu', 'syn', 'prior', 'heroPos', 'trend'];
 
-// membership view of the pool against slug@role pairs. unknown pairs grant
-// nothing anywhere, so a stale read-side list reconciles silently
 function computeSubset(G, pairs) {
   const set = new Set();
   (pairs || []).forEach(p => { set.add(p.slug + '@' + p.role); });
@@ -33,11 +25,6 @@ function computeSubset(G, pairs) {
   return { kept: kept, entries: entries, fallbackOrder: fallbackOrder };
 }
 
-// swap the sliced arrays in, clone gates with the filtered fallbackOrder so
-// the pristine object graph stays untouched, and drop the picker-score memo
-// cache: parsed mu/syn and slugIdx key on the pool, a stale cache after the
-// swap scores the wrong rows. restore swaps the snapshot back, cache dropped
-// again
 function apply(G, pairs) {
   const sub = computeSubset(G, pairs);
   const orig = { gates: G.gates };
@@ -53,10 +40,6 @@ function apply(G, pairs) {
   };
 }
 
-// browser only: the subset bar. /api/subsets answers {subsets: [{id, name,
-// entries: [{slug, role}]}]} same-origin, so file:// never fetches.
-// file://, fetch failure, or zero subsets leave the full pool untouched and
-// the bar empty, a ?subset= name that cannot load gets a hint chip instead
 function boot(opts) {
   const G = opts.G;
   const bar = document.getElementById('subsetBar');
@@ -95,8 +78,6 @@ function boot(opts) {
       if (restore) { restore(); restore = null; }
       current = name;
       if (name) restore = apply(G, byName[name].entries);
-      // keep the select honest on every programmatic apply, the ?subset=
-      // auto-apply path otherwise leaves it reading full pool
       sel.value = name;
       clear.disabled = !name;
       opts.onChange();

@@ -1,19 +1,15 @@
-// picker-app.js: static draft board UI for the pick simulator
-// reads window.PICKER_GEN, window.PickerScore, window.PickerSearch, and
-// window.PickerSubset when present, file:// safe
 (function () {
 'use strict';
 
 const G = window.PICKER_GEN;
 const PS = window.PickerScore;
 
-// presentation-only constants. scoring weights, gates, pool, and roles all come from PICKER_GEN.
 const UI = {
   iconBase: 'https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/',
-  teamSize: 5, // game structure constant, distinct from any data-derived count
-  banSlots: 16, // game structure constant, dedicated ban strip size
-  nearZero: 0.005, // display threshold below which a term reads as zero
-  acLimit: 40, // max rendered autocomplete rows, display only
+  teamSize: 5,
+  banSlots: 16,
+  nearZero: 0.005,
+  acLimit: 40,
   termOrder: ['knownMu', 'knownSyn', 'prior', 'genericFit', 'exposure', 'flexibility', 'gateDelta'],
   termLabels: {
     knownMu: 'known mu', knownSyn: 'known syn', prior: 'prior', genericFit: 'generic fit',
@@ -21,14 +17,12 @@ const UI = {
   },
 };
 
-// board arrays keyed by team id, snap() maps bans to the score contract's banned
 const state = {
   allies: Array(UI.teamSize).fill(-1),
   enemies: Array(UI.teamSize).fill(-1),
   bans: Array(UI.banSlots).fill(-1),
   role: G.roles[0].id,
 };
-// where the search places the next hero: one exact empty board slot
 let target = { team: 'allies', slot: 0 };
 let lastRows = [];
 
@@ -75,7 +69,6 @@ function renderHeader() {
   if (G.date) chip('data ' + G.date);
   if (G.meta && G.meta.bracket) chip(G.meta.bracket);
   if (G.meta && G.meta.window) chip(G.meta.window);
-  // stratz is the normal source, anything else or missing is fallback
   const srcMap = (G.meta && G.meta.perHeroSource) || {};
   const fb = G.poolIdx.filter(idx => srcMap[G.slugs[idx]] !== 'stratz').length;
   if (fb === 0) chip('stratz', 'prov');
@@ -89,14 +82,12 @@ function renderRoles() {
     const b = el('button', 'segbtn' + (state.role === r.id ? ' on' : ''), r.label);
     b.onclick = () => {
       state.role = r.id; render();
-      // render() rebuilt this control, put focus back on the activated button
       seg.children[G.roles.findIndex(x => x.id === r.id)].focus();
     };
     seg.appendChild(b);
   });
 }
 
-// the aim always addresses an empty slot, board-full refuses to place
 const firstEmpty = (team, from) => {
   for (let c = 0; c < state[team].length; c++) {
     const i = ((from || 0) + c) % state[team].length;
@@ -110,16 +101,12 @@ const behindSide = () => {
 };
 const boardFull = () => firstEmpty('allies') < 0 && firstEmpty('enemies') < 0 && firstEmpty('bans') < 0;
 
-// aim at the first empty slot in the chain: picks alternate to the side
-// behind, bans chain forward from the slot just filled (wrapping)
 function retarget(prefer) {
   const other = t => (t === 'allies' ? 'enemies' : 'allies');
   const lead = prefer || behindSide();
   const chain = prefer === 'bans' ? ['bans', behindSide(), other(behindSide())] : [lead, other(lead), 'bans'];
   for (let c = 0; c < chain.length; c++) {
     const team = chain[c];
-    // the wrap offset only means "after the ban just placed": a fall-through
-    // from picks carries a pick slot index, so those scan bans from the top
     const at = team === 'bans' ? firstEmpty('bans', target.team === 'bans' ? target.slot + 1 : 0) : firstEmpty(team);
     if (at >= 0) { target = { team: team, slot: at }; return; }
   }
@@ -153,7 +140,6 @@ function renderSlots(container, slots, team) {
       d.setAttribute('aria-label', G.names[idx] + ' on ' + side + ', enter to clear');
       d.onclick = () => {
         slots[i] = -1;
-        // a clear can only free a slot, a stale aim lands on the freed slot
         if (state[target.team][target.slot] >= 0) aimAt(team, i);
         render();
         container.children[i].focus();
@@ -182,7 +168,6 @@ function renderBanStrip() {
       d.setAttribute('aria-label', G.names[idx] + ' banned, enter to remove ban');
       d.onclick = () => {
         state.bans[i] = -1;
-        // same stale-aim revalidation as the pick slots
         if (state[target.team][target.slot] >= 0) aimAt('bans', i);
         render();
         box.querySelectorAll('.banslot')[i].focus();
@@ -199,9 +184,6 @@ function renderBanStrip() {
 const slugIdx = {};
 G.slugs.forEach((s, i) => { slugIdx[s] = i; });
 
-// repertoire order: roles in order, fallbackOrder within role (make
-// order-pool), one seat per hero, single source for the legend and the
-// search browse
 function poolGroups() {
   return G.roles.map(r => {
     const idxs = [];
@@ -209,7 +191,6 @@ function poolGroups() {
       const idx = slugIdx[slug];
       if (idx !== undefined) idxs.push(idx);
     });
-    // defensive: pool heroes the fallback table missed join the group's end
     for (let pi = 0; pi < G.poolIdx.length; pi++) {
       const entry = G.entries[pi] || { roles: [] };
       if (!idxs.includes(G.poolIdx[pi]) && entry.roles.includes(r.id)) idxs.push(G.poolIdx[pi]);
@@ -222,8 +203,6 @@ const flatPool = () => poolGroups().reduce((flat, g) => {
   return flat;
 }, []);
 let poolOrder = flatPool();
-// a subset swap re-points the pool: rebuild the order, refresh the search
-// closure, rerender. no-op until the mount below exists
 function refreshPoolView() {
   if (!ac) return;
   poolOrder = flatPool();
@@ -273,7 +252,6 @@ function renderPhase() {
   box.appendChild(el('span', 'dim', 'bans ' + s.banned.length + '/' + UI.banSlots));
 }
 
-// rank the role, widening to the whole untaken pool when the role has no candidates left
 function computeRows() {
   const s = snap();
   const rows = PS.rankRole(G, s, state.role);
@@ -307,15 +285,12 @@ function renderBanner(lines) {
   lines.forEach(t => box.appendChild(el('div', null, t)));
 }
 
-// conf 2 dominates when low confidence rows doubled exceed the total across mu and syn
 function lowConf(pos) {
   const all = PS.parsePacked(G.mu[pos]).concat(PS.parsePacked(G.syn[pos]));
   const low = all.filter(r => r.conf === 2).length;
   return 2 * low > all.length;
 }
 
-// framework prose panel keyed by pool position, parallel to poolIdx. gate
-// notes and the lane pair signal live here, keeping the result row one line
 function toggleProse(row, pos) {
   const open = row.nextElementSibling;
   if (open && open.classList.contains('fw')) {
@@ -338,7 +313,6 @@ function toggleProse(row, pos) {
       panel.appendChild(line);
     });
   }
-  // pair signal: the picked ally this candidate lanes best with, display only
   const sNow = snap();
   if (sNow.allies.length) {
     const synRow = PS.parsePacked(G.syn[pos]);
@@ -382,7 +356,6 @@ function renderResults(rows, widened) {
   const fmt = v => (v > 0 ? '+' : '') + v.toFixed(2);
   const vclass = v => v > UI.nearZero ? 'pos' : (v < -UI.nearZero ? 'neg' : 'zero');
 
-  // one shared header row so the term numbers always sit under their labels
   const head = el('div', 'rhead');
   head.appendChild(el('span', 'tl', ''));
   head.appendChild(el('span', 'tl', ''));
@@ -404,7 +377,6 @@ function renderResults(rows, widened) {
     const entry = G.entries[pos] || { roles: [], tier: {} };
     const tier = entry.tier && entry.tier[state.role];
     if (tier && tier !== 'dedicated') chips.appendChild(el('span', 'tag flex', tier));
-    // most-played farm position, mismatch-tagged against the viewed role
     const stats = (G.heroPos || [])[pos];
     if (stats && stats.length) {
       const top = stats[0];
@@ -412,7 +384,6 @@ function renderResults(rows, widened) {
       chips.appendChild(el('span', 'tag pos' + cls,
         'pos ' + top[0] + ' ' + Math.round(top[1] * 100) + '%'));
     }
-    // trend: week-over-week wr movement from the trends ledger, display only
     const tr = (G.trend || [])[pos];
     if (tr) {
       const chip = el('span', 'tag tr ' + (tr[0] >= 0 ? 'tup' : 'tdn'),
@@ -458,7 +429,6 @@ function render() {
   ac.refresh();
 }
 
-// one shared row template, term column count derives from termOrder
 document.documentElement.style.setProperty('--rrow-cols',
   '2.2rem 2rem minmax(16rem, 1fr) repeat(' + UI.termOrder.length + ', 4.6rem) 4.6rem');
 
@@ -473,8 +443,6 @@ const ac = window.PickerSearch.mount({
   poolOrder: poolOrder,
 });
 
-// shot bootstrap for the readme capture: query params seed the board through
-// the same placement pick() uses, malformed input refused per field
 (function seedShotState() {
   const q = new URLSearchParams(location.search);
   if (![...q.keys()].length) return;
@@ -493,7 +461,5 @@ const ac = window.PickerSearch.mount({
   if (Number.isInteger(slot) && slot >= 0 && slot < state[aim[0]].length) aimAt(aim[0], slot);
 })();
 render();
-// subset boot lives in picker-subset.js, the guard keeps the page working
-// when that script is absent
 if (window.PickerSubset) window.PickerSubset.boot({ G: G, onChange: refreshPoolView });
 })();
