@@ -4,7 +4,7 @@
         emit-guide emit-picker emit-goldens eval eval-fit eval-fit-alphas eval-fit-completion \
         eval-promote refresh fixtures verify fetch-matchups \
         build-guide-data fetch-howdoiplay merge-mechanics validate-curation check check-linux coverage-badge shots \
-        db-subsets test-serve subsets
+        db-subsets test-serve subsets stats seed-main
 
 # duckdb cgo has no supported native windows toolchain (crt-mixing, verified),
 # so every go build and test runs in the linux golang image, same pattern as the
@@ -22,10 +22,10 @@ export MSYS_NO_PATHCONV := 1
 
 # dota stays the habitual one-key target, it opens the entry point now
 dota:
-	pwsh -NoProfile -Command "Start-Process (Join-Path (Get-Location) 'picker/picker.html')"
+	pwsh -NoProfile -Command "Start-Process python -ArgumentList 'scripts/serve.py','$(PORT)'; Start-Sleep -Seconds 1; Start-Process 'http://localhost:$(PORT)/picker/picker.html'"
 
 picker:
-	pwsh -NoProfile -Command "Start-Process (Join-Path (Get-Location) 'picker/picker.html')"
+	pwsh -NoProfile -Command "Start-Process python -ArgumentList 'scripts/serve.py','$(PORT)'; Start-Sleep -Seconds 1; Start-Process 'http://localhost:$(PORT)/picker/picker.html'"
 
 guide:
 	pwsh -NoProfile -Command "Start-Process (Join-Path (Get-Location) 'guide/index.html')"
@@ -41,9 +41,17 @@ serve:
 db-subsets:
 	python scripts/subsets.py init
 
-# sub-pool manager dev loop: detached loopback server, then the manager page
+# deterministic seed of the committed main subset into var/subsets.db
+seed-main:
+	python playground/seed-main-subsets.py
+
+# sub-pool manager dev loop: detached loopback server, then the manager tab
 subsets:
-	pwsh -NoProfile -Command "Start-Process python -ArgumentList 'scripts/serve.py','$(PORT)'; Start-Sleep -Seconds 1; Start-Process 'http://localhost:$(PORT)/picker/subsets.html'"
+	pwsh -NoProfile -Command "Start-Process python -ArgumentList 'scripts/serve.py','$(PORT)'; Start-Sleep -Seconds 1; Start-Process 'http://localhost:$(PORT)/picker/picker.html#subpools'"
+
+# standalone stats page, same detached-server loop as the picker entry
+stats:
+	pwsh -NoProfile -Command "Start-Process python -ArgumentList 'scripts/serve.py','$(PORT)'; Start-Sleep -Seconds 1; Start-Process 'http://localhost:$(PORT)/picker/stats.html'"
 
 # readme art: headless capture of both pages through their shot bootstraps.
 # pre release step, so the screenshots always match the shipped pages
@@ -97,17 +105,17 @@ engine-cover-%:
 	python scripts/cover-summary.py $(ENGINE_DIR)/coverage-$*.out
 
 test-picker:
-	node --test picker/picker-score.test.mjs picker/picker-subset.test.mjs picker/picker-stats.test.mjs
+	node --test picker/picker-score.test.mjs picker/picker-subset.test.mjs picker/picker-stats.test.mjs picker/picker-tabs.test.mjs
 
 # lcov twin of test-picker feeding codecov alongside the engine profile; the
-# spec reporter keeps the local loop readable, only picker-score.js loads so
-# the report covers exactly the scored core, and the test file is excluded
+# spec reporter keeps the local loop readable, every picker page module loads
+# so the report covers the shared core, and the test files are excluded
 test-picker-cover:
 	node --test --experimental-test-coverage \
 	     --test-coverage-exclude=**/*.test.mjs \
 	     --test-reporter=spec --test-reporter-destination=stdout \
 	     --test-reporter=lcov --test-reporter-destination=picker-lcov.info \
-	     picker/picker-score.test.mjs picker/picker-subset.test.mjs picker/picker-stats.test.mjs
+	     picker/picker-score.test.mjs picker/picker-subset.test.mjs picker/picker-stats.test.mjs picker/picker-tabs.test.mjs
 
 test: engine-test test-picker test-serve
 
