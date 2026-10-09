@@ -103,19 +103,33 @@ func TestPoolHeroesPinnedTiersAndSeats(t *testing.T) {
 	if err != nil {
 		t.Fatal(err)
 	}
+	wantFlex := map[string]bool{
+		"slark@1": true, "slark@3": true,
+		"necrophos@1": true, "necrophos@2": true,
+		"windranger@4": true, "windranger@5": true,
+		"mirana@5": true, "hoodwink@5": true,
+	}
+	wantMulti := map[string][]string{
+		"slark":      {"1", "2", "3"},
+		"necrophos":  {"1", "2", "3"},
+		"windranger": {"1", "4", "5"},
+		"mirana":     {"4", "5"},
+		"hoodwink":   {"4", "5"},
+		"ogre-magi":  {"4", "5"},
+	}
 	multi := map[string][]string{}
 	for _, h := range c.Heroes() {
 		for _, r := range h.Roles {
-			if h.Tier[r] != "dedicated" {
-				t.Errorf("%s tier[%s] = %q, want dedicated", h.Slug, r, h.Tier[r])
+			if (h.Tier[r] == "flex") != wantFlex[h.Slug+"@"+r] {
+				t.Errorf("%s tier[%s] = %q, want the pinned lineup", h.Slug, r, h.Tier[r])
 			}
 		}
 		if len(h.Roles) > 1 {
 			multi[h.Slug] = h.Roles
 		}
 	}
-	if len(multi) != 0 {
-		t.Errorf("multi-role heroes = %v, want none under the frozen single-seat lineup", multi)
+	if !reflect.DeepEqual(multi, wantMulti) {
+		t.Errorf("multi-role heroes = %v, want %v", multi, wantMulti)
 	}
 }
 
