@@ -150,6 +150,18 @@
       "tier": "dedicated"
     },
     {
+      "slug": "slark",
+      "name": "Slark",
+      "role": "1",
+      "tier": "flex"
+    },
+    {
+      "slug": "necrophos",
+      "name": "Necrophos",
+      "role": "1",
+      "tier": "flex"
+    },
+    {
       "slug": "marci",
       "name": "Marci",
       "role": "2",
@@ -214,6 +226,12 @@
       "name": "Storm Spirit",
       "role": "2",
       "tier": "dedicated"
+    },
+    {
+      "slug": "necrophos",
+      "name": "Necrophos",
+      "role": "2",
+      "tier": "flex"
     },
     {
       "slug": "enigma",
@@ -306,6 +324,12 @@
       "tier": "dedicated"
     },
     {
+      "slug": "slark",
+      "name": "Slark",
+      "role": "3",
+      "tier": "flex"
+    },
+    {
       "slug": "bounty-hunter",
       "name": "Bounty Hunter",
       "role": "4",
@@ -360,6 +384,18 @@
       "tier": "dedicated"
     },
     {
+      "slug": "windranger",
+      "name": "Windranger",
+      "role": "4",
+      "tier": "flex"
+    },
+    {
+      "slug": "ogre-magi",
+      "name": "Ogre Magi",
+      "role": "4",
+      "tier": "dedicated"
+    },
+    {
       "slug": "lich",
       "name": "Lich",
       "role": "5",
@@ -410,6 +446,30 @@
     {
       "slug": "enchantress",
       "name": "Enchantress",
+      "role": "5",
+      "tier": "dedicated"
+    },
+    {
+      "slug": "windranger",
+      "name": "Windranger",
+      "role": "5",
+      "tier": "flex"
+    },
+    {
+      "slug": "mirana",
+      "name": "Mirana",
+      "role": "5",
+      "tier": "flex"
+    },
+    {
+      "slug": "hoodwink",
+      "name": "Hoodwink",
+      "role": "5",
+      "tier": "flex"
+    },
+    {
+      "slug": "ogre-magi",
+      "name": "Ogre Magi",
       "role": "5",
       "tier": "dedicated"
     }
