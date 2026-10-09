@@ -13,7 +13,7 @@ everything runs on one page, `picker/picker.html`, hash-routed into 4 tabs: draf
 
 place allies, enemies, and bans through the roster search or the pool panels, aim a pick at a specific slot, and the ranking for the selected role recomputes per term after every pick.
 
-![the draft board mid-draft against a visible meepo and enigma, the pool panels for every role, and the candidate ranking below with three veto tags](docs/picker.png)
+![the draft board mid-draft against a visible meepo and enigma, the pool panels for every role, and the candidate ranking below with veto tags](docs/picker.png)
 
 ### sub-pools
 

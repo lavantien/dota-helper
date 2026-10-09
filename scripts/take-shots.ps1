@@ -33,7 +33,7 @@ $shots = @(
   },
   @{
     Url = "http://127.0.0.1:$Port/picker/picker.html#stats"
-    Size = '1440,1700'
+    Size = '1440,2400'
     Out = 'docs/stats.png'
   }
 )
