@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="dark">
+<title>pool stats</title>
+<link rel="stylesheet" href="../ui/ui.css">
+<link rel="stylesheet" href="picker.css">
+<link rel="stylesheet" href="stats.css">
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>pool stats</h1>
+    <div id="metaChips" class="chips"></div>
+  </header>
+
+  <section class="card">
+    <div class="roleline"><span>role</span><div id="roleSeg" class="seg"></div></div>
+    <div class="rscroll"><table id="metaTable" class="metatable"></table></div>
+    <p class="sub">full pool view over the emitted data: share and win rate of each hero's most played position, win rate at the viewed role, engine prior, week-over-week trend, and roster pick rate. click a header to sort.</p>
+  </section>
+
+  <section class="card">
+    <h2>pair explorer</h2>
+    <p class="sub">pick any pool hero: synergy ranks the allies it lanes best with, matchup lists the enemies it loses to most. conf tiers mark thin data.</p>
+    <div class="pairpick">
+      <label class="dim" for="pairSel">hero</label>
+      <select id="pairSel" aria-label="pool hero"></select>
+      <div id="pairHead" class="pairhead"></div>
+    </div>
+    <div class="pairgrid">
+      <div>
+        <div class="teamhead">best allies</div>
+        <div id="allyList" class="pairlist"></div>
+      </div>
+      <div>
+        <div class="teamhead">worst enemies</div>
+        <div id="enemyList" class="pairlist"></div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<script src="picker-data-generated.js"></script>
+<script src="picker-score.js"></script>
+<script src="picker-stats.js"></script>
+</body>
+</html>

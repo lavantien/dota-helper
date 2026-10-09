@@ -1,0 +1,61 @@
+/* stats page layout: sortable meta table and pair explorer lists.
+   tokens and shared primitives live in ../ui/ui.css, chip and tag idioms in picker.css */
+
+.metatable { width: 100%; border-collapse: collapse; font-size: var(--fs-small); }
+.metatable th, .metatable td {
+  padding: var(--sp-1) var(--sp-2);
+  border-bottom: 1px solid var(--grid);
+  text-align: left;
+  white-space: nowrap;
+}
+.metatable th { border-bottom: 1px solid var(--ink-2); }
+.metatable th button {
+  font: inherit; color: var(--muted); min-height: var(--control-h);
+  display: inline-flex; align-items: center; gap: var(--sp-1);
+  font-size: var(--fs-micro); text-transform: uppercase; letter-spacing: .04em;
+}
+.metatable th button:hover { color: var(--ink-1); }
+.metatable th button.on { color: var(--accent); }
+.metatable th button.on::after { content: '\2193'; }
+.metatable th[aria-sort='ascending'] button.on::after { content: '\2191'; }
+.metatable .num, .metatable th.num button {
+  text-align: right;
+  font-family: var(--font-display);
+  font-variant-numeric: tabular-nums;
+}
+.metatable td.up { color: var(--good-text); }
+.metatable td.down { color: var(--bad-text); }
+.metatable .hicon.small, .prow .hicon { width: var(--hicon-col-w); height: var(--hicon-col-h); }
+.pname { font-weight: var(--fw-strong); }
+
+.pairpick {
+  display: flex; flex-wrap: wrap; gap: var(--sp-2); align-items: center;
+  margin-top: var(--sp-3);
+}
+#pairSel {
+  border: 1px solid var(--grid); border-radius: var(--r-2);
+  background: var(--surface-1); color: var(--ink-1); font: inherit;
+  min-height: var(--control-h); padding: var(--sp-1) var(--sp-2);
+}
+.pairhead { display: flex; align-items: center; gap: var(--sp-2); }
+
+.pairgrid { display: grid; grid-template-columns: 1fr 1fr; gap: var(--sp-4); margin-top: var(--sp-3); }
+.pairgrid > div:first-child .teamhead { color: var(--accent); }
+.pairgrid > div:last-child .teamhead { color: var(--steel); }
+@media (max-width: 720px) { .pairgrid { grid-template-columns: 1fr; } }
+
+.pairlist {
+  display: flex; flex-direction: column;
+  max-height: 26rem; overflow-y: auto;
+  border: 1px solid var(--grid); border-radius: var(--r-2);
+}
+.prow {
+  display: grid; grid-template-columns: var(--hicon-col-w) 1fr auto auto;
+  gap: var(--sp-2); align-items: center;
+  padding: var(--sp-1) var(--sp-2);
+  border-bottom: 1px solid var(--grid);
+  font-size: var(--fs-small);
+}
+.prow:last-child { border-bottom: none; }
+.prow .pname { font-weight: var(--fw-medium); }
+.ppct { font-family: var(--font-display); font-variant-numeric: tabular-nums; text-align: right; }
