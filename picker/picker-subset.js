@@ -52,7 +52,8 @@ function boot(opts) {
     c.textContent = text;
     bar.appendChild(c);
   };
-  const offline = () => { if (wanted) chip('subset list needs the dev server'); };
+  const offline = () => chip('subset list needs the dev server');
+  const emptyList = () => chip('no sub-pools yet, create one in the sub-pools tab');
   let view = null;
   function mountBar(subsets, keepId) {
     const byId = {};
@@ -94,26 +95,33 @@ function boot(opts) {
   const fetchList = () => fetch('/api/subsets')
     .then(r => { if (!r.ok) throw new Error('http ' + r.status); return r.json(); })
     .then(raw => (Array.isArray(raw) ? raw : (raw && raw.subsets) || []));
+  let refreshWarned = false;
   function reload() {
     if (location.protocol === 'file:') return Promise.resolve();
     return fetchList().then(subsets => {
+      refreshWarned = false;
       const prev = view;
       const prevId = prev ? prev.currentId : 0;
       if (prev && prev.restore) prev.restore();
       if (!subsets.length) {
-        if (!prev) { offline(); return; }
+        if (!prev) { emptyList(); return; }
         mountBar([], 0);
         if (prevId) opts.onChange();
         return;
       }
       mountBar(subsets, prevId);
       if (prevId && !view.byId[prevId]) opts.onChange();
-    }).catch(() => {});
+    }).catch(() => {
+      if (!view) { offline(); return; }
+      if (refreshWarned) return;
+      refreshWarned = true;
+      chip('subset refresh failed, dev server unreachable');
+    });
   }
   if (location.protocol === 'file:') { offline(); return inert; }
   fetchList()
     .then(subsets => {
-      if (!subsets.length) { offline(); return; }
+      if (!subsets.length) { emptyList(); return; }
       mountBar(subsets, 0);
       if (!wanted) return;
       const hit = subsets.find(s => s.name === wanted);
