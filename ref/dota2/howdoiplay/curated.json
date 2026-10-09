@@ -1,5 +1,5 @@
 {
-  "curatedAt": "2026-10-07",
+  "curatedAt": "2026-10-09",
   "source": "ref/dota2/howdoiplay/howdoiplay.json",
   "patch": "7.41",
   "heroes": {
@@ -2178,6 +2178,68 @@
           "verdict": "confirmed",
           "source": "https://dota2.fandom.com/wiki/Nyx_Assassin",
           "text": "carapace reflects once per source on a short buff, bait it out then commit your damage"
+        }
+      }
+    ],
+    "ogre-magi": [
+      {
+        "idx": 0,
+        "from": "tips[1]",
+        "verified": {
+          "date": "2026-10-09",
+          "verdict": "confirmed",
+          "source": "https://howdoiplay.com/tips/ogre_magi.html",
+          "text": "each ignite cast hunts a second body, the closest unburned unit beside the primary"
+        }
+      },
+      {
+        "idx": 1,
+        "from": "tips[2].notes[0]",
+        "verified": {
+          "date": "2026-10-09",
+          "verdict": "confirmed",
+          "source": "https://howdoiplay.com/tips/ogre_magi.html",
+          "text": "bloodlust lands on towers and every friendly building, the fountain and the racks swing faster too"
+        }
+      },
+      {
+        "idx": 2,
+        "from": "tips[4]",
+        "verified": {
+          "date": "2026-10-09",
+          "verdict": "confirmed",
+          "source": "https://howdoiplay.com/tips/ogre_magi.html",
+          "text": "only enemy or neutral targeted items multicast, ally targeted items never roll the repeat"
+        }
+      },
+      {
+        "idx": 3,
+        "from": "counters[0]",
+        "verified": {
+          "date": "2026-10-09",
+          "verdict": "confirmed",
+          "source": "https://howdoiplay.com/tips/ogre_magi.html",
+          "text": "run him through tree fog, the slow cast times are his only downfall, break vision often"
+        }
+      },
+      {
+        "idx": 4,
+        "from": "counters[1]",
+        "verified": {
+          "date": "2026-10-09",
+          "verdict": "confirmed",
+          "source": "https://howdoiplay.com/tips/ogre_magi.html",
+          "text": "ignite wipes off the burning ally with any basic dispel"
+        }
+      },
+      {
+        "idx": 5,
+        "from": "counters[2]",
+        "verified": {
+          "date": "2026-10-09",
+          "verdict": "confirmed",
+          "source": "https://howdoiplay.com/tips/ogre_magi.html",
+          "text": "bloodlust wipes off enemies with any basic dispel, strip it off the buffed core"
         }
       }
     ],

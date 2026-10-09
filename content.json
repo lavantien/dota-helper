@@ -254,7 +254,7 @@
       "why": "dedicated pos 4, the bushwhack cashes every tree on the map into a stun and the sharpshooter snipes the runner from fog, favored into the paper lanes and the rooted casters, vetoed by the tree cutters and the flood lines",
       "how": "acorn the tree beside the target, bushwhack the net onto it, scurry the tree line for the reset, hold the sharpshooter for the committed fight and juke the recoil across the cliffs",
       "when": "tree hugger trades from the opening ranks, mid roams land the bushwhack picks, late the sharpshooter break guts the carries, starves when the lanes hold no trees",
-      "build": "essence distiller, glimmer, aether lens, blink, shard, gungir, sheepstick",
+      "build": "pos 4: essence distiller, glimmer, aether lens, blink, shard, gungir, sheepstick. pos 5: essence distiller, glimmer, aether lens, force, blink, gungir, sheepstick",
       "timings": [["essence distiller", 15], ["glimmer", 26]],
       "tech": [
         "visage, spirit breaker, and bounty hunter are the vetoes, the familiars flood the tree lines and the hunt crew runs the paper frame down",
@@ -397,7 +397,7 @@
       "why": "soft support playmaker, favored into jakiro and void spirit lines, vetoed by arc warden clones and bounty tracks, arrows decide picks before fights start",
       "how": "arrow the fog lines beside their stun, starstorm the trade, leap the cliff, quiver poke without creep aggro, veil the team for the engage",
       "when": "lane arrow threat from the start, mid roams land the long stun, late moonlight ghost starts the engage",
-      "build": "essence distiller, vessel, mekansm, blink, lotus, shard, wind waker",
+      "build": "pos 4: essence distiller, vessel, mekansm, blink, lotus, shard, wind waker. pos 5: essence distiller, vessel, mekansm, force, blink, lotus, shard",
       "timings": [["essence distiller", 14], ["vessel", 18]],
       "tech": [
         "arc warden, io, and bounty hunter are the vetoes, clones and track reveal gut the invis value",
@@ -436,8 +436,8 @@
       "why": "sustain core that outlasts burst from the offlane, reaper deletes tanky cores, favored into treant and tiny",
       "how": "pulse sustain through harass, farm to rad, scythe the tank in every fight",
       "when": "strong mid game once rad and shard land, dies to heal cut timings",
-      "build": "rad, shard, consecrated wraps, lotus, bkb, heart, shiva",
-      "timings": [["rad", 16], ["shard", 20]],
+      "build": "pos 1: rad, consecrated wraps, manta, heart, bkb, shiva, blessing. pos 2: rad, shard, consecrated wraps, lotus, heart, bkb, shiva. pos 3: rad, shard, consecrated wraps, lotus, bkb, heart, shiva",
+      "timings": [["rad", 15], ["shard", 20]],
       "tech": [
         "bloodseeker and kotl are the vetoes, heal cut and mana drain kill the sustain plan",
         "heartstopper wins long fights, never fight into AA"
@@ -456,6 +456,19 @@
         "techies, shadow fiend, and skywrath style lines are the free wins, paper backs fold to the stalk burst"
       ],
       "mechanics": [["tip", "use vendetta invis for positioning, land the impale on their stack, the spikes stun the whole line"], ["tip", "carapace negates and reflects one damage instance per source, stuns whoever hit you"], ["tip", "carapace can be cast inside vendetta without dropping the invis, run into their spell spam for free stuns"], ["tip", "late game vendetta's invis and speed are for impale positioning, the bonus damage matters less"], ["counter", "do not retaliate after his combo, the carapace reflects and stuns whoever damages him, just walk away"], ["counter", "carapace reflects once per source on a short buff, bait it out then commit your damage"]]
+    },
+    "ogre-magi": {
+      "identity": "two headed stun battery, fireblast drops the nuke stun, ignite burns and slows the runner, bloodlust hastes any body or building, multicast rolls the spells and the item casts again",
+      "why": "dedicated pos 4 and pos 5, the multicast stuns outpace every trade and bloodlust turns any core into the raid boss, favored into melee lanes and slow casting lines, vetoed by the dispel crew and the tree fog jukes",
+      "how": "fireblast the commit, ignite the runner, bloodlust the carry before the fight breaks and the tower on the siege, hold the multicast rolls for the clumped bodies",
+      "when": "lane bully off the armor and the health pool, mid game the multicast windows flip every skirmish, late the bloodlust sieges crack the base, starves when the dispels stack up and the mana runs dry",
+      "build": "pos 4/5: midas, glimmer, blink, aether lens, mekansm, lotus, sheepstick",
+      "timings": [["midas", 19], ["glimmer", 26]],
+      "tech": [
+        "the dispel crew is the veto, basic dispels strip the ignite and the bloodlust, tree fog jukes waste the slow casts",
+        "melee lanes and slow casting lines are the free wins, the multicast stuns stack faster than any trade answers"
+      ],
+      "mechanics": [["tip", "each ignite cast hunts a second body, the closest unburned unit beside the primary"], ["tip", "bloodlust lands on towers and every friendly building, the fountain and the racks swing faster too"], ["tip", "only enemy or neutral targeted items multicast, ally targeted items never roll the repeat"], ["counter", "run him through tree fog, the slow cast times are his only downfall, break vision often"], ["counter", "ignite wipes off the burning ally with any basic dispel"], ["counter", "bloodlust wipes off enemies with any basic dispel, strip it off the buffed core"]]
     },
     "outworld-destroyer": {
       "identity": "orb burn mid, arcane orb turns the spare mana into pure damage, astral imprisonment banishes a body and drains its mana, essence flux feeds the pool off the casts, sanity's eclipse drops the whole clump on the mana gap",
@@ -579,8 +592,8 @@
       "why": "dedicated pos 2, essence shift snowballs every fight, favored into treant and soft support lines",
       "how": "dark pact the dust and track, pounce the leash, shadow dance resets the map",
       "when": "spikes once mage slayer lands, monster late with disperser and skadi off stolen stats",
-      "build": "mage slayer, blink, shard, bkb, silver edge, disperser, skadi",
-      "timings": [["mage slayer", 19], ["blink", 23]],
+      "build": "pos 1: mage slayer, harpoon, silver edge, shard, bkb, skadi, disperser. pos 2: mage slayer, blink, shard, bkb, silver edge, disperser, skadi. pos 3: mage slayer, harpoon, blink, agh, shard, bkb, disperser",
+      "timings": [["mage slayer", 17], ["harpoon", 25]],
       "tech": [
         "grimstroke and kunkka veto, visage familiars reveal the dance",
         "dark pact dispels track and dust but never silences, steal stats off the tank then leave"
@@ -800,7 +813,7 @@
       "why": "dedicated pos 1, the latch sets every kill and focus fire deletes the pinned body, favored into lifestealer and ursa style commit melee, vetoed by lancer floods and the blink hex crew",
       "how": "shackle the runner to a creep or tree, powershot the wave and the fog lines, windrun their dive, focus fire the pinned body",
       "when": "lane harass off the arrow and shackle threat, mid game pick machine off the latch, focus fire cracks towers and rosh, dies the moment the chain lock lands",
-      "build": "mjollnir, bkb, pike, hydras breath, sphere, daedalus, satanic",
+      "build": "pos 1: mjollnir, bkb, pike, hydras breath, sphere, daedalus, satanic. pos 4: essence distiller, vessel, blink, glimmer, shard, lotus, bkb. pos 5: essence distiller, vessel, diffusal, blink, cyclone, shard, bkb",
       "timings": [["mjollnir", 20], ["bkb", 27]],
       "tech": [
         "phantom lancer, naga siren, and lion are the vetoes, floods outbody the fire and the instant hex locks the windrun",
@@ -942,7 +955,8 @@
       ["pudge", "hook lead onto the moving path from fog until the reel lands on the walk line, not the body, and the dismember follows the landing"],
       ["undying", "decay trade rhythm on the lane body and the tombstone placement where the fight stands until the rip always lands before the decay and the zombies join every commit"],
       ["drow-ranger", "manual frost arrow harass through the standing wave and the range discipline on the retreating body until the procs always land from beyond the answer range and the gust peels the dive clean"],
-      ["tidehunter", "gush into smash order on the lane body and the ravage release onto the committed clump until the armor strip always lands before the swing and the stun always catches the stack"]
+      ["tidehunter", "gush into smash order on the lane body and the ravage release onto the committed clump until the armor strip always lands before the swing and the stun always catches the stack"],
+      ["ogre-magi", "fireblast into ignite trade rhythm on the lane body and the bloodlust timing before the commit until the multicast rolls always land on the clumped pair"]
     ],
     "replay": [
       "after each session: 10 min, only your deaths, write one line per death: where you should have been",
@@ -981,5 +995,5 @@
       }
     ]
   },
-  "buildsMeta": "stratz itemFullPurchase completed week 1790553600, divine_immortal, fetched 2026-10-07, series 7.41"
+  "buildsMeta": "stratz itemFullPurchase completed week 1790553600, divine_immortal, fetched 2026-10-09, series 7.41"
 }
