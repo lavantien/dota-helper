@@ -11,48 +11,70 @@
 <body>
 <div class="wrap">
   <header>
-    <a class="back" href="../guide/index.html" aria-label="open the pool guide">help: pool guide</a>
     <h1>pick simulator</h1>
     <div id="metaChips" class="chips"></div>
     <div id="subsetBar" class="chips"></div>
   </header>
 
-  <section class="card">
-    <div id="phase" class="phasebanner"></div>
-    <div class="board">
-      <div>
-        <div class="teamhead">our picks</div>
-        <div id="allySlots" class="slots"></div>
+  <nav id="tabbar" class="tabbar" aria-label="page sections">
+    <button class="segbtn" data-tab="draft">draft</button>
+    <button class="segbtn" data-tab="subpools">sub-pools</button>
+    <button class="segbtn" data-tab="guide">guide</button>
+    <button class="segbtn" data-tab="stats">stats</button>
+  </nav>
+
+  <div id="pane-draft" class="pane">
+    <section class="card">
+      <div id="phase" class="phasebanner"></div>
+      <div class="board">
+        <div>
+          <div class="teamhead">our picks</div>
+          <div id="allySlots" class="slots"></div>
+        </div>
+        <div>
+          <div class="teamhead">enemy picks</div>
+          <div id="enemySlots" class="slots"></div>
+        </div>
       </div>
-      <div>
-        <div class="teamhead">enemy picks</div>
-        <div id="enemySlots" class="slots"></div>
-      </div>
-    </div>
-    <div class="searchline">
-      <div id="aimChip" class="aimchip" role="status" aria-live="polite"></div>
-      <div class="acwrap">
-        <input id="search" placeholder="search any roster hero, enter to place" autocomplete="off"
+      <div class="searchline">
+        <div id="aimChip" class="aimchip" role="status" aria-live="polite"></div>
+        <div class="acwrap">
+          <input id="search" placeholder="search any roster hero, enter to place" autocomplete="off"
           role="combobox" aria-label="search roster heroes" aria-autocomplete="list"
           aria-expanded="false" aria-controls="acList">
-        <div id="acList" class="aclist" role="listbox" hidden></div>
+          <div id="acList" class="aclist" role="listbox" hidden></div>
+        </div>
       </div>
-    </div>
-    <div id="bans" class="bans"></div>
-    <div id="legend" class="poollist"></div>
-    <div id="banner" class="banner"></div>
-  </section>
+      <div id="bans" class="bans"></div>
+      <div id="legend" class="poollist"></div>
+      <div id="banner" class="banner"></div>
+    </section>
 
-  <section class="card">
-    <div class="roleline"><span>role</span><div id="roleSel" class="seg"></div></div>
-    <div class="rscroll"><div id="results" class="results"></div></div>
-  </section>
+    <section class="card">
+      <div class="roleline"><span>role</span><div id="roleSel" class="seg"></div></div>
+      <div class="rscroll"><div id="results" class="results"></div></div>
+    </section>
+  </div>
+
+  <div id="pane-subpools" class="pane" hidden>
+    <div id="subpools"></div>
+  </div>
+
+  <div id="pane-guide" class="pane" hidden>
+    <iframe id="guideFrame" title="pool guide"></iframe>
+  </div>
+
+  <div id="pane-stats" class="pane" hidden>
+    <iframe id="statsFrame" title="hero meta statistics"></iframe>
+  </div>
 </div>
 
 <script src="picker-data-generated.js"></script>
 <script src="picker-score.js"></script>
 <script src="picker-search.js"></script>
 <script src="picker-subset.js"></script>
+<script src="picker-subsets-manager.js"></script>
+<script src="picker-tabs.js"></script>
 <script src="picker-app.js"></script>
 </body>
 </html>

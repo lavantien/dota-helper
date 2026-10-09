@@ -461,5 +461,5 @@ const ac = window.PickerSearch.mount({
   if (Number.isInteger(slot) && slot >= 0 && slot < state[aim[0]].length) aimAt(aim[0], slot);
 })();
 render();
-if (window.PickerSubset) window.PickerSubset.boot({ G: G, onChange: refreshPoolView });
+if (window.PickerTabs) PickerTabs.boot({ G: G, onPoolChange: refreshPoolView });
 })();
