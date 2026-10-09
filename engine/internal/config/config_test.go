@@ -117,7 +117,14 @@ func TestPoolHeroesPinnedTiersAndSeats(t *testing.T) {
 		"hoodwink":   {"4", "5"},
 		"ogre-magi":  {"4", "5"},
 	}
+	wantSeats := map[string]int{"1": 21, "2": 12, "3": 16, "4": 11, "5": 13}
 	multi := map[string][]string{}
+	seats := map[string]int{}
+	unique := map[string]bool{}
+	for _, e := range c.Pool {
+		seats[e.Role]++
+		unique[e.Slug] = true
+	}
 	for _, h := range c.Heroes() {
 		for _, r := range h.Roles {
 			if (h.Tier[r] == "flex") != wantFlex[h.Slug+"@"+r] {
@@ -130,6 +137,12 @@ func TestPoolHeroesPinnedTiersAndSeats(t *testing.T) {
 	}
 	if !reflect.DeepEqual(multi, wantMulti) {
 		t.Errorf("multi-role heroes = %v, want %v", multi, wantMulti)
+	}
+	if !reflect.DeepEqual(seats, wantSeats) {
+		t.Errorf("pool seats per role = %v, want %v", seats, wantSeats)
+	}
+	if len(c.Pool) != 73 || len(unique) != 64 {
+		t.Errorf("pool = %d entries over %d heroes, want 73 over 64", len(c.Pool), len(unique))
 	}
 }
 
