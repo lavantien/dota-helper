@@ -210,7 +210,7 @@ emit-picker: engine-build
 # (-timeout: the suite re-emits every artifact at testdata scale, which crossed
 # the go default 10m once the pool grew past 64 entries)
 emit-goldens:
-	$(GO_RUN) go -C $(ENGINE_DIR) test -timeout 30m ./internal/emit -update
+	$(GO_RUN) go -C $(ENGINE_DIR) test -timeout 60m ./internal/emit -update
 
 # order-aware eval: replays the committed league drafts against the live
 # picker model and writes ref/dota2/eval/latest.json (see ref/dota2/eval/README.md)
