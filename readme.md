@@ -17,7 +17,7 @@ place allies, enemies, and bans through the roster search or the pool panels, ai
 
 ### sub-pools
 
-the sub-pools tab carves sub-pools out of the master pool through the loopback `/api/subsets`, and the subset bar in the header picks the active one, so the board panels and ranking filter live to the kept pairs (`make subsets` opens the tab). `main` is the first sub-pool, `make seed-main` reseeds it deterministically into the committed store.
+the sub-pools tab carves sub-pools out of the master pool through the loopback `/api/subsets`, and the subset bar in the header picks the active one, so the board panels and ranking filter live to the kept pairs (`make subsets` opens the tab). `main` is the first sub-pool, `make seed-main` reseeds it idempotently into the committed store.
 
 ![the sub-pools tab with main selected on the header subset bar and its 20 pairs toggled on among the per-role pool chips](docs/subpools.png)
 
@@ -45,7 +45,7 @@ the lineup below is the curated pool, membership is authored in `config.json`, a
 
 heroes marked flex hold a secondary seat beside the dedicated seat in another role's list. ogre magi joined as a new hero, dedicated at both support seats.
 
-sub-pools carve the pool down for focused practice. `main` is the first one, 20 pairs: pos 1 slark, lifestealer, lone druid, nature's prophet, necrophos. pos 2 slark, dragon knight, necrophos. pos 3 necrophos, enigma, tidehunter, slark. pos 4 and pos 5 mirana, hoodwink, windranger, ogre magi. `make seed-main` reseeds it deterministically into the committed `var/subsets.db`.
+sub-pools carve the pool down for focused practice. `main` is the first one, 20 pairs: pos 1 slark, lifestealer, lone druid, nature's prophet, necrophos. pos 2 slark, dragon knight, necrophos. pos 3 necrophos, enigma, tidehunter, slark. pos 4 and pos 5 mirana, hoodwink, windranger, ogre magi. `make seed-main` reseeds it idempotently into the committed `var/subsets.db`, byte-identical when the store already matches.
 
 ## tools
 

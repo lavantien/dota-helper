@@ -41,7 +41,9 @@ serve:
 db-subsets:
 	python scripts/subsets.py init
 
-# deterministic seed of the committed main subset into var/subsets.db
+# idempotent reseed of the committed main subset into var/subsets.db,
+# byte-identical when the store already matches, a rebuild from scratch
+# reproduces the logical state only (sqlite keeps its own change counter)
 seed-main:
 	python playground/seed-main-subsets.py
 
@@ -109,9 +111,11 @@ engine-cover-%:
 test-picker:
 	node --test picker/picker-score.test.mjs picker/picker-subset.test.mjs picker/picker-stats.test.mjs picker/picker-tabs.test.mjs
 
-# lcov twin of test-picker feeding codecov alongside the engine profile; the
-# spec reporter keeps the local loop readable, every picker page module loads
-# so the report covers the shared core, and the test files are excluded
+# lcov twin of test-picker writing picker-lcov.info beside the engine profile;
+# the spec reporter keeps the local loop readable. only the dual-env modules
+# load under node (score, subset, tabs, stats); the dom-only subsets manager
+# stays out of this report, its flows are driven through the browser pass,
+# and the test files are excluded
 test-picker-cover:
 	node --test --experimental-test-coverage \
 	     --test-coverage-exclude=**/*.test.mjs \
