@@ -8,9 +8,6 @@ import (
 	"testing"
 )
 
-// seedMatches writes four complete 2-ban + 10-pick drafts with pool heroes
-// on both sides so every match lands in the AUC set, start times ascending,
-// radiant wins alternating.
 func seedMatches(t *testing.T, db *sql.DB) {
 	t.Helper()
 	cfg := testConfig(t)
@@ -31,8 +28,6 @@ func seedMatches(t *testing.T, db *sql.DB) {
 	for mi := 0; mi < 4; mi++ {
 		matchID := int64(1000 + mi)
 		start := int64(1700000000 + 86400*mi)
-		// bans and picks all land on distinct pool heroes: banning pool
-		// heroes is realistic and keeps the fixture roster-independent
 		events := []ev{
 			{true, false, pool[10]},
 			{false, false, pool[11]},
@@ -58,8 +53,6 @@ func seedMatches(t *testing.T, db *sql.DB) {
 func TestRunOrchestratesAndIsByteIdentical(t *testing.T) {
 	t.Chdir(repoRoot)
 	cfg := testConfig(t)
-	// the hub census floor (30) exceeds the 2-match fixture's transition
-	// counts, so lower it to make the census assertion meaningful here
 	cfg.Eval.Seq.CensusMinCount = 1
 	db := seedModelDB(t)
 	seedMatches(t, db)
@@ -94,7 +87,6 @@ func TestRunOrchestratesAndIsByteIdentical(t *testing.T) {
 	if doc.Sequential.Picks == 0 || doc.Sequential.RankedPicks == 0 {
 		t.Fatalf("sequential picks %d ranked %d, want nonzero", doc.Sequential.Picks, doc.Sequential.RankedPicks)
 	}
-	// the auc set is holdout-only and every seeded match is two-sided
 	if doc.Sequential.AUCMatches != 2 {
 		t.Fatalf("auc matches = %d, want 2", doc.Sequential.AUCMatches)
 	}
@@ -113,7 +105,6 @@ func TestRunOrchestratesAndIsByteIdentical(t *testing.T) {
 	if len(doc.Comparators.Rows) != 3 || doc.Comparators.Ensemble == nil {
 		t.Fatalf("comparators = %+v, want three rows plus the ensemble", doc.Comparators)
 	}
-	// the bank scores the same two-sided holdout the replay AUC reads
 	for _, row := range doc.Comparators.Rows {
 		if row.Matches != doc.Sequential.AUCMatches {
 			t.Fatalf("comparator %s scored %d matches, want the %d two-sided of sequential.auc",
@@ -128,8 +119,6 @@ func TestRunOrchestratesAndIsByteIdentical(t *testing.T) {
 	}
 }
 
-// TestLoadMatchesDropsCorruptDrafts pins the loader hygiene: an unknown
-// hero id and a repeated hero both disqualify the match.
 func TestLoadMatchesDropsCorruptDrafts(t *testing.T) {
 	t.Chdir(repoRoot)
 	db := seedModelDB(t)
@@ -139,16 +128,13 @@ func TestLoadMatchesDropsCorruptDrafts(t *testing.T) {
 			t.Fatalf("exec: %v", err)
 		}
 	}
-	// unknown hero id
 	exec(`INSERT INTO match_raw (match_id, start_time, radiant_win, duration_seconds, lobby_type,
 		game_mode, bracket, average_rank, source, fetched_at)
 		VALUES (2000, 1700000000, true, 2400, 'PRACTICE', 'CAPTAINS_MODE', 'TEST', 30, 'stratz_backfill', 'test')`)
 	exec(`INSERT INTO draft_timing (match_id, seq, is_radiant, is_pick, hero_id) VALUES (2000, 0, true, true, 99999)`)
-	// duplicated hero
 	exec(`INSERT INTO match_raw (match_id, start_time, radiant_win, duration_seconds, lobby_type,
 		game_mode, bracket, average_rank, source, fetched_at)
 		VALUES (2001, 1700000000, true, 2400, 'PRACTICE', 'CAPTAINS_MODE', 'TEST', 30, 'stratz_backfill', 'test')`)
-	// a roster-resolved hero picked twice: a pure duplicate
 	exec(`INSERT INTO draft_timing (match_id, seq, is_radiant, is_pick, hero_id) VALUES (2001, 0, true, true, 100)`)
 	exec(`INSERT INTO draft_timing (match_id, seq, is_radiant, is_pick, hero_id) VALUES (2001, 1, false, true, 100)`)
 

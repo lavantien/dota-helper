@@ -13,8 +13,6 @@ import (
 )
 
 func TestMomentAlphaHandComputed(t *testing.T) {
-	// deltas 60/40 half and half: population variance 100; every n = 100 so
-	// the mean sampling variance is 2500/100 = 25; tau2 = 75, alpha = 2500/75
 	ds := []float64{60, 40, 60, 40}
 	ns := []float64{100, 100, 100, 100}
 	alpha, tau2, kept := momentAlpha(ds, ns, 2500)
@@ -24,7 +22,6 @@ func TestMomentAlphaHandComputed(t *testing.T) {
 	if math.Abs(tau2-75) > 1e-9 || math.Abs(alpha-2500.0/75) > 1e-9 {
 		t.Fatalf("moment alpha %v tau2 %v, want %v and 75", alpha, tau2, 2500.0/75)
 	}
-	// spread fully explained by sampling noise: the fallback keeps current
 	alpha, tau2, kept = momentAlpha([]float64{50, 50, 50, 50}, ns, 2500)
 	if !kept || alpha != 0 || tau2 != 0 {
 		t.Fatalf("degenerate family gave alpha %v tau2 %v kept %v", alpha, tau2, kept)
@@ -49,8 +46,6 @@ func TestBinomialDevianceHandComputed(t *testing.T) {
 	}
 }
 
-// TestCVAlphaRecoversPlantedShrinkage plants holdout win rates generated at
-// a known grid alpha and checks the deviance sweep recovers it.
 func TestCVAlphaRecoversPlantedShrinkage(t *testing.T) {
 	_, cfg := handModel(t)
 	grid := cfg.Eval.AlphaFit.Grid
@@ -75,10 +70,6 @@ func TestCVAlphaRecoversPlantedShrinkage(t *testing.T) {
 	}
 }
 
-// TestOverallDeltasMirrorOverallWRSums pins the overall family to the mine
-// shrink site: the deltas pool exactly the hero-perspective sums OverallWR
-// pools (the stratz_vs perspective was adjudicated against the independent
-// opendota snapshot, see overallDeltas).
 func TestOverallDeltasMirrorOverallWRSums(t *testing.T) {
 	cfg := testConfig(t)
 	pool := cfg.PoolSlugs()
@@ -92,7 +83,6 @@ func TestOverallDeltasMirrorOverallWRSums(t *testing.T) {
 			Matches:  100, Source: mine.SrcStratzVS, Confidence: mine.ConfHigh,
 		})
 	}
-	// a non-vs row must not enter the overall sums
 	rows = append(rows, mine.MatchupRaw{
 		PoolSlug: hero, EnemySlug: pool[1], Dis: sql.NullFloat64{Float64: 2, Valid: true},
 		Matches: 500, Source: mine.SrcOpenDotaEp, Confidence: mine.ConfHigh,
@@ -101,7 +91,6 @@ func TestOverallDeltasMirrorOverallWRSums(t *testing.T) {
 	if len(deltas) != 1 || deltas[0].Hero != hero {
 		t.Fatalf("overall deltas %+v, want exactly the vs-covered %s", deltas, hero)
 	}
-	// 5 x 100 matches over 5 enemy slots: 100 picks, 40 served wins, -10pp
 	if deltas[0].N != 100 || math.Abs(deltas[0].Delta+10) > 1e-9 {
 		t.Fatalf("overall delta %+v, want n 100 delta -10pp", deltas[0])
 	}
@@ -111,13 +100,10 @@ func TestOverallDeltasMirrorOverallWRSums(t *testing.T) {
 	}
 }
 
-// TestFitAlphasWritesProposal runs the alpha fit over a seeded db: raw
-// aggregate rows with a strong between-pair spread, league matches from the
-// standard fixture (whose thin holdout leaves the CV inadequate).
 func TestFitAlphasWritesProposal(t *testing.T) {
 	t.Chdir(repoRoot)
 	cfg := testConfig(t)
-	cfg.Eval.Bootstrap.Resamples = 50 // the suite runs the bootstraps at fixture scale
+	cfg.Eval.Bootstrap.Resamples = 50
 	db := seedModelDB(t)
 	seedMatches(t, db)
 	pool := cfg.PoolSlugs()
@@ -133,10 +119,6 @@ func TestFitAlphasWritesProposal(t *testing.T) {
 			if hero == other {
 				continue
 			}
-			// the synergy column (which feeds the matchup family) varies with
-			// a per-hero magnitude and alternating sign; the win counts
-			// (which feed the overall family) shift per hero and enemy so
-			// neither family's spread collapses onto its midpoint
 			syn := 6.0 + 2*float64(i%3)
 			if (i+j)%2 == 1 {
 				syn = -syn
@@ -160,10 +142,6 @@ func TestFitAlphasWritesProposal(t *testing.T) {
 				VALUES (?, ?, ?, ?, 'stratz')`, hero, other, 800, syn)
 		}
 	}
-	// pad the corpus with matches that all pick pool[0]: the holdout grows
-	// past 30 matches so one hero reaches alphaFit.minHoldoutN league picks,
-	// proving the overall family's deviance join connects (it was dead under
-	// the bare-slug key bug)
 	idOf := map[string]int{}
 	for _, slug := range roster {
 		var id int
@@ -179,8 +157,6 @@ func TestFitAlphasWritesProposal(t *testing.T) {
 			(match_id, start_time, radiant_win, duration_seconds, lobby_type, game_mode, bracket, average_rank, source, fetched_at)
 			VALUES (?, ?, ?, 2400, 'PRACTICE', 'CAPTAINS_MODE', 'TEST', 30, 'stratz_backfill', 'test')`,
 			matchID, start, mi%2 == 0)
-		// pool[0] plus nine distinct heroes from the rest of the pool: no
-		// duplicates, so no match drops at load
 		for seq := 0; seq < 10; seq++ {
 			slug := pool[0]
 			if seq > 0 {
@@ -230,8 +206,6 @@ func TestFitAlphasWritesProposal(t *testing.T) {
 			t.Errorf("%s carries no source or reason", name)
 		}
 	}
-	// the fixture's holdout cannot clear the coverage floor, but the overall
-	// join must connect the padded hero's league record
 	if byName["matchup"].CV.Adequate {
 		t.Error("thin holdout pairs read as adequate CV coverage")
 	}

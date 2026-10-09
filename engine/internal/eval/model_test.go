@@ -17,9 +17,6 @@ import (
 	"poolguide/internal/store"
 )
 
-// repoRoot is the checkout root resolved from this source file, so
-// hub-relative paths load whether or not a test has chdir'd for the gates
-// loader.
 var repoRoot = func() string {
 	_, file, _, _ := runtime.Caller(0)
 	return filepath.Dir(filepath.Join(file, "..", "..", ".."))
@@ -34,9 +31,6 @@ func testConfig(t *testing.T) *config.Config {
 	return cfg
 }
 
-// seedRoster is the hub pool plus the first two roster-cache heroes outside
-// it, the same fixture shape the emit package uses, with hero ids assigned
-// against slug order so hero_id ordering is actually exercised.
 func seedRoster(t *testing.T, cfg *config.Config) []string {
 	t.Helper()
 	raw, err := os.ReadFile(filepath.Join(repoRoot, "ref", "dota2", "synergy", "raw", "_roster.json"))
@@ -66,8 +60,6 @@ func seedRoster(t *testing.T, cfg *config.Config) []string {
 	return slugs
 }
 
-// seedModelDB writes the derived tables LoadPicker reads: roster,
-// popularity, priors, and full pool-by-roster norm cells.
 func seedModelDB(t *testing.T) *sql.DB {
 	t.Helper()
 	cfg := testConfig(t)
@@ -112,8 +104,6 @@ func seedModelDB(t *testing.T) *sql.DB {
 	return db
 }
 
-// arrayInner returns the raw text between the brackets of the emitted
-// "  <key>: [...]" line of picker-data-generated.js.
 func arrayInner(t *testing.T, artifact, key string) string {
 	t.Helper()
 	marker := "  " + key + ": ["
@@ -129,8 +119,6 @@ func arrayInner(t *testing.T, artifact, key string) string {
 	return rest[:end]
 }
 
-// packedRowMap parses one emitted 'idx:pct:conf,idx:pct:conf' row into
-// idx -> pct.
 func packedRowMap(t *testing.T, row string) map[int]float64 {
 	t.Helper()
 	row = strings.Trim(row, "'")
@@ -169,11 +157,8 @@ func floatArray(t *testing.T, inner string) []float64 {
 	return out
 }
 
-// TestBuildModelMatchesEmittedPicker pins the parity rule end to end: the
-// model BuildModel hands the replay must be the exact float readback of the
-// packed strings FormatPicker emits for the same db.
 func TestBuildModelMatchesEmittedPicker(t *testing.T) {
-	t.Chdir(repoRoot) // BuildModel resolves the gates doc against the cwd
+	t.Chdir(repoRoot)
 	cfg := testConfig(t)
 	db := seedModelDB(t)
 	m, err := BuildModel(db, cfg)

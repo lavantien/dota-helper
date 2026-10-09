@@ -13,10 +13,6 @@ import (
 	"poolguide/internal/gates"
 )
 
-// TestGateDeltaDecomposition pins the gate feature decomposition the cache
-// stores: Score's GateDelta is exactly the fired bonus-rule count times
-// gateDeltas.bonus plus the fired penalty-rule count times
-// gateDeltas.penalty, including a candidate with multiple mixed rules.
 func TestGateDeltaDecomposition(t *testing.T) {
 	m, cfg := handModel(t,
 		gates.Rule{Id: "t-h1-bon2", Target: "h1", When: []gates.Condition{
@@ -61,10 +57,6 @@ func TestGateDeltaDecomposition(t *testing.T) {
 	}
 }
 
-// TestScoreRecombinationMatchesAnalytics pins the linear recombination: for
-// random candidates, drafts, and coefficient vectors, the cached row scored
-// through scoreOf equals analytics.Score to 1e-12 with the gate delta
-// decomposed into counts.
 func TestScoreRecombinationMatchesAnalytics(t *testing.T) {
 	_, cfg := handModel(t)
 	sc := cfg.Score
@@ -114,9 +106,6 @@ func TestScoreRecombinationMatchesAnalytics(t *testing.T) {
 	}
 }
 
-// TestPickCacheMatchesSequentialReplay pins the cache against the replay it
-// mirrors: under the live config and under a mutated weight vector, every
-// pick's cached score and percentile equals the replay's.
 func TestPickCacheMatchesSequentialReplay(t *testing.T) {
 	m, cfg := handModel(t)
 	matches := []Match{handDraft()}
@@ -161,10 +150,6 @@ func TestPickCacheMatchesSequentialReplay(t *testing.T) {
 	check("mutated", &mutated)
 }
 
-// TestAscendFindsSyntheticOptimum drives the ascent on a hand-built pick
-// where the picked hero tops the field exactly when the prior coefficient
-// sits between the knownMu coefficient over 6 and over 4: the objective
-// peaks at 1.0 and the sweep must land the grid value inside that window.
 func TestAscendFindsSyntheticOptimum(t *testing.T) {
 	_, cfg := handModel(t)
 	fc, sc := cfg.Eval.Fit, cfg.Score
@@ -222,13 +207,10 @@ func TestAblationTableZeroesCoefficients(t *testing.T) {
 	}
 }
 
-// TestFitWeightsWritesProposal runs the whole fit over the seeded db fixture
-// and checks the proposal artifact: field shape, ascent monotonicity on the
-// train objective, and gain arithmetic.
 func TestFitWeightsWritesProposal(t *testing.T) {
 	t.Chdir(repoRoot)
 	cfg := testConfig(t)
-	cfg.Eval.Bootstrap.Resamples = 50 // the suite runs the bootstraps at fixture scale
+	cfg.Eval.Bootstrap.Resamples = 50
 	db := seedModelDB(t)
 	seedMatches(t, db)
 
@@ -266,7 +248,6 @@ func TestFitWeightsWritesProposal(t *testing.T) {
 	if len(a.Ablation) != len(fitCoeffNames) || a.MeasuredAt == "" {
 		t.Fatalf("proposal missing ablation rows or a measurement stamp: %+v", a)
 	}
-	// the fit is deterministic: two runs agree on every fitted value
 	b := run(t.TempDir())
 	for k, v := range a.Weights {
 		if b.Weights[k] != v {

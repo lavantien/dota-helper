@@ -11,9 +11,6 @@ import (
 	"poolguide/internal/analytics"
 )
 
-// plantedMatrix builds a fully observed matrix whose values are a rank-r
-// factorization plus gaussian noise, so the masked CV can be tested against
-// a known structure.
 func plantedMatrix(seed int64, rows, cols, rank int, noise float64) analytics.Matrix {
 	rng := rand.New(rand.NewSource(seed))
 	u := make([][]float64, rows)
@@ -46,9 +43,6 @@ func plantedMatrix(seed int64, rows, cols, rank int, noise float64) analytics.Ma
 	return m
 }
 
-// TestCompletionCVRecoversPlantedRank plants a rank-6 structure under the
-// config grid [4, 8, 12, 16]: rank 4 underfits, rank 8 is the smallest grid
-// rank that captures it, and higher ranks only chase the noise.
 func TestCompletionCVRecoversPlantedRank(t *testing.T) {
 	cfg := testConfig(t)
 	fc, base := cfg.Eval.CompletionFit, cfg.Completion
@@ -64,9 +58,6 @@ func TestCompletionCVRecoversPlantedRank(t *testing.T) {
 		return winner, current, grid, held
 	}
 	winner, current, grid, held := run()
-	// recovery: every rank-4 candidate (the only grid rank under the planted
-	// structure) scores clearly below the winner, and the winner recovers
-	// the structure at near-ceiling quality
 	bestR4 := math.Inf(-1)
 	for _, c := range grid {
 		if c.Rank == fc.Ranks[0] && c.Spearman > bestR4 {
@@ -93,21 +84,16 @@ func TestCompletionCVRecoversPlantedRank(t *testing.T) {
 	if len(held[0])+len(held[1]) != wantMasked {
 		t.Fatalf("masked %d cells, want %d", len(held[0])+len(held[1]), wantMasked)
 	}
-	// the mask is seeded: a second run reproduces every choice
 	w2, c2, g2, h2 := run()
 	if w2 != winner || c2 != current || len(g2) != len(grid) || len(h2[0]) != len(held[0]) {
 		t.Fatal("completion cv is not deterministic under a fixed seed")
 	}
 }
 
-// TestFitCompletionWritesProposal runs the fit over the seeded shrunk tables
-// (a column-only rank-1 structure): the smallest grid rank wins with a
-// perfect spearman and the guard stays closed because the current candidate
-// recovers the same structure.
 func TestFitCompletionWritesProposal(t *testing.T) {
 	t.Chdir(repoRoot)
 	cfg := testConfig(t)
-	cfg.Eval.Bootstrap.Resamples = 50 // the suite runs the bootstraps at fixture scale
+	cfg.Eval.Bootstrap.Resamples = 50
 	db := seedModelDB(t)
 	run := func(root string) CompletionProposal {
 		t.Helper()

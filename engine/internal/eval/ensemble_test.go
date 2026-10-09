@@ -9,14 +9,6 @@ import (
 	"poolguide/internal/stats"
 )
 
-// known-optimum fixture: labels [T F F T] against
-//
-//	c0 = [2 -2  1 -1]  AUC 3/4 alone
-//	c1 = [-1  1 -2  2] AUC 3/4 alone
-//	c2 = [0  0  0  0]  constant
-//
-// c0 + c1 separates perfectly, so the coordinate ascent from zero has to
-// land on weights with w0 > 0, w1 > 0, w2 = 0 and a blend AUC of exactly 1.
 func TestFitBlendWeightsKnownOptimum(t *testing.T) {
 	c0 := []float64{2, -2, 1, -1}
 	c1 := []float64{-1, 1, -2, 2}
@@ -49,8 +41,6 @@ func TestFitBlendWeightsGuards(t *testing.T) {
 	if w := FitBlendWeights(oneRow, nil, 0.1, 2, 3); len(w) != 1 || w[0] != 0 {
 		t.Fatalf("no labels gave %v, want a single zero weight", w)
 	}
-	// one-class labels never beat the 0.5 chance line, and a broken grid
-	// returns zeros instead of looping
 	same := []bool{true, true}
 	for _, tc := range []struct {
 		name            string
@@ -64,15 +54,11 @@ func TestFitBlendWeightsGuards(t *testing.T) {
 }
 
 func TestFitBlendWeightsGridStopsBelowCap(t *testing.T) {
-	// c0 separates at AUC 3/4, but the cap 0.5 sits below the first step
-	// of a step-1 grid: only 0 is reachable, so nothing is fitted
 	c0 := []float64{2, -2, 1, -1}
 	labels := []bool{true, false, false, true}
 	if w := FitBlendWeights([][]float64{c0}, labels, 1.0, 0.5, 3); w[0] != 0 {
 		t.Fatalf("weight = %v, want 0: the grid must stop below the cap", w[0])
 	}
-	// the same cap on a quarter-step grid reaches 0.5 itself, and the
-	// first improving multiple 0.25 is the one that sticks
 	if w := FitBlendWeights([][]float64{c0}, labels, 0.25, 0.5, 3); w[0] != 0.25 {
 		t.Fatalf("weight = %v, want the first improving step 0.25", w[0])
 	}
@@ -146,7 +132,7 @@ func TestEnsembleBaggingDeterministic(t *testing.T) {
 	}
 	for _, q := range probes {
 		if a.ScoreMatch(q, 0.5) != other.ScoreMatch(q, 0.5) {
-			return // resamples moved at least one bagged score
+			return
 		}
 	}
 	t.Fatalf("different bag seeds produced identical scores on every probe")
@@ -169,7 +155,6 @@ func TestEnsembleBlendFormula(t *testing.T) {
 		t.Fatalf("trained %d nb and %d knn bags, want 4 each", len(e.nbs), len(e.knns))
 	}
 	q := FinalSetFeatures(cmpMatch(99, true, cmpDrawSide(rng, 6), cmpDrawSide(rng, 6)))
-	// the bagged components are the plain means over the bag models
 	nbSum, knnSum := 0.0, 0.0
 	for i := range e.nbs {
 		nbSum += e.nbs[i].ScoreMatch(q)
@@ -178,7 +163,6 @@ func TestEnsembleBlendFormula(t *testing.T) {
 	if e.NBScore(q) != nbSum/4 || e.KNNScore(q) != knnSum/4 {
 		t.Fatalf("bag averages broke: %v %v vs %v %v", e.NBScore(q), nbSum/4, e.KNNScore(q), knnSum/4)
 	}
-	// the blend is the weighted sum in picker, nb, knn order
 	w := e.Weights()
 	want := w[0]*0.7 + w[1]*e.NBScore(q) + w[2]*e.KNNScore(q)
 	if got := e.ScoreMatch(q, 0.7); got != want {
@@ -192,7 +176,6 @@ func TestEnsembleBlendFormula(t *testing.T) {
 }
 
 func TestEnsembleLearnsSkewedHero(t *testing.T) {
-	// hero 1 on radiant wins the first 10 of 20 matches; the rest is noise
 	var train []Match
 	for i := 0; i < 20; i++ {
 		win := i < 10
@@ -214,11 +197,6 @@ func TestEnsembleLearnsSkewedHero(t *testing.T) {
 	}
 }
 
-// TestComparatorsOnSyntheticDB runs the whole comparator stack over the
-// loader end to end on the seeded duckdb: load, the shared split, train,
-// holdout scoring. The real-league run happens at wiring; this pins the
-// loader contract the models consume (pick-only final sets, hero ids,
-// (start_time, match_id) order).
 func TestComparatorsOnSyntheticDB(t *testing.T) {
 	cfg := testConfig(t)
 	db := seedModelDB(t)
