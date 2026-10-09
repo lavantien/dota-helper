@@ -386,7 +386,8 @@ function renderResults(rows, widened) {
     }
     const tr = (G.trend || [])[pos];
     if (tr) {
-      const chip = el('span', 'tag tr ' + (tr[0] >= 0 ? 'tup' : 'tdn'),
+      const cls = tr[0] > 0 ? 'tup' : tr[0] < 0 ? 'tdn' : '';
+      const chip = el('span', 'tag tr' + (cls ? ' ' + cls : ''),
         'wr ' + (tr[0] >= 0 ? '+' : '') + tr[0].toFixed(1));
       chip.title = 'pick share ' + (tr[1] >= 0 ? '+' : '') + tr[1].toFixed(2) + 'pp';
       chips.appendChild(chip);

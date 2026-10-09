@@ -199,8 +199,8 @@ function boot(G) {
         } else {
           const v = cellText(row, col);
           td.textContent = v === null ? '-' : v;
-          if (col.trend && !nullish(row[col.key])) {
-            td.classList.add(row[col.key] >= 0 ? 'up' : 'down');
+          if (col.trend && !nullish(row[col.key]) && row[col.key] !== 0) {
+            td.classList.add(row[col.key] > 0 ? 'up' : 'down');
           }
         }
         tr.appendChild(td);
