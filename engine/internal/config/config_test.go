@@ -7,7 +7,6 @@ import (
 	"testing"
 )
 
-// the test loads the real config hub so contract drift breaks here first.
 const realConfig = "../../../config.json"
 
 func TestLoadReal(t *testing.T) {
@@ -18,8 +17,6 @@ func TestLoadReal(t *testing.T) {
 	if c.Patch != "7.41f" {
 		t.Errorf("patch = %q", c.Patch)
 	}
-	// counts derive from the hub itself: entries must cover every unique hero
-	// once plus one extra per additional role slot
 	rolesBySlug := map[string]int{}
 	for _, e := range c.Pool {
 		if rolesBySlug[e.Slug]++; rolesBySlug[e.Slug] == 1 {
@@ -42,8 +39,6 @@ func TestLoadReal(t *testing.T) {
 	}
 }
 
-// sharedRolePools: groups reference real roles, stay disjoint, and drive the
-// candidate-field helpers both picker twins key on.
 func TestSharedRolePools(t *testing.T) {
 	ids := map[string]bool{"1": true, "2": true, "3": true, "4": true, "5": true}
 	c := &Config{SharedRolePools: [][]string{{"1", "2"}}}
@@ -74,8 +69,6 @@ func TestSharedRolePools(t *testing.T) {
 	}
 }
 
-// Heroes folds pool entries per slug: roles ascending, tier per role. the
-// fixture is synthetic so the merge contract holds regardless of pool shape.
 func TestHeroesFoldsMultiRoleEntries(t *testing.T) {
 	c, err := Load(realConfig)
 	if err != nil {
@@ -105,8 +98,6 @@ func TestHeroesFoldsMultiRoleEntries(t *testing.T) {
 	}
 }
 
-// the live pool is pinned: every tier dedicated and every hero single-seat,
-// the frozen v0.4 lineup dropped pangolier's carry seat.
 func TestPoolHeroesPinnedTiersAndSeats(t *testing.T) {
 	c, err := Load(realConfig)
 	if err != nil {
@@ -133,7 +124,6 @@ func TestValidateRejectsBadConfig(t *testing.T) {
 	if err != nil {
 		t.Fatal(err)
 	}
-	// strip role 4 down to a single entry regardless of pool shape
 	kept := c.Pool[:0]
 	seen4 := false
 	for _, e := range c.Pool {
@@ -172,8 +162,6 @@ func TestValidateRejectsBadScope(t *testing.T) {
 	}
 }
 
-// the winDay family saturates at 30 days server-side, so a take at or above
-// the cap silently pins no window and must never load
 func TestValidateRejectsUnpinnedTake(t *testing.T) {
 	for _, take := range []int{0, 30, 200} {
 		c, err := Load(realConfig)
@@ -245,9 +233,6 @@ func TestValidateRejectsBadBuildsCfg(t *testing.T) {
 	}
 }
 
-// TestMarshalRoundTripKeepsEveryHubField pins the lossless rewrite promote
-// relies on: unmarshal into Config plus MarshalIndent must carry every field
-// the hub file carries, including sections with no consumer in code.
 func TestMarshalRoundTripKeepsEveryHubField(t *testing.T) {
 	c, err := Load(realConfig)
 	if err != nil {
@@ -327,7 +312,6 @@ func TestSlugFromNPC(t *testing.T) {
 
 func TestShortNPC(t *testing.T) {
 	cases := map[string]string{
-		// cdn names keep underscores and legacy names, no alias resolution
 		"npc_dota_hero_windrunner":     "windrunner",
 		"npc_dota_hero_necrolyte":      "necrolyte",
 		"npc_dota_hero_furion":         "furion",
