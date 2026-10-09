@@ -94,7 +94,7 @@ func TestFitCompletionWritesProposal(t *testing.T) {
 	t.Chdir(repoRoot)
 	cfg := testConfig(t)
 	cfg.Eval.Bootstrap.Resamples = 50
-	db := seedModelDB(t)
+	db := seedModelDB(t, cfg)
 	run := func(root string) CompletionProposal {
 		t.Helper()
 		if _, err := FitCompletion(Deps{DB: db, Cfg: cfg, RepoRoot: root}); err != nil {

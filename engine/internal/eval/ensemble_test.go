@@ -199,8 +199,8 @@ func TestEnsembleLearnsSkewedHero(t *testing.T) {
 
 func TestComparatorsOnSyntheticDB(t *testing.T) {
 	cfg := testConfig(t)
-	db := seedModelDB(t)
-	seedMatches(t, db)
+	db := seedModelDB(t, cfg)
+	seedMatches(t, db, cfg)
 	matches, _, err := LoadMatches(db)
 	if err != nil {
 		t.Fatalf("load: %v", err)

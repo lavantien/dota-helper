@@ -104,8 +104,8 @@ func TestFitAlphasWritesProposal(t *testing.T) {
 	t.Chdir(repoRoot)
 	cfg := testConfig(t)
 	cfg.Eval.Bootstrap.Resamples = 50
-	db := seedModelDB(t)
-	seedMatches(t, db)
+	db := seedModelDB(t, cfg)
+	seedMatches(t, db, cfg)
 	pool := cfg.PoolSlugs()
 	roster := seedRoster(t, cfg)
 	exec := func(q string, args ...any) {

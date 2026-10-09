@@ -60,9 +60,8 @@ func seedRoster(t *testing.T, cfg *config.Config) []string {
 	return slugs
 }
 
-func seedModelDB(t *testing.T) *sql.DB {
+func seedModelDB(t *testing.T, cfg *config.Config) *sql.DB {
 	t.Helper()
-	cfg := testConfig(t)
 	db, err := store.Open(filepath.Join(t.TempDir(), "model.duckdb"))
 	if err != nil {
 		t.Fatalf("open db: %v", err)
@@ -160,7 +159,7 @@ func floatArray(t *testing.T, inner string) []float64 {
 func TestBuildModelMatchesEmittedPicker(t *testing.T) {
 	t.Chdir(repoRoot)
 	cfg := testConfig(t)
-	db := seedModelDB(t)
+	db := seedModelDB(t, cfg)
 	m, err := BuildModel(db, cfg)
 	if err != nil {
 		t.Fatalf("build model: %v", err)

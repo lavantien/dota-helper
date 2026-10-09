@@ -6,11 +6,12 @@ import (
 	"os"
 	"path/filepath"
 	"testing"
+
+	"poolguide/internal/config"
 )
 
-func seedMatches(t *testing.T, db *sql.DB) {
+func seedMatches(t *testing.T, db *sql.DB, cfg *config.Config) {
 	t.Helper()
-	cfg := testConfig(t)
 	slugs := seedRoster(t, cfg)
 	idOf := map[string]int{}
 	for _, slug := range slugs {
@@ -54,8 +55,8 @@ func TestRunOrchestratesAndIsByteIdentical(t *testing.T) {
 	t.Chdir(repoRoot)
 	cfg := testConfig(t)
 	cfg.Eval.Seq.CensusMinCount = 1
-	db := seedModelDB(t)
-	seedMatches(t, db)
+	db := seedModelDB(t, cfg)
+	seedMatches(t, db, cfg)
 
 	run := func(root string) []byte {
 		t.Helper()
@@ -121,8 +122,9 @@ func TestRunOrchestratesAndIsByteIdentical(t *testing.T) {
 
 func TestLoadMatchesDropsCorruptDrafts(t *testing.T) {
 	t.Chdir(repoRoot)
-	db := seedModelDB(t)
-	seedMatches(t, db)
+	cfg := testConfig(t)
+	db := seedModelDB(t, cfg)
+	seedMatches(t, db, cfg)
 	exec := func(q string, args ...any) {
 		if _, err := db.Exec(q, args...); err != nil {
 			t.Fatalf("exec: %v", err)

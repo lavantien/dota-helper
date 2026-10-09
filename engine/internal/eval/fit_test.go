@@ -211,8 +211,8 @@ func TestFitWeightsWritesProposal(t *testing.T) {
 	t.Chdir(repoRoot)
 	cfg := testConfig(t)
 	cfg.Eval.Bootstrap.Resamples = 50
-	db := seedModelDB(t)
-	seedMatches(t, db)
+	db := seedModelDB(t, cfg)
+	seedMatches(t, db, cfg)
 
 	propPath := func(root string) string {
 		return filepath.Join(root, cfg.Paths.FitOut)
