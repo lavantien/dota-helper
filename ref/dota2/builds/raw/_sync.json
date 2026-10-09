@@ -111,7 +111,8 @@
     },
     "hoodwink": {
       "roles": [
-        "4"
+        "4",
+        "5"
       ],
       "dropped": null
     },
@@ -177,7 +178,8 @@
     },
     "mirana": {
       "roles": [
-        "4"
+        "4",
+        "5"
       ],
       "dropped": null
     },
@@ -195,6 +197,8 @@
     },
     "necrophos": {
       "roles": [
+        "1",
+        "2",
         "3"
       ],
       "dropped": null
@@ -202,6 +206,13 @@
     "nyx-assassin": {
       "roles": [
         "4"
+      ],
+      "dropped": null
+    },
+    "ogre-magi": {
+      "roles": [
+        "4",
+        "5"
       ],
       "dropped": null
     },
@@ -261,7 +272,9 @@
     },
     "slark": {
       "roles": [
-        "2"
+        "1",
+        "2",
+        "3"
       ],
       "dropped": null
     },
@@ -363,7 +376,9 @@
     },
     "windranger": {
       "roles": [
-        "1"
+        "1",
+        "4",
+        "5"
       ],
       "dropped": null
     },

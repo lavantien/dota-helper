@@ -72,6 +72,12 @@
       "tier": "dedicated"
     },
     {
+      "slug": "necrophos",
+      "name": "Necrophos",
+      "role": "1",
+      "tier": "flex"
+    },
+    {
       "slug": "anti-mage",
       "name": "Anti-Mage",
       "role": "1",
@@ -94,6 +100,12 @@
       "name": "Ursa",
       "role": "1",
       "tier": "dedicated"
+    },
+    {
+      "slug": "slark",
+      "name": "Slark",
+      "role": "1",
+      "tier": "flex"
     },
     {
       "slug": "luna",
@@ -148,18 +160,6 @@
       "name": "Monkey King",
       "role": "1",
       "tier": "dedicated"
-    },
-    {
-      "slug": "slark",
-      "name": "Slark",
-      "role": "1",
-      "tier": "flex"
-    },
-    {
-      "slug": "necrophos",
-      "name": "Necrophos",
-      "role": "1",
-      "tier": "flex"
     },
     {
       "slug": "marci",
@@ -222,22 +222,28 @@
       "tier": "dedicated"
     },
     {
-      "slug": "storm-spirit",
-      "name": "Storm Spirit",
-      "role": "2",
-      "tier": "dedicated"
-    },
-    {
       "slug": "necrophos",
       "name": "Necrophos",
       "role": "2",
       "tier": "flex"
     },
     {
+      "slug": "storm-spirit",
+      "name": "Storm Spirit",
+      "role": "2",
+      "tier": "dedicated"
+    },
+    {
       "slug": "enigma",
       "name": "Enigma",
       "role": "3",
       "tier": "dedicated"
+    },
+    {
+      "slug": "slark",
+      "name": "Slark",
+      "role": "3",
+      "tier": "flex"
     },
     {
       "slug": "brewmaster",
@@ -324,12 +330,6 @@
       "tier": "dedicated"
     },
     {
-      "slug": "slark",
-      "name": "Slark",
-      "role": "3",
-      "tier": "flex"
-    },
-    {
       "slug": "bounty-hunter",
       "name": "Bounty Hunter",
       "role": "4",
@@ -372,26 +372,26 @@
       "tier": "dedicated"
     },
     {
-      "slug": "tusk",
-      "name": "Tusk",
-      "role": "4",
-      "tier": "dedicated"
-    },
-    {
-      "slug": "hoodwink",
-      "name": "Hoodwink",
-      "role": "4",
-      "tier": "dedicated"
-    },
-    {
       "slug": "windranger",
       "name": "Windranger",
       "role": "4",
       "tier": "flex"
     },
     {
+      "slug": "tusk",
+      "name": "Tusk",
+      "role": "4",
+      "tier": "dedicated"
+    },
+    {
       "slug": "ogre-magi",
       "name": "Ogre Magi",
+      "role": "4",
+      "tier": "dedicated"
+    },
+    {
+      "slug": "hoodwink",
+      "name": "Hoodwink",
       "role": "4",
       "tier": "dedicated"
     },
@@ -412,6 +412,12 @@
       "name": "Bane",
       "role": "5",
       "tier": "dedicated"
+    },
+    {
+      "slug": "mirana",
+      "name": "Mirana",
+      "role": "5",
+      "tier": "flex"
     },
     {
       "slug": "witch-doctor",
@@ -438,28 +444,16 @@
       "tier": "dedicated"
     },
     {
+      "slug": "ogre-magi",
+      "name": "Ogre Magi",
+      "role": "5",
+      "tier": "dedicated"
+    },
+    {
       "slug": "venomancer",
       "name": "Venomancer",
       "role": "5",
       "tier": "dedicated"
-    },
-    {
-      "slug": "enchantress",
-      "name": "Enchantress",
-      "role": "5",
-      "tier": "dedicated"
-    },
-    {
-      "slug": "windranger",
-      "name": "Windranger",
-      "role": "5",
-      "tier": "flex"
-    },
-    {
-      "slug": "mirana",
-      "name": "Mirana",
-      "role": "5",
-      "tier": "flex"
     },
     {
       "slug": "hoodwink",
@@ -468,8 +462,14 @@
       "tier": "flex"
     },
     {
-      "slug": "ogre-magi",
-      "name": "Ogre Magi",
+      "slug": "windranger",
+      "name": "Windranger",
+      "role": "5",
+      "tier": "flex"
+    },
+    {
+      "slug": "enchantress",
+      "name": "Enchantress",
       "role": "5",
       "tier": "dedicated"
     }
