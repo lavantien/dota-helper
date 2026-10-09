@@ -52,6 +52,7 @@
 <div id="tip"></div>
 <script>
 const G = window.GUIDE, N = window.GUIDE_GEN;
+const FRAMED = window.self !== window.top;
 const mu = {}; // slug -> [{enemy, dis}] parsed from packed strings
 for (const [slug, packed] of Object.entries(N.matchups)) {
   mu[slug] = packed.split('|').filter(Boolean).map(p => {
@@ -101,7 +102,7 @@ function bigIcon(el, slug) {
 }
 
 // nav
-const views = [['picker', 'back to the pick simulator'], ['patch', 'patch state'], ...G.roles.map(r => ['role' + r.id, r.label]),
+const views = [...(FRAMED ? [] : [['picker', 'back to the pick simulator']]), ['patch', 'patch state'], ...G.roles.map(r => ['role' + r.id, r.label]),
   ['heatmap', 'pool vs enemies'], ['trends', 'trends'], ['principles', 'principles'], ['practice', 'practice plan'],
   ['using', 'using the picker']];
 let current = 'role2';
@@ -143,9 +144,10 @@ function renderPatch() {
 
 function renderRole(roleId) {
   const r = G.roles.find(x => x.id === roleId);
+  const simLink = FRAMED ? 'pick simulator' : '<a href="../picker/picker.html">pick simulator</a>';
   d3.select('#treeTitle').text(r.label);
   d3.select('#treeIntro').html('listed in pool declaration order, sorted by win rate at the position (divine-immortal ' +
-    'ranked all pick); the same order lives in the <a href="../picker/picker.html">pick simulator</a> legend. ' +
+    'ranked all pick); the same order lives in the ' + simLink + ' legend. ' +
     'the picker is the main tool, this guide is the supplement.');
   d3.select('#rolePool').html('').selectAll('button').data(
     G.pool.filter(h => h.roles.includes(roleId)))
