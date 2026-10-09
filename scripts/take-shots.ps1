@@ -1,7 +1,14 @@
-param([int]$Port = 8631)
+param([int]$Port = 0)
 $ErrorActionPreference = 'Stop'
 $root = Split-Path $PSScriptRoot -Parent
 Set-Location $root
+
+if ($Port -lt 1) {
+  $picker = [System.Net.Sockets.TcpListener]::new([System.Net.IPAddress]::Loopback, 0)
+  $picker.Start()
+  $Port = $picker.LocalEndpoint.Port
+  $picker.Stop()
+}
 
 # chrome first, edge (chromium, ships with windows) as the fallback
 $browser = @(

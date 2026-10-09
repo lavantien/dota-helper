@@ -54,9 +54,11 @@ stats:
 	pwsh -NoProfile -Command "Start-Process python -ArgumentList 'scripts/serve.py','$(PORT)'; Start-Sleep -Seconds 1; Start-Process 'http://localhost:$(PORT)/picker/stats.html'"
 
 # readme art: headless capture of both pages through their shot bootstraps.
-# pre release step, so the screenshots always match the shipped pages
+# pre release step, so the screenshots always match the shipped pages.
+# runs on a free ephemeral port so a stale detached server never splits
+# the api writes between two subsets dbs
 shots:
-	pwsh -NoProfile -File scripts/take-shots.ps1 $(PORT)
+	pwsh -NoProfile -File scripts/take-shots.ps1
 
 engine-build:
 	$(GO_RUN) go -C $(ENGINE_DIR) build -o ../$(BIN) ./cmd/engine

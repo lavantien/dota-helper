@@ -1,8 +1,3 @@
-# loopback static server for the picker and guide pages, now also serving
-# the subsets writer api backed by var/subsets.db. only the allowlisted page
-# trees are served, so var/ (stratz token, duckdb state) and .git stay
-# unreachable even from this machine, /api/* alone reaches the db. make serve
-# passes the port.
 import json
 import os
 import re
@@ -17,16 +12,11 @@ ALLOWED = ("guide", "picker", "ui")
 API_PREFIX = "/api/"
 SUBSET_ID_RX = re.compile(r"^/api/subsets/(\d+)$")
 MAX_BODY = 1024 * 1024
-# ids above the sqlite integer range overflow the bind call, they answer 404
 SQLITE_INT_MAX = 9223372036854775807
-# the server is single threaded, the lock still keeps mutations serialized
-# if that ever changes
 api_lock = threading.Lock()
 
 
 def clean_entries(entries):
-    # validates the [{slug, role}] shape, returns None on any bad or
-    # duplicate entry so the caller can reject the whole payload
     if not isinstance(entries, list):
         return None
     out, seen = [], set()
@@ -46,17 +36,12 @@ def clean_entries(entries):
 
 
 class Handler(SimpleHTTPRequestHandler):
-    # bounds every blocked read: a socket held open with a short or missing
-    # body can stall this single-threaded server for at most this many
-    # seconds, not forever
     timeout = 30
 
     def __init__(self, *args, **kwargs):
         super().__init__(*args, directory=ROOT, **kwargs)
 
     def handle_one_request(self):
-        # a timed out connection closes quietly, the default lets the read
-        # timeout escape as a traceback
         try:
             super().handle_one_request()
         except TimeoutError:
@@ -65,8 +50,6 @@ class Handler(SimpleHTTPRequestHandler):
     def translate_path(self, path):
         resolved = super().translate_path(path)
         rel = os.path.relpath(resolved, ROOT)
-        # a null byte slips through the allowlist then kills open(), answer
-        # 404 instead of dropping the connection
         if "\x00" in rel or rel == os.curdir or rel.split(os.sep)[0] not in ALLOWED:
             return os.path.join(ROOT, "__not_served__")
         return resolved
@@ -171,9 +154,6 @@ class Handler(SimpleHTTPRequestHandler):
         self.end_headers()
 
     def drain_request_body(self):
-        # an unread body must be consumed before the reply goes out, else the
-        # connection close after the reply races the client send and the
-        # error response dies to a connection reset
         try:
             remaining = int(self.headers.get("Content-Length") or 0)
         except ValueError:
@@ -185,9 +165,6 @@ class Handler(SimpleHTTPRequestHandler):
             remaining -= len(chunk)
 
     def read_json(self):
-        # returns (payload, (code, message)), payload is None on any
-        # rejection. an untrustworthy length closes the connection after the
-        # reply, its body cannot be drained under a bound
         try:
             length = int(self.headers.get("Content-Length") or 0)
         except ValueError:
@@ -216,11 +193,20 @@ class Handler(SimpleHTTPRequestHandler):
         self.reply_json(code, {"error": message})
 
 
+class Server(HTTPServer):
+    allow_reuse_address = os.name != "nt"
+
+
 def main():
     if len(sys.argv) != 2:
         sys.exit("usage: serve.py PORT")
     subsets.init_db()
-    HTTPServer(("127.0.0.1", int(sys.argv[1])), Handler).serve_forever()
+    port = int(sys.argv[1])
+    try:
+        server = Server(("127.0.0.1", port), Handler)
+    except OSError as e:
+        sys.exit("port " + str(port) + " already in use: " + str(e))
+    server.serve_forever()
 
 
 if __name__ == "__main__":
