@@ -20,16 +20,10 @@ function mount(opts) {
 
   const key = p => p.slug + '@' + p.role;
 
-  const GROUPS = G.roles.map(r => {
-    const chips = [];
-    for (let p = 0; p < G.poolIdx.length; p++) {
-      const entry = G.entries[p] || { roles: [] };
-      if (entry.roles.includes(r.id)) {
-        chips.push({ slug: G.slugs[G.poolIdx[p]], role: r.id, idx: G.poolIdx[p] });
-      }
-    }
-    return { role: r, chips: chips };
-  });
+  const GROUPS = G.roles.map(r => ({
+    role: r,
+    chips: (opts.pairs || []).filter(p => p.role === r.id),
+  }));
   const MASTER = new Set();
   GROUPS.forEach(g => g.chips.forEach(c => MASTER.add(key(c))));
 

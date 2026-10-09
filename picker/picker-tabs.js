@@ -12,8 +12,19 @@ function resolveTab(hash) {
   return TABS.includes(tab) ? tab : 'draft';
 }
 
+function pristinePairs(G) {
+  const pairs = [];
+  for (let p = 0; p < G.poolIdx.length; p++) {
+    const idx = G.poolIdx[p];
+    const roles = (G.entries[p] || { roles: [] }).roles || [];
+    roles.forEach(r => pairs.push({ idx: idx, slug: G.slugs[idx], role: r }));
+  }
+  return pairs;
+}
+
 function boot(opts) {
   const G = opts.G;
+  const pairs = pristinePairs(G);
   const subset = window.PickerSubset
     ? window.PickerSubset.boot({ G: G, onChange: opts.onPoolChange }) : null;
   const buttons = {};
@@ -39,6 +50,7 @@ function boot(opts) {
       managerMounted = true;
       window.PickerSubsetsManager.mount({
         G: G,
+        pairs: pairs,
         onMutated: () => { if (subset) subset.reload(); },
       });
     }
@@ -51,7 +63,7 @@ function boot(opts) {
   route();
 }
 
-const PickerTabs = { boot: boot, resolveTab: resolveTab };
+const PickerTabs = { boot: boot, resolveTab: resolveTab, pristinePairs: pristinePairs };
 if (typeof module === 'object' && module.exports) module.exports = PickerTabs;
 else root.PickerTabs = PickerTabs;
 })(typeof self !== 'undefined' ? self : this);
