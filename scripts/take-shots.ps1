@@ -1,7 +1,3 @@
-# take-shots.ps1: retake the two readme screenshots with headless chrome.
-# the pages carry shot bootstraps (picker query params, guide hero hash) so
-# the captures reproduce the readme frames without driving the UI. loopback
-# static server only, same one make serve runs.
 param([int]$Port = 8631)
 $ErrorActionPreference = 'Stop'
 $root = Split-Path $PSScriptRoot -Parent
@@ -26,16 +22,25 @@ $shots = @(
     Out = 'docs/picker.png'
   },
   @{
-    Url = "http://127.0.0.1:$Port/guide/index.html#phantom-assassin"
-    Size = '1440,900'
+    Url = "http://127.0.0.1:$Port/picker/picker.html?subset=main#subpools"
+    Size = '1440,1200'
+    Out = 'docs/subpools.png'
+  },
+  @{
+    Url = "http://127.0.0.1:$Port/picker/picker.html#guide"
+    Size = '1440,1200'
     Out = 'docs/guide.png'
+  },
+  @{
+    Url = "http://127.0.0.1:$Port/picker/picker.html#stats"
+    Size = '1440,1700'
+    Out = 'docs/stats.png'
   }
 )
 
-# shot against an empty temp sub-pool db so personal subsets never leak into
-# the readme art and the tracked var/subsets.db stays byte-clean
 $prevDb = $env:SUBSETS_DB
 $shotsDb = Join-Path $env:TEMP 'dota-helper-shots-subsets.db'
+Remove-Item -LiteralPath $shotsDb, "$shotsDb-journal" -ErrorAction SilentlyContinue
 $env:SUBSETS_DB = $shotsDb
 $server = Start-Process python -ArgumentList @('scripts/serve.py', "$Port") -PassThru -WindowStyle Hidden
 if ($null -ne $prevDb) { $env:SUBSETS_DB = $prevDb } else { Remove-Item Env:\SUBSETS_DB -ErrorAction SilentlyContinue }
@@ -48,6 +53,23 @@ try {
     Start-Sleep -Milliseconds 500
   }
   if (-not $up) { throw "static server never came up on port $Port" }
+
+  $api = "http://127.0.0.1:$Port/api/subsets"
+  $mainPairs = @(
+    @{ slug = 'slark'; role = '1' }, @{ slug = 'lifestealer'; role = '1' },
+    @{ slug = 'lone-druid'; role = '1' }, @{ slug = 'natures-prophet'; role = '1' },
+    @{ slug = 'necrophos'; role = '1' }, @{ slug = 'slark'; role = '2' },
+    @{ slug = 'dragon-knight'; role = '2' }, @{ slug = 'necrophos'; role = '2' },
+    @{ slug = 'necrophos'; role = '3' }, @{ slug = 'enigma'; role = '3' },
+    @{ slug = 'tidehunter'; role = '3' }, @{ slug = 'slark'; role = '3' },
+    @{ slug = 'mirana'; role = '4' }, @{ slug = 'hoodwink'; role = '4' },
+    @{ slug = 'windranger'; role = '4' }, @{ slug = 'ogre-magi'; role = '4' },
+    @{ slug = 'mirana'; role = '5' }, @{ slug = 'hoodwink'; role = '5' },
+    @{ slug = 'windranger'; role = '5' }, @{ slug = 'ogre-magi'; role = '5' }
+  ) | Sort-Object slug, role
+  $created = Invoke-RestMethod -Method Post -Uri $api -ContentType 'application/json' -Body (@{ name = 'main' } | ConvertTo-Json)
+  Invoke-RestMethod -Method Put -Uri "$api/$($created.id)" -ContentType 'application/json' `
+    -Body (@{ entries = @($mainPairs) } | ConvertTo-Json -Depth 4) | Out-Null
 
   Add-Type -AssemblyName System.Drawing
   foreach ($s in $shots) {
