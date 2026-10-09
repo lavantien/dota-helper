@@ -2,8 +2,6 @@ import { test } from 'node:test';
 import assert from 'node:assert/strict';
 import PickerStats from './picker-stats.js';
 
-// fixture: 8 roster heroes, 4 pool entries, hand-authored packed strings
-// roster 0 alpha, 1 bravo, 2 charlie, 3 delta, 4 echo, 5 foxtrot, 6 golf, 7 hotel
 const ROSTER = ['alpha', 'bravo', 'charlie', 'delta', 'echo', 'foxtrot', 'golf', 'hotel'];
 const cap = s => s[0].toUpperCase() + s.slice(1);
 
