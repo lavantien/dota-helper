@@ -55,6 +55,19 @@
       ],
       "mechanics": [["tip", "blink disjoints any spell or attack projectile already flying at him"], ["tip", "mana void is not just an execute, the splash off a drained pool shreds the clump and the stun cuts channels"], ["tip", "tap the treads to intelligence before every blink and back to agility after, the mana saved adds up fast"], ["counter", "roots and leashes stop the blink cast entirely, hold one ready for him"], ["counter", "the blink particle trail always floats the direction he traveled, read it and cut the angle"], ["counter", "never hug an out of mana teammate late, they are the bomb his mana void detonates"]]
     },
+    "axe": {
+      "identity": "taunt frontline initiator, berserker's call locks the clump and stacks armor, battle hunger chases the runner, counter helix spins the pile, culling blade executes the threshold",
+      "why": "dedicated pos 3, the blink call turns every fight into clump punishment and the cull closes every threshold, favored into melee carry and illusion lines, vetoed by the kite crew and the ranged lanes",
+      "how": "creep cut the wave, hunger the runner, blink the call onto the clump, spin the pile, cull the body under the line",
+      "when": "lane bully off the regen and the helix trades, mid game blink call windows decide the fights, falls behind the kite and the mana drain crew late",
+      "build": "blade mail, shard, bkb, lotus, kaya and sange, shiva, heart",
+      "timings": [["blade mail", 15], ["shard", 27]],
+      "tech": [
+        "drow, sniper, and the ranged kite lanes are the vetoes, the call never reaches and the poke wears the regen down",
+        "melee carries and illusion crews are the free wins, the call clamps the right clicks and the helix shreds the copies"
+      ],
+      "mechanics": [["tip", "a catchless call still pays, the armor stack rides the duration and synergizes with the one man army innate"], ["tip", "the call taunt is undispellable, aphotic shield, dark pact, and kraken shell all fail to strip it"], ["tip", "a lethal culling blade cuts through shallow grave, false promise, borrowed time, and battle trance"], ["counter", "a deny strips battle hunger, trade the last hit to break the rage on the lane mate"], ["counter", "battle hunger only slows a body facing away from axe, turn back into him to drop the slow"]]
+    },
     "bane": {
       "identity": "nightmare hard support, enfeeble strangles the carry's damage and cast range, brain sap drains and heals him back, nightmare sleeps any body for the setup, fiend's grip locks one hero out of the world while it drains the pool",
       "why": "dedicated pos 5, the grip deletes one enemy core for the whole channel and nightmare turns every roam into a kill setup, favored into immobile cores and saveless lines, vetoed by the instant silence and hex crew",
@@ -177,8 +190,8 @@
       "why": "counter pick into puck and TA, dragon blood blanks magic harass",
       "how": "win lane by existing, stun their carry out of elder form, take towers behind it",
       "when": "lane brick early, mid game tower monster in elder form",
-      "build": "rad, bkb, octarine, shiva, bloodthorn, assault, overwhelming blink",
-      "timings": [["rad", 19], ["bkb", 25]],
+      "build": "pos 1: mask of madness, rad, mjollnir, bkb, octarine, daedalus, monkey king bar. pos 2/3: rad, bkb, octarine, shiva, bloodthorn, assault, overwhelming blink",
+      "timings": [["rad", 20], ["bkb", 26]],
       "tech": [
         "break and heal cut turn dragon blood off, viper and huskar are the veto cluster"
       ],
@@ -488,7 +501,7 @@
       "why": "dedicated pos 2, the innate halves the proc rolls held against him and the roll turns their formation inside out through the mid game, favored into proc reliant cores and clumped melee lines, vetoed by the rupture and soulbind pins and the root crew",
       "how": "swashbuckle the wave and the hero, crash the clump for the barrier, roll through their lines and bowl the cores out of position, shield crash the cliff mid roll and keep the ball moving",
       "when": "lane trades off the swashbuckle poke, mid game roll windows flip every standing fight, late the slashes and the proc luck snowball, dies when the lockdown stacks up",
-      "build": "mage slayer, shard, shiva, octarine, disperser, abyssal blade, blessing",
+      "build": "pos 2: mage slayer, shard, shiva, octarine, disperser, abyssal blade, blessing. pos 3: mage slayer, shard, cyclone, lotus, octarine, disperser, abyssal blade",
       "timings": [["mage slayer", 17], ["shard", 26]],
       "tech": [
         "bloodseeker and grimstroke are the vetoes, the rupture bleeds the roll and the soulbind pins it in place",
@@ -956,7 +969,8 @@
       ["undying", "decay trade rhythm on the lane body and the tombstone placement where the fight stands until the rip always lands before the decay and the zombies join every commit"],
       ["drow-ranger", "manual frost arrow harass through the standing wave and the range discipline on the retreating body until the procs always land from beyond the answer range and the gust peels the dive clean"],
       ["tidehunter", "gush into smash order on the lane body and the ravage release onto the committed clump until the armor strip always lands before the swing and the stun always catches the stack"],
-      ["ogre-magi", "fireblast into ignite trade rhythm on the lane body and the bloodlust timing before the commit until the multicast rolls always land on the clumped pair"]
+      ["ogre-magi", "fireblast into ignite trade rhythm on the lane body and the bloodlust timing before the commit until the multicast rolls always land on the clumped pair"],
+      ["axe", "blink call placement onto the clump and the cull threshold read on the hp bar lines until the execute always lands under the line"]
     ],
     "replay": [
       "after each session: 10 min, only your deaths, write one line per death: where you should have been",
@@ -995,5 +1009,5 @@
       }
     ]
   },
-  "buildsMeta": "stratz itemFullPurchase completed week 1790553600, divine_immortal, fetched 2026-10-09, series 7.41"
+  "buildsMeta": "stratz itemFullPurchase completed week 1790553600, divine_immortal, fetched 2026-10-10, series 7.41"
 }
