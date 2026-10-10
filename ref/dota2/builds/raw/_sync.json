@@ -19,6 +19,12 @@
       ],
       "dropped": null
     },
+    "axe": {
+      "roles": [
+        "3"
+      ],
+      "dropped": null
+    },
     "bane": {
       "roles": [
         "5"
@@ -75,7 +81,9 @@
     },
     "dragon-knight": {
       "roles": [
-        "2"
+        "1",
+        "2",
+        "3"
       ],
       "dropped": null
     },
@@ -224,7 +232,8 @@
     },
     "pangolier": {
       "roles": [
-        "2"
+        "2",
+        "3"
       ],
       "dropped": null
     },

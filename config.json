@@ -126,6 +126,12 @@
       "tier": "dedicated"
     },
     {
+      "slug": "dragon-knight",
+      "name": "Dragon Knight",
+      "role": "1",
+      "tier": "flex"
+    },
+    {
       "slug": "templar-assassin",
       "name": "Templar Assassin",
       "role": "1",
@@ -276,6 +282,12 @@
       "tier": "dedicated"
     },
     {
+      "slug": "dragon-knight",
+      "name": "Dragon Knight",
+      "role": "3",
+      "tier": "flex"
+    },
+    {
       "slug": "tidehunter",
       "name": "Tidehunter",
       "role": "3",
@@ -284,6 +296,12 @@
     {
       "slug": "viper",
       "name": "Viper",
+      "role": "3",
+      "tier": "dedicated"
+    },
+    {
+      "slug": "axe",
+      "name": "Axe",
       "role": "3",
       "tier": "dedicated"
     },
@@ -328,6 +346,12 @@
       "name": "Timbersaw",
       "role": "3",
       "tier": "dedicated"
+    },
+    {
+      "slug": "pangolier",
+      "name": "Pangolier",
+      "role": "3",
+      "tier": "flex"
     },
     {
       "slug": "bounty-hunter",

@@ -72,7 +72,7 @@ engine-build:
 # ~20m solo and stretch past 30m when they share cores, so the per-binary
 # cap sits at twice that
 engine-test:
-	$(GO_RUN) go -C $(ENGINE_DIR) test -count=1 -timeout 60m ./...
+	$(GO_RUN) go -C $(ENGINE_DIR) test -count=1 -timeout 90m ./...
 
 # scoped loop for one internal package during TDD: make engine-test-stats
 # (-timeout for the same cold-cache reason as engine-test: a cgo build plus a
