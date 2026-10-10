@@ -19,7 +19,7 @@ place allies, enemies, and bans through the roster search or the pool panels, ai
 
 the sub-pools tab carves sub-pools out of the master pool through the loopback `/api/subsets`, and the subset bar in the header picks the active one, so the board panels and ranking filter live to the kept pairs (`make subsets` opens the tab). `main` is the first sub-pool, `make seed-main` reseeds it idempotently into the committed store.
 
-![the sub-pools tab with main selected on the header subset bar and its 20 pairs toggled on among the per-role pool chips](docs/subpools.png)
+![the sub-pools tab with main selected on the header subset bar and its 17 pairs toggled on among the per-role pool chips](docs/subpools.png)
 
 ### guide
 
