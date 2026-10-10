@@ -63,16 +63,17 @@ try {
 
   $api = "http://127.0.0.1:$Port/api/subsets"
   $mainPairs = @(
-    @{ slug = 'slark'; role = '1' }, @{ slug = 'lifestealer'; role = '1' },
-    @{ slug = 'lone-druid'; role = '1' }, @{ slug = 'natures-prophet'; role = '1' },
-    @{ slug = 'necrophos'; role = '1' }, @{ slug = 'slark'; role = '2' },
-    @{ slug = 'dragon-knight'; role = '2' }, @{ slug = 'necrophos'; role = '2' },
-    @{ slug = 'necrophos'; role = '3' }, @{ slug = 'enigma'; role = '3' },
-    @{ slug = 'tidehunter'; role = '3' }, @{ slug = 'slark'; role = '3' },
-    @{ slug = 'mirana'; role = '4' }, @{ slug = 'hoodwink'; role = '4' },
-    @{ slug = 'windranger'; role = '4' }, @{ slug = 'ogre-magi'; role = '4' },
-    @{ slug = 'mirana'; role = '5' }, @{ slug = 'hoodwink'; role = '5' },
-    @{ slug = 'windranger'; role = '5' }, @{ slug = 'ogre-magi'; role = '5' }
+    @{ slug = 'natures-prophet'; role = '1' }, @{ slug = 'lifestealer'; role = '1' },
+    @{ slug = 'slark'; role = '1' }, @{ slug = 'lone-druid'; role = '1' },
+    @{ slug = 'anti-mage'; role = '1' }, @{ slug = 'dragon-knight'; role = '2' },
+    @{ slug = 'slark'; role = '2' }, @{ slug = 'necrophos'; role = '2' },
+    @{ slug = 'primal-beast'; role = '2' }, @{ slug = 'necrophos'; role = '3' },
+    @{ slug = 'axe'; role = '3' }, @{ slug = 'dragon-knight'; role = '3' },
+    @{ slug = 'primal-beast'; role = '3' }, @{ slug = 'mirana'; role = '4' },
+    @{ slug = 'hoodwink'; role = '4' }, @{ slug = 'pudge'; role = '4' },
+    @{ slug = 'ogre-magi'; role = '4' }, @{ slug = 'mirana'; role = '5' },
+    @{ slug = 'hoodwink'; role = '5' }, @{ slug = 'pudge'; role = '5' },
+    @{ slug = 'ogre-magi'; role = '5' }
   ) | Sort-Object slug, role
   $created = Invoke-RestMethod -Method Post -Uri $api -ContentType 'application/json' -Body (@{ name = 'main' } | ConvertTo-Json)
   Invoke-RestMethod -Method Put -Uri "$api/$($created.id)" -ContentType 'application/json' `

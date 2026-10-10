@@ -8,11 +8,11 @@ import subsets
 
 NAME = "main"
 POOL = {
-    "1": ["slark", "lifestealer", "lone-druid", "natures-prophet", "necrophos"],
-    "2": ["slark", "dragon-knight", "necrophos"],
-    "3": ["necrophos", "enigma", "tidehunter", "slark"],
-    "4": ["mirana", "hoodwink", "windranger", "ogre-magi"],
-    "5": ["mirana", "hoodwink", "windranger", "ogre-magi"],
+    "1": ["natures-prophet", "lifestealer", "slark", "lone-druid", "anti-mage"],
+    "2": ["dragon-knight", "slark", "necrophos", "primal-beast"],
+    "3": ["necrophos", "axe", "dragon-knight", "primal-beast"],
+    "4": ["mirana", "hoodwink", "pudge", "ogre-magi"],
+    "5": ["mirana", "hoodwink", "pudge", "ogre-magi"],
 }
 
 
@@ -50,7 +50,7 @@ def seed():
         sid, _ = subsets.create_subset(NAME)
         subsets.update_subset(sid, entries=want)
     got = [s for s in subsets.list_subsets() if s["name"] == NAME]
-    assert len(got) == 1 and got[0]["entries"] == want and len(want) == 20, got
+    assert len(got) == 1 and got[0]["entries"] == want and len(want) == 21, got
     print(f"subset {NAME} holds {len(want)} sorted entries in {subsets.DB_PATH}")
 
 
