@@ -1,3 +1,4 @@
+import json
 import os
 import sys
 
@@ -8,12 +9,20 @@ import subsets
 
 NAME = "main"
 POOL = {
-    "1": ["natures-prophet", "slark", "lone-druid", "lifestealer", "anti-mage"],
-    "2": ["dragon-knight", "slark", "necrophos"],
-    "3": ["necrophos", "dragon-knight", "axe"],
+    "1": ["natures-prophet", "slark", "lone-druid", "lifestealer", "dragon-knight", "anti-mage"],
+    "2": ["dragon-knight", "slark", "pangolier", "necrophos"],
+    "3": ["necrophos", "dragon-knight", "axe", "pangolier"],
     "4": ["mirana", "hoodwink", "windranger"],
     "5": ["mirana", "hoodwink", "windranger"],
 }
+
+
+def assert_pool_seats():
+    with open(os.path.join(ROOT, "config.json"), encoding="utf8") as fh:
+        seats = {(e["slug"], e["role"]) for e in json.load(fh)["pool"]}
+    for role, slugs in POOL.items():
+        for slug in slugs:
+            assert (slug, role) in seats, f"{slug}@{role} has no config pool seat, the picker would drop it"
 
 
 def sorted_entries():
@@ -40,6 +49,7 @@ def seeded_already(want):
 
 
 def seed():
+    assert_pool_seats()
     subsets.init_db()
     want = sorted_entries()
     if not seeded_already(want):
@@ -50,7 +60,7 @@ def seed():
         sid, _ = subsets.create_subset(NAME)
         subsets.update_subset(sid, entries=want)
     got = [s for s in subsets.list_subsets() if s["name"] == NAME]
-    assert len(got) == 1 and got[0]["entries"] == want and len(want) == 17, got
+    assert len(got) == 1 and got[0]["entries"] == want and len(want) == 20, got
     print(f"subset {NAME} holds {len(want)} sorted entries in {subsets.DB_PATH}")
 
 
