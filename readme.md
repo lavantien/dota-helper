@@ -45,7 +45,7 @@ the lineup below is the curated pool, membership is authored in `config.json`, a
 
 heroes marked flex hold a secondary seat beside the dedicated seat in another role's list. axe joined as a new hero, dedicated at the offlane seat, dragon knight flexes carry and offlane beside the mid seat, pangolier flexes offlane beside the mid seat, and techies flexes the soft support seat beside the hard support seat.
 
-sub-pools carve the pool down for focused practice. `main` is the first one, 23 pairs: pos 1 nature's prophet, slark, lone druid, lifestealer, dragon knight, anti-mage. pos 2 dragon knight, slark, pangolier, necrophos. pos 3 necrophos, dragon knight, axe, pangolier, dark seer. pos 4 and pos 5 mirana, hoodwink, techies, windranger. `make seed-main` reseeds it idempotently into the committed `var/subsets.db`, byte-identical when the store already matches.
+sub-pools carve the pool down for focused practice. `main` is the first one, 23 pairs: pos 1 nature's prophet, slark, lone druid, lifestealer, dragon knight, anti-mage. pos 2 dragon knight, slark, pangolier, necrophos. pos 3 necrophos, dragon knight, axe, pangolier, doom. pos 4 and pos 5 mirana, hoodwink, techies, windranger. `make seed-main` reseeds it idempotently into the committed `var/subsets.db`, byte-identical when the store already matches.
 
 ## tools
 
