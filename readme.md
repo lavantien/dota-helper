@@ -19,7 +19,7 @@ place allies, enemies, and bans through the roster search or the pool panels, ai
 
 the sub-pools tab carves sub-pools out of the master pool through the loopback `/api/subsets`, and the subset bar in the header picks the active one, so the board panels and ranking filter live to the kept pairs (`make subsets` opens the tab). `main` is the first sub-pool, `make seed-main` reseeds it idempotently into the committed store.
 
-![the sub-pools tab with main selected on the header subset bar and its 20 pairs toggled on among the per-role pool chips](docs/subpools.png)
+![the sub-pools tab with main selected on the header subset bar and its 22 pairs toggled on among the per-role pool chips](docs/subpools.png)
 
 ### guide
 
@@ -40,12 +40,12 @@ the lineup below is the curated pool, membership is authored in `config.json`, a
 - pos 1, carry: Phantom Lancer, Clinkz, Juggernaut, Spectre, Lifestealer, Sven, Necrophos (flex), Anti-Mage, Windranger, Phantom Assassin, Ursa, Slark (flex), Luna, Terrorblade, Lone Druid, Dragon Knight (flex), Templar Assassin, Drow Ranger, Alchemist, Tiny, Nature's Prophet, Monkey King
 - pos 2, mid: Marci, Dragon Knight, Outworld Destroyer, Slark, Leshrac, Ember Spirit, Snapfire, Lina, Pangolier, Sniper, Necrophos (flex), Storm Spirit
 - pos 3, offlane: Enigma, Slark (flex), Brewmaster, Pudge, Dawnbreaker, Lycan, Dark Seer, Dragon Knight (flex), Tidehunter, Viper, Axe, Centaur Warrunner, Necrophos, Death Prophet, Slardar, Doom, Largo, Timbersaw, Pangolier (flex)
-- pos 4, soft support: Bounty Hunter, Nyx Assassin, Earthshaker, Shadow Shaman, Mirana, Undying, Rubick, Windranger (flex), Tusk, Ogre Magi, Hoodwink
+- pos 4, soft support: Bounty Hunter, Nyx Assassin, Earthshaker, Shadow Shaman, Mirana, Techies (flex), Undying, Rubick, Windranger (flex), Tusk, Ogre Magi, Hoodwink
 - pos 5, hard support: Lich, Winter Wyvern, Bane, Mirana (flex), Witch Doctor, Techies, Ancient Apparition, Clockwerk, Ogre Magi, Venomancer, Hoodwink (flex), Windranger (flex), Enchantress
 
-heroes marked flex hold a secondary seat beside the dedicated seat in another role's list. axe joined as a new hero, dedicated at the offlane seat, dragon knight flexes carry and offlane beside the mid seat, and pangolier flexes offlane beside the mid seat.
+heroes marked flex hold a secondary seat beside the dedicated seat in another role's list. axe joined as a new hero, dedicated at the offlane seat, dragon knight flexes carry and offlane beside the mid seat, pangolier flexes offlane beside the mid seat, and techies flexes the soft support seat beside the hard support seat.
 
-sub-pools carve the pool down for focused practice. `main` is the first one, 20 pairs: pos 1 nature's prophet, slark, lone druid, lifestealer, dragon knight, anti-mage. pos 2 dragon knight, slark, pangolier, necrophos. pos 3 necrophos, dragon knight, axe, pangolier. pos 4 and pos 5 mirana, hoodwink, windranger. `make seed-main` reseeds it idempotently into the committed `var/subsets.db`, byte-identical when the store already matches.
+sub-pools carve the pool down for focused practice. `main` is the first one, 22 pairs: pos 1 nature's prophet, slark, lone druid, lifestealer, dragon knight, anti-mage. pos 2 dragon knight, slark, pangolier, necrophos. pos 3 necrophos, dragon knight, axe, pangolier. pos 4 and pos 5 mirana, hoodwink, techies, windranger. `make seed-main` reseeds it idempotently into the committed `var/subsets.db`, byte-identical when the store already matches.
 
 ## tools
 
