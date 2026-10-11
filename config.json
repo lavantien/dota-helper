@@ -384,6 +384,12 @@
       "tier": "dedicated"
     },
     {
+      "slug": "techies",
+      "name": "Techies",
+      "role": "4",
+      "tier": "flex"
+    },
+    {
       "slug": "undying",
       "name": "Undying",
       "role": "4",
@@ -418,12 +424,6 @@
       "name": "Hoodwink",
       "role": "4",
       "tier": "dedicated"
-    },
-    {
-      "slug": "techies",
-      "name": "Techies",
-      "role": "4",
-      "tier": "flex"
     },
     {
       "slug": "lich",
