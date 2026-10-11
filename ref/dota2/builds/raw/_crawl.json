@@ -1,5 +1,5 @@
 {
-  "crawledAt": "2026-10-10T16:15:52Z",
+  "crawledAt": "2026-10-11T15:28:35Z",
   "bracket": "DIVINE_IMMORTAL",
   "source": "stratz completed-week crawl",
   "field": "itemFullPurchase",
@@ -144,6 +144,15 @@
       "rowCount": 1483
     },
     {
+      "slug": "dragon-knight",
+      "role": "1",
+      "heroId": 49,
+      "fetchedAt": "2026-10-10T16:15:52Z",
+      "cached": true,
+      "accepted": true,
+      "rowCount": 1410
+    },
+    {
       "slug": "templar-assassin",
       "role": "1",
       "heroId": 46,
@@ -196,15 +205,6 @@
       "cached": true,
       "accepted": true,
       "rowCount": 1918
-    },
-    {
-      "slug": "dragon-knight",
-      "role": "1",
-      "heroId": 49,
-      "fetchedAt": "2026-10-10T16:15:52Z",
-      "cached": false,
-      "accepted": true,
-      "rowCount": 1410
     },
     {
       "slug": "marci",
@@ -583,6 +583,15 @@
       "cached": true,
       "accepted": true,
       "rowCount": 2662
+    },
+    {
+      "slug": "techies",
+      "role": "4",
+      "heroId": 105,
+      "fetchedAt": "2026-10-11T15:28:35Z",
+      "cached": false,
+      "accepted": true,
+      "rowCount": 2436
     },
     {
       "slug": "lich",
