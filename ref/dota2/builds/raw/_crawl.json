@@ -531,6 +531,15 @@
       "rowCount": 2854
     },
     {
+      "slug": "techies",
+      "role": "4",
+      "heroId": 105,
+      "fetchedAt": "2026-10-11T15:28:35Z",
+      "cached": true,
+      "accepted": true,
+      "rowCount": 2436
+    },
+    {
       "slug": "undying",
       "role": "4",
       "heroId": 85,
@@ -583,15 +592,6 @@
       "cached": true,
       "accepted": true,
       "rowCount": 2662
-    },
-    {
-      "slug": "techies",
-      "role": "4",
-      "heroId": 105,
-      "fetchedAt": "2026-10-11T15:28:35Z",
-      "cached": false,
-      "accepted": true,
-      "rowCount": 2436
     },
     {
       "slug": "lich",
