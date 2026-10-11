@@ -11,7 +11,7 @@ NAME = "main"
 POOL = {
     "1": ["natures-prophet", "slark", "lone-druid", "lifestealer", "dragon-knight", "anti-mage"],
     "2": ["dragon-knight", "slark", "pangolier", "necrophos"],
-    "3": ["necrophos", "dragon-knight", "axe", "pangolier", "dark-seer"],
+    "3": ["necrophos", "dragon-knight", "axe", "pangolier", "doom"],
     "4": ["mirana", "hoodwink", "techies", "windranger"],
     "5": ["mirana", "hoodwink", "techies", "windranger"],
 }

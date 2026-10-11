@@ -70,7 +70,7 @@ try {
     @{ slug = 'pangolier'; role = '2' }, @{ slug = 'necrophos'; role = '2' },
     @{ slug = 'necrophos'; role = '3' }, @{ slug = 'dragon-knight'; role = '3' },
     @{ slug = 'axe'; role = '3' }, @{ slug = 'pangolier'; role = '3' },
-    @{ slug = 'dark-seer'; role = '3' },
+    @{ slug = 'doom'; role = '3' },
     @{ slug = 'mirana'; role = '4' }, @{ slug = 'hoodwink'; role = '4' },
     @{ slug = 'techies'; role = '4' }, @{ slug = 'windranger'; role = '4' },
     @{ slug = 'mirana'; role = '5' }, @{ slug = 'hoodwink'; role = '5' },
