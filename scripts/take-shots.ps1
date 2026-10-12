@@ -66,6 +66,7 @@ try {
     @{ slug = 'natures-prophet'; role = '1' }, @{ slug = 'slark'; role = '1' },
     @{ slug = 'lone-druid'; role = '1' }, @{ slug = 'lifestealer'; role = '1' },
     @{ slug = 'dragon-knight'; role = '1' }, @{ slug = 'anti-mage'; role = '1' },
+    @{ slug = 'phantom-lancer'; role = '1' },
     @{ slug = 'dragon-knight'; role = '2' }, @{ slug = 'slark'; role = '2' },
     @{ slug = 'pangolier'; role = '2' }, @{ slug = 'necrophos'; role = '2' },
     @{ slug = 'necrophos'; role = '3' }, @{ slug = 'dragon-knight'; role = '3' },
