@@ -1,5 +1,5 @@
 {
-  "curatedAt": "2026-10-10",
+  "curatedAt": "2026-10-17",
   "source": "ref/dota2/howdoiplay/howdoiplay.json",
   "patch": "7.41",
   "heroes": {
@@ -3058,6 +3058,58 @@
           "verdict": "confirmed",
           "source": "https://dota2.fandom.com/wiki/Spectre",
           "text": "hug creeps when she shadow steps, the illusion damage is desolate only early"
+        }
+      }
+    ],
+    "spirit-breaker": [
+      {
+        "idx": 0,
+        "from": "tips[10]",
+        "verified": {
+          "date": "2026-10-17",
+          "verdict": "confirmed",
+          "source": "https://howdoiplay.com/tips/spirit_breaker.html",
+          "text": "bulldoze rides the charge, the run bashes every body it passes and the bash damage scales with the move speed"
+        }
+      },
+      {
+        "idx": 1,
+        "from": "tips[14]",
+        "verified": {
+          "date": "2026-10-17",
+          "verdict": "confirmed",
+          "source": "https://howdoiplay.com/tips/spirit_breaker.html",
+          "text": "greater bash stuns through spell immunity, the immunity hold never blanks the bash"
+        }
+      },
+      {
+        "idx": 2,
+        "from": "tips[1]",
+        "verified": {
+          "date": "2026-10-17",
+          "verdict": "confirmed",
+          "source": "https://howdoiplay.com/tips/spirit_breaker.html",
+          "text": "linken's sphere eats the charge on cast, charge a creep beside the farmer so the run still arrives"
+        }
+      },
+      {
+        "idx": 3,
+        "from": "counters[5]",
+        "verified": {
+          "date": "2026-10-17",
+          "verdict": "confirmed",
+          "source": "https://howdoiplay.com/tips/spirit_breaker.html",
+          "text": "the roots and leashes blank both the charge and the nether strike, he cannot cast either while planted"
+        }
+      },
+      {
+        "idx": 4,
+        "from": "counters[9]",
+        "verified": {
+          "date": "2026-10-17",
+          "verdict": "confirmed",
+          "source": "https://howdoiplay.com/tips/spirit_breaker.html",
+          "text": "forced movement and knockback strip the greater bash stun off the stuck ally, the charge stun itself rides through"
         }
       }
     ],

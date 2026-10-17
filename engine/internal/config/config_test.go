@@ -109,7 +109,7 @@ func TestPoolHeroesPinnedTiersAndSeats(t *testing.T) {
 		"dragon-knight@1": true, "dragon-knight@3": true, "pangolier@3": true,
 		"windranger@4": true, "windranger@5": true,
 		"mirana@5": true, "hoodwink@5": true,
-		"techies@4": true,
+		"techies@4": true, "spirit-breaker@5": true,
 	}
 	wantMulti := map[string][]string{
 		"slark":         {"1", "2", "3"},
@@ -121,8 +121,9 @@ func TestPoolHeroesPinnedTiersAndSeats(t *testing.T) {
 		"hoodwink":      {"4", "5"},
 		"ogre-magi":     {"4", "5"},
 		"techies":       {"4", "5"},
+		"spirit-breaker": {"4", "5"},
 	}
-	wantSeats := map[string]int{"1": 22, "2": 12, "3": 19, "4": 12, "5": 13}
+	wantSeats := map[string]int{"1": 22, "2": 12, "3": 19, "4": 13, "5": 14}
 	multi := map[string][]string{}
 	seats := map[string]int{}
 	unique := map[string]bool{}
@@ -146,8 +147,8 @@ func TestPoolHeroesPinnedTiersAndSeats(t *testing.T) {
 	if !reflect.DeepEqual(seats, wantSeats) {
 		t.Errorf("pool seats per role = %v, want %v", seats, wantSeats)
 	}
-	if len(c.Pool) != 78 || len(unique) != 65 {
-		t.Errorf("pool = %d entries over %d heroes, want 78 over 65", len(c.Pool), len(unique))
+	if len(c.Pool) != 80 || len(unique) != 66 {
+		t.Errorf("pool = %d entries over %d heroes, want 80 over 66", len(c.Pool), len(unique))
 	}
 }
 

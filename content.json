@@ -21,8 +21,8 @@
       "why": "dedicated pos 1, greed outfarms the map and hits every power spike early, favored into slow farming carry lines, vetoed by the kite and heal cut crew",
       "how": "spray the camp and the lane, brew the stun before committing, rage the trade and chase the runner, keep the greed stacks rolling on every last hit",
       "when": "farm lead from the opening minutes, brew tempo and siege windows through the mid game, falls behind the harder scaling carries late",
-      "build": "rad, agh, manta, bkb, assault, bloodthorn, abyssal blade",
-      "timings": [["rad", 15], ["agh", 24]],
+      "build": "rad, manta, agh, bkb, assault, bloodthorn, abyssal blade",
+      "timings": [["rad", 15], ["manta", 24]],
       "tech": [
         "ancient apparition, storm spirit, and shadow demon are the vetoes, the ice blast heal cut and the kite crew gut the rage plan",
         "sniper, drow ranger, and medusa style farm races are the free wins, greed hits the spikes long before any slow farmer does"
@@ -34,8 +34,8 @@
       "why": "dedicated pos 5, the blast answers any fight from anywhere and the shatter caps the sustain cores, favored into the regen lines the heal cut starves, vetoed by the split spreads and the night hunters that run the paper frame down",
       "how": "vortex the approach and the chase lane, cold feet the slowed body, touch the carry for the frostbite, hold the blast for the fleeing core and the shatter line",
       "when": "lane pokes off the touch and the vortex zones, mid game the blast turns every enemy sustain fight into a shatter window, falls behind when the dives reach him and the fronts stack the health",
-      "build": "shard, glimmer, blink, gungir, aeon disk, octarine, sheepstick",
-      "timings": [["shard", 24], ["glimmer", 26]],
+      "build": "midas, shard, glimmer, blink, gungir, aeon disk, octarine",
+      "timings": [["midas", 19], ["shard", 24]],
       "tech": [
         "visage, brewmaster, and night stalker are the vetoes, the split packs spread past the blast and the night vision hunts the paper roam",
         "monkey king, gyrocopter, and centaur style clumps are the free wins, the shatter caps the front and the frostbite holds the trade"
@@ -61,7 +61,7 @@
       "how": "creep cut the wave, hunger the runner, blink the call onto the clump, spin the pile, cull the body under the line",
       "when": "lane bully off the regen and the helix trades, mid game blink call windows decide the fights, falls behind the kite and the mana drain crew late",
       "build": "blade mail, shard, bkb, lotus, kaya and sange, shiva, heart",
-      "timings": [["blade mail", 15], ["shard", 27]],
+      "timings": [["blade mail", 15], ["shard", 28]],
       "tech": [
         "drow, sniper, and the ranged kite lanes are the vetoes, the call never reaches and the poke wears the regen down",
         "melee carries and illusion crews are the free wins, the call clamps the right clicks and the helix shreds the copies"
@@ -73,7 +73,7 @@
       "why": "dedicated pos 5, the grip deletes one enemy core for the whole channel and nightmare turns every roam into a kill setup, favored into immobile cores and saveless lines, vetoed by the instant silence and hex crew",
       "how": "enfeeble the enemy carry before the fight breaks, sap the lane pool dry, nightmare the runner for the follow up, grip the core from fog and hold the channel to the last tick",
       "when": "lane sustain off sap trades, nightmare roams land picks through the mid game, grip windows decide the late fights, falls behind when the saves and dispels stack up",
-      "build": "aether lens, glimmer, blink, force, cyclone, agh, shard",
+      "build": "aether lens, glimmer, force, blink, shard, agh, ghost",
       "timings": [["aether lens", 24], ["glimmer", 27]],
       "tech": [
         "rubick and the instant silence crew pinch the grip, the steal eats the channel whole",
@@ -87,7 +87,7 @@
       "how": "track every kill, hunt their roamer and wards, shuriken the tracked target",
       "when": "track pressure from level 1, strongest through the early game, rotate with the gold lead",
       "build": "essence distiller, vessel, ancient janggo, force, pipe, lotus, sheepstick",
-      "timings": [["essence distiller", 16], ["vessel", 18]],
+      "timings": [["essence distiller", 15], ["vessel", 18]],
       "tech": [
         "ck and abaddon are the worst lanes, big game hunter stacks the track income",
         "invis reveals flip the matchup, buy dust for the mirror and their sentry sweeps"
@@ -99,7 +99,7 @@
       "why": "dedicated pos 3, the split swarms the standing teamfights with brewling bodies and the storm kit picks the commit apart, favored into lancer and naga style illusion floods, vetoed by the instant silence and hex crew",
       "how": "clap the clump, brew the runner and ignite it, brawl the stance trade, split the commit, cyclone the fed core, hold the storm dispel for the summon flood, walk the storm body out of the lost fight",
       "when": "lane trades off clap and brew poke, the earth brewling sieges every mid game objective, split windows decide the standing fights, dies to the instant silence that lands before the split",
-      "build": "midas, vessel, rad, assault, bkb, octarine, refresher",
+      "build": "midas, vessel, rad, bkb, assault, octarine, refresher",
       "timings": [["midas", 12], ["vessel", 13]],
       "tech": [
         "silencer, skywrath, and disruptor are the vetoes, the instant silence cuts the brew and the clap out of the combo",
@@ -113,7 +113,7 @@
       "how": "soak harass with the return, shove lanes with the free nuke, initiate on the clump and stampede the team through",
       "when": "spikes when the ult and initiator tempo land mid game, falls off when enemy damage outscales the health pool",
       "build": "helm of the dominator, blade mail, heart, pipe, lotus, shiva, bkb",
-      "timings": [["helm of the dominator", 9], ["blade mail", 20]],
+      "timings": [["helm of the dominator", 9], ["blade mail", 19]],
       "tech": [
         "viper, drow, and nyx are the vetoes, range and carapace turn the return against him",
         "ursa, troll, and monkey king style melee carries are the free wins, they feed the return all game"
@@ -139,7 +139,7 @@
       "how": "shell the wave and the front liner, vacuum the clump into the follow up, surge the runner or the initiator, wall the engage path before the fight breaks",
       "when": "shell owns the lane trades from the start, mid game the vacuum turns every objective into the combo window, late the wall copies carry the fight, falls behind when the drafts refuse the clump",
       "build": "mekansm, shiva, pipe, lotus, shard, bkb, sheepstick",
-      "timings": [["mekansm", 19], ["shiva", 23]],
+      "timings": [["mekansm", 20], ["shiva", 22]],
       "tech": [
         "oracle and bounty hunter are the vetoes, the dispel strips the shell and the track hunts the vacuum engages",
         "shadow fiend, drow ranger, and templar assassin lines are the free wins, the ranged paper fronts feed the wall copies"
@@ -164,8 +164,8 @@
       "why": "dedicated pos 3, the swarm and the silence hold the tempo and the exorcism takes every objective on cooldown, favored into the paper frames and the refraction lines, vetoed by the rupture and the heal cut crew",
       "how": "wave the lane down with the swarm, silence the caster mid combo, siphon the front body for the sustain, pop the exorcism on the objective and stand close so the ghosts cycle, retarget them onto the runner through the disables",
       "when": "swarm poke from the opening ranks, the siphon holds every lane trade, mid game exorcism windows siege every tower, late the ghosts and the heal grind the long fights, starves when the heal cuts and the silence answers stack up",
-      "build": "consecrated wraps, kaya and sange, blink, lotus, bkb, shiva, shard",
-      "timings": [["consecrated wraps", 17], ["kaya and sange", 23]],
+      "build": "vessel, consecrated wraps, kaya and sange, lotus, bkb, shiva, shard",
+      "timings": [["vessel", 12], ["consecrated wraps", 17]],
       "tech": [
         "bloodseeker is the veto, the rupture holds the waddle and the thirst true sights the retreat",
         "shadow fiend, templar assassin, and venomancer style lines are the free wins, the ghosts sweep the plague wards, the paper frames feed the heal"
@@ -190,8 +190,8 @@
       "why": "counter pick into puck and TA, dragon blood blanks magic harass",
       "how": "win lane by existing, stun their carry out of elder form, take towers behind it",
       "when": "lane brick early, mid game tower monster in elder form",
-      "build": "pos 1: mask of madness, rad, mjollnir, bkb, octarine, daedalus, monkey king bar. pos 2/3: rad, bkb, octarine, shiva, bloodthorn, assault, overwhelming blink",
-      "timings": [["rad", 20], ["bkb", 26]],
+      "build": "pos 1: rad, mjollnir, bkb, octarine, daedalus, monkey king bar, blessing. pos 2: rad, bkb, octarine, shiva, bloodthorn, assault, overwhelming blink. pos 3: rad, shard, bkb, octarine, shiva, bloodthorn, assault",
+      "timings": [["rad", 20], ["shard", 20]],
       "tech": [
         "break and heal cut turn dragon blood off, viper and huskar are the veto cluster"
       ],
@@ -215,7 +215,7 @@
       "why": "dedicated pos 4, one fissure sets every kill and the slam flips every clumped fight, favored into the illusion and summon lines that stack the payout, the spread drafts and the battery assault crew blunt him",
       "how": "block the runner with the fissure, walk in on a primed totem, blink the clump and slam, chain the aftershock stuns with one click between casts, stun off the lingering fissures once the shard lands",
       "when": "fissure controls the lanes from level one, the blink turns every clumped objective into a slam window, mid game the combo deletes the paper cores, falls off when the enemy spreads and the bkbs arrive",
-      "build": "blink, shard, force, yasha and kaya, bkb, octarine, refresher",
+      "build": "blink, shard, force, yasha and kaya, octarine, bkb, refresher",
       "timings": [["blink", 16], ["shard", 23]],
       "tech": [
         "clockwerk is the veto, the battery cancels most of the combo, only the slam is safe",
@@ -241,7 +241,7 @@
       "why": "dedicated pos 5, the convert owns the early rotations and the impetus scales the whole game off positioning, favored into the jakiro and prophet lines, marci and the gap closing dives dump her through the slow",
       "how": "convert the biggest neutral and siege behind it, impetus the retreating bodies from max range, dispel the enemy buffs with the point blank enchant, sproink the projectiles and keep the gap open",
       "when": "converts own the first ten minutes, mid game the impetus punishes every rotation, late the untouchable tanks roshan while the paper frames melt, starves when the breaks and the burst answers land",
-      "build": "ancient janggo, essence distiller, glimmer, agh, orchid, shard, pike",
+      "build": "ancient janggo, essence distiller, glimmer, agh, shard, blink, pike",
       "timings": [["ancient janggo", 15], ["essence distiller", 16]],
       "tech": [
         "marci is the veto, the rebound closes the gap she lives on and the dispose dumps her",
@@ -254,8 +254,8 @@
       "why": "black hole wins the teamfight game, favored into BS and troll style clumped drafts, eidolons push the map",
       "how": "eidolon lane pressure and tower sieges, midnight zones, blink bkb hole the stack",
       "when": "eidolon push through the early game, hole windows every fight once blink and bkb land",
-      "build": "ancient janggo, midas, blink, bkb, octarine, shiva, refresher",
-      "timings": [["ancient janggo", 7], ["midas", 12]],
+      "build": "ancient janggo, blink, shard, bkb, octarine, shiva, refresher",
+      "timings": [["ancient janggo", 7], ["blink", 14]],
       "tech": [
         "lycan and meepo veto, unit flood overruns the eidolons",
         "count their hole cancels before locking, a stack of rubick, sd, charge, or long silences means no enigma"
@@ -267,8 +267,8 @@
       "why": "dedicated pos 4, the bushwhack cashes every tree on the map into a stun and the sharpshooter snipes the runner from fog, favored into the paper lanes and the rooted casters, vetoed by the tree cutters and the flood lines",
       "how": "acorn the tree beside the target, bushwhack the net onto it, scurry the tree line for the reset, hold the sharpshooter for the committed fight and juke the recoil across the cliffs",
       "when": "tree hugger trades from the opening ranks, mid roams land the bushwhack picks, late the sharpshooter break guts the carries, starves when the lanes hold no trees",
-      "build": "pos 4: essence distiller, glimmer, aether lens, blink, shard, gungir, sheepstick. pos 5: essence distiller, glimmer, aether lens, force, blink, gungir, sheepstick",
-      "timings": [["essence distiller", 15], ["glimmer", 26]],
+      "build": "pos 4: essence distiller, aether lens, glimmer, blink, shard, gungir, sheepstick. pos 5: essence distiller, glimmer, aether lens, force, blink, gungir, sheepstick",
+      "timings": [["essence distiller", 15], ["aether lens", 26]],
       "tech": [
         "visage, spirit breaker, and bounty hunter are the vetoes, the familiars flood the tree lines and the hunt crew runs the paper frame down",
         "shadow fiend, tiny, and alchemist style paper farms are the free wins, the greed races and the rooted frames stand in the acorn poke and eat the bushwhack"
@@ -319,7 +319,7 @@
       "why": "hard support lane anchor, blast spam wins the harass war and shield taxes every dive, chain frost deletes the clumped fights, favored into lancer and terrorblade style illusion floods, vetoed by long range spam and the storm dive",
       "how": "blast the clump and the ranged creep, shield the sieged core or the tower, gaze the runner into the team after their stuns land, chain frost the clump, never gaze into their interrupt",
       "when": "lane poke from the first blast ranks, shield holds every tower siege, chain frost windows decide the mid fights, late the shield still blanks the right click dives",
-      "build": "glimmer, blink, solar crest, shard, force, aether lens, aeon disk",
+      "build": "glimmer, blink, shard, force, aether lens, ghost, aeon disk",
       "timings": [["glimmer", 22], ["blink", 23]],
       "tech": [
         "zeus, sniper, and storm spirit are the vetoes, the long range spam and the dive outtrade the waddle",
@@ -346,7 +346,7 @@
       "how": "slave the wave and the ranged creep, array where they commit not where they stand, stack the soul on the wave before the fight, hold the laguna for the core once their saves burn",
       "when": "lane dominance off the slave spam, mid game the array sets every pick and the rune fights feed the soul, late the right clicks carry if the farm held, dies the moment the dive lands",
       "build": "yasha and kaya, bkb, sphere, ethereal blade, shard, sheepstick, blessing",
-      "timings": [["yasha and kaya", 23], ["bkb", 32]],
+      "timings": [["yasha and kaya", 24], ["bkb", 32]],
       "tech": [
         "visage, bounty hunter, clinkz, and enigma are the vetoes, the familiars dive the paper frame, the track crew never leaves the lane, and the hole swallows the array windup",
         "shadow fiend, alchemist, and nature's prophet style farms are the free wins, the paper lanes eat the slave spam and the laguna ends the race"
@@ -384,8 +384,8 @@
       "why": "dedicated pos 3, the wolves take towers while the enemy farms and the night howl strips every fight on the map, favored into the passive farm lines and the slow only kite crews, vetoed by the curse crew that feeds him to his own pack",
       "how": "scout and siege with the wolves, howl the defenders as the fight breaks, run the shapeshift pack through the runner, hand the spare wolf form to the diving core",
       "when": "wolf pressure from the opening minutes, tower sieges and the night howl windows through the mid game, shapeshift commits decide the late fights, falls behind when the clear and the lockdown stack up",
-      "build": "helm dom, shard, assault, bkb, agh, nullifier, blink",
-      "timings": [["helm dom", 15], ["shard", 18]],
+      "build": "helm dom, shard, assault, bkb, nullifier, agh, blink",
+      "timings": [["helm dom", 15], ["shard", 19]],
       "tech": [
         "winter wyvern is the veto, the curse turns his own pack into the executioners, the enchantress scepter little friends ride the wolves late",
         "viper and drow ranger style slow kite lines are the free wins, the wolf run ignores every slow they hold"
@@ -410,7 +410,7 @@
       "why": "soft support playmaker, favored into jakiro and void spirit lines, vetoed by arc warden clones and bounty tracks, arrows decide picks before fights start",
       "how": "arrow the fog lines beside their stun, starstorm the trade, leap the cliff, quiver poke without creep aggro, veil the team for the engage",
       "when": "lane arrow threat from the start, mid roams land the long stun, late moonlight ghost starts the engage",
-      "build": "pos 4: essence distiller, vessel, mekansm, blink, lotus, shard, wind waker. pos 5: essence distiller, vessel, mekansm, force, blink, lotus, shard",
+      "build": "pos 4: essence distiller, vessel, mekansm, blink, lotus, shard, sheepstick. pos 5: essence distiller, vessel, mekansm, force, blink, lotus, shard",
       "timings": [["essence distiller", 14], ["vessel", 18]],
       "tech": [
         "arc warden, io, and bounty hunter are the vetoes, clones and track reveal gut the invis value",
@@ -423,7 +423,7 @@
       "why": "dedicated pos 1, the perch rules the vision war and the jingu lifesteal loops every trade while the soldier ring taxes the whole fight, favored into paper backlines that hold no answer for the perch, vetoed by the tree cutters and the illusion flood",
       "how": "stack the jingu on the laner, boundless the clump for the buff payout, perch the tree for vision and spring the channel onto the fight, mischief the reset, ring the soldiers around the objective and fight inside them",
       "when": "lane wins the jingu trade war from the first ranks, perch vision and spring picks through the mid game, the soldier ring carries every standing fight and siege, dies the moment the tree cutters stack up",
-      "build": "bfury, rad, desolator, harpoon, bkb, skadi, monkey king bar",
+      "build": "bfury, rad, desolator, bkb, harpoon, skadi, monkey king bar",
       "timings": [["bfury", 15], ["rad", 17]],
       "tech": [
         "enigma and keeper of the light are the vetoes, the midnight pulse and the scepter wisp cut the perch trees out from under the plan, the night stalker skies and the lancer flood pinch the jingu stacks",
@@ -436,7 +436,7 @@
       "why": "dedicated carry, favored into anti mage and sven lines, vetoed by dragon knight shell and night stalker skies",
       "how": "teleport behind the undefended lane, sprout the defender, treant the wave, wrath the map and never stop moving",
       "when": "lane weak without backup, mid game map pressure everywhere, late game race wins with global pressure",
-      "build": "mjollnir, pike, bkb, butterfly, daedalus, monkey king bar, satanic",
+      "build": "mjollnir, pike, bkb, hydras breath, daedalus, butterfly, satanic",
       "timings": [["mjollnir", 16], ["pike", 24]],
       "tech": [
         "dragon knight, night stalker, and phantom lancer are the vetoes, push answers and illusion spam blunt the split",
@@ -449,8 +449,8 @@
       "why": "sustain core that outlasts burst from the offlane, reaper deletes tanky cores, favored into treant and tiny",
       "how": "pulse sustain through harass, farm to rad, scythe the tank in every fight",
       "when": "strong mid game once rad and shard land, dies to heal cut timings",
-      "build": "pos 1: rad, consecrated wraps, manta, heart, bkb, shiva, blessing. pos 2: rad, shard, consecrated wraps, lotus, heart, bkb, shiva. pos 3: rad, shard, consecrated wraps, lotus, bkb, heart, shiva",
-      "timings": [["rad", 15], ["shard", 20]],
+      "build": "pos 1: rad, consecrated wraps, manta, heart, bkb, shiva, blessing. pos 2/3: rad, consecrated wraps, manta, lotus, bkb, heart, shiva",
+      "timings": [["rad", 15], ["consecrated wraps", 21]],
       "tech": [
         "bloodseeker and kotl are the vetoes, heal cut and mana drain kill the sustain plan",
         "heartstopper wins long fights, never fight into AA"
@@ -501,8 +501,8 @@
       "why": "dedicated pos 2, the innate halves the proc rolls held against him and the roll turns their formation inside out through the mid game, favored into proc reliant cores and clumped melee lines, vetoed by the rupture and soulbind pins and the root crew",
       "how": "swashbuckle the wave and the hero, crash the clump for the barrier, roll through their lines and bowl the cores out of position, shield crash the cliff mid roll and keep the ball moving",
       "when": "lane trades off the swashbuckle poke, mid game roll windows flip every standing fight, late the slashes and the proc luck snowball, dies when the lockdown stacks up",
-      "build": "pos 2: mage slayer, shard, shiva, octarine, disperser, abyssal blade, blessing. pos 3: mage slayer, shard, cyclone, lotus, octarine, disperser, abyssal blade",
-      "timings": [["mage slayer", 17], ["shard", 26]],
+      "build": "pos 2: mage slayer, shard, octarine, shiva, disperser, abyssal blade, blessing. pos 3: mage slayer, shard, lotus, shiva, octarine, disperser, abyssal blade",
+      "timings": [["mage slayer", 17], ["shard", 27]],
       "tech": [
         "bloodseeker and grimstroke are the vetoes, the rupture bleeds the roll and the soulbind pins it in place",
         "faceless void, troll warlord, and phantom assassin style proc carries are the free wins, the innate halves the proc odds they hold"
@@ -566,8 +566,8 @@
       "why": "dedicated soft support, the lift answers every initiator and the steal vetoes one spell from every fight, favored into telegraphed ult lines, vetoed by the instant silence crew",
       "how": "lift the initiator before their spell, bolt the wave, wait out the big spell and steal it, re-aim the landing spot until the last tick",
       "when": "lane bolt poke from the first ranks, mid fights hinge on the steal timing, late the stolen ults decide the stand",
-      "build": "essence distiller, blink, aether lens, glimmer, force, shard, aeon disk",
-      "timings": [["essence distiller", 15], ["blink", 23]],
+      "build": "essence distiller, vessel, blink, aether lens, glimmer, force, shard",
+      "timings": [["essence distiller", 15], ["vessel", 19]],
       "tech": [
         "silencer, skywrath, and drow are the vetoes, the instant silence cuts the lift and the steal",
         "enigma, tidehunter, and sand king style ult lines are the free wins, one steal deletes their whole fight plan"
@@ -593,7 +593,7 @@
       "how": "sprint the rotation, crush the clump, bash the locked body, haze the runner and collapse the team onto it",
       "when": "sprint ganks from the first ranks, spikes with the early tempo buys mid game, hunts the roshan windows, falls off when the kite and saves arrive",
       "build": "midas, shard, bkb, harpoon, lotus, assault, nullifier",
-      "timings": [["midas", 15], ["shard", 21]],
+      "timings": [["midas", 14], ["shard", 21]],
       "tech": [
         "razor, viper, and drow are the vetoes, static link and the range war strip the melee plan",
         "riki, clinkz, and tinker style fades are the free wins, the haze lights up and runs down every slipping body"
@@ -605,8 +605,8 @@
       "why": "dedicated pos 2, essence shift snowballs every fight, favored into treant and soft support lines",
       "how": "dark pact the dust and track, pounce the leash, shadow dance resets the map",
       "when": "spikes once mage slayer lands, monster late with disperser and skadi off stolen stats",
-      "build": "pos 1: mage slayer, harpoon, silver edge, shard, bkb, skadi, disperser. pos 2: mage slayer, blink, shard, bkb, silver edge, disperser, skadi. pos 3: mage slayer, harpoon, blink, agh, shard, bkb, disperser",
-      "timings": [["mage slayer", 17], ["harpoon", 25]],
+      "build": "pos 1: mage slayer, sange and yasha, silver edge, shard, bkb, skadi, disperser. pos 2: mage slayer, blink, shard, silver edge, bkb, disperser, skadi. pos 3: mage slayer, blink, harpoon, agh, shard, bkb, disperser",
+      "timings": [["mage slayer", 17], ["sange and yasha", 25]],
       "tech": [
         "grimstroke and kunkka veto, visage familiars reveal the dance",
         "dark pact dispels track and dust but never silences, steal stats off the tank then leave"
@@ -651,6 +651,19 @@
         "haunt executes the backline, dispersion punishes physical burst"
       ],
       "mechanics": [["tip", "dagger grants shared vision of everyone it hits, pings invis spots without true sight"], ["tip", "the trail's free pathing lingers 1 second off the edge, cliff out behind you"], ["tip", "dispersion reflects before reductions, armor and barriers never soften it"], ["counter", "hug creeps when she shadow steps, the illusion damage is desolate only early"]]
+    },
+    "spirit-breaker": {
+      "identity": "charge support, charge of darkness locks a target anywhere on the map and runs the bash home, bulldoze shrugs the spell line off through the run, greater bash stuns every body that moves, nether strike blinks behind the runner and drops the bash on the spot",
+      "why": "dedicated pos 4 with a flex pos 5 seat, the global charge turns every lone rotation into a kill and the bash chain holds every runner for the follow ups, favored into the farm races that walk alone, vetoed by the save crew that hands the kill back",
+      "how": "charge the lone farmer through the fog, bulldoze through the spell line, bash the runner into the follow ups, nether strike the blink escape before it pays",
+      "when": "the charges own the early rotations, mid game the bash lockdown feeds every gank, late the global hunts pick the split farmers off one by one, falls behind when the saves answer every commit and the dispels strip the momentum",
+      "build": "pos 4: ancient janggo, midas, vessel, yasha and kaya, lotus, bkb, silver edge. pos 5: ancient janggo, midas, vessel, yasha and kaya, agh, bkb, silver edge",
+      "timings": [["ancient janggo", 17], ["midas", 18]],
+      "tech": [
+        "dazzle, oracle, and abaddon are the vetoes, the grave, the promise, and the borrowed time hand every charge kill back",
+        "sniper, shadow fiend, and nature's prophet lines are the free wins, the lone farm races eat the global charge every rotation"
+      ],
+      "mechanics": [["tip", "bulldoze rides the charge, the run bashes every body it passes and the bash damage scales with the move speed"], ["tip", "greater bash stuns through spell immunity, the immunity hold never blanks the bash"], ["tip", "linken's sphere eats the charge on cast, charge a creep beside the farmer so the run still arrives"], ["counter", "the roots and leashes blank both the charge and the nether strike, he cannot cast either while planted"], ["counter", "forced movement and knockback strip the greater bash stun off the stuck ally, the charge stun itself rides through"]]
     },
     "storm-spirit": {
       "identity": "roaming zip mid, static remnant clones zone the lane, electric vortex drags the pick, overload charges every cast, ball lightning rips across the map and out again",
@@ -749,7 +762,7 @@
       "how": "lead the avalanche, toss the nearest body through it, grab a tree for the splash, grow into the siege",
       "when": "lane kill threat once the combo lands, mid game burst pickoffs, late game building crusher",
       "build": "silver edge, harpoon, bkb, daedalus, assault, monkey king bar, swift blink",
-      "timings": [["silver edge", 25], ["harpoon", 29]],
+      "timings": [["silver edge", 25], ["harpoon", 28]],
       "tech": [
         "phantom lancer, luna, and windranger are the vetoes, illusions and split pressure outpace the combo tempo",
         "spirit breaker, lion, and ember spirit style lines are the free wins, single bodies eat the full combo"
@@ -774,7 +787,7 @@
       "why": "dedicated pos 4, the decay trades flip every lane arithmetic and the tombstone owns the standing fights, favored into melee lanes and the sustain grinds, vetoed by the kite crew and the clears that sweep the graveyard",
       "how": "decay the lane body on every cooldown, rip the heal off the crowd when the gank lands, plant the tombstone where the fight stands, golem the commit and walk the plague through their line",
       "when": "lane bully from the first decay ranks, mid game tombstone windows hold every objective, late the stolen strength flattens the paper frames, starves when the clears wipe the tombstone off the map",
-      "build": "mekansm, glimmer, shard, blink, pipe, lotus, agh",
+      "build": "mekansm, glimmer, blink, shard, pipe, lotus, agh",
       "timings": [["mekansm", 22], ["glimmer", 24]],
       "tech": [
         "drow ranger, viper, and leshrac are the vetoes, the range war starves the decay trades and the clears sweep the tombstone off the map",
@@ -787,7 +800,7 @@
       "why": "dedicated pos 1, the swipes scale off swings and the pit opens on demand, favored into the paper cores and the immobile front lines, vetoed by the clone flood and the kite crew, no chase without the blink",
       "how": "stomp the clump, blink onto the runner, hold the swipes on one body, pop the enrage under the focus and take the objective with the stack alive",
       "when": "pit windows from the early timings, mid game objectives and siege spikes behind the stack, late falls off when the kites, saves, and disarms arrive",
-      "build": "bfury, bkb, monkey king bar, abyssal blade, satanic, swift blink, blessing",
+      "build": "bfury, bkb, shard, monkey king bar, abyssal blade, swift blink, blessing",
       "timings": [["bfury", 14], ["bkb", 28]],
       "tech": [
         "meepo is the veto, the clone flood blanks the swipes and the poof burst deletes the grounded ball",
@@ -800,7 +813,7 @@
       "why": "dedicated pos 5, the ward flood zones every objective and the gale owns the chase lanes, favored into the paper frames that stand in the poison, vetoed by the image floods and the spread drafts that run past the wards",
       "how": "gale the runner from the fog, ward the choke and the pit before the fight, sting the body the carries chase, nova the clump as it commits",
       "when": "gale picks land roams through the early game, mid game the ward carpets tax every objective, late the nova chips the whole team, falls behind when the clears and the heals answer",
-      "build": "vessel, mekansm, glimmer, force, cyclone, shard, agh",
+      "build": "vessel, mekansm, glimmer, force, shard, blink, agh",
       "timings": [["vessel", 18], ["mekansm", 25]],
       "tech": [
         "phantom lancer, juggernaut, and outworld destroyer are the vetoes, the image floods and the astral banks run past the ward zones",
@@ -813,8 +826,8 @@
       "why": "dedicated pos 3, the lane poison starves every melee core and the skin flips the spell lanes around, favored into passive front heroes and the right click grinders, vetoed by the illusion flood crew and the unslowable runs",
       "how": "layer the arrows on the lane body, drop the toxin pool over the clump and the objective, hold the strike for the runner, dive the committed fight with the nosedive and stand the ground the skin wins",
       "when": "lane poison from the opening minutes, toxin zones hold every objective through the mid game, the nosedive and the strike pick the late fights, falls off when the burst and the saves outscale the grind",
-      "build": "mage slayer, pike, blink, manta, bkb, shiva, shard",
-      "timings": [["mage slayer", 16], ["pike", 24]],
+      "build": "mage slayer, pike, blink, manta, bkb, shard, shiva",
+      "timings": [["mage slayer", 16], ["pike", 23]],
       "tech": [
         "meepo and lycan are the vetoes, the clone flood and the unslowable pack blank the poison kite",
         "bristleback and huskar are the free wins, the strike break switches the passives off and the poison grind runs them down"
@@ -853,7 +866,7 @@
       "how": "cask the wave after the melee creeps fall, heal the lane with the aura, maledict the traded target, ward the clump from max range behind fog",
       "when": "lane cask threat from the first ranks, maledict kills after every trade, mid death wards decide the roshan fights, late the aura holds the siege",
       "build": "vessel, glimmer, blink, shard, force, aether lens, aeon disk",
-      "timings": [["vessel", 20], ["glimmer", 24]],
+      "timings": [["vessel", 19], ["glimmer", 24]],
       "tech": [
         "zeus, necrophos, and silencer are the vetoes, long range poke and free sustain blunt the cask and the curse",
         "ursa, sven, and troll warlord style melee lines are the free wins, committed bodies eat the pinball and the maledict ticks"
@@ -970,7 +983,8 @@
       ["drow-ranger", "manual frost arrow harass through the standing wave and the range discipline on the retreating body until the procs always land from beyond the answer range and the gust peels the dive clean"],
       ["tidehunter", "gush into smash order on the lane body and the ravage release onto the committed clump until the armor strip always lands before the swing and the stun always catches the stack"],
       ["ogre-magi", "fireblast into ignite trade rhythm on the lane body and the bloodlust timing before the commit until the multicast rolls always land on the clumped pair"],
-      ["axe", "blink call placement onto the clump and the cull threshold read on the hp bar lines until the execute always lands under the line"]
+      ["axe", "blink call placement onto the clump and the cull threshold read on the hp bar lines until the execute always lands under the line"],
+      ["spirit-breaker", "charge target picks on the lone rotation and the bash chain into the follow ups until every global commit ends in a kill"]
     ],
     "replay": [
       "after each session: 10 min, only your deaths, write one line per death: where you should have been",
@@ -1009,5 +1023,5 @@
       }
     ]
   },
-  "buildsMeta": "stratz itemFullPurchase completed week 1790553600, divine_immortal, fetched 2026-10-11, series 7.41"
+  "buildsMeta": "stratz itemFullPurchase completed week 1791158400, divine_immortal, fetched 2026-10-17, series 7.41"
 }
